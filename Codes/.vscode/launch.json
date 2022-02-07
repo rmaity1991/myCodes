@@ -1,0 +1,92 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Example1",
+            "request": "launch",
+            "mainClass": "Java.GUI.Example1",
+            "projectName": "Codes_abf8b4f1"
+        },
+        {
+            "type": "java",
+            "name": "Launch FirstSwingExample",
+            "request": "launch",
+            "mainClass": "Java.GUI.FirstSwingExample",
+            "projectName": "Codes_abf8b4f1"
+        },
+        {
+            "type": "java",
+            "name": "Launch Example7",
+            "request": "launch",
+            "mainClass": "Java.Inheritance.Example7",
+            "projectName": "Codes_abf8b4f1"
+        },
+        {
+            "type": "java",
+            "name": "Launch Light",
+            "request": "launch",
+            "mainClass": "Java.Basics.Light",
+            "projectName": "Codes_abf8b4f1"
+        },
+        {
+            "type": "java",
+            "name": "Launch Datatypes",
+            "request": "launch",
+            "mainClass": "Java.Datatypes",
+            "projectName": "Codes_abf8b4f1"
+        },
+        {
+            "type": "java",
+            "name": "Launch classesobjects",
+            "request": "launch",
+            "mainClass": "Java.classesobjects",
+            "projectName": "Codes_2986a7c7"
+        },
+        {
+            "type": "java",
+            "name": "Launch Loops",
+            "request": "launch",
+            "mainClass": "Java.Loops",
+            "projectName": "Codes_2986a7c7"
+        },
+        {
+            "type": "java",
+            "name": "Launch conditionals",
+            "request": "launch",
+            "mainClass": "Java.conditionals",
+            "projectName": "Codes_2986a7c7"
+        },
+        {
+            "type": "java",
+            "name": "Launch Basics",
+            "request": "launch",
+            "mainClass": "Java.Basics",
+            "projectName": "Codes_2986a7c7"
+        },
+        {
+            "name": "g++.exe - Build and debug active file",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "C:\\MinGW\\bin\\gdb.exe",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "C/C++: g++.exe build active file ver(2)"
+        }
+    ]
+}

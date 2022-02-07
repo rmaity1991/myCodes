@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        Internal CSS Styling of Class
+        */
+
+        .newyork{
+            color:blue;
+            background-color: azure;
+            padding: 10px;
+            border: 10px;
+            border-color: black;
+        }
+        .london{
+            background-color: blueviolet;
+        }
+        .amsterdam{
+            background-color: beige;
+        }
+    </style>
+</head>
+<body>  
+    <script src="D:\Personal\mydevelopments\Codes\WebDevelopment\JS\DOM.js"></script> 
+    <div class="newyork">
+        <p>
+            This is a "newyork" class paragraph.
+        </p>
+    </div>
+
+    <div class="phillipines">
+        <p>
+            This is a "phillipines" class.
+        </p>
+
+    </div>
+
+    <p class="phillipines">
+        This is another sentence with class "phillipines"
+    </p>
+
+    <h1 class="amsterdam">This heading is of amsterdam class</h1>
+    <h2 class="amsterdam">This heading is of amsterdam class</h2>
+    
+</body>
+<script>
+    //storing all elemnts of the class new pork in one variable for manipulations
+    var c = document.getElementsByClassName("phillipines");
+
+console.log(c);
+
+c[1].align="right";
+c[1].style.color="white";
+c[1].style.background="black";
+
+var d= document.getElementsByClassName('newyork'); //storing all elemnts of the class new pork in one variable for manipulations
+
+d[0].style.color="red";
+//d[0].style.background="yellow"; // using class arrays to change styles
+
+d[0].classList.add("london"); // adding a new class to a existing class
+// d[0].classList.remove('london'); // removing a new class from existing
+
+var x= document.getElementsByClassName("amsterdam");
+console.log(x);
+c[0].innerHTML; // accesing the entire HTML content in the array
+c[1].innerText; // accesing only the text.
+
+// c[0].innerHTML=" <p> This is a new HTML </p> ";
+
+// c[0].innerText="Rohit Maity"; 
+
+var y= document.getElementsByTagName('div'); // getting elemnts using tag names
+// Here we are creating a HTML element pargraph using the create elemnt method and assigning
+// a inner HTML text inside it.
+createdElement= document.createElement('p');
+createdElement.innerHTML="This is Rohit creating a inner HTML for a created element";
+// append that to the div elemnt in array[0]
+y[0].append(createdElement);
+
+// replacing a created child elemnt with another.
+createdElement2=document.createElement("b");
+createdElement2.innerText="This is replacing the previous created element";
+y[0].replaceChild(createdElement2,createdElement);
+
+console.log(document.links);
+console.log(document.scripts);
+console.log(document.domain);
+
+// Selecting using Query
+
+sel=document.querySelector(".amsterdam");
+console.log(sel);
+sel1=document.querySelectorAll(".london");
+console.log(sel1);
+
+</script>
+
+</html>
