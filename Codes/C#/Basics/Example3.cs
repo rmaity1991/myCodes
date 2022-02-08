@@ -2,9 +2,9 @@ using System;
 /*
 The variables in C#, are categorized into the following types −
 
-Value types
-Reference types
-Pointer types
+1) Value types
+2) Reference types
+3) Pointer types
 */
 
 /*
@@ -40,7 +40,8 @@ class Example3 {
          Console.WriteLine("Size of int: {0}", sizeof(int));
 
          object obj;
-obj = 100; // this is boxing
+obj = 100; // this is boxing which means specifying the type of data for the object
+Console.WriteLine("The type of object is" + typeof(obj));
 
 dynamic d = 20;
 String str = "Tutorials Point";
