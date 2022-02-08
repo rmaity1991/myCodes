@@ -3,6 +3,10 @@ using System;
 class Example2{
     public static void Main(){
 
+        /*
+        The various datatypes required in C#
+        */
+
         int var1;
         float var2;
         double var3;
@@ -12,6 +16,8 @@ class Example2{
         uint var7;
         ulong var8;
         bool var9;
+
+        // the typeof() function is used to determine the type of the data which is being passed.
 
         Console.WriteLine("The size of int is" + typeof(var1));
         Console.WriteLine("The size of float is" + typeof(var2));

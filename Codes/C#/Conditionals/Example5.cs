@@ -11,6 +11,7 @@ namespace DecisionMaking {
                Console.WriteLine("Excellent!");
                break;
             case 'B':
+            
             case 'C':
                Console.WriteLine("Well done");
                break;

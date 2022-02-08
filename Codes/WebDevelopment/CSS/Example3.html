@@ -1,0 +1,49 @@
+<!--
+    The empty-cells Property
+The empty-cells property indicates whether a cell without any content should have a border displayed.
+
+This property can have one of the three values - show, hide or inherit.
+
+Here is the empty-cells property used to hide borders of empty cells in the <table> element.
+-->
+<html>
+   <head>
+      <style type = "text/css">
+         table.empty {
+            width:350px;
+            border-collapse:separate;
+            empty-cells:hide;
+         }
+         td.empty {
+            padding:5px;
+            border-style:solid;
+            border-width:1px;
+            border-color:#999999;
+         }
+      </style>
+   </head>
+
+   <body>
+   
+      <table class = "empty">
+         <tr>
+            <th></th>
+            <th>Title one</th>
+            <th>Title two</th>
+         </tr>
+      
+         <tr>
+            <th>Row Title</th>
+            <td class = "empty">value</td>
+            <td class = "empty">value</td>
+         </tr>
+      
+         <tr>
+            <th>Row Title</th>
+            <td class = "empty">value</td>
+            <td class = "empty"></td>
+         </tr>
+      </table>
+      
+   </body>
+</html> 

@@ -38,6 +38,18 @@ int main(){
    double var3=(double)d;
    long var4=(long)e;
 
+   // This ends the basic datatypes
+   
+   long var5=12.4567;
+
+   printf("The value of var1 is %d \n",var5);
+   printf("The value of var1 is %0.4d \n",var5);
+   printf("The value of var1 is %2.4d \n",var5);
+
+   printf("The value of var1 is %f \n",var5);
+   printf("The value of var1 is %0.4f \n",var5);
+   printf("The value of var1 is %2.4f \n",var5);
+
 
 
    return 0;
