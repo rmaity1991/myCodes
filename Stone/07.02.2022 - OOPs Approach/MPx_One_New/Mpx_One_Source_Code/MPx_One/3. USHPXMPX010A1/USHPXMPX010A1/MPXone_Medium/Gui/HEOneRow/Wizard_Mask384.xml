@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BaseMaskData p1:type="MaskData" ID="384" Name="WIZ_Sn" Version="3.0" EnableOn="tmpWiz.Fct.In.bool" StartingField="475" xmlns:p1="http://www.w3.org/2001/XMLSchema-instance">
+  <Leds>
+    <Led Name="ACU_LED_5" OnCondition="NOT tmpConfOk[1]" />
+  </Leds>
+  <MaskElements>
+    <TextWidget ID="475" Name="TextWidget475" Row="0" Column="0" Selectable="TRUE" ClassName="WizardWidget">
+      <Members>
+        <Member Name="Acronim" Value="' Sn'" />
+        <Member Name="ValIndex" Value="1" />
+      </Members>
+    </TextWidget>
+  </MaskElements>
+</BaseMaskData>

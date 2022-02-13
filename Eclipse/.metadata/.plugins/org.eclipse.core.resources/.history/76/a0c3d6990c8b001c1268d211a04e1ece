@@ -1,0 +1,9 @@
+package com.rohitmaity.test;
+
+import static org.junit.Assert.*;  
+import com.javatpoint.logic.*;  
+import org.junit.Test;  
+
+public class TestLogic {
+
+}

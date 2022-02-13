@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BaseMaskData p1:type="MaskData" ID="385" Name="WIZ_cP1" Version="3.0" EnableOn="NOT isCustomBasicRU" StartingField="478" xmlns:p1="http://www.w3.org/2001/XMLSchema-instance">
+  <Leds>
+    <Led Name="ACU_LED_5" OnCondition="NOT tmpConfOk[4]" />
+  </Leds>
+  <MaskElements>
+    <TextWidget ID="478" Name="TextWidget478" Row="0" Column="0" Selectable="TRUE" ClassName="WizardWidget">
+      <Members>
+        <Member Name="Acronim" Value="'/P1'" />
+        <Member Name="ValIndex" Value="4" />
+      </Members>
+    </TextWidget>
+  </MaskElements>
+</BaseMaskData>

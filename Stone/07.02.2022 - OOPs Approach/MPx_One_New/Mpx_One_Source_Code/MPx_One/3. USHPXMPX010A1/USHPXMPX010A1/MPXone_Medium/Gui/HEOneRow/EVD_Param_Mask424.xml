@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BaseMaskData p1:type="MaskData" ID="424" Name="EVD_P3" Version="3.0" EnableOn="VlvPresent" xmlns:p1="http://www.w3.org/2001/XMLSchema-instance">
+  <MaskElements>
+    <CompactField ID="451" Name="CompactField451" Row="0" Column="1" Domain="REAL" Selectable="TRUE" IntegerPartDigitsCount="2" ZeroSuppression="true" FormatString="-RR.R" Description="P3" VariableName="SHSetp" Min="0" Max="25" />
+  </MaskElements>
+</BaseMaskData>

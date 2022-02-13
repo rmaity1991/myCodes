@@ -1,0 +1,21 @@
+Successful,Reference,Setup,Main,Regulation,4150581d-648d-4e37-bdea-44ad9d0bff1d,,2020-09-28-09:21:19.704,2020-09-28-09:21:19.708
+Successful,Write,Inhibit sysbreak,Setup,Regulation,80f30680-6b66-43d3-a675-6067a9ceba47,,2020-09-28-09:21:19.708,2020-09-28-09:21:19.740
+Successful,Write,Restore Carel defaults,Setup,Regulation,8f507d60-f7a9-4f94-b4d1-0914be8e17d3,,2020-09-28-09:21:20.342,2020-09-28-09:21:20.365
+Successful,Wait,Wait some time,Setup,Regulation,ea340053-7381-4415-aa0b-665d444724d5,,2020-09-28-09:21:20.969,2020-09-28-09:21:25.969
+Successful,Write,End wizard,Setup,Regulation,5ccca479-9eba-4afe-9c9a-461131b41b2e,,2020-09-28-09:21:26.578,2020-09-28-09:21:26.636
+Successful,Write,Virtualize I/O,Setup,Regulation,34fa95b8-c7ee-4fbd-9349-14c43cc5619f,,2020-09-28-09:21:27.248,2020-09-28-09:21:27.595
+Successful,Write,Ensure unit is off,Setup,Regulation,eeed3e34-c8cc-43bc-a55c-402d02f3a14f,,2020-09-28-09:21:28.204,2020-09-28-09:21:28.235
+Successful,Reference,Main regulation,Main,Regulation,582898c3-c508-4c8c-9285-a9e16265bab8,,2020-09-28-09:21:28.844,2020-09-28-09:21:28.845
+Successful,Write,Preset,Main regulation,Regulation,f9335c70-8256-4d21-8e6a-cf599f9274be,,2020-09-28-09:21:28.845,2020-09-28-09:21:29.221
+Successful,Write,Switch on unit,Main regulation,Regulation,ec626de0-5d5c-4a30-8c50-07dfd1607d2e,,2020-09-28-09:21:29.831,2020-09-28-09:21:29.925
+Successful,Check,Regulation must be off,Main regulation,Regulation,21f8758c-7d4d-45d1-a1e2-4e7b7d0935cb,,2020-09-28-09:21:30.538,2020-09-28-09:21:30.565
+Successful,Write,Temperature increases,Main regulation,Regulation,d0bee271-43ae-4217-9ad5-f7ae5427a9e9,,2020-09-28-09:21:31.177,2020-09-28-09:21:31.374
+Successful,Check,Regulation must be off,Main regulation,Regulation,c60cf3e2-f3fe-4d0e-9b07-fc18aaf07f54,,2020-09-28-09:21:31.983,2020-09-28-09:21:32.014
+Successful,Write,Temperature increases,Main regulation,Regulation,3872558c-6675-4e55-a70b-445c9f55f4a3,,2020-09-28-09:21:32.627,2020-09-28-09:21:32.807
+Successful,Check,Regulation must be on,Main regulation,Regulation,eaa77145-0f9a-4535-8629-c2c8b13c8145,,2020-09-28-09:21:33.420,2020-09-28-09:21:33.447
+Successful,Write,Temperature decreases,Main regulation,Regulation,70acbcbf-2a8b-4987-a828-3575347ebe10,,2020-09-28-09:21:34.060,2020-09-28-09:21:34.279
+Successful,Check,Regulation must be on,Main regulation,Regulation,9ca96d1c-95cb-4d01-8a02-b9864c98739e,,2020-09-28-09:21:34.890,2020-09-28-09:21:35.086
+Successful,Write,Temperature decreases,Main regulation,Regulation,ae7a1512-6a05-4b6f-9bf5-713f1de9cead,,2020-09-28-09:21:35.702,2020-09-28-09:21:35.793
+Successful,Check,Regulation must be off,Main regulation,Regulation,3d811a7f-6ef2-4f20-9970-86d97e981dfc,,2020-09-28-09:21:36.404,2020-09-28-09:21:36.433
+Successful,Write,Moving regulation to AirOn,Main regulation,Regulation,1ab77ab5-cb4c-4af8-81fb-c6d3d3aa0ecf,,2020-09-28-09:21:37.047,2020-09-28-09:21:37.082
+Failed,Check,Regulation must be on,Main regulation,Regulation,d6c7b666-5098-4395-b222-693db8d3a164,Variable 'CompOn' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-28-09:21:37.687,2020-09-28-09:21:37.721

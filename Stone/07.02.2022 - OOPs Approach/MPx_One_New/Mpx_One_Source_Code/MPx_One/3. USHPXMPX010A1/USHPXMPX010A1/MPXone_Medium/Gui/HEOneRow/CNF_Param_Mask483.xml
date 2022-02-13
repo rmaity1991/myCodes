@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BaseMaskData p1:type="MaskData" ID="483" Name="CNF_H3" Version="3.0" xmlns:p1="http://www.w3.org/2001/XMLSchema-instance">
+  <MaskElements>
+    <CompactField ID="529" Name="CompactField529" Row="0" Column="0" Domain="BOOL" Selectable="TRUE" FormatString="B" Description=" H3" VariableName="BMS_Prot" />
+  </MaskElements>
+</BaseMaskData>

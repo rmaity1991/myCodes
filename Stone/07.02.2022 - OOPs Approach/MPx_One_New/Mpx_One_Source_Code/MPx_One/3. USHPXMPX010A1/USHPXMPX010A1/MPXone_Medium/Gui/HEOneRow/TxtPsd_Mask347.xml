@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BaseMaskData p1:type="MaskData" ID="347" Name="mTxtPsd" Version="3.0" xmlns:p1="http://www.w3.org/2001/XMLSchema-instance">
+  <Actions>
+    <Action KeyName="KEY_PRG" FileName="mTxtPsdPRG.st" FunctionName="mTxtPsdPRG" Call="mTxtPsdPRG(keyPressed, keyCounter);" Type="Single" />
+    <Action KeyName="KEY_PROGRAM_RELEASE" FileName="mTxtPsdPROGRAM_RELEASE.st" FunctionName="mTxtPsdPROGRAM_RELEASE" Call="mTxtPsdPROGRAM_RELEASE(keyPressed, keyCounter);" Type="Single" />
+  </Actions>
+  <MaskElements>
+    <TextField ID="348" Name="TextField348" Row="0" Column="0" TextValue="PSd" />
+  </MaskElements>
+</BaseMaskData>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BaseMaskData p1:type="MaskData" ID="489" Name="CTL_sFA" Version="3.0" xmlns:p1="http://www.w3.org/2001/XMLSchema-instance">
+  <MaskElements>
+    <CompactField ID="531" Name="CompactField531" Row="0" Column="0" Domain="SINT" Selectable="TRUE" FormatString="-III" Description="/FA" VariableName="Ain_Cfg.Arr[1].Ch" Min="-128" Max="127" />
+  </MaskElements>
+</BaseMaskData>

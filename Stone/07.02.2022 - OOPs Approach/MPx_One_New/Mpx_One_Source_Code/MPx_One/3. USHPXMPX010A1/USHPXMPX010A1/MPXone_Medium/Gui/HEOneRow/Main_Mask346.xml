@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BaseMaskData p1:type="MaskData" ID="346" Name="mMain" Version="3.0" xmlns:p1="http://www.w3.org/2001/XMLSchema-instance">
+  <Actions>
+    <Action KeyName="KEY_PRG" FileName="mMainPRG.st" FunctionName="mMainPRG" Call="mMainPRG(keyPressed, keyCounter);" Type="Single" />
+    <Action KeyName="KEY_ALARM" FileName="mMainALARM.st" FunctionName="mMainALARM" Call="mMainALARM(keyPressed, keyCounter);" Type="Single" />
+    <Action KeyName="KEY_PROGRAM_RELEASE" FileName="mMainPROGRAM_RELEASE.st" FunctionName="mMainPROGRAM_RELEASE" Call="mMainPROGRAM_RELEASE(keyPressed, keyCounter);" Type="Single" />
+    <Action KeyName="KEY_DOWN" FileName="mMainUPDOWN.st" FunctionName="mMainUPDOWN" Call="mMainUPDOWN(keyPressed, keyCounter);" Type="Single" />
+    <Action KeyName="KEY_UP" FileName="mMainUPDOWN.st" FunctionName="mMainUPDOWN" Call="mMainUPDOWN(keyPressed, keyCounter);" Type="Single" />
+  </Actions>
+  <MaskElements>
+    <TextWidget ID="350" Name="TextWidget" Row="0" Column="0" Selectable="FALSE" ClassName="MainWidget">
+      <Members />
+    </TextWidget>
+  </MaskElements>
+</BaseMaskData>

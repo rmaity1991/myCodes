@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BaseMaskData p1:type="MaskData" ID="413" Name="ALM_AA" Version="3.0" xmlns:p1="http://www.w3.org/2001/XMLSchema-instance">
+  <MaskElements>
+    <CompactField ID="441" Name="CompactField441" Row="0" Column="1" Domain="USINT" Selectable="TRUE" FormatString="II" Description="AA" VariableName="AlarmPrbConf" Min="0" Max="14" />
+  </MaskElements>
+</BaseMaskData>

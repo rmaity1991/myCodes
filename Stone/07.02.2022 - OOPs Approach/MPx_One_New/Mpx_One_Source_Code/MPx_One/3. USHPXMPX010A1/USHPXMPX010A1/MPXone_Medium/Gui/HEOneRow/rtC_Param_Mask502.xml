@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BaseMaskData p1:type="MaskData" ID="502" Name="rtc_min" Version="3.0" xmlns:p1="http://www.w3.org/2001/XMLSchema-instance">
+  <MaskElements>
+    <CompactField ID="544" Name="CompactField544" Row="0" Column="0" Domain="USINT" Selectable="TRUE" FormatString="III" Description="m__" VariableName="SPV_Min" Min="0" Max="59" />
+  </MaskElements>
+</BaseMaskData>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BaseMaskData p1:type="MaskData" ID="480" Name="ShowAlrmHyst" Version="3.0" StartingField="520" xmlns:p1="http://www.w3.org/2001/XMLSchema-instance">
+  <MaskElements>
+    <TextWidget ID="520" Name="TextWidget520" Row="0" Column="0" Selectable="FALSE" ClassName="AlarmHystWidget">
+      <Members />
+    </TextWidget>
+  </MaskElements>
+</BaseMaskData>

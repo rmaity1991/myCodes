@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BaseMaskData p1:type="MaskData" ID="441" Name="Dir_Clean" Version="3.0" xmlns:p1="http://www.w3.org/2001/XMLSchema-instance">
+  <Actions>
+    <Action KeyName="KEY_PRG" FileName="Dir_CleanPRG.st" FunctionName="Dir_CleanPRG" Call="Dir_CleanPRG(keyPressed, keyCounter);" Type="Single" />
+  </Actions>
+  <MaskElements>
+    <TextField ID="468" Name="TextField468" Row="0" Column="0" TextValue="CLn" />
+  </MaskElements>
+</BaseMaskData>

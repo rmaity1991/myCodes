@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BaseMaskData p1:type="MaskData" ID="447" Name="DefSelection" Version="3.0" StartingField="490" xmlns:p1="http://www.w3.org/2001/XMLSchema-instance">
+  <MaskElements>
+    <TextWidget ID="490" Name="TextWidget490" Row="0" Column="0" Selectable="FALSE" ClassName="DefaultWidget">
+      <Members />
+    </TextWidget>
+  </MaskElements>
+</BaseMaskData>

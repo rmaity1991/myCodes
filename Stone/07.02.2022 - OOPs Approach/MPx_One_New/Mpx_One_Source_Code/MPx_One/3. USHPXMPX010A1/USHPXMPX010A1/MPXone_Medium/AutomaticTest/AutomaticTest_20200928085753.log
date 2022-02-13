@@ -1,0 +1,9 @@
+Successful,Write,Set c4 - always OFF,Duty setting - OFF,TemperatureCtrl,fd248946-2f64-4b98-ad03-6836e73cd32e,,2020-09-28-08:57:53.371,2020-09-28-08:57:53.643
+Successful,Wait,Wait step #2,Duty setting - OFF,TemperatureCtrl,c986c71b-c038-476e-9c75-3924bc9c92aa,,2020-09-28-08:57:54.246,2020-09-28-08:57:55.247
+Successful,WaitUntil,Wait until step #7,Duty setting - OFF,TemperatureCtrl,60d65a19-f646-45f9-8f46-52f515b48acf,,2020-09-28-08:57:55.856,2020-09-28-08:57:56.042
+Successful,Write,Write step #3,Duty setting - OFF,TemperatureCtrl,4393c70d-3a47-4c08-982d-d6f3a53e07bb,,2020-09-28-08:57:56.657,2020-09-28-08:57:56.862
+Successful,WaitUntil,Wait until step #4,Duty setting - OFF,TemperatureCtrl,b0f4229a-9074-4a9e-a828-0fb7662048c8,,2020-09-28-08:57:57.465,2020-09-28-08:57:57.582
+Successful,Wait,Wait step #5,Duty setting - OFF,TemperatureCtrl,e67a7cc7-6915-4bcf-b49c-67f9241184d8,,2020-09-28-08:57:58.183,2020-09-28-08:58:08.184
+Successful,Check,Check step #6,Duty setting - OFF,TemperatureCtrl,79432da7-0866-4d8a-adc0-67f7ef32b824,,2020-09-28-08:58:08.793,2020-09-28-08:58:08.924
+Successful,Write,Set AirOff,Duty setting - OFF,TemperatureCtrl,d0feb25e-c21c-4445-89fb-cc4c152bcb83,,2020-09-28-08:58:09.530,2020-09-28-08:58:09.641
+Failed,WaitUntil,Wait until 20s,Duty setting - OFF,TemperatureCtrl,dfab76f8-f43c-4b1b-a38a-e804bd432b14,Variable 'NO[1]' has value 'FALSE' (expected Equal to/than 'FALSE' '+/-0');Variable 'NO[2]' has value 'TRUE' (expected Equal to/than 'FALSE' '+/-0');Variable 'NO[3]' has value 'TRUE' (expected Equal to/than 'FALSE' '+/-0');Variable 'NO[4]' has value 'TRUE' (expected Equal to/than 'TRUE' '+/-0');Variable 'Alarms.Al.Al_PrbBroken[1].info.active' has value 'FALSE' (expected Equal to/than 'FALSE' '+/-0');Variable 'Alarms.Al.Al_PrbBroken[3].info.active' has value 'FALSE' (expected Equal to/than 'FALSE' '+/-0');,2020-09-28-08:58:10.252,2020-09-28-08:58:30.428

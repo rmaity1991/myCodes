@@ -32,6 +32,8 @@
         "utility": "cpp",
         "vector": "cpp",
         "xlocale": "cpp",
-        "HelloWorld.C": "cpp"
+        "HelloWorld.C": "cpp",
+        "DiodeCurrent.C": "cpp",
+        "DiodeResistance.C": "cpp"
     }
 }

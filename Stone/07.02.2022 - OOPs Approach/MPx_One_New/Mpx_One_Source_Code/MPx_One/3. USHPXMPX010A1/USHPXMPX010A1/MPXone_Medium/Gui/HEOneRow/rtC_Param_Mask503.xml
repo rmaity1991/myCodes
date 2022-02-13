@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BaseMaskData p1:type="MaskData" ID="503" Name="rtc_dow" Version="3.0" xmlns:p1="http://www.w3.org/2001/XMLSchema-instance">
+  <MaskElements>
+    <CompactField ID="545" Name="CompactField545" Row="0" Column="0" Domain="USINT" Selectable="TRUE" FormatString="III" Description="u__" VariableName="SPV_DoW" Min="0" Max="7" />
+  </MaskElements>
+</BaseMaskData>

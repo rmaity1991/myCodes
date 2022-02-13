@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SToneProject name="MPXone_Medium_Core_v.1.8.6 [MPXone_Medium]" guid="f723bb4e-5203-4f9f-948a-52130c3e911e" type="Library" version="1.0" projectVersion="1.8.6" Z3VpZC1jcmM="425766396" author="Carel Industries S.p.A." vendor="Carel Industries S.p.A." reflibfathername="MPXone_Medium" libguid="c9e2fb0a-068b-450b-8320-904052496d95" libname="MPXone_Medium_Core">
+  <Files>
+    <Folder path="Application">
+      <File path="010_GeneralMng.st" buildaction="Compile" />
+      <File path="015_UnitStatus.st" buildaction="Compile" />
+      <File path="020_InputsMng.st" buildaction="Compile" />
+      <File path="030_AlarmsMng.st" buildaction="Compile" />
+      <File path="050_UnitStartUp.st" buildaction="Compile" />
+      <File path="060_MainRegMng.st" buildaction="Compile" />
+      <File path="070_DefrostMng.st" buildaction="Compile" />
+      <File path="080_FanRegMng.st" buildaction="Compile" />
+      <File path="085_EBM_ESMseriesMng.st" buildaction="Compile" />
+      <File path="090_ExvMng.st" buildaction="Compile" />
+      <File path="100_HeatersMng.st" buildaction="Compile" />
+      <File path="110_OutputsMng.st" buildaction="Compile" />
+    </Folder>
+    <Folder path="Images" />
+    <Folder path="Libs">
+      <File path="AcuRepeater_v.0.1.3.B.stlib" buildaction="Compile" libnodeid="0128e95b-7bf6-4fab-8fef-06a0de3928e9" />
+      <File path="Alarm_Mng_v.1.1.4.stlib" buildaction="Compile" libnodeid="b8b7e5a3-3e3d-427d-8dc3-c27f0e3c473f" />
+      <File path="Blackout_v.1.0.0.stlib" buildaction="Compile" libnodeid="50c38e81-7a90-42b9-9d4f-9b6f999f476a" />
+      <File path="CntDwnSafT_v.1.4.1.stlib" buildaction="Compile" libnodeid="9b203d6a-b5f4-48dc-8dc7-d2643accd1e5" />
+      <File path="CustomGas_v.0.1.1.stlib" buildaction="Compile" libnodeid="f6949755-135b-4e87-bb8e-deea4c623151" />
+      <File path="EbmpapstFan_Basic_v.0.1.1.stlib" buildaction="Compile" libnodeid="987a69d4-6b19-40a9-a720-190bb271a0eb" />
+      <File path="EVD_Emb_Basic_v.1.1.0.stlib" buildaction="Compile" libnodeid="f9116328-000c-4b8c-8be2-87d3bd4ceb51" />
+      <File path="EvdMPX_v.0.0.42.B.stlib" buildaction="Compile" libnodeid="250571f0-a809-4c52-b2e4-ab1844b4e706" />
+      <File path="Gas_GetCoeff_v.1.0.0.stlib" buildaction="Compile" libnodeid="61099acb-95ed-4a32-a32e-4f24a9ce110f" />
+      <File path="GenericFunctionMng_v.0.2.1.stlib" buildaction="Compile" libnodeid="dd4f596c-be67-491e-a355-c73a64474211" />
+      <File path="Hysteresis_v.0.1.7.stlib" buildaction="Compile" libnodeid="8ed516f6-07d1-49a1-af9f-4f03687c60b9" />
+      <File path="IOMng_Basic_v.2.0.12.stlib" buildaction="Compile" libnodeid="7406f184-0800-4814-a576-651f884f7603" />
+      <File path="Logics_v.0.1.4.stlib" buildaction="Compile" libnodeid="8fa637e8-670d-4da8-9ffc-1314725be679" />
+      <File path="Math_v.0.1.16.stlib" buildaction="Compile" libnodeid="96420863-30d5-4e46-9b5f-9fb848ff7a7d" />
+      <File path="MPXone_Smoothlines_v.0.1.2.stlib" buildaction="Compile" libnodeid="8cf7e6a9-3230-4493-a805-7a6423fecb32" />
+      <File path="PID_ADV_v.2.0.0.stlib" buildaction="Compile" libnodeid="18d06065-9c39-4581-9951-4fe33116f2c4" />
+      <File path="ReportSlaveID_v.1.0.0.stlib" buildaction="Compile" libnodeid="b1ccf166-6e39-45cb-a958-5f4c5b37d6de" />
+      <File path="SignalGeneration_v.0.2.0.stlib" buildaction="Compile" libnodeid="6193c4f4-4d06-4dc4-b897-4e3eb679da48" />
+      <File path="SPV_Gateway_HPX_v.0.1.7.stlib" buildaction="Compile" libnodeid="fa82fa28-7b7d-4bc3-9b3b-3bfc7ea54c64" />
+      <File path="Thermodynamic_v.0.1.5.stlib" buildaction="Compile" libnodeid="a3f5f2e9-eee1-4bcd-b8d5-9d40e574f1a0" />
+    </Folder>
+    <Folder path="MpxProtocols">
+      <File path="Medium_BMS_VarsDeclaration.st" buildaction="Compile" />
+    </Folder>
+    <Folder path="Properties" />
+    <File path="Constants.st" buildaction="Compile" />
+    <File path="DisplayManager.st" buildaction="Compile" />
+    <File path="IO_Config.st" buildaction="Compile" />
+    <File path="LibVer.g.st" buildaction="Compile" />
+    <File path="Resources.st" buildaction="Compile" />
+    <File path="UserDefDataTypes_MPXoneCore.st" buildaction="Compile" />
+    <File path="Variables_MPXoneCore.st" buildaction="Compile" />
+  </Files>
+  <BuildOptions />
+  <Library Ver="1">
+    <Info Version="1.8.6" SourceCRC="0x3E4CA74C" ProjectCRC="0x14AE673D" ID="c9e2fb0a-068b-450b-8320-904052496d95" Name="MPXone_Medium_Core" Description="" Author="Carel Industries S.p.A." Vendor="Carel Industries S.p.A.">
+      <Dependency ID="c9e2fb0a-068b-450b-8320-904052496d95" Name="MPXone_Medium_Core" Version="1.8.6">
+        <Dependency ID="5bedcf80-bb6b-42c9-9f09-9ee3559363ce" Name="AcuRepeater" Version="0.1.3.B" />
+        <Dependency ID="1dfca8c5-e247-4b9a-8fbf-7f3ab0588e53" Name="Alarm_Mng" Version="1.1.4">
+          <Dependency ID="128737d8-0124-4e33-a04e-69ecb0759bb2" Name="GetTime" Version="0.1.8" />
+        </Dependency>
+        <Dependency ID="dd4d0390-1801-4d43-9d78-0e449a55bfd6" Name="Blackout" Version="1.0.0" />
+        <Dependency ID="e7b95dce-cbb1-4435-9f45-05fbca290cd9" Name="CntDwnSafT" Version="1.4.1">
+          <Dependency ID="128737d8-0124-4e33-a04e-69ecb0759bb2" Name="GetTime" Version="0.1.8" />
+          <Dependency ID="e98e4571-ae9c-4150-a9be-7748b904db9f" Name="Timer" Version="0.1.4">
+            <Dependency ID="128737d8-0124-4e33-a04e-69ecb0759bb2" Name="GetTime" Version="0.1.8" />
+          </Dependency>
+        </Dependency>
+        <Dependency ID="0456d062-9bca-42b0-a841-96b117e90751" Name="CustomGas" Version="0.1.1" />
+        <Dependency ID="7ee04768-b054-4d15-a1e8-f02dffc12327" Name="EbmpapstFan_Basic" Version="0.1.1" />
+        <Dependency ID="36d8c937-2a68-438b-8ad0-0f2c3256d81d" Name="EVD_Emb_Basic" Version="1.1.0" />
+        <Dependency ID="77ef5975-5a0c-4b1e-a5cd-d3d684dbc28b" Name="EvdMPX" Version="0.0.42.B">
+          <Dependency ID="36d8c937-2a68-438b-8ad0-0f2c3256d81d" Name="EVD_ACU" Version="1.0.1" />
+        </Dependency>
+        <Dependency ID="4ef13ce0-39e3-43f9-bfd2-2225e6288751" Name="Gas_GetCoeff" Version="1.0.0" />
+        <Dependency ID="3fc6c550-3db2-44a6-b1d4-b28f9cd4ffbc" Name="GenericFunctionMng" Version="0.2.1">
+          <Dependency ID="b5c1671d-978a-4d16-96c7-1e47beffea55" Name="Hysteresis" Version="0.1.7" />
+          <Dependency ID="dca09732-ad82-4c3a-a9e5-0ed725a9970a" Name="Math" Version="0.1.16">
+            <Dependency ID="128737d8-0124-4e33-a04e-69ecb0759bb2" Name="GetTime" Version="0.1.8" />
+          </Dependency>
+          <Dependency ID="a562ddfb-dd4d-40d0-b03b-dda16d4a6b21" Name="PID_ADV" Version="2.0.0">
+            <Dependency ID="128737d8-0124-4e33-a04e-69ecb0759bb2" Name="GetTime" Version="0.1.8" />
+            <Dependency ID="4ebca548-95ae-423e-bcf3-618f6fab6c13" Name="Logics" Version="0.1.4" />
+            <Dependency ID="dca09732-ad82-4c3a-a9e5-0ed725a9970a" Name="Math" Version="0.1.16">
+              <Dependency ID="128737d8-0124-4e33-a04e-69ecb0759bb2" Name="GetTime" Version="0.1.8" />
+            </Dependency>
+          </Dependency>
+        </Dependency>
+        <Dependency ID="b5c1671d-978a-4d16-96c7-1e47beffea55" Name="Hysteresis" Version="0.1.7" />
+        <Dependency ID="f68cc953-ab3f-468c-8c1e-d14149d89680" Name="IOMng_Basic" Version="2.0.12">
+          <Dependency ID="8ccb1973-8cd6-4ac6-a0bc-2eeadc6c95cb" Name="AinMng" Version="2.0.1">
+            <Dependency ID="128737d8-0124-4e33-a04e-69ecb0759bb2" Name="GetTime" Version="0.1.8" />
+            <Dependency ID="dca09732-ad82-4c3a-a9e5-0ed725a9970a" Name="Math" Version="0.1.16">
+              <Dependency ID="128737d8-0124-4e33-a04e-69ecb0759bb2" Name="GetTime" Version="0.1.8" />
+            </Dependency>
+          </Dependency>
+          <Dependency ID="128737d8-0124-4e33-a04e-69ecb0759bb2" Name="GetTime" Version="0.1.8" />
+          <Dependency ID="dca09732-ad82-4c3a-a9e5-0ed725a9970a" Name="Math" Version="0.1.16">
+            <Dependency ID="128737d8-0124-4e33-a04e-69ecb0759bb2" Name="GetTime" Version="0.1.8" />
+          </Dependency>
+        </Dependency>
+        <Dependency ID="4ebca548-95ae-423e-bcf3-618f6fab6c13" Name="Logics" Version="0.1.4" />
+        <Dependency ID="dca09732-ad82-4c3a-a9e5-0ed725a9970a" Name="Math" Version="0.1.16">
+          <Dependency ID="128737d8-0124-4e33-a04e-69ecb0759bb2" Name="GetTime" Version="0.1.8" />
+        </Dependency>
+        <Dependency ID="316dbf0a-e8b2-4cea-9047-e3e57f9efc95" Name="MPXone_Smoothlines" Version="0.1.2">
+          <Dependency ID="f0c09308-387e-446f-8f13-87ac2080cee4" Name="PID_Incr" Version="1.0.1" />
+        </Dependency>
+        <Dependency ID="a562ddfb-dd4d-40d0-b03b-dda16d4a6b21" Name="PID_ADV" Version="2.0.0">
+          <Dependency ID="128737d8-0124-4e33-a04e-69ecb0759bb2" Name="GetTime" Version="0.1.8" />
+          <Dependency ID="4ebca548-95ae-423e-bcf3-618f6fab6c13" Name="Logics" Version="0.1.4" />
+          <Dependency ID="dca09732-ad82-4c3a-a9e5-0ed725a9970a" Name="Math" Version="0.1.16">
+            <Dependency ID="128737d8-0124-4e33-a04e-69ecb0759bb2" Name="GetTime" Version="0.1.8" />
+          </Dependency>
+        </Dependency>
+        <Dependency ID="ebd43dde-40a2-4eff-a456-1294d5f207eb" Name="ReportSlaveID" Version="1.0.0" />
+        <Dependency ID="746371fa-0e06-41ed-9bab-8772dcfb98fa" Name="SignalGeneration" Version="0.2.0">
+          <Dependency ID="128737d8-0124-4e33-a04e-69ecb0759bb2" Name="GetTime" Version="0.1.8" />
+        </Dependency>
+        <Dependency ID="5837959b-c384-4552-b875-37edc3bab922" Name="SPV_Gateway_HPX" Version="0.1.7">
+          <Dependency ID="ebd43dde-40a2-4eff-a456-1294d5f207eb" Name="ReportSlaveID" Version="1.0.0" />
+        </Dependency>
+        <Dependency ID="1695cecb-5d02-409b-80c9-0268cd0a579b" Name="Thermodynamic" Version="0.1.5" />
+      </Dependency>
+    </Info>
+  </Library>
+  <Security Encoded="rwAAAMSxZFcPjdLAFwKZiypm4WEXL+FlR8cThZKs1A+MI2enS8ugOJ2L4Vn4UyYKCxFTuBw1K+bQQslgn6m1MgkvpHGHIfMqmvAH0EYZJeTvWi1FTJEaQEwYtGfxQCOISEpht812erV+BL/LpyQCVrntwQgLs0WT0XHluH3wuzZlLyLAdKu7Zea0LL4i+ife7JdwgUkyXQAPicr6gvlLF1kNtZu9aqqOlUuBV4JHcGfz9Gh8" />
+</SToneProject>

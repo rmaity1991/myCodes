@@ -4,11 +4,12 @@
 #define ISDIGIT(y) ( y >= 48 && y <= 57 )
 #define SQUARE(n) n * n 
 
-// Multiple Line Arguments and Macros
-#define HLINE for ( int i = 0 ; i < 79 ; i++ ) { \
 
-                   printf ( "%d", i ) ;  \
-                   }
+// Multiple Line Arguments and Macros
+#define HLINE for ( int i = 0 ; i < 79 ; i++ )  \
+                   {                            \
+                   printf ( "%d", i ) ;         \
+                   }                            \
 
 #define VLINE( X, Y ) { \
           gotoxy ( X, Y ) ; \
@@ -54,17 +55,16 @@ A more sophisticated use of #ifdef has to do with making the
 programs portable, i.e. to make them work on two totally
 different computers.
 */
-
  #ifdef INTEL
- code suitable for a Intel PC;
+ printf("code suitable for a Intel PC");
  #else
- code suitable for a Motorola PC;
+ printf("code suitable for a Motorola PC");
  #endif
 
  #ifndef INTEL
- code suitable for a Nokia PC
+ printf("code suitable for a Nokia PC");
  #else
- code suitable for a Motorola PC
+ printf("code suitable for a Motorola PC");
  #endif
 
 

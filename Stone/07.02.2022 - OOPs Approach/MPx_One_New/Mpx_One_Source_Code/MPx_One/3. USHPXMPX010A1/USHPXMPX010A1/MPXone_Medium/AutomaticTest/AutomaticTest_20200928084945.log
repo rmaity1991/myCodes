@@ -1,0 +1,100 @@
+Successful,Reference,SetDateAndTime,Main,TemperatureCtrl,29af13f7-4412-42a6-bd06-c754ef983c8c,,2020-09-28-08:49:46.517,2020-09-28-08:49:46.533
+Successful,Write,Set_RTC_DayTime,Set_RTC_DayTime,TemperatureCtrl,99b50ffa-d664-4ca4-b21e-40e7b4167aa1,,2020-09-28-08:49:46.533,2020-09-28-08:49:46.770
+Successful,Reference,RestoreSettings,Main,TemperatureCtrl,f4b3d39a-9038-44f4-b3ff-32683acff3df,,2020-09-28-08:49:47.372,2020-09-28-08:49:47.372
+Successful,Write,Set ResCarelSets,RestoreSettings,TemperatureCtrl,c6e5080f-9022-4d6d-9fa1-2c21670234b2,,2020-09-28-08:49:47.373,2020-09-28-08:49:47.442
+Successful,WaitUntil,Wait until step reset,RestoreSettings,TemperatureCtrl,16ccb933-bdbe-44a3-856c-eb9d034f8679,,2020-09-28-08:49:48.513,2020-09-28-08:49:48.597
+Successful,Reset,Reset step #3,RestoreSettings,TemperatureCtrl,3c3c89d2-68af-451a-b8d2-f6ee882092f9,,2020-09-28-08:49:49.199,2020-09-28-08:49:53.747
+Successful,WaitUntil,Wait restart,RestoreSettings,TemperatureCtrl,b7823b61-bc92-41cf-b294-87a8db818006,,2020-09-28-08:49:54.355,2020-09-28-08:50:04.685
+Successful,Write,Write WizDone,RestoreSettings,TemperatureCtrl,56384a82-9b66-48f1-89c1-3c25c48f4925,,2020-09-28-08:50:05.296,2020-09-28-08:50:05.373
+Successful,Wait,Wait step_7s,RestoreSettings,TemperatureCtrl,b7bc7aa7-cb39-43d8-9198-106e5d4c4e48,,2020-09-28-08:50:05.985,2020-09-28-08:50:12.996
+Successful,Reset,Reset step,RestoreSettings,TemperatureCtrl,785730ac-e36b-4079-b0c0-ec012dd04eb4,,2020-09-28-08:50:13.606,2020-09-28-08:50:17.306
+Successful,Write,EnableVirtual_IO,RestoreSettings,TemperatureCtrl,b17426ee-e523-4435-8fe5-7fe7d6f53a89,,2020-09-28-08:50:17.917,2020-09-28-08:50:18.522
+Successful,Wait,Wait step_1s,RestoreSettings,TemperatureCtrl,50963b48-ea13-4806-96f7-04a3077b256d,,2020-09-28-08:50:19.142,2020-09-28-08:50:20.152
+Successful,Write,Init I/O values,RestoreSettings,TemperatureCtrl,6ed15586-d6bb-4add-bac0-77af54a680c4,,2020-09-28-08:50:20.766,2020-09-28-08:50:21.514
+Successful,Reference,Switch on temperature control,Main,TemperatureCtrl,e201d7c0-6bdd-49a9-8e07-ceec65554ae3,,2020-09-28-08:50:22.123,2020-09-28-08:50:22.123
+Successful,Write,Writeset point,SwitchOn Temp.Control,TemperatureCtrl,1f92b40d-bdce-4641-92dc-150832c55ec7,,2020-09-28-08:50:22.123,2020-09-28-08:50:22.459
+Successful,WaitUntil,Wait until switch on,SwitchOn Temp.Control,TemperatureCtrl,3c704a08-c62f-4c44-981a-8f1c1b1b4512,,2020-09-28-08:50:23.064,2020-09-28-08:50:28.715
+Successful,Reference,Temp control cooling,Main,TemperatureCtrl,f181a088-d1e0-4fb3-bd18-8c2293cb79c9,,2020-09-28-08:50:29.324,2020-09-28-08:50:29.324
+Successful,Write,Write parameters,TempCtrl_Cooling,TemperatureCtrl,014eadb1-18bb-4aa5-ab5e-621e6b4426fb,,2020-09-28-08:50:29.324,2020-09-28-08:50:29.447
+Successful,WaitUntil,Wait until step #16,TempCtrl_Cooling,TemperatureCtrl,52ec4e22-a0df-428e-b235-0243ceb5d7e9,,2020-09-28-08:50:30.671,2020-09-28-08:50:37.297
+Successful,Import,Ramp Cooling,TempCtrl_Cooling,TemperatureCtrl,bb07d63f-74b8-4066-b8a9-cbd95b498292,,2020-09-28-08:50:30.063,2020-09-28-08:50:39.111
+Successful,WaitUntil,Wait until step Finish,TempCtrl_Cooling,TemperatureCtrl,3f7d4079-93c3-44a3-aaa1-2686d6405a3a,,2020-09-28-08:50:38.513,2020-09-28-08:50:46.403
+Successful,Import,Ramp heating,TempCtrl_Cooling,TemperatureCtrl,1d0af3c9-39fa-4985-9da5-a9951b6a03e2,,2020-09-28-08:50:37.902,2020-09-28-08:50:46.496
+Successful,Reference,Temp control heating,Main,TemperatureCtrl,2f36ccda-2e27-4cb1-90b1-afb2b36aec14,,2020-09-28-08:50:47.014,2020-09-28-08:50:47.015
+Successful,Write,Set reverse temp. control,TempCtrl_Heating,TemperatureCtrl,1df73364-aa85-4683-a8ec-e828883eac9c,,2020-09-28-08:50:47.015,2020-09-28-08:50:47.150
+Successful,WaitUntil,Wait until step #16,TempCtrl_Heating,TemperatureCtrl,c8e2a1a4-dd67-4814-ba4e-843a5c3eac58,,2020-09-28-08:50:48.370,2020-09-28-08:50:48.494
+Successful,Import,Ramp cooling,TempCtrl_Heating,TemperatureCtrl,f77f2d13-ae7a-422e-bd1a-745d8a8ce86a,,2020-09-28-08:50:47.764,2020-09-28-08:50:56.667
+Successful,WaitUntil,Wait until step #16,TempCtrl_Heating,TemperatureCtrl,3a5e92c2-815f-455b-9258-8d1dd37deabd,,2020-09-28-08:50:49.715,2020-09-28-08:50:56.885
+Successful,Reference,Weighted control,Main,TemperatureCtrl,bd45d9b2-15a8-4b72-96be-ff659f7ddf40,,2020-09-28-08:50:57.497,2020-09-28-08:50:57.497
+Successful,Write,Set parameters,Weighted control,TemperatureCtrl,ceee3f3b-efa3-417f-955d-5268c362b7fc,,2020-09-28-08:50:57.497,2020-09-28-08:50:57.817
+Successful,Wait,Wait step 1s,Weighted control,TemperatureCtrl,b7262f23-cb8c-46d5-a9b5-774b47b8bf8f,,2020-09-28-08:50:58.417,2020-09-28-08:51:03.417
+Successful,WaitUntil,Regulation must be ON,Weighted control,TemperatureCtrl,b2d393cb-6073-41ef-b0f3-c6298a750833,,2020-09-28-08:51:04.032,2020-09-28-08:51:04.300
+Successful,Import,Ramp heating,TempCtrl_Heating,TemperatureCtrl,b43f7b1e-2d7d-4de6-ab56-815a72734f6d,,2020-09-28-08:50:49.107,2020-09-28-08:51:04.810
+Successful,WaitUntil,Check ramp result,Weighted control,TemperatureCtrl,e536a073-cb33-45d6-b1af-674c2e274855,,2020-09-28-08:51:05.513,2020-09-28-08:51:20.286
+Successful,Import,Ramp cooling WCtrl,Weighted control,TemperatureCtrl,24b94f9d-95e3-4647-8f92-685e89a320e4,,2020-09-28-08:51:04.912,2020-09-28-08:51:21.032
+Successful,Wait,Wait step 1s,Weighted control,TemperatureCtrl,94e5fe17-84ea-4ceb-b8ec-d141471580dd,,2020-09-28-08:51:20.887,2020-09-28-08:51:21.902
+Successful,Write,Write step #5,Weighted control,TemperatureCtrl,125ebdad-3f2f-4cfb-9d1d-bebad7970988,,2020-09-28-08:51:22.514,2020-09-28-08:51:22.765
+Successful,Reference,Night time operation,Main,TemperatureCtrl,05b15b7e-e649-4c12-b4c8-e04730a038a8,,2020-09-28-08:51:23.377,2020-09-28-08:51:23.377
+Successful,Reference,RestoreSettings,Night-time operation,TemperatureCtrl,81781dda-cfc8-46ce-8833-39b43025afc3,,2020-09-28-08:51:23.377,2020-09-28-08:51:23.377
+Successful,Write,Set ResCarelSets,RestoreSettings,TemperatureCtrl,c6e5080f-9022-4d6d-9fa1-2c21670234b2,,2020-09-28-08:51:23.378,2020-09-28-08:51:23.405
+Successful,WaitUntil,Wait until step reset,RestoreSettings,TemperatureCtrl,16ccb933-bdbe-44a3-856c-eb9d034f8679,,2020-09-28-08:51:24.017,2020-09-28-08:51:24.093
+Successful,Reset,Reset step #3,RestoreSettings,TemperatureCtrl,3c3c89d2-68af-451a-b8d2-f6ee882092f9,,2020-09-28-08:51:24.701,2020-09-28-08:51:28.590
+Successful,WaitUntil,Wait restart,RestoreSettings,TemperatureCtrl,b7823b61-bc92-41cf-b294-87a8db818006,,2020-09-28-08:51:29.201,2020-09-28-08:51:39.435
+Successful,Write,Write WizDone,RestoreSettings,TemperatureCtrl,56384a82-9b66-48f1-89c1-3c25c48f4925,,2020-09-28-08:51:40.047,2020-09-28-08:51:40.075
+Successful,Wait,Wait step_7s,RestoreSettings,TemperatureCtrl,b7bc7aa7-cb39-43d8-9198-106e5d4c4e48,,2020-09-28-08:51:40.685,2020-09-28-08:51:47.685
+Successful,Reset,Reset step,RestoreSettings,TemperatureCtrl,785730ac-e36b-4079-b0c0-ec012dd04eb4,,2020-09-28-08:51:48.294,2020-09-28-08:51:51.976
+Successful,Write,EnableVirtual_IO,RestoreSettings,TemperatureCtrl,b17426ee-e523-4435-8fe5-7fe7d6f53a89,,2020-09-28-08:51:52.590,2020-09-28-08:51:53.193
+Successful,Wait,Wait step_1s,RestoreSettings,TemperatureCtrl,50963b48-ea13-4806-96f7-04a3077b256d,,2020-09-28-08:51:53.793,2020-09-28-08:51:54.794
+Successful,Write,Init I/O values,RestoreSettings,TemperatureCtrl,6ed15586-d6bb-4add-bac0-77af54a680c4,,2020-09-28-08:51:55.403,2020-09-28-08:51:56.185
+Successful,Write,Write step #1,Night-time operation,TemperatureCtrl,5c6a9a5d-4746-48b1-9fe8-ca0c183c7a21,,2020-09-28-08:51:56.792,2020-09-28-08:51:57.782
+Successful,Reference,DayTime,Night-time operation,TemperatureCtrl,cfd8016d-e812-4763-852f-a3dab23f4b74,,2020-09-28-08:51:58.392,2020-09-28-08:51:58.392
+Successful,Write,Set_RTC_DayTime,Set_RTC_DayTime,TemperatureCtrl,99b50ffa-d664-4ca4-b21e-40e7b4167aa1,,2020-09-28-08:51:58.392,2020-09-28-08:51:58.636
+Successful,Wait,Wait step 2s,Night-time operation,TemperatureCtrl,5de9f740-fb42-41dc-aea5-b78b92f9b60c,,2020-09-28-08:51:59.513,2020-09-28-08:52:01.513
+Successful,WaitUntil,Regulation must be ON,Night-time operation,TemperatureCtrl,aeab9d29-5386-49c8-94fb-1ac0acf99705,,2020-09-28-08:52:02.120,2020-09-28-08:52:02.959
+Successful,Reference,NightTime,Night-time operation,TemperatureCtrl,ed961168-adf4-4448-b6f7-282a64571c06,,2020-09-28-08:52:03.561,2020-09-28-08:52:03.561
+Successful,Write,Set_RTC_NightTime,Set_RTC_NightTime,TemperatureCtrl,4310420d-d02d-4a20-94ad-fc8ad9214a62,,2020-09-28-08:52:03.561,2020-09-28-08:52:03.633
+Successful,Wait,Wait step #4,Night-time operation,TemperatureCtrl,c2405377-2c0f-4fb5-833f-a30543ee3302,,2020-09-28-08:52:04.233,2020-09-28-08:54:04.249
+Successful,WaitUntil,Regulation must be OFF,Night-time operation,TemperatureCtrl,3053b988-e999-4270-9e68-bc243217cb15,,2020-09-28-08:54:04.859,2020-09-28-08:54:05.068
+Successful,Wait,Wait step 1s,Night-time operation,TemperatureCtrl,c283a788-e5fe-4e79-b160-91f0bfb08026,,2020-09-28-08:54:05.679,2020-09-28-08:54:06.686
+Successful,Write,Increase temperature,Night-time operation,TemperatureCtrl,c3d950cf-8a60-43bb-b051-033afd78f231,,2020-09-28-08:54:07.295,2020-09-28-08:54:07.435
+Successful,WaitUntil,Regulation must be ON,Night-time operation,TemperatureCtrl,3fd0d0b4-63c4-498b-9993-7967f964decd,,2020-09-28-08:54:08.045,2020-09-28-08:54:08.171
+Successful,Write,Change r6 to Sr,Night-time operation,TemperatureCtrl,65a07055-62e5-438d-84bc-e65d2983c449,,2020-09-28-08:54:08.784,2020-09-28-08:54:08.994
+Successful,WaitUntil,Regulartion must be OFF,Night-time operation,TemperatureCtrl,953ee6fe-c225-4297-a2b7-dd43c4de2836,,2020-09-28-08:54:09.596,2020-09-28-08:54:09.874
+Successful,Reference,Control offset with probe error,Main,TemperatureCtrl,68815def-900b-4c21-b688-9a71e39c1a7d,,2020-09-28-08:54:10.482,2020-09-28-08:54:10.482
+Successful,Reference,RestoreSettings,Control offset with probe error,TemperatureCtrl,43223081-6a61-4100-906e-69c0f9d76e05,,2020-09-28-08:54:10.483,2020-09-28-08:54:10.483
+Successful,Write,Set ResCarelSets,RestoreSettings,TemperatureCtrl,c6e5080f-9022-4d6d-9fa1-2c21670234b2,,2020-09-28-08:54:10.484,2020-09-28-08:54:10.508
+Successful,WaitUntil,Wait until step reset,RestoreSettings,TemperatureCtrl,16ccb933-bdbe-44a3-856c-eb9d034f8679,,2020-09-28-08:54:11.110,2020-09-28-08:54:11.132
+Successful,Reset,Reset step #3,RestoreSettings,TemperatureCtrl,3c3c89d2-68af-451a-b8d2-f6ee882092f9,,2020-09-28-08:54:11.740,2020-09-28-08:54:15.648
+Successful,WaitUntil,Wait restart,RestoreSettings,TemperatureCtrl,b7823b61-bc92-41cf-b294-87a8db818006,,2020-09-28-08:54:16.249,2020-09-28-08:54:26.479
+Successful,Write,Write WizDone,RestoreSettings,TemperatureCtrl,56384a82-9b66-48f1-89c1-3c25c48f4925,,2020-09-28-08:54:27.088,2020-09-28-08:54:27.167
+Successful,Wait,Wait step_7s,RestoreSettings,TemperatureCtrl,b7bc7aa7-cb39-43d8-9198-106e5d4c4e48,,2020-09-28-08:54:27.768,2020-09-28-08:54:34.782
+Successful,Reset,Reset step,RestoreSettings,TemperatureCtrl,785730ac-e36b-4079-b0c0-ec012dd04eb4,,2020-09-28-08:54:35.394,2020-09-28-08:54:39.200
+Successful,Write,EnableVirtual_IO,RestoreSettings,TemperatureCtrl,b17426ee-e523-4435-8fe5-7fe7d6f53a89,,2020-09-28-08:54:39.800,2020-09-28-08:54:40.400
+Successful,Wait,Wait step_1s,RestoreSettings,TemperatureCtrl,50963b48-ea13-4806-96f7-04a3077b256d,,2020-09-28-08:54:41.002,2020-09-28-08:54:42.016
+Successful,Write,Init I/O values,RestoreSettings,TemperatureCtrl,6ed15586-d6bb-4add-bac0-77af54a680c4,,2020-09-28-08:54:42.628,2020-09-28-08:54:43.403
+Successful,Write,Set paramters,Control offset with probe error,TemperatureCtrl,522b4ef1-ed73-445f-babd-8b01840acdc1,,2020-09-28-08:54:44.016,2020-09-28-08:54:44.697
+Successful,WaitUntil,Wait until step #3,Control offset with probe error,TemperatureCtrl,70d6ac58-6c3d-4343-909b-042f810c7268,,2020-09-28-08:54:45.313,2020-09-28-08:54:50.137
+Successful,Write,Sm error,Control offset with probe error,TemperatureCtrl,c9ab2cb8-2dc2-4b52-87d9-a424a2e984dd,,2020-09-28-08:54:50.751,2020-09-28-08:54:50.800
+Successful,Wait,Wait step #5,Control offset with probe error,TemperatureCtrl,ec970ac2-e014-4ef8-83c3-d75d7fb1d1fb,,2020-09-28-08:54:51.406,2020-09-28-08:54:56.408
+Successful,WaitUntil,Wait until step #6,Control offset with probe error,TemperatureCtrl,0b143711-4f95-42c2-8083-5d9566ca2671,,2020-09-28-08:54:57.017,2020-09-28-08:54:57.305
+Successful,Write,Write step #7,Control offset with probe error,TemperatureCtrl,a4627a74-7a75-49bd-8aba-b35e803351e2,,2020-09-28-08:54:57.910,2020-09-28-08:54:57.968
+Successful,WaitUntil,Wait until [10s],Control offset with probe error,TemperatureCtrl,0d5fed26-f96b-47a9-8183-872f13e8b3a9,,2020-09-28-08:54:58.579,2020-09-28-08:54:58.711
+Successful,Write,Write step #9,Control offset with probe error,TemperatureCtrl,9e4ea856-d8f3-42c6-8847-b2c04294dfc0,,2020-09-28-08:54:59.323,2020-09-28-08:54:59.438
+Successful,WaitUntil,Wait until [15s],Control offset with probe error,TemperatureCtrl,8d3fdb01-d7d7-46da-a022-5e5c7b494f64,,2020-09-28-08:55:00.050,2020-09-28-08:55:00.207
+Successful,Write,Sr error,Control offset with probe error,TemperatureCtrl,721320ea-36b4-4818-bfed-6bdbebfe582d,,2020-09-28-08:55:00.817,2020-09-28-08:55:00.908
+Successful,Wait,Wait step 5s,Control offset with probe error,TemperatureCtrl,f255ea4f-421a-4a43-b318-b2ddc7c86184,,2020-09-28-08:55:01.521,2020-09-28-08:55:06.533
+Successful,WaitUntil,Wait until [15s],Control offset with probe error,TemperatureCtrl,a9242835-0356-47c3-a6dd-8a77d7dfc60f,,2020-09-28-08:55:07.142,2020-09-28-08:55:07.404
+Successful,Write,Write step #16,Control offset with probe error,TemperatureCtrl,56e94a9a-5d83-4654-9d63-91ff8fc5fd57,,2020-09-28-08:55:08.018,2020-09-28-08:55:08.054
+Successful,WaitUntil,Wait until [15s],Control offset with probe error,TemperatureCtrl,2503ac39-f44b-4bad-872e-3e70ac719185,,2020-09-28-08:55:08.659,2020-09-28-08:55:08.838
+Successful,Write,Write step #15,Control offset with probe error,TemperatureCtrl,055bf390-dc13-4a6f-92bd-dac83d2030e7,,2020-09-28-08:55:09.452,2020-09-28-08:55:09.489
+Successful,WaitUntil,Wait until [15s],Control offset with probe error,TemperatureCtrl,9f2582d5-0329-430d-baf9-dd8a41665fdb,,2020-09-28-08:55:10.099,2020-09-28-08:55:10.448
+Successful,Reference,Duty settings OFF,Main,TemperatureCtrl,5f623560-bc0d-4611-a316-84ec590e7d9a,,2020-09-28-08:55:11.050,2020-09-28-08:55:11.050
+Successful,Write,Set c4 - always OFF,Duty setting - OFF,TemperatureCtrl,fd248946-2f64-4b98-ad03-6836e73cd32e,,2020-09-28-08:55:11.050,2020-09-28-08:55:11.245
+Successful,Wait,Wait step #2,Duty setting - OFF,TemperatureCtrl,c986c71b-c038-476e-9c75-3924bc9c92aa,,2020-09-28-08:55:11.846,2020-09-28-08:55:12.848
+Successful,WaitUntil,Wait until step #7,Duty setting - OFF,TemperatureCtrl,60d65a19-f646-45f9-8f46-52f515b48acf,,2020-09-28-08:55:13.456,2020-09-28-08:55:13.757
+Successful,Write,Write step #3,Duty setting - OFF,TemperatureCtrl,4393c70d-3a47-4c08-982d-d6f3a53e07bb,,2020-09-28-08:55:14.363,2020-09-28-08:55:14.437
+Successful,WaitUntil,Wait until step #4,Duty setting - OFF,TemperatureCtrl,b0f4229a-9074-4a9e-a828-0fb7662048c8,,2020-09-28-08:55:15.050,2020-09-28-08:55:15.121
+Successful,Wait,Wait step #5,Duty setting - OFF,TemperatureCtrl,e67a7cc7-6915-4bcf-b49c-67f9241184d8,,2020-09-28-08:55:15.722,2020-09-28-08:55:25.723
+Successful,Check,Check step #6,Duty setting - OFF,TemperatureCtrl,79432da7-0866-4d8a-adc0-67f7ef32b824,,2020-09-28-08:55:26.332,2020-09-28-08:55:26.593
+Successful,Write,Write step #8,Duty setting - OFF,TemperatureCtrl,d0feb25e-c21c-4445-89fb-cc4c152bcb83,,2020-09-28-08:55:27.207,2020-09-28-08:55:27.386
+Failed,WaitUntil,Wait until step #9,Duty setting - OFF,TemperatureCtrl,dfab76f8-f43c-4b1b-a38a-e804bd432b14,Variable 'NO[1]' has value 'FALSE' (expected Equal to/than 'FALSE' '+/-0');Variable 'NO[2]' has value 'TRUE' (expected Equal to/than 'FALSE' '+/-0');Variable 'NO[3]' has value 'TRUE' (expected Equal to/than 'FALSE' '+/-0');Variable 'NO[4]' has value 'TRUE' (expected Equal to/than 'TRUE' '+/-0');Variable 'Alarms.Al.Al_PrbBroken[1].info.active' has value 'FALSE' (expected Equal to/than 'FALSE' '+/-0');Variable 'Alarms.Al.Al_PrbBroken[3].info.active' has value 'FALSE' (expected Equal to/than 'FALSE' '+/-0');,2020-09-28-08:55:27.987,2020-09-28-08:55:31.038

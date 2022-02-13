@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BaseMaskData p1:type="MaskData" ID="499" Name="rtc_Month" Version="3.0" xmlns:p1="http://www.w3.org/2001/XMLSchema-instance">
+  <MaskElements>
+    <CompactField ID="541" Name="CompactField541" Row="0" Column="1" Domain="USINT" Selectable="TRUE" FormatString="III" Description="M_" VariableName="SPV_Month" Min="1" Max="12" />
+  </MaskElements>
+</BaseMaskData>

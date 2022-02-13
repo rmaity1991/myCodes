@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BaseMaskData p1:type="MaskData" ID="440" Name="Dir_Defrost" Version="3.0" EnableOn="NOT MstVlvConfig OR VlvPresent" xmlns:p1="http://www.w3.org/2001/XMLSchema-instance">
+  <Actions>
+    <Action KeyName="KEY_PRG" FileName="Dir_DefrostPRG.st" FunctionName="Dir_DefrostPRG" Call="Dir_DefrostPRG(keyPressed, keyCounter);" Type="Single" />
+  </Actions>
+  <MaskElements>
+    <TextField ID="467" Name="TextField467" Row="0" Column="0" TextValue="Def" />
+  </MaskElements>
+</BaseMaskData>

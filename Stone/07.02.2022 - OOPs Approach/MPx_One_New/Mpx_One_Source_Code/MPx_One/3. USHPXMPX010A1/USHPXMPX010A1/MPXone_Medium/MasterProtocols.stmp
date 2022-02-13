@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MasterProtocolConfigurator
+  version="1.1">
+  <GlobalSettings />
+  <Templates />
+  <Configurations>
+    <Configuration
+      Name="Fieldbus"
+      ConfigurationTask="__CONFIGURATION__"
+      ResourceTask="__RESOURCE__"
+      Guid="439b1c8cef2f48e9964a75aa7d1cc95d">
+      <MasterSettings
+        COMPort="FBUS1"
+        Zone="0" />
+      <Devices>
+        <Device
+          Path="EvdMpxReg.MBM_TMPL_EVD_MPX_1"
+          Template="13017eb7-f8d1-4013-8c78-6d75057a330f|Libs.EvdMPX_v0_0_42_B">
+          <Settings
+            Ident="99"
+            Enabled="false"
+            Timeout="750"
+            DetectionTimeout="750"
+            CommandDelay="4" />
+        </Device>
+        <Device
+          Path="Ebmpapst_ESM.MBM_Template_EBM"
+          Template="5cf77d19-8275-46ed-8bc2-4bad864d9044|Libs.EbmpapstFan_Basic_v0_1_1">
+          <Settings
+            Enabled="false"
+            Timeout="500"
+            DetectionTimeout="500"
+            CommandDelay="5" />
+        </Device>
+        <Device
+          Path="mpxRepeater.RPT_TMPL_Run"
+          Template="f4580f35-1369-4243-9943-0e94b609b6a1|Libs.AcuRepeater_v0_1_3_B">
+          <Settings
+            Ident="11"
+            Enabled="false" />
+        </Device>
+      </Devices>
+    </Configuration>
+  </Configurations>
+  <Devices>
+    <Device
+      Path="Slaves[1]"
+      Template="ee53f55b-b7e8-43eb-abf8-5a5323feac6c|Libs.SPV_Gateway_HPX_v0_1_7">
+      <Settings />
+    </Device>
+    <Device
+      Path="Slaves[2]"
+      Template="ee53f55b-b7e8-43eb-abf8-5a5323feac6c|Libs.SPV_Gateway_HPX_v0_1_7">
+      <Settings />
+    </Device>
+    <Device
+      Path="Slaves[3]"
+      Template="ee53f55b-b7e8-43eb-abf8-5a5323feac6c|Libs.SPV_Gateway_HPX_v0_1_7">
+      <Settings />
+    </Device>
+    <Device
+      Path="Slaves[4]"
+      Template="ee53f55b-b7e8-43eb-abf8-5a5323feac6c|Libs.SPV_Gateway_HPX_v0_1_7">
+      <Settings />
+    </Device>
+    <Device
+      Path="Slaves[5]"
+      Template="ee53f55b-b7e8-43eb-abf8-5a5323feac6c|Libs.SPV_Gateway_HPX_v0_1_7">
+      <Settings />
+    </Device>
+    <Device
+      Path="Slaves[6]"
+      Template="ee53f55b-b7e8-43eb-abf8-5a5323feac6c|Libs.SPV_Gateway_HPX_v0_1_7">
+      <Settings />
+    </Device>
+    <Device
+      Path="Slaves[7]"
+      Template="ee53f55b-b7e8-43eb-abf8-5a5323feac6c|Libs.SPV_Gateway_HPX_v0_1_7">
+      <Settings />
+    </Device>
+    <Device
+      Path="Slaves[8]"
+      Template="ee53f55b-b7e8-43eb-abf8-5a5323feac6c|Libs.SPV_Gateway_HPX_v0_1_7">
+      <Settings />
+    </Device>
+    <Device
+      Path="Slaves[9]"
+      Template="ee53f55b-b7e8-43eb-abf8-5a5323feac6c|Libs.SPV_Gateway_HPX_v0_1_7">
+      <Settings />
+    </Device>
+  </Devices>
+</MasterProtocolConfigurator>
