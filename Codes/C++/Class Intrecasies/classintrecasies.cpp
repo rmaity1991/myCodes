@@ -8,7 +8,8 @@ struct Employee{
     float salary;
 };
 /*
-Dynamic Aloocation of objects has one additional aspect to it as compared to dynamic allocation of built in types and arrays.
+Dynamic Aloocation of objects has one additional aspect to it as compared to dynamic allocation of built in types and 
+arrays.
 When objects are created dynamically using new keyword. 
 1) It allocates storage of proper size to the object
 2) Runs the constructor function

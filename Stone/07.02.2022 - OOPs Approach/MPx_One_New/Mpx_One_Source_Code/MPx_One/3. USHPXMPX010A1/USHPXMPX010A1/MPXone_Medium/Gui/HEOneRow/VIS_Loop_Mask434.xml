@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BaseMaskData p1:type="MaskData" ID="434" Name="VIS_Svt" Version="3.0" EnableOn="Ain_Cfg.Arr[11].Ch &lt;&gt; 0" StartingField="461" xmlns:p1="http://www.w3.org/2001/XMLSchema-instance">
+  <MaskElements>
+    <TextWidget ID="461" Name="TextWidget461" Row="0" Column="0" Selectable="FALSE" ClassName="ReadOnlyWidget">
+      <Members>
+        <Member Name="Acronim" Value="'Svt'" />
+        <Member Name="ValIndex" Value="11" />
+      </Members>
+    </TextWidget>
+  </MaskElements>
+</BaseMaskData>

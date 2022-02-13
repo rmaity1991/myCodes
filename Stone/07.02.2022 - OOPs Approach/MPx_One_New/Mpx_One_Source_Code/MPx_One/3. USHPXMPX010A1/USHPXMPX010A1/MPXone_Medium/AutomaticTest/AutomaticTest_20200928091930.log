@@ -1,0 +1,15 @@
+Successful,Reference,Setup,Main,Regulation,4150581d-648d-4e37-bdea-44ad9d0bff1d,,2020-09-28-09:19:30.317,2020-09-28-09:19:30.321
+Successful,Write,Inhibit sysbreak,Setup,Regulation,80f30680-6b66-43d3-a675-6067a9ceba47,,2020-09-28-09:19:30.321,2020-09-28-09:19:30.365
+Successful,Write,Restore Carel defaults,Setup,Regulation,8f507d60-f7a9-4f94-b4d1-0914be8e17d3,,2020-09-28-09:19:30.966,2020-09-28-09:19:30.990
+Successful,Wait,Wait some time,Setup,Regulation,ea340053-7381-4415-aa0b-665d444724d5,,2020-09-28-09:19:31.591,2020-09-28-09:19:36.592
+Successful,Write,End wizard,Setup,Regulation,5ccca479-9eba-4afe-9c9a-461131b41b2e,,2020-09-28-09:19:37.203,2020-09-28-09:19:37.309
+Successful,Write,Virtualize I/O,Setup,Regulation,34fa95b8-c7ee-4fbd-9349-14c43cc5619f,,2020-09-28-09:19:37.921,2020-09-28-09:19:38.252
+Successful,Write,Ensure unit is off,Setup,Regulation,eeed3e34-c8cc-43bc-a55c-402d02f3a14f,,2020-09-28-09:19:38.863,2020-09-28-09:19:39.004
+Successful,Reference,Main regulation,Main,Regulation,582898c3-c508-4c8c-9285-a9e16265bab8,,2020-09-28-09:19:39.609,2020-09-28-09:19:39.609
+Successful,Write,Preset,Main regulation,Regulation,f9335c70-8256-4d21-8e6a-cf599f9274be,,2020-09-28-09:19:39.609,2020-09-28-09:19:40.070
+Successful,Write,Switch on unit,Main regulation,Regulation,ec626de0-5d5c-4a30-8c50-07dfd1607d2e,,2020-09-28-09:19:40.671,2020-09-28-09:19:40.710
+Successful,Check,Regulation must be off,Main regulation,Regulation,21f8758c-7d4d-45d1-a1e2-4e7b7d0935cb,,2020-09-28-09:19:41.310,2020-09-28-09:19:41.334
+Successful,Write,Temperature increases,Main regulation,Regulation,d0bee271-43ae-4217-9ad5-f7ae5427a9e9,,2020-09-28-09:19:41.949,2020-09-28-09:19:42.088
+Successful,Check,Regulation must be off,Main regulation,Regulation,c60cf3e2-f3fe-4d0e-9b07-fc18aaf07f54,,2020-09-28-09:19:42.688,2020-09-28-09:19:42.713
+Successful,Write,Temperature increases,Main regulation,Regulation,3872558c-6675-4e55-a70b-445c9f55f4a3,,2020-09-28-09:19:43.326,2020-09-28-09:19:43.572
+Failed,Check,Regulation must be on,Main regulation,Regulation,eaa77145-0f9a-4535-8629-c2c8b13c8145,Variable 'CompOn' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-28-09:19:44.172,2020-09-28-09:19:44.196

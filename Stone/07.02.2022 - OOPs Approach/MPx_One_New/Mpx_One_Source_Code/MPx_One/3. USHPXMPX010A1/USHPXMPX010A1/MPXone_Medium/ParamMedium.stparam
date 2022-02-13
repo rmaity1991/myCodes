@@ -1,0 +1,783 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ParametersConfiguration>
+  <Parameters>
+    <Parameter Description="BMS config.(stop bit and parity)&#xD;&#xA;0 = stop bit 1, parity none&#xD;&#xA;1 = stop bit 2, parity none&#xD;&#xA;2 = stop bit 1, parity even&#xD;&#xA;3 = stop bit 2, parity even&#xD;&#xA;4 = stop bit 1, parity odd&#xD;&#xA;5 = stop bit 2, parity odd" InitValue="1" Name="BMS_Conf" Persistence="Persistent" Acronym="H1" Attributes="None" />
+    <Parameter Description="BMS baudrate (bit/s)&#xD;&#xA;0 = 1200&#xD;&#xA;1 = 2400&#xD;&#xA;2 = 4800&#xD;&#xA;3 = 9600&#xD;&#xA;4 = 19200&#xD;&#xA;5 = 38400&#xD;&#xA;6 = 57600&#xD;&#xA;7 = 115200" InitValue="7" Name="BMS_Baud" Persistence="Persistent" Acronym="H2" Attributes="None" />
+    <Parameter Description="BMS network address" InitValue="199" Name="BMS_Addr" Persistence="Persistent" Acronym="H0" Attributes="None" />
+    <Parameter Description="Delay enable comp. and evap. fans on power-up" InitValue="0" Name="CompFanDelay" Persistence="Persistent" Acronym="c0" Attributes="None" />
+    <Parameter Description="Number of daily defrosts (td1)&#xD;&#xA;0 = Dis.&#xD;&#xA;1 = 24 h 0 min&#xD;&#xA;2 = 12 h 0 min&#xD;&#xA;3 = 8 h 0 min&#xD;&#xA;4 = 6 h 0 min&#xD;&#xA;5 = 4 h 48 min&#xD;&#xA;6 = 4 h 0 min&#xD;&#xA;7 = 3 h 26 min&#xD;&#xA;8 = 3 h 0 min&#xD;&#xA;9 = 2 h 40 min&#xD;&#xA;10 = 2 h 24 min&#xD;&#xA;11 = 2 h 11 min&#xD;&#xA;12 = 2 h 0 min&#xD;&#xA;13 = 1 h 0 min&#xD;&#xA;14 = 30 min" InitValue="0" Name="DailyDfrNum" Persistence="Persistent" Acronym="d1S" Attributes="None" />
+    <Parameter Description="Number of daily defrosts (td2)&#xD;&#xA;0 = Dis.&#xD;&#xA;1 = 24 h 0 min&#xD;&#xA;2 = 12 h 0 min&#xD;&#xA;3 = 8 h 0 min&#xD;&#xA;4 = 6 h 0 min&#xD;&#xA;5 = 4 h 48 min&#xD;&#xA;6 = 4 h 0 min&#xD;&#xA;7 = 3 h 26 min&#xD;&#xA;8 = 3 h 0 min&#xD;&#xA;9 = 2 h 40 min&#xD;&#xA;10 = 2 h 24 min&#xD;&#xA;11 = 2 h 11 min&#xD;&#xA;12 = 2 h 0 min&#xD;&#xA;13 = 1 h 0 min&#xD;&#xA;14 = 30 min" InitValue="0" Name="DailyDfrNum2" Persistence="Persistent" Acronym="d2S" Attributes="None" />
+    <Parameter Description="Output switched with time bands&#xD;&#xA;FALSE = Light&#xD;&#xA;TRUE = AUX" InitValue="FALSE" Name="DayNightOutput" Persistence="Persistent" Acronym="H9" Attributes="None" />
+    <Parameter Description="End defrost temp.(read by Sd2)" InitValue="8" Name="DfrEnd2Temp" Persistence="Persistent" Acronym="dt2" Attributes="None" />
+    <Parameter Description="End defrost temp.(read by Sd)" InitValue="8" Name="DfrEndTemp" Persistence="Persistent" Acronym="dt1" Attributes="None" />
+    <Parameter Description="Evap. fans during defrost&#xD;&#xA;FALSE = on&#xD;&#xA;TRUE= off" InitValue="TRUE" Name="DfrFanCfg" Persistence="Persistent" Acronym="F3" Attributes="None" />
+    <Parameter Description="Max interval between consecutive defrost" InitValue="8" Name="DfrInterval" Persistence="Persistent" Acronym="dI" Attributes="None" />
+    <Parameter Description="Max defrost duration" InitValue="45" Name="DfrMaxDuration" Persistence="Persistent" Acronym="dP1" Attributes="None" />
+    <Parameter Description="Pump down phase duration&#xD;&#xA;0 = pump down disabled" InitValue="0" Name="DfrPmpDwnDuration" Persistence="Persistent" Acronym="dH1" Attributes="None" />
+    <Parameter Description="Type of defrost&#xD;&#xA;0 = heater by temp.&#xD;&#xA;1 = Hot Gas by temp&#xD;&#xA;2 = heater by time&#xD;&#xA;3 = Hot Gas by time&#xD;&#xA;4 = heater by time with temp. control" InitValue="0" Name="DfrType" Persistence="Persistent" Acronym="d0" Attributes="None" />
+    <Parameter Description="Valve pos. during defrost:&#xD;&#xA;0: valve positioned as defined by the type of defrost selected&#xD;&#xA;1: valve forced closed&#xD;&#xA;2 - 100: opening perc." InitValue="0" Name="DfrVlvPos" Persistence="Persistent" Acronym="dSb" Attributes="None" />
+    <Parameter Description="NFC management&#xD;&#xA;FALSE = disabled&#xD;&#xA;TRUE = enabled " Name="EnNfc" Persistence="Persistent" Acronym="H5" Attributes="None" />
+    <Parameter Description="Smooth Lines - Enable function" Name="EnSmoothLine" Persistence="Persistent" Acronym="PSM" Attributes="None" />
+    <Parameter Description="Holding time valve initial position after defrost" InitValue="10" Name="ExvDelayDfr" Persistence="Persistent" Acronym="Pdd" Attributes="None" />
+    <Parameter Description="Proportional gain for SH regulation" InitValue="15" Name="ExvKp" Persistence="Persistent" Acronym="P4" Attributes="None" />
+    <Parameter Description="Derivative time for SH regulation&#xD;&#xA;0 = disabled" InitValue="5" Name="ExvTd" Persistence="Persistent" Acronym="P6" Attributes="None" />
+    <Parameter Description="Integral time for SH regulation&#xD;&#xA;0 = function disabled" InitValue="150" Name="ExvTi" Persistence="Persistent" Acronym="P5" Attributes="None" />
+    <Parameter InitValue="FALSE" Name="LightsOn" Acronym="Lht" Attributes="None" />
+    <Parameter Description="LOP: alarm delay&#xD;&#xA;0 = function disabled" InitValue="0" Name="LOP_AlrmDelay" Persistence="Persistent" Acronym="PL3" Attributes="None" />
+    <Parameter Description="LOP: min saturated evap. temp. threshold" InitValue="-50" Name="LOP_Thrsh" Persistence="Persistent" Acronym="PL1" Attributes="None" />
+    <Parameter InitValue="0" Name="LOP_Ti" Persistence="Persistent" Acronym="PL2" Attributes="None" />
+    <Parameter Description="LowSH: alarm delay&#xD;&#xA;0 = alarm disabled" InitValue="600" Name="LowSH_AlrmDelay" Persistence="Persistent" Acronym="P9" Attributes="None" />
+    <Parameter Description="LowSH: integration time&#xD;&#xA;0 = disabled" InitValue="15" Name="LowSH_Ti" Persistence="Persistent" Acronym="P8" Attributes="None" />
+    <Parameter Description="LSA: alarm delay&#xD;&#xA;0 = alarm disabled" InitValue="600" Name="LowSuctAlrmDelay" Persistence="Persistent" Acronym="P12" Attributes="None" />
+    <Parameter Description="LSA: low suction temp. threshold" InitValue="-45" Name="LowSuctThrsh" Persistence="Persistent" Acronym="P11" Attributes="None" />
+    <Parameter Description="Timer duration (timed input)" InitValue="0" Name="TimerDelay" Persistence="Persistent" Acronym="dIt" Attributes="None" />
+    <Parameter Description="Unit status&#xD;&#xA;0 : Unit On,&#xD;&#xA;1 : Off By Alarm,&#xD;&#xA;2 : Off By Supervisor,&#xD;&#xA;3 : Off By Time Band,&#xD;&#xA;4 : Off By Digital Input,&#xD;&#xA;5 : Off By Keyboard,&#xD;&#xA;6 : Standby,&#xD;&#xA;7 : Clean,&#xD;&#xA;8 : Door Open,&#xD;&#xA;9 : Duty Settings,&#xD;&#xA;10 : Continuos Cycle,&#xD;&#xA;11 : Defrost;" InitValue="FALSE" Name="UnitStatus" ReadOnly="true" Acronym="Sts" Attributes="None" />
+    <Parameter Description="Max time for Standby status" InitValue="0" Name="StbyTout" Persistence="Persistent" Acronym="Stt" Attributes="None" />
+    <Parameter Description="Initial valve position when control starts" InitValue="30" Name="StartEEVOpenRatio" Persistence="Persistent" Acronym="cP1" Attributes="None" />
+    <Parameter Description="Smooth Lines - Control integral time" InitValue="150" Name="SmLineTi" Persistence="Persistent" Acronym="PSI" Attributes="None" />
+    <Parameter Description="Smooth Lines - Control derivative time" InitValue="0" Name="SmLineTd" Persistence="Persistent" Acronym="PSd" Attributes="None" />
+    <Parameter Description="Smooth Lines - Max SH off set" InitValue="15" Name="SmLineSHOffset" Persistence="Persistent" Acronym="PHS" Attributes="None" />
+    <Parameter Description="Smooth Lines - Control prop. coefficient" InitValue="5" Name="SmLineKp" Persistence="Persistent" Acronym="PSP" Attributes="None" />
+    <Parameter Description="Type of refrigerant&#xD;&#xA;0 = Gas custom&#xD;&#xA;1 = R22&#xD;&#xA;2 = R134a&#xD;&#xA;3 = R404A&#xD;&#xA;4 = R407C&#xD;&#xA;5 =  R410A&#xD;&#xA;6 = R507A&#xD;&#xA;7 = R290&#xD;&#xA;8 = R600&#xD;&#xA;9 = R600a&#xD;&#xA;10 = R717&#xD;&#xA;11 = R744&#xD;&#xA;12 = R728&#xD;&#xA;13 = R1270&#xD;&#xA;14 = R417A&#xD;&#xA;15 = R422D&#xD;&#xA;16 = R413A&#xD;&#xA;17 = R422A&#xD;&#xA;18 = R423A&#xD;&#xA;19 = R407A&#xD;&#xA;20 = R427A&#xD;&#xA;21 = R245Fa&#xD;&#xA;22 = R407F&#xD;&#xA;23 = R32&#xD;&#xA;24 = HTR01&#xD;&#xA;25 = HTR02&#xD;&#xA;26 = R23&#xD;&#xA;27 = HFO1234yf&#xD;&#xA;28 = HFO1234ze&#xD;&#xA;29 = R455A&#xD;&#xA;30 = R170&#xD;&#xA;31 = R442A&#xD;&#xA;32 = R447A&#xD;&#xA;33 = R448A&#xD;&#xA;34 = R449A&#xD;&#xA;35 = R450A&#xD;&#xA;36 = R452A&#xD;&#xA;37 = R508B&#xD;&#xA;38 = R452B&#xD;&#xA;39 = R513A&#xD;&#xA;40 = R454B&#xD;&#xA;41 = R458A" InitValue="3" Name="RfrgTyp" Persistence="Persistent" Acronym="PH" Attributes="None" />
+    <Parameter Description="Evap. fans with comp. off&#xD;&#xA;FALSE = see F0&#xD;&#xA;TRUE = always off" InitValue="TRUE" Name="RegFanConfig" Persistence="Persistent" Acronym="F2" Attributes="None" />
+    <Parameter InitValue="4" Name="AinStability" Persistence="Persistent" Acronym="/2" Attributes="None" />
+    <Parameter Description="Control off set with probe error" InitValue="0" Name="PrbErrorOffset" Persistence="Persistent" Acronym="ro" Attributes="None" />
+    <Parameter Description="Post dripping time after defrost (fans off with control active)" InitValue="2" Name="PostDripTime" Persistence="Persistent" Acronym="Fd" Attributes="None" />
+    <Parameter Description="Min temp. setpoint" InitValue="-50" MinValue="-50" MaxValue="r2" Name="MinTempSet" Persistence="Persistent" Acronym="r1" Attributes="None" />
+    <Parameter Description="Max temp setpoint" InitValue="50" MinValue="r1" MaxValue="200" Name="MaxTempSet" Persistence="Persistent" Acronym="r2" Attributes="None" />
+    <Parameter Description="Set point differential (St)" InitValue="2" Name="TempDiff" Persistence="Persistent" Acronym="rd" Attributes="None" />
+    <Parameter Description="Set point differential (St2) with Double thermostat&#xD;&#xA;0 = disabled" InitValue="0" Name="TempDiff2" Persistence="Persistent" Acronym="rd2" Attributes="None" />
+    <Parameter Description="Actual SH setpoint with applied offsets" Name="ActualShSetp" ReadOnly="true" Acronym="wSH" Attributes="None" />
+    <Parameter Name="AlrmRes" Acronym="res" Attributes="None" />
+    <Parameter Description="MOP: max suction temp threshold used to stop MOP due to possible compressor overheating with reduced refrigerant flow" InitValue="50" Name="MOP_SuctTempThrsh" Persistence="Persistent" Acronym="PM6" Attributes="None" />
+    <Parameter Description="Smooth Lines - Off set to stop control below set point" InitValue="2" Name="SmLineTempOffset" Persistence="Persistent" Acronym="PLt" Attributes="None" />
+    <Parameter Name="Pwd_User" Persistence="Persistent" Acronym="PDU" Attributes="None" />
+    <Parameter Name="Pwd_Service" Persistence="Persistent" Acronym="PDS" Attributes="None" />
+    <Parameter Name="Pwd_Manuf" Persistence="Persistent" Acronym="PDM" Attributes="None" />
+    <Parameter Description="Defrost 1 - Day&#xD;&#xA;0 = Dis.&#xD;&#xA;1 = Mon&#xD;&#xA;2 = Tue&#xD;&#xA;3 = Wed&#xD;&#xA;4 = Thu&#xD;&#xA;5 = Fri&#xD;&#xA;6 = Sat&#xD;&#xA;7 = Sun&#xD;&#xA;8 = Mon to Fri&#xD;&#xA;9 = Mon to Sat&#xD;&#xA;10 = Sat and Sun&#xD;&#xA;11 = All days" Name="DfrStart[1].Day" Persistence="Persistent" Acronym="td1-d" Attributes="None" />
+    <Parameter Description="Defrost 2 -Day&#xD;&#xA;0 = Dis.&#xD;&#xA;1 = Mon&#xD;&#xA;2 = Tue&#xD;&#xA;3 = Wed&#xD;&#xA;4 = Thu&#xD;&#xA;5 = Fri&#xD;&#xA;6 = Sat&#xD;&#xA;7 = Sun&#xD;&#xA;8 = Mon to Fri&#xD;&#xA;9 = Mon to Sat&#xD;&#xA;10 = Sat and Sun&#xD;&#xA;11 = All days" Name="DfrStart[2].Day" Persistence="Persistent" Acronym="td2-d" Attributes="None" />
+    <Parameter Description="Defrost 3 - Day&#xD;&#xA;0 = Dis.&#xD;&#xA;1 = Mon&#xD;&#xA;2 = Tue&#xD;&#xA;3 = Wed&#xD;&#xA;4 = Thu&#xD;&#xA;5 = Fri&#xD;&#xA;6 = Sat&#xD;&#xA;7 = Sun&#xD;&#xA;8 = Mon to Fri&#xD;&#xA;9 = Mon to Sat&#xD;&#xA;10 = Sat and Sun&#xD;&#xA;11 = All days" Name="DfrStart[3].Day" Persistence="Persistent" Acronym="td3-d" Attributes="None" />
+    <Parameter Description="Defrost 4 - Day&#xD;&#xA;0 = Dis.&#xD;&#xA;1 = Mon&#xD;&#xA;2 = Tue&#xD;&#xA;3 = Wed&#xD;&#xA;4 = Thu&#xD;&#xA;5 = Fri&#xD;&#xA;6 = Sat&#xD;&#xA;7 = Sun&#xD;&#xA;8 = Mon to Fri&#xD;&#xA;9 = Mon to Sat&#xD;&#xA;10 = Sat and Sun&#xD;&#xA;11 = All days" Name="DfrStart[4].Day" Persistence="Persistent" Acronym="td4-d" Attributes="None" />
+    <Parameter Description="Defrost 5 - Day&#xD;&#xA;0 = Dis.&#xD;&#xA;1 = Mon&#xD;&#xA;2 = Tue&#xD;&#xA;3 = Wed&#xD;&#xA;4 = Thu&#xD;&#xA;5 = Fri&#xD;&#xA;6 = Sat&#xD;&#xA;7 = Sun&#xD;&#xA;8 = Mon to Fri&#xD;&#xA;9 = Mon to Sat&#xD;&#xA;10 = Sat and Sun&#xD;&#xA;11 = All days" Name="DfrStart[5].Day" Persistence="Persistent" Acronym="td5-d" Attributes="None" />
+    <Parameter Description="Defrost 6 - Day&#xD;&#xA;0 = Dis.&#xD;&#xA;1 = Mon&#xD;&#xA;2 = Tue&#xD;&#xA;3 = Wed&#xD;&#xA;4 = Thu&#xD;&#xA;5 = Fri&#xD;&#xA;6 = Sat&#xD;&#xA;7 = Sun&#xD;&#xA;8 = Mon to Fri&#xD;&#xA;9 = Mon to Sat&#xD;&#xA;10 = Sat and Sun&#xD;&#xA;11 = All days" Name="DfrStart[6].Day" Persistence="Persistent" Acronym="td6-d" Attributes="None" />
+    <Parameter Description="Defrost 7 - Day&#xD;&#xA;0 = Dis.&#xD;&#xA;1 = Mon&#xD;&#xA;2 = Tue&#xD;&#xA;3 = Wed&#xD;&#xA;4 = Thu&#xD;&#xA;5 = Fri&#xD;&#xA;6 = Sat&#xD;&#xA;7 = Sun&#xD;&#xA;8 = Mon to Fri&#xD;&#xA;9 = Mon to Sat&#xD;&#xA;10 = Sat and Sun&#xD;&#xA;11 = All days" Name="DfrStart[7].Day" Persistence="Persistent" Acronym="td7-d" Attributes="None" />
+    <Parameter Description="Defrost 8 - Day&#xD;&#xA;0 = Dis.&#xD;&#xA;1 = Mon&#xD;&#xA;2 = Tue&#xD;&#xA;3 = Wed&#xD;&#xA;4 = Thu&#xD;&#xA;5 = Fri&#xD;&#xA;6 = Sat&#xD;&#xA;7 = Sun&#xD;&#xA;8 = Mon to Fri&#xD;&#xA;9 = Mon to Sat&#xD;&#xA;10 = Sat and Sun&#xD;&#xA;11 = All days" Name="DfrStart[8].Day" Persistence="Persistent" Acronym="td8-d" Attributes="None" />
+    <Parameter Description="End time band 1 - day&#xD;&#xA;0 = Disabled&#xD;&#xA;1 = Monday&#xD;&#xA;2 = Tuestday&#xD;&#xA;3 = Wednsday&#xD;&#xA;4 = Thursday&#xD;&#xA;5 = Friday&#xD;&#xA;6 = Saturday&#xD;&#xA;7 = Sunday&#xD;&#xA;8 = Monday to friday&#xD;&#xA;9 = Monday to saturday&#xD;&#xA;10 = Saturday and sunday&#xD;&#xA;11 = All days" Name="TimeBandEnd[1].Day" Persistence="Persistent" Acronym="tE1-d" Attributes="None" />
+    <Parameter Description="End time band 3 - day&#xD;&#xA;0 = Disabled&#xD;&#xA;1 = Monday&#xD;&#xA;2 = Tuestday&#xD;&#xA;3 = Wednsday&#xD;&#xA;4 = Thursday&#xD;&#xA;5 = Friday&#xD;&#xA;6 = Saturday&#xD;&#xA;7 = Sunday&#xD;&#xA;8 = Monday to friday&#xD;&#xA;9 = Monday to saturday&#xD;&#xA;10 = Saturday and sunday&#xD;&#xA;11 = All days" Name="TimeBandEnd[3].Day" Persistence="Persistent" Acronym="tE3-d" Attributes="None" />
+    <Parameter Description="End time band 4 - day&#xD;&#xA;0 = Disabled&#xD;&#xA;1 = Monday&#xD;&#xA;2 = Tuestday&#xD;&#xA;3 = Wednsday&#xD;&#xA;4 = Thursday&#xD;&#xA;5 = Friday&#xD;&#xA;6 = Saturday&#xD;&#xA;7 = Sunday&#xD;&#xA;8 = Monday to friday&#xD;&#xA;9 = Monday to saturday&#xD;&#xA;10 = Saturday and sunday&#xD;&#xA;11 = All days" Name="TimeBandEnd[4].Day" Persistence="Persistent" Acronym="tE4-d" Attributes="None" />
+    <Parameter Description="End time band 5 - day&#xD;&#xA;0 = Disabled&#xD;&#xA;1 = Monday&#xD;&#xA;2 = Tuestday&#xD;&#xA;3 = Wednsday&#xD;&#xA;4 = Thursday&#xD;&#xA;5 = Friday&#xD;&#xA;6 = Saturday&#xD;&#xA;7 = Sunday&#xD;&#xA;8 = Monday to friday&#xD;&#xA;9 = Monday to saturday&#xD;&#xA;10 = Saturday and sunday&#xD;&#xA;11 = All days" Name="TimeBandEnd[5].Day" Persistence="Persistent" Acronym="tE5-d" Attributes="None" />
+    <Parameter Description="End time band 6 - day&#xD;&#xA;0 = Disabled&#xD;&#xA;1 = Monday&#xD;&#xA;2 = Tuestday&#xD;&#xA;3 = Wednsday&#xD;&#xA;4 = Thursday&#xD;&#xA;5 = Friday&#xD;&#xA;6 = Saturday&#xD;&#xA;7 = Sunday&#xD;&#xA;8 = Monday to friday&#xD;&#xA;9 = Monday to saturday&#xD;&#xA;10 = Saturday and sunday&#xD;&#xA;11 = All days" Name="TimeBandEnd[6].Day" Persistence="Persistent" Acronym="tE6-d" Attributes="None" />
+    <Parameter Description="End time band 7 - day&#xD;&#xA;0 = Disabled&#xD;&#xA;1 = Monday&#xD;&#xA;2 = Tuestday&#xD;&#xA;3 = Wednsday&#xD;&#xA;4 = Thursday&#xD;&#xA;5 = Friday&#xD;&#xA;6 = Saturday&#xD;&#xA;7 = Sunday&#xD;&#xA;8 = Monday to friday&#xD;&#xA;9 = Monday to saturday&#xD;&#xA;10 = Saturday and sunday&#xD;&#xA;11 = All days" Name="TimeBandEnd[7].Day" Persistence="Persistent" Acronym="tE7-d" Attributes="None" />
+    <Parameter Description="End time band 8 - day&#xD;&#xA;0 = Disabled&#xD;&#xA;1 = Monday&#xD;&#xA;2 = Tuestday&#xD;&#xA;3 = Wednsday&#xD;&#xA;4 = Thursday&#xD;&#xA;5 = Friday&#xD;&#xA;6 = Saturday&#xD;&#xA;7 = Sunday&#xD;&#xA;8 = Monday to friday&#xD;&#xA;9 = Monday to saturday&#xD;&#xA;10 = Saturday and sunday&#xD;&#xA;11 = All days" Name="TimeBandEnd[8].Day" Persistence="Persistent" Acronym="tE8-d" Attributes="None" />
+    <Parameter Description="Start time band 1 - day&#xD;&#xA;0 = Disabled&#xD;&#xA;1 = Monday&#xD;&#xA;2 = Tuestday&#xD;&#xA;3 = Wednsday&#xD;&#xA;4 = Thursday&#xD;&#xA;5 = Friday&#xD;&#xA;6 = Saturday&#xD;&#xA;7 = Sunday&#xD;&#xA;8 = Monday to friday&#xD;&#xA;9 = Monday to saturday&#xD;&#xA;10 = Saturday and sunday&#xD;&#xA;11 = All days" Name="TimeBandStart[1].Day" Persistence="Persistent" Acronym="tS1-d" Attributes="None" />
+    <Parameter Description="Start time band 2 - day&#xD;&#xA;0 = Disabled&#xD;&#xA;1 = Monday&#xD;&#xA;2 = Tuestday&#xD;&#xA;3 = Wednsday&#xD;&#xA;4 = Thursday&#xD;&#xA;5 = Friday&#xD;&#xA;6 = Saturday&#xD;&#xA;7 = Sunday&#xD;&#xA;8 = Monday to friday&#xD;&#xA;9 = Monday to saturday&#xD;&#xA;10 = Saturday and sunday&#xD;&#xA;11 = All days" Name="TimeBandStart[2].Day" Persistence="Persistent" Acronym="tS2-d" Attributes="None" />
+    <Parameter Description="Start time band 3 - day&#xD;&#xA;0 = Disabled&#xD;&#xA;1 = Monday&#xD;&#xA;2 = Tuestday&#xD;&#xA;3 = Wednsday&#xD;&#xA;4 = Thursday&#xD;&#xA;5 = Friday&#xD;&#xA;6 = Saturday&#xD;&#xA;7 = Sunday&#xD;&#xA;8 = Monday to friday&#xD;&#xA;9 = Monday to saturday&#xD;&#xA;10 = Saturday and sunday&#xD;&#xA;11 = All days" Name="TimeBandStart[3].Day" Persistence="Persistent" Acronym="tS3-d" Attributes="None" />
+    <Parameter Description="Start time band 4 - day&#xD;&#xA;0 = Disabled&#xD;&#xA;1 = Monday&#xD;&#xA;2 = Tuestday&#xD;&#xA;3 = Wednsday&#xD;&#xA;4 = Thursday&#xD;&#xA;5 = Friday&#xD;&#xA;6 = Saturday&#xD;&#xA;7 = Sunday&#xD;&#xA;8 = Monday to friday&#xD;&#xA;9 = Monday to saturday&#xD;&#xA;10 = Saturday and sunday&#xD;&#xA;11 = All days" Name="TimeBandStart[4].Day" Persistence="Persistent" Acronym="tS4-d" Attributes="None" />
+    <Parameter Description="Start time band 5 - day&#xD;&#xA;0 = Disabled&#xD;&#xA;1 = Monday&#xD;&#xA;2 = Tuestday&#xD;&#xA;3 = Wednsday&#xD;&#xA;4 = Thursday&#xD;&#xA;5 = Friday&#xD;&#xA;6 = Saturday&#xD;&#xA;7 = Sunday&#xD;&#xA;8 = Monday to friday&#xD;&#xA;9 = Monday to saturday&#xD;&#xA;10 = Saturday and sunday&#xD;&#xA;11 = All days" Name="TimeBandStart[5].Day" Persistence="Persistent" Acronym="tS5-d" Attributes="None" />
+    <Parameter Description="Start time band 6 - day&#xD;&#xA;0 = Disabled&#xD;&#xA;1 = Monday&#xD;&#xA;2 = Tuestday&#xD;&#xA;3 = Wednsday&#xD;&#xA;4 = Thursday&#xD;&#xA;5 = Friday&#xD;&#xA;6 = Saturday&#xD;&#xA;7 = Sunday&#xD;&#xA;8 = Monday to friday&#xD;&#xA;9 = Monday to saturday&#xD;&#xA;10 = Saturday and sunday&#xD;&#xA;11 = All days" Name="TimeBandStart[6].Day" Persistence="Persistent" Acronym="tS6-d" Attributes="None" />
+    <Parameter Description="Start time band 7 - day&#xD;&#xA;0 = Disabled&#xD;&#xA;1 = Monday&#xD;&#xA;2 = Tuestday&#xD;&#xA;3 = Wednsday&#xD;&#xA;4 = Thursday&#xD;&#xA;5 = Friday&#xD;&#xA;6 = Saturday&#xD;&#xA;7 = Sunday&#xD;&#xA;8 = Monday to friday&#xD;&#xA;9 = Monday to saturday&#xD;&#xA;10 = Saturday and sunday&#xD;&#xA;11 = All days" Name="TimeBandStart[7].Day" Persistence="Persistent" Acronym="tS7-d" Attributes="None" />
+    <Parameter Description="Start time band 8 - day&#xD;&#xA;0 = Disabled&#xD;&#xA;1 = Monday&#xD;&#xA;2 = Tuestday&#xD;&#xA;3 = Wednsday&#xD;&#xA;4 = Thursday&#xD;&#xA;5 = Friday&#xD;&#xA;6 = Saturday&#xD;&#xA;7 = Sunday&#xD;&#xA;8 = Monday to friday&#xD;&#xA;9 = Monday to saturday&#xD;&#xA;10 = Saturday and sunday&#xD;&#xA;11 = All days" Name="TimeBandStart[8].Day" Persistence="Persistent" Acronym="tS8-d" Attributes="None" />
+    <Parameter Name="ExvVlvPosition" ReadOnly="true" Acronym="PPU" Attributes="None" />
+    <Parameter Description="Quick command to force manually the comp./valve" InitValue="1" Name="CmdComp" Acronym="CmdComp" Attributes="None" />
+    <Parameter InitValue="1" Name="CmdFans" Acronym="CmdFans" Attributes="None" />
+    <Parameter InitValue="1" Name="CmdAux" Acronym="CmdAux" Attributes="None" />
+    <Parameter Description="Enable manual expansion valve positioning&#xD;&#xA;FALSE = disabled&#xD;&#xA;TRUE = enabled" InitValue="FALSE" Name="EnManExv" Acronym="PMP" Attributes="None" />
+    <Parameter InitValue="0" Name="PosManExv" Acronym="PMu" Attributes="None" />
+    <Parameter Description="Air on set point with Double thermostat" InitValue="-10" Name="TempSetP2" Persistence="Persistent" Acronym="St2" Attributes="None" />
+    <Parameter Description="Temp. reg. set point" InitValue="-10" Name="TempSetP" Persistence="Persistent" Acronym="St" Attributes="None" />
+    <Parameter Description="SH set point" InitValue="10" Name="SHSetp" Persistence="Persistent" Acronym="P3" Attributes="None" />
+    <Parameter Description="LowSH: low SH threshold" InitValue="7" Name="LowSH_Thrsh" Persistence="Persistent" Acronym="P7" Attributes="None" />
+    <Parameter Description="Display on user terminal&#xD;&#xA;0 : Not config.&#xD;&#xA;1 : S1 value&#xD;&#xA;2 : S2 value&#xD;&#xA;3 : S3 value&#xD;&#xA;4 : S4 value&#xD;&#xA;5 : S5 value&#xD;&#xA;6 : S6 value&#xD;&#xA;7 : Reserved&#xD;&#xA;8 : Reserved&#xD;&#xA;9 : Control probe&#xD;&#xA;10 : Virtual probe&#xD;&#xA;11 : S11 value&#xD;&#xA;12 : S12 value&#xD;&#xA;13 : S13 value&#xD;&#xA;14 : S14 value&#xD;&#xA;15 : Reg. set point&#xD;&#xA;16 : Actual superheat reading" Name="HmiMainSel" Persistence="Persistent" Acronym="/t1" Attributes="None" />
+    <Parameter Description="Alarm thresholds (AL2, AH2) for set point St2&#xD;&#xA;FALSE = relative&#xD;&#xA;TRUE = absolute" InitValue="FALSE" Name="AbsAlarm2Thr" Persistence="Persistent" Acronym="A2" Attributes="None" />
+    <Parameter Description="Alarm thresholds (AL, AH) for set point St&#xD;&#xA;FALSE = relative&#xD;&#xA;TRUE = absolute" InitValue="FALSE" Name="AbsAlarmThr" Persistence="Persistent" Acronym="A1" Attributes="None" />
+    <Parameter Description="Delay time for high and low temp. alarms (AH2, AL2)" InitValue="30" Name="Alarm2Delay" Persistence="Persistent" Acronym="Ad2" Attributes="None" />
+    <Parameter Description="Assign probe for high (AH2) and low (AL2) temperature alarms&#xD;&#xA;0 : Not config.&#xD;&#xA;1 : Air off (Sm)&#xD;&#xA;2 : Defrost (Sd)&#xD;&#xA;3 : Air on (Sr)&#xD;&#xA;4 : Superheated gas (tGS)&#xD;&#xA;5 : Reserved&#xD;&#xA;6 : Auxiliary defrost (Sd2)&#xD;&#xA;7 : Auxiliary 1 (Saux1)&#xD;&#xA;8 : Auxiliary 2 (Saux2)&#xD;&#xA;9 : Ambient temp. (SA)&#xD;&#xA;10 : Ambient humidity (SU)&#xD;&#xA;11 : Glass temp. (Svt)&#xD;&#xA;12 : Dewpoint (SdP)&#xD;&#xA;13 : Virtual probe (Sv)&#xD;&#xA;14 : Saturated evap. temp. (tEu)" InitValue="1" Name="Alarm2PrbConf" Persistence="Persistent" Acronym="AA2" Attributes="None" />
+    <Parameter Description="Delay time for high and low temp. alarms (AH, AL)" InitValue="120" Name="AlarmDelay" Persistence="Persistent" Acronym="Ad" Attributes="None" />
+    <Parameter Description="Assign probe for high (AH) and low (AL) temperature alarms&#xD;&#xA;0 : Not config.&#xD;&#xA;1 : Air off (Sm)&#xD;&#xA;2 : Defrost (Sd)&#xD;&#xA;3 : Air on (Sr)&#xD;&#xA;4 : Superheated gas (tGS)&#xD;&#xA;5 : Reserved&#xD;&#xA;6 : Auxiliary defrost (Sd2)&#xD;&#xA;7 : Auxiliary 1 (Saux1)&#xD;&#xA;8 : Auxiliary 2 (Saux2)&#xD;&#xA;9 : Ambient temp. (SA)&#xD;&#xA;10 : Ambient humidity (SU)&#xD;&#xA;11 : Glass temp. (Svt)&#xD;&#xA;12 : Dewpoint (SdP)&#xD;&#xA;13 : Virtual probe (Sv)&#xD;&#xA;14 : Saturated evap. temp. (tEu)" InitValue="1" Name="AlarmPrbConf" Persistence="Persistent" Acronym="AA" Attributes="None" />
+    <Parameter Description="High and low temp. alarm reset differential" InitValue="2" Name="AlarmResetDiff" Persistence="Persistent" Acronym="A0" Attributes="None" />
+    <Parameter Description="High temp. alarm bypass time for door open" InitValue="30" Name="AlBypassDoor" Persistence="Persistent" Acronym="Add" Attributes="None" />
+    <Parameter Description="BMS protocol&#xD;&#xA;FALSE = Carel &#xD;&#xA;TRUE = Modbus" InitValue="TRUE" Name="BMS_Prot" Persistence="Persistent" Acronym="H3" Attributes="None" />
+    <Parameter InitValue="0" Name="SetpNightOffset" Persistence="Persistent" Acronym="r4" Attributes="None" />
+    <Parameter Description="Max secondary evap. defrost duration" InitValue="45" Name="DfrMaxDuration2" Persistence="Persistent" Acronym="dP2" Attributes="None" />
+    <Parameter Description="Evap. fan management&#xD;&#xA;0 = always on&#xD;&#xA;1 = Sa-Sb (see FSa and FSb)&#xD;&#xA;2 = Sa&#xD;&#xA;(Sa first probe, Sb second probe)" InitValue="0" Name="FanMngConfig" Persistence="Persistent" Acronym="F0" Attributes="None" />
+    <Parameter Description="Evap fan activation threshold (only if F0 =1 or 2)" InitValue="-5" Name="FansSet" Persistence="Persistent" Acronym="F1" Attributes="None" />
+    <Parameter Description="First regulation probe for evaporator fan&#xD;&#xA;0 : Not config.&#xD;&#xA;1 : Air off (Sm)&#xD;&#xA;2 : Defrost (Sd)&#xD;&#xA;3 : Air on (Sr)&#xD;&#xA;4 : Superheated gas (tGS)&#xD;&#xA;5 : Saturated evap. pressure (PEu)&#xD;&#xA;6 : Auxiliary defrost (Sd2)&#xD;&#xA;7 : Auxiliary 1 (Saux1)&#xD;&#xA;8 : Auxiliary 2 (Saux2)&#xD;&#xA;9 : Ambient temp (SA)&#xD;&#xA;10 : Ambient humidity (SU)&#xD;&#xA;11 : Glass temperature (Svt)&#xD;&#xA;12 : Dewpoint (SdP)&#xD;&#xA;13 : Virtual probe (Sv)&#xD;&#xA;14 : Saturated evap. temp. (tEu)" InitValue="3" MinValue="0" MaxValue="14" Name="FansRegCnf[1]" Persistence="Persistent" Acronym="FSa" Attributes="None" />
+    <Parameter Description="Second regulation probe for evaporator fan&#xD;&#xA;0 : Not config.&#xD;&#xA;1 : Air off (Sm)&#xD;&#xA;2 : Defrost (Sd)&#xD;&#xA;3 : Air on (Sr)&#xD;&#xA;4 : Superheated gas (tGS)&#xD;&#xA;5 : Saturated evap. pressure (PEu)&#xD;&#xA;6 : Auxiliary defrost (Sd2)&#xD;&#xA;7 : Auxiliary 1 (Saux1)&#xD;&#xA;8 : Auxiliary 2 (Saux2)&#xD;&#xA;9 : Ambient temp (SA)&#xD;&#xA;10 : Ambient humidity (SU)&#xD;&#xA;11 : Glass temperature (Svt)&#xD;&#xA;12 : Dewpoint (SdP)&#xD;&#xA;13 : Virtual probe (Sv)&#xD;&#xA;14 : Saturated evap. temp. (tEu)" InitValue="14" MinValue="0" MaxValue="14" Name="FansRegCnf[2]" Persistence="Persistent" Acronym="FSb" Attributes="None" />
+    <Parameter Description="Min evap. fan speed" InitValue="0" Name="FansMinOut" Persistence="Persistent" Acronym="F7" Attributes="None" />
+    <Parameter Description="Max evap fan speed" InitValue="100" Name="FansMaxOut" Persistence="Persistent" Acronym="F6" Attributes="None" />
+    <Parameter InitValue="2" Name="FansDiff" Persistence="Persistent" Acronym="Frd" Attributes="None" />
+    <Parameter Description="Evap. fan cut-off temperature (hyst. 1°C) (including variable speed)" InitValue="50" Name="FansCutOff" Persistence="Persistent" Acronym="F5" Attributes="None" />
+    <Parameter Description="Virtual probe composition for glass temp. probe estimate&#xD;&#xA;0 = Air off (Sm)&#xD;&#xA;100 = Air on (Sr)" InitValue="20" Name="GlassEstimComp" Persistence="Persistent" Acronym="rHS" Attributes="None" />
+    <Parameter Description="Coeff. A for glass temp. probe estimate" InitValue="2" Name="GlassTEstimateA" Persistence="Persistent" Acronym="rHA" Attributes="None" />
+    <Parameter Description="Coeff. B for glass temp. probe estimate" InitValue="22" Name="GlassTEstimateB" Persistence="Persistent" Acronym="rHb" Attributes="None" />
+    <Parameter Description="Off set for anti-sweat heater modul." InitValue="2" Name="HeaterOffs" Persistence="Persistent" Acronym="rHo" Attributes="None" />
+    <Parameter Description="Differential for anti-sweat heater modul." InitValue="0" Name="HeatersDiff" Persistence="Persistent" Acronym="rHd" Attributes="None" />
+    <Parameter Description="High temp. alarm 2 threshold" InitValue="0" Name="HiAlarm2Thr" Persistence="Persistent" Acronym="AH2" Attributes="None" />
+    <Parameter Description="High temp. alarm threshold" InitValue="10" Name="HiAlarmThr" Persistence="Persistent" Acronym="AH" Attributes="None" />
+    <Parameter Description="Low temp. alarm 2 threshold" InitValue="0" Name="LowAlarm2Thr" Persistence="Persistent" Acronym="AL2" Attributes="None" />
+    <Parameter Description="Low temp. alarm threshold" InitValue="4" Name="LowAlarmThr" Persistence="Persistent" Acronym="AL" Attributes="None" />
+    <Parameter Description="Manual anti-sweat heater activation percentage (of period rHt)&#xD;&#xA;0 = disabled" InitValue="70" Name="ManHeaterPerc" Persistence="Persistent" Acronym="rHu" Attributes="None" />
+    <Parameter Description="Manual anti-sweat heater activation period&#xD;&#xA;0 = disabled" InitValue="5" Name="ManHeaterPeriod" Persistence="Persistent" Acronym="rHt" Attributes="None" />
+    <Parameter Description="MOP: alarm delay&#xD;&#xA;0 = function disabled" InitValue="600" Name="MOP_AlrmDelay" Persistence="Persistent" Acronym="PM3" Attributes="None" />
+    <Parameter InitValue="2" Name="MOP_StartDelay" Persistence="Persistent" Acronym="PM4" Attributes="None" />
+    <Parameter Description="MOP: max saturated evap. temp. threshold" InitValue="50" Name="MOP_Thrsh" Persistence="Persistent" Acronym="PM1" Attributes="None" />
+    <Parameter InitValue="10" Name="MOP_Ti" Persistence="Persistent" Acronym="PM2" Attributes="None" />
+    <Parameter Description="Probe for night-time control&#xD;&#xA;FALSE = virtual probe Sv&#xD;&#xA;TRUE = Air on probe Sr" InitValue="FALSE" Name="NightPrbReg" Persistence="Persistent" Acronym="r6" Attributes="None" />
+    <Parameter Description="Num. of slaves in the local network&#xD;&#xA;0 = no Secondary" InitValue="0" Name="SlavesNum" Persistence="Persistent" Acronym="Sn" Attributes="None" />
+    <Parameter Description="Max time for Clean status" InitValue="0" Name="CleanTout" Persistence="Persistent" Acronym="Clt" Attributes="None" />
+    <Parameter Description="Min OFF time" InitValue="0" Name="MinOffT" Persistence="Persistent" Acronym="c2" Attributes="None" />
+    <Parameter Description="Min time between successive starts" InitValue="0" Name="MinOnOnSameT" Persistence="Persistent" Acronym="c1" Attributes="None" />
+    <Parameter Description="Min ON time" InitValue="0" Name="MinOnT" Persistence="Persistent" Acronym="c3" Attributes="None" />
+    <Parameter Description="Air off temp. probe (Sm)" Name="AnalogInputs.Fct.AirOff" ReadOnly="true" Acronym="Sm" Attributes="None" />
+    <Parameter Description="Air on temp. probe (Sr)" Name="AnalogInputs.Fct.AirOn" ReadOnly="true" Acronym="Sr" Attributes="None" />
+    <Parameter Name="AnalogInputs.Fct.AmbientH" ReadOnly="true" Acronym="SU" Attributes="None" />
+    <Parameter Description="Ambient temp. probe (SA)" Name="AnalogInputs.Fct.AmbientT" ReadOnly="true" Acronym="SA" Attributes="None" />
+    <Parameter Description="Auxiliary temp. probe (Aux)" Name="AnalogInputs.Fct.Auxiliary" ReadOnly="true" Acronym="Aux" Attributes="None" />
+    <Parameter Description="Auxiliary temp. probe 2 (Aux2)" Name="AnalogInputs.Fct.Auxiliary2" ReadOnly="true" Acronym="Aux2" Attributes="None" />
+    <Parameter Description="Defrost temp. probe (Sd)" Name="AnalogInputs.Fct.Defrost" ReadOnly="true" Acronym="Sd" Attributes="None" />
+    <Parameter Description="Defrost temp. probe 2 (Sd2)" Name="AnalogInputs.Fct.Defrost2" ReadOnly="true" Acronym="Sd2" Attributes="None" />
+    <Parameter Name="AnalogInputs.Fct.DewPoint" ReadOnly="true" Acronym="Sdp" Attributes="None" />
+    <Parameter Description="Evap. pressure probe (PEu)" Name="AnalogInputs.Fct.EvapP" ReadOnly="true" Acronym="PEu" Attributes="None" />
+    <Parameter Description="Glass temp. probe (Svt)" Name="AnalogInputs.Fct.GlassT" ReadOnly="true" Acronym="Svt" Attributes="None" />
+    <Parameter Description="Suction temp. probe (tGs)" Name="AnalogInputs.Fct.SuctT" ReadOnly="true" Acronym="tGs" Attributes="None" />
+    <Parameter Description="Delay time for delayed external alarm " InitValue="0" Name="AlDinDelay" Persistence="Persistent" Acronym="A11" Attributes="None" />
+    <Parameter Name="ManDfr" Acronym="DEF" Attributes="None" />
+    <Parameter Description="User interface unit of measure&#xD;&#xA;FALSE = °C/barg&#xD;&#xA;TRUE = °F/psig" InitValue="FALSE" Name="ZoneHMI" Persistence="Persistent" Acronym="/5" Attributes="None" />
+    <Parameter Description="Type of unit&#xD;&#xA;0 = Secondary&#xD;&#xA;1 = Main" InitValue="FALSE" Name="isMaster" Persistence="Persistent" Acronym="In" Attributes="None" />
+    <Parameter Name="SlvUpdFW" Acronym="Slv" Attributes="None" />
+    <Parameter Description="FieldBus port baudrate (bit/s)&#xD;&#xA;0 = 1200&#xD;&#xA;1 = 2400&#xD;&#xA;2 = 4800&#xD;&#xA;3 = 9600&#xD;&#xA;4 = 19200&#xD;&#xA;5 = 38400&#xD;&#xA;6 = 57600&#xD;&#xA;7 = 115200&#xD;&#xA;8 = 375000" InitValue="19200" Name="FB_Baud" Persistence="Persistent" Acronym="H4" Attributes="None" />
+    <Parameter Description="Type of probe, group 1 (S1, S2, S3)&#xD;&#xA;0 = PT1000 Standard Range&#xD;&#xA;1 = NTC Standard Range" InitValue="TRUE" Name="Ain_Types.Group1" Persistence="Persistent" Acronym="/P1" Attributes="None" />
+    <Parameter Description="Type of probe, group 2 (S4, S5)&#xD;&#xA;1 = NTC Standard Range&#xD;&#xA;2 = 0-5 V&#xD;&#xA;3 = 4-20 mA" InitValue="2" Name="Ain_Types.Group2" Persistence="Persistent" Acronym="/P2" Attributes="None" />
+    <Parameter Description="Type of probe, group 3 (S6)&#xD;&#xA;0 = PT1000 Standard Range&#xD;&#xA;1 = NTC Standard Range&#xD;&#xA;2 = 0-5 V&#xD;&#xA;3 = 4-20 mA&#xD;&#xA;4 = 0-10V" InitValue="2" Name="Ain_Types.Group3" Persistence="Persistent" Acronym="/P3" Attributes="None" />
+    <Parameter Description="Type of probe, group 4 (S8)&#xD;&#xA;(Reserved)" InitValue="2" Name="Ain_Types.Group4" Persistence="Persistent" Acronym="/P4" Attributes="None" />
+    <Parameter InitValue="0" Name="LightOnDoorDelay" Persistence="Persistent" Acronym="H14" Attributes="None" />
+    <Parameter Description="End defrost synchronized by Main&#xD;&#xA;FALSE = not synchronized&#xD;&#xA;TRUE = synchronized" InitValue="TRUE" Name="DfrMasterEndSync" Persistence="Persistent" Acronym="d2" Attributes="None" />
+    <Parameter Description="Send network defrost control (for Main):&#xD;&#xA;FALSE : send&#xD;&#xA;TRUE : do not send&#xD;&#xA;Ignore network defrost control (for Secondary)&#xD;&#xA;FALSE : disabled&#xD;&#xA;TRUE : enabled" InitValue="FALSE" Name="DisNetworkDfr" Persistence="Persistent" Acronym="d3" Attributes="None" />
+    <Parameter Description="Display decimal point&#xD;&#xA;FALSE = Enabled&#xD;&#xA;TRUE = Disabled" InitValue="FALSE" Name="DisDecPointMainVar" Persistence="Persistent" Acronym="/6" Attributes="None" />
+    <Parameter Description="Defrost delay on power-up or (for Secondary) after control from Main&#xD;&#xA;0 = delay disabled" InitValue="0" Name="DfrPowOnDelay" Persistence="Persistent" Acronym="d5" Attributes="None" />
+    <Parameter Description="Select digital input propagated from Main to Slaves (only on Main)&#xD;&#xA;-1 = from supervisor&#xD;&#xA;0 = Disabled&#xD;&#xA;1 = ID1&#xD;&#xA;2 = ID2&#xD;&#xA;3 = ID3&#xD;&#xA;4 = ID4&#xD;&#xA;5 = ID5" InitValue="0" Name="VirtualDiOut" Persistence="Persistent" Acronym="A9" Attributes="None" />
+    <Parameter Description="Temperature regulation mode with double thermostat&#xD;&#xA;FALSE = AND logic&#xD;&#xA;TRUE = OR logic" InitValue="FALSE" Name="DoubleThermostatConf" Persistence="Persistent" Acronym="db1" Attributes="None" />
+    <Parameter Description="Safety timeout for Double thermostat function" InitValue="0" Name="DoubleThermSafety" Persistence="Persistent" Acronym="dbS" Attributes="None" />
+    <Parameter InitValue="1" Name="SPV_Day" Acronym="d__" Attributes="None" />
+    <Parameter InitValue="0" Name="SPV_DoW" Acronym="u__" Attributes="None" />
+    <Parameter InitValue="0" Name="SPV_Hour" Acronym="h__" Attributes="None" />
+    <Parameter InitValue="0" Name="SPV_Min" Acronym="m__" Attributes="None" />
+    <Parameter InitValue="2017" Name="SPV_Year" Acronym="y__" Attributes="None" />
+    <Parameter InitValue="1" Name="SPV_Month" Acronym="M_" Attributes="None" />
+    <Parameter Description="Dripping time after defrost (fans off)&#xD;&#xA;0 = no dripping" InitValue="2" Name="DripTime" Persistence="Persistent" Acronym="dd" Attributes="None" />
+    <Parameter Description="Display signals / alarms on remote display&#xD;&#xA;FALSE = Disabled&#xD;&#xA;TRUE = Enabled" InitValue="FALSE" Name="RemoteHMIAlrms" Persistence="Persistent" Acronym="/t" Attributes="None" />
+    <Parameter Description="Display on remote display&#xD;&#xA;0 : Not config.&#xD;&#xA;1 : S1 value&#xD;&#xA;2 : S2 value&#xD;&#xA;3 : S3 value&#xD;&#xA;4 : S4 value&#xD;&#xA;5 : S5 value&#xD;&#xA;6 : S6 value&#xD;&#xA;7 : Reserved&#xD;&#xA;8 : Reserved&#xD;&#xA;9 : Control probe&#xD;&#xA;10 : Virtual probe&#xD;&#xA;11 : S11 value&#xD;&#xA;12 : S12 value&#xD;&#xA;13 : S13 value&#xD;&#xA;14 : S14 value&#xD;&#xA;15 : Reg. set point&#xD;&#xA;16 : Actual superheat reading" InitValue="12" Name="HmiRemSel" Persistence="Persistent" Acronym="/t2" Attributes="None" />
+    <Parameter Description="Main solenoid valve configuration&#xD;&#xA;FALSE = local valve&#xD;&#xA;TRUE = network valve (connected to Main)" InitValue="FALSE" Name="MstVlvConfig" Persistence="Persistent" Acronym="r7" Attributes="None" />
+    <Parameter InitValue="0" Name="VlvCloseDelay" Persistence="Persistent" Acronym="rSu" Attributes="None" />
+    <Parameter Description="Display on terminals during defrost&#xD;&#xA;0 = temperature alternating with dEF&#xD;&#xA;1 = freeze display&#xD;&#xA;2 = dEF" InitValue="1" Name="HMIMainDef" Persistence="Persistent" Acronym="d6" Attributes="None" />
+    <Parameter Description="Defrost priority over comp. protection times&#xD;&#xA;FALSE = protection times observed&#xD;&#xA;TRUE = protection times not observed" InitValue="TRUE" Name="DfrSafetyTime" Persistence="Persistent" Acronym="d9" Attributes="None" />
+    <Parameter Description="Defrost time in Running time mode:&#xD;&#xA;0 = function disabled" InitValue="0" Name="DfrTimeRun" Persistence="Persistent" Acronym="d10" Attributes="None" />
+    <Parameter Description="Defrost temperature threshold in Running time mode" InitValue="-30" Name="DfrTempRun" Persistence="Persistent" Acronym="d11" Attributes="None" />
+    <Parameter Description="Pressure probe alarm management during defrost&#xD;&#xA;probe error   supervisor update&#xA;0 disabled     enabled&#xA;1 enabled     enabled&#xA;2 disabled     disabled&#xA;3 enabled     disabled" InitValue="0" Name="DfrPrbAlm" Persistence="Persistent" Acronym="d12" Attributes="None" />
+    <Parameter Description="Compressor off time in Sequential stop defrost mode&#xD;&#xA;0 = function disabled" InitValue="0" Name="DfrOffTimeSeq" Persistence="Persistent" Acronym="dS1" Attributes="None" />
+    <Parameter Description="Compressor operating time in Sequential stop defrost mode" InitValue="120" Name="DfrOnTimeSeq" Persistence="Persistent" Acronym="dS2" Attributes="None" />
+    <Parameter Description="Additional end defrost temperature delta in Power defrost mode" InitValue="0" Name="DfrPowTemp" Persistence="Persistent" Acronym="ddt" Attributes="None" />
+    <Parameter Description="Additional maximum defrost time delta in Power defrost mode" InitValue="0" Name="DfrPowTime" Persistence="Persistent" Acronym="ddP" Attributes="None" />
+    <Parameter Description="Nominal Skip defrost duration" InitValue="75" Name="DfrSkipDuration" Persistence="Persistent" Acronym="dn" Attributes="None" />
+    <Parameter Description="End defrost signal by timeout&#xD;&#xA;FALSE = disabled&#xD;&#xA;TRUE = enabled" InitValue="FALSE" Name="DfrEndAlTimeout" Persistence="Persistent" Acronym="r3" Attributes="None" />
+    <Parameter Description="ON time for duty setting operation (Toff = 15 minutes fixed)&#xD;&#xA;0 = compressor/valve always OFF&#xD;&#xA;100 = compressor/valve always ON" InitValue="0" Name="DutySetOnTime" Persistence="Persistent" Acronym="c4" Attributes="None" />
+    <Parameter InitValue="0" Name="ContCycleTout" Persistence="Persistent" Acronym="cc" Attributes="None" />
+    <Parameter Description="Low temp. alarm bypass time after continuous cycle" InitValue="60" Name="ContCycleLowBypass" Persistence="Persistent" Acronym="c6" Attributes="None" />
+    <Parameter Description="Defrost priority over continuous cycle&#xD;&#xA;FALSE = no&#xD;&#xA;TRUE = yes" Name="DfrPriorityCont" Persistence="Persistent" Acronym="c7" Attributes="None" />
+    <Parameter Description="Elettronic valve&#xD;&#xA;0 = not present&#xD;&#xA;1 = CAREL E2V valve on board&#xA;2 = CAREL E2V valve (Suct Temp probe on MPXone)&#xA;6 = CAREL E2V valve (Suct Temp on Evd driver)" InitValue="0" Name="ValveCnf" Persistence="Persistent" Acronym="P1" Attributes="None" />
+    <Parameter Description="Enable valve alarm at end travel (blo)&#xD;&#xA;TRUE = signal enabled" InitValue="TRUE" Name="EnBloAlarm" Persistence="Persistent" Acronym="P14" Attributes="None" />
+    <Parameter Description="HACCP alarm delay&#xD;&#xA;0 = monitoring disabled" InitValue="0" Name="HACCP_AlrmDelay" Persistence="Persistent" Acronym="Htd" Attributes="None" />
+    <Parameter Name="ActualSH" Acronym="SH" Attributes="None" />
+    <Parameter Description="Evaporation saturated temperature" Name="EvapSatTemp" ReadOnly="true" Acronym="tEu" Attributes="None" />
+    <Parameter Name="VirtualProbe" ReadOnly="true" Acronym="Sv" Attributes="None" />
+    <Parameter Description="Assign Air off temp. probe (Sm)&#xD;&#xA;0 = Function disabled&#xD;&#xA;1 = S1&#xD;&#xA;2 = S2&#xD;&#xA;3 = S3&#xD;&#xA;4 = S4&#xD;&#xA;5 = S5&#xD;&#xA;6 = S6&#xD;&#xA;-1 = S11: serial probe&#xD;&#xA;-2 = S12: serial probe&#xD;&#xA;-3 = S13: serial probe&#xD;&#xA;-4 = S14: serial probe" InitValue="1" MinValue="-4" MaxValue="6" Name="Ain_Cfg.Fct.AirOff.Ch" Persistence="Persistent" Acronym="/FA" Attributes="None" />
+    <Parameter Description="Assign defrost temperature probe (Sd)&#xD;&#xA;0 = Function disabled&#xD;&#xA;1 = S1&#xD;&#xA;2 = S2&#xD;&#xA;3 = S3&#xD;&#xA;4 = S4&#xD;&#xA;5 = S5&#xD;&#xA;6 = S6&#xD;&#xA;-1 = S11: serial probe&#xD;&#xA;-2 = S12: serial probe&#xD;&#xA;-3 = S13: serial probe&#xD;&#xA;-4 = S14: serial probe" InitValue="2" MinValue="-4" MaxValue="6" Name="Ain_Cfg.Fct.Defrost.Ch" Persistence="Persistent" Acronym="/Fb" Attributes="None" />
+    <Parameter Description="Assign intake temperature probe (Sr)&#xD;&#xA;0 = Function disabled&#xD;&#xA;1 = S1&#xD;&#xA;2 = S2&#xD;&#xA;3 = S3&#xD;&#xA;4 = S4&#xD;&#xA;5 = S5&#xD;&#xA;6 = S6&#xD;&#xA;-1 = S11: serial probe&#xD;&#xA;-2 = S12: serial probe&#xD;&#xA;-3 = S13: serial probe&#xD;&#xA;-4 = S14: serial probe" InitValue="3" MinValue="-4" MaxValue="6" Name="Ain_Cfg.Fct.AirOn.Ch" Persistence="Persistent" Acronym="/Fc" Attributes="None" />
+    <Parameter Description="Assign superheated gas temperature probe (tGS)&#xD;&#xA;0 = Function disabled&#xD;&#xA;1 = S1&#xD;&#xA;2 = S2&#xD;&#xA;3 = S3&#xD;&#xA;4 = S4&#xD;&#xA;5 = S5&#xD;&#xA;6 = S6&#xD;&#xA;-1 = S11: serial probe&#xD;&#xA;-2 = S12: serial probe&#xD;&#xA;-3 = S13: serial probe&#xD;&#xA;-4 = S14: serial probe" MinValue="-4" MaxValue="6" Name="Ain_Cfg.Fct.SuctT.Ch" Persistence="Persistent" Acronym="/Fd" Attributes="None" />
+    <Parameter Description="Assign saturated evaporation pressure/temperature probe (PEu/tEu)&#xD;&#xA;0 = Function disabled&#xD;&#xA;1 = S1&#xD;&#xA;2 = S2&#xD;&#xA;3 = S3&#xD;&#xA;4 = S4&#xD;&#xA;5 = S5&#xD;&#xA;6 = S6&#xD;&#xA;-1 = S11: serial probe&#xD;&#xA;-2 = S12: serial probe&#xD;&#xA;-3 = S13: serial probe&#xD;&#xA;-4 = S14: serial probe" InitValue="5" MinValue="-4" MaxValue="6" Name="Ain_Cfg.Fct.EvapP.Ch" Persistence="Persistent" Acronym="/FE" Attributes="None" />
+    <Parameter Description="Assign defrost temperature probe 2 (Sd2)&#xD;&#xA;0 = Function disabled&#xD;&#xA;1 = S1&#xD;&#xA;2 = S2&#xD;&#xA;3 = S3&#xD;&#xA;4 = S4&#xD;&#xA;5 = S5&#xD;&#xA;6 = S6&#xD;&#xA;-1 = S11: serial probe&#xD;&#xA;-2 = S12: serial probe&#xD;&#xA;-3 = S13: serial probe&#xD;&#xA;-4 = S14: serial probe" InitValue="4" MinValue="-4" MaxValue="6" Name="Ain_Cfg.Fct.Defrost2.Ch" Persistence="Persistent" Acronym="/FF" Attributes="None" />
+    <Parameter Description="Assign auxiliary temperature probe 1 (Saux1)&#xD;&#xA;0 = Function disabled&#xD;&#xA;1 = S1&#xD;&#xA;2 = S2&#xD;&#xA;3 = S3&#xD;&#xA;4 = S4&#xD;&#xA;5 = S5&#xD;&#xA;6 = S6&#xD;&#xA;-1 = S11: serial probe&#xD;&#xA;-2 = S12: serial probe&#xD;&#xA;-3 = S13: serial probe&#xD;&#xA;-4 = S14: serial probe" MinValue="-4" MaxValue="6" Name="Ain_Cfg.Fct.Auxiliary.Ch" Persistence="Persistent" Acronym="/FG" Attributes="None" />
+    <Parameter Description="Assign auxiliary temperature probe 2 (Saux2)&#xD;&#xA;0 = Function disabled&#xD;&#xA;1 = S1&#xD;&#xA;2 = S2&#xD;&#xA;3 = S3&#xD;&#xA;4 = S4&#xD;&#xA;5 = S5&#xD;&#xA;6 = S6&#xD;&#xA;-1 = S11: serial probe&#xD;&#xA;-2 = S12: serial probe&#xD;&#xA;-3 = S13: serial probe&#xD;&#xA;-4 = S14: serial probe" MinValue="-4" MaxValue="6" Name="Ain_Cfg.Fct.Auxiliary2.Ch" Persistence="Persistent" Acronym="/FH" Attributes="None" />
+    <Parameter Description="Assign ambient temperature probe (SA)&#xD;&#xA;0 = Function disabled&#xD;&#xA;1 = S1&#xD;&#xA;2 = S2&#xD;&#xA;3 = S3&#xD;&#xA;4 = S4&#xD;&#xA;5 = S5&#xD;&#xA;6 = S6&#xD;&#xA;-1 = S11: serial probe&#xD;&#xA;-2 = S12: serial probe&#xD;&#xA;-3 = S13: serial probe&#xD;&#xA;-4 = S14: serial probe" MinValue="-4" MaxValue="6" Name="Ain_Cfg.Fct.AmbientT.Ch" Persistence="Persistent" Acronym="/FI" Attributes="None" />
+    <Parameter Description="Assign ambient humidity probe (SU)&#xD;&#xA;0 = Function disabled&#xD;&#xA;1 = S1&#xD;&#xA;2 = S2&#xD;&#xA;3 = S3&#xD;&#xA;4 = S4&#xD;&#xA;5 = S5&#xD;&#xA;6 = S6&#xD;&#xA;-1 = S11: serial probe&#xD;&#xA;-2 = S12: serial probe&#xD;&#xA;-3 = S13: serial probe&#xD;&#xA;-4 = S14: serial probe" MinValue="-4" MaxValue="6" Name="Ain_Cfg.Fct.AmbientH.Ch" Persistence="Persistent" Acronym="/FL" Attributes="None" />
+    <Parameter Description="Assign glass temperature probe (Svt)&#xD;&#xA;0 = Function disabled&#xD;&#xA;1 = S1&#xD;&#xA;2 = S2&#xD;&#xA;3 = S3&#xD;&#xA;4 = S4&#xD;&#xA;5 = S5&#xD;&#xA;6 = S6&#xD;&#xA;-1 = S11: serial probe&#xD;&#xA;-2 = S12: serial probe&#xD;&#xA;-3 = S13: serial probe&#xD;&#xA;-4 = S14: serial probe" MinValue="-4" MaxValue="6" Name="Ain_Cfg.Fct.GlassT.Ch" Persistence="Persistent" Acronym="/FM" Attributes="None" />
+    <Parameter Description="Assign dewpoint value (SdP) to a serial probe&#xD;&#xA;0 = Function disabled&#xD;&#xA;1 = S1&#xD;&#xA;2 = S2&#xD;&#xA;3 = S3&#xD;&#xA;4 = S4&#xD;&#xA;5 = S5&#xD;&#xA;6 = S6&#xD;&#xA;-1 = S11: serial probe&#xD;&#xA;-2 = S12: serial probe&#xD;&#xA;-3 = S13: serial probe&#xD;&#xA;-4 = S14: serial probe" MinValue="-4" MaxValue="6" Name="Ain_Cfg.Fct.DewPoint.Ch" Persistence="Persistent" Acronym="/Fn" Attributes="None" />
+    <Parameter Description="Upper value for saturated evap. pressure probe (PEu/tEu)" InitValue="9.3" Name="EvapMax" Persistence="Persistent" Acronym="/UE" Attributes="None" />
+    <Parameter Description="Lower value for saturated evap. pressure probe (PEu/tEu)" InitValue="0" Name="EvapMin" Persistence="Persistent" Acronym="/LE" Attributes="None" />
+    <Parameter Description="Upper value for ambient humidity probe (SU)" InitValue="100" Name="AmbHMax" Persistence="Persistent" Acronym="/UL" Attributes="None" />
+    <Parameter Description="Lower value for ambient humidity probe (SU)" InitValue="0" Name="AmbHMin" Persistence="Persistent" Acronym="/LL" Attributes="None" />
+    <Parameter Description="Assign immediate external alarm digital input&#xD;&#xA;0 = Function disabled&#xD;&#xA;1 = ID1&#xD;&#xA;2 = ID2&#xD;&#xA;3 = ID3&#xD;&#xA;4 = ID4&#xD;&#xA;5 = ID5&#xD;&#xA;-1 = Serial digital input" MinValue="-1" MaxValue="5" Name="Din_Cfg.Fct.Alarm.Ch" Persistence="Persistent" Acronym="DIA" Attributes="None" />
+    <Parameter Description="Assign delayed external alarm digital input&#xD;&#xA;0 = Function disabled&#xD;&#xA;1 = ID1&#xD;&#xA;2 = ID2&#xD;&#xA;3 = ID3&#xD;&#xA;4 = ID4&#xD;&#xA;5 = ID5&#xD;&#xA;-1 = Serial digital input" MinValue="-1" MaxValue="5" Name="Din_Cfg.Fct.DelayedAl.Ch" Persistence="Persistent" Acronym="DIb" Attributes="None" />
+    <Parameter Description="Assign enable defrost digital input&#xD;&#xA;0 = Function disabled&#xD;&#xA;1 = ID1&#xD;&#xA;2 = ID2&#xD;&#xA;3 = ID3&#xD;&#xA;4 = ID4&#xD;&#xA;5 = ID5&#xD;&#xA;-1 = Serial digital input" MinValue="-1" MaxValue="5" Name="Din_Cfg.Fct.EnDfr.Ch" Persistence="Persistent" Acronym="DIc" Attributes="None" />
+    <Parameter Description="Assign start defrost digital input&#xD;&#xA;0 = Function disabled&#xD;&#xA;1 = ID1&#xD;&#xA;2 = ID2&#xD;&#xA;3 = ID3&#xD;&#xA;4 = ID4&#xD;&#xA;5 = ID5&#xD;&#xA;-1 = Serial digital input" MinValue="-1" MaxValue="5" Name="Din_Cfg.Fct.CallDfr.Ch" Persistence="Persistent" Acronym="DId" Attributes="None" />
+    <Parameter Description="Assign door switch with comp. and fans OFF digital input&#xD;&#xA;0 = Function disabled&#xD;&#xA;1 = ID1&#xD;&#xA;2 = ID2&#xD;&#xA;3 = ID3&#xD;&#xA;4 = ID4&#xD;&#xA;5 = ID5&#xD;&#xA;-1 = Serial digital input" MinValue="-1" MaxValue="5" Name="Din_Cfg.Fct.DoorOff.Ch" Persistence="Persistent" Acronym="DIE" Attributes="None" />
+    <Parameter Description="Assign remote ON/OFF digital input&#xD;&#xA;0 = Function disabled&#xD;&#xA;1 = ID1&#xD;&#xA;2 = ID2&#xD;&#xA;3 = ID3&#xD;&#xA;4 = ID4&#xD;&#xA;5 = ID5&#xD;&#xA;-1 = Serial digital input" MinValue="-1" MaxValue="5" Name="Din_Cfg.Fct.RemoteOff.Ch" Persistence="Persistent" Acronym="DIF" Attributes="None" />
+    <Parameter Description="Assign curtain switch digital input&#xD;&#xA;0 = Function disabled&#xD;&#xA;1 = ID1&#xD;&#xA;2 = ID2&#xD;&#xA;3 = ID3&#xD;&#xA;4 = ID4&#xD;&#xA;5 = ID5&#xD;&#xA;-1 = Serial digital input" MinValue="-1" MaxValue="5" Name="Din_Cfg.Fct.Curtain.Ch" Persistence="Persistent" Acronym="DIG" Attributes="None" />
+    <Parameter Description="Assign start/stop continuous cycle digital input&#xD;&#xA;0 = Function disabled&#xD;&#xA;1 = ID1&#xD;&#xA;2 = ID2&#xD;&#xA;3 = ID3&#xD;&#xA;4 = ID4&#xD;&#xA;5 = ID5&#xD;&#xA;-1 = Serial digital input" MinValue="-1" MaxValue="5" Name="Din_Cfg.Fct.ContCycle.Ch" Persistence="Persistent" Acronym="DIH" Attributes="None" />
+    <Parameter Description="Assign input status monitoring digital input&#xD;&#xA;0 = Function disabled&#xD;&#xA;1 = ID1&#xD;&#xA;2 = ID2&#xD;&#xA;3 = ID3&#xD;&#xA;4 = ID4&#xD;&#xA;5 = ID5&#xD;&#xA;-1 = Serial digital input" MinValue="-1" MaxValue="5" Name="Din_Cfg.Fct.Auxiliary.Ch" Persistence="Persistent" Acronym="DII" Attributes="None" />
+    <Parameter Description="Assign retaining digital input digital input&#xD;&#xA;0 = Function disabled&#xD;&#xA;1 = ID1&#xD;&#xA;2 = ID2&#xD;&#xA;3 = ID3&#xD;&#xA;4 = ID4&#xD;&#xA;5 = ID5&#xD;&#xA;-1 = Serial digital input" MinValue="-1" MaxValue="5" Name="Din_Cfg.Fct.Timed.Ch" Persistence="Persistent" Acronym="DIL" Attributes="None" />
+    <Parameter Description="Assign Standby mode switch digital input&#xD;&#xA;0 = Function disabled&#xD;&#xA;1 = ID1&#xD;&#xA;2 = ID2&#xD;&#xA;3 = ID3&#xD;&#xA;4 = ID4&#xD;&#xA;5 = ID5&#xD;&#xA;-1 = Serial digital input" MinValue="-1" MaxValue="5" Name="Din_Cfg.Fct.Standby.Ch" Persistence="Persistent" Acronym="DIM" Attributes="None" />
+    <Parameter Description="Assign clean mode switch digital input&#xD;&#xA;0 = Function disabled&#xD;&#xA;1 = ID1&#xD;&#xA;2 = ID2&#xD;&#xA;3 = ID3&#xD;&#xA;4 = ID4&#xD;&#xA;5 = ID5&#xD;&#xA;-1 = Serial digital input" MinValue="-1" MaxValue="5" Name="Din_Cfg.Fct.Clean.Ch" Persistence="Persistent" Acronym="DIn" Attributes="None" />
+    <Parameter Description="Assign working parameters set change digital input&#xD;&#xA;0 = Function disabled&#xD;&#xA;1 = ID1&#xD;&#xA;2 = ID2&#xD;&#xA;3 = ID3&#xD;&#xA;4 = ID4&#xD;&#xA;5 = ID5&#xD;&#xA;-1 = Serial digital input" MinValue="-1" MaxValue="5" Name="Din_Cfg.Fct.Config.Ch" Persistence="Persistent" Acronym="DIo" Attributes="None" />
+    <Parameter Description="Assign door switch with comp. and fans ON digital input&#xD;&#xA;0 = Function disabled&#xD;&#xA;1 = ID1&#xD;&#xA;2 = ID2&#xD;&#xA;3 = ID3&#xD;&#xA;4 = ID4&#xD;&#xA;5 = ID5&#xD;&#xA;-1 = Serial digital input" MinValue="-1" MaxValue="5" Name="Din_Cfg.Fct.DoorOn.Ch" Persistence="Persistent" Acronym="DIP" Attributes="None" />
+    <Parameter Description="Assign defrost according to DI status digital input&#xD;&#xA;0 = Function disabled&#xD;&#xA;1 = ID1&#xD;&#xA;2 = ID2&#xD;&#xA;3 = ID3&#xD;&#xA;4 = ID4&#xD;&#xA;5 = ID5&#xD;&#xA;-1 = Serial digital input" MinValue="-1" MaxValue="5" Name="Din_Cfg.Fct.DefrostMirror.Ch" Persistence="Persistent" Acronym="DIr" Attributes="None" />
+    <Parameter Description="Config. immediate external alarm digital input logic&#xD;&#xA;FALSE = direct logic&#xD;&#xA;TRUE = reverse logic" Name="Din_Cfg.Fct.Alarm.Logic" Persistence="Persistent" Acronym="rIA" Attributes="None" />
+    <Parameter Description="Config. delayed external alarm digital input logic&#xD;&#xA;FALSE = direct logic&#xD;&#xA;TRUE = reverse logic" Name="Din_Cfg.Fct.DelayedAl.Logic" Persistence="Persistent" Acronym="rIb" Attributes="None" />
+    <Parameter Description="Config. enable defrost digital input logic&#xD;&#xA;FALSE = direct logic&#xD;&#xA;TRUE = reverse logic" Name="Din_Cfg.Fct.EnDfr.Logic" Persistence="Persistent" Acronym="rIc" Attributes="None" />
+    <Parameter Description="Config. start defrost digital input logic&#xD;&#xA;FALSE = direct logic&#xD;&#xA;TRUE = reverse logic" Name="Din_Cfg.Fct.CallDfr.Logic" Persistence="Persistent" Acronym="rId" Attributes="None" />
+    <Parameter Description="Config. door switch with comp. and fans OFF digital input logic&#xD;&#xA;FALSE = direct logic&#xD;&#xA;TRUE = reverse logic" Name="Din_Cfg.Fct.DoorOff.Logic" Persistence="Persistent" Acronym="rIE" Attributes="None" />
+    <Parameter Description="Config. remote ON/OFF digital input logic&#xD;&#xA;FALSE = direct logic&#xD;&#xA;TRUE = reverse logic" Name="Din_Cfg.Fct.RemoteOff.Logic" Persistence="Persistent" Acronym="rIF" Attributes="None" />
+    <Parameter Description="Config. curtain switch digital input logic&#xD;&#xA;FALSE = direct logic&#xD;&#xA;TRUE = reverse logic" Name="Din_Cfg.Fct.Curtain.Logic" Persistence="Persistent" Acronym="rIG" Attributes="None" />
+    <Parameter Description="Config. start/stop continuous cycle digital input logic&#xD;&#xA;FALSE = direct logic&#xD;&#xA;TRUE = reverse logic" Name="Din_Cfg.Fct.ContCycle.Logic" Persistence="Persistent" Acronym="rIH" Attributes="None" />
+    <Parameter Description="Config. input status monitoring digital input logic&#xD;&#xA;FALSE = direct logic&#xD;&#xA;TRUE = reverse logic" Name="Din_Cfg.Fct.Auxiliary.Logic" Persistence="Persistent" Acronym="rII" Attributes="None" />
+    <Parameter Description="Config. retaining digital input logic&#xD;&#xA;FALSE = direct logic&#xD;&#xA;TRUE = reverse logic" Name="Din_Cfg.Fct.Timed.Logic" Persistence="Persistent" Acronym="rIL" Attributes="None" />
+    <Parameter Description="Config. standby mode switch digital input logic&#xD;&#xA;FALSE = direct logic&#xD;&#xA;TRUE = reverse logic" Name="Din_Cfg.Fct.Standby.Logic" Persistence="Persistent" Acronym="rIM" Attributes="None" />
+    <Parameter Description="Config. clean mode switch digital input logic&#xD;&#xA;FALSE = direct logic&#xD;&#xA;TRUE = reverse logic" Name="Din_Cfg.Fct.Clean.Logic" Persistence="Persistent" Acronym="rIn" Attributes="None" />
+    <Parameter Description="Config. working parameters set change digital input logic&#xD;&#xA;FALSE = direct logic&#xD;&#xA;TRUE = reverse logic" Name="Din_Cfg.Fct.Config.Logic" Persistence="Persistent" Acronym="rIo" Attributes="None" />
+    <Parameter Description="Config. door switch with comp. and fans ON digital input&#xD;&#xA;FALSE = direct logic&#xD;&#xA;TRUE = reverse logic" Name="Din_Cfg.Fct.DoorOn.Logic" Persistence="Persistent" Acronym="rIP" Attributes="None" />
+    <Parameter Description="Config. defrost according to DI status digital input logic&#xD;&#xA;FALSE = direct logic&#xD;&#xA;TRUE = reverse logic" Name="Din_Cfg.Fct.DefrostMirror.Logic" Persistence="Persistent" Acronym="rIr" Attributes="None" />
+    <Parameter Description="Assign solenoid/comp. digital output&#xD;&#xA;0 = Function disabled&#xD;&#xA;1 = NO1&#xD;&#xA;2 = NO2&#xD;&#xA;3 = NO3&#xD;&#xA;4 = NO4" InitValue="2" MinValue="0" MaxValue="4" Name="Dout_Cfg.Fct.Solenoid.Ch" Persistence="Persistent" Acronym="DOA" Attributes="None" />
+    <Parameter Description="Assign alarm digital output&#xD;&#xA;0 = Function disabled&#xD;&#xA;1 = NO1&#xD;&#xA;2 = NO2&#xD;&#xA;3 = NO3&#xD;&#xA;4 = NO4" MinValue="0" MaxValue="4" Name="Dout_Cfg.Fct.Alarm.Ch" Persistence="Persistent" Acronym="DOb" Attributes="None" />
+    <Parameter Description="Assign auxiliary digital output&#xD;&#xA;0 = Function disabled&#xD;&#xA;1 = NO1&#xD;&#xA;2 = NO2&#xD;&#xA;3 = NO3&#xD;&#xA;4 = NO4" MinValue="0" MaxValue="4" Name="Dout_Cfg.Fct.Auxiliary.Ch" Persistence="Persistent" Acronym="DOc" Attributes="None" />
+    <Parameter Description="Assign auxiliary serving the Main on the Slaves digital output&#xD;&#xA;0 = Function disabled&#xD;&#xA;1 = NO1&#xD;&#xA;2 = NO2&#xD;&#xA;3 = NO3&#xD;&#xA;4 = NO4" MinValue="0" MaxValue="4" Name="Dout_Cfg.Fct.MasterAuxiliary.Ch" Persistence="Persistent" Acronym="DOd" Attributes="None" />
+    <Parameter Description="Assign light digital output&#xD;&#xA;0 = Function disabled&#xD;&#xA;1 = NO1&#xD;&#xA;2 = NO2&#xD;&#xA;3 = NO3&#xD;&#xA;4 = NO4" InitValue="4" MinValue="0" MaxValue="4" Name="Dout_Cfg.Fct.Light.Ch" Persistence="Persistent" Acronym="DOE" Attributes="None" />
+    <Parameter Description="Assign light from Main digital output&#xD;&#xA;0 = Function disabled&#xD;&#xA;1 = NO1&#xD;&#xA;2 = NO2&#xD;&#xA;3 = NO3&#xD;&#xA;4 = NO4" MinValue="0" MaxValue="4" Name="Dout_Cfg.Fct.MasterLight.Ch" Persistence="Persistent" Acronym="DOF" Attributes="None" />
+    <Parameter Description="Assign defrost digital output&#xD;&#xA;0 = Function disabled&#xD;&#xA;1 = NO1&#xD;&#xA;2 = NO2&#xD;&#xA;3 = NO3&#xD;&#xA;4 = NO4" InitValue="1" MinValue="0" MaxValue="4" Name="Dout_Cfg.Fct.Defrost.Ch" Persistence="Persistent" Acronym="DOG" Attributes="None" />
+    <Parameter Description="Assign defrost 2 digital output&#xD;&#xA;0 = Function disabled&#xD;&#xA;1 = NO1&#xD;&#xA;2 = NO2&#xD;&#xA;3 = NO3&#xD;&#xA;4 = NO4" MinValue="0" MaxValue="4" Name="Dout_Cfg.Fct.Defrost2.Ch" Persistence="Persistent" Acronym="DOH" Attributes="None" />
+    <Parameter Description="Assign fans digital output&#xD;&#xA;0 = Function disabled&#xD;&#xA;1 = NO1&#xD;&#xA;2 = NO2&#xD;&#xA;3 = NO3&#xD;&#xA;4 = NO4" InitValue="3" MinValue="0" MaxValue="4" Name="Dout_Cfg.Fct.Fans.Ch" Persistence="Persistent" Acronym="DOI" Attributes="None" />
+    <Parameter Description="Assign suction valve digital output&#xD;&#xA;0 = Function disabled&#xD;&#xA;1 = NO1&#xD;&#xA;2 = NO2&#xD;&#xA;3 = NO3&#xD;&#xA;4 = NO4" MinValue="0" MaxValue="4" Name="Dout_Cfg.Fct.SuctVlv.Ch" Persistence="Persistent" Acronym="DOL" Attributes="None" />
+    <Parameter Description="Assign liquid valve digital output&#xD;&#xA;0 = Function disabled&#xD;&#xA;1 = NO1&#xD;&#xA;2 = NO2&#xD;&#xA;3 = NO3&#xD;&#xA;4 = NO4" MinValue="0" MaxValue="4" Name="Dout_Cfg.Fct.LiquidVlv.Ch" Persistence="Persistent" Acronym="DOn" Attributes="None" />
+    <Parameter Description="Assign timed digital output&#xD;&#xA;0 = Function disabled&#xD;&#xA;1 = NO1&#xD;&#xA;2 = NO2&#xD;&#xA;3 = NO3&#xD;&#xA;4 = NO4" MinValue="0" MaxValue="4" Name="Dout_Cfg.Fct.Timed.Ch" Persistence="Persistent" Acronym="DOo" Attributes="None" />
+    <Parameter Description="Assign drain heaters digital output&#xD;&#xA;0 = Function disabled&#xD;&#xA;1 = NO1&#xD;&#xA;2 = NO2&#xD;&#xA;3 = NO3&#xD;&#xA;4 = NO4" MinValue="0" MaxValue="4" Name="Dout_Cfg.Fct.DrainHeat.Ch" Persistence="Persistent" Acronym="DOP" Attributes="None" />
+    <Parameter Description="Config. solenoid/comp. digital output logic&#xD;&#xA;FALSE = direct logic&#xD;&#xA;TRUE = reverse logic" Name="Dout_Cfg.Fct.Solenoid.Logic" Persistence="Persistent" Acronym="rOA" Attributes="None" />
+    <Parameter Description="Config. alarm digital output logic&#xD;&#xA;FALSE = direct logic&#xD;&#xA;TRUE = reverse logic" Name="Dout_Cfg.Fct.Alarm.Logic" Persistence="Persistent" Acronym="rOB" Attributes="None" />
+    <Parameter Description="Config. auxiliary digital output logic&#xD;&#xA;FALSE = direct logic&#xD;&#xA;TRUE = reverse logic" Name="Dout_Cfg.Fct.Auxiliary.Logic" Persistence="Persistent" Acronym="rOc" Attributes="None" />
+    <Parameter Description="Config. auxiliary from Main digital output logic&#xD;&#xA;FALSE = direct logic&#xD;&#xA;TRUE = reverse logic" Name="Dout_Cfg.Fct.MasterAuxiliary.Logic" Persistence="Persistent" Acronym="rOd" Attributes="None" />
+    <Parameter Description="Config. light digital output logic&#xD;&#xA;FALSE = direct logic&#xD;&#xA;TRUE = reverse logic" Name="Dout_Cfg.Fct.Light.Logic" Persistence="Persistent" Acronym="rOE" Attributes="None" />
+    <Parameter Description="Config. light from Main digital output logic&#xD;&#xA;FALSE = direct logic&#xD;&#xA;TRUE = reverse logic" Name="Dout_Cfg.Fct.MasterLight.Logic" Persistence="Persistent" Acronym="rOF" Attributes="None" />
+    <Parameter Description="Config. defrost digital output logic&#xD;&#xA;FALSE = direct logic&#xD;&#xA;TRUE = reverse logic" Name="Dout_Cfg.Fct.Defrost.Logic" Persistence="Persistent" Acronym="rOG" Attributes="None" />
+    <Parameter Description="Config. defrost 2 digital output logic&#xD;&#xA;FALSE = direct logic&#xD;&#xA;TRUE = reverse logic" Name="Dout_Cfg.Fct.Defrost2.Logic" Persistence="Persistent" Acronym="rOH" Attributes="None" />
+    <Parameter Description="Config. fans digital output logic&#xD;&#xA;FALSE = direct logic&#xD;&#xA;TRUE = reverse logic" Name="Dout_Cfg.Fct.Fans.Logic" Persistence="Persistent" Acronym="rOI" Attributes="None" />
+    <Parameter Description="Config. suction valve digital output logic&#xD;&#xA;FALSE = direct logic&#xD;&#xA;TRUE = reverse logic" Name="Dout_Cfg.Fct.SuctVlv.Logic" Persistence="Persistent" Acronym="rOL" Attributes="None" />
+    <Parameter Description="Config. equalization valve digital output logic&#xD;&#xA;FALSE = direct logic&#xD;&#xA;TRUE = reverse logic" Name="Dout_Cfg.Fct.EqualizVlv.Logic" Persistence="Persistent" Acronym="rOM" Attributes="None" />
+    <Parameter Description="Config. liquid valve digital output logic&#xD;&#xA;FALSE = direct logic&#xD;&#xA;TRUE = reverse logic" Name="Dout_Cfg.Fct.LiquidVlv.Logic" Persistence="Persistent" Acronym="rOn" Attributes="None" />
+    <Parameter Description="Config. timed digital output logic&#xD;&#xA;FALSE = direct logic&#xD;&#xA;TRUE = reverse logic" Name="Dout_Cfg.Fct.Timed.Logic" Persistence="Persistent" Acronym="rOo" Attributes="None" />
+    <Parameter Description="Config. drain heaters digital output logic&#xD;&#xA;FALSE = direct logic&#xD;&#xA;TRUE = reverse logic" Name="Dout_Cfg.Fct.DrainHeat.Logic" Persistence="Persistent" Acronym="rOP" Attributes="None" />
+    <Parameter Description="Air off temp. probe calibration" MinValue="-20" MaxValue="20" Name="Ain_Offset.Fct.AirOff" Persistence="Persistent" Acronym="/cA" Attributes="None" />
+    <Parameter Description="Air on temp. probe calibration" MinValue="-20" MaxValue="20" Name="Ain_Offset.Fct.AirOn" Persistence="Persistent" Acronym="/cc" Attributes="None" />
+    <Parameter Description="Ambient humidity probe (SU) calibration" MinValue="-20" MaxValue="20" Name="Ain_Offset.Fct.AmbientH" Persistence="Persistent" Acronym="/cL" Attributes="None" />
+    <Parameter Description="Ambient temp. probe (SA) calibration" MinValue="-20" MaxValue="20" Name="Ain_Offset.Fct.AmbientT" Persistence="Persistent" Acronym="/cI" Attributes="None" />
+    <Parameter Description="Auxiliary temp. probe (Aux) calibration" MinValue="-20" MaxValue="20" Name="Ain_Offset.Fct.Auxiliary" Persistence="Persistent" Acronym="/cG" Attributes="None" />
+    <Parameter Description="Auxiliary temp. probe 2 (Aux2) calibration" MinValue="-20" MaxValue="20" Name="Ain_Offset.Fct.Auxiliary2" Persistence="Persistent" Acronym="/cH" Attributes="None" />
+    <Parameter Description="Defrost temp. probe calibration" MinValue="-20" MaxValue="20" Name="Ain_Offset.Fct.Defrost" Persistence="Persistent" Acronym="/cb" Attributes="None" />
+    <Parameter Description="Defrost temp. probe 2 (Sd2)  calibration" MinValue="-20" MaxValue="20" Name="Ain_Offset.Fct.Defrost2" Persistence="Persistent" Acronym="/cF" Attributes="None" />
+    <Parameter Description="Dewpoint value (Sdp) calibration" MinValue="-20" MaxValue="20" Name="Ain_Offset.Fct.DewPoint" Persistence="Persistent" Acronym="/cn" Attributes="None" />
+    <Parameter Description="Evaporator pressure probe (PEu) calibration" MinValue="-20" MaxValue="20" Name="Ain_Offset.Fct.EvapP" Persistence="Persistent" Acronym="/cE" Attributes="None" />
+    <Parameter Description="Glass temp. probe (Svt) calibration" MinValue="-20" MaxValue="20" Name="Ain_Offset.Fct.GlassT" Persistence="Persistent" Acronym="/cM" Attributes="None" />
+    <Parameter Description="Suction temp. probe (tGs) calibration" MinValue="-20" MaxValue="20" Name="Ain_Offset.Fct.SuctT" Persistence="Persistent" Acronym="/cd" Attributes="None" />
+    <Parameter Description="Alarm digital output function status" Name="DigitalOutputs.Fct.Alarm" ReadOnly="true" Acronym="FOb" Attributes="None" />
+    <Parameter Description="Auxiliary digital output function status" Name="DigitalOutputs.Fct.Auxiliary" ReadOnly="true" Acronym="FOc" Attributes="None" />
+    <Parameter Description="Defrost digital output function status" Name="DigitalOutputs.Fct.Defrost" ReadOnly="true" Acronym="FOG" Attributes="None" />
+    <Parameter Description="Aux. evap. defrost digital output function status" Name="DigitalOutputs.Fct.Defrost2" ReadOnly="true" Acronym="FOH" Attributes="None" />
+    <Parameter Description="Drain heater digital output function status" Name="DigitalOutputs.Fct.DrainHeat" ReadOnly="true" Acronym="FOP" Attributes="None" />
+    <Parameter Description="---" Name="DigitalOutputs.Fct.EqualizVlv" ReadOnly="true" Acronym="Reserved_Dout01" Attributes="None" />
+    <Parameter Description="Evap fans digital output function status" Name="DigitalOutputs.Fct.Fans" ReadOnly="true" Acronym="FOI" Attributes="None" />
+    <Parameter Description="Light digital output function status" Name="DigitalOutputs.Fct.Light" ReadOnly="true" Acronym="FOE" Attributes="None" />
+    <Parameter Description="---" Name="DigitalOutputs.Fct.LiquidVlv" ReadOnly="true" Acronym="Reserved_Dout02" Attributes="None" />
+    <Parameter Description="Auxiliary serving Main digital output function status" Name="DigitalOutputs.Fct.MasterAuxiliary" ReadOnly="true" Acronym="FOd" Attributes="None" />
+    <Parameter Description="Light serving Main digital output function status" Name="DigitalOutputs.Fct.MasterLight" ReadOnly="true" Acronym="FOF" Attributes="None" />
+    <Parameter Description="Solenoid digital output function status" Name="DigitalOutputs.Fct.Solenoid" ReadOnly="true" Acronym="FOA" Attributes="None" />
+    <Parameter Description="---" Name="DigitalOutputs.Fct.SuctVlv" ReadOnly="true" Acronym="Reserved_Dout03" Attributes="None" />
+    <Parameter Description="Timed digital output function status" Name="DigitalOutputs.Fct.Timed" ReadOnly="true" Acronym="FOo" Attributes="None" />
+    <Parameter Name="LogAlrmRes" Attributes="None" />
+    <Parameter Name="LogAlarms[1].Code" Persistence="Persistent" ReadOnly="true" Attributes="None" />
+    <Parameter Name="LogAlarms[1].ID" Persistence="Persistent" ReadOnly="true" Attributes="None" />
+    <Parameter Name="LogAlarms[1].Status" Persistence="Persistent" ReadOnly="true" Attributes="None" />
+    <Parameter Name="LogAlarms[1].TimeStamp" Persistence="Persistent" ReadOnly="true" Attributes="None" />
+    <Parameter Name="LogAlarms[2].Code" Persistence="Persistent" ReadOnly="true" Attributes="None" />
+    <Parameter Name="LogAlarms[2].ID" Persistence="Persistent" ReadOnly="true" Attributes="None" />
+    <Parameter Name="LogAlarms[2].Status" Persistence="Persistent" ReadOnly="true" Attributes="None" />
+    <Parameter Name="LogAlarms[2].TimeStamp" Persistence="Persistent" ReadOnly="true" Attributes="None" />
+    <Parameter Name="LogAlarms[3].Code" Persistence="Persistent" ReadOnly="true" Attributes="None" />
+    <Parameter Name="LogAlarms[3].ID" Persistence="Persistent" ReadOnly="true" Attributes="None" />
+    <Parameter Name="LogAlarms[3].Status" Persistence="Persistent" ReadOnly="true" Attributes="None" />
+    <Parameter Name="LogAlarms[3].TimeStamp" Persistence="Persistent" ReadOnly="true" Attributes="None" />
+    <Parameter Name="LogAlarms[4].Code" Persistence="Persistent" ReadOnly="true" Attributes="None" />
+    <Parameter Name="LogAlarms[4].ID" Persistence="Persistent" ReadOnly="true" Attributes="None" />
+    <Parameter Name="LogAlarms[4].Status" Persistence="Persistent" ReadOnly="true" Attributes="None" />
+    <Parameter Name="LogAlarms[4].TimeStamp" Persistence="Persistent" ReadOnly="true" Attributes="None" />
+    <Parameter Name="LogAlarms[5].Code" Persistence="Persistent" ReadOnly="true" Attributes="None" />
+    <Parameter Name="LogAlarms[5].ID" Persistence="Persistent" ReadOnly="true" Attributes="None" />
+    <Parameter Name="LogAlarms[5].Status" Persistence="Persistent" ReadOnly="true" Attributes="None" />
+    <Parameter Name="LogAlarms[5].TimeStamp" Persistence="Persistent" ReadOnly="true" Attributes="None" />
+    <Parameter Description="Alarms present" Name="OrAlrm" ReadOnly="true" Attributes="None" />
+    <Parameter Description="Dummy var.for profiling needs" Name="isManufacturer" Persistence="Persistent" Attributes="None" />
+    <Parameter Description="Dummy var.for profiling needs" Name="isService" Persistence="Persistent" Attributes="None" />
+    <Parameter Description="Dummy var.for profiling needs" Name="isUser" Persistence="Persistent" Attributes="None" />
+    <Parameter Description="Virtual probe composition&#xD;&#xA;0 = Air off (Sm)&#xD;&#xA;100 = Air on (Sr)" Name="VirtualComposition" Persistence="Persistent" Acronym="/4" Attributes="None" />
+    <Parameter Description="Evap. saturated temp. (tEu) calibration" Name="EvapOffset" Persistence="Persistent" Acronym="/co" Attributes="None" />
+    <Parameter Description="Assign channel for Modulating fan output&#xD;&#xA;0 = not configured&#xD;&#xA;1 = Y1&#xD;&#xA;2 = Y2" MinValue="0" MaxValue="2" Name="AOut_Cfg.Fct.Fans.Ch" Persistence="Persistent" Acronym="/AA" Attributes="None" />
+    <Parameter Description="Assign channel for Modulating valve output&#xD;&#xA;0 = not configured&#xD;&#xA;1 = Y1&#xD;&#xA;2 = Y2" MinValue="0" MaxValue="2" Name="AOut_Cfg.Fct.Valve.Ch" Persistence="Persistent" Acronym="/Ab" Attributes="None" />
+    <Parameter Description="Assign channel for Modulating rail heaters output&#xD;&#xA;0 = not configured&#xD;&#xA;1 = Y1&#xD;&#xA;2 = Y2" MinValue="0" MaxValue="2" Name="AOut_Cfg.Fct.Rails.Ch" Persistence="Persistent" Acronym="/Ac" Attributes="None" />
+    <Parameter Description="Assign Anti-sweat heaters digital output&#xD;&#xA;0 = Function disabled&#xD;&#xA;1 = NO1&#xD;&#xA;2 = NO2&#xD;&#xA;3 = NO3&#xD;&#xA;4 = NO4" MinValue="0" MaxValue="4" Name="Dout_Cfg.Fct.RailHeaters.Ch" Persistence="Persistent" Acronym="DOQ" Attributes="None" />
+    <Parameter Description="Config. Anti-sweat heaters digital output logic&#xD;&#xA;FALSE = direct logic&#xD;&#xA;TRUE = reverse logic" Name="Dout_Cfg.Fct.RailHeaters.Logic" Persistence="Persistent" Acronym="rOQ" Attributes="None" />
+    <Parameter Description="Defrost 1 - Enable power defrost&#xD;&#xA;FALSE = normal&#xD;&#xA;TRUE = Power defrost" Name="PowDfrConf[1]" Persistence="Persistent" Acronym="td1-P" Attributes="None" />
+    <Parameter Description="Defrost 2 - Enable power defrost&#xD;&#xA;FALSE = normal&#xD;&#xA;TRUE = Power defrost" Name="PowDfrConf[2]" Persistence="Persistent" Acronym="td2-P" Attributes="None" />
+    <Parameter Description="Defrost 3 - Enable power defrost&#xD;&#xA;FALSE = normal&#xD;&#xA;TRUE = Power defrost" Name="PowDfrConf[3]" Persistence="Persistent" Acronym="td3-P" Attributes="None" />
+    <Parameter Description="Defrost 4 - Enable power defrost&#xD;&#xA;FALSE = normal&#xD;&#xA;TRUE = Power defrost" Name="PowDfrConf[4]" Persistence="Persistent" Acronym="td4-P" Attributes="None" />
+    <Parameter Description="Defrost 5 - Enable power defrost&#xD;&#xA;FALSE = normal&#xD;&#xA;TRUE = Power defrost" Name="PowDfrConf[5]" Persistence="Persistent" Acronym="td5-P" Attributes="None" />
+    <Parameter Description="Defrost 6 - Enable power defrost&#xD;&#xA;FALSE = normal&#xD;&#xA;TRUE = Power defrost" Name="PowDfrConf[6]" Persistence="Persistent" Acronym="td6-P" Attributes="None" />
+    <Parameter Description="Defrost 7 - Enable power defrost&#xD;&#xA;FALSE = normal&#xD;&#xA;TRUE = Power defrost" Name="PowDfrConf[7]" Persistence="Persistent" Acronym="td7-P" Attributes="None" />
+    <Parameter Description="Defrost 8  - Enable power defrost&#xD;&#xA;FALSE = normal&#xD;&#xA;TRUE = Power defrost" Name="PowDfrConf[8]" Persistence="Persistent" Acronym="td8-P" Attributes="None" />
+    <Parameter Description="Bypass high temp. alarm time after defrost" InitValue="30" Name="DfrHiBypass" Persistence="Persistent" Acronym="d8" Attributes="None" />
+    <Parameter Description="Terminal buzzer&#xD;&#xA;FALSE = disabled&#xD;&#xA;TRUE = enabled" InitValue="TRUE" Name="EnBuzzer" Persistence="Persistent" Acronym="H8" Attributes="None" />
+    <Parameter Description="Day/Night start timeband 1" Name="TimeBandStart[1].TimeAPP" Persistence="Persistent" Acronym="tS1-time" Attributes="None" />
+    <Parameter Description="Day/Night start timeband 2" Name="TimeBandStart[2].TimeAPP" Persistence="Persistent" Acronym="tS2-time" Attributes="None" />
+    <Parameter Description="Day/Night start timeband 3" Name="TimeBandStart[3].TimeAPP" Persistence="Persistent" Acronym="tS3-time" Attributes="None" />
+    <Parameter Description="Day/Night start timeband 4" Name="TimeBandStart[4].TimeAPP" Persistence="Persistent" Acronym="tS4-time" Attributes="None" />
+    <Parameter Description="Day/Night start timeband 5" Name="TimeBandStart[5].TimeAPP" Persistence="Persistent" Acronym="tS5-time" Attributes="None" />
+    <Parameter Description="Day/Night start timeband 6" Name="TimeBandStart[6].TimeAPP" Persistence="Persistent" Acronym="tS6-time" Attributes="None" />
+    <Parameter Description="Day/Night start timeband 7" Name="TimeBandStart[7].TimeAPP" Persistence="Persistent" Acronym="tS7-time" Attributes="None" />
+    <Parameter Description="Day/Night start timeband 8" Name="TimeBandStart[8].TimeAPP" Persistence="Persistent" Acronym="tS8-time" Attributes="None" />
+    <Parameter Description="Day/Night end timeband 1" Name="TimeBandEnd[1].TimeAPP" Persistence="Persistent" Acronym="tE1-time" Attributes="None" />
+    <Parameter Description="Day/Night end timeband 2" Name="TimeBandEnd[2].TimeAPP" Persistence="Persistent" Acronym="tE2-time" Attributes="None" />
+    <Parameter Description="Day/Night end timeband 3" Name="TimeBandEnd[3].TimeAPP" Persistence="Persistent" Acronym="tE3-time" Attributes="None" />
+    <Parameter Description="Day/Night end timeband 4" Name="TimeBandEnd[4].TimeAPP" Persistence="Persistent" Acronym="tE4-time" Attributes="None" />
+    <Parameter Description="Day/Night end timeband 5" Name="TimeBandEnd[5].TimeAPP" Persistence="Persistent" Acronym="tE5-time" Attributes="None" />
+    <Parameter Description="Day/Night end timeband 6" Name="TimeBandEnd[6].TimeAPP" Persistence="Persistent" Acronym="tE6-time" Attributes="None" />
+    <Parameter Description="Day/Night end timeband 7" Name="TimeBandEnd[7].TimeAPP" Persistence="Persistent" Acronym="tE7-time" Attributes="None" />
+    <Parameter Description="Day/Night end timeband 8" Name="TimeBandEnd[8].TimeAPP" Persistence="Persistent" Acronym="tE8-time" Attributes="None" />
+    <Parameter Description="Defrost 1 - Start time (hh:mm)" Name="DfrStart[1].TimeAPP" Persistence="Persistent" Acronym="td1-time" Attributes="None" />
+    <Parameter Description="Defrost 2 - Start time (hh:mm)" Name="DfrStart[2].TimeAPP" Persistence="Persistent" Acronym="td2-time" Attributes="None" />
+    <Parameter Description="Defrost 3 - Start time (hh:mm)" Name="DfrStart[3].TimeAPP" Persistence="Persistent" Acronym="td3-time" Attributes="None" />
+    <Parameter Description="Defrost 4 - Start time (hh:mm)" Name="DfrStart[4].TimeAPP" Persistence="Persistent" Acronym="td4-time" Attributes="None" />
+    <Parameter Description="Defrost 5 - Start time (hh:mm)" Name="DfrStart[5].TimeAPP" Persistence="Persistent" Acronym="td5-time" Attributes="None" />
+    <Parameter Description="Defrost 6 - Start time (hh:mm)" Name="DfrStart[6].TimeAPP" Persistence="Persistent" Acronym="td6-time" Attributes="None" />
+    <Parameter Description="Defrost 7 - Start time (hh:mm)" Name="DfrStart[7].TimeAPP" Persistence="Persistent" Acronym="td7-time" Attributes="None" />
+    <Parameter Description="Defrost 8 - Start time (hh:mm)" Name="DfrStart[8].TimeAPP" Persistence="Persistent" Acronym="td8-time" Attributes="None" />
+    <Parameter InitValue="FALSE" Name="ToggleSetTimeAPP" Attributes="None" />
+    <Parameter Name="DateTimeToSet" Attributes="None" />
+    <Parameter Name="Posix" Attributes="None" />
+    <Parameter InitValue="FALSE" Name="ManClean" Attributes="None" />
+    <Parameter InitValue="10" Name="SimMax[1]" Persistence="Persistent" Attributes="None" />
+    <Parameter InitValue="2" Name="SimMax[2]" Persistence="Persistent" Attributes="None" />
+    <Parameter InitValue="18" Name="SimMax[3]" Persistence="Persistent" Attributes="None" />
+    <Parameter InitValue="100" Name="SimMax[4]" Persistence="Persistent" Attributes="None" />
+    <Parameter InitValue="100" Name="SimMax[5]" Persistence="Persistent" Attributes="None" />
+    <Parameter InitValue="100" Name="SimMax[6]" Persistence="Persistent" Attributes="None" />
+    <Parameter Name="SimMax[7]" Persistence="Persistent" Attributes="None" />
+    <Parameter Name="SimMax[8]" Persistence="Persistent" Attributes="None" />
+    <Parameter InitValue="-10" Name="SimMin[1]" Persistence="Persistent" Attributes="None" />
+    <Parameter InitValue="-20" Name="SimMin[2]" Persistence="Persistent" Attributes="None" />
+    <Parameter InitValue="-2" Name="SimMin[3]" Persistence="Persistent" Attributes="None" />
+    <Parameter InitValue="0" Name="SimMin[4]" Persistence="Persistent" Attributes="None" />
+    <Parameter InitValue="0" Name="SimMin[5]" Persistence="Persistent" Attributes="None" />
+    <Parameter InitValue="0" Name="SimMin[6]" Persistence="Persistent" Attributes="None" />
+    <Parameter Name="SimMin[7]" Persistence="Persistent" Attributes="None" />
+    <Parameter Name="SimMin[8]" Persistence="Persistent" Attributes="None" />
+    <Parameter InitValue="5m" Name="SimPeriod[1]" Persistence="Persistent" Attributes="None" />
+    <Parameter InitValue="5m" Name="SimPeriod[2]" Persistence="Persistent" Attributes="None" />
+    <Parameter InitValue="5m" Name="SimPeriod[3]" Persistence="Persistent" Attributes="None" />
+    <Parameter InitValue="5m" Name="SimPeriod[4]" Persistence="Persistent" Attributes="None" />
+    <Parameter InitValue="5m" Name="SimPeriod[5]" Persistence="Persistent" Attributes="None" />
+    <Parameter InitValue="5m" Name="SimPeriod[6]" Persistence="Persistent" Attributes="None" />
+    <Parameter Name="SimPeriod[7]" Persistence="Persistent" Attributes="None" />
+    <Parameter Name="SimPeriod[8]" Persistence="Persistent" Attributes="None" />
+    <Parameter InitValue="FALSE" Name="SimulateMode" Persistence="Persistent" Attributes="None" />
+    <Parameter Description="End time band 2 - day&#xD;&#xA;0 = Disabled&#xD;&#xA;1 = Monday&#xD;&#xA;2 = Tuestday&#xD;&#xA;3 = Wednsday&#xD;&#xA;4 = Thursday&#xD;&#xA;5 = Friday&#xD;&#xA;6 = Saturday&#xD;&#xA;7 = Sunday&#xD;&#xA;8 = Monday to friday&#xD;&#xA;9 = Monday to saturday&#xD;&#xA;10 = Saturday and sunday&#xD;&#xA;11 = All days" Name="TimeBandEnd[2].Day" Persistence="Persistent" Acronym="tE2-d" Attributes="None" />
+    <Parameter Description="Post dripping evap. fan management&#xD;&#xA;FALSE = on&#xD;&#xA;TRUE = off" InitValue="FALSE" Name="DfrPDFanCfg" Persistence="Persistent" Acronym="Fpd" Attributes="None" />
+    <Parameter Description="Configure solenoid/comp. control during ext. alarm with fixed 15 min OFF time&#xD;&#xA;0 = always OFF&#xD;&#xA;100 = always ON" InitValue="0" Name="CmpAlConfig" Persistence="Persistent" Acronym="A10" Attributes="None" />
+    <Parameter Name="LogAlarms[6].Code" Persistence="Persistent" ReadOnly="true" Attributes="None" />
+    <Parameter Name="LogAlarms[6].ID" Persistence="Persistent" ReadOnly="true" Attributes="None" />
+    <Parameter Name="LogAlarms[6].Status" Persistence="Persistent" ReadOnly="true" Attributes="None" />
+    <Parameter Name="LogAlarms[6].TimeStamp" Persistence="Persistent" ReadOnly="true" Attributes="None" />
+    <Parameter Name="LogAlarms[7].Code" Persistence="Persistent" ReadOnly="true" Attributes="None" />
+    <Parameter Name="LogAlarms[7].ID" Persistence="Persistent" ReadOnly="true" Attributes="None" />
+    <Parameter Name="LogAlarms[7].Status" Persistence="Persistent" ReadOnly="true" Attributes="None" />
+    <Parameter Name="LogAlarms[7].TimeStamp" Persistence="Persistent" ReadOnly="true" Attributes="None" />
+    <Parameter Name="LogAlarms[8].Code" Persistence="Persistent" ReadOnly="true" Attributes="None" />
+    <Parameter Name="LogAlarms[8].ID" Persistence="Persistent" ReadOnly="true" Attributes="None" />
+    <Parameter Name="LogAlarms[8].Status" Persistence="Persistent" ReadOnly="true" Attributes="None" />
+    <Parameter Name="LogAlarms[8].TimeStamp" Persistence="Persistent" ReadOnly="true" Attributes="None" />
+    <Parameter Name="LogAlarms[9].Code" Persistence="Persistent" ReadOnly="true" Attributes="None" />
+    <Parameter Name="LogAlarms[9].ID" Persistence="Persistent" ReadOnly="true" Attributes="None" />
+    <Parameter Name="LogAlarms[9].Status" Persistence="Persistent" ReadOnly="true" Attributes="None" />
+    <Parameter Name="LogAlarms[9].TimeStamp" Persistence="Persistent" ReadOnly="true" Attributes="None" />
+    <Parameter Name="LogAlarms[10].Code" Persistence="Persistent" ReadOnly="true" Attributes="None" />
+    <Parameter Name="LogAlarms[10].ID" Persistence="Persistent" ReadOnly="true" Attributes="None" />
+    <Parameter Name="LogAlarms[10].Status" Persistence="Persistent" ReadOnly="true" Attributes="None" />
+    <Parameter Name="LogAlarms[10].TimeStamp" Persistence="Persistent" ReadOnly="true" Attributes="None" />
+    <Parameter InitValue="4000" Name="CoolingCapacity" Persistence="Persistent" Acronym="POM" Attributes="None" />
+    <Parameter Description="Evap. fan forcing time at max speed&#xD;&#xA;0 = function disabled" InitValue="0" Name="FansSpeedupTime" Persistence="Persistent" Acronym="F10" Attributes="None" />
+    <Parameter Description="Evap. fan peak time&#xD;&#xA;0 = function disabled" InitValue="0" Name="FansPeekTime" Persistence="Persistent" Acronym="F8" Attributes="None" />
+    <Parameter Name="ActualTemp2Setpoint" ReadOnly="true" Acronym="ASt2" Attributes="None" />
+    <Parameter Name="ActualTempSetpoint" ReadOnly="true" Acronym="Ast" Attributes="None" />
+    <Parameter Description="Signal alarms from Secondary to Main&#xD;&#xA;FALSE = not enabled&#xD;&#xA;TRUE = enabled" InitValue="TRUE" Name="SlaveAlarmCheck" Persistence="Persistent" Acronym="Ar" Attributes="None" />
+    <Parameter Description="Immediate external alarm function status" Name="DigitalInputs.Fct.Alarm" ReadOnly="true" Acronym="FIA" Attributes="None" />
+    <Parameter Description="Auxiliary digital input function status" Name="DigitalInputs.Fct.Auxiliary" ReadOnly="true" Acronym="FII" Attributes="None" />
+    <Parameter Description="Call defrost function status" Name="DigitalInputs.Fct.CallDfr" ReadOnly="true" Acronym="FId" Attributes="None" />
+    <Parameter Description="Clean switch  function status" Name="DigitalInputs.Fct.Clean" ReadOnly="true" Acronym="FIn" Attributes="None" />
+    <Parameter Description="Change configuration function status" Name="DigitalInputs.Fct.Config" ReadOnly="true" Acronym="FIo" Attributes="None" />
+    <Parameter Description="Continuous cycle start/stop function status" Name="DigitalInputs.Fct.ContCycle" ReadOnly="true" Acronym="FIH" Attributes="None" />
+    <Parameter Description="Curtain switch function status" Name="DigitalInputs.Fct.Curtain" ReadOnly="true" Acronym="FIG" Attributes="None" />
+    <Parameter Description="Defrost aligned with digital input status" Name="DigitalInputs.Fct.DefrostMirror" ReadOnly="true" Acronym="FIr" Attributes="None" />
+    <Parameter Description="Delayed external alarm function status" Name="DigitalInputs.Fct.DelayedAl" ReadOnly="true" Acronym="FIb" Attributes="None" />
+    <Parameter Description="Door status - Regulation OFF function status" Name="DigitalInputs.Fct.DoorOff" ReadOnly="true" Acronym="FIE" Attributes="None" />
+    <Parameter Description="Door status - Regulation ON function status" Name="DigitalInputs.Fct.DoorOn" ReadOnly="true" Acronym="FIP" Attributes="None" />
+    <Parameter Description="Enable defrost function status" Name="DigitalInputs.Fct.EnDfr" ReadOnly="true" Acronym="FIc" Attributes="None" />
+    <Parameter Description="Remote ON/OFF function status" Name="DigitalInputs.Fct.RemoteOff" ReadOnly="true" Acronym="FIF" Attributes="None" />
+    <Parameter Description="Stand by switch function status" Name="DigitalInputs.Fct.Standby" ReadOnly="true" Acronym="FIM" Attributes="None" />
+    <Parameter Description="Timed digital input function status" Name="DigitalInputs.Fct.Timed" ReadOnly="true" Acronym="FIL" Attributes="None" />
+    <Parameter Description="Genric stage Dout function status" Name="DigitalOutputs.Fct.GenericStage1" ReadOnly="true" Acronym="FGenStage_01" Attributes="None" />
+    <Parameter Description="Rail heaters digital output function status" Name="DigitalOutputs.Fct.RailHeaters" ReadOnly="true" Acronym="FOQ" Attributes="None" />
+    <Parameter Name="HACCP_CountHA" ReadOnly="true" Acronym="HAn" Attributes="None" />
+    <Parameter Name="HACCP_CountHF" ReadOnly="true" Acronym="HFn" Attributes="None" />
+    <Parameter Description="Enable close solenoid valve for low SH (LowSH) and/or low suction temp. (LSA)" InitValue="FALSE" Name="ExvEnCloseLsa" Persistence="Persistent" Acronym="P10" Attributes="None" />
+    <Parameter Description="Support saturated temp. for press. probe error" InitValue="-15" Name="ExvSatTempBackup" Persistence="Persistent" Acronym="P15" Attributes="None" />
+    <Parameter InitValue="FALSE" Name="ExvEnCloseMOP" Persistence="Persistent" Acronym="PM5" Attributes="None" />
+    <Parameter InitValue="FALSE" Name="WizDone" Persistence="Persistent" Acronym="WD" Attributes="None" />
+    <Parameter Name="CustomGasCoeff.CRC" Persistence="Persistent" Attributes="None" />
+    <Parameter Name="CustomGasCoeff.GasCoeff[0]" Persistence="Persistent" Attributes="None" />
+    <Parameter Name="CustomGasCoeff.GasCoeff[1]" Persistence="Persistent" Attributes="None" />
+    <Parameter Name="CustomGasCoeff.GasCoeff[2]" Persistence="Persistent" Attributes="None" />
+    <Parameter Name="CustomGasCoeff.GasCoeff[3]" Persistence="Persistent" Attributes="None" />
+    <Parameter Name="CustomGasCoeff.GasCoeff[4]" Persistence="Persistent" Attributes="None" />
+    <Parameter Name="CustomGasCoeff.GasCoeff[5]" Persistence="Persistent" Attributes="None" />
+    <Parameter Name="CustomGasCoeff.GasCoeff[6]" Persistence="Persistent" Attributes="None" />
+    <Parameter Name="CustomGasCoeff.GasCoeff[7]" Persistence="Persistent" Attributes="None" />
+    <Parameter Name="CustomGasCoeff.GasCoeff[8]" Persistence="Persistent" Attributes="None" />
+    <Parameter Name="CustomGasCoeff.GasCoeff[9]" Persistence="Persistent" Attributes="None" />
+    <Parameter Name="CustomGasCoeff.GasCoeff[10]" Persistence="Persistent" Attributes="None" />
+    <Parameter Name="CustomGasCoeff.GasCoeff[11]" Persistence="Persistent" Attributes="None" />
+    <Parameter Name="CustomGasCoeff.GasId" Persistence="Persistent" Attributes="None" />
+    <Parameter Description="S11 value" Name="SerialInputs[1].r" ReadOnly="true" Acronym="S11" Attributes="None" />
+    <Parameter Description="S12 value" Name="SerialInputs[2].r" ReadOnly="true" Acronym="S12" Attributes="None" />
+    <Parameter Description="S13 value" Name="SerialInputs[3].r" ReadOnly="true" Acronym="S13" Attributes="None" />
+    <Parameter Description="S14 value" Name="SerialInputs[4].r" ReadOnly="true" Acronym="S14" Attributes="None" />
+    <Parameter Description="Valve blocked" Name="Alarms.Al.Al_bLO.Info.Active" ReadOnly="true" Acronym="blo" Attributes="None" />
+    <Parameter Name="Alarms.Al.Al_bLO.Info.Code" ReadOnly="true" Attributes="None" />
+    <Parameter Description="Door open for too long" Name="Alarms.Al.Al_Door.Info.Active" ReadOnly="true" Acronym="dor" Attributes="None" />
+    <Parameter Name="Alarms.Al.Al_Door.Info.Code" ReadOnly="true" Attributes="None" />
+    <Parameter Description="Comm. error with stepper driver" Name="Alarms.Al.Al_Edc.Info.Active" ReadOnly="true" Acronym="Edc" Attributes="None" />
+    <Parameter Name="Alarms.Al.Al_Edc.Info.Code" ReadOnly="true" Attributes="None" />
+    <Parameter Description="Generic alarm 1 - High" Name="Alarms.Al.Al_GHI_1.Info.Active" ReadOnly="true" Acronym="GHI" Attributes="None" />
+    <Parameter Name="Alarms.Al.Al_GHI_1.Info.Code" ReadOnly="true" Attributes="None" />
+    <Parameter Description="Generic alarm 1 - Low" Name="Alarms.Al.Al_GLO_1.Info.Active" ReadOnly="true" Acronym="GLO" Attributes="None" />
+    <Parameter Name="Alarms.Al.Al_GLO_1.Info.Code" ReadOnly="true" Attributes="None" />
+    <Parameter Description="HACCP type HA" Name="Alarms.Al.Al_HA.Info.Active" ReadOnly="true" Acronym="HA" Attributes="None" />
+    <Parameter Name="Alarms.Al.Al_HA.Info.Code" ReadOnly="true" Attributes="None" />
+    <Parameter Description="HACCP type HF" Name="Alarms.Al.Al_HF.Info.Active" ReadOnly="true" Acronym="HF" Attributes="None" />
+    <Parameter Name="Alarms.Al.Al_HF.Info.Code" ReadOnly="true" Attributes="None" />
+    <Parameter Name="Alarms.Al.Al_n[1].Info.Code" ReadOnly="true" Attributes="None" />
+    <Parameter Description="Alarm on Secondary 1" Name="Alarms.Al.Al_n[1].Info.Active" ReadOnly="true" Acronym="n1" Attributes="None" />
+    <Parameter Description="Max evap. pressure" Name="Alarms.Al.Al_MOP.Info.Active" ReadOnly="true" Acronym="MOP" Attributes="None" />
+    <Parameter Name="Alarms.Al.Al_MOP.Info.Code" ReadOnly="true" Attributes="None" />
+    <Parameter Description="Error in the custom gas parameters" Name="Alarms.Al.Al_GPE.Info.Active" ReadOnly="true" Acronym="GPE" Attributes="None" />
+    <Parameter Name="Alarms.Al.Al_GPE.Info.Code" ReadOnly="true" Attributes="None" />
+    <Parameter Description="High temperature alarm (AH)" Name="Alarms.Al.Al_HiTemp.Info.Active" ReadOnly="true" Acronym="HI" Attributes="None" />
+    <Parameter Name="Alarms.Al.Al_HiTemp.Info.Code" ReadOnly="true" Attributes="None" />
+    <Parameter Description="High temperature alarm (AH2)" Name="Alarms.Al.Al_HiTemp2.Info.Active" ReadOnly="true" Acronym="HI2" Attributes="None" />
+    <Parameter Name="Alarms.Al.Al_HiTemp2.Info.Code" ReadOnly="true" Attributes="None" />
+    <Parameter Description="Low evap. pressure" Name="Alarms.Al.Al_LOP.Info.Active" ReadOnly="true" Acronym="LOP" Attributes="None" />
+    <Parameter Name="Alarms.Al.Al_LOP.Info.Code" ReadOnly="true" Attributes="None" />
+    <Parameter Description="Low temperature alarm (AL)" Name="Alarms.Al.Al_LowTemp.Info.Active" ReadOnly="true" Acronym="LO" Attributes="None" />
+    <Parameter Name="Alarms.Al.Al_LowTemp.Info.Code" ReadOnly="true" Attributes="None" />
+    <Parameter Description="Low temperature alarm (AL2)" Name="Alarms.Al.Al_LowTemp2.Info.Active" ReadOnly="true" Acronym="LO2" Attributes="None" />
+    <Parameter Name="Alarms.Al.Al_LowTemp2.Info.Code" ReadOnly="true" Attributes="None" />
+    <Parameter Description="Low suction temperature" Name="Alarms.Al.Al_LSA.Info.Active" ReadOnly="true" Acronym="LSA" Attributes="None" />
+    <Parameter Name="Alarms.Al.Al_LSA.Info.Code" ReadOnly="true" Attributes="None" />
+    <Parameter Description="Low superheat" Name="Alarms.Al.Al_LSH.Info.Active" ReadOnly="true" Acronym="LSH" Attributes="None" />
+    <Parameter Name="Alarms.Al.Al_LSH.Info.Code" ReadOnly="true" Attributes="None" />
+    <Parameter Description="Comm. error with the Main (only on Secondary)" Name="Alarms.Al.Al_MA.Info.Active" ReadOnly="true" Acronym="MA" Attributes="None" />
+    <Parameter Name="Alarms.Al.Al_MA.Info.Code" ReadOnly="true" Attributes="None" />
+    <Parameter Description="Alarm on Secondary 2" Name="Alarms.Al.Al_n[2].Info.Active" ReadOnly="true" Acronym="n2" Attributes="None" />
+    <Parameter Name="Alarms.Al.Al_n[2].Info.Code" ReadOnly="true" Attributes="None" />
+    <Parameter Description="Alarm on Secondary 3" Name="Alarms.Al.Al_n[3].Info.Active" ReadOnly="true" Acronym="n3" Attributes="None" />
+    <Parameter Name="Alarms.Al.Al_n[3].Info.Code" ReadOnly="true" Attributes="None" />
+    <Parameter Description="Alarm on Secondary 4" Name="Alarms.Al.Al_n[4].Info.Active" ReadOnly="true" Acronym="n4" Attributes="None" />
+    <Parameter Name="Alarms.Al.Al_n[4].Info.Code" ReadOnly="true" Attributes="None" />
+    <Parameter Description="Alarm on Secondary 5" Name="Alarms.Al.Al_n[5].Info.Active" ReadOnly="true" Acronym="n5" Attributes="None" />
+    <Parameter Name="Alarms.Al.Al_n[5].Info.Code" ReadOnly="true" Attributes="None" />
+    <Parameter Description="Alarm on Secondary 6" Name="Alarms.Al.Al_n[6].Info.Active" ReadOnly="true" Acronym="n6" Attributes="None" />
+    <Parameter Name="Alarms.Al.Al_n[6].Info.Code" ReadOnly="true" Attributes="None" />
+    <Parameter Description="Alarm on Secondary 7" Name="Alarms.Al.Al_n[7].Info.Active" ReadOnly="true" Acronym="n7" Attributes="None" />
+    <Parameter Name="Alarms.Al.Al_n[7].Info.Code" ReadOnly="true" Attributes="None" />
+    <Parameter Description="Alarm on Secondary 8" Name="Alarms.Al.Al_n[8].Info.Active" ReadOnly="true" Acronym="n8" Attributes="None" />
+    <Parameter Name="Alarms.Al.Al_n[8].Info.Code" ReadOnly="true" Attributes="None" />
+    <Parameter Description="Alarm on Secondary 9" Name="Alarms.Al.Al_n[9].Info.Active" ReadOnly="true" Acronym="n9" Attributes="None" />
+    <Parameter Name="Alarms.Al.Al_n[9].Info.Code" ReadOnly="true" Attributes="None" />
+    <Parameter Description="Probe S1 fault" Name="Alarms.Al.Al_PrbBroken[1].Info.Active" ReadOnly="true" Acronym="E1" Attributes="None" />
+    <Parameter Name="Alarms.Al.Al_PrbBroken[1].Info.Code" ReadOnly="true" Attributes="None" />
+    <Parameter Description="Probe S2 fault" Name="Alarms.Al.Al_PrbBroken[2].Info.Active" ReadOnly="true" Acronym="E2" Attributes="None" />
+    <Parameter Name="Alarms.Al.Al_PrbBroken[2].Info.Code" ReadOnly="true" Attributes="None" />
+    <Parameter Description="Probe S3 fault" Name="Alarms.Al.Al_PrbBroken[3].Info.Active" ReadOnly="true" Acronym="E3" Attributes="None" />
+    <Parameter Name="Alarms.Al.Al_PrbBroken[3].Info.Code" ReadOnly="true" Attributes="None" />
+    <Parameter Description="Probe S4 fault" Name="Alarms.Al.Al_PrbBroken[4].Info.Active" ReadOnly="true" Acronym="E4" Attributes="None" />
+    <Parameter Name="Alarms.Al.Al_PrbBroken[4].Info.Code" ReadOnly="true" Attributes="None" />
+    <Parameter Description="Probe S5 fault" Name="Alarms.Al.Al_PrbBroken[5].Info.Active" ReadOnly="true" Acronym="E5" Attributes="None" />
+    <Parameter Name="Alarms.Al.Al_PrbBroken[5].Info.Code" ReadOnly="true" Attributes="None" />
+    <Parameter Description="Probe S6 fault" Name="Alarms.Al.Al_PrbBroken[6].Info.Active" ReadOnly="true" Acronym="E6" Attributes="None" />
+    <Parameter Name="Alarms.Al.Al_PrbBroken[6].Info.Code" ReadOnly="true" Attributes="None" />
+    <Parameter Description="Probe S7 fault" Name="Alarms.Al.Al_PrbBroken[7].Info.Active" ReadOnly="true" Acronym="E7" Attributes="None" />
+    <Parameter Name="Alarms.Al.Al_PrbBroken[7].Info.Code" ReadOnly="true" Attributes="None" />
+    <Parameter Description="Probe S8 fault" Name="Alarms.Al.Al_PrbBroken[8].Info.Active" ReadOnly="true" Acronym="E8" Attributes="None" />
+    <Parameter Name="Alarms.Al.Al_PrbBroken[8].Info.Code" ReadOnly="true" Attributes="None" />
+    <Parameter Description="Control probe" Name="Alarms.Al.Al_Reg.Info.Active" ReadOnly="true" Acronym="rE" Attributes="None" />
+    <Parameter Name="Alarms.Al.Al_Reg.Info.Code" ReadOnly="true" Attributes="None" />
+    <Parameter Description="Real time clock not updated" Name="Alarms.Al.Al_RTC.Info.Active" ReadOnly="true" Acronym="Etc" Attributes="None" />
+    <Parameter Name="Alarms.Al.Al_RTC.Info.Code" ReadOnly="true" Attributes="None" />
+    <Parameter Description="Serial probe S11 not updated" Name="Alarms.Al.Al_SerialInputs[1].Info.Active" ReadOnly="true" Acronym="E11" Attributes="None" />
+    <Parameter Name="Alarms.Al.Al_SerialInputs[1].Info.Code" ReadOnly="true" Attributes="None" />
+    <Parameter Description="Serial probe S12 not updated" Name="Alarms.Al.Al_SerialInputs[2].Info.Active" ReadOnly="true" Acronym="E12" Attributes="None" />
+    <Parameter Name="Alarms.Al.Al_SerialInputs[2].Info.Code" ReadOnly="true" Attributes="None" />
+    <Parameter Description="Serial probe S13 not updated" Name="Alarms.Al.Al_SerialInputs[3].Info.Active" ReadOnly="true" Acronym="E13" Attributes="None" />
+    <Parameter Name="Alarms.Al.Al_SerialInputs[3].Info.Code" ReadOnly="true" Attributes="None" />
+    <Parameter Description="Serial probe S14 not updated" Name="Alarms.Al.Al_SerialInputs[4].Info.Active" ReadOnly="true" Acronym="E14" Attributes="None" />
+    <Parameter Name="Alarms.Al.Al_SerialInputs[4].Info.Code" ReadOnly="true" Attributes="None" />
+    <Parameter Description="Comm. error with the Secondary 1 (only on Main)" Name="Alarms.Al.Al_u[1].Info.Active" ReadOnly="true" Acronym="u1" Attributes="None" />
+    <Parameter Name="Alarms.Al.Al_u[1].Info.Code" ReadOnly="true" Attributes="None" />
+    <Parameter Description="Comm. error with the Secondary 2 (only on Main)" Name="Alarms.Al.Al_u[2].Info.Active" ReadOnly="true" Acronym="u2" Attributes="None" />
+    <Parameter Name="Alarms.Al.Al_u[2].Info.Code" ReadOnly="true" Attributes="None" />
+    <Parameter Description="Comm. error with the Secondary 3 (only on Main)" Name="Alarms.Al.Al_u[3].Info.Active" ReadOnly="true" Acronym="u3" Attributes="None" />
+    <Parameter Name="Alarms.Al.Al_u[3].Info.Code" ReadOnly="true" Attributes="None" />
+    <Parameter Description="Comm. error with the Secondary 4 (only on Main)" Name="Alarms.Al.Al_u[4].Info.Active" ReadOnly="true" Acronym="u4" Attributes="None" />
+    <Parameter Name="Alarms.Al.Al_u[4].Info.Code" ReadOnly="true" Attributes="None" />
+    <Parameter Description="Comm. error with the Secondary 5 (only on Main)" Name="Alarms.Al.Al_u[5].Info.Active" ReadOnly="true" Acronym="u5" Attributes="None" />
+    <Parameter Name="Alarms.Al.Al_u[5].Info.Code" ReadOnly="true" Attributes="None" />
+    <Parameter Description="Comm. error with the Secondary 6 (only on Main)" Name="Alarms.Al.Al_u[6].Info.Active" ReadOnly="true" Acronym="u6" Attributes="None" />
+    <Parameter Name="Alarms.Al.Al_u[6].Info.Code" ReadOnly="true" Attributes="None" />
+    <Parameter Description="Comm. error with the Secondary 7 (only on Main)" Name="Alarms.Al.Al_u[7].Info.Active" ReadOnly="true" Acronym="u7" Attributes="None" />
+    <Parameter Name="Alarms.Al.Al_u[7].Info.Code" ReadOnly="true" Attributes="None" />
+    <Parameter Description="Comm. error with the Secondary 8 (only on Main)" Name="Alarms.Al.Al_u[8].Info.Active" ReadOnly="true" Acronym="u8" Attributes="None" />
+    <Parameter Name="Alarms.Al.Al_u[8].Info.Code" ReadOnly="true" Attributes="None" />
+    <Parameter Description="Comm. error with the Secondary 9 (only on Main)" Name="Alarms.Al.Al_u[9].Info.Active" ReadOnly="true" Acronym="u9" Attributes="None" />
+    <Parameter Name="Alarms.Al.Al_u[9].Info.Code" ReadOnly="true" Attributes="None" />
+    <Parameter Description="Delayed alarm from external contact" Name="Alarms.Al.AlDelayExtDin.Info.Active" ReadOnly="true" Acronym="dA" Attributes="None" />
+    <Parameter Name="Alarms.Al.AlDelayExtDin.Info.Code" ReadOnly="true" Attributes="None" />
+    <Parameter Description="Immediate alarm from external contact" Name="Alarms.Al.AlExtDin.Info.Active" ReadOnly="true" Acronym="IA" Attributes="None" />
+    <Parameter Name="Alarms.Al.AlExtDin.Info.Code" ReadOnly="true" Attributes="None" />
+    <Parameter Description="Warning for timeout of defrost 1" Name="Alarms.Al.DfrTout1.Info.Active" ReadOnly="true" Acronym="Ed1" Attributes="None" />
+    <Parameter Name="Alarms.Al.DfrTout1.Info.Code" ReadOnly="true" Attributes="None" />
+    <Parameter Description="Warning for timeout of defrost 2" Name="Alarms.Al.DfrTout2.Info.Active" ReadOnly="true" Acronym="Ed2" Attributes="None" />
+    <Parameter Name="Alarms.Al.DfrTout2.Info.Code" ReadOnly="true" Attributes="None" />
+    <Parameter Description="Warning for Clean status" Name="Alarms.Al.Status_Clean.Info.Active" ReadOnly="true" Acronym="CLn" Attributes="None" />
+    <Parameter Name="Alarms.Al.Status_Clean.Info.Code" ReadOnly="true" Attributes="None" />
+    <Parameter Description="Warning for Standby status" Name="Alarms.Al.Status_Standby.Info.Active" ReadOnly="true" Acronym="Stb" Attributes="None" />
+    <Parameter Name="Alarms.Al.Status_Standby.Info.Code" ReadOnly="true" Attributes="None" />
+    <Parameter Description="Fans analogue output status" Name="AnalogOutputs.Fct.Fans" Acronym="AO_status_Fans" Attributes="None" />
+    <Parameter Description="Rail heaters analogue output status" Name="AnalogOutputs.Fct.Rails" Acronym="AO_status_RailHeaters" Attributes="None" />
+    <Parameter Description="Madulating valve analogue output status" Name="AnalogOutputs.Fct.Valve" Acronym="AO_status_Valve" Attributes="None" />
+    <Parameter InitValue="0" Name="StandbyEEVOpenPosition" Persistence="Persistent" Acronym="PSb" Attributes="None" />
+    <Parameter InitValue="FALSE" Name="DfrSkipEn" Persistence="Persistent" Acronym="d7" Attributes="None" />
+    <Parameter Description="EVD mini/ice pressure probe type (only if P1 = 6)&#xD;&#xA;1 = -1…4.2 barg&#xD;&#xA;2 = 0.4…9.3 barg&#xD;&#xA;3 = -1…9.3 barg&#xD;&#xA;4 = 0…17.3 barg&#xD;&#xA;5 = 0.85…34.2 barg&#xD;&#xA;6 = 0…34.5 barg&#xD;&#xA;7 = 0…45 barg&#xD;&#xA;8 = -1…12.8 barg&#xD;&#xA;9 = 0…20.7 barg&#xD;&#xA;10 = 1.86…43.0 barg&#xD;&#xA;11 = NTC (-50…105°C)&#xD;&#xA;12 = Ratiometric (OUT=0-5V) 0-60 barg&#xD;&#xA;13 = Ratiometric (OUT=0-5V) 0-90 barg&#xD;&#xA;14 = Remote pressure probe from RS485" InitValue="3" Name="VlvPressPrbTyp" Persistence="Persistent" Acronym="PP1" Attributes="None" />
+    <Parameter Name="EnKeyboard" Persistence="Persistent" Acronym="H6" Attributes="None" />
+    <Parameter Name="SmLineStatus" ReadOnly="true" Acronym="SL_status" Attributes="None" />
+    <Parameter Name="SmLineSH_AvgT" Persistence="Persistent" Acronym="FSt" Attributes="None" />
+    <Parameter InitValue="0" Name="SmLine_SH_thrsh" Persistence="Persistent" Acronym="TSH" Attributes="None" />
+    <Parameter Description="Generic function alarm: alarm type&#xD;&#xA;FALSE : normal&#xD;&#xA;TRUE : serious" Name="GenFctAlarm_Cfg[1].AlType" Persistence="Persistent" Acronym="GFA_AlType" Attributes="None" />
+    <Parameter Description="Generic function alarm: delay" Name="GenFctAlarm_Cfg[1].Delay" Persistence="Persistent" Acronym="GFA_De" Attributes="None" />
+    <Parameter Description="Generic function alarm: differential" Name="GenFctAlarm_Cfg[1].Diff" Persistence="Persistent" Acronym="GFA_D" Attributes="None" />
+    <Parameter Description="Generic function alarm: high threshold" Name="GenFctAlarm_Cfg[1].HighThr" Persistence="Persistent" Acronym="GFA_Hth" Attributes="None" />
+    <Parameter Description="Generic function alarm: low threshold" Name="GenFctAlarm_Cfg[1].LowThr" Persistence="Persistent" Acronym="GFA_Lth" Attributes="None" />
+    <Parameter Description="Generic function alarm: regulation probe 1&#xD;&#xA;0 : Not config.&#xD;&#xA;1 : Air off (Sm)&#xD;&#xA;2 : Defrost (Sd)&#xD;&#xA;3 : Air on (Sr)&#xD;&#xA;4 : Superheated gas (tGS)&#xD;&#xA;5 : Saturated evap. pressure (PEu)&#xD;&#xA;6 : Auxiliary defrost (Sd2)&#xD;&#xA;7 : Auxiliary 1 (Saux1)&#xD;&#xA;8 : Auxiliary 2 (Saux2)&#xD;&#xA;9 : Ambient temp (SA)&#xD;&#xA;10 : Ambient humidity (SU)&#xD;&#xA;11 : Glass temperature (Svt)&#xD;&#xA;12 : Dewpoint (SdP)&#xD;&#xA;13 : Virtual probe (Sv)&#xD;&#xA;14 : Saturated evap. temp. (tEu)" MinValue="0" MaxValue="14" Name="GenFctAlarm_Cfg[1].RegVar_1" Persistence="Persistent" Acronym="GFA_1" Attributes="None" />
+    <Parameter Description="Generic function alarm: regulation probe 2&#xD;&#xA;0 : Not config.&#xD;&#xA;1 : Air off (Sm)&#xD;&#xA;2 : Defrost (Sd)&#xD;&#xA;3 : Air on (Sr)&#xD;&#xA;4 : Superheated gas (tGS)&#xD;&#xA;5 : Saturated evap. pressure (PEu)&#xD;&#xA;6 : Auxiliary defrost (Sd2)&#xD;&#xA;7 : Auxiliary 1 (Saux1)&#xD;&#xA;8 : Auxiliary 2 (Saux2)&#xD;&#xA;9 : Ambient temp (SA)&#xD;&#xA;10 : Ambient humidity (SU)&#xD;&#xA;11 : Glass temperature (Svt)&#xD;&#xA;12 : Dewpoint (SdP)&#xD;&#xA;13 : Virtual probe (Sv)&#xD;&#xA;14 : Saturated evap. temp. (tEu)" MinValue="0" MaxValue="14" Name="GenFctAlarm_Cfg[1].RegVar_2" Persistence="Persistent" Acronym="GFA_2" Attributes="None" />
+    <Parameter Description="Generic function modulating: cut-off differential" Name="GenFctModul_Cfg[1].CutOffDiff" Persistence="Persistent" Acronym="GFM_CD" Attributes="None" />
+    <Parameter Description="Generic function modulating: differential" Name="GenFctModul_Cfg[1].Diff" Persistence="Persistent" Acronym="GFM_D" Attributes="None" />
+    <Parameter Description="Generic function modulating: hysteresis" Name="GenFctModul_Cfg[1].HystDiff" Persistence="Persistent" Acronym="GFM_H" Attributes="None" />
+    <Parameter Description="Generic function modulating: maximum output value" Name="GenFctModul_Cfg[1].MaxOut" Persistence="Persistent" Acronym="GFM_Max" Attributes="None" />
+    <Parameter Description="Generic function modulating: minimum output value" Name="GenFctModul_Cfg[1].MinOut" Persistence="Persistent" Acronym="GFM_Min" Attributes="None" />
+    <Parameter Description="Generic function modulating: proportional gain" Name="GenFctModul_Cfg[1].PID_Cfg.kp" Persistence="Persistent" Acronym="GFM_kp" Attributes="None" />
+    <Parameter Description="Generic function modulating: derivative time" Name="GenFctModul_Cfg[1].PID_Cfg.Td" Persistence="Persistent" Acronym="GFM_Td" Attributes="None" />
+    <Parameter Description="Generic function modulating: integral time" Name="GenFctModul_Cfg[1].PID_Cfg.Ti" Persistence="Persistent" Acronym="GFM_Ti" Attributes="None" />
+    <Parameter Description="Generic function modulating: regulation probe 1&#xD;&#xA;0 : Not config.&#xD;&#xA;1 : Air off (Sm)&#xD;&#xA;2 : Defrost (Sd)&#xD;&#xA;3 : Air on (Sr)&#xD;&#xA;4 : Superheated gas (tGS)&#xD;&#xA;5 : Saturated evap. pressure (PEu)&#xD;&#xA;6 : Auxiliary defrost (Sd2)&#xD;&#xA;7 : Auxiliary 1 (Saux1)&#xD;&#xA;8 : Auxiliary 2 (Saux2)&#xD;&#xA;9 : Ambient temp (SA)&#xD;&#xA;10 : Ambient humidity (SU)&#xD;&#xA;11 : Glass temperature (Svt)&#xD;&#xA;12 : Dewpoint (SdP)&#xD;&#xA;13 : Virtual probe (Sv)&#xD;&#xA;14 : Saturated evap. temp. (tEu)" MinValue="0" MaxValue="14" Name="GenFctModul_Cfg[1].RegVar_1" Persistence="Persistent" Acronym="GFM_1" Attributes="None" />
+    <Parameter Description="Generic function modulating: regulation probe 2&#xD;&#xA;0 : Not config.&#xD;&#xA;1 : Air off (Sm)&#xD;&#xA;2 : Defrost (Sd)&#xD;&#xA;3 : Air on (Sr)&#xD;&#xA;4 : Superheated gas (tGS)&#xD;&#xA;5 : Saturated evap. pressure (PEu)&#xD;&#xA;6 : Auxiliary defrost (Sd2)&#xD;&#xA;7 : Auxiliary 1 (Saux1)&#xD;&#xA;8 : Auxiliary 2 (Saux2)&#xD;&#xA;9 : Ambient temp (SA)&#xD;&#xA;10 : Ambient humidity (SU)&#xD;&#xA;11 : Glass temperature (Svt)&#xD;&#xA;12 : Dewpoint (SdP)&#xD;&#xA;13 : Virtual probe (Sv)&#xD;&#xA;14 : Saturated evap. temp. (tEu)" MinValue="0" MaxValue="14" Name="GenFctModul_Cfg[1].RegVar_2" Persistence="Persistent" Acronym="GFM_2" Attributes="None" />
+    <Parameter Description="Generic function modulating: type&#xD;&#xA;FALSE : Direct&#xD;&#xA;TRUE : Reverse" Name="GenFctModul_Cfg[1].Rev" Persistence="Persistent" Acronym="GFM_T" Attributes="None" />
+    <Parameter Description="Generic function modulating: set point " Name="GenFctModul_Cfg[1].SetP" Persistence="Persistent" Acronym="GFM_S" Attributes="None" />
+    <Parameter Description="Generic function modulating: enable&#xD;&#xA;0 : Always&#xD;&#xA;1 : Unit on&#xD;&#xA;2 : Unit off&#xD;&#xA;3 : Defrost&#xD;&#xA;4 : Clean&#xD;&#xA;5 : Continuous cycle&#xD;&#xA;6 : Duty settings&#xD;&#xA;7 : Standby&#xD;&#xA;8 : Temp. regulation&#xD;&#xA;9 : Door open&#xD;&#xA;10 : Active alarm" MinValue="0" MaxValue="10" Name="GenFctModul_EnableOn[1]" Persistence="Persistent" Acronym="GFM_E" Attributes="None" />
+    <Parameter Description="Generic function On/Off: differential" Name="GenFctStages_Cfg[1].Diff" Persistence="Persistent" Acronym="GFS_D" Attributes="None" />
+    <Parameter Description="Generic function On/Off: regulation probe 1&#xD;&#xA;0 : Not config.&#xD;&#xA;1 : Air off (Sm)&#xD;&#xA;2 : Defrost (Sd)&#xD;&#xA;3 : Air on (Sr)&#xD;&#xA;4 : Superheated gas (tGS)&#xD;&#xA;5 : Saturated evap. pressure (PEu)&#xD;&#xA;6 : Auxiliary defrost (Sd2)&#xD;&#xA;7 : Auxiliary 1 (Saux1)&#xD;&#xA;8 : Auxiliary 2 (Saux2)&#xD;&#xA;9 : Ambient temp (SA)&#xD;&#xA;10 : Ambient humidity (SU)&#xD;&#xA;11 : Glass temperature (Svt)&#xD;&#xA;12 : Dewpoint (SdP)&#xD;&#xA;13 : Virtual probe (Sv)&#xD;&#xA;14 : Saturated evap. temp. (tEu)" MinValue="0" MaxValue="14" Name="GenFctStages_Cfg[1].RegVar_1" Persistence="Persistent" Acronym="GFS_1" Attributes="None" />
+    <Parameter Description="Generic function On/Off: regulation probe 2&#xD;&#xA;0 : Not config.&#xD;&#xA;1 : Air off (Sm)&#xD;&#xA;2 : Defrost (Sd)&#xD;&#xA;3 : Air on (Sr)&#xD;&#xA;4 : Superheated gas (tGS)&#xD;&#xA;5 : Saturated evap. pressure (PEu)&#xD;&#xA;6 : Auxiliary defrost (Sd2)&#xD;&#xA;7 : Auxiliary 1 (Saux1)&#xD;&#xA;8 : Auxiliary 2 (Saux2)&#xD;&#xA;9 : Ambient temp (SA)&#xD;&#xA;10 : Ambient humidity (SU)&#xD;&#xA;11 : Glass temperature (Svt)&#xD;&#xA;12 : Dewpoint (SdP)&#xD;&#xA;13 : Virtual probe (Sv)&#xD;&#xA;14 : Saturated evap. temp. (tEu)" MinValue="0" MaxValue="14" Name="GenFctStages_Cfg[1].RegVar_2" Persistence="Persistent" Acronym="GFS_2" Attributes="None" />
+    <Parameter Description="Generic function On/Off: type&#xD;&#xA;FALSE : Direct&#xD;&#xA;TRUE : Reverse" Name="GenFctStages_Cfg[1].Rev" Persistence="Persistent" Acronym="GFS_T" Attributes="None" />
+    <Parameter Description="Generic function On/Off: set point" Name="GenFctStages_Cfg[1].SetP" Persistence="Persistent" Acronym="GFS_S" Attributes="None" />
+    <Parameter Description="Generic function On/Off: enable&#xD;&#xA;0 : Always&#xD;&#xA;1 : Unit on&#xD;&#xA;2 : Unit off&#xD;&#xA;3 : Defrost&#xD;&#xA;4 : Clean&#xD;&#xA;5 : Continuous cycle&#xD;&#xA;6 : Duty settings&#xD;&#xA;7 : Standby&#xD;&#xA;8 : Temp. regulation&#xD;&#xA;9 : Door open&#xD;&#xA;10 : Active alarm" MinValue="0" MaxValue="10" Name="GenFctStages_EnableOn[1]" Persistence="Persistent" Acronym="GFS_E" Attributes="None" />
+    <Parameter Description="Assign stage generic function digital output:&#xD;&#xA;0 = Function disabled&#xD;&#xA;1 = NO1&#xD;&#xA;2 = NO2&#xD;&#xA;3 = NO3&#xD;&#xA;4 = NO4" MinValue="0" MaxValue="4" Name="Dout_Cfg.Fct.GenericStage1.Ch" Persistence="Persistent" Acronym="DOS" Attributes="None" />
+    <Parameter Description="Modulating generic function output status" Name="AnalogOutputs.Fct.GenericModul1" Acronym="AO_status_GFmodul" Attributes="None" />
+    <Parameter Description="Assign channel for Modulating generic function&#xD;&#xA;0 = not configured&#xD;&#xA;1 = Y1&#xD;&#xA;2 = Y2" MinValue="0" MaxValue="2" Name="AOut_Cfg.Fct.GenericModul1.Ch" Persistence="Persistent" Acronym="/Ad" Attributes="None" />
+    <Parameter Description="Config. generic function On/Off digital output logic&#xD;&#xA;FALSE = direct logic&#xD;&#xA;TRUE = reverse logic" Name="Dout_Cfg.Fct.GenericStage1.Logic" Persistence="Persistent" Acronym="rOS" Attributes="None" />
+    <Parameter Description="Config. generic function alarm digital input logic&#xD;&#xA;FALSE = direct logic&#xD;&#xA;TRUE = reverse logic" Name="Din_Cfg.Fct.GenFctAlrm.Logic" Persistence="Persistent" Acronym="rIs" Attributes="None" />
+    <Parameter Description="Assign genric function alarm digital input&#xD;&#xA;0 = Function disabled&#xD;&#xA;1 = ID1&#xD;&#xA;2 = ID2&#xD;&#xA;3 = ID3&#xD;&#xA;4 = ID4&#xD;&#xA;5 = ID5&#xD;&#xA;-1 = Serial digital input" MinValue="-1" MaxValue="5" Name="Din_Cfg.Fct.GenFctAlrm.Ch" Persistence="Persistent" Acronym="DIs" Attributes="None" />
+    <Parameter Description="Generic function alarm: enable&#xD;&#xA;0 : Always&#xD;&#xA;1 : Unit on&#xD;&#xA;2 : Unit off&#xD;&#xA;3 : Defrost&#xD;&#xA;4 : Clean&#xD;&#xA;5 : Continuous cycle&#xD;&#xA;6 : Duty settings&#xD;&#xA;7 : Standby&#xD;&#xA;8 : Temp. regulation&#xD;&#xA;9 : Door open&#xD;&#xA;10 : Active alarm" MinValue="0" MaxValue="10" Name="GenFctAlarm_EnableOn[1]" Persistence="Persistent" Acronym="GFA_E" Attributes="None" />
+    <Parameter Description="Defrost 1 - Hour" Name="DfrStart[1].Hour" Persistence="Persistent" Acronym="td1-hh" Attributes="None" />
+    <Parameter Description="Defrost 1 - Minute" Name="DfrStart[1].Minute" Persistence="Persistent" Acronym="td1-mm" Attributes="None" />
+    <Parameter Description="Defrost 2 - Hour" Name="DfrStart[2].Hour" Persistence="Persistent" Acronym="td2-hh" Attributes="None" />
+    <Parameter Description="Defrost 2 - Minute " Name="DfrStart[2].Minute" Persistence="Persistent" Acronym="td2-mm" Attributes="None" />
+    <Parameter Description="Defrost 3 - Hour" Name="DfrStart[3].Hour" Persistence="Persistent" Acronym="td3-hh" Attributes="None" />
+    <Parameter Description="Defrost 3 - Minute" Name="DfrStart[3].Minute" Persistence="Persistent" Acronym="td3-mm" Attributes="None" />
+    <Parameter Description="Defrost 4 - Hour" Name="DfrStart[4].Hour" Persistence="Persistent" Acronym="td4-hh" Attributes="None" />
+    <Parameter Description="Defrost 4 - Minute" Name="DfrStart[4].Minute" Persistence="Persistent" Acronym="td4-mm" Attributes="None" />
+    <Parameter Description="Defrost 5 - Hour" Name="DfrStart[5].Hour" Persistence="Persistent" Acronym="td5-hh" Attributes="None" />
+    <Parameter Description="Defrost 5 - Minute" Name="DfrStart[5].Minute" Persistence="Persistent" Acronym="td5-mm" Attributes="None" />
+    <Parameter Description="Defrost 6 - Hour" Name="DfrStart[6].Hour" Persistence="Persistent" Acronym="td6-hh" Attributes="None" />
+    <Parameter Description="Defrost 6 - Minute" Name="DfrStart[6].Minute" Persistence="Persistent" Acronym="td6-mm" Attributes="None" />
+    <Parameter Description="Defrost 7 - Hour" Name="DfrStart[7].Hour" Persistence="Persistent" Acronym="td7-hh" Attributes="None" />
+    <Parameter Description="Defrost 7 - Minute" Name="DfrStart[7].Minute" Persistence="Persistent" Acronym="td7-mm" Attributes="None" />
+    <Parameter Description="Defrost 8 - Hour" Name="DfrStart[8].Hour" Persistence="Persistent" Acronym="td8-hh" Attributes="None" />
+    <Parameter Description="Defrost 8 - Minute" Name="DfrStart[8].Minute" Persistence="Persistent" Acronym="td8-mm" Attributes="None" />
+    <Parameter Description="End time band 1 - hour" Name="TimeBandEnd[1].Hour" Persistence="Persistent" Acronym="tE1-hh" Attributes="None" />
+    <Parameter Description="End time band 1 - minute" Name="TimeBandEnd[1].Minute" Persistence="Persistent" Acronym="tE1-mm" Attributes="None" />
+    <Parameter Description="End time band 2 - hour " Name="TimeBandEnd[2].Hour" Persistence="Persistent" Acronym="tE2-hh" Attributes="None" />
+    <Parameter Description="End time band 2 - minute " Name="TimeBandEnd[2].Minute" Persistence="Persistent" Acronym="tE2-mm" Attributes="None" />
+    <Parameter Description="End time band 3 - hour " Name="TimeBandEnd[3].Hour" Persistence="Persistent" Acronym="tE3-hh" Attributes="None" />
+    <Parameter Description="End time band 3 - minute" Name="TimeBandEnd[3].Minute" Persistence="Persistent" Acronym="tE3-mm" Attributes="None" />
+    <Parameter Description="End time band 4 - hour " Name="TimeBandEnd[4].Hour" Persistence="Persistent" Acronym="tE4-hh" Attributes="None" />
+    <Parameter Description="End time band 4 - minute " Name="TimeBandEnd[4].Minute" Persistence="Persistent" Acronym="tE4-mm" Attributes="None" />
+    <Parameter Description="End time band 5 - hour " Name="TimeBandEnd[5].Hour" Persistence="Persistent" Acronym="tE5-hh" Attributes="None" />
+    <Parameter Description="End time band 5 - minute" Name="TimeBandEnd[5].Minute" Persistence="Persistent" Acronym="tE5-mm" Attributes="None" />
+    <Parameter Description="End time band 6 - hour" Name="TimeBandEnd[6].Hour" Persistence="Persistent" Acronym="tE6-hh" Attributes="None" />
+    <Parameter Description="End time band 6 - minute " Name="TimeBandEnd[6].Minute" Persistence="Persistent" Acronym="tE6-mm" Attributes="None" />
+    <Parameter Description="End time band 7 - hour" Name="TimeBandEnd[7].Hour" Persistence="Persistent" Acronym="tE7-hh" Attributes="None" />
+    <Parameter Description="End time band 7 - minute" Name="TimeBandEnd[7].Minute" Persistence="Persistent" Acronym="tE7-mm" Attributes="None" />
+    <Parameter Description="End time band 8 - hour" Name="TimeBandEnd[8].Hour" Persistence="Persistent" Acronym="tE8-hh" Attributes="None" />
+    <Parameter Description="End time band 8 - minute" Name="TimeBandEnd[8].Minute" Persistence="Persistent" Acronym="tE8-mm" Attributes="None" />
+    <Parameter Description="Start time band 1 - hour" Name="TimeBandStart[1].Hour" Persistence="Persistent" Acronym="tS1-hh" Attributes="None" />
+    <Parameter Description="Start time band 1 - minute" Name="TimeBandStart[1].Minute" Persistence="Persistent" Acronym="tS1-mm" Attributes="None" />
+    <Parameter Description="Start time band 2 - hour" Name="TimeBandStart[2].Hour" Persistence="Persistent" Acronym="tS2-hh" Attributes="None" />
+    <Parameter Description="Start time band 2 - minute" Name="TimeBandStart[2].Minute" Persistence="Persistent" Acronym="tS2-mm" Attributes="None" />
+    <Parameter Description="Start time band 3 - hour" Name="TimeBandStart[3].Hour" Persistence="Persistent" Acronym="tS3-hh" Attributes="None" />
+    <Parameter Description="Start time band 3 - minute" Name="TimeBandStart[3].Minute" Persistence="Persistent" Acronym="tS3-mm" Attributes="None" />
+    <Parameter Description="Start time band 4 - hour" Name="TimeBandStart[4].Hour" Persistence="Persistent" Acronym="tS4-hh" Attributes="None" />
+    <Parameter Description="Start time band 4 - minute" Name="TimeBandStart[4].Minute" Persistence="Persistent" Acronym="tS4-mm" Attributes="None" />
+    <Parameter Description="Start time band 5 - hour" Name="TimeBandStart[5].Hour" Persistence="Persistent" Acronym="tS5-hh" Attributes="None" />
+    <Parameter Description="Start time band 5 - minute" Name="TimeBandStart[5].Minute" Persistence="Persistent" Acronym="tS5-mm" Attributes="None" />
+    <Parameter Description="Start time band 6 - hour" Name="TimeBandStart[6].Hour" Persistence="Persistent" Acronym="tS6-hh" Attributes="None" />
+    <Parameter Description="Start time band 6 - minute" Name="TimeBandStart[6].Minute" Persistence="Persistent" Acronym="tS6-mm" Attributes="None" />
+    <Parameter Description="Start time band 7 - hour" Name="TimeBandStart[7].Hour" Persistence="Persistent" Acronym="tS7-hh" Attributes="None" />
+    <Parameter Description="Start time band 7 - minute" Name="TimeBandStart[7].Minute" Persistence="Persistent" Acronym="tS7-mm" Attributes="None" />
+    <Parameter Description="Start time band 8 - hour" Name="TimeBandStart[8].Hour" Persistence="Persistent" Acronym="tS8-hh" Attributes="None" />
+    <Parameter Description="Start time band 8 - minute" Name="TimeBandStart[8].Minute" Persistence="Persistent" Acronym="tS8-mm" Attributes="None" />
+    <Parameter Description="EVD mini/ice: EEPROM operating and/or unit parameters&#xD;&#xA;damaged" Name="Alarms.Al.Al_DEE_EVDmini.Info.Active" ReadOnly="true" Acronym="dEE" Attributes="None" />
+    <Parameter Name="Alarms.Al.Al_DEE_EVDmini.Info.Code" ReadOnly="true" Attributes="None" />
+    <Parameter Description="EVD mini/ice: probe S2 faulty or set alarm range exceeded" Name="Alarms.Al.Al_DA2_EVDmini.Info.Active" ReadOnly="true" Acronym="dA2" Attributes="None" />
+    <Parameter Name="Alarms.Al.Al_DA2_EVDmini.Info.Code" ReadOnly="true" Attributes="None" />
+    <Parameter Description="EVD mini/ice: probe S1 faulty or set alarm range exceeded" Name="Alarms.Al.AL_DA1_EVDmini.Info.Active" ReadOnly="true" Acronym="dA1" Attributes="None" />
+    <Parameter Name="Alarms.Al.AL_DA1_EVDmini.Info.Code" ReadOnly="true" Attributes="None" />
+    <Parameter Description="Warning for suction pressure probe missing" Name="Alarms.Al.Warn_SuctP_Prb.Info.Active" ReadOnly="true" Acronym="Mss" Attributes="None" />
+    <Parameter Name="Alarms.Al.Warn_SuctP_Prb.Info.Code" ReadOnly="true" Attributes="None" />
+    <Parameter Description="EVD driver firmware &lt; 1.7" Name="Alarms.Al.Warn_EVD_Fw.Info.Active" ReadOnly="true" Acronym="Afr" Attributes="None" />
+    <Parameter Name="Alarms.Al.Warn_EVD_Fw.Info.Code" ReadOnly="true" Attributes="None" />
+    <Parameter Description="EVD mini/ice digital input 1 configuration:&#xD;&#xA;1 = start/stop control&#xD;&#xA;2 = control backup" InitValue="2" Name="EVD_Digin1Cfg" Persistence="Persistent" Acronym="EDI" Attributes="None" />
+    <Parameter Description="EVD mini/ice: emergency closing" Name="Alarms.Al.Al_DE5_EVDmini.Info.Active" ReadOnly="true" Acronym="dE5" Attributes="None" />
+    <Parameter Name="Alarms.Al.Al_DE5_EVDmini.Info.Code" ReadOnly="true" Attributes="None" />
+    <Parameter Description="Day of week - Current value by internal RTC&#xD;&#xA;0 : Sunday&#xD;&#xA;1 : Monday&#xD;&#xA;2 : Tuesday&#xD;&#xA;3 : Wednesday&#xD;&#xA;4 : Thursday&#xD;&#xA;5 : Friday&#xD;&#xA;6 : Saturday" Name="SPV_CurrDoW" ReadOnly="true" Acronym="DT_DoW" Attributes="None" />
+    <Parameter Name="SPV_CurrDay" ReadOnly="true" Acronym="DT_Day" Attributes="None" />
+    <Parameter Name="SPV_CurrHour" ReadOnly="true" Acronym="DT_Hour" Attributes="None" />
+    <Parameter Name="SPV_CurrMin" ReadOnly="true" Acronym="DT_Min" Attributes="None" />
+    <Parameter Name="SPV_CurrMonth" ReadOnly="true" Acronym="DT_Month" Attributes="None" />
+    <Parameter Name="SPV_Curryear" ReadOnly="true" Acronym="DT_Year" Attributes="None" />
+    <Parameter Description="UID : byte 0" Name="UniqueID_SPV[0]" ReadOnly="true" Acronym="UID_0" Attributes="None" />
+    <Parameter Description="UID : byte 1" Name="UniqueID_SPV[1]" ReadOnly="true" Acronym="UID_1" Attributes="None" />
+    <Parameter Description="UID : byte 2" Name="UniqueID_SPV[2]" ReadOnly="true" Acronym="UID_2" Attributes="None" />
+    <Parameter Description="UID : byte 3" Name="UniqueID_SPV[3]" ReadOnly="true" Acronym="UID_3" Attributes="None" />
+    <Parameter Description="UID : byte 4" Name="UniqueID_SPV[4]" ReadOnly="true" Acronym="UID_4" Attributes="None" />
+    <Parameter Description="UID : byte 5" Name="UniqueID_SPV[5]" ReadOnly="true" Acronym="UID_5" Attributes="None" />
+    <Parameter Description="UID : byte 6" Name="UniqueID_SPV[6]" ReadOnly="true" Acronym="UID_6" Attributes="None" />
+    <Parameter Description="UID : byte 7" Name="UniqueID_SPV[7]" ReadOnly="true" Acronym="UID_7" Attributes="None" />
+    <Parameter InitValue="4" Name="EVD_MB_CmdDelay" Persistence="Persistent" Attributes="None" />
+    <Parameter InitValue="500" Name="EVD_MB_Timeout" Persistence="Persistent" Attributes="None" />
+    <Parameter InitValue="500" Name="EVD_MB_DetectionTimeOut" Persistence="Persistent" Attributes="None" />
+    <Parameter Description="Door open: alarm delay" InitValue="30" Name="HighTempBypDoor" Persistence="Persistent" Acronym="Tdoor" Attributes="None" />
+    <Parameter Name="StartLog_Hour" Persistence="Persistent" Acronym="Log_h" Attributes="None" />
+    <Parameter Name="StartLog_Min" Persistence="Persistent" Acronym="Log_m" Attributes="None" />
+    <Parameter Description="Current defrost status:&#xD;&#xA;0 : Idle&#xD;&#xA;1 : Calling&#xD;&#xA;2 : In progress&#xD;&#xA;3 : Check end defrost&#xD;&#xA;4 : Dripping&#xD;&#xA;5 : Post-dripping" InitValue="0" Name="DfrStatus" ReadOnly="true" Acronym="DEF_Status" Attributes="None" />
+    <Parameter Description="Warning for door open" Name="Alarms.Al.Warn_Door.Info.Active" ReadOnly="true" Acronym="Wdor" Attributes="None" />
+    <Parameter Name="Alarms.Al.Warn_Door.Info.Code" ReadOnly="true" Attributes="None" />
+    <Parameter InitValue="FALSE" Name="TempCtrl_DirRev" Persistence="Persistent" Acronym="rC" Attributes="None" />
+    <Parameter Name="EvapTempNTC_Log" ReadOnly="true" Acronym="tEvap" Attributes="None" />
+    <Parameter Description="Assign equalization valve digital output&#xD;&#xA;0 = Function disabled&#xD;&#xA;1 = NO1&#xD;&#xA;2 = NO2&#xD;&#xA;3 = NO3&#xD;&#xA;4 = NO4" MinValue="0" MaxValue="4" Name="Dout_Cfg.Fct.EqualizVlv.Ch" Persistence="Persistent" Acronym="DOM" Attributes="None" />
+    <Parameter InitValue="FALSE" Name="En_SupervOnOff" Persistence="Persistent" Acronym="ONS" Attributes="None" />
+    <Parameter InitValue="TRUE" Name="En_KeyboardOnOff" Persistence="Persistent" Acronym="ONK" Attributes="None" />
+    <Parameter Description="ON/OFF control by keyboard&#xD;&#xA;0/1 : OFF/ON" InitValue="TRUE" Name="KeyboardOnOff" Persistence="Persistent" Acronym="ON" Attributes="None" />
+    <Parameter Description="Unit ON status&#xD;&#xA;0/1 : OFF/ON" Name="UnitOn" ReadOnly="true" Attributes="None" />
+    <Parameter Name="DigitalOutputs.Fct.HotGas" ReadOnly="true" Acronym="FOAA" Attributes="None" />
+    <Parameter Description="HotGas digital output channel&#xD;&#xA;0 = Function disabled&#xD;&#xA;1 = NO1&#xD;&#xA;2 = NO2&#xD;&#xA;3 = NO3&#xD;&#xA;4 = NO4" MinValue="0" MaxValue="4" Name="Dout_Cfg.Fct.HotGas.Ch" Persistence="Persistent" Acronym="DOAA" Attributes="None" />
+    <Parameter Description="HotGas digital output logic &#xD;&#xA;FALSE = direct logic&#xD;&#xA;TRUE = reverse logic" Name="Dout_Cfg.Fct.HotGas.Logic" Persistence="Persistent" Acronym="rOAA" Attributes="None" />
+    <Parameter Name="isBasic" ReadOnly="true" Attributes="None" />
+    <Parameter Name="isAdvanced" ReadOnly="true" Attributes="None" />
+    <Parameter Name="isMedium" ReadOnly="true" Attributes="None" />
+    <Parameter Description="First regulation probe for evaporator fan&#xD;&#xA;0 : Not config.&#xD;&#xA;1 : Air off (Sm)&#xD;&#xA;2 : Defrost (Sd)&#xD;&#xA;3 : Air on (Sr)&#xD;&#xA;4 : Superheated gas (tGS)&#xD;&#xA;5 : Saturated evap. pressure (PEu)&#xD;&#xA;6 : Auxiliary defrost (Sd2)&#xD;&#xA;7 : Auxiliary 1 (Saux1)&#xD;&#xA;8 : Auxiliary 2 (Saux2)&#xD;&#xA;9 : Ambient temp (SA)&#xD;&#xA;10 : Ambient humidity (SU)&#xD;&#xA;11 : Glass temperature (Svt)&#xD;&#xA;12 : Dewpoint (SdP)&#xD;&#xA;13 : Virtual probe (Sv)&#xD;&#xA;14 : Saturated evap. temp. (tEu)" InitValue="11" Name="DfrStartByDeltaPrb1" Persistence="Persistent" Acronym="dd1" Attributes="None" />
+    <Parameter Description="First regulation probe for evaporator fan&#xD;&#xA;0 : Not config.&#xD;&#xA;1 : Air off (Sm)&#xD;&#xA;2 : Defrost (Sd)&#xD;&#xA;3 : Air on (Sr)&#xD;&#xA;4 : Superheated gas (tGS)&#xD;&#xA;5 : Saturated evap. pressure (PEu)&#xD;&#xA;6 : Auxiliary defrost (Sd2)&#xD;&#xA;7 : Auxiliary 1 (Saux1)&#xD;&#xA;8 : Auxiliary 2 (Saux2)&#xD;&#xA;9 : Ambient temp (SA)&#xD;&#xA;10 : Ambient humidity (SU)&#xD;&#xA;11 : Glass temperature (Svt)&#xD;&#xA;12 : Dewpoint (SdP)&#xD;&#xA;13 : Virtual probe (Sv)&#xD;&#xA;14 : Saturated evap. temp. (tEu)" InitValue="11" Name="DfrStartByDeltaPrb2" Persistence="Persistent" Acronym="dd2" Attributes="None" />
+    <Parameter InitValue="60" Name="DfrStartByDeltaT" Persistence="Persistent" Acronym="tdd" Attributes="None" />
+    <Parameter InitValue="50" Name="DfrStartByDeltaThrsh" Persistence="Persistent" Acronym="dTd" Attributes="None" />
+    <Parameter Name="StartupReset" Attributes="None" />
+    <Parameter Description="Defrost on power-up:&#xD;&#xA;FALSE = disabled&#xD;&#xA;TRUE = enabled&#xD;&#xA;(Main = network defrost; Secondary = local defrost)" InitValue="FALSE" Name="StartupDef" Persistence="Persistent" Acronym="d4" Attributes="None" />
+    <Parameter Description="Case SerialNumber 2" Name="V_CSM_SerialNumber2" Persistence="Persistent" ReadOnly="true" Acronym="CIN12" Attributes="None" />
+    <Parameter Name="V_CSM_SerialNumber1" Persistence="Persistent" ReadOnly="true" Acronym="CIN11" Attributes="None" />
+    <Parameter Name="V_CSM_FeatureInfo4" Persistence="Persistent" ReadOnly="true" Acronym="CIN10" Attributes="None" />
+    <Parameter Name="V_CSM_FeatureInfo3" Persistence="Persistent" ReadOnly="true" Acronym="CIN9" Attributes="None" />
+    <Parameter Name="V_CSM_FeatureInfo2" Persistence="Persistent" ReadOnly="true" Acronym="CIN8" Attributes="None" />
+    <Parameter Name="V_CSM_FeatureInfo1" Persistence="Persistent" ReadOnly="true" Acronym="CIN7" Attributes="None" />
+    <Parameter Name="V_CSM_EOL_Test_Type" ReadOnly="true" Acronym="EOL_typ" Attributes="None" />
+    <Parameter Name="V_CSM_EOL_Test_Status" ReadOnly="true" Acronym="EOL_sts" Attributes="None" />
+    <Parameter Name="V_CSM_EOL_Test_Result" Persistence="Persistent" ReadOnly="true" Acronym="EOL_rslt" Attributes="None" />
+    <Parameter Name="V_CSM_CaseSystemInfo4" Persistence="Persistent" ReadOnly="true" Acronym="CIN4" Attributes="None" />
+    <Parameter Name="V_CSM_CaseSystemInfo3" Persistence="Persistent" ReadOnly="true" Acronym="CIN3" Attributes="None" />
+    <Parameter Name="V_CSM_CaseSystemInfo2" Persistence="Persistent" ReadOnly="true" Acronym="CIN2" Attributes="None" />
+    <Parameter Name="V_CSM_CaseSystemInfo1" Persistence="Persistent" ReadOnly="true" Acronym="CIN1" Attributes="None" />
+    <Parameter Name="C_CSM_CaseSystemInfo1" Persistence="Persistent" Acronym="CIN13" Attributes="None" />
+    <Parameter Description="Case System Info 2" Name="C_CSM_CaseSystemInfo2" Persistence="Persistent" Acronym="CIN14" Attributes="None" />
+    <Parameter Name="C_CSM_CaseSystemInfo3" Persistence="Persistent" Acronym="CIN15" Attributes="None" />
+    <Parameter Name="C_CSM_CaseSystemInfo4" Persistence="Persistent" Acronym="CIN16" Attributes="None" />
+    <Parameter Name="C_CSM_FeatureInfo1" Persistence="Persistent" Acronym="CIN19" Attributes="None" />
+    <Parameter Description="Case Feature Info 2" Name="C_CSM_FeatureInfo2" Persistence="Persistent" Acronym="CIN20" Attributes="None" />
+    <Parameter Name="C_CSM_FeatureInfo3" Persistence="Persistent" Acronym="CIN21" Attributes="None" />
+    <Parameter Name="C_CSM_FeatureInfo4" Persistence="Persistent" Acronym="CIN22" Attributes="None" />
+    <Parameter Name="V_IM_trc_Defrost" ReadOnly="true" Acronym="DefT" Attributes="None" />
+    <Parameter Name="V_IM_trc_Suction" ReadOnly="true" Acronym="SucT" Attributes="None" />
+    <Parameter Name="V_IM_trc_AirOff" ReadOnly="true" Acronym="AofT" Attributes="None" />
+    <Parameter Name="V_IM_trc_AirOn" ReadOnly="true" Acronym="AonT" Attributes="None" />
+    <Parameter Name="V_IM_bar_Evap" ReadOnly="true" Acronym="Evp" Attributes="None" />
+    <Parameter Name="T_CSM_EOL_Enab" Acronym="EOL_Tfull" Attributes="None" />
+    <Parameter Name="T_CSM_EOL_IO_Enab" Acronym="EOL_Tio" Attributes="None" />
+    <Parameter Name="T_CSM_EOL_Run_Enab" Acronym="EOL_Trun" Attributes="None" />
+    <Parameter Name="T_CSM_EOL_Abort" Acronym="EOL_Abrt" Attributes="None" />
+    <Parameter Name="C_CSM_bar_Evap_HighThreshold" Persistence="Persistent" Acronym="Evp_HT" Attributes="None" />
+    <Parameter Name="C_CSM_bar_Evap_LowerThreshold" Persistence="Persistent" Acronym="Evp_LT" Attributes="None" />
+    <Parameter Name="C_CSM_SP_DefrostCycle" Persistence="Persistent" Acronym="EOL_SP3" Attributes="None" />
+    <Parameter Name="C_CSM_SP_Fan" Persistence="Persistent" Acronym="EOL_SP2" Attributes="None" />
+    <Parameter Name="C_CSM_SP_Regulation" Persistence="Persistent" Acronym="EOL_SP1" Attributes="None" />
+    <Parameter Name="C_CSM_Timer_CoilOutTemp" Persistence="Persistent" Acronym="EOL_Tmr5" Attributes="None" />
+    <Parameter Name="C_CSM_Timer_DefrostCycleFail" Persistence="Persistent" Acronym="EOL_Tmr14" Attributes="None" />
+    <Parameter Name="C_CSM_Timer_DefrostCycleOn" Persistence="Persistent" Acronym="EOL_Tmr13" Attributes="None" />
+    <Parameter Name="C_CSM_Timer_DefTermTemp" Persistence="Persistent" Acronym="EOL_Tmr6" Attributes="None" />
+    <Parameter Name="C_CSM_Timer_DischTemp" Persistence="Persistent" Acronym="EOL_Tmr7" Attributes="None" />
+    <Parameter Name="C_CSM_Timer_EEV1" Persistence="Persistent" Acronym="EOL_Tmr1" Attributes="None" />
+    <Parameter Name="C_CSM_Timer_EEV2" Persistence="Persistent" Acronym="EOL_Tmr2" Attributes="None" />
+    <Parameter Name="C_CSM_Timer_Light" Persistence="Persistent" Acronym="EOL_Tmr9" Attributes="None" />
+    <Parameter Name="C_CSM_Timer_PullDownFail" Persistence="Persistent" Acronym="EOL_Tmr12" Attributes="None" />
+    <Parameter Name="C_CSM_Timer_PullDownHeld" Persistence="Persistent" Acronym="EOL_Tmr11" Attributes="None" />
+    <Parameter Name="C_CSM_Timer_PullDownOn" Persistence="Persistent" Acronym="EOL_Tmr10" Attributes="None" />
+    <Parameter Name="C_CSM_Timer_SuctionPress" Persistence="Persistent" Acronym="EOL_Tmr8" Attributes="None" />
+    <Parameter Name="C_CSM_Timer_SwapSensor1" Persistence="Persistent" Acronym="EOL_Tmr3" Attributes="None" />
+    <Parameter Name="C_CSM_Timer_SwapSensor2" Persistence="Persistent" Acronym="EOL_Tmr4" Attributes="None" />
+    <Parameter Name="C_CSM_trc_Air_Off_HighThreshold" Persistence="Persistent" Acronym="AirOffT_HT" Attributes="None" />
+    <Parameter Name="C_CSM_trc_Air_Off_LowerThreshold" Persistence="Persistent" Acronym="AirOffT_LT" Attributes="None" />
+    <Parameter Name="C_CSM_trc_Air_On_HighThreshold" Persistence="Persistent" Acronym="AirOnT_HT" Attributes="None" />
+    <Parameter Name="C_CSM_trc_Air_On_LowerThreshold" Persistence="Persistent" Acronym="AirOnT_LT" Attributes="None" />
+    <Parameter Name="C_CSM_trc_Defrost_HighThreshold" Persistence="Persistent" Acronym="DefT_HT" Attributes="None" />
+    <Parameter Name="C_CSM_trc_Defrost_LowerThreshold" Persistence="Persistent" Acronym="DefT_LT" Attributes="None" />
+    <Parameter Name="C_CSM_trc_Suction_LowerThreshold" Persistence="Persistent" Acronym="SucT_LT" Attributes="None" />
+    <Parameter Name="C_CSM_trc_Suction_HighThreshold" Persistence="Persistent" Acronym="SucT_HT" Attributes="None" />
+    <Parameter InitValue="FALSE" Name="V_CSM_InvalidCIN_Flag" Acronym="CIN_Err" Attributes="None" />
+    <Parameter Name="C_CSM_SerialNumber1" Persistence="Persistent" Acronym="CIN23" Attributes="None" />
+    <Parameter Name="C_CSM_SerialNumber2" Persistence="Persistent" Acronym="CIN24" Attributes="None" />
+    <Parameter Name="C_CSM_ManAck" Acronym="EOL_Ack" Attributes="None" />
+    <Parameter Name="V_CSM_CaseSystemInfo5" Persistence="Persistent" ReadOnly="true" Acronym="CIN5" Attributes="None" />
+    <Parameter Name="C_CSM_CaseSystemInfo5" Persistence="Persistent" Acronym="CIN17" Attributes="None" />
+    <Parameter Name="C_CSM_CaseSystemInfo6" Persistence="Persistent" Acronym="CIN18" Attributes="None" />
+    <Parameter Name="V_CSM_CaseSystemInfo6" Persistence="Persistent" ReadOnly="true" Acronym="CIN6" Attributes="None" />
+    <Parameter Name="C_CSM_Delta_AirOff" Persistence="Persistent" Acronym="Delta_AirOff" Attributes="None" />
+    <Parameter Name="C_CSM_Delta_Suction" Persistence="Persistent" Acronym="Delta_Suction" Attributes="None" />
+    <Parameter Name="C_CSM_Delta_Defrost" Persistence="Persistent" Acronym="Delta_Defrost" Attributes="None" />
+    <Parameter Name="C_CSM_Delta_EvapP" Persistence="Persistent" Acronym="Delta_EvapP" Attributes="None" />
+  </Parameters>
+</ParametersConfiguration>

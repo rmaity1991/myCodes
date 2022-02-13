@@ -1,0 +1,421 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<NFCEditor>
+  <Variables>
+    <Variable DataType="DATE_AND_TIME" Name="DateTimeToSet" IsGlobal="true" />
+    <Variable DataType="BOOL" Name="isAdvanced" IsGlobal="true" />
+    <Variable DataType="BOOL" Name="isBasic" IsGlobal="true" />
+    <Variable DataType="BOOL" Name="isMedium" IsGlobal="true" />
+    <Variable DataType="STRING" Name="Posix" IsGlobal="true" />
+    <Variable DataType="BOOL" InitValue="FALSE" Name="ToggleSetTimeAPP" IsGlobal="true" />
+    <Variable DataType="USINT" InitValue="199" Name="BMS_Addr" IsGlobal="true" />
+    <Variable DataType="USINT" InitValue="7" Name="BMS_Baud" IsGlobal="true" />
+    <Variable DataType="USINT" InitValue="1" Name="BMS_Conf" IsGlobal="true" />
+    <Variable DataType="USINT" InitValue="0" Name="CompFanDelay" IsGlobal="true" />
+    <Variable DataType="USINT" InitValue="0" Name="DailyDfrNum" IsGlobal="true" />
+    <Variable DataType="USINT" InitValue="0" Name="DailyDfrNum2" IsGlobal="true" />
+    <Variable DataType="BOOL" InitValue="FALSE" Name="DayNightOutput" IsGlobal="true" />
+    <Variable DataType="REAL" InitValue="8" Name="DfrEnd2Temp" IsGlobal="true" />
+    <Variable DataType="REAL" InitValue="8" Name="DfrEndTemp" IsGlobal="true" />
+    <Variable DataType="BOOL" InitValue="TRUE" Name="DfrFanCfg" IsGlobal="true" />
+    <Variable DataType="USINT" InitValue="8" Name="DfrInterval" IsGlobal="true" />
+    <Variable DataType="USINT" InitValue="45" Name="DfrMaxDuration" IsGlobal="true" />
+    <Variable DataType="UINT" InitValue="0" Name="DfrPmpDwnDuration" IsGlobal="true" />
+    <Variable DataType="USINT" InitValue="0" Name="DfrType" IsGlobal="true" />
+    <Variable DataType="USINT" InitValue="0" Name="DfrVlvPos" IsGlobal="true" />
+    <Variable DataType="BOOL" Name="EnNfc" IsGlobal="true" />
+    <Variable DataType="BOOL" Name="EnSmoothLine" IsGlobal="true" />
+    <Variable DataType="UINT" InitValue="10" Name="ExvDelayDfr" IsGlobal="true" />
+    <Variable DataType="REAL" InitValue="15" Name="ExvKp" IsGlobal="true" />
+    <Variable DataType="USINT" InitValue="5" Name="ExvTd" IsGlobal="true" />
+    <Variable DataType="UINT" InitValue="150" Name="ExvTi" IsGlobal="true" />
+    <Variable DataType="USINT" InitValue="0" Name="LOP_AlrmDelay" IsGlobal="true" />
+    <Variable DataType="REAL" InitValue="-50" Name="LOP_Thrsh" IsGlobal="true" />
+    <Variable DataType="REAL" InitValue="0" Name="LOP_Ti" IsGlobal="true" />
+    <Variable DataType="UINT" InitValue="600" Name="LowSH_AlrmDelay" IsGlobal="true" />
+    <Variable DataType="REAL" InitValue="15" Name="LowSH_Ti" IsGlobal="true" />
+    <Variable DataType="UINT" InitValue="600" Name="LowSuctAlrmDelay" IsGlobal="true" />
+    <Variable DataType="REAL" InitValue="-45" Name="LowSuctThrsh" IsGlobal="true" />
+    <Variable DataType="REAL" InitValue="50" Name="MaxTempSet" IsGlobal="true" />
+    <Variable DataType="REAL" InitValue="-50" Name="MinTempSet" IsGlobal="true" />
+    <Variable DataType="UINT" InitValue="600" Name="MOP_AlrmDelay" IsGlobal="true" />
+    <Variable DataType="USINT" InitValue="2" Name="MOP_StartDelay" IsGlobal="true" />
+    <Variable DataType="REAL" InitValue="50" Name="MOP_SuctTempThrsh" IsGlobal="true" />
+    <Variable DataType="REAL" InitValue="50" Name="MOP_Thrsh" IsGlobal="true" />
+    <Variable DataType="REAL" InitValue="10" Name="MOP_Ti" IsGlobal="true" />
+    <Variable DataType="USINT" InitValue="2" Name="PostDripTime" IsGlobal="true" />
+    <Variable DataType="REAL" InitValue="0" Name="PrbErrorOffset" IsGlobal="true" />
+    <Variable DataType="USINT" InitValue="9" Name="AinStability" IsGlobal="true" />
+    <Variable DataType="BOOL" InitValue="TRUE" Name="RegFanConfig" IsGlobal="true" />
+    <Variable DataType="UINT" InitValue="3" Name="RfrgTyp" IsGlobal="true" />
+    <Variable DataType="REAL" InitValue="5" Name="SmLineKp" IsGlobal="true" />
+    <Variable DataType="REAL" InitValue="15" Name="SmLineSHOffset" IsGlobal="true" />
+    <Variable DataType="UINT" InitValue="0" Name="SmLineTd" IsGlobal="true" />
+    <Variable DataType="REAL" InitValue="2" Name="SmLineTempOffset" IsGlobal="true" />
+    <Variable DataType="UINT" InitValue="150" Name="SmLineTi" IsGlobal="true" />
+    <Variable DataType="USINT" InitValue="30" Name="StartEEVOpenRatio" IsGlobal="true" />
+    <Variable DataType="USINT" InitValue="0" Name="StbyTout" IsGlobal="true" />
+    <Variable DataType="REAL" InitValue="0" Name="TempDiff2" IsGlobal="true" />
+    <Variable DataType="REAL" InitValue="2" Name="TempDiff" IsGlobal="true" />
+    <Variable DataType="UINT" InitValue="0" Name="TimerDelay" IsGlobal="true" />
+    <Variable DataType="STRING[8]" Name="Pwd_User" IsGlobal="true" />
+    <Variable DataType="STRING[8]" Name="Pwd_Service" IsGlobal="true" />
+    <Variable DataType="STRING[8]" Name="Pwd_Manuf" IsGlobal="true" />
+    <Variable DataType="USINT" Name="TimeBandStart[1].Day" IsGlobal="true" />
+    <Variable DataType="USINT" Name="TimeBandStart[2].Day" IsGlobal="true" />
+    <Variable DataType="USINT" Name="TimeBandStart[3].Day" IsGlobal="true" />
+    <Variable DataType="USINT" Name="TimeBandStart[4].Day" IsGlobal="true" />
+    <Variable DataType="USINT" Name="TimeBandStart[5].Day" IsGlobal="true" />
+    <Variable DataType="USINT" Name="TimeBandStart[6].Day" IsGlobal="true" />
+    <Variable DataType="USINT" Name="TimeBandStart[7].Day" IsGlobal="true" />
+    <Variable DataType="USINT" Name="TimeBandStart[8].Day" IsGlobal="true" />
+    <Variable DataType="USINT" Name="TimeBandEnd[1].Day" IsGlobal="true" />
+    <Variable DataType="USINT" Name="TimeBandEnd[2].Day" IsGlobal="true" />
+    <Variable DataType="USINT" Name="TimeBandEnd[3].Day" IsGlobal="true" />
+    <Variable DataType="USINT" Name="TimeBandEnd[4].Day" IsGlobal="true" />
+    <Variable DataType="USINT" Name="TimeBandEnd[5].Day" IsGlobal="true" />
+    <Variable DataType="USINT" Name="TimeBandEnd[6].Day" IsGlobal="true" />
+    <Variable DataType="USINT" Name="TimeBandEnd[7].Day" IsGlobal="true" />
+    <Variable DataType="USINT" Name="TimeBandEnd[8].Day" IsGlobal="true" />
+    <Variable DataType="USINT" Name="DfrStart[1].Day" IsGlobal="true" />
+    <Variable DataType="USINT" Name="DfrStart[2].Day" IsGlobal="true" />
+    <Variable DataType="USINT" Name="DfrStart[3].Day" IsGlobal="true" />
+    <Variable DataType="USINT" Name="DfrStart[4].Day" IsGlobal="true" />
+    <Variable DataType="USINT" Name="DfrStart[5].Day" IsGlobal="true" />
+    <Variable DataType="USINT" Name="DfrStart[6].Day" IsGlobal="true" />
+    <Variable DataType="USINT" Name="DfrStart[7].Day" IsGlobal="true" />
+    <Variable DataType="USINT" Name="DfrStart[8].Day" IsGlobal="true" />
+    <Variable DataType="USINT" InitValue="1" Name="CmdComp" IsGlobal="true" />
+    <Variable DataType="USINT" InitValue="1" Name="CmdFans" IsGlobal="true" />
+    <Variable DataType="USINT" InitValue="1" Name="CmdAux" IsGlobal="true" />
+    <Variable DataType="BOOL" InitValue="FALSE" Name="LightsOn" IsGlobal="true" />
+    <Variable DataType="BOOL" InitValue="FALSE" Name="EnManExv" IsGlobal="true" />
+    <Variable DataType="UINT" InitValue="0" Name="PosManExv" IsGlobal="true" />
+    <Variable DataType="REAL" InitValue="-10" Name="TempSetP2" IsGlobal="true" />
+    <Variable DataType="REAL" InitValue="-10" Name="TempSetP" IsGlobal="true" />
+    <Variable DataType="REAL" InitValue="10" Name="SHSetp" IsGlobal="true" />
+    <Variable DataType="REAL" InitValue="7" Name="LowSH_Thrsh" IsGlobal="true" />
+    <Variable DataType="BOOL" InitValue="FALSE" Name="AbsAlarm2Thr" IsGlobal="true" />
+    <Variable DataType="BOOL" InitValue="FALSE" Name="AbsAlarmThr" IsGlobal="true" />
+    <Variable DataType="USINT" InitValue="30" Name="Alarm2Delay" IsGlobal="true" />
+    <Variable DataType="USINT" InitValue="1" Name="Alarm2PrbConf" IsGlobal="true" />
+    <Variable DataType="USINT" InitValue="120" Name="AlarmDelay" IsGlobal="true" />
+    <Variable DataType="USINT" InitValue="1" Name="AlarmPrbConf" IsGlobal="true" />
+    <Variable DataType="REAL" InitValue="2" Name="AlarmResetDiff" IsGlobal="true" />
+    <Variable DataType="USINT" InitValue="30" Name="AlBypassDoor" IsGlobal="true" />
+    <Variable DataType="BOOL" InitValue="TRUE" Name="BMS_Prot" IsGlobal="true" />
+    <Variable DataType="BOOL" InitValue="FALSE" Name="isMaster" IsGlobal="true" />
+    <Variable DataType="REAL" InitValue="0" Name="SetpNightOffset" IsGlobal="true" />
+    <Variable DataType="USINT" InitValue="45" Name="DfrMaxDuration2" IsGlobal="true" />
+    <Variable DataType="USINT" InitValue="0" Name="FanMngConfig" IsGlobal="true" />
+    <Variable DataType="REAL" InitValue="-5" Name="FansSet" IsGlobal="true" />
+    <Variable DataType="USINT" InitValue="3" Name="FansRegCnf[1]" IsGlobal="true" />
+    <Variable DataType="USINT" InitValue="14" Name="FansRegCnf[2]" IsGlobal="true" />
+    <Variable DataType="REAL" InitValue="0" Name="FansMinOut" IsGlobal="true" />
+    <Variable DataType="REAL" InitValue="100" Name="FansMaxOut" IsGlobal="true" />
+    <Variable DataType="REAL" InitValue="2" Name="FansDiff" IsGlobal="true" />
+    <Variable DataType="REAL" InitValue="50" Name="FansCutOff" IsGlobal="true" />
+    <Variable DataType="USINT" InitValue="20" Name="GlassEstimComp" IsGlobal="true" />
+    <Variable DataType="REAL" InitValue="2" Name="GlassTEstimateA" IsGlobal="true" />
+    <Variable DataType="USINT" InitValue="22" Name="GlassTEstimateB" IsGlobal="true" />
+    <Variable DataType="REAL" InitValue="2" Name="HeaterOffs" IsGlobal="true" />
+    <Variable DataType="REAL" InitValue="0" Name="HeatersDiff" IsGlobal="true" />
+    <Variable DataType="REAL" InitValue="0" Name="HiAlarm2Thr" IsGlobal="true" />
+    <Variable DataType="REAL" InitValue="10" Name="HiAlarmThr" IsGlobal="true" />
+    <Variable DataType="REAL" InitValue="0" Name="LowAlarm2Thr" IsGlobal="true" />
+    <Variable DataType="REAL" InitValue="4" Name="LowAlarmThr" IsGlobal="true" />
+    <Variable DataType="USINT" InitValue="70" Name="ManHeaterPerc" IsGlobal="true" />
+    <Variable DataType="USINT" InitValue="5" Name="ManHeaterPeriod" IsGlobal="true" />
+    <Variable DataType="BOOL" InitValue="FALSE" Name="NightPrbReg" IsGlobal="true" />
+    <Variable DataType="USINT" InitValue="0" Name="SlavesNum" IsGlobal="true" />
+    <Variable DataType="UINT" InitValue="0" Name="CleanTout" IsGlobal="true" />
+    <Variable DataType="UINT" InitValue="0" Name="MinOffT" IsGlobal="true" />
+    <Variable DataType="UINT" InitValue="0" Name="MinOnOnSameT" IsGlobal="true" />
+    <Variable DataType="UINT" InitValue="0" Name="MinOnT" IsGlobal="true" />
+    <Variable DataType="USINT" InitValue="0" Name="AlDinDelay" IsGlobal="true" />
+    <Variable DataType="BOOL" Name="ManDfr" IsGlobal="true" />
+    <Variable DataType="BOOL" InitValue="FALSE" Name="ZoneHMI" IsGlobal="true" />
+    <Variable DataType="USINT" InitValue="19200" Name="FB_Baud" IsGlobal="true" />
+    <Variable DataType="USINT" InitValue="TRUE" Name="Ain_Types.Group1" IsGlobal="true" />
+    <Variable DataType="USINT" InitValue="2" Name="Ain_Types.Group2" IsGlobal="true" />
+    <Variable DataType="USINT" InitValue="2" Name="Ain_Types.Group3" IsGlobal="true" />
+    <Variable DataType="USINT" InitValue="2" Name="Ain_Types.Group4" IsGlobal="true" />
+    <Variable DataType="USINT" InitValue="0" Name="LightOnDoorDelay" IsGlobal="true" />
+    <Variable DataType="BOOL" InitValue="TRUE" Name="DfrMasterEndSync" IsGlobal="true" />
+    <Variable DataType="BOOL" InitValue="FALSE" Name="DisNetworkDfr" IsGlobal="true" />
+    <Variable DataType="BOOL" InitValue="FALSE" Name="DisDecPointMainVar" IsGlobal="true" />
+    <Variable DataType="USINT" InitValue="0" Name="DfrPowOnDelay" IsGlobal="true" />
+    <Variable DataType="SINT" InitValue="0" Name="VirtualDiOut" IsGlobal="true" />
+    <Variable DataType="BOOL" InitValue="FALSE" Name="DoubleThermostatConf" IsGlobal="true" />
+    <Variable DataType="USINT" InitValue="0" Name="DoubleThermSafety" IsGlobal="true" />
+    <Variable DataType="USINT" InitValue="2" Name="DripTime" IsGlobal="true" />
+    <Variable DataType="BOOL" InitValue="FALSE" Name="RemoteHMIAlrms" IsGlobal="true" />
+    <Variable DataType="USINT" InitValue="12" Name="HmiRemSel" IsGlobal="true" />
+    <Variable DataType="BOOL" InitValue="FALSE" Name="MstVlvConfig" IsGlobal="true" />
+    <Variable DataType="UINT" InitValue="0" Name="VlvCloseDelay" IsGlobal="true" />
+    <Variable DataType="BOOL" InitValue="FALSE" Name="StartupDef" IsGlobal="true" />
+    <Variable DataType="BOOL" InitValue="TRUE" Name="DfrSafetyTime" IsGlobal="true" />
+    <Variable DataType="USINT" InitValue="0" Name="DfrTimeRun" IsGlobal="true" />
+    <Variable DataType="REAL" InitValue="-30" Name="DfrTempRun" IsGlobal="true" />
+    <Variable DataType="USINT" InitValue="0" Name="DfrPrbAlm" IsGlobal="true" />
+    <Variable DataType="USINT" InitValue="0" Name="DfrOffTimeSeq" IsGlobal="true" />
+    <Variable DataType="USINT" InitValue="120" Name="DfrOnTimeSeq" IsGlobal="true" />
+    <Variable DataType="REAL" InitValue="0" Name="DfrPowTemp" IsGlobal="true" />
+    <Variable DataType="USINT" InitValue="0" Name="DfrPowTime" IsGlobal="true" />
+    <Variable DataType="USINT" InitValue="75" Name="DfrSkipDuration" IsGlobal="true" />
+    <Variable DataType="BOOL" InitValue="FALSE" Name="DfrEndAlTimeout" IsGlobal="true" />
+    <Variable DataType="USINT" InitValue="0" Name="DutySetOnTime" IsGlobal="true" />
+    <Variable DataType="USINT" InitValue="0" Name="ContCycleTout" IsGlobal="true" />
+    <Variable DataType="USINT" InitValue="60" Name="ContCycleLowBypass" IsGlobal="true" />
+    <Variable DataType="BOOL" Name="DfrPriorityCont" IsGlobal="true" />
+    <Variable DataType="USINT" InitValue="0" Name="ValveCnf" IsGlobal="true" />
+    <Variable DataType="BOOL" InitValue="TRUE" Name="EnBloAlarm" IsGlobal="true" />
+    <Variable DataType="USINT" InitValue="0" Name="HACCP_AlrmDelay" IsGlobal="true" />
+    <Variable DataType="REAL" Name="Ain_Offset.Fct.AirOff" IsGlobal="true" />
+    <Variable DataType="REAL" Name="Ain_Offset.Fct.AirOn" IsGlobal="true" />
+    <Variable DataType="REAL" Name="Ain_Offset.Fct.AmbientH" IsGlobal="true" />
+    <Variable DataType="REAL" Name="Ain_Offset.Fct.AmbientT" IsGlobal="true" />
+    <Variable DataType="REAL" Name="Ain_Offset.Fct.Auxiliary" IsGlobal="true" />
+    <Variable DataType="REAL" Name="Ain_Offset.Fct.Auxiliary2" IsGlobal="true" />
+    <Variable DataType="REAL" Name="Ain_Offset.Fct.Defrost" IsGlobal="true" />
+    <Variable DataType="REAL" Name="Ain_Offset.Fct.Defrost2" IsGlobal="true" />
+    <Variable DataType="REAL" Name="Ain_Offset.Fct.DewPoint" IsGlobal="true" />
+    <Variable DataType="REAL" Name="Ain_Offset.Fct.EvapP" IsGlobal="true" />
+    <Variable DataType="REAL" Name="Ain_Offset.Fct.GlassT" IsGlobal="true" />
+    <Variable DataType="REAL" Name="Ain_Offset.Fct.SuctT" IsGlobal="true" />
+    <Variable DataType="REAL" InitValue="9.3" Name="EvapMax" IsGlobal="true" />
+    <Variable DataType="REAL" InitValue="0" Name="EvapMin" IsGlobal="true" />
+    <Variable DataType="REAL" InitValue="100" Name="AmbHMax" IsGlobal="true" />
+    <Variable DataType="REAL" InitValue="0" Name="AmbHMin" IsGlobal="true" />
+    <Variable DataType="BOOL" InitValue="FALSE" Name="ManClean" IsGlobal="true" />
+    <Variable DataType="BOOL" Name="isManufacturer" IsGlobal="true" />
+    <Variable DataType="BOOL" Name="isService" IsGlobal="true" />
+    <Variable DataType="BOOL" Name="isUser" IsGlobal="true" />
+    <Variable DataType="USINT" Name="VirtualComposition" IsGlobal="true" />
+    <Variable DataType="REAL" Name="EvapOffset" IsGlobal="true" />
+    <Variable DataType="BOOL" Name="PowDfrConf[1]" IsGlobal="true" />
+    <Variable DataType="BOOL" Name="PowDfrConf[2]" IsGlobal="true" />
+    <Variable DataType="BOOL" Name="PowDfrConf[3]" IsGlobal="true" />
+    <Variable DataType="BOOL" Name="PowDfrConf[4]" IsGlobal="true" />
+    <Variable DataType="BOOL" Name="PowDfrConf[5]" IsGlobal="true" />
+    <Variable DataType="BOOL" Name="PowDfrConf[6]" IsGlobal="true" />
+    <Variable DataType="BOOL" Name="PowDfrConf[7]" IsGlobal="true" />
+    <Variable DataType="BOOL" Name="PowDfrConf[8]" IsGlobal="true" />
+    <Variable DataType="USINT" InitValue="30" Name="DfrHiBypass" IsGlobal="true" />
+    <Variable DataType="BOOL" InitValue="TRUE" Name="EnBuzzer" IsGlobal="true" />
+    <Variable DataType="TOD" Name="TimeBandStart[1].TimeAPP" IsGlobal="true" />
+    <Variable DataType="TOD" Name="TimeBandStart[2].TimeAPP" IsGlobal="true" />
+    <Variable DataType="TOD" Name="TimeBandStart[3].TimeAPP" IsGlobal="true" />
+    <Variable DataType="TOD" Name="TimeBandStart[4].TimeAPP" IsGlobal="true" />
+    <Variable DataType="TOD" Name="TimeBandStart[5].TimeAPP" IsGlobal="true" />
+    <Variable DataType="TOD" Name="TimeBandStart[6].TimeAPP" IsGlobal="true" />
+    <Variable DataType="TOD" Name="TimeBandStart[7].TimeAPP" IsGlobal="true" />
+    <Variable DataType="TOD" Name="TimeBandStart[8].TimeAPP" IsGlobal="true" />
+    <Variable DataType="TOD" Name="TimeBandEnd[1].TimeAPP" IsGlobal="true" />
+    <Variable DataType="TOD" Name="TimeBandEnd[2].TimeAPP" IsGlobal="true" />
+    <Variable DataType="TOD" Name="TimeBandEnd[3].TimeAPP" IsGlobal="true" />
+    <Variable DataType="TOD" Name="TimeBandEnd[4].TimeAPP" IsGlobal="true" />
+    <Variable DataType="TOD" Name="TimeBandEnd[5].TimeAPP" IsGlobal="true" />
+    <Variable DataType="TOD" Name="TimeBandEnd[6].TimeAPP" IsGlobal="true" />
+    <Variable DataType="TOD" Name="TimeBandEnd[7].TimeAPP" IsGlobal="true" />
+    <Variable DataType="TOD" Name="TimeBandEnd[8].TimeAPP" IsGlobal="true" />
+    <Variable DataType="TOD" Name="DfrStart[1].TimeAPP" IsGlobal="true" />
+    <Variable DataType="TOD" Name="DfrStart[2].TimeAPP" IsGlobal="true" />
+    <Variable DataType="TOD" Name="DfrStart[3].TimeAPP" IsGlobal="true" />
+    <Variable DataType="TOD" Name="DfrStart[4].TimeAPP" IsGlobal="true" />
+    <Variable DataType="TOD" Name="DfrStart[5].TimeAPP" IsGlobal="true" />
+    <Variable DataType="TOD" Name="DfrStart[6].TimeAPP" IsGlobal="true" />
+    <Variable DataType="TOD" Name="DfrStart[7].TimeAPP" IsGlobal="true" />
+    <Variable DataType="TOD" Name="DfrStart[8].TimeAPP" IsGlobal="true" />
+    <Variable DataType="REAL" InitValue="10" Name="SimMax[1]" IsGlobal="true" />
+    <Variable DataType="REAL" InitValue="2" Name="SimMax[2]" IsGlobal="true" />
+    <Variable DataType="REAL" InitValue="18" Name="SimMax[3]" IsGlobal="true" />
+    <Variable DataType="REAL" InitValue="100" Name="SimMax[4]" IsGlobal="true" />
+    <Variable DataType="REAL" InitValue="100" Name="SimMax[5]" IsGlobal="true" />
+    <Variable DataType="REAL" InitValue="100" Name="SimMax[6]" IsGlobal="true" />
+    <Variable DataType="REAL" Name="SimMax[7]" IsGlobal="true" />
+    <Variable DataType="REAL" Name="SimMax[8]" IsGlobal="true" />
+    <Variable DataType="REAL" InitValue="-10" Name="SimMin[1]" IsGlobal="true" />
+    <Variable DataType="REAL" InitValue="-20" Name="SimMin[2]" IsGlobal="true" />
+    <Variable DataType="REAL" InitValue="-2" Name="SimMin[3]" IsGlobal="true" />
+    <Variable DataType="REAL" InitValue="0" Name="SimMin[4]" IsGlobal="true" />
+    <Variable DataType="REAL" InitValue="0" Name="SimMin[5]" IsGlobal="true" />
+    <Variable DataType="REAL" InitValue="0" Name="SimMin[6]" IsGlobal="true" />
+    <Variable DataType="REAL" Name="SimMin[7]" IsGlobal="true" />
+    <Variable DataType="REAL" Name="SimMin[8]" IsGlobal="true" />
+    <Variable DataType="TIME" InitValue="5m" Name="SimPeriod[1]" IsGlobal="true" />
+    <Variable DataType="TIME" InitValue="5m" Name="SimPeriod[2]" IsGlobal="true" />
+    <Variable DataType="TIME" InitValue="5m" Name="SimPeriod[3]" IsGlobal="true" />
+    <Variable DataType="TIME" InitValue="5m" Name="SimPeriod[4]" IsGlobal="true" />
+    <Variable DataType="TIME" InitValue="5m" Name="SimPeriod[5]" IsGlobal="true" />
+    <Variable DataType="TIME" InitValue="5m" Name="SimPeriod[6]" IsGlobal="true" />
+    <Variable DataType="TIME" Name="SimPeriod[7]" IsGlobal="true" />
+    <Variable DataType="TIME" Name="SimPeriod[8]" IsGlobal="true" />
+    <Variable DataType="BOOL" InitValue="FALSE" Name="SimulateMode" IsGlobal="true" />
+    <Variable DataType="BOOL" InitValue="FALSE" Name="DfrPDFanCfg" IsGlobal="true" />
+    <Variable DataType="USINT" InitValue="0" Name="CmpAlConfig" IsGlobal="true" />
+    <Variable DataType="USINT" InitValue="1" Name="HMIMainDef" IsGlobal="true" />
+    <Variable DataType="USINT" InitValue="9" Name="HmiMainSel" IsGlobal="true" />
+    <Variable DataType="UINT" InitValue="4000" Name="CoolingCapacity" IsGlobal="true" />
+    <Variable DataType="USINT" InitValue="0" Name="FansSpeedupTime" IsGlobal="true" />
+    <Variable DataType="USINT" InitValue="0" Name="FansPeekTime" IsGlobal="true" />
+    <Variable DataType="BOOL" InitValue="TRUE" Name="SlaveAlarmCheck" IsGlobal="true" />
+    <Variable DataType="BOOL" InitValue="FALSE" Name="WizDone" IsGlobal="true" />
+    <Variable DataType="INT" Name="CustomGasCoeff.CRC" IsGlobal="true" />
+    <Variable DataType="INT" Name="CustomGasCoeff.GasCoeff[0]" IsGlobal="true" />
+    <Variable DataType="INT" Name="CustomGasCoeff.GasCoeff[1]" IsGlobal="true" />
+    <Variable DataType="INT" Name="CustomGasCoeff.GasCoeff[2]" IsGlobal="true" />
+    <Variable DataType="INT" Name="CustomGasCoeff.GasCoeff[3]" IsGlobal="true" />
+    <Variable DataType="INT" Name="CustomGasCoeff.GasCoeff[4]" IsGlobal="true" />
+    <Variable DataType="INT" Name="CustomGasCoeff.GasCoeff[5]" IsGlobal="true" />
+    <Variable DataType="INT" Name="CustomGasCoeff.GasCoeff[6]" IsGlobal="true" />
+    <Variable DataType="INT" Name="CustomGasCoeff.GasCoeff[7]" IsGlobal="true" />
+    <Variable DataType="INT" Name="CustomGasCoeff.GasCoeff[8]" IsGlobal="true" />
+    <Variable DataType="INT" Name="CustomGasCoeff.GasCoeff[9]" IsGlobal="true" />
+    <Variable DataType="INT" Name="CustomGasCoeff.GasCoeff[10]" IsGlobal="true" />
+    <Variable DataType="INT" Name="CustomGasCoeff.GasCoeff[11]" IsGlobal="true" />
+    <Variable DataType="REAL" Name="CustomGasCoeff.GasId" IsGlobal="true" />
+    <Variable DataType="BOOL" InitValue="FALSE" Name="ExvEnCloseLsa" IsGlobal="true" />
+    <Variable DataType="BOOL" InitValue="FALSE" Name="ExvEnCloseMOP" IsGlobal="true" />
+    <Variable DataType="REAL" InitValue="-15" Name="ExvSatTempBackup" IsGlobal="true" />
+    <Variable DataType="UINT" InitValue="0" Name="StandbyEEVOpenPosition" IsGlobal="true" />
+    <Variable DataType="BOOL" InitValue="FALSE" Name="DfrSkipEn" IsGlobal="true" />
+    <Variable DataType="UINT" InitValue="3" Name="VlvPressPrbTyp" IsGlobal="true" />
+    <Variable DataType="BOOL" Name="EnKeyboard" IsGlobal="true" />
+    <Variable DataType="USINT" Name="SmLineSH_AvgT" IsGlobal="true" />
+    <Variable DataType="REAL" InitValue="0" Name="SmLine_SH_thrsh" IsGlobal="true" />
+    <Variable DataType="BOOL" Name="GenFctAlarm_Cfg[1].AlType" IsGlobal="true" />
+    <Variable DataType="UINT" Name="GenFctAlarm_Cfg[1].Delay" IsGlobal="true" />
+    <Variable DataType="REAL" Name="GenFctAlarm_Cfg[1].Diff" IsGlobal="true" />
+    <Variable DataType="REAL" Name="GenFctAlarm_Cfg[1].HighThr" IsGlobal="true" />
+    <Variable DataType="REAL" Name="GenFctAlarm_Cfg[1].LowThr" IsGlobal="true" />
+    <Variable DataType="USINT" Name="GenFctAlarm_Cfg[1].RegVar_1" IsGlobal="true" />
+    <Variable DataType="USINT" Name="GenFctAlarm_Cfg[1].RegVar_2" IsGlobal="true" />
+    <Variable DataType="USINT" Name="GenFctAlarm_EnableOn[1]" IsGlobal="true" />
+    <Variable DataType="REAL" Name="GenFctModul_Cfg[1].CutOffDiff" IsGlobal="true" />
+    <Variable DataType="REAL" Name="GenFctModul_Cfg[1].Diff" IsGlobal="true" />
+    <Variable DataType="REAL" Name="GenFctModul_Cfg[1].HystDiff" IsGlobal="true" />
+    <Variable DataType="REAL" Name="GenFctModul_Cfg[1].MaxOut" IsGlobal="true" />
+    <Variable DataType="REAL" Name="GenFctModul_Cfg[1].MinOut" IsGlobal="true" />
+    <Variable DataType="REAL" Name="GenFctModul_Cfg[1].PID_Cfg.kp" IsGlobal="true" />
+    <Variable DataType="UINT" Name="GenFctModul_Cfg[1].PID_Cfg.Td" IsGlobal="true" />
+    <Variable DataType="UINT" Name="GenFctModul_Cfg[1].PID_Cfg.Ti" IsGlobal="true" />
+    <Variable DataType="USINT" Name="GenFctModul_Cfg[1].RegVar_1" IsGlobal="true" />
+    <Variable DataType="USINT" Name="GenFctModul_Cfg[1].RegVar_2" IsGlobal="true" />
+    <Variable DataType="BOOL" Name="GenFctModul_Cfg[1].Rev" IsGlobal="true" />
+    <Variable DataType="REAL" Name="GenFctModul_Cfg[1].SetP" IsGlobal="true" />
+    <Variable DataType="USINT" Name="GenFctModul_EnableOn[1]" IsGlobal="true" />
+    <Variable DataType="REAL" Name="GenFctStages_Cfg[1].Diff" IsGlobal="true" />
+    <Variable DataType="USINT" Name="GenFctStages_Cfg[1].RegVar_1" IsGlobal="true" />
+    <Variable DataType="USINT" Name="GenFctStages_Cfg[1].RegVar_2" IsGlobal="true" />
+    <Variable DataType="BOOL" Name="GenFctStages_Cfg[1].Rev" IsGlobal="true" />
+    <Variable DataType="REAL" Name="GenFctStages_Cfg[1].SetP" IsGlobal="true" />
+    <Variable DataType="USINT" Name="GenFctStages_EnableOn[1]" IsGlobal="true" />
+    <Variable DataType="UINT" InitValue="2" Name="EVD_Digin1Cfg" IsGlobal="true" />
+    <Variable DataType="UINT(0..1000)" InitValue="4" Name="EVD_MB_CmdDelay" IsGlobal="true" />
+    <Variable DataType="UINT(200..3000)" InitValue="500" Name="EVD_MB_Timeout" IsGlobal="true" />
+    <Variable DataType="UINT(200..5000)" InitValue="500" Name="EVD_MB_DetectionTimeOut" IsGlobal="true" />
+    <Variable DataType="USINT" InitValue="30" Name="HighTempBypDoor" IsGlobal="true" />
+    <Variable DataType="USINT(0..23)" Name="StartLog_Hour" IsGlobal="true" />
+    <Variable DataType="USINT(0..59)" Name="StartLog_Min" IsGlobal="true" />
+    <Variable DataType="BOOL" InitValue="FALSE" Name="TempCtrl_DirRev" IsGlobal="true" />
+    <Variable DataType="SINT" Name="Ain_Cfg.Fct.AirOff.Ch" IsGlobal="true" />
+    <Variable DataType="SINT" Name="Ain_Cfg.Fct.AirOn.Ch" IsGlobal="true" />
+    <Variable DataType="SINT" Name="Ain_Cfg.Fct.AmbientH.Ch" IsGlobal="true" />
+    <Variable DataType="SINT" Name="Ain_Cfg.Fct.AmbientT.Ch" IsGlobal="true" />
+    <Variable DataType="SINT" Name="Ain_Cfg.Fct.Auxiliary.Ch" IsGlobal="true" />
+    <Variable DataType="SINT" Name="Ain_Cfg.Fct.Auxiliary2.Ch" IsGlobal="true" />
+    <Variable DataType="SINT" Name="Ain_Cfg.Fct.Defrost.Ch" IsGlobal="true" />
+    <Variable DataType="SINT" Name="Ain_Cfg.Fct.Defrost2.Ch" IsGlobal="true" />
+    <Variable DataType="SINT" Name="Ain_Cfg.Fct.DewPoint.Ch" IsGlobal="true" />
+    <Variable DataType="SINT" Name="Ain_Cfg.Fct.EvapP.Ch" IsGlobal="true" />
+    <Variable DataType="SINT" Name="Ain_Cfg.Fct.GlassT.Ch" IsGlobal="true" />
+    <Variable DataType="SINT" Name="Ain_Cfg.Fct.SuctT.Ch" IsGlobal="true" />
+    <Variable DataType="SINT" Name="Dout_Cfg.Fct.Alarm.Ch" IsGlobal="true" />
+    <Variable DataType="SINT" Name="Dout_Cfg.Fct.Auxiliary.Ch" IsGlobal="true" />
+    <Variable DataType="SINT" Name="Dout_Cfg.Fct.Defrost.Ch" IsGlobal="true" />
+    <Variable DataType="BOOL" Name="Dout_Cfg.Fct.Auxiliary.Logic" IsGlobal="true" />
+    <Variable DataType="BOOL" Name="Dout_Cfg.Fct.Alarm.Logic" IsGlobal="true" />
+    <Variable DataType="SINT" Name="Dout_Cfg.Fct.Defrost2.Ch" IsGlobal="true" />
+    <Variable DataType="BOOL" Name="Dout_Cfg.Fct.Defrost2.Logic" IsGlobal="true" />
+    <Variable DataType="SINT" Name="Dout_Cfg.Fct.DrainHeat.Ch" IsGlobal="true" />
+    <Variable DataType="BOOL" Name="Dout_Cfg.Fct.DrainHeat.Logic" IsGlobal="true" />
+    <Variable DataType="SINT" Name="Dout_Cfg.Fct.EqualizVlv.Ch" IsGlobal="true" />
+    <Variable DataType="BOOL" Name="Dout_Cfg.Fct.EqualizVlv.Logic" IsGlobal="true" />
+    <Variable DataType="SINT" Name="Dout_Cfg.Fct.Fans.Ch" IsGlobal="true" />
+    <Variable DataType="SINT" Name="Dout_Cfg.Fct.GenericStage1.Ch" IsGlobal="true" />
+    <Variable DataType="BOOL" Name="Dout_Cfg.Fct.GenericStage1.Logic" IsGlobal="true" />
+    <Variable DataType="SINT" Name="Dout_Cfg.Fct.Light.Ch" IsGlobal="true" />
+    <Variable DataType="BOOL" Name="Dout_Cfg.Fct.Light.Logic" IsGlobal="true" />
+    <Variable DataType="SINT" Name="Dout_Cfg.Fct.LiquidVlv.Ch" IsGlobal="true" />
+    <Variable DataType="BOOL" Name="Dout_Cfg.Fct.LiquidVlv.Logic" IsGlobal="true" />
+    <Variable DataType="SINT" Name="Dout_Cfg.Fct.MasterAuxiliary.Ch" IsGlobal="true" />
+    <Variable DataType="BOOL" Name="Dout_Cfg.Fct.MasterAuxiliary.Logic" IsGlobal="true" />
+    <Variable DataType="SINT" Name="Dout_Cfg.Fct.MasterLight.Ch" IsGlobal="true" />
+    <Variable DataType="BOOL" Name="Dout_Cfg.Fct.MasterLight.Logic" IsGlobal="true" />
+    <Variable DataType="SINT" Name="Dout_Cfg.Fct.RailHeaters.Ch" IsGlobal="true" />
+    <Variable DataType="BOOL" Name="Dout_Cfg.Fct.RailHeaters.Logic" IsGlobal="true" />
+    <Variable DataType="SINT" Name="Dout_Cfg.Fct.Solenoid.Ch" IsGlobal="true" />
+    <Variable DataType="BOOL" Name="Dout_Cfg.Fct.Solenoid.Logic" IsGlobal="true" />
+    <Variable DataType="SINT" Name="Dout_Cfg.Fct.SuctVlv.Ch" IsGlobal="true" />
+    <Variable DataType="BOOL" Name="Dout_Cfg.Fct.SuctVlv.Logic" IsGlobal="true" />
+    <Variable DataType="SINT" Name="Dout_Cfg.Fct.Timed.Ch" IsGlobal="true" />
+    <Variable DataType="BOOL" Name="Dout_Cfg.Fct.Timed.Logic" IsGlobal="true" />
+    <Variable DataType="SINT" Name="Din_Cfg.Fct.Alarm.Ch" IsGlobal="true" />
+    <Variable DataType="BOOL" Name="Din_Cfg.Fct.Alarm.Logic" IsGlobal="true" />
+    <Variable DataType="SINT" Name="Din_Cfg.Fct.Auxiliary.Ch" IsGlobal="true" />
+    <Variable DataType="BOOL" Name="Din_Cfg.Fct.Auxiliary.Logic" IsGlobal="true" />
+    <Variable DataType="SINT" Name="Din_Cfg.Fct.CallDfr.Ch" IsGlobal="true" />
+    <Variable DataType="BOOL" Name="Din_Cfg.Fct.CallDfr.Logic" IsGlobal="true" />
+    <Variable DataType="SINT" Name="Din_Cfg.Fct.Clean.Ch" IsGlobal="true" />
+    <Variable DataType="BOOL" Name="Din_Cfg.Fct.Clean.Logic" IsGlobal="true" />
+    <Variable DataType="SINT" Name="Din_Cfg.Fct.Config.Ch" IsGlobal="true" />
+    <Variable DataType="BOOL" Name="Din_Cfg.Fct.Config.Logic" IsGlobal="true" />
+    <Variable DataType="SINT" Name="Din_Cfg.Fct.ContCycle.Ch" IsGlobal="true" />
+    <Variable DataType="BOOL" Name="Din_Cfg.Fct.ContCycle.Logic" IsGlobal="true" />
+    <Variable DataType="SINT" Name="Din_Cfg.Fct.Curtain.Ch" IsGlobal="true" />
+    <Variable DataType="BOOL" Name="Din_Cfg.Fct.Curtain.Logic" IsGlobal="true" />
+    <Variable DataType="SINT" Name="Din_Cfg.Fct.DefrostMirror.Ch" IsGlobal="true" />
+    <Variable DataType="BOOL" Name="Din_Cfg.Fct.DefrostMirror.Logic" IsGlobal="true" />
+    <Variable DataType="SINT" Name="Din_Cfg.Fct.DelayedAl.Ch" IsGlobal="true" />
+    <Variable DataType="BOOL" Name="Din_Cfg.Fct.DelayedAl.Logic" IsGlobal="true" />
+    <Variable DataType="SINT" Name="Din_Cfg.Fct.DoorOff.Ch" IsGlobal="true" />
+    <Variable DataType="BOOL" Name="Din_Cfg.Fct.DoorOff.Logic" IsGlobal="true" />
+    <Variable DataType="SINT" Name="Din_Cfg.Fct.DoorOn.Ch" IsGlobal="true" />
+    <Variable DataType="BOOL" Name="Din_Cfg.Fct.DoorOn.Logic" IsGlobal="true" />
+    <Variable DataType="SINT" Name="Din_Cfg.Fct.EnDfr.Ch" IsGlobal="true" />
+    <Variable DataType="BOOL" Name="Din_Cfg.Fct.EnDfr.Logic" IsGlobal="true" />
+    <Variable DataType="SINT" Name="Din_Cfg.Fct.GenFctAlrm.Ch" IsGlobal="true" />
+    <Variable DataType="BOOL" Name="Din_Cfg.Fct.GenFctAlrm.Logic" IsGlobal="true" />
+    <Variable DataType="SINT" Name="Din_Cfg.Fct.RemoteOff.Ch" IsGlobal="true" />
+    <Variable DataType="BOOL" Name="Din_Cfg.Fct.RemoteOff.Logic" IsGlobal="true" />
+    <Variable DataType="SINT" Name="Din_Cfg.Fct.Standby.Ch" IsGlobal="true" />
+    <Variable DataType="BOOL" Name="Din_Cfg.Fct.Standby.Logic" IsGlobal="true" />
+    <Variable DataType="SINT" Name="Din_Cfg.Fct.Timed.Ch" IsGlobal="true" />
+    <Variable DataType="BOOL" Name="Din_Cfg.Fct.Timed.Logic" IsGlobal="true" />
+    <Variable DataType="SINT" Name="AOut_Cfg.Fct.Fans.Ch" IsGlobal="true" />
+    <Variable DataType="SINT" Name="AOut_Cfg.Fct.GenericModul1.Ch" IsGlobal="true" />
+    <Variable DataType="SINT" Name="AOut_Cfg.Fct.Rails.Ch" IsGlobal="true" />
+    <Variable DataType="SINT" Name="AOut_Cfg.Fct.Valve.Ch" IsGlobal="true" />
+    <Variable DataType="BOOL" InitValue="FALSE" Name="En_SupervOnOff" IsGlobal="true" />
+    <Variable DataType="BOOL" InitValue="TRUE" Name="En_KeyboardOnOff" IsGlobal="true" />
+    <Variable DataType="BOOL" InitValue="TRUE" Name="KeyboardOnOff" IsGlobal="true" />
+    <Variable DataType="SINT" Name="Dout_Cfg.Fct.HotGas.Ch" IsGlobal="true" />
+    <Variable DataType="BOOL" Name="Dout_Cfg.Fct.HotGas.Logic" IsGlobal="true" />
+    <Variable DataType="USINT" InitValue="11" Name="DfrStartByDeltaPrb1" IsGlobal="true" />
+    <Variable DataType="USINT" InitValue="11" Name="DfrStartByDeltaPrb2" IsGlobal="true" />
+    <Variable DataType="UINT" InitValue="60" Name="DfrStartByDeltaT" IsGlobal="true" />
+    <Variable DataType="REAL" InitValue="50" Name="DfrStartByDeltaThrsh" IsGlobal="true" />
+    <Variable DataType="BOOL" Name="Dout_Cfg.Fct.Defrost.Logic" IsGlobal="true" />
+    <Variable DataType="BOOL" Name="Dout_Cfg.Fct.Fans.Logic" IsGlobal="true" />
+    <Variable DataType="UINT" Name="C_CSM_CaseSystemInfo1" IsGlobal="true" />
+    <Variable DataType="UINT" Name="C_CSM_CaseSystemInfo2" IsGlobal="true" />
+    <Variable DataType="UINT" Name="C_CSM_CaseSystemInfo3" IsGlobal="true" />
+    <Variable DataType="UINT" Name="C_CSM_CaseSystemInfo4" IsGlobal="true" />
+    <Variable DataType="UINT" Name="C_CSM_FeatureInfo1" IsGlobal="true" />
+    <Variable DataType="UINT" Name="C_CSM_FeatureInfo2" IsGlobal="true" />
+    <Variable DataType="UINT" Name="C_CSM_FeatureInfo3" IsGlobal="true" />
+    <Variable DataType="UINT" Name="C_CSM_FeatureInfo4" IsGlobal="true" />
+    <Variable DataType="UINT" Name="C_CSM_CaseSystemInfo5" IsGlobal="true" />
+    <Variable DataType="UINT" Name="C_CSM_CaseSystemInfo6" IsGlobal="true" />
+  </Variables>
+</NFCEditor>

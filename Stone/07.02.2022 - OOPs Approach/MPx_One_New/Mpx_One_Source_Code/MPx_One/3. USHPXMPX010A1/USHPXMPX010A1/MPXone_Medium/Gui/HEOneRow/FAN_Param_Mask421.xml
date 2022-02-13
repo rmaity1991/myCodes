@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BaseMaskData p1:type="MaskData" ID="421" Name="FAN_F1" Version="3.0" xmlns:p1="http://www.w3.org/2001/XMLSchema-instance">
+  <MaskElements>
+    <CompactField ID="448" Name="CompactField448" Row="0" Column="1" Domain="REAL" Selectable="TRUE" IntegerPartDigitsCount="2" ZeroSuppression="true" FormatString="-RR.R" Description="F1" VariableName="FansSet" Min="-50" Max="50" />
+  </MaskElements>
+</BaseMaskData>

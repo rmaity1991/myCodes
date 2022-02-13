@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BaseMaskData p1:type="MaskData" ID="442" Name="Dir_OnOff" Version="3.0" xmlns:p1="http://www.w3.org/2001/XMLSchema-instance">
+  <Actions>
+    <Action KeyName="KEY_PRG" FileName="Dir_OnOffPRG.st" FunctionName="Dir_OnOffPRG" Call="Dir_OnOffPRG(keyPressed, keyCounter);" Type="Single" />
+  </Actions>
+  <MaskElements>
+    <TextField ID="469" Name="TextField469" Row="0" Column="0" TextValue="Off" />
+  </MaskElements>
+</BaseMaskData>

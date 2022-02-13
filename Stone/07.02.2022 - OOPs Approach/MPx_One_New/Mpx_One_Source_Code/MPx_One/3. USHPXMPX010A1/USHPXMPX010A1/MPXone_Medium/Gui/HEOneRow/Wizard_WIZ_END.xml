@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BaseMaskData p1:type="MaskData" ID="393" Name="WIZ_END" Version="3.0" EnableOn="wizCanEnd" xmlns:p1="http://www.w3.org/2001/XMLSchema-instance">
+  <Leds>
+    <Led Name="ACU_LED_5" OnCondition="FALSE" />
+  </Leds>
+  <Actions>
+    <Action KeyName="KEY_PRG" FileName="WIZ_ENDPRG.st" FunctionName="WIZ_ENDPRG" Call="WIZ_ENDPRG(keyPressed, keyCounter);" Type="Single" />
+  </Actions>
+  <MaskElements>
+    <TextField ID="408" Name="TextField408" Row="0" Column="0" TextValue="EnD" />
+  </MaskElements>
+</BaseMaskData>

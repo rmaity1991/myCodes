@@ -22,6 +22,10 @@ preprocessor directives here:
 #define AND &&
 #define ARANGE ( a > 25 AND a < 50 ) 
 
+#if !defined (MESSAGE)
+   #define MESSAGE "You wish!"
+#endif
+
 int main(){
 
  float r = 6.25 ;
@@ -42,6 +46,14 @@ int main(){
  printf ( "within range" ) ;
  else
  printf ( "out of range" ) ;
+
+ #ifndef MESSAGE
+   #define MESSAGE "You wish!"
+#endif
+
+#ifdef DEBUG
+   /* Your debugging statements here */
+#endif
 
 
 

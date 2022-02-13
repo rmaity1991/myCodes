@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BaseMaskData p1:type="MaskData" ID="470" Name="HS3" Version="3.0" xmlns:p1="http://www.w3.org/2001/XMLSchema-instance">
+  <Actions>
+    <Action KeyName="KEY_PROGRAM_RELEASE" FileName="HSx_PROGRAM_RELEASE.st" FunctionName="HSx_PROGRAM_RELEASE" Call="HSx_PROGRAM_RELEASE(keyPressed, keyCounter);" Type="Single" />
+  </Actions>
+  <MaskElements>
+    <TextField ID="511" Name="TextField511" Row="0" Column="0" TextValue="HS3" />
+  </MaskElements>
+</BaseMaskData>

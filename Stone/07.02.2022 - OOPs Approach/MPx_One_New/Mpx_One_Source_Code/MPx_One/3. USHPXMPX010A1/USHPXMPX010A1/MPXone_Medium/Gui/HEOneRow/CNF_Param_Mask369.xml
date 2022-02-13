@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BaseMaskData p1:type="MaskData" ID="369" Name="CNF_H10" Version="3.0" xmlns:p1="http://www.w3.org/2001/XMLSchema-instance">
+  <MaskElements>
+    <CompactField ID="375" Name="CompactField375" Row="0" Column="0" Domain="USINT" Selectable="TRUE" FormatString="III" Description=" H2" VariableName="BMS_Baud" Min="0" Max="8" />
+  </MaskElements>
+</BaseMaskData>

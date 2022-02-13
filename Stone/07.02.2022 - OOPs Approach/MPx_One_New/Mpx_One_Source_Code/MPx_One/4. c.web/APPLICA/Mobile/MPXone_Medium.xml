@@ -1,0 +1,518 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<item name="Root" separator=".">
+  <type name="MPXone_Medium">
+    <item name="Analogue probe measurement stability NFC_Parameters | /2" type="number" />
+    <item name="Virtual probe composition&#xA;0 = Air off (Sm)&#xA;100 = Air on (Sr) NFC_Parameters | /4" type="number" />
+    <item name="User interface unit of measure&#xA;FALSE = °C/barg&#xA;TRUE = °F/psig NFC_Parameters | /5" type="boolean" />
+    <item name="Display decimal point&#xA;FALSE = Enabled&#xA;TRUE = Disabled NFC_Parameters | /6" type="boolean" />
+    <item name="Assign channel for Modulating fan output&#xA;0 = not configured&#xA;1 = Y1&#xA;2 = Y2 NFC_Parameters | /AA" type="number" />
+    <item name="Assign channel for Modulating valve output&#xA;0 = not configured&#xA;1 = Y1&#xA;2 = Y2 NFC_Parameters | /Ab" type="number" />
+    <item name="Assign channel for Modulating rail heaters output&#xA;0 = not configured&#xA;1 = Y1&#xA;2 = Y2 NFC_Parameters | /Ac" type="number" />
+    <item name="Assign channel for Modulating generic function&#xA;0 = not configured&#xA;1 = Y1&#xA;2 = Y2 NFC_Parameters | /Ad" type="number" />
+    <item name="Air off temp. probe calibration NFC_Parameters | /cA" type="number" />
+    <item name="Defrost temp. probe calibration NFC_Parameters | /cb" type="number" />
+    <item name="Air on temp. probe calibration NFC_Parameters | /cc" type="number" />
+    <item name="Suction temp. probe (tGs) calibration NFC_Parameters | /cd" type="number" />
+    <item name="Evaporator pressure probe (PEu) calibration NFC_Parameters | /cE" type="number" />
+    <item name="Defrost temp. probe 2 (Sd2)  calibration NFC_Parameters | /cF" type="number" />
+    <item name="Auxiliary temp. probe (Aux) calibration NFC_Parameters | /cG" type="number" />
+    <item name="Auxiliary temp. probe 2 (Aux2) calibration NFC_Parameters | /cH" type="number" />
+    <item name="Ambient temp. probe (SA) calibration NFC_Parameters | /cI" type="number" />
+    <item name="Ambient humidity probe (SU) calibration NFC_Parameters | /cL" type="number" />
+    <item name="Glass temp. probe (Svt) calibration NFC_Parameters | /cM" type="number" />
+    <item name="Dewpoint value (Sdp) calibration NFC_Parameters | /cn" type="number" />
+    <item name="Evap. saturated temp. (tEu) calibration NFC_Parameters | /co" type="number" />
+    <item name="Assign Air off temp. probe (Sm)&#xA;0 = Function disabled&#xA;1 = S1&#xA;2 = S2&#xA;3 = S3&#xA;4 = S4&#xA;5 = S5&#xA;6 = S6&#xA;-1 = S11: serial probe&#xA;-2 = S12: serial probe&#xA;-3 = S13: serial probe&#xA;-4 = S14: serial probe NFC_Parameters | /FA" type="number" />
+    <item name="Assign defrost temperature probe (Sd)&#xA;0 = Function disabled&#xA;1 = S1&#xA;2 = S2&#xA;3 = S3&#xA;4 = S4&#xA;5 = S5&#xA;6 = S6&#xA;-1 = S11: serial probe&#xA;-2 = S12: serial probe&#xA;-3 = S13: serial probe&#xA;-4 = S14: serial probe NFC_Parameters | /Fb" type="number" />
+    <item name="Assign intake temperature probe (Sr)&#xA;0 = Function disabled&#xA;1 = S1&#xA;2 = S2&#xA;3 = S3&#xA;4 = S4&#xA;5 = S5&#xA;6 = S6&#xA;-1 = S11: serial probe&#xA;-2 = S12: serial probe&#xA;-3 = S13: serial probe&#xA;-4 = S14: serial probe NFC_Parameters | /Fc" type="number" />
+    <item name="Assign superheated gas temperature probe (tGS)&#xA;0 = Function disabled&#xA;1 = S1&#xA;2 = S2&#xA;3 = S3&#xA;4 = S4&#xA;5 = S5&#xA;6 = S6&#xA;-1 = S11: serial probe&#xA;-2 = S12: serial probe&#xA;-3 = S13: serial probe&#xA;-4 = S14: serial probe NFC_Parameters | /Fd" type="number" />
+    <item name="Assign saturated evaporation pressure/temperature probe (PEu/tEu)&#xA;0 = Function disabled&#xA;1 = S1&#xA;2 = S2&#xA;3 = S3&#xA;4 = S4&#xA;5 = S5&#xA;6 = S6&#xA;-1 = S11: serial probe&#xA;-2 = S12: serial probe&#xA;-3 = S13: serial probe&#xA;-4 = S14: serial probe NFC_Parameters | /FE" type="number" />
+    <item name="Assign defrost temperature probe 2 (Sd2)&#xA;0 = Function disabled&#xA;1 = S1&#xA;2 = S2&#xA;3 = S3&#xA;4 = S4&#xA;5 = S5&#xA;6 = S6&#xA;-1 = S11: serial probe&#xA;-2 = S12: serial probe&#xA;-3 = S13: serial probe&#xA;-4 = S14: serial probe NFC_Parameters | /FF" type="number" />
+    <item name="Assign auxiliary temperature probe 1 (Saux1)&#xA;0 = Function disabled&#xA;1 = S1&#xA;2 = S2&#xA;3 = S3&#xA;4 = S4&#xA;5 = S5&#xA;6 = S6&#xA;-1 = S11: serial probe&#xA;-2 = S12: serial probe&#xA;-3 = S13: serial probe&#xA;-4 = S14: serial probe NFC_Parameters | /FG" type="number" />
+    <item name="Assign auxiliary temperature probe 2 (Saux2)&#xA;0 = Function disabled&#xA;1 = S1&#xA;2 = S2&#xA;3 = S3&#xA;4 = S4&#xA;5 = S5&#xA;6 = S6&#xA;-1 = S11: serial probe&#xA;-2 = S12: serial probe&#xA;-3 = S13: serial probe&#xA;-4 = S14: serial probe NFC_Parameters | /FH" type="number" />
+    <item name="Assign ambient temperature probe (SA)&#xA;0 = Function disabled&#xA;1 = S1&#xA;2 = S2&#xA;3 = S3&#xA;4 = S4&#xA;5 = S5&#xA;6 = S6&#xA;-1 = S11: serial probe&#xA;-2 = S12: serial probe&#xA;-3 = S13: serial probe&#xA;-4 = S14: serial probe NFC_Parameters | /FI" type="number" />
+    <item name="Assign ambient humidity probe (SU)&#xA;0 = Function disabled&#xA;1 = S1&#xA;2 = S2&#xA;3 = S3&#xA;4 = S4&#xA;5 = S5&#xA;6 = S6&#xA;-1 = S11: serial probe&#xA;-2 = S12: serial probe&#xA;-3 = S13: serial probe&#xA;-4 = S14: serial probe NFC_Parameters | /FL" type="number" />
+    <item name="Assign glass temperature probe (Svt)&#xA;0 = Function disabled&#xA;1 = S1&#xA;2 = S2&#xA;3 = S3&#xA;4 = S4&#xA;5 = S5&#xA;6 = S6&#xA;-1 = S11: serial probe&#xA;-2 = S12: serial probe&#xA;-3 = S13: serial probe&#xA;-4 = S14: serial probe NFC_Parameters | /FM" type="number" />
+    <item name="Assign dewpoint value (SdP) to a serial probe&#xA;0 = Function disabled&#xA;1 = S1&#xA;2 = S2&#xA;3 = S3&#xA;4 = S4&#xA;5 = S5&#xA;6 = S6&#xA;-1 = S11: serial probe&#xA;-2 = S12: serial probe&#xA;-3 = S13: serial probe&#xA;-4 = S14: serial probe NFC_Parameters | /Fn" type="number" />
+    <item name="Lower value for saturated evap. pressure probe (PEu/tEu) NFC_Parameters | /LE" type="number" />
+    <item name="Lower value for ambient humidity probe (SU) NFC_Parameters | /LL" type="number" />
+    <item name="Type of probe, group 1 (S1, S2, S3)&#xA;0 = PT1000 Standard Range&#xA;1 = NTC Standard Range NFC_Parameters | /P1" type="number" />
+    <item name="Type of probe, group 2 (S4, S5)&#xA;1 = NTC Standard Range&#xA;2 = 0-5 V&#xA;3 = 4-20 mA NFC_Parameters | /P2" type="number" />
+    <item name="Type of probe, group 3 (S6)&#xA;0 = PT1000 Standard Range&#xA;1 = NTC Standard Range&#xA;2 = 0-5 V&#xA;3 = 4-20 mA&#xA;4 = 0-10V NFC_Parameters | /P3" type="number" />
+    <item name="Type of probe, group 4 (S8)&#xA;(Reserved) NFC_Parameters | /P4" type="number" />
+    <item name="Display signals / alarms on remote display&#xA;FALSE = Disabled&#xA;TRUE = Enabled NFC_Parameters | /t" type="boolean" />
+    <item name="Display on user terminal&#xA;0 : Not config.&#xA;1 : S1 value&#xA;2 : S2 value&#xA;3 : S3 value&#xA;4 : S4 value&#xA;5 : S5 value&#xA;6 : S6 value&#xA;7 : Reserved&#xA;8 : Reserved&#xA;9 : Control probe&#xA;10 : Virtual probe&#xA;11 : S11 value&#xA;12 : S12 value&#xA;13 : S13 value&#xA;14 : S14 value&#xA;15 : Reg. set point&#xA;16 : Actual superheat reading NFC_Parameters | /t1" type="number" />
+    <item name="Display on remote display&#xA;0 : Not config.&#xA;1 : S1 value&#xA;2 : S2 value&#xA;3 : S3 value&#xA;4 : S4 value&#xA;5 : S5 value&#xA;6 : S6 value&#xA;7 : Reserved&#xA;8 : Reserved&#xA;9 : Control probe&#xA;10 : Virtual probe&#xA;11 : S11 value&#xA;12 : S12 value&#xA;13 : S13 value&#xA;14 : S14 value&#xA;15 : Reg. set point&#xA;16 : Actual superheat reading NFC_Parameters | /t2" type="number" />
+    <item name="Upper value for saturated evap. pressure probe (PEu/tEu) NFC_Parameters | /UE" type="number" />
+    <item name="Upper value for ambient humidity probe (SU) NFC_Parameters | /UL" type="number" />
+    <item name="High and low temp. alarm reset differential NFC_Parameters | A0" type="number" />
+    <item name="Alarm thresholds (AL, AH) for set point St&#xA;FALSE = relative&#xA;TRUE = absolute NFC_Parameters | A1" type="boolean" />
+    <item name="Configure solenoid/comp. control during ext. alarm with fixed 15 min OFF time&#xA;0 = always OFF&#xA;100 = always ON NFC_Parameters | A10" type="number" />
+    <item name="Delay time for delayed external alarm NFC_Parameters | A11" type="number" />
+    <item name="Alarm thresholds (AL2, AH2) for set point St2&#xA;FALSE = relative&#xA;TRUE = absolute NFC_Parameters | A2" type="boolean" />
+    <item name="Select digital input propagated from Main to Slaves (only on Main)&#xA;-1 = from supervisor&#xA;0 = Disabled&#xA;1 = ID1&#xA;2 = ID2&#xA;3 = ID3&#xA;4 = ID4&#xA;5 = ID5 NFC_Parameters | A9" type="number" />
+    <item name="Assign probe for high (AH) and low (AL) temperature alarms&#xA;0 : Not config.&#xA;1 : Air off (Sm)&#xA;2 : Defrost (Sd)&#xA;3 : Air on (Sr)&#xA;4 : Superheated gas (tGS)&#xA;5 : Reserved&#xA;6 : Auxiliary defrost (Sd2)&#xA;7 : Auxiliary 1 (Saux1)&#xA;8 : Auxiliary 2 (Saux2)&#xA;9 : Ambient temp. (SA)&#xA;10 : Ambient humidity (SU)&#xA;11 : Glass temp. (Svt)&#xA;12 : Dewpoint (SdP)&#xA;13 : Virtual probe (Sv)&#xA;14 : Saturated evap. temp. (tEu) NFC_Parameters | AA" type="number" />
+    <item name="Assign probe for high (AH2) and low (AL2) temperature alarms&#xA;0 : Not config.&#xA;1 : Air off (Sm)&#xA;2 : Defrost (Sd)&#xA;3 : Air on (Sr)&#xA;4 : Superheated gas (tGS)&#xA;5 : Reserved&#xA;6 : Auxiliary defrost (Sd2)&#xA;7 : Auxiliary 1 (Saux1)&#xA;8 : Auxiliary 2 (Saux2)&#xA;9 : Ambient temp. (SA)&#xA;10 : Ambient humidity (SU)&#xA;11 : Glass temp. (Svt)&#xA;12 : Dewpoint (SdP)&#xA;13 : Virtual probe (Sv)&#xA;14 : Saturated evap. temp. (tEu) NFC_Parameters | AA2" type="number" />
+    <item name="Delay time for high and low temp. alarms (AH, AL) NFC_Parameters | Ad" type="number" />
+    <item name="Delay time for high and low temp. alarms (AH2, AL2) NFC_Parameters | Ad2" type="number" />
+    <item name="High temp. alarm bypass time for door open NFC_Parameters | Add" type="number" />
+    <item name="High temp. alarm threshold NFC_Parameters | AH" type="number" />
+    <item name="High temp. alarm 2 threshold NFC_Parameters | AH2" type="number" />
+    <item name="Low temp. alarm threshold NFC_Parameters | AL" type="number" />
+    <item name="Low temp. alarm 2 threshold NFC_Parameters | AL2" type="number" />
+    <item name="Fans analogue output status Parameters | AO_status_Fans" type="number" />
+    <item name="Modulating generic function output status Parameters | AO_status_GFmodul" type="number" />
+    <item name="Rail heaters analogue output status Parameters | AO_status_RailHeaters" type="number" />
+    <item name="Madulating valve analogue output status Parameters | AO_status_Valve" type="number" />
+    <item name="Signal alarms from Secondary to Main&#xA;FALSE = not enabled&#xA;TRUE = enabled NFC_Parameters | Ar" type="boolean" />
+    <item name="Actual setpoint used for regulation Parameters | Ast" type="number" />
+    <item name="Actual setpoint used for regulation of double thermostat Parameters | ASt2" type="number" />
+    <item name="Auxiliary temp. probe (Aux) Parameters | Aux" type="number" />
+    <item name="Auxiliary temp. probe 2 (Aux2) Parameters | Aux2" type="number" />
+    <item name="Valve blocked Parameters | blo" type="boolean" />
+    <item name="Delay enable comp. and evap. fans on power-up NFC_Parameters | c0" type="number" />
+    <item name="Min time between successive starts NFC_Parameters | c1" type="number" />
+    <item name="Min OFF time NFC_Parameters | c2" type="number" />
+    <item name="Min ON time NFC_Parameters | c3" type="number" />
+    <item name="ON time for duty setting operation (Toff = 15 minutes fixed)&#xA;0 = compressor/valve always OFF&#xA;100 = compressor/valve always ON NFC_Parameters | c4" type="number" />
+    <item name="Low temp. alarm bypass time after continuous cycle NFC_Parameters | c6" type="number" />
+    <item name="Defrost priority over continuous cycle&#xA;FALSE = no&#xA;TRUE = yes NFC_Parameters | c7" type="boolean" />
+    <item name="Running time in continuous cycle NFC_Parameters | cc" type="number" />
+    <item name="Warning for Clean status Parameters | CLn" type="boolean" />
+    <item name="Max time for Clean status NFC_Parameters | Clt" type="number" />
+    <item name="Quick command to manually force the auxiliary output NFC_Parameters | CmdAux" type="number" />
+    <item name="Quick command to force manually the comp./valve NFC_Parameters | CmdComp" type="number" />
+    <item name="Quick command to manually force the fans NFC_Parameters | CmdFans" type="number" />
+    <item name="Initial valve position when control starts NFC_Parameters | cP1" type="number" />
+    <item name="NFC_Parameters | CustomGasCoeff.CRC" type="number" />
+    <item name="NFC_Parameters | CustomGasCoeff.GasCoeff[0]" type="number" />
+    <item name="NFC_Parameters | CustomGasCoeff.GasCoeff[1]" type="number" />
+    <item name="NFC_Parameters | CustomGasCoeff.GasCoeff[10]" type="number" />
+    <item name="NFC_Parameters | CustomGasCoeff.GasCoeff[11]" type="number" />
+    <item name="NFC_Parameters | CustomGasCoeff.GasCoeff[2]" type="number" />
+    <item name="NFC_Parameters | CustomGasCoeff.GasCoeff[3]" type="number" />
+    <item name="NFC_Parameters | CustomGasCoeff.GasCoeff[4]" type="number" />
+    <item name="NFC_Parameters | CustomGasCoeff.GasCoeff[5]" type="number" />
+    <item name="NFC_Parameters | CustomGasCoeff.GasCoeff[6]" type="number" />
+    <item name="NFC_Parameters | CustomGasCoeff.GasCoeff[7]" type="number" />
+    <item name="NFC_Parameters | CustomGasCoeff.GasCoeff[8]" type="number" />
+    <item name="NFC_Parameters | CustomGasCoeff.GasCoeff[9]" type="number" />
+    <item name="NFC_Parameters | CustomGasCoeff.GasId" type="number" />
+    <item name="Day - Clock settings by supervisor Parameters | d__" type="number" />
+    <item name="Type of defrost&#xA;0 = heater by temp.&#xA;1 = Hot Gas by temp&#xA;2 = heater by time&#xA;3 = Hot Gas by time&#xA;4 = heater by time with temp. control NFC_Parameters | d0" type="number" />
+    <item name="Defrost time in Running time mode:&#xA;0 = function disabled NFC_Parameters | d10" type="number" />
+    <item name="Defrost temperature threshold in Running time mode NFC_Parameters | d11" type="number" />
+    <item name="Pressure probe alarm management during defrost&#xA;probe error   supervisor update&#xA;0 disabled     enabled&#xA;1 enabled     enabled&#xA;2 disabled     disabled&#xA;3 enabled     disabled NFC_Parameters | d12" type="number" />
+    <item name="Number of daily defrosts (td1)&#xA;0 = Dis.&#xA;1 = 24 h 0 min&#xA;2 = 12 h 0 min&#xA;3 = 8 h 0 min&#xA;4 = 6 h 0 min&#xA;5 = 4 h 48 min&#xA;6 = 4 h 0 min&#xA;7 = 3 h 26 min&#xA;8 = 3 h 0 min&#xA;9 = 2 h 40 min&#xA;10 = 2 h 24 min&#xA;11 = 2 h 11 min&#xA;12 = 2 h 0 min&#xA;13 = 1 h 0 min&#xA;14 = 30 min NFC_Parameters | d1S" type="number" />
+    <item name="End defrost synchronized by Main&#xA;FALSE = not synchronized&#xA;TRUE = synchronized NFC_Parameters | d2" type="boolean" />
+    <item name="Number of daily defrosts (td2)&#xA;0 = Dis.&#xA;1 = 24 h 0 min&#xA;2 = 12 h 0 min&#xA;3 = 8 h 0 min&#xA;4 = 6 h 0 min&#xA;5 = 4 h 48 min&#xA;6 = 4 h 0 min&#xA;7 = 3 h 26 min&#xA;8 = 3 h 0 min&#xA;9 = 2 h 40 min&#xA;10 = 2 h 24 min&#xA;11 = 2 h 11 min&#xA;12 = 2 h 0 min&#xA;13 = 1 h 0 min&#xA;14 = 30 min NFC_Parameters | d2S" type="number" />
+    <item name="Send network defrost control (for Main):&#xA;FALSE : send&#xA;TRUE : do not send&#xA;Ignore network defrost control (for Secondary)&#xA;FALSE : disabled&#xA;TRUE : enabled NFC_Parameters | d3" type="boolean" />
+    <item name="Defrost on power-up:&#xA;FALSE = disabled&#xA;TRUE = enabled&#xA;(Main = network defrost; Secondary = local defrost) NFC_Parameters | d4" type="boolean" />
+    <item name="Defrost delay on power-up or (for Secondary) after control from Main&#xA;0 = delay disabled NFC_Parameters | d5" type="number" />
+    <item name="Display on terminals during defrost&#xA;0 = temperature alternating with dEF&#xA;1 = freeze display&#xA;2 = dEF NFC_Parameters | d6" type="number" />
+    <item name="Skip defrost: 0 = disabled; 1 = enabled; NFC_Parameters | d7" type="boolean" />
+    <item name="Bypass high temp. alarm time after defrost NFC_Parameters | d8" type="number" />
+    <item name="Defrost priority over comp. protection times&#xA;FALSE = protection times observed&#xA;TRUE = protection times not observed NFC_Parameters | d9" type="boolean" />
+    <item name="Delayed alarm from external contact Parameters | dA" type="boolean" />
+    <item name="Temperature regulation mode with double thermostat&#xA;FALSE = AND logic&#xA;TRUE = OR logic NFC_Parameters | db1" type="boolean" />
+    <item name="Safety timeout for Double thermostat function NFC_Parameters | dbS" type="number" />
+    <item name="Dripping time after defrost (fans off)&#xA;0 = no dripping NFC_Parameters | dd" type="number" />
+    <item name="First regulation probe for evaporator fan&#xA;0 : Not config.&#xA;1 : Air off (Sm)&#xA;2 : Defrost (Sd)&#xA;3 : Air on (Sr)&#xA;4 : Superheated gas (tGS)&#xA;5 : Saturated evap. pressure (PEu)&#xA;6 : Auxiliary defrost (Sd2)&#xA;7 : Auxiliary 1 (Saux1)&#xA;8 : Auxiliary 2 (Saux2)&#xA;9 : Ambient temp (SA)&#xA;10 : Ambient humidity (SU)&#xA;11 : Glass temperature (Svt)&#xA;12 : Dewpoint (SdP)&#xA;13 : Virtual probe (Sv)&#xA;14 : Saturated evap. temp. (tEu) NFC_Parameters | dd1" type="number" />
+    <item name="First regulation probe for evaporator fan&#xA;0 : Not config.&#xA;1 : Air off (Sm)&#xA;2 : Defrost (Sd)&#xA;3 : Air on (Sr)&#xA;4 : Superheated gas (tGS)&#xA;5 : Saturated evap. pressure (PEu)&#xA;6 : Auxiliary defrost (Sd2)&#xA;7 : Auxiliary 1 (Saux1)&#xA;8 : Auxiliary 2 (Saux2)&#xA;9 : Ambient temp (SA)&#xA;10 : Ambient humidity (SU)&#xA;11 : Glass temperature (Svt)&#xA;12 : Dewpoint (SdP)&#xA;13 : Virtual probe (Sv)&#xA;14 : Saturated evap. temp. (tEu) NFC_Parameters | dd2" type="number" />
+    <item name="Additional maximum defrost time delta in Power defrost mode NFC_Parameters | ddP" type="number" />
+    <item name="Additional end defrost temperature delta in Power defrost mode NFC_Parameters | ddt" type="number" />
+    <item name="Start/Stop manual defrost NFC_Parameters | DEF" type="boolean" />
+    <item name="Current defrost status:&#xA;0 : Idle&#xA;1 : Calling&#xA;2 : In progress&#xA;3 : Check end defrost&#xA;4 : Dripping&#xA;5 : Post-dripping Parameters | DEF_Status" type="number" />
+    <item name="Pump down phase duration&#xA;0 = pump down disabled NFC_Parameters | dH1" type="number" />
+    <item name="Max interval between consecutive defrost NFC_Parameters | dI" type="number" />
+    <item name="Assign immediate external alarm digital input&#xA;0 = Function disabled&#xA;1 = ID1&#xA;2 = ID2&#xA;3 = ID3&#xA;4 = ID4&#xA;5 = ID5&#xA;-1 = Serial digital input NFC_Parameters | DIA" type="number" />
+    <item name="Assign delayed external alarm digital input&#xA;0 = Function disabled&#xA;1 = ID1&#xA;2 = ID2&#xA;3 = ID3&#xA;4 = ID4&#xA;5 = ID5&#xA;-1 = Serial digital input NFC_Parameters | DIb" type="number" />
+    <item name="Assign enable defrost digital input&#xA;0 = Function disabled&#xA;1 = ID1&#xA;2 = ID2&#xA;3 = ID3&#xA;4 = ID4&#xA;5 = ID5&#xA;-1 = Serial digital input NFC_Parameters | DIc" type="number" />
+    <item name="Assign start defrost digital input&#xA;0 = Function disabled&#xA;1 = ID1&#xA;2 = ID2&#xA;3 = ID3&#xA;4 = ID4&#xA;5 = ID5&#xA;-1 = Serial digital input NFC_Parameters | DId" type="number" />
+    <item name="Assign door switch with comp. and fans OFF digital input&#xA;0 = Function disabled&#xA;1 = ID1&#xA;2 = ID2&#xA;3 = ID3&#xA;4 = ID4&#xA;5 = ID5&#xA;-1 = Serial digital input NFC_Parameters | DIE" type="number" />
+    <item name="Assign remote ON/OFF digital input&#xA;0 = Function disabled&#xA;1 = ID1&#xA;2 = ID2&#xA;3 = ID3&#xA;4 = ID4&#xA;5 = ID5&#xA;-1 = Serial digital input NFC_Parameters | DIF" type="number" />
+    <item name="Assign curtain switch digital input&#xA;0 = Function disabled&#xA;1 = ID1&#xA;2 = ID2&#xA;3 = ID3&#xA;4 = ID4&#xA;5 = ID5&#xA;-1 = Serial digital input NFC_Parameters | DIG" type="number" />
+    <item name="Assign start/stop continuous cycle digital input&#xA;0 = Function disabled&#xA;1 = ID1&#xA;2 = ID2&#xA;3 = ID3&#xA;4 = ID4&#xA;5 = ID5&#xA;-1 = Serial digital input NFC_Parameters | DIH" type="number" />
+    <item name="Assign input status monitoring digital input&#xA;0 = Function disabled&#xA;1 = ID1&#xA;2 = ID2&#xA;3 = ID3&#xA;4 = ID4&#xA;5 = ID5&#xA;-1 = Serial digital input NFC_Parameters | DII" type="number" />
+    <item name="Assign retaining digital input digital input&#xA;0 = Function disabled&#xA;1 = ID1&#xA;2 = ID2&#xA;3 = ID3&#xA;4 = ID4&#xA;5 = ID5&#xA;-1 = Serial digital input NFC_Parameters | DIL" type="number" />
+    <item name="Assign Standby mode switch digital input&#xA;0 = Function disabled&#xA;1 = ID1&#xA;2 = ID2&#xA;3 = ID3&#xA;4 = ID4&#xA;5 = ID5&#xA;-1 = Serial digital input NFC_Parameters | DIM" type="number" />
+    <item name="Assign clean mode switch digital input&#xA;0 = Function disabled&#xA;1 = ID1&#xA;2 = ID2&#xA;3 = ID3&#xA;4 = ID4&#xA;5 = ID5&#xA;-1 = Serial digital input NFC_Parameters | DIn" type="number" />
+    <item name="Assign working parameters set change digital input&#xA;0 = Function disabled&#xA;1 = ID1&#xA;2 = ID2&#xA;3 = ID3&#xA;4 = ID4&#xA;5 = ID5&#xA;-1 = Serial digital input NFC_Parameters | DIo" type="number" />
+    <item name="Assign door switch with comp. and fans ON digital input&#xA;0 = Function disabled&#xA;1 = ID1&#xA;2 = ID2&#xA;3 = ID3&#xA;4 = ID4&#xA;5 = ID5&#xA;-1 = Serial digital input NFC_Parameters | DIP" type="number" />
+    <item name="Assign defrost according to DI status digital input&#xA;0 = Function disabled&#xA;1 = ID1&#xA;2 = ID2&#xA;3 = ID3&#xA;4 = ID4&#xA;5 = ID5&#xA;-1 = Serial digital input NFC_Parameters | DIr" type="number" />
+    <item name="Assign genric function alarm digital input&#xA;0 = Function disabled&#xA;1 = ID1&#xA;2 = ID2&#xA;3 = ID3&#xA;4 = ID4&#xA;5 = ID5&#xA;-1 = Serial digital input NFC_Parameters | DIs" type="number" />
+    <item name="Timer duration (timed input) NFC_Parameters | dIt" type="number" />
+    <item name="Nominal Skip defrost duration NFC_Parameters | dn" type="number" />
+    <item name="Assign solenoid/comp. digital output&#xA;0 = Function disabled&#xA;1 = NO1&#xA;2 = NO2&#xA;3 = NO3&#xA;4 = NO4 NFC_Parameters | DOA" type="number" />
+    <item name="HotGas digital output channel&#xA;0 = Function disabled&#xA;1 = NO1&#xA;2 = NO2&#xA;3 = NO3&#xA;4 = NO4 NFC_Parameters | DOAA" type="number" />
+    <item name="Assign alarm digital output&#xA;0 = Function disabled&#xA;1 = NO1&#xA;2 = NO2&#xA;3 = NO3&#xA;4 = NO4 NFC_Parameters | DOb" type="number" />
+    <item name="Assign auxiliary digital output&#xA;0 = Function disabled&#xA;1 = NO1&#xA;2 = NO2&#xA;3 = NO3&#xA;4 = NO4 NFC_Parameters | DOc" type="number" />
+    <item name="Assign auxiliary serving the Main on the Slaves digital output&#xA;0 = Function disabled&#xA;1 = NO1&#xA;2 = NO2&#xA;3 = NO3&#xA;4 = NO4 NFC_Parameters | DOd" type="number" />
+    <item name="Assign light digital output&#xA;0 = Function disabled&#xA;1 = NO1&#xA;2 = NO2&#xA;3 = NO3&#xA;4 = NO4 NFC_Parameters | DOE" type="number" />
+    <item name="Assign light from Main digital output&#xA;0 = Function disabled&#xA;1 = NO1&#xA;2 = NO2&#xA;3 = NO3&#xA;4 = NO4 NFC_Parameters | DOF" type="number" />
+    <item name="Assign defrost digital output&#xA;0 = Function disabled&#xA;1 = NO1&#xA;2 = NO2&#xA;3 = NO3&#xA;4 = NO4 NFC_Parameters | DOG" type="number" />
+    <item name="Assign defrost 2 digital output&#xA;0 = Function disabled&#xA;1 = NO1&#xA;2 = NO2&#xA;3 = NO3&#xA;4 = NO4 NFC_Parameters | DOH" type="number" />
+    <item name="Assign fans digital output&#xA;0 = Function disabled&#xA;1 = NO1&#xA;2 = NO2&#xA;3 = NO3&#xA;4 = NO4 NFC_Parameters | DOI" type="number" />
+    <item name="Assign timed digital output&#xA;0 = Function disabled&#xA;1 = NO1&#xA;2 = NO2&#xA;3 = NO3&#xA;4 = NO4 NFC_Parameters | DOo" type="number" />
+    <item name="Assign drain heaters digital output&#xA;0 = Function disabled&#xA;1 = NO1&#xA;2 = NO2&#xA;3 = NO3&#xA;4 = NO4 NFC_Parameters | DOP" type="number" />
+    <item name="Assign Anti-sweat heaters digital output&#xA;0 = Function disabled&#xA;1 = NO1&#xA;2 = NO2&#xA;3 = NO3&#xA;4 = NO4 NFC_Parameters | DOQ" type="number" />
+    <item name="Door open for too long Parameters | dor" type="boolean" />
+    <item name="Assign stage generic function digital output:&#xA;0 = Function disabled&#xA;1 = NO1&#xA;2 = NO2&#xA;3 = NO3&#xA;4 = NO4 NFC_Parameters | DOS" type="number" />
+    <item name="Max defrost duration NFC_Parameters | dP1" type="number" />
+    <item name="Max secondary evap. defrost duration NFC_Parameters | dP2" type="number" />
+    <item name="Compressor off time in Sequential stop defrost mode&#xA;0 = function disabled NFC_Parameters | dS1" type="number" />
+    <item name="Compressor operating time in Sequential stop defrost mode NFC_Parameters | dS2" type="number" />
+    <item name="Valve pos. during defrost:&#xA;0: valve positioned as defined by the type of defrost selected&#xA;1: valve forced closed&#xA;2 - 100: opening perc. NFC_Parameters | dSb" type="number" />
+    <item name="Day - Current value by internal RTC Parameters | DT_Day" type="number" />
+    <item name="Day of week - Current value by internal RTC&#xA;0 : Sunday&#xA;1 : Monday&#xA;2 : Tuesday&#xA;3 : Wednesday&#xA;4 : Thursday&#xA;5 : Friday&#xA;6 : Saturday Parameters | DT_DoW" type="number" />
+    <item name="Hour - Current value by internal RTC Parameters | DT_Hour" type="number" />
+    <item name="Minutes - Current value by internal RTC Parameters | DT_Min" type="number" />
+    <item name="Month - Current value by internal RTC Parameters | DT_Month" type="number" />
+    <item name="Year - Current value by internal RTC Parameters | DT_Year" type="number" />
+    <item name="End defrost temp.(read by Sd) NFC_Parameters | dt1" type="number" />
+    <item name="End defrost temp.(read by Sd2) NFC_Parameters | dt2" type="number" />
+    <item name="Starts a defrost procedure when delta between DfrStartByDeltaPrb1 and 2 is above this threshold for DfrStartDeltaT seconds (0=disabled). NFC_Parameters | dTd" type="number" />
+    <item name="Probe S1 fault Parameters | E1" type="boolean" />
+    <item name="Serial probe S11 not updated Parameters | E11" type="boolean" />
+    <item name="Serial probe S12 not updated Parameters | E12" type="boolean" />
+    <item name="Serial probe S13 not updated Parameters | E13" type="boolean" />
+    <item name="Serial probe S14 not updated Parameters | E14" type="boolean" />
+    <item name="Probe S2 fault Parameters | E2" type="boolean" />
+    <item name="Probe S3 fault Parameters | E3" type="boolean" />
+    <item name="Probe S4 fault Parameters | E4" type="boolean" />
+    <item name="Probe S5 fault Parameters | E5" type="boolean" />
+    <item name="Probe S6 fault Parameters | E6" type="boolean" />
+    <item name="Probe S7 fault Parameters | E7" type="boolean" />
+    <item name="Probe S8 fault Parameters | E8" type="boolean" />
+    <item name="Warning for timeout of defrost 1 Parameters | Ed1" type="boolean" />
+    <item name="Warning for timeout of defrost 2 Parameters | Ed2" type="boolean" />
+    <item name="Comm. error with stepper driver Parameters | Edc" type="boolean" />
+    <item name="EVD mini/ice digital input 1 configuration:&#xA;1 = start/stop control&#xA;2 = control backup NFC_Parameters | EDI" type="number" />
+    <item name="Real time clock not updated Parameters | Etc" type="boolean" />
+    <item name="Evap. fan management&#xA;0 = always on&#xA;1 = Sa-Sb (see FSa and FSb)&#xA;2 = Sa&#xA;(Sa first probe, Sb second probe) NFC_Parameters | F0" type="number" />
+    <item name="Evap fan activation threshold (only if F0 =1 or 2) NFC_Parameters | F1" type="number" />
+    <item name="Evap. fan forcing time at max speed&#xA;0 = function disabled NFC_Parameters | F10" type="number" />
+    <item name="Evap. fans with comp. off&#xA;FALSE = see F0&#xA;TRUE = always off NFC_Parameters | F2" type="boolean" />
+    <item name="Evap. fans during defrost&#xA;FALSE = on&#xA;TRUE= off NFC_Parameters | F3" type="boolean" />
+    <item name="Evap. fan cut-off temperature (hyst. 1°C) (including variable speed) NFC_Parameters | F5" type="number" />
+    <item name="Max evap fan speed NFC_Parameters | F6" type="number" />
+    <item name="Min evap. fan speed NFC_Parameters | F7" type="number" />
+    <item name="Evap. fan peak time&#xA;0 = function disabled NFC_Parameters | F8" type="number" />
+    <item name="Post dripping time after defrost (fans off with control active) NFC_Parameters | Fd" type="number" />
+    <item name="Genric stage Dout function status Parameters | FGenStage_01" type="boolean" />
+    <item name="Immediate external alarm function status Parameters | FIA" type="boolean" />
+    <item name="Delayed external alarm function status Parameters | FIb" type="boolean" />
+    <item name="Enable defrost function status Parameters | FIc" type="boolean" />
+    <item name="Call defrost function status Parameters | FId" type="boolean" />
+    <item name="Door status - Regulation OFF function status Parameters | FIE" type="boolean" />
+    <item name="Remote ON/OFF function status Parameters | FIF" type="boolean" />
+    <item name="Curtain switch function status Parameters | FIG" type="boolean" />
+    <item name="Continuous cycle start/stop function status Parameters | FIH" type="boolean" />
+    <item name="Auxiliary digital input function status Parameters | FII" type="boolean" />
+    <item name="Timed digital input function status Parameters | FIL" type="boolean" />
+    <item name="Stand by switch function status Parameters | FIM" type="boolean" />
+    <item name="Clean switch  function status Parameters | FIn" type="boolean" />
+    <item name="Change configuration function status Parameters | FIo" type="boolean" />
+    <item name="Door status - Regulation ON function status Parameters | FIP" type="boolean" />
+    <item name="Defrost aligned with digital input status Parameters | FIr" type="boolean" />
+    <item name="Solenoid digital output function status Parameters | FOA" type="boolean" />
+    <item name="HotGas digital output current status Parameters | FOAA" type="boolean" />
+    <item name="Alarm digital output function status Parameters | FOb" type="boolean" />
+    <item name="Auxiliary digital output function status Parameters | FOc" type="boolean" />
+    <item name="Auxiliary serving Main digital output function status Parameters | FOd" type="boolean" />
+    <item name="Light digital output function status Parameters | FOE" type="boolean" />
+    <item name="Light serving Main digital output function status Parameters | FOF" type="boolean" />
+    <item name="Defrost digital output function status Parameters | FOG" type="boolean" />
+    <item name="Aux. evap. defrost digital output function status Parameters | FOH" type="boolean" />
+    <item name="Evap fans digital output function status Parameters | FOI" type="boolean" />
+    <item name="Timed digital output function status Parameters | FOo" type="boolean" />
+    <item name="Drain heater digital output function status Parameters | FOP" type="boolean" />
+    <item name="Rail heaters digital output function status Parameters | FOQ" type="boolean" />
+    <item name="Post dripping evap. fan management&#xA;FALSE = on&#xA;TRUE = off NFC_Parameters | Fpd" type="boolean" />
+    <item name="Fan activation differential (including variable speed) NFC_Parameters | Frd" type="number" />
+    <item name="First regulation probe for evaporator fan&#xA;0 : Not config.&#xA;1 : Air off (Sm)&#xA;2 : Defrost (Sd)&#xA;3 : Air on (Sr)&#xA;4 : Superheated gas (tGS)&#xA;5 : Saturated evap. pressure (PEu)&#xA;6 : Auxiliary defrost (Sd2)&#xA;7 : Auxiliary 1 (Saux1)&#xA;8 : Auxiliary 2 (Saux2)&#xA;9 : Ambient temp (SA)&#xA;10 : Ambient humidity (SU)&#xA;11 : Glass temperature (Svt)&#xA;12 : Dewpoint (SdP)&#xA;13 : Virtual probe (Sv)&#xA;14 : Saturated evap. temp. (tEu) NFC_Parameters | FSa" type="number" />
+    <item name="Second regulation probe for evaporator fan&#xA;0 : Not config.&#xA;1 : Air off (Sm)&#xA;2 : Defrost (Sd)&#xA;3 : Air on (Sr)&#xA;4 : Superheated gas (tGS)&#xA;5 : Saturated evap. pressure (PEu)&#xA;6 : Auxiliary defrost (Sd2)&#xA;7 : Auxiliary 1 (Saux1)&#xA;8 : Auxiliary 2 (Saux2)&#xA;9 : Ambient temp (SA)&#xA;10 : Ambient humidity (SU)&#xA;11 : Glass temperature (Svt)&#xA;12 : Dewpoint (SdP)&#xA;13 : Virtual probe (Sv)&#xA;14 : Saturated evap. temp. (tEu) NFC_Parameters | FSb" type="number" />
+    <item name="Smooth Lines - Superheat set averaging time NFC_Parameters | FSt" type="number" />
+    <item name="Generic function alarm: regulation probe 1&#xA;0 : Not config.&#xA;1 : Air off (Sm)&#xA;2 : Defrost (Sd)&#xA;3 : Air on (Sr)&#xA;4 : Superheated gas (tGS)&#xA;5 : Saturated evap. pressure (PEu)&#xA;6 : Auxiliary defrost (Sd2)&#xA;7 : Auxiliary 1 (Saux1)&#xA;8 : Auxiliary 2 (Saux2)&#xA;9 : Ambient temp (SA)&#xA;10 : Ambient humidity (SU)&#xA;11 : Glass temperature (Svt)&#xA;12 : Dewpoint (SdP)&#xA;13 : Virtual probe (Sv)&#xA;14 : Saturated evap. temp. (tEu) NFC_Parameters | GFA_1" type="number" />
+    <item name="Generic function alarm: regulation probe 2&#xA;0 : Not config.&#xA;1 : Air off (Sm)&#xA;2 : Defrost (Sd)&#xA;3 : Air on (Sr)&#xA;4 : Superheated gas (tGS)&#xA;5 : Saturated evap. pressure (PEu)&#xA;6 : Auxiliary defrost (Sd2)&#xA;7 : Auxiliary 1 (Saux1)&#xA;8 : Auxiliary 2 (Saux2)&#xA;9 : Ambient temp (SA)&#xA;10 : Ambient humidity (SU)&#xA;11 : Glass temperature (Svt)&#xA;12 : Dewpoint (SdP)&#xA;13 : Virtual probe (Sv)&#xA;14 : Saturated evap. temp. (tEu) NFC_Parameters | GFA_2" type="number" />
+    <item name="Generic function alarm: alarm type&#xA;FALSE : normal&#xA;TRUE : serious NFC_Parameters | GFA_AlType" type="boolean" />
+    <item name="Generic function alarm: differential NFC_Parameters | GFA_D" type="number" />
+    <item name="Generic function alarm: delay NFC_Parameters | GFA_De" type="number" />
+    <item name="Generic function alarm: enable&#xA;0 : Always&#xA;1 : Unit on&#xA;2 : Unit off&#xA;3 : Defrost&#xA;4 : Clean&#xA;5 : Continuous cycle&#xA;6 : Duty settings&#xA;7 : Standby&#xA;8 : Temp. regulation&#xA;9 : Door open&#xA;10 : Active alarm NFC_Parameters | GFA_E" type="number" />
+    <item name="Generic function alarm: high threshold NFC_Parameters | GFA_Hth" type="number" />
+    <item name="Generic function alarm: low threshold NFC_Parameters | GFA_Lth" type="number" />
+    <item name="Generic function modulating: regulation probe 1&#xA;0 : Not config.&#xA;1 : Air off (Sm)&#xA;2 : Defrost (Sd)&#xA;3 : Air on (Sr)&#xA;4 : Superheated gas (tGS)&#xA;5 : Saturated evap. pressure (PEu)&#xA;6 : Auxiliary defrost (Sd2)&#xA;7 : Auxiliary 1 (Saux1)&#xA;8 : Auxiliary 2 (Saux2)&#xA;9 : Ambient temp (SA)&#xA;10 : Ambient humidity (SU)&#xA;11 : Glass temperature (Svt)&#xA;12 : Dewpoint (SdP)&#xA;13 : Virtual probe (Sv)&#xA;14 : Saturated evap. temp. (tEu) NFC_Parameters | GFM_1" type="number" />
+    <item name="Generic function modulating: regulation probe 2&#xA;0 : Not config.&#xA;1 : Air off (Sm)&#xA;2 : Defrost (Sd)&#xA;3 : Air on (Sr)&#xA;4 : Superheated gas (tGS)&#xA;5 : Saturated evap. pressure (PEu)&#xA;6 : Auxiliary defrost (Sd2)&#xA;7 : Auxiliary 1 (Saux1)&#xA;8 : Auxiliary 2 (Saux2)&#xA;9 : Ambient temp (SA)&#xA;10 : Ambient humidity (SU)&#xA;11 : Glass temperature (Svt)&#xA;12 : Dewpoint (SdP)&#xA;13 : Virtual probe (Sv)&#xA;14 : Saturated evap. temp. (tEu) NFC_Parameters | GFM_2" type="number" />
+    <item name="Generic function modulating: cut-off differential NFC_Parameters | GFM_CD" type="number" />
+    <item name="Generic function modulating: differential NFC_Parameters | GFM_D" type="number" />
+    <item name="Generic function modulating: enable&#xA;0 : Always&#xA;1 : Unit on&#xA;2 : Unit off&#xA;3 : Defrost&#xA;4 : Clean&#xA;5 : Continuous cycle&#xA;6 : Duty settings&#xA;7 : Standby&#xA;8 : Temp. regulation&#xA;9 : Door open&#xA;10 : Active alarm NFC_Parameters | GFM_E" type="number" />
+    <item name="Generic function modulating: hysteresis NFC_Parameters | GFM_H" type="number" />
+    <item name="Generic function modulating: proportional gain NFC_Parameters | GFM_kp" type="number" />
+    <item name="Generic function modulating: maximum output value NFC_Parameters | GFM_Max" type="number" />
+    <item name="Generic function modulating: minimum output value NFC_Parameters | GFM_Min" type="number" />
+    <item name="Generic function modulating: set point NFC_Parameters | GFM_S" type="number" />
+    <item name="Generic function modulating: type&#xA;FALSE : Direct&#xA;TRUE : Reverse NFC_Parameters | GFM_T" type="boolean" />
+    <item name="Generic function modulating: derivative time NFC_Parameters | GFM_Td" type="number" />
+    <item name="Generic function modulating: integral time NFC_Parameters | GFM_Ti" type="number" />
+    <item name="Generic function On/Off: regulation probe 1&#xA;0 : Not config.&#xA;1 : Air off (Sm)&#xA;2 : Defrost (Sd)&#xA;3 : Air on (Sr)&#xA;4 : Superheated gas (tGS)&#xA;5 : Saturated evap. pressure (PEu)&#xA;6 : Auxiliary defrost (Sd2)&#xA;7 : Auxiliary 1 (Saux1)&#xA;8 : Auxiliary 2 (Saux2)&#xA;9 : Ambient temp (SA)&#xA;10 : Ambient humidity (SU)&#xA;11 : Glass temperature (Svt)&#xA;12 : Dewpoint (SdP)&#xA;13 : Virtual probe (Sv)&#xA;14 : Saturated evap. temp. (tEu) NFC_Parameters | GFS_1" type="number" />
+    <item name="Generic function On/Off: regulation probe 2&#xA;0 : Not config.&#xA;1 : Air off (Sm)&#xA;2 : Defrost (Sd)&#xA;3 : Air on (Sr)&#xA;4 : Superheated gas (tGS)&#xA;5 : Saturated evap. pressure (PEu)&#xA;6 : Auxiliary defrost (Sd2)&#xA;7 : Auxiliary 1 (Saux1)&#xA;8 : Auxiliary 2 (Saux2)&#xA;9 : Ambient temp (SA)&#xA;10 : Ambient humidity (SU)&#xA;11 : Glass temperature (Svt)&#xA;12 : Dewpoint (SdP)&#xA;13 : Virtual probe (Sv)&#xA;14 : Saturated evap. temp. (tEu) NFC_Parameters | GFS_2" type="number" />
+    <item name="Generic function On/Off: differential NFC_Parameters | GFS_D" type="number" />
+    <item name="Generic function On/Off: enable&#xA;0 : Always&#xA;1 : Unit on&#xA;2 : Unit off&#xA;3 : Defrost&#xA;4 : Clean&#xA;5 : Continuous cycle&#xA;6 : Duty settings&#xA;7 : Standby&#xA;8 : Temp. regulation&#xA;9 : Door open&#xA;10 : Active alarm NFC_Parameters | GFS_E" type="number" />
+    <item name="Generic function On/Off: set point NFC_Parameters | GFS_S" type="number" />
+    <item name="Generic function On/Off: type&#xA;FALSE : Direct&#xA;TRUE : Reverse NFC_Parameters | GFS_T" type="boolean" />
+    <item name="Generic alarm 1 - High Parameters | GHI" type="boolean" />
+    <item name="Generic alarm 1 - Low Parameters | GLO" type="boolean" />
+    <item name="Error in the custom gas parameters Parameters | GPE" type="boolean" />
+    <item name="Hour - Clock settings by supervisor Parameters | h__" type="number" />
+    <item name="BMS network address NFC_Parameters | H0" type="number" />
+    <item name="BMS config.(stop bit and parity)&#xA;0 = stop bit 1, parity none&#xA;1 = stop bit 2, parity none&#xA;2 = stop bit 1, parity even&#xA;3 = stop bit 2, parity even&#xA;4 = stop bit 1, parity odd&#xA;5 = stop bit 2, parity odd NFC_Parameters | H1" type="number" />
+    <item name="Time light stays on after closing the door NFC_Parameters | H14" type="number" />
+    <item name="BMS baudrate (bit/s)&#xA;0 = 1200&#xA;1 = 2400&#xA;2 = 4800&#xA;3 = 9600&#xA;4 = 19200&#xA;5 = 38400&#xA;6 = 57600&#xA;7 = 115200 NFC_Parameters | H2" type="number" />
+    <item name="BMS protocol&#xA;FALSE = Carel &#xA;TRUE = Modbus NFC_Parameters | H3" type="boolean" />
+    <item name="FieldBus port baudrate (bit/s)&#xA;0 = 1200&#xA;1 = 2400&#xA;2 = 4800&#xA;3 = 9600&#xA;4 = 19200&#xA;5 = 38400&#xA;6 = 57600&#xA;7 = 115200&#xA;8 = 375000 NFC_Parameters | H4" type="number" />
+    <item name="NFC management&#xA;FALSE = disabled&#xA;TRUE = enabled NFC_Parameters | H5" type="boolean" />
+    <item name="Enable 7-seg UI keyboard NFC_Parameters | H6" type="boolean" />
+    <item name="Terminal buzzer&#xA;FALSE = disabled&#xA;TRUE = enabled NFC_Parameters | H8" type="boolean" />
+    <item name="Output switched with time bands&#xA;FALSE = Light&#xA;TRUE = AUX NFC_Parameters | H9" type="boolean" />
+    <item name="HACCP type HA Parameters | HA" type="boolean" />
+    <item name="HACCP number of HA alarm type recorded Parameters | HAn" type="number" />
+    <item name="HACCP type HF Parameters | HF" type="boolean" />
+    <item name="HACCP number of HF alarm type recorded Parameters | HFn" type="number" />
+    <item name="High temperature alarm (AH) Parameters | HI" type="boolean" />
+    <item name="High temperature alarm (AH2) Parameters | HI2" type="boolean" />
+    <item name="HACCP alarm delay&#xA;0 = monitoring disabled NFC_Parameters | Htd" type="number" />
+    <item name="Immediate alarm from external contact Parameters | IA" type="boolean" />
+    <item name="Type of unit&#xA;0 = Secondary&#xA;1 = Main NFC_Parameters | In" type="boolean" />
+    <item name="Dummy var.for profiling needs NFC_Parameters | isManufacturer" type="boolean" />
+    <item name="Dummy var.for profiling needs NFC_Parameters | isService" type="boolean" />
+    <item name="Dummy var.for profiling needs NFC_Parameters | isUser" type="boolean" />
+    <item name="Current light status is ON NFC_Parameters | Lht" type="boolean" />
+    <item name="Low temperature alarm (AL) Parameters | LO" type="boolean" />
+    <item name="Low temperature alarm (AL2) Parameters | LO2" type="boolean" />
+    <item name="Start for periodic log: hour NFC_Parameters | Log_h" type="number" />
+    <item name="Start for periodic log: minute NFC_Parameters | Log_m" type="number" />
+    <item name="Reset alarm log Parameters | LogAlrmRes" type="boolean" />
+    <item name="Low evap. pressure Parameters | LOP" type="boolean" />
+    <item name="Low suction temperature Parameters | LSA" type="boolean" />
+    <item name="Low superheat Parameters | LSH" type="boolean" />
+    <item name="Month - Clock settings by supervisor Parameters | M_" type="number" />
+    <item name="Minutes - Clock settings by supervisor Parameters | m__" type="number" />
+    <item name="Comm. error with the Main (only on Secondary) Parameters | MA" type="boolean" />
+    <item name="Clean command NFC_Parameters | ManClean" type="boolean" />
+    <item name="Max evap. pressure Parameters | MOP" type="boolean" />
+    <item name="Alarm on Secondary 1 Parameters | n1" type="boolean" />
+    <item name="Alarm on Secondary 2 Parameters | n2" type="boolean" />
+    <item name="Alarm on Secondary 3 Parameters | n3" type="boolean" />
+    <item name="Alarm on Secondary 4 Parameters | n4" type="boolean" />
+    <item name="Alarm on Secondary 5 Parameters | n5" type="boolean" />
+    <item name="Alarm on Secondary 6 Parameters | n6" type="boolean" />
+    <item name="Alarm on Secondary 7 Parameters | n7" type="boolean" />
+    <item name="Alarm on Secondary 8 Parameters | n8" type="boolean" />
+    <item name="Alarm on Secondary 9 Parameters | n9" type="boolean" />
+    <item name="ON/OFF control by keyboard&#xA;0/1 : OFF/ON NFC_Parameters | ON" type="boolean" />
+    <item name="Enable On/Off unit by keyboard NFC_Parameters | ONK" type="boolean" />
+    <item name="Enable On/Off unit by supervisor NFC_Parameters | ONS" type="boolean" />
+    <item name="Alarms present Parameters | OrAlrm" type="boolean" />
+    <item name="Elettronic valve&#xA;0 = not present&#xA;1 = CAREL E2V valve on board&#xA;2 = CAREL E2V valve (Suct Temp probe on MPXone)&#xA;6 = CAREL E2V valve (Suct Temp on Evd driver) NFC_Parameters | P1" type="number" />
+    <item name="Enable close solenoid valve for low SH (LowSH) and/or low suction temp. (LSA) NFC_Parameters | P10" type="boolean" />
+    <item name="LSA: low suction temp. threshold NFC_Parameters | P11" type="number" />
+    <item name="LSA: alarm delay&#xA;0 = alarm disabled NFC_Parameters | P12" type="number" />
+    <item name="Enable valve alarm at end travel (blo)&#xA;TRUE = signal enabled NFC_Parameters | P14" type="boolean" />
+    <item name="Support saturated temp. for press. probe error NFC_Parameters | P15" type="number" />
+    <item name="SH set point NFC_Parameters | P3" type="number" />
+    <item name="Proportional gain for SH regulation NFC_Parameters | P4" type="number" />
+    <item name="Integral time for SH regulation&#xA;0 = function disabled NFC_Parameters | P5" type="number" />
+    <item name="Derivative time for SH regulation&#xA;0 = disabled NFC_Parameters | P6" type="number" />
+    <item name="LowSH: low SH threshold NFC_Parameters | P7" type="number" />
+    <item name="LowSH: integration time&#xA;0 = disabled NFC_Parameters | P8" type="number" />
+    <item name="LowSH: alarm delay&#xA;0 = alarm disabled NFC_Parameters | P9" type="number" />
+    <item name="Holding time valve initial position after defrost NFC_Parameters | Pdd" type="number" />
+    <item name="Manufacturer password NFC_Parameters | PDM" type="string" />
+    <item name="Service password NFC_Parameters | PDS" type="string" />
+    <item name="User password NFC_Parameters | PDU" type="string" />
+    <item name="Evap. pressure probe (PEu) Parameters | PEu" type="number" />
+    <item name="Type of refrigerant&#xA;0 = Gas custom&#xA;1 = R22&#xA;2 = R134a&#xA;3 = R404A&#xA;4 = R407C&#xA;5 =  R410A&#xA;6 = R507A&#xA;7 = R290&#xA;8 = R600&#xA;9 = R600a&#xA;10 = R717&#xA;11 = R744&#xA;12 = R728&#xA;13 = R1270&#xA;14 = R417A&#xA;15 = R422D&#xA;16 = R413A&#xA;17 = R422A&#xA;18 = R423A&#xA;19 = R407A&#xA;20 = R427A&#xA;21 = R245Fa&#xA;22 = R407F&#xA;23 = R32&#xA;24 = HTR01&#xA;25 = HTR02&#xA;26 = R23&#xA;27 = HFO1234yf&#xA;28 = HFO1234ze&#xA;29 = R455A&#xA;30 = R170&#xA;31 = R442A&#xA;32 = R447A&#xA;33 = R448A&#xA;34 = R449A&#xA;35 = R450A&#xA;36 = R452A&#xA;37 = R508B&#xA;38 = R452B&#xA;39 = R513A&#xA;40 = R454B&#xA;41 = R458A NFC_Parameters | PH" type="number" />
+    <item name="Smooth Lines - Max SH off set NFC_Parameters | PHS" type="number" />
+    <item name="LOP: min saturated evap. temp. threshold NFC_Parameters | PL1" type="number" />
+    <item name="LOP: integration time NFC_Parameters | PL2" type="number" />
+    <item name="LOP: alarm delay&#xA;0 = function disabled NFC_Parameters | PL3" type="number" />
+    <item name="Smooth Lines - Off set to stop control below set point NFC_Parameters | PLt" type="number" />
+    <item name="MOP: max saturated evap. temp. threshold NFC_Parameters | PM1" type="number" />
+    <item name="MOP: integration time NFC_Parameters | PM2" type="number" />
+    <item name="MOP: alarm delay&#xA;0 = function disabled NFC_Parameters | PM3" type="number" />
+    <item name="MOP: delay activation of function when starting control NFC_Parameters | PM4" type="number" />
+    <item name="MOP: enable close solenoid valve NFC_Parameters | PM5" type="boolean" />
+    <item name="MOP: max suction temp threshold used to stop MOP due to possible compressor overheating with reduced refrigerant flow NFC_Parameters | PM6" type="number" />
+    <item name="Enable manual expansion valve positioning&#xA;FALSE = disabled&#xA;TRUE = enabled NFC_Parameters | PMP" type="boolean" />
+    <item name="Manual valve position to set NFC_Parameters | PMu" type="number" />
+    <item name="Unit cooling capacity indication NFC_Parameters | POM" type="number" />
+    <item name="Posix string to set Timezone NFC_Parameters | Posix" type="string" />
+    <item name="EVD mini/ice pressure probe type (only if P1 = 6)&#xA;1 = -1…4.2 barg&#xA;2 = 0.4…9.3 barg&#xA;3 = -1…9.3 barg&#xA;4 = 0…17.3 barg&#xA;5 = 0.85…34.2 barg&#xA;6 = 0…34.5 barg&#xA;7 = 0…45 barg&#xA;8 = -1…12.8 barg&#xA;9 = 0…20.7 barg&#xA;10 = 1.86…43.0 barg&#xA;11 = NTC (-50…105°C)&#xA;12 = Ratiometric (OUT=0-5V) 0-60 barg&#xA;13 = Ratiometric (OUT=0-5V) 0-90 barg&#xA;14 = Remote pressure probe from RS485 NFC_Parameters | PP1" type="number" />
+    <item name="Valve opening percentage Parameters | PPU" type="number" />
+    <item name="Valve opening during standby NFC_Parameters | PSb" type="number" />
+    <item name="Smooth Lines - Control derivative time NFC_Parameters | PSd" type="number" />
+    <item name="Smooth Lines - Control integral time NFC_Parameters | PSI" type="number" />
+    <item name="Smooth Lines - Enable function NFC_Parameters | PSM" type="boolean" />
+    <item name="Smooth Lines - Control prop. coefficient NFC_Parameters | PSP" type="number" />
+    <item name="Min temp. setpoint NFC_Parameters | r1" type="number" />
+    <item name="Max temp setpoint NFC_Parameters | r2" type="number" />
+    <item name="End defrost signal by timeout&#xA;FALSE = disabled&#xA;TRUE = enabled NFC_Parameters | r3" type="boolean" />
+    <item name="Automatic night-time set point variation NFC_Parameters | r4" type="number" />
+    <item name="Probe for night-time control&#xA;FALSE = virtual probe Sv&#xA;TRUE = Air on probe Sr NFC_Parameters | r6" type="boolean" />
+    <item name="Main solenoid valve configuration&#xA;FALSE = local valve&#xA;TRUE = network valve (connected to Main) NFC_Parameters | r7" type="boolean" />
+    <item name="Temperature regulation operating mode&#xA;0: Direct&#xA;1: Reverse NFC_Parameters | rC" type="boolean" />
+    <item name="Set point differential (St) NFC_Parameters | rd" type="number" />
+    <item name="Set point differential (St2) with Double thermostat&#xA;0 = disabled NFC_Parameters | rd2" type="number" />
+    <item name="Control probe Parameters | rE" type="boolean" />
+    <item name="Reset all active alarms Parameters | res" type="boolean" />
+    <item name="--- Parameters | Reserved_Dout01" type="boolean" />
+    <item name="--- Parameters | Reserved_Dout02" type="boolean" />
+    <item name="--- Parameters | Reserved_Dout03" type="boolean" />
+    <item name="Coeff. A for glass temp. probe estimate NFC_Parameters | rHA" type="number" />
+    <item name="Coeff. B for glass temp. probe estimate NFC_Parameters | rHb" type="number" />
+    <item name="Differential for anti-sweat heater modul. NFC_Parameters | rHd" type="number" />
+    <item name="Off set for anti-sweat heater modul. NFC_Parameters | rHo" type="number" />
+    <item name="Virtual probe composition for glass temp. probe estimate&#xA;0 = Air off (Sm)&#xA;100 = Air on (Sr) NFC_Parameters | rHS" type="number" />
+    <item name="Manual anti-sweat heater activation period&#xA;0 = disabled NFC_Parameters | rHt" type="number" />
+    <item name="Manual anti-sweat heater activation percentage (of period rHt)&#xA;0 = disabled NFC_Parameters | rHu" type="number" />
+    <item name="Config. immediate external alarm digital input logic&#xA;FALSE = direct logic&#xA;TRUE = reverse logic NFC_Parameters | rIA" type="boolean" />
+    <item name="Config. delayed external alarm digital input logic&#xA;FALSE = direct logic&#xA;TRUE = reverse logic NFC_Parameters | rIb" type="boolean" />
+    <item name="Config. enable defrost digital input logic&#xA;FALSE = direct logic&#xA;TRUE = reverse logic NFC_Parameters | rIc" type="boolean" />
+    <item name="Config. start defrost digital input logic&#xA;FALSE = direct logic&#xA;TRUE = reverse logic NFC_Parameters | rId" type="boolean" />
+    <item name="Config. door switch with comp. and fans OFF digital input logic&#xA;FALSE = direct logic&#xA;TRUE = reverse logic NFC_Parameters | rIE" type="boolean" />
+    <item name="Config. remote ON/OFF digital input logic&#xA;FALSE = direct logic&#xA;TRUE = reverse logic NFC_Parameters | rIF" type="boolean" />
+    <item name="Config. curtain switch digital input logic&#xA;FALSE = direct logic&#xA;TRUE = reverse logic NFC_Parameters | rIG" type="boolean" />
+    <item name="Config. start/stop continuous cycle digital input logic&#xA;FALSE = direct logic&#xA;TRUE = reverse logic NFC_Parameters | rIH" type="boolean" />
+    <item name="Config. input status monitoring digital input logic&#xA;FALSE = direct logic&#xA;TRUE = reverse logic NFC_Parameters | rII" type="boolean" />
+    <item name="Config. retaining digital input logic&#xA;FALSE = direct logic&#xA;TRUE = reverse logic NFC_Parameters | rIL" type="boolean" />
+    <item name="Config. standby mode switch digital input logic&#xA;FALSE = direct logic&#xA;TRUE = reverse logic NFC_Parameters | rIM" type="boolean" />
+    <item name="Config. clean mode switch digital input logic&#xA;FALSE = direct logic&#xA;TRUE = reverse logic NFC_Parameters | rIn" type="boolean" />
+    <item name="Config. working parameters set change digital input logic&#xA;FALSE = direct logic&#xA;TRUE = reverse logic NFC_Parameters | rIo" type="boolean" />
+    <item name="Config. door switch with comp. and fans ON digital input&#xA;FALSE = direct logic&#xA;TRUE = reverse logic NFC_Parameters | rIP" type="boolean" />
+    <item name="Config. defrost according to DI status digital input logic&#xA;FALSE = direct logic&#xA;TRUE = reverse logic NFC_Parameters | rIr" type="boolean" />
+    <item name="Config. generic function alarm digital input logic&#xA;FALSE = direct logic&#xA;TRUE = reverse logic NFC_Parameters | rIs" type="boolean" />
+    <item name="Control off set with probe error NFC_Parameters | ro" type="number" />
+    <item name="Config. solenoid/comp. digital output logic&#xA;FALSE = direct logic&#xA;TRUE = reverse logic NFC_Parameters | rOA" type="boolean" />
+    <item name="HotGas digital output logic &#xA;FALSE = direct logic&#xA;TRUE = reverse logic NFC_Parameters | rOAA" type="boolean" />
+    <item name="Config. alarm digital output logic&#xA;FALSE = direct logic&#xA;TRUE = reverse logic NFC_Parameters | rOB" type="boolean" />
+    <item name="Config. auxiliary digital output logic&#xA;FALSE = direct logic&#xA;TRUE = reverse logic NFC_Parameters | rOc" type="boolean" />
+    <item name="Config. auxiliary from Main digital output logic&#xA;FALSE = direct logic&#xA;TRUE = reverse logic NFC_Parameters | rOd" type="boolean" />
+    <item name="Config. light digital output logic&#xA;FALSE = direct logic&#xA;TRUE = reverse logic NFC_Parameters | rOE" type="boolean" />
+    <item name="Config. light from Main digital output logic&#xA;FALSE = direct logic&#xA;TRUE = reverse logic NFC_Parameters | rOF" type="boolean" />
+    <item name="Config. defrost digital output logic&#xA;FALSE = direct logic&#xA;TRUE = reverse logic NFC_Parameters | rOG" type="boolean" />
+    <item name="Config. defrost 2 digital output logic&#xA;FALSE = direct logic&#xA;TRUE = reverse logic NFC_Parameters | rOH" type="boolean" />
+    <item name="Config. fans digital output logic&#xA;FALSE = direct logic&#xA;TRUE = reverse logic NFC_Parameters | rOI" type="boolean" />
+    <item name="Config. timed digital output logic&#xA;FALSE = direct logic&#xA;TRUE = reverse logic NFC_Parameters | rOo" type="boolean" />
+    <item name="Config. drain heaters digital output logic&#xA;FALSE = direct logic&#xA;TRUE = reverse logic NFC_Parameters | rOP" type="boolean" />
+    <item name="Config. Anti-sweat heaters digital output logic&#xA;FALSE = direct logic&#xA;TRUE = reverse logic NFC_Parameters | rOQ" type="boolean" />
+    <item name="Config. generic function On/Off digital output logic&#xA;FALSE = direct logic&#xA;TRUE = reverse logic NFC_Parameters | rOS" type="boolean" />
+    <item name="S11 value Parameters | S11" type="number" />
+    <item name="S12 value Parameters | S12" type="number" />
+    <item name="S13 value Parameters | S13" type="number" />
+    <item name="S14 value Parameters | S14" type="number" />
+    <item name="Ambient temp. probe (SA) Parameters | SA" type="number" />
+    <item name="Defrost temp. probe (Sd) Parameters | Sd" type="number" />
+    <item name="Defrost temp. probe 2 (Sd2) Parameters | Sd2" type="number" />
+    <item name="Dewpoint value (Sdp) Parameters | Sdp" type="number" />
+    <item name="Actual superheat reading Parameters | SH" type="number" />
+    <item name="Smooth line status&#xA;FALSE = Smooth line not active&#xA;TRUE = Smooth line active Parameters | SL_status" type="boolean" />
+    <item name="Update of slaves firmware is in progress Parameters | Slv" type="boolean" />
+    <item name="Air off temp. probe (Sm) Parameters | Sm" type="number" />
+    <item name="Num. of slaves in the local network&#xA;0 = no Secondary NFC_Parameters | Sn" type="number" />
+    <item name="Air on temp. probe (Sr) Parameters | Sr" type="number" />
+    <item name="Temp. reg. set point NFC_Parameters | St" type="number" />
+    <item name="Air on set point with Double thermostat NFC_Parameters | St2" type="number" />
+    <item name="User has started the reset procedure Parameters | StartupReset" type="boolean" />
+    <item name="Warning for Standby status Parameters | Stb" type="boolean" />
+    <item name="Unit status&#xA;0 : Unit On,&#xA;1 : Off By Alarm,&#xA;2 : Off By Supervisor,&#xA;3 : Off By Time Band,&#xA;4 : Off By Digital Input,&#xA;5 : Off By Keyboard,&#xA;6 : Standby,&#xA;7 : Clean,&#xA;8 : Door Open,&#xA;9 : Duty Settings,&#xA;10 : Continuos Cycle,&#xA;11 : Defrost; Parameters | Sts" type="number" />
+    <item name="Max time for Standby status NFC_Parameters | Stt" type="number" />
+    <item name="Ambient humidity probe (SU) Parameters | SU" type="number" />
+    <item name="Virtual probe value used for temperature regulation Parameters | Sv" type="number" />
+    <item name="Glass temp. probe (Svt) Parameters | Svt" type="number" />
+    <item name="Defrost 1 - Day&#xA;0 = Dis.&#xA;1 = Mon&#xA;2 = Tue&#xA;3 = Wed&#xA;4 = Thu&#xA;5 = Fri&#xA;6 = Sat&#xA;7 = Sun&#xA;8 = Mon to Fri&#xA;9 = Mon to Sat&#xA;10 = Sat and Sun&#xA;11 = All days NFC_Parameters | td1-d" type="number" />
+    <item name="Defrost 1 - Enable power defrost&#xA;FALSE = normal&#xA;TRUE = Power defrost NFC_Parameters | td1-P" type="boolean" />
+    <item name="Defrost 1 - Start time (hh:mm) NFC_Parameters | td1-time" type="string" />
+    <item name="Defrost 2 -Day&#xA;0 = Dis.&#xA;1 = Mon&#xA;2 = Tue&#xA;3 = Wed&#xA;4 = Thu&#xA;5 = Fri&#xA;6 = Sat&#xA;7 = Sun&#xA;8 = Mon to Fri&#xA;9 = Mon to Sat&#xA;10 = Sat and Sun&#xA;11 = All days NFC_Parameters | td2-d" type="number" />
+    <item name="Defrost 2 - Enable power defrost&#xA;FALSE = normal&#xA;TRUE = Power defrost NFC_Parameters | td2-P" type="boolean" />
+    <item name="Defrost 2 - Start time (hh:mm) NFC_Parameters | td2-time" type="string" />
+    <item name="Defrost 3 - Day&#xA;0 = Dis.&#xA;1 = Mon&#xA;2 = Tue&#xA;3 = Wed&#xA;4 = Thu&#xA;5 = Fri&#xA;6 = Sat&#xA;7 = Sun&#xA;8 = Mon to Fri&#xA;9 = Mon to Sat&#xA;10 = Sat and Sun&#xA;11 = All days NFC_Parameters | td3-d" type="number" />
+    <item name="Defrost 3 - Enable power defrost&#xA;FALSE = normal&#xA;TRUE = Power defrost NFC_Parameters | td3-P" type="boolean" />
+    <item name="Defrost 3 - Start time (hh:mm) NFC_Parameters | td3-time" type="string" />
+    <item name="Defrost 4 - Day&#xA;0 = Dis.&#xA;1 = Mon&#xA;2 = Tue&#xA;3 = Wed&#xA;4 = Thu&#xA;5 = Fri&#xA;6 = Sat&#xA;7 = Sun&#xA;8 = Mon to Fri&#xA;9 = Mon to Sat&#xA;10 = Sat and Sun&#xA;11 = All days NFC_Parameters | td4-d" type="number" />
+    <item name="Defrost 4 - Enable power defrost&#xA;FALSE = normal&#xA;TRUE = Power defrost NFC_Parameters | td4-P" type="boolean" />
+    <item name="Defrost 4 - Start time (hh:mm) NFC_Parameters | td4-time" type="string" />
+    <item name="Defrost 5 - Day&#xA;0 = Dis.&#xA;1 = Mon&#xA;2 = Tue&#xA;3 = Wed&#xA;4 = Thu&#xA;5 = Fri&#xA;6 = Sat&#xA;7 = Sun&#xA;8 = Mon to Fri&#xA;9 = Mon to Sat&#xA;10 = Sat and Sun&#xA;11 = All days NFC_Parameters | td5-d" type="number" />
+    <item name="Defrost 5 - Enable power defrost&#xA;FALSE = normal&#xA;TRUE = Power defrost NFC_Parameters | td5-P" type="boolean" />
+    <item name="Defrost 5 - Start time (hh:mm) NFC_Parameters | td5-time" type="string" />
+    <item name="Defrost 6 - Day&#xA;0 = Dis.&#xA;1 = Mon&#xA;2 = Tue&#xA;3 = Wed&#xA;4 = Thu&#xA;5 = Fri&#xA;6 = Sat&#xA;7 = Sun&#xA;8 = Mon to Fri&#xA;9 = Mon to Sat&#xA;10 = Sat and Sun&#xA;11 = All days NFC_Parameters | td6-d" type="number" />
+    <item name="Defrost 6 - Enable power defrost&#xA;FALSE = normal&#xA;TRUE = Power defrost NFC_Parameters | td6-P" type="boolean" />
+    <item name="Defrost 6 - Start time (hh:mm) NFC_Parameters | td6-time" type="string" />
+    <item name="Defrost 7 - Day&#xA;0 = Dis.&#xA;1 = Mon&#xA;2 = Tue&#xA;3 = Wed&#xA;4 = Thu&#xA;5 = Fri&#xA;6 = Sat&#xA;7 = Sun&#xA;8 = Mon to Fri&#xA;9 = Mon to Sat&#xA;10 = Sat and Sun&#xA;11 = All days NFC_Parameters | td7-d" type="number" />
+    <item name="Defrost 7 - Enable power defrost&#xA;FALSE = normal&#xA;TRUE = Power defrost NFC_Parameters | td7-P" type="boolean" />
+    <item name="Defrost 7 - Start time (hh:mm) NFC_Parameters | td7-time" type="string" />
+    <item name="Defrost 8 - Day&#xA;0 = Dis.&#xA;1 = Mon&#xA;2 = Tue&#xA;3 = Wed&#xA;4 = Thu&#xA;5 = Fri&#xA;6 = Sat&#xA;7 = Sun&#xA;8 = Mon to Fri&#xA;9 = Mon to Sat&#xA;10 = Sat and Sun&#xA;11 = All days NFC_Parameters | td8-d" type="number" />
+    <item name="Defrost 8  - Enable power defrost&#xA;FALSE = normal&#xA;TRUE = Power defrost NFC_Parameters | td8-P" type="boolean" />
+    <item name="Defrost 8 - Start time (hh:mm) NFC_Parameters | td8-time" type="string" />
+    <item name="Delay time before starts a defrost procedure when delta between DfrStartByDeltaPrb1 and 2 is above DfrStartDeltaThrsh NFC_Parameters | tdd" type="number" />
+    <item name="Door open: alarm delay NFC_Parameters | Tdoor" type="number" />
+    <item name="End time band 1 - day&#xA;0 = Disabled&#xA;1 = Monday&#xA;2 = Tuestday&#xA;3 = Wednsday&#xA;4 = Thursday&#xA;5 = Friday&#xA;6 = Saturday&#xA;7 = Sunday&#xA;8 = Monday to friday&#xA;9 = Monday to saturday&#xA;10 = Saturday and sunday&#xA;11 = All days NFC_Parameters | tE1-d" type="number" />
+    <item name="Day/Night end timeband 1 NFC_Parameters | tE1-time" type="string" />
+    <item name="End time band 2 - day&#xA;0 = Disabled&#xA;1 = Monday&#xA;2 = Tuestday&#xA;3 = Wednsday&#xA;4 = Thursday&#xA;5 = Friday&#xA;6 = Saturday&#xA;7 = Sunday&#xA;8 = Monday to friday&#xA;9 = Monday to saturday&#xA;10 = Saturday and sunday&#xA;11 = All days NFC_Parameters | tE2-d" type="number" />
+    <item name="Day/Night end timeband 2 NFC_Parameters | tE2-time" type="string" />
+    <item name="End time band 3 - day&#xA;0 = Disabled&#xA;1 = Monday&#xA;2 = Tuestday&#xA;3 = Wednsday&#xA;4 = Thursday&#xA;5 = Friday&#xA;6 = Saturday&#xA;7 = Sunday&#xA;8 = Monday to friday&#xA;9 = Monday to saturday&#xA;10 = Saturday and sunday&#xA;11 = All days NFC_Parameters | tE3-d" type="number" />
+    <item name="Day/Night end timeband 3 NFC_Parameters | tE3-time" type="string" />
+    <item name="End time band 4 - day&#xA;0 = Disabled&#xA;1 = Monday&#xA;2 = Tuestday&#xA;3 = Wednsday&#xA;4 = Thursday&#xA;5 = Friday&#xA;6 = Saturday&#xA;7 = Sunday&#xA;8 = Monday to friday&#xA;9 = Monday to saturday&#xA;10 = Saturday and sunday&#xA;11 = All days NFC_Parameters | tE4-d" type="number" />
+    <item name="Day/Night end timeband 4 NFC_Parameters | tE4-time" type="string" />
+    <item name="End time band 5 - day&#xA;0 = Disabled&#xA;1 = Monday&#xA;2 = Tuestday&#xA;3 = Wednsday&#xA;4 = Thursday&#xA;5 = Friday&#xA;6 = Saturday&#xA;7 = Sunday&#xA;8 = Monday to friday&#xA;9 = Monday to saturday&#xA;10 = Saturday and sunday&#xA;11 = All days NFC_Parameters | tE5-d" type="number" />
+    <item name="Day/Night end timeband 5 NFC_Parameters | tE5-time" type="string" />
+    <item name="End time band 6 - day&#xA;0 = Disabled&#xA;1 = Monday&#xA;2 = Tuestday&#xA;3 = Wednsday&#xA;4 = Thursday&#xA;5 = Friday&#xA;6 = Saturday&#xA;7 = Sunday&#xA;8 = Monday to friday&#xA;9 = Monday to saturday&#xA;10 = Saturday and sunday&#xA;11 = All days NFC_Parameters | tE6-d" type="number" />
+    <item name="Day/Night end timeband 6 NFC_Parameters | tE6-time" type="string" />
+    <item name="End time band 7 - day&#xA;0 = Disabled&#xA;1 = Monday&#xA;2 = Tuestday&#xA;3 = Wednsday&#xA;4 = Thursday&#xA;5 = Friday&#xA;6 = Saturday&#xA;7 = Sunday&#xA;8 = Monday to friday&#xA;9 = Monday to saturday&#xA;10 = Saturday and sunday&#xA;11 = All days NFC_Parameters | tE7-d" type="number" />
+    <item name="Day/Night end timeband 7 NFC_Parameters | tE7-time" type="string" />
+    <item name="End time band 8 - day&#xA;0 = Disabled&#xA;1 = Monday&#xA;2 = Tuestday&#xA;3 = Wednsday&#xA;4 = Thursday&#xA;5 = Friday&#xA;6 = Saturday&#xA;7 = Sunday&#xA;8 = Monday to friday&#xA;9 = Monday to saturday&#xA;10 = Saturday and sunday&#xA;11 = All days NFC_Parameters | tE8-d" type="number" />
+    <item name="Day/Night end timeband 8 NFC_Parameters | tE8-time" type="string" />
+    <item name="Evaporation saturated temperature Parameters | tEu" type="number" />
+    <item name="Evaporator saturated temperature only for data log purpose Parameters | tEvap" type="number" />
+    <item name="Suction temp. probe (tGs) Parameters | tGs" type="number" />
+    <item name="Start time band 1 - day&#xA;0 = Disabled&#xA;1 = Monday&#xA;2 = Tuestday&#xA;3 = Wednsday&#xA;4 = Thursday&#xA;5 = Friday&#xA;6 = Saturday&#xA;7 = Sunday&#xA;8 = Monday to friday&#xA;9 = Monday to saturday&#xA;10 = Saturday and sunday&#xA;11 = All days NFC_Parameters | tS1-d" type="number" />
+    <item name="Day/Night start timeband 1 NFC_Parameters | tS1-time" type="string" />
+    <item name="Start time band 2 - day&#xA;0 = Disabled&#xA;1 = Monday&#xA;2 = Tuestday&#xA;3 = Wednsday&#xA;4 = Thursday&#xA;5 = Friday&#xA;6 = Saturday&#xA;7 = Sunday&#xA;8 = Monday to friday&#xA;9 = Monday to saturday&#xA;10 = Saturday and sunday&#xA;11 = All days NFC_Parameters | tS2-d" type="number" />
+    <item name="Day/Night start timeband 2 NFC_Parameters | tS2-time" type="string" />
+    <item name="Start time band 3 - day&#xA;0 = Disabled&#xA;1 = Monday&#xA;2 = Tuestday&#xA;3 = Wednsday&#xA;4 = Thursday&#xA;5 = Friday&#xA;6 = Saturday&#xA;7 = Sunday&#xA;8 = Monday to friday&#xA;9 = Monday to saturday&#xA;10 = Saturday and sunday&#xA;11 = All days NFC_Parameters | tS3-d" type="number" />
+    <item name="Day/Night start timeband 3 NFC_Parameters | tS3-time" type="string" />
+    <item name="Start time band 4 - day&#xA;0 = Disabled&#xA;1 = Monday&#xA;2 = Tuestday&#xA;3 = Wednsday&#xA;4 = Thursday&#xA;5 = Friday&#xA;6 = Saturday&#xA;7 = Sunday&#xA;8 = Monday to friday&#xA;9 = Monday to saturday&#xA;10 = Saturday and sunday&#xA;11 = All days NFC_Parameters | tS4-d" type="number" />
+    <item name="Day/Night start timeband 4 NFC_Parameters | tS4-time" type="string" />
+    <item name="Start time band 5 - day&#xA;0 = Disabled&#xA;1 = Monday&#xA;2 = Tuestday&#xA;3 = Wednsday&#xA;4 = Thursday&#xA;5 = Friday&#xA;6 = Saturday&#xA;7 = Sunday&#xA;8 = Monday to friday&#xA;9 = Monday to saturday&#xA;10 = Saturday and sunday&#xA;11 = All days NFC_Parameters | tS5-d" type="number" />
+    <item name="Day/Night start timeband 5 NFC_Parameters | tS5-time" type="string" />
+    <item name="Start time band 6 - day&#xA;0 = Disabled&#xA;1 = Monday&#xA;2 = Tuestday&#xA;3 = Wednsday&#xA;4 = Thursday&#xA;5 = Friday&#xA;6 = Saturday&#xA;7 = Sunday&#xA;8 = Monday to friday&#xA;9 = Monday to saturday&#xA;10 = Saturday and sunday&#xA;11 = All days NFC_Parameters | tS6-d" type="number" />
+    <item name="Day/Night start timeband 6 NFC_Parameters | tS6-time" type="string" />
+    <item name="Start time band 7 - day&#xA;0 = Disabled&#xA;1 = Monday&#xA;2 = Tuestday&#xA;3 = Wednsday&#xA;4 = Thursday&#xA;5 = Friday&#xA;6 = Saturday&#xA;7 = Sunday&#xA;8 = Monday to friday&#xA;9 = Monday to saturday&#xA;10 = Saturday and sunday&#xA;11 = All days NFC_Parameters | tS7-d" type="number" />
+    <item name="Day/Night start timeband 7 NFC_Parameters | tS7-time" type="string" />
+    <item name="Start time band 8 - day&#xA;0 = Disabled&#xA;1 = Monday&#xA;2 = Tuestday&#xA;3 = Wednsday&#xA;4 = Thursday&#xA;5 = Friday&#xA;6 = Saturday&#xA;7 = Sunday&#xA;8 = Monday to friday&#xA;9 = Monday to saturday&#xA;10 = Saturday and sunday&#xA;11 = All days NFC_Parameters | tS8-d" type="number" />
+    <item name="Day/Night start timeband 8 NFC_Parameters | tS8-time" type="string" />
+    <item name="Smooth Lines - Superheat threshold NFC_Parameters | TSH" type="number" />
+    <item name="Day of week - Clock settings by supervisor Parameters | u__" type="number" />
+    <item name="Comm. error with the Secondary 1 (only on Main) Parameters | u1" type="boolean" />
+    <item name="Comm. error with the Secondary 2 (only on Main) Parameters | u2" type="boolean" />
+    <item name="Comm. error with the Secondary 3 (only on Main) Parameters | u3" type="boolean" />
+    <item name="Comm. error with the Secondary 4 (only on Main) Parameters | u4" type="boolean" />
+    <item name="Comm. error with the Secondary 5 (only on Main) Parameters | u5" type="boolean" />
+    <item name="Comm. error with the Secondary 6 (only on Main) Parameters | u6" type="boolean" />
+    <item name="Comm. error with the Secondary 7 (only on Main) Parameters | u7" type="boolean" />
+    <item name="Comm. error with the Secondary 8 (only on Main) Parameters | u8" type="boolean" />
+    <item name="Comm. error with the Secondary 9 (only on Main) Parameters | u9" type="boolean" />
+    <item name="UID : byte 0 Parameters | UID_0" type="number" />
+    <item name="UID : byte 1 Parameters | UID_1" type="number" />
+    <item name="UID : byte 2 Parameters | UID_2" type="number" />
+    <item name="UID : byte 3 Parameters | UID_3" type="number" />
+    <item name="UID : byte 4 Parameters | UID_4" type="number" />
+    <item name="UID : byte 5 Parameters | UID_5" type="number" />
+    <item name="UID : byte 6 Parameters | UID_6" type="number" />
+    <item name="UID : byte 7 Parameters | UID_7" type="number" />
+    <item name="Unit ON status&#xA;0/1 : OFF/ON Parameters | UnitOn" type="boolean" />
+    <item name="Wizard procedure completed with success NFC_Parameters | WD" type="boolean" />
+    <item name="Actual SH setpoint with applied offsets Parameters | wSH" type="number" />
+    <item name="Year - Clock settings by supervisor Parameters | y__" type="number" />
+  </type>
+  <item name="$dev$" type="#MPXone_Medium" />
+</item>

@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SToneProject name="MPXone_Medium" guid="b450599d-f886-4b0e-81f4-5b72ece74e8d" type="Standard" version="1.0" projectVersion="1.6.9" Z3VpZC1jcmM="1050268910" author="Carel Industries S.p.A." vendor="Carel Industries S.p.A.">
+  <Files>
+    <Folder path="Application">
+      <File path="130_UI_Mng.st" buildaction="Compile" />
+    </Folder>
+    <Folder path="Common">
+      <File path="${Common}\ExceptionManager.st" buildaction="Compile" />
+      <File path="SevenSegmentsFB.st" buildaction="Compile" />
+      <File path="SystemMenuFB.st" buildaction="Compile" />
+      <File path="TerminalConfigFB.st" buildaction="Compile" />
+      <File path="${Common}\UIManager.st" buildaction="Compile" />
+    </Folder>
+    <Folder path="DFR_Application">
+      <File path="AutoTest.st" buildaction="Compile" />
+      <File path="CaseSystemManager.st" buildaction="Compile" />
+      <File path="CINTestMng.st" buildaction="Compile" />
+      <File path="DefrostSystemManager.st" buildaction="Compile" />
+      <File path="DFR_Frost_System.st" buildaction="Compile" />
+      <File path="DoorSystemManager.st" buildaction="Compile" />
+      <File path="HeatingSystemManager.st" buildaction="Compile" />
+      <File path="Input_Manager.st" buildaction="Compile" />
+      <File path="IOMng.st" buildaction="Compile" />
+      <File path="LightSystemManager.st" buildaction="Compile" />
+      <File path="Output_Manager.st" buildaction="Compile" />
+      <File path="TempControlManager.st" buildaction="Compile" />
+    </Folder>
+    <Folder path="DFR_Libs">
+      <File path="DFR_Utility.st" buildaction="Compile" />
+      <File path="DFR_Utility_v1.st" buildaction="Compile" />
+    </Folder>
+    <Folder path="Gui">
+      <Folder path="Actions">
+        <File path="ALM_HystPROGRAM_RELEASE.st" buildaction="Compile" />
+        <File path="ALM_ParamPROGRAM_RELEASE.st" buildaction="Compile" />
+        <File path="checkPassword.st" buildaction="Compile" />
+        <File path="CntPRG.st" buildaction="Compile" />
+        <File path="Dir_CleanPRG.st" buildaction="Compile" />
+        <File path="Dir_ContCyclPRG.st" buildaction="Compile" />
+        <File path="Dir_DefrostPRG.st" buildaction="Compile" />
+        <File path="Dir_LightPRG.st" buildaction="Compile" />
+        <File path="Dir_NetDefrostPRG.st" buildaction="Compile" />
+        <File path="Dir_OnOffPRG.st" buildaction="Compile" />
+        <File path="DisPRG.st" buildaction="Compile" />
+        <File path="doNothing.st" buildaction="Compile" />
+        <File path="GlassGUIALARM.st" buildaction="Compile" />
+        <File path="GoToLastRTC.st" buildaction="Compile" />
+        <File path="GoToMain.st" buildaction="Compile" />
+        <File path="GoToPassword.st" buildaction="Compile" />
+        <File path="HSx_PROGRAM_RELEASE.st" buildaction="Compile" />
+        <File path="MenuPRG.st" buildaction="Compile" />
+        <File path="MenuPROGRAM_RELEASE.st" buildaction="Compile" />
+        <File path="MenuSecondUPDOWN.st" buildaction="Compile" />
+        <File path="MenuUPDOWN.st" buildaction="Compile" />
+        <File path="mMainALARM.st" buildaction="Compile" />
+        <File path="mMainPRG.st" buildaction="Compile" />
+        <File path="mMainPROGRAM_RELEASE.st" buildaction="Compile" />
+        <File path="mMainUPDOWN.st" buildaction="Compile" />
+        <File path="mTxtPsdPRG.st" buildaction="Compile" />
+        <File path="mTxtPsdPROGRAM_RELEASE.st" buildaction="Compile" />
+        <File path="PasswordDOWN.st" buildaction="Compile" />
+        <File path="PasswordUP.st" buildaction="Compile" />
+        <File path="WIZ_ENDPRG.st" buildaction="Compile" />
+      </Folder>
+      <Folder path="CustomMasks" />
+    </Folder>
+    <Folder path="Images" />
+    <Folder path="Lang">
+      <File path="EN.lang" buildaction="Language" />
+    </Folder>
+    <Folder path="Libs">
+      <File path="MPXone_Medium_Core_v.1.8.6.stlib" buildaction="Compile" libnodeid="8c990d04-4ef8-4ca1-9757-e845a4517aeb" />
+    </Folder>
+    <Folder path="MpxProtocols">
+      <File path="Medium_BMS_VarsDeclaration.st" buildaction="Compile" />
+    </Folder>
+    <Folder path="Properties">
+      <File path="Resources.st" buildaction="Compile" />
+      <File path="Variables.st" buildaction="Compile" />
+    </Folder>
+    <Folder path="Widgets">
+      <File path="Default.st" buildaction="Compile" />
+      <File path="ReadOnly.st" buildaction="Compile" />
+      <File path="WidgetAlarm.st" buildaction="Compile" />
+      <File path="WidgetAlarmsHyst.st" buildaction="Compile" />
+      <File path="WidgetMain.st" buildaction="Compile" />
+      <File path="Wizard.st" buildaction="Compile" />
+    </Folder>
+    <File path="AutomaticTest.stat" buildaction="None" />
+    <File path="ExceptionManager.st" buildaction="Compile" />
+    <File path="HEOneRow.stgui" buildaction="Generate" />
+    <File path="Logs.stlog" buildaction="Generate" />
+    <File path="MasterProtocols.stmp" buildaction="Generate" />
+    <File path="NFC.stnfc" buildaction="Generate" />
+    <File path="output.stsp" buildaction="Generate" />
+    <File path="ParamMedium.stparam" buildaction="Generate" />
+    <File path="UserDefinedDataTypes.st" buildaction="Compile" />
+  </Files>
+  <BuildOptions>
+    <Configuration name="Debug" debug="true" preprocessordefinitions="DEBUG MPXONE_MEDIUM" target="ACU_HIGH_END" />
+    <Configuration name="Release" preprocessordefinitions="RELEASE MPXONE_MEDIUM" target="ACU_HIGH_END" />
+  </BuildOptions>
+</SToneProject>

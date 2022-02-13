@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BaseMaskData p1:type="MaskData" ID="439" Name="VIS_PEu" Version="3.0" EnableOn="isMedium AND (ValveCnf &gt; 0)" StartingField="466" xmlns:p1="http://www.w3.org/2001/XMLSchema-instance">
+  <MaskElements>
+    <TextWidget ID="466" Name="TextWidget466" Row="0" Column="0" Selectable="FALSE" ClassName="ReadOnlyWidget">
+      <Members>
+        <Member Name="Acronim" Value="'PEu'" />
+        <Member Name="ValIndex" Value="5" />
+      </Members>
+    </TextWidget>
+  </MaskElements>
+</BaseMaskData>

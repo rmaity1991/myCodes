@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BaseMaskData p1:type="MaskData" ID="408" Name="WIZ_In" Version="3.0" StartingField="474" xmlns:p1="http://www.w3.org/2001/XMLSchema-instance">
+  <Leds>
+    <Led Name="ACU_LED_5" OnCondition="NOT tmpConfOk[0]" />
+  </Leds>
+  <Actions>
+    <Action KeyName="KEY_UP" FileName="doNothing.st" FunctionName="doNothing" Call="doNothing(keyPressed, keyCounter);" Type="Single" />
+  </Actions>
+  <MaskElements>
+    <TextWidget ID="474" Name="TextWidget474" Row="0" Column="0" Selectable="TRUE" ClassName="WizardWidget">
+      <Members>
+        <Member Name="Acronim" Value="' In'" />
+        <Member Name="ValIndex" Value="0" />
+      </Members>
+    </TextWidget>
+  </MaskElements>
+</BaseMaskData>

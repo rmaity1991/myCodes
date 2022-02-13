@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SToneSolution name="USHPXMPX010A1" version="1.0">
+  <Projects active="MPXone_Medium">
+    <Project file="MPXone_Medium\MPXone_Medium.stprj" />
+    <Project file="[8c990d04-4ef8-4ca1-9757-e845a4517aeb]\MPXone_Core.stprj" />
+    <Project file="[7406f184-0800-4814-a576-651f884f7603]\IOMng_Basic.stprj" />
+  </Projects>
+  <Configurations active="FULL">
+    <Configuration name="FULL" batchbuild="False">
+      <Project name="MPXone_Medium" build="true" configuration="Debug" />
+    </Configuration>
+    <Configuration name="ONLY_MEDIUM" batchbuild="False">
+      <Project name="MPXone_Medium" build="true" configuration="Debug" />
+    </Configuration>
+    <Configuration name="RELEASE" batchbuild="False">
+      <Project name="MPXone_Medium" build="true" configuration="Debug" />
+    </Configuration>
+  </Configurations>
+</SToneSolution>

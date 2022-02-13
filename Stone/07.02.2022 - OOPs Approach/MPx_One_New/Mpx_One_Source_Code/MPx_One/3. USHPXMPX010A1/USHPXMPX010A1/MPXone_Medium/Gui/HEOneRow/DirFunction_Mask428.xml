@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BaseMaskData p1:type="MaskData" ID="428" Name="Dir_ESC" Version="3.0" xmlns:p1="http://www.w3.org/2001/XMLSchema-instance">
+  <Actions>
+    <Action KeyName="KEY_PRG" FileName="GoToMain.st" FunctionName="GoToMain" Call="GoToMain(keyPressed, keyCounter);" Type="Single" />
+  </Actions>
+  <MaskElements>
+    <TextField ID="453" Name="TextField453" Row="0" Column="0" TextValue="ESC" />
+  </MaskElements>
+</BaseMaskData>

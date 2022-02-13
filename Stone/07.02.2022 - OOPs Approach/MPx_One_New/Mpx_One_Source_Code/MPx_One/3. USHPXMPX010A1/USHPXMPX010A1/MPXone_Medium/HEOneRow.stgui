@@ -1,0 +1,350 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GuiData ID="0" Name="HEOneRow" Version="2.1" DefaultZone="NO" FixedZone="false" TranslationsMode="GenerateForCurrentLanguage" DefaultDateFormat="DDMMYYYY" TerminalName="SevenSegments">
+  <Leds>
+    <Led Name="ACU_LED_1" BlinkingCondition="LEDCompBlink" OnCondition="LEDCompOn" />
+    <Led Name="ACU_LED_2" OnCondition="LedFanOn" />
+    <Led Name="ACU_LED_3" OnCondition="LedLightsOn" />
+    <Led Name="ACU_LED_4" OnCondition="LedAuxOn" />
+    <Led Name="ACU_LED_5" OnCondition="LedServiceOn" />
+    <Led Name="ACU_LED_6" OnCondition="LedEcoOn" />
+    <Led Name="ACU_LED_7" OnCondition="LedClockOn" />
+    <Led Name="ACU_LED_8" BlinkingCondition="LedDfrFlash" OnCondition="LedDfrOn" />
+    <Led Name="ACU_LED_9" OnCondition="LedHACCPOn" />
+    <Led Name="ACU_LED_17" BlinkingCondition="LEDAlmBlink" OnCondition="LEDAlmOn" />
+    <Led Name="UP" BlinkingCondition="HEOneRow.gui.blink" OnCondition="NOT HEOneRow.gui.blink" />
+    <Led Name="DOWN" BlinkingCondition="HEOneRow.gui.blink" OnCondition="NOT HEOneRow.gui.blink" />
+    <Led Name="PRG" OnCondition="TRUE" />
+  </Leds>
+  <Loops>
+    <Loop ID="1" Name="Main">
+      <Leds>
+        <Led Name="UP" BlinkingCondition="LedBlinkArrow" OnCondition="LedOnArrow" />
+        <Led Name="DOWN" BlinkingCondition="LedBlinkArrow" OnCondition="LedOnArrow" />
+        <Led Name="PRG" OnCondition="LedProgram" />
+      </Leds>
+      <Actions>
+        <Action KeyName="KEY_ALARM_RELEASE" FileName="GlassGUIALARM.st" FunctionName="GlassGUIALARM" Call="GlassGUIALARM(keyPressed, keyCounter);" Type="Single" />
+      </Actions>
+      <Masks>
+        <FileName>Main_Mask346.xml</FileName>
+      </Masks>
+    </Loop>
+    <Loop ID="2" Name="Menu">
+      <Leds>
+        <Led Name="UP" BlinkingCondition="LedBlinkArrow" OnCondition="LedOnArrow" />
+        <Led Name="DOWN" BlinkingCondition="LedBlinkArrow" OnCondition="LedOnArrow" />
+        <Led Name="PRG" OnCondition="LedProgram" />
+      </Leds>
+      <Actions>
+        <Action KeyName="KEY_ALARM_RELEASE" FileName="GlassGUIALARM.st" FunctionName="GlassGUIALARM" Call="GlassGUIALARM(keyPressed, keyCounter);" Type="Single" />
+        <Action KeyName="KEY_PROGRAM_RELEASE" FileName="MenuPROGRAM_RELEASE.st" FunctionName="MenuPROGRAM_RELEASE" Call="HEOneRow.MenuPROGRAM_RELEASE(keyPressed, keyCounter);" Type="Single" />
+        <Action KeyName="KEY_PRG" FileName="MenuPRG.st" FunctionName="MenuPRG" Call="MenuPRG(keyPressed, keyCounter);" Type="Single" />
+        <Action KeyName="KEY_UP" FileName="MenuUPDOWN.st" FunctionName="MenuUPDOWN" Call="MenuUPDOWN(keyPressed, keyCounter);" Type="Single" />
+        <Action KeyName="KEY_DOWN" FileName="MenuUPDOWN.st" FunctionName="MenuUPDOWN" Call="MenuUPDOWN(keyPressed, keyCounter);" Type="Single" />
+      </Actions>
+      <Masks>
+        <FileName>Menu_PRO.xml</FileName>
+        <FileName>Menu_CTL.xml</FileName>
+        <FileName>Menu_DEF.xml</FileName>
+        <FileName>Menu_ALM.xml</FileName>
+        <FileName>Menu_FAN.xml</FileName>
+        <FileName>Menu_EVD.xml</FileName>
+        <FileName>Menu_CNF.xml</FileName>
+        <FileName>Menu_Mask497.xml</FileName>
+        <FileName>Menu_Mask407.xml</FileName>
+      </Masks>
+    </Loop>
+    <Loop ID="5" Name="CTL_Param">
+      <Leds>
+        <Led Name="UP" BlinkingCondition="LedBlinkArrow" OnCondition="LedOnArrow" />
+        <Led Name="DOWN" BlinkingCondition="LedBlinkArrow" OnCondition="LedOnArrow" />
+        <Led Name="PRG" OnCondition="LedProgram" />
+      </Leds>
+      <Actions>
+        <Action KeyName="KEY_PRG" FileName="MenuPRG.st" FunctionName="MenuPRG" Call="MenuPRG(keyPressed, keyCounter);" Type="Single" />
+        <Action KeyName="KEY_PROGRAM_RELEASE" FileName="MenuPROGRAM_RELEASE.st" FunctionName="MenuPROGRAM_RELEASE" Call="HEOneRow.MenuPROGRAM_RELEASE(keyPressed, keyCounter);" Type="Single" />
+      </Actions>
+      <Masks>
+        <FileName>CTL_Param_Mask333.xml</FileName>
+        <FileName>CTL_Param_Mask358.xml</FileName>
+        <FileName>CTL_Param_Mask365.xml</FileName>
+        <FileName>CTL_Param_Mask488.xml</FileName>
+        <FileName>CTL_Param_Mask489.xml</FileName>
+        <FileName>CTL_Param_Mask490.xml</FileName>
+        <FileName>CTL_Param_Mask491.xml</FileName>
+        <FileName>CTL_Param_Mask332.xml</FileName>
+      </Masks>
+    </Loop>
+    <Loop ID="6" Name="TxtPsd">
+      <Leds>
+        <Led Name="UP" BlinkingCondition="LedBlinkArrow" OnCondition="LedOnArrow" />
+        <Led Name="DOWN" BlinkingCondition="LedBlinkArrow" OnCondition="LedOnArrow" />
+        <Led Name="PRG" OnCondition="LedProgram" />
+      </Leds>
+      <Actions>
+        <Action KeyName="KEY_ALARM_RELEASE" FileName="GlassGUIALARM.st" FunctionName="GlassGUIALARM" Call="GlassGUIALARM(keyPressed, keyCounter);" Type="Single" />
+      </Actions>
+      <Masks>
+        <FileName>TxtPsd_Mask347.xml</FileName>
+      </Masks>
+    </Loop>
+    <Loop ID="7" Name="InsertPsd">
+      <Leds>
+        <Led Name="UP" BlinkingCondition="LedBlinkArrow" OnCondition="LedOnArrow" />
+        <Led Name="DOWN" BlinkingCondition="LedBlinkArrow" OnCondition="LedOnArrow" />
+        <Led Name="PRG" OnCondition="LedProgram" />
+      </Leds>
+      <Actions>
+        <Action KeyName="KEY_ALARM_RELEASE" FileName="GlassGUIALARM.st" FunctionName="GlassGUIALARM" Call="GlassGUIALARM(keyPressed, keyCounter);" Type="Single" />
+      </Actions>
+      <Masks>
+        <FileName>Main_mPassword.xml</FileName>
+      </Masks>
+    </Loop>
+    <Loop ID="8" Name="CNF_Param">
+      <Leds>
+        <Led Name="UP" BlinkingCondition="LedBlinkArrow" OnCondition="LedOnArrow" />
+        <Led Name="DOWN" BlinkingCondition="LedBlinkArrow" OnCondition="LedOnArrow" />
+        <Led Name="PRG" OnCondition="LedProgram" />
+      </Leds>
+      <Actions>
+        <Action KeyName="KEY_PRG" FileName="MenuPRG.st" FunctionName="MenuPRG" Call="MenuPRG(keyPressed, keyCounter);" Type="Single" />
+        <Action KeyName="KEY_PROGRAM_RELEASE" FileName="MenuPROGRAM_RELEASE.st" FunctionName="MenuPROGRAM_RELEASE" Call="HEOneRow.MenuPROGRAM_RELEASE(keyPressed, keyCounter);" Type="Single" />
+      </Actions>
+      <Masks>
+        <FileName>CNF_Param_Mask367.xml</FileName>
+        <FileName>CNF_Param_Mask369.xml</FileName>
+        <FileName>CNF_Param_Mask370.xml</FileName>
+        <FileName>CNF_Param_Mask483.xml</FileName>
+        <FileName>CNF_Param_Mask494.xml</FileName>
+        <FileName>CNF_Param_Mask495.xml</FileName>
+        <FileName>CNF_Param_Mask496.xml</FileName>
+        <FileName>CNF_Param_Mask506.xml</FileName>
+        <FileName>CNF_Param_Mask372.xml</FileName>
+      </Masks>
+    </Loop>
+    <Loop ID="9" Name="Alarms">
+      <Leds>
+        <Led Name="UP" BlinkingCondition="LedBlinkArrow" OnCondition="LedOnArrow" />
+        <Led Name="DOWN" BlinkingCondition="LedBlinkArrow" OnCondition="LedOnArrow" />
+        <Led Name="PRG" OnCondition="LedProgram" />
+      </Leds>
+      <Actions>
+        <Action KeyName="KEY_ALARM_RELEASE" FileName="GlassGUIALARM.st" FunctionName="GlassGUIALARM" Call="GlassGUIALARM(keyPressed, keyCounter);" Type="Single" />
+      </Actions>
+      <Masks>
+        <FileName>Alarms_Mask373.xml</FileName>
+      </Masks>
+    </Loop>
+    <Loop ID="10" Name="dEF_Param">
+      <Leds>
+        <Led Name="UP" BlinkingCondition="LedBlinkArrow" OnCondition="LedOnArrow" />
+        <Led Name="DOWN" BlinkingCondition="LedBlinkArrow" OnCondition="LedOnArrow" />
+        <Led Name="PRG" OnCondition="LedProgram" />
+      </Leds>
+      <Actions>
+        <Action KeyName="KEY_PRG" FileName="MenuPRG.st" FunctionName="MenuPRG" Call="MenuPRG(keyPressed, keyCounter);" Type="Single" />
+        <Action KeyName="KEY_PROGRAM_RELEASE" FileName="MenuPROGRAM_RELEASE.st" FunctionName="MenuPROGRAM_RELEASE" Call="HEOneRow.MenuPROGRAM_RELEASE(keyPressed, keyCounter);" Type="Single" />
+      </Actions>
+      <Masks>
+        <FileName>dEF_Param_Mask374.xml</FileName>
+        <FileName>dEF_Param_Mask377.xml</FileName>
+        <FileName>dEF_Param_Mask378.xml</FileName>
+        <FileName>dEF_Param_Mask380.xml</FileName>
+        <FileName>dEF_Param_dEF_ESC.xml</FileName>
+      </Masks>
+    </Loop>
+    <Loop ID="11" Name="Wizard">
+      <Leds>
+        <Led Name="UP" BlinkingCondition="LedBlinkArrow" OnCondition="LedOnArrow" />
+        <Led Name="DOWN" BlinkingCondition="LedBlinkArrow" OnCondition="LedOnArrow" />
+        <Led Name="PRG" OnCondition="LedProgram" />
+      </Leds>
+      <Masks>
+        <FileName>Wizard_Mask408.xml</FileName>
+        <FileName>Wizard_Mask384.xml</FileName>
+        <FileName>Wizard_Mask410.xml</FileName>
+        <FileName>Wizard_Mask388.xml</FileName>
+        <FileName>Wizard_Mask385.xml</FileName>
+        <FileName>Wizard_Mask386.xml</FileName>
+        <FileName>Wizard_Mask387.xml</FileName>
+        <FileName>Wizard_Mask409.xml</FileName>
+        <FileName>Wizard_Mask389.xml</FileName>
+        <FileName>Wizard_Mask390.xml</FileName>
+        <FileName>Wizard_Mask391.xml</FileName>
+        <FileName>Wizard_Mask411.xml</FileName>
+        <FileName>Wizard_Mask446.xml</FileName>
+        <FileName>Wizard_WIZ_END.xml</FileName>
+      </Masks>
+    </Loop>
+    <Loop ID="13" Name="VIS_Loop">
+      <Leds>
+        <Led Name="UP" BlinkingCondition="LedBlinkArrow" OnCondition="LedOnArrow" />
+        <Led Name="DOWN" BlinkingCondition="LedBlinkArrow" OnCondition="LedOnArrow" />
+        <Led Name="PRG" OnCondition="LedProgram" />
+      </Leds>
+      <Actions>
+        <Action KeyName="KEY_PRG" FileName="MenuPRG.st" FunctionName="MenuPRG" Call="MenuPRG(keyPressed, keyCounter);" Type="Single" />
+        <Action KeyName="KEY_PROGRAM_RELEASE" FileName="MenuPROGRAM_RELEASE.st" FunctionName="MenuPROGRAM_RELEASE" Call="HEOneRow.MenuPROGRAM_RELEASE(keyPressed, keyCounter);" Type="Single" />
+      </Actions>
+      <Masks>
+        <FileName>VIS_Loop_Mask429.xml</FileName>
+        <FileName>VIS_Loop_Mask430.xml</FileName>
+        <FileName>VIS_Loop_Mask431.xml</FileName>
+        <FileName>VIS_Loop_Mask432.xml</FileName>
+        <FileName>VIS_Loop_Mask433.xml</FileName>
+        <FileName>VIS_Loop_Mask434.xml</FileName>
+        <FileName>VIS_Loop_Mask435.xml</FileName>
+        <FileName>VIS_Loop_Mask436.xml</FileName>
+        <FileName>VIS_Loop_Mask437.xml</FileName>
+        <FileName>VIS_Loop_Mask438.xml</FileName>
+        <FileName>VIS_Loop_Mask439.xml</FileName>
+        <FileName>VIS_Loop_Mask419.xml</FileName>
+      </Masks>
+    </Loop>
+    <Loop ID="14" Name="ALM_Param">
+      <Leds>
+        <Led Name="UP" BlinkingCondition="LedBlinkArrow" OnCondition="LedOnArrow" />
+        <Led Name="DOWN" BlinkingCondition="LedBlinkArrow" OnCondition="LedOnArrow" />
+        <Led Name="PRG" OnCondition="LedProgram" />
+      </Leds>
+      <Actions>
+        <Action KeyName="KEY_PROGRAM_RELEASE" FileName="MenuPROGRAM_RELEASE.st" FunctionName="MenuPROGRAM_RELEASE" Call="HEOneRow.MenuPROGRAM_RELEASE(keyPressed, keyCounter);" Type="Single" />
+        <Action KeyName="KEY_PRG" FileName="MenuPRG.st" FunctionName="MenuPRG" Call="MenuPRG(keyPressed, keyCounter);" Type="Single" />
+      </Actions>
+      <Masks>
+        <FileName>ALM_Param_Mask413.xml</FileName>
+        <FileName>ALM_Param_Mask414.xml</FileName>
+        <FileName>ALM_Param_Mask415.xml</FileName>
+        <FileName>ALM_Param_Mask416.xml</FileName>
+        <FileName>ALM_Param_Mask417.xml</FileName>
+        <FileName>ALM_Param_Mask418.xml</FileName>
+      </Masks>
+    </Loop>
+    <Loop ID="15" Name="FAN_Param">
+      <Leds>
+        <Led Name="UP" BlinkingCondition="LedBlinkArrow" OnCondition="LedOnArrow" />
+        <Led Name="DOWN" BlinkingCondition="LedBlinkArrow" OnCondition="LedOnArrow" />
+        <Led Name="PRG" OnCondition="LedProgram" />
+      </Leds>
+      <Masks>
+        <FileName>FAN_Param_Mask420.xml</FileName>
+        <FileName>FAN_Param_Mask421.xml</FileName>
+        <FileName>FAN_Param_Mask492.xml</FileName>
+        <FileName>FAN_Param_Mask493.xml</FileName>
+        <FileName>FAN_Param_Mask423.xml</FileName>
+      </Masks>
+    </Loop>
+    <Loop ID="16" Name="EVD_Param">
+      <Leds>
+        <Led Name="UP" BlinkingCondition="LedBlinkArrow" OnCondition="LedOnArrow" />
+        <Led Name="DOWN" BlinkingCondition="LedBlinkArrow" OnCondition="LedOnArrow" />
+        <Led Name="PRG" OnCondition="LedProgram" />
+      </Leds>
+      <Masks>
+        <FileName>EVD_Param_Mask445.xml</FileName>
+        <FileName>EVD_Param_Mask424.xml</FileName>
+        <FileName>EVD_Param_Mask425.xml</FileName>
+        <FileName>EVD_Param_Mask505.xml</FileName>
+        <FileName>EVD_Param_Mask426.xml</FileName>
+      </Masks>
+    </Loop>
+    <Loop ID="17" Name="DirFunction">
+      <Leds>
+        <Led Name="UP" BlinkingCondition="LedBlinkArrow" OnCondition="LedOnArrow" />
+        <Led Name="DOWN" BlinkingCondition="LedBlinkArrow" OnCondition="LedOnArrow" />
+        <Led Name="PRG" OnCondition="LedProgram" />
+      </Leds>
+      <Masks>
+        <FileName>DirFunction_Mask427.xml</FileName>
+        <FileName>DirFunction_Mask444.xml</FileName>
+        <FileName>DirFunction_Mask440.xml</FileName>
+        <FileName>DirFunction_Mask485.xml</FileName>
+        <FileName>DirFunction_Mask441.xml</FileName>
+        <FileName>DirFunction_Mask442.xml</FileName>
+        <FileName>DirFunction_Mask443.xml</FileName>
+        <FileName>DirFunction_Mask428.xml</FileName>
+      </Masks>
+    </Loop>
+    <Loop ID="18" Name="ResetDefault">
+      <Leds>
+        <Led Name="UP" BlinkingCondition="LedBlinkArrow" OnCondition="LedOnArrow" />
+        <Led Name="DOWN" BlinkingCondition="LedBlinkArrow" OnCondition="LedOnArrow" />
+        <Led Name="PRG" OnCondition="LedProgram" />
+      </Leds>
+      <Masks>
+        <FileName>ResetDefault_Mask447.xml</FileName>
+      </Masks>
+    </Loop>
+    <Loop ID="20" Name="ALM_menu">
+      <Leds>
+        <Led Name="UP" BlinkingCondition="LedBlinkArrow" OnCondition="LedOnArrow" />
+        <Led Name="DOWN" BlinkingCondition="LedBlinkArrow" OnCondition="LedOnArrow" />
+        <Led Name="PRG" OnCondition="LedProgram" />
+      </Leds>
+      <Actions>
+        <Action KeyName="KEY_UP" FileName="MenuSecondUPDOWN.st" FunctionName="MenuSecondUPDOWN" Call="MenuSecondUPDOWN(keyPressed, keyCounter);" Type="Single" />
+        <Action KeyName="KEY_DOWN" FileName="MenuSecondUPDOWN.st" FunctionName="MenuSecondUPDOWN" Call="MenuSecondUPDOWN(keyPressed, keyCounter);" Type="Single" />
+      </Actions>
+      <Masks>
+        <FileName>ALM_menu_Mask451.xml</FileName>
+        <FileName>ALM_menu_Mask452.xml</FileName>
+        <FileName>ALM_menu_Mask456.xml</FileName>
+      </Masks>
+    </Loop>
+    <Loop ID="21" Name="ALM_LOG">
+      <Leds>
+        <Led Name="UP" BlinkingCondition="LedBlinkArrow" OnCondition="LedOnArrow" />
+        <Led Name="DOWN" BlinkingCondition="LedBlinkArrow" OnCondition="LedOnArrow" />
+        <Led Name="PRG" OnCondition="LedProgram" />
+      </Leds>
+      <Masks>
+        <FileName>ALM_LOG_Mask461.xml</FileName>
+        <FileName>ALM_LOG_Mask468.xml</FileName>
+        <FileName>ALM_LOG_Mask469.xml</FileName>
+        <FileName>ALM_LOG_Mask470.xml</FileName>
+        <FileName>ALM_LOG_Mask471.xml</FileName>
+        <FileName>ALM_LOG_Mask472.xml</FileName>
+        <FileName>ALM_LOG_Mask473.xml</FileName>
+        <FileName>ALM_LOG_Mask474.xml</FileName>
+        <FileName>ALM_LOG_Mask475.xml</FileName>
+        <FileName>ALM_LOG_Mask477.xml</FileName>
+        <FileName>ALM_LOG_Mask460.xml</FileName>
+      </Masks>
+    </Loop>
+    <Loop ID="23" Name="AlrmHystLog">
+      <Leds>
+        <Led Name="UP" BlinkingCondition="LedBlinkArrow" OnCondition="LedOnArrow" />
+        <Led Name="DOWN" BlinkingCondition="LedBlinkArrow" OnCondition="LedOnArrow" />
+        <Led Name="PRG" OnCondition="LedProgram" />
+      </Leds>
+      <Masks>
+        <FileName>AlrmHystLog_Mask480.xml</FileName>
+      </Masks>
+    </Loop>
+    <Loop ID="24" Name="rtC_Param">
+      <Leds>
+        <Led Name="UP" BlinkingCondition="LedBlinkArrow" OnCondition="LedOnArrow" />
+        <Led Name="DOWN" BlinkingCondition="LedBlinkArrow" OnCondition="LedOnArrow" />
+        <Led Name="PRG" OnCondition="LedProgram" />
+      </Leds>
+      <Masks>
+        <FileName>rtC_Param_Mask498.xml</FileName>
+        <FileName>rtC_Param_Mask499.xml</FileName>
+        <FileName>rtC_Param_Mask500.xml</FileName>
+        <FileName>rtC_Param_Mask501.xml</FileName>
+        <FileName>rtC_Param_Mask502.xml</FileName>
+        <FileName>rtC_Param_Mask503.xml</FileName>
+        <FileName>rtC_Param_Mask504.xml</FileName>
+      </Masks>
+    </Loop>
+    <Loop ID="25" Name="MEDIUM">
+      <Leds>
+        <Led Name="UP" BlinkingCondition="LedBlinkArrow" OnCondition="LedOnArrow" />
+        <Led Name="DOWN" BlinkingCondition="LedBlinkArrow" OnCondition="LedOnArrow" />
+        <Led Name="PRG" OnCondition="LedProgram" />
+      </Leds>
+      <Masks />
+    </Loop>
+  </Loops>
+</GuiData>

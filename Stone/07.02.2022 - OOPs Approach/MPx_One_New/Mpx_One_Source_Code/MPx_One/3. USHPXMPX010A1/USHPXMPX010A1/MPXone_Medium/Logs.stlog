@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Logs>
+  <Log
+    Name="MPXone_Data_Log"
+    Kind="Periodic"
+    SamplesCount="8930"
+    Period="5m"
+    MemorySize="98304">
+    <Variables>
+      <Variable
+        Name="AnalogInputs.Fct.AirOff" />
+      <Variable
+        Name="DfrInProgress" />
+      <Variable
+        Name="EvapTempNTC_Log" />
+    </Variables>
+  </Log>
+  <Log
+    Name="EOL_DATAlog"
+    Kind="Periodic"
+    SamplesCount="100"
+    Period="5m"
+    MemorySize="98304">
+    <Variables>
+      <Variable
+        Name="V_IM_trc_AirOff" />
+      <Variable
+        Name="V_IM_trc_Defrost" />
+      <Variable
+        Name="V_IM_bar_Evap" />
+      <Variable
+        Name="V_IM_trc_Suction" />
+      <Variable
+        Name="V_IM_trc_AirOn" />
+      <Variable
+        Name="V_OM_pc_Valve" />
+      <Variable
+        Name="V_CSM_EOL_Test_Type" />
+      <Variable
+        Name="V_CSM_EOL_Test_Status" />
+      <Variable
+        Name="V_CSM_EOL_Test_Result" />
+      <Variable
+        Name="T_CSM_EOL_Enab" />
+      <Variable
+        Name="T_CSM_EOL_IO_Enab" />
+      <Variable
+        Name="T_CSM_EOL_Run_Enab" />
+      <Variable
+        Name="V_OM_Light_Flag" />
+      <Variable
+        Name="V_OM_Defrost_Flag" />
+      <Variable
+        Name="V_OM_Fans_Flag" />
+      <Variable
+        Name="V_OM_DrainHeat_Flag" />
+      <Variable
+        Name="V_OM_Solenoid_Flag" />
+      <Variable
+        Name="V_OM_RailHeaters_Flag" />
+    </Variables>
+  </Log>
+</Logs>

@@ -1,0 +1,1024 @@
+Successful,Reference,AIN - AirOff,Main,I/O,84889116-84bf-4792-a218-1ccbeaa7d418,,2020-09-22-16:31:41.140,2020-09-22-16:31:41.142
+Successful,Reference,Setup,AIN - AirOff,I/O,be1886de-4419-4ebc-b32c-39e4c51e320c,,2020-09-22-16:31:41.142,2020-09-22-16:31:41.154
+Successful,Write,Inhibit exceptions and wizard,Setup - Inputs,I/O,ae900aa4-4620-43fe-b9aa-3a01e59c141b,,2020-09-22-16:31:41.154,2020-09-22-16:31:41.298
+Successful,Write,Virtualize U,Setup - Inputs,I/O,82142494-a556-436f-b264-167482231531,,2020-09-22-16:31:41.300,2020-09-22-16:31:41.681
+Successful,Write,Virtualize ID,Setup - Inputs,I/O,683345e2-1e0c-426d-8327-0034bb3449ea,,2020-09-22-16:31:41.682,2020-09-22-16:31:42.145
+Successful,Write,Preset all U to 0,Setup - Inputs,I/O,e5f542b3-f09d-4496-abb8-a27774c5d91e,,2020-09-22-16:31:42.145,2020-09-22-16:31:42.653
+Successful,Write,Preset all ID to FALSE,Setup - Inputs,I/O,34764468-901a-4f7c-8381-12d4fdacc116,,2020-09-22-16:31:42.653,2020-09-22-16:31:42.908
+Successful,Write,Preset all analog inputs as disabled,Setup - Inputs,I/O,5867526d-4197-40aa-b8fb-a3fd04b9a29b,,2020-09-22-16:31:42.908,2020-09-22-16:31:43.582
+Successful,Write,Preset all digital inputs as disabled,Setup - Inputs,I/O,0899ae3f-f399-44fc-ba4c-aa52a6a3a174,,2020-09-22-16:31:43.582,2020-09-22-16:31:44.365
+Successful,Write,Preset all analog inputs offsets as 0,Setup - Inputs,I/O,44329eeb-683b-435b-b10f-290c1bd31509,,2020-09-22-16:31:44.365,2020-09-22-16:31:45.017
+Successful,Write,Preset all digital inputs logics,Setup - Inputs,I/O,9f6e8273-cac4-4098-97c8-8222da706871,,2020-09-22-16:31:45.017,2020-09-22-16:31:45.721
+Failed,Lock,Take the lock on alarm triggers,AIN - AirOff,I/O,1c0da3d1-711a-4dc7-9220-d3e1726f3bc9,Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[1].PrbAlrm_1.AlrmDelay.IN';Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[2].PrbAlrm_1.AlrmDelay.IN';Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[3].PrbAlrm_1.AlrmDelay.IN';,2020-09-22-16:31:46.321,2020-09-22-16:31:46.322
+Successful,Write,Set function on channel 1,AIN - AirOff,I/O,1bf921a0-c063-4cfb-904e-3fbf0db3374c,,2020-09-22-16:31:46.931,2020-09-22-16:31:46.980
+Successful,Write,Change value of S1,AIN - AirOff,I/O,6ab3e493-851e-4de0-805f-2abef25b13ff,,2020-09-22-16:31:47.585,2020-09-22-16:31:47.620
+Successful,Check,Verify value read,AIN - AirOff,I/O,f7bc9b64-7a58-4248-b889-609d56480972,,2020-09-22-16:31:48.229,2020-09-22-16:31:48.344
+Successful,Write,Change offset,AIN - AirOff,I/O,64611509-0b78-499c-8334-c95cb65644e9,,2020-09-22-16:31:48.944,2020-09-22-16:31:48.980
+Successful,Check,Verify value read,AIN - AirOff,I/O,8153f8d3-4607-443f-aff8-c441825a07d1,,2020-09-22-16:31:49.591,2020-09-22-16:31:49.620
+Failed,Write,Trigger alarm,AIN - AirOff,I/O,efcc68bf-9f44-4925-91f0-00a60d13a6e8,"1° write 'TRUE' in 'IO_mng.Ain.AinFB[1].PrbAlrm_1.AlrmDelay.IN' fails with error: Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[1].PrbAlrm_1.AlrmDelay.IN'; ",2020-09-22-16:31:50.232,2020-09-22-16:31:50.288
+Successful,Check,Check that alarm is not yet triggered,AIN - AirOff,I/O,e6b36019-98fd-4fe5-95ea-b45a930e26c9,,2020-09-22-16:31:50.898,2020-09-22-16:31:50.928
+Failed,WaitUntil,Wait for alarm,AIN - AirOff,I/O,f23e66af-c795-4b0f-81a6-6fef5a75d77a,Variable 'Alarms.Al.Al_PrbBroken[1].Info.Active' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-22-16:31:51.541,2020-09-22-16:32:02.572
+Failed,Write,Reset alarm,AIN - AirOff,I/O,60189a6d-45ee-487e-968a-b198085288fb,"1° write 'FALSE' in 'IO_mng.Ain.AinFB[1].PrbAlrm_1.AlrmDelay.IN' fails with error: Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[1].PrbAlrm_1.AlrmDelay.IN'; ",2020-09-22-16:32:03.182,2020-09-22-16:32:03.182
+Successful,Check,Check that alarm was reset,AIN - AirOff,I/O,725d0b44-3c40-4926-81bd-a594061f0b0d,,2020-09-22-16:32:03.792,2020-09-22-16:32:03.814
+Successful,Write,Set function on channel 2,AIN - AirOff,I/O,bbce943c-1669-4cfd-98ae-24eda6be8f92,,2020-09-22-16:32:04.429,2020-09-22-16:32:04.489
+Successful,Write,Change value of S2,AIN - AirOff,I/O,e407cca0-73d1-4734-a68a-13eb103bbe1e,,2020-09-22-16:32:05.101,2020-09-22-16:32:05.137
+Successful,Check,Verify value read,AIN - AirOff,I/O,b37fe9e9-8f16-48d0-afb4-f10e77fe2a69,,2020-09-22-16:32:05.742,2020-09-22-16:32:05.777
+Successful,Write,Change offset,AIN - AirOff,I/O,4ce730db-27fd-4894-88cf-789f94c2704c,,2020-09-22-16:32:06.388,2020-09-22-16:32:06.440
+Successful,Check,Verify value read,AIN - AirOff,I/O,6e29a2cb-002c-45f6-9bed-9111707ac992,,2020-09-22-16:32:07.040,2020-09-22-16:32:07.121
+Failed,Write,Trigger alarm,AIN - AirOff,I/O,6dfcafbe-0587-41db-9259-6fd71e8e63af,"1° write 'TRUE' in 'IO_mng.Ain.AinFB[2].PrbAlrm_1.AlrmDelay.IN' fails with error: Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[2].PrbAlrm_1.AlrmDelay.IN'; ",2020-09-22-16:32:07.725,2020-09-22-16:32:07.815
+Successful,Check,Check that alarm is not yet triggered,AIN - AirOff,I/O,5dec74b4-b953-4936-a969-5083e8d5998c,,2020-09-22-16:32:08.416,2020-09-22-16:32:08.550
+Failed,WaitUntil,Wait for alarm,AIN - AirOff,I/O,9bab55b2-61d8-4a47-a9d3-2df0e3e8184c,Variable 'Alarms.Al.Al_PrbBroken[2].Info.Active' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-22-16:32:09.164,2020-09-22-16:32:20.258
+Failed,Write,Reset alarm,AIN - AirOff,I/O,97355c43-b395-4a73-a942-e2a3d05c2f8a,"1° write 'FALSE' in 'IO_mng.Ain.AinFB[2].PrbAlrm_1.AlrmDelay.IN' fails with error: Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[2].PrbAlrm_1.AlrmDelay.IN'; ",2020-09-22-16:32:20.866,2020-09-22-16:32:20.866
+Successful,Check,Check that alarm was reset,AIN - AirOff,I/O,6d53a78e-8800-4ffa-a155-c16ca9a74456,,2020-09-22-16:32:21.482,2020-09-22-16:32:21.507
+Successful,Write,Set function on channel 3,AIN - AirOff,I/O,25737eac-db27-4824-be96-2f8b91efcc2b,,2020-09-22-16:32:22.120,2020-09-22-16:32:22.154
+Successful,Write,Change value of S3,AIN - AirOff,I/O,ac45f77d-2d12-452f-90bc-60526e39d844,,2020-09-22-16:32:22.765,2020-09-22-16:32:22.801
+Successful,Check,Verify value read,AIN - AirOff,I/O,58eeaa40-f64c-4b42-b189-6a4365aa8616,,2020-09-22-16:32:23.402,2020-09-22-16:32:23.441
+Successful,Write,Change offset,AIN - AirOff,I/O,c7f2b784-de6f-460f-9e2d-f1c12ba4a345,,2020-09-22-16:32:24.057,2020-09-22-16:32:24.093
+Successful,Check,Verify value read,AIN - AirOff,I/O,2ebbccf3-2226-4f67-b0b3-1a5ca29b9320,,2020-09-22-16:32:24.694,2020-09-22-16:32:24.732
+Failed,Write,Trigger alarm,AIN - AirOff,I/O,00728209-b802-4242-a050-9a1b9da763f0,"1° write 'TRUE' in 'IO_mng.Ain.AinFB[3].PrbAlrm_1.AlrmDelay.IN' fails with error: Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[3].PrbAlrm_1.AlrmDelay.IN'; ",2020-09-22-16:32:25.344,2020-09-22-16:32:25.379
+Successful,Check,Check that alarm is not yet triggered,AIN - AirOff,I/O,bb01cf1a-7539-4c00-af90-825d78d9057d,,2020-09-22-16:32:25.991,2020-09-22-16:32:26.020
+Failed,WaitUntil,Wait for alarm,AIN - AirOff,I/O,03c520e9-b812-492d-9082-f8dfa097fc77,Variable 'Alarms.Al.Al_PrbBroken[3].Info.Active' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-22-16:32:26.633,2020-09-22-16:32:37.734
+Failed,Write,Reset alarm,AIN - AirOff,I/O,2f096d5d-6d31-4d5a-ac8c-91a0b6c89160,"1° write 'FALSE' in 'IO_mng.Ain.AinFB[3].PrbAlrm_1.AlrmDelay.IN' fails with error: Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[3].PrbAlrm_1.AlrmDelay.IN'; ",2020-09-22-16:32:38.335,2020-09-22-16:32:38.335
+Successful,Check,Check that alarm was reset,AIN - AirOff,I/O,606c7c70-a438-4965-9c43-774bb9f68f25,,2020-09-22-16:32:38.946,2020-09-22-16:32:38.967
+Failed,Unlock,Release locks,AIN - AirOff,I/O,5ef325a9-098f-4649-b6e5-1fc4a679ef54,Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[1].PrbAlrm_1.AlrmDelay.IN';Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[2].PrbAlrm_1.AlrmDelay.IN';Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[3].PrbAlrm_1.AlrmDelay.IN';,2020-09-22-16:32:39.569,2020-09-22-16:32:39.570
+Successful,Reference,AIN - Defrost,Main,I/O,fe640fb9-53ba-4541-861a-95b531aa1739,,2020-09-22-16:32:40.180,2020-09-22-16:32:40.180
+Successful,Reference,Setup,AIN - Defrost,I/O,307e6292-8c79-4e62-afb9-ce92b6230dee,,2020-09-22-16:32:40.180,2020-09-22-16:32:40.182
+Successful,Write,Inhibit exceptions and wizard,Setup - Inputs,I/O,ae900aa4-4620-43fe-b9aa-3a01e59c141b,,2020-09-22-16:32:40.182,2020-09-22-16:32:40.535
+Successful,Write,Virtualize U,Setup - Inputs,I/O,82142494-a556-436f-b264-167482231531,,2020-09-22-16:32:40.535,2020-09-22-16:32:40.919
+Successful,Write,Virtualize ID,Setup - Inputs,I/O,683345e2-1e0c-426d-8327-0034bb3449ea,,2020-09-22-16:32:40.919,2020-09-22-16:32:41.271
+Successful,Write,Preset all U to 0,Setup - Inputs,I/O,e5f542b3-f09d-4496-abb8-a27774c5d91e,,2020-09-22-16:32:41.271,2020-09-22-16:32:41.903
+Successful,Write,Preset all ID to FALSE,Setup - Inputs,I/O,34764468-901a-4f7c-8381-12d4fdacc116,,2020-09-22-16:32:41.904,2020-09-22-16:32:42.159
+Successful,Write,Preset all analog inputs as disabled,Setup - Inputs,I/O,5867526d-4197-40aa-b8fb-a3fd04b9a29b,,2020-09-22-16:32:42.160,2020-09-22-16:32:42.705
+Successful,Write,Preset all digital inputs as disabled,Setup - Inputs,I/O,0899ae3f-f399-44fc-ba4c-aa52a6a3a174,,2020-09-22-16:32:42.706,2020-09-22-16:32:43.586
+Successful,Write,Preset all analog inputs offsets as 0,Setup - Inputs,I/O,44329eeb-683b-435b-b10f-290c1bd31509,,2020-09-22-16:32:43.587,2020-09-22-16:32:44.163
+Successful,Write,Preset all digital inputs logics,Setup - Inputs,I/O,9f6e8273-cac4-4098-97c8-8222da706871,,2020-09-22-16:32:44.163,2020-09-22-16:32:45.002
+Failed,Lock,Take the lock on alarm triggers,AIN - Defrost,I/O,69a234db-57be-430c-81ea-1a8aa1565438,Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[1].PrbAlrm_1.AlrmDelay.IN';Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[2].PrbAlrm_1.AlrmDelay.IN';Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[3].PrbAlrm_1.AlrmDelay.IN';,2020-09-22-16:32:45.616,2020-09-22-16:32:45.617
+Successful,Write,Set function on channel 1,AIN - Defrost,I/O,c8a05ee2-4213-415e-a199-b29adcbe43eb,,2020-09-22-16:32:46.230,2020-09-22-16:32:46.312
+Successful,Write,Change value of S1,AIN - Defrost,I/O,f72b9ade-e579-42a8-b0c0-ce07d1a60d32,,2020-09-22-16:32:46.914,2020-09-22-16:32:46.950
+Successful,Check,Verify value read,AIN - Defrost,I/O,dec705b8-9b6d-4cf3-ac8f-27445e894119,,2020-09-22-16:32:47.562,2020-09-22-16:32:47.607
+Successful,Write,Change offset,AIN - Defrost,I/O,08c0a698-a2fc-4415-be86-15ace526422e,,2020-09-22-16:32:48.217,2020-09-22-16:32:48.316
+Successful,Check,Verify value read,AIN - Defrost,I/O,4b45a191-3101-4809-b653-6ce88986fd69,,2020-09-22-16:32:48.928,2020-09-22-16:32:49.004
+Failed,Write,Trigger alarm,AIN - Defrost,I/O,e372e15e-8f14-4d03-bf1d-eb8e478ed06b,"1° write 'TRUE' in 'IO_mng.Ain.AinFB[1].PrbAlrm_1.AlrmDelay.IN' fails with error: Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[1].PrbAlrm_1.AlrmDelay.IN'; ",2020-09-22-16:32:49.618,2020-09-22-16:32:49.741
+Successful,Check,Check that alarm is not yet triggered,AIN - Defrost,I/O,423b9871-5705-44fd-a803-852d95cfaf0d,,2020-09-22-16:32:50.352,2020-09-22-16:32:50.381
+Failed,WaitUntil,Wait for alarm,AIN - Defrost,I/O,dba27912-1956-4e9f-ba40-f20516ef243f,Variable 'Alarms.Al.Al_PrbBroken[1].Info.Active' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-22-16:32:50.982,2020-09-22-16:33:02.111
+Failed,Write,Reset alarm,AIN - Defrost,I/O,666a1bc6-f2fb-4849-a7ae-45dc2dd9dbef,"1° write 'FALSE' in 'IO_mng.Ain.AinFB[1].PrbAlrm_1.AlrmDelay.IN' fails with error: Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[1].PrbAlrm_1.AlrmDelay.IN'; ",2020-09-22-16:33:02.712,2020-09-22-16:33:02.712
+Successful,Check,Check that alarm was reset,AIN - Defrost,I/O,d2a9aeae-6515-4504-9ac7-e6182b4ce1f0,,2020-09-22-16:33:03.319,2020-09-22-16:33:03.469
+Successful,Write,Set function on channel 2,AIN - Defrost,I/O,5b7ba8e0-5b8b-47c9-917e-87aa7b7da638,,2020-09-22-16:33:04.070,2020-09-22-16:33:04.104
+Successful,Write,Change value of S2,AIN - Defrost,I/O,3872e705-d185-4c77-a47a-0acd281b0510,,2020-09-22-16:33:04.715,2020-09-22-16:33:04.766
+Successful,Check,Verify value read,AIN - Defrost,I/O,ca53f4ae-1f16-4782-9331-9e707f72d6ac,,2020-09-22-16:33:05.367,2020-09-22-16:33:05.455
+Successful,Write,Change offset,AIN - Defrost,I/O,82e811c4-b5f9-444c-adb2-fdd32312ec27,,2020-09-22-16:33:06.054,2020-09-22-16:33:06.148
+Successful,Check,Verify value read,AIN - Defrost,I/O,d63c7464-9ee5-41e3-94ca-dd2f7176e31c,,2020-09-22-16:33:06.757,2020-09-22-16:33:06.900
+Failed,Write,Trigger alarm,AIN - Defrost,I/O,dbb993b4-28ce-4c76-8a53-623a8ab0f5bc,"1° write 'TRUE' in 'IO_mng.Ain.AinFB[2].PrbAlrm_1.AlrmDelay.IN' fails with error: Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[2].PrbAlrm_1.AlrmDelay.IN'; ",2020-09-22-16:33:07.509,2020-09-22-16:33:07.546
+Successful,Check,Check that alarm is not yet triggered,AIN - Defrost,I/O,05bd3487-4b9d-43b2-9800-ec1d3847ff83,,2020-09-22-16:33:08.147,2020-09-22-16:33:08.170
+Failed,WaitUntil,Wait for alarm,AIN - Defrost,I/O,55d19ee4-9e3c-432e-b9a4-ac3cc7ab13ed,Variable 'Alarms.Al.Al_PrbBroken[2].Info.Active' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-22-16:33:08.785,2020-09-22-16:33:19.790
+Failed,Write,Reset alarm,AIN - Defrost,I/O,cfb387aa-9a62-4e4a-8a5f-55c403f6fbda,"1° write 'FALSE' in 'IO_mng.Ain.AinFB[2].PrbAlrm_1.AlrmDelay.IN' fails with error: Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[2].PrbAlrm_1.AlrmDelay.IN'; ",2020-09-22-16:33:20.399,2020-09-22-16:33:20.399
+Successful,Check,Check that alarm was reset,AIN - Defrost,I/O,45cfcfa2-a802-4071-978b-32e88b67b457,,2020-09-22-16:33:21.010,2020-09-22-16:33:21.108
+Successful,Write,Set function on channel 3,AIN - Defrost,I/O,a186092a-ec32-4068-a52a-f7893862f9ca,,2020-09-22-16:33:21.710,2020-09-22-16:33:21.744
+Successful,Write,Change value of S3,AIN - Defrost,I/O,ddf549f6-6834-46b1-9b5a-bdb1d0c31751,,2020-09-22-16:33:22.356,2020-09-22-16:33:22.392
+Successful,Check,Verify value read,AIN - Defrost,I/O,47246286-e378-4f3a-b9c6-2e3673854531,,2020-09-22-16:33:22.994,2020-09-22-16:33:23.064
+Successful,Write,Change offset,AIN - Defrost,I/O,52b8cf8a-3ef1-45e0-9aed-ea00a8dfd292,,2020-09-22-16:33:23.664,2020-09-22-16:33:23.700
+Successful,Check,Verify value read,AIN - Defrost,I/O,7552f680-8ab0-4127-a276-049e92e4535a,,2020-09-22-16:33:24.305,2020-09-22-16:33:24.340
+Failed,Write,Trigger alarm,AIN - Defrost,I/O,a2b430cc-a52d-4e7f-9b5f-43e1cf0069d6,"1° write 'TRUE' in 'IO_mng.Ain.AinFB[3].PrbAlrm_1.AlrmDelay.IN' fails with error: Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[3].PrbAlrm_1.AlrmDelay.IN'; ",2020-09-22-16:33:24.954,2020-09-22-16:33:25.031
+Successful,Check,Check that alarm is not yet triggered,AIN - Defrost,I/O,cce1b8b6-add4-42d1-8b61-f28a524b7a37,,2020-09-22-16:33:25.645,2020-09-22-16:33:25.670
+Failed,WaitUntil,Wait for alarm,AIN - Defrost,I/O,95d52e20-0f22-4d8a-ab37-fe6de2e7420a,Variable 'Alarms.Al.Al_PrbBroken[3].Info.Active' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-22-16:33:26.272,2020-09-22-16:33:37.382
+Failed,Write,Reset alarm,AIN - Defrost,I/O,8d581bcd-88b2-4ef5-b061-5b80599ebf61,"1° write 'FALSE' in 'IO_mng.Ain.AinFB[3].PrbAlrm_1.AlrmDelay.IN' fails with error: Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[3].PrbAlrm_1.AlrmDelay.IN'; ",2020-09-22-16:33:37.993,2020-09-22-16:33:37.993
+Successful,Check,Check that alarm was reset,AIN - Defrost,I/O,2af1d000-f072-4380-a502-595b49a814d8,,2020-09-22-16:33:38.602,2020-09-22-16:33:38.751
+Failed,Unlock,Release locks,AIN - Defrost,I/O,21117025-e545-4570-97ad-7a010a5a3bf9,Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[1].PrbAlrm_1.AlrmDelay.IN';Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[2].PrbAlrm_1.AlrmDelay.IN';Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[3].PrbAlrm_1.AlrmDelay.IN';,2020-09-22-16:33:39.351,2020-09-22-16:33:39.352
+Successful,Reference,AIN - AirOn,Main,I/O,c07a19e6-d155-42ea-b91e-6829ddf315b6,,2020-09-22-16:33:39.965,2020-09-22-16:33:39.965
+Successful,Reference,Setup,AIN - AirOn,I/O,b7c6f3c1-c721-4b5d-86ef-3056a08bdfbb,,2020-09-22-16:33:39.965,2020-09-22-16:33:39.966
+Successful,Write,Inhibit exceptions and wizard,Setup - Inputs,I/O,ae900aa4-4620-43fe-b9aa-3a01e59c141b,,2020-09-22-16:33:39.967,2020-09-22-16:33:40.255
+Successful,Write,Virtualize U,Setup - Inputs,I/O,82142494-a556-436f-b264-167482231531,,2020-09-22-16:33:40.260,2020-09-22-16:33:40.543
+Successful,Write,Virtualize ID,Setup - Inputs,I/O,683345e2-1e0c-426d-8327-0034bb3449ea,,2020-09-22-16:33:40.543,2020-09-22-16:33:41.006
+Successful,Write,Preset all U to 0,Setup - Inputs,I/O,e5f542b3-f09d-4496-abb8-a27774c5d91e,,2020-09-22-16:33:41.006,2020-09-22-16:33:41.571
+Successful,Write,Preset all ID to FALSE,Setup - Inputs,I/O,34764468-901a-4f7c-8381-12d4fdacc116,,2020-09-22-16:33:41.571,2020-09-22-16:33:41.922
+Successful,Write,Preset all analog inputs as disabled,Setup - Inputs,I/O,5867526d-4197-40aa-b8fb-a3fd04b9a29b,,2020-09-22-16:33:41.922,2020-09-22-16:33:42.479
+Successful,Write,Preset all digital inputs as disabled,Setup - Inputs,I/O,0899ae3f-f399-44fc-ba4c-aa52a6a3a174,,2020-09-22-16:33:42.479,2020-09-22-16:33:43.264
+Successful,Write,Preset all analog inputs offsets as 0,Setup - Inputs,I/O,44329eeb-683b-435b-b10f-290c1bd31509,,2020-09-22-16:33:43.264,2020-09-22-16:33:43.827
+Successful,Write,Preset all digital inputs logics,Setup - Inputs,I/O,9f6e8273-cac4-4098-97c8-8222da706871,,2020-09-22-16:33:43.827,2020-09-22-16:33:44.636
+Failed,Lock,Take the lock on alarm triggers,AIN - AirOn,I/O,6a405eb3-ca91-499a-90c2-366ce35602de,Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[1].PrbAlrm_1.AlrmDelay.IN';Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[2].PrbAlrm_1.AlrmDelay.IN';Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[3].PrbAlrm_1.AlrmDelay.IN';,2020-09-22-16:33:45.245,2020-09-22-16:33:45.253
+Successful,Write,Set function on channel 1,AIN - AirOn,I/O,0dd1472b-582f-4644-9ee4-ca534b209284,,2020-09-22-16:33:45.868,2020-09-22-16:33:45.988
+Successful,Write,Change value of S1,AIN - AirOn,I/O,4e1238f0-d081-43c9-8114-cdafa3a7c007,,2020-09-22-16:33:46.601,2020-09-22-16:33:46.637
+Successful,Check,Verify value read,AIN - AirOn,I/O,3bb4f12d-eb36-4b72-b6e6-a8108be3bbb5,,2020-09-22-16:33:47.249,2020-09-22-16:33:47.293
+Successful,Write,Change offset,AIN - AirOn,I/O,70011a8c-7c3d-4d91-8e8f-702ec2fd1c8b,,2020-09-22-16:33:47.908,2020-09-22-16:33:47.987
+Successful,Check,Verify value read,AIN - AirOn,I/O,21fde0be-c23f-4a83-8cbb-6af2a792093d,,2020-09-22-16:33:48.603,2020-09-22-16:33:48.675
+Failed,Write,Trigger alarm,AIN - AirOn,I/O,91dcb181-2f84-49a2-9ac3-6536486753cf,"1° write 'TRUE' in 'IO_mng.Ain.AinFB[1].PrbAlrm_1.AlrmDelay.IN' fails with error: Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[1].PrbAlrm_1.AlrmDelay.IN'; ",2020-09-22-16:33:49.276,2020-09-22-16:33:49.419
+Successful,Check,Check that alarm is not yet triggered,AIN - AirOn,I/O,bb4711e0-aa46-4c7f-af45-695c075d9042,,2020-09-22-16:33:50.033,2020-09-22-16:33:50.059
+Failed,WaitUntil,Wait for alarm,AIN - AirOn,I/O,c32083ad-300c-4ff9-a7f6-60d0f4966043,Variable 'Alarms.Al.Al_PrbBroken[1].Info.Active' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-22-16:33:50.670,2020-09-22-16:34:01.774
+Failed,Write,Reset alarm,AIN - AirOn,I/O,e975f281-c7c8-45f1-a253-1b20193fe762,"1° write 'FALSE' in 'IO_mng.Ain.AinFB[1].PrbAlrm_1.AlrmDelay.IN' fails with error: Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[1].PrbAlrm_1.AlrmDelay.IN'; ",2020-09-22-16:34:02.382,2020-09-22-16:34:02.382
+Successful,Check,Check that alarm was reset,AIN - AirOn,I/O,ced1f6e5-cce1-4c97-8a93-8697defd8e05,,2020-09-22-16:34:02.991,2020-09-22-16:34:03.018
+Successful,Write,Set function on channel 2,AIN - AirOn,I/O,eeb03f72-1a1a-4d00-85e1-ade5f906a45f,,2020-09-22-16:34:03.632,2020-09-22-16:34:03.667
+Successful,Write,Change value of S2,AIN - AirOn,I/O,3ce7f058-6daa-4750-b627-455c852f70c3,,2020-09-22-16:34:04.278,2020-09-22-16:34:04.314
+Successful,Check,Verify value read,AIN - AirOn,I/O,f1f722d0-87d0-4e8c-8a1f-25a18e46e4e7,,2020-09-22-16:34:04.916,2020-09-22-16:34:04.954
+Successful,Write,Change offset,AIN - AirOn,I/O,0baabde8-11dc-4bba-b984-1d6b07547bc0,,2020-09-22-16:34:05.570,2020-09-22-16:34:05.606
+Successful,Check,Verify value read,AIN - AirOn,I/O,8f8e7919-7ebb-4986-bc51-5cc4832ae0ad,,2020-09-22-16:34:06.217,2020-09-22-16:34:06.246
+Failed,Write,Trigger alarm,AIN - AirOn,I/O,505f343b-d8a6-4108-af63-a2772f8f0205,"1° write 'TRUE' in 'IO_mng.Ain.AinFB[2].PrbAlrm_1.AlrmDelay.IN' fails with error: Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[2].PrbAlrm_1.AlrmDelay.IN'; ",2020-09-22-16:34:06.851,2020-09-22-16:34:06.887
+Successful,Check,Check that alarm is not yet triggered,AIN - AirOn,I/O,f05de22b-8ccd-4366-af1d-c21306cb4767,,2020-09-22-16:34:07.500,2020-09-22-16:34:07.559
+Failed,WaitUntil,Wait for alarm,AIN - AirOn,I/O,8ff4b0a7-32a2-44ab-a98c-335c8c1b9098,Variable 'Alarms.Al.Al_PrbBroken[2].Info.Active' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-22-16:34:08.173,2020-09-22-16:34:19.227
+Failed,Write,Reset alarm,AIN - AirOn,I/O,bcd0dbce-6040-415e-bcc5-89b58c26a663,"1° write 'FALSE' in 'IO_mng.Ain.AinFB[2].PrbAlrm_1.AlrmDelay.IN' fails with error: Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[2].PrbAlrm_1.AlrmDelay.IN'; ",2020-09-22-16:34:19.835,2020-09-22-16:34:19.835
+Successful,Check,Check that alarm was reset,AIN - AirOn,I/O,59ad8531-64ab-47ab-a4e7-9b09ae8da37a,,2020-09-22-16:34:20.449,2020-09-22-16:34:20.501
+Successful,Write,Set function on channel 3,AIN - AirOn,I/O,bbd2f27a-b6f8-45a3-a4a1-621814cc95c3,,2020-09-22-16:34:21.103,2020-09-22-16:34:21.137
+Successful,Write,Change value of S3,AIN - AirOn,I/O,53bd5bdf-1b1b-47de-9eb1-2cc406f66f4c,,2020-09-22-16:34:21.742,2020-09-22-16:34:21.779
+Successful,Check,Verify value read,AIN - AirOn,I/O,4320e339-dca5-46a3-87f0-0b528a8f70c3,,2020-09-22-16:34:22.391,2020-09-22-16:34:22.418
+Successful,Write,Change offset,AIN - AirOn,I/O,31724c2a-4038-4093-b89b-0ea37a173985,,2020-09-22-16:34:23.032,2020-09-22-16:34:23.067
+Successful,Check,Verify value read,AIN - AirOn,I/O,fd800e48-1c40-4e4d-b86b-c9db338d9224,,2020-09-22-16:34:23.683,2020-09-22-16:34:23.739
+Failed,Write,Trigger alarm,AIN - AirOn,I/O,2a3d4a16-1fa3-4a49-99b1-ded9ace1fe3d,"1° write 'TRUE' in 'IO_mng.Ain.AinFB[3].PrbAlrm_1.AlrmDelay.IN' fails with error: Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[3].PrbAlrm_1.AlrmDelay.IN'; ",2020-09-22-16:34:24.351,2020-09-22-16:34:24.387
+Successful,Check,Check that alarm is not yet triggered,AIN - AirOn,I/O,8c578fbc-c6b7-4000-89c6-1e6b02bb02f3,,2020-09-22-16:34:25.002,2020-09-22-16:34:25.048
+Failed,WaitUntil,Wait for alarm,AIN - AirOn,I/O,6800c14f-54b2-40ae-ba5f-15a8acc0381a,Variable 'Alarms.Al.Al_PrbBroken[3].Info.Active' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-22-16:34:25.647,2020-09-22-16:34:36.698
+Failed,Write,Reset alarm,AIN - AirOn,I/O,e3460c9e-37e8-4512-af8f-1f09022a8f89,"1° write 'FALSE' in 'IO_mng.Ain.AinFB[3].PrbAlrm_1.AlrmDelay.IN' fails with error: Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[3].PrbAlrm_1.AlrmDelay.IN'; ",2020-09-22-16:34:37.309,2020-09-22-16:34:37.309
+Successful,Check,Check that alarm was reset,AIN - AirOn,I/O,15fd4dcd-2c4d-4b57-908c-439e0f061c7b,,2020-09-22-16:34:37.921,2020-09-22-16:34:37.957
+Failed,Unlock,Release locks,AIN - AirOn,I/O,05eb0ed4-747f-4416-a8db-53d31686d012,Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[1].PrbAlrm_1.AlrmDelay.IN';Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[2].PrbAlrm_1.AlrmDelay.IN';Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[3].PrbAlrm_1.AlrmDelay.IN';,2020-09-22-16:34:38.574,2020-09-22-16:34:38.574
+Successful,Reference,AIN - Defrost2,Main,I/O,38219aff-eb6b-485b-b56e-236819e45f63,,2020-09-22-16:34:39.184,2020-09-22-16:34:39.184
+Successful,Reference,Setup,AIN - Defrost2,I/O,f7fdeafc-58a3-4baf-b57b-6087a58931df,,2020-09-22-16:34:39.184,2020-09-22-16:34:39.185
+Successful,Write,Inhibit exceptions and wizard,Setup - Inputs,I/O,ae900aa4-4620-43fe-b9aa-3a01e59c141b,,2020-09-22-16:34:39.186,2020-09-22-16:34:39.509
+Successful,Write,Virtualize U,Setup - Inputs,I/O,82142494-a556-436f-b264-167482231531,,2020-09-22-16:34:39.509,2020-09-22-16:34:39.908
+Successful,Write,Virtualize ID,Setup - Inputs,I/O,683345e2-1e0c-426d-8327-0034bb3449ea,,2020-09-22-16:34:39.909,2020-09-22-16:34:40.261
+Successful,Write,Preset all U to 0,Setup - Inputs,I/O,e5f542b3-f09d-4496-abb8-a27774c5d91e,,2020-09-22-16:34:40.261,2020-09-22-16:34:40.888
+Successful,Write,Preset all ID to FALSE,Setup - Inputs,I/O,34764468-901a-4f7c-8381-12d4fdacc116,,2020-09-22-16:34:40.889,2020-09-22-16:34:41.145
+Successful,Write,Preset all analog inputs as disabled,Setup - Inputs,I/O,5867526d-4197-40aa-b8fb-a3fd04b9a29b,,2020-09-22-16:34:41.145,2020-09-22-16:34:41.729
+Successful,Write,Preset all digital inputs as disabled,Setup - Inputs,I/O,0899ae3f-f399-44fc-ba4c-aa52a6a3a174,,2020-09-22-16:34:41.729,2020-09-22-16:34:42.605
+Successful,Write,Preset all analog inputs offsets as 0,Setup - Inputs,I/O,44329eeb-683b-435b-b10f-290c1bd31509,,2020-09-22-16:34:42.605,2020-09-22-16:34:43.175
+Successful,Write,Preset all digital inputs logics,Setup - Inputs,I/O,9f6e8273-cac4-4098-97c8-8222da706871,,2020-09-22-16:34:43.175,2020-09-22-16:34:43.982
+Failed,Lock,Take the lock on alarm triggers,AIN - Defrost2,I/O,867896ff-2113-414c-8f30-2eb0a774f93e,Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[1].PrbAlrm_1.AlrmDelay.IN';Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[2].PrbAlrm_1.AlrmDelay.IN';Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[3].PrbAlrm_1.AlrmDelay.IN';,2020-09-22-16:34:44.593,2020-09-22-16:34:44.593
+Successful,Write,Set function on channel 1,AIN - Defrost2,I/O,165ce4ee-3abc-4c81-a619-83053d3d571c,,2020-09-22-16:34:45.206,2020-09-22-16:34:45.296
+Successful,Write,Change value of S1,AIN - Defrost2,I/O,c0ddaad6-33a4-4a9a-bf28-152aef27bfcf,,2020-09-22-16:34:45.899,2020-09-22-16:34:45.935
+Successful,Check,Verify value read,AIN - Defrost2,I/O,0f33b087-136a-46d6-b18c-c278489c4399,,2020-09-22-16:34:46.547,2020-09-22-16:34:46.576
+Successful,Write,Change offset,AIN - Defrost2,I/O,c1510d83-748c-42fc-a5e3-9c50e06672d9,,2020-09-22-16:34:47.181,2020-09-22-16:34:47.257
+Successful,Check,Verify value read,AIN - Defrost2,I/O,2367407a-3b80-4c4c-ae78-cf454019bae1,,2020-09-22-16:34:47.866,2020-09-22-16:34:47.897
+Failed,Write,Trigger alarm,AIN - Defrost2,I/O,e8d4ba1b-d90d-4ad9-a270-eff40db9fd72,"1° write 'TRUE' in 'IO_mng.Ain.AinFB[1].PrbAlrm_1.AlrmDelay.IN' fails with error: Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[1].PrbAlrm_1.AlrmDelay.IN'; ",2020-09-22-16:34:48.510,2020-09-22-16:34:48.560
+Successful,Check,Check that alarm is not yet triggered,AIN - Defrost2,I/O,abcbeb7d-c3ae-4ef5-83dd-724dc97c7caf,,2020-09-22-16:34:49.166,2020-09-22-16:34:49.248
+Failed,WaitUntil,Wait for alarm,AIN - Defrost2,I/O,4ed63443-f037-4587-a065-fb5d6ad9b6b0,Variable 'Alarms.Al.Al_PrbBroken[1].Info.Active' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-22-16:34:49.853,2020-09-22-16:35:00.883
+Failed,Write,Reset alarm,AIN - Defrost2,I/O,bbea8b75-296a-4af3-8117-6c68e87d1ca6,"1° write 'FALSE' in 'IO_mng.Ain.AinFB[1].PrbAlrm_1.AlrmDelay.IN' fails with error: Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[1].PrbAlrm_1.AlrmDelay.IN'; ",2020-09-22-16:35:01.491,2020-09-22-16:35:01.491
+Successful,Check,Check that alarm was reset,AIN - Defrost2,I/O,e8bdf524-131b-4118-9d55-6ed4d0bbd9e5,,2020-09-22-16:35:02.103,2020-09-22-16:35:02.159
+Successful,Write,Set function on channel 2,AIN - Defrost2,I/O,3f8a47de-a88f-4a72-8e29-febcd7e7df2d,,2020-09-22-16:35:02.759,2020-09-22-16:35:02.793
+Successful,Write,Change value of S2,AIN - Defrost2,I/O,814ee37a-ce73-4259-a9d6-1ee8838d60a1,,2020-09-22-16:35:03.407,2020-09-22-16:35:03.443
+Successful,Check,Verify value read,AIN - Defrost2,I/O,4a389069-2af6-4983-9afa-168c4c22aa41,,2020-09-22-16:35:04.055,2020-09-22-16:35:04.083
+Successful,Write,Change offset,AIN - Defrost2,I/O,67099d40-059b-4b66-8479-2eaf4b47b981,,2020-09-22-16:35:04.698,2020-09-22-16:35:04.734
+Successful,Check,Verify value read,AIN - Defrost2,I/O,514ebceb-c4db-4ea6-bc50-7f66d26e4543,,2020-09-22-16:35:05.349,2020-09-22-16:35:05.391
+Failed,Write,Trigger alarm,AIN - Defrost2,I/O,79688d08-b006-4c67-99f7-fb9ff5099523,"1° write 'TRUE' in 'IO_mng.Ain.AinFB[2].PrbAlrm_1.AlrmDelay.IN' fails with error: Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[2].PrbAlrm_1.AlrmDelay.IN'; ",2020-09-22-16:35:05.992,2020-09-22-16:35:06.029
+Successful,Check,Check that alarm is not yet triggered,AIN - Defrost2,I/O,ce578dba-3376-4982-82e4-44a376315add,,2020-09-22-16:35:06.640,2020-09-22-16:35:06.668
+Failed,WaitUntil,Wait for alarm,AIN - Defrost2,I/O,fbe66b62-d5fe-40b0-8424-aa56fc7f6e3c,Variable 'Alarms.Al.Al_PrbBroken[2].Info.Active' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-22-16:35:07.281,2020-09-22-16:35:18.398
+Failed,Write,Reset alarm,AIN - Defrost2,I/O,fc835066-ddab-4cae-8e01-48659959d357,"1° write 'FALSE' in 'IO_mng.Ain.AinFB[2].PrbAlrm_1.AlrmDelay.IN' fails with error: Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[2].PrbAlrm_1.AlrmDelay.IN'; ",2020-09-22-16:35:19.011,2020-09-22-16:35:19.011
+Successful,Check,Check that alarm was reset,AIN - Defrost2,I/O,fc54a503-0f23-415e-ad45-f3e9c33a24f2,,2020-09-22-16:35:19.619,2020-09-22-16:35:19.646
+Successful,Write,Set function on channel 3,AIN - Defrost2,I/O,d4c9888f-e1bc-4108-92cc-9ad3f3e49f56,,2020-09-22-16:35:20.259,2020-09-22-16:35:20.293
+Successful,Write,Change value of S3,AIN - Defrost2,I/O,f53e5428-a0e1-449c-8b8e-f35fde38eba5,,2020-09-22-16:35:20.906,2020-09-22-16:35:20.943
+Successful,Check,Verify value read,AIN - Defrost2,I/O,ee4a70a8-caad-4c43-99d4-f49c27a6d008,,2020-09-22-16:35:21.554,2020-09-22-16:35:21.582
+Successful,Write,Change offset,AIN - Defrost2,I/O,db73801e-8b16-411a-8440-658b833b0ea0,,2020-09-22-16:35:22.195,2020-09-22-16:35:22.231
+Successful,Check,Verify value read,AIN - Defrost2,I/O,86376cba-4df9-4bdd-963d-b10ac215a310,,2020-09-22-16:35:22.835,2020-09-22-16:35:22.871
+Failed,Write,Trigger alarm,AIN - Defrost2,I/O,d46e7f86-62b2-425b-bf27-538c9a1154f0,"1° write 'TRUE' in 'IO_mng.Ain.AinFB[3].PrbAlrm_1.AlrmDelay.IN' fails with error: Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[3].PrbAlrm_1.AlrmDelay.IN'; ",2020-09-22-16:35:23.481,2020-09-22-16:35:23.539
+Successful,Check,Check that alarm is not yet triggered,AIN - Defrost2,I/O,dd1aed2c-2ca6-4aba-b07e-344ba577f419,,2020-09-22-16:35:24.151,2020-09-22-16:35:24.179
+Failed,WaitUntil,Wait for alarm,AIN - Defrost2,I/O,92b7a31a-3d94-4baa-b3c5-04d78f609901,Variable 'Alarms.Al.Al_PrbBroken[3].Info.Active' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-22-16:35:24.793,2020-09-22-16:35:35.915
+Failed,Write,Reset alarm,AIN - Defrost2,I/O,e07cbc38-ae26-4201-9406-2e5ac4e2c40b,"1° write 'FALSE' in 'IO_mng.Ain.AinFB[3].PrbAlrm_1.AlrmDelay.IN' fails with error: Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[3].PrbAlrm_1.AlrmDelay.IN'; ",2020-09-22-16:35:36.525,2020-09-22-16:35:36.525
+Successful,Check,Check that alarm was reset,AIN - Defrost2,I/O,8ab22fbb-3f7d-48d8-adca-2bdd4d7b6540,,2020-09-22-16:35:37.135,2020-09-22-16:35:37.339
+Failed,Unlock,Release locks,AIN - Defrost2,I/O,253fed4c-9db8-4254-86b5-df12298a84df,Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[1].PrbAlrm_1.AlrmDelay.IN';Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[2].PrbAlrm_1.AlrmDelay.IN';Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[3].PrbAlrm_1.AlrmDelay.IN';,2020-09-22-16:35:37.949,2020-09-22-16:35:37.949
+Successful,Reference,AIN - Auxiliary,Main,I/O,a95ffd0c-bbc0-4d45-8d23-81d8c40e3bf4,,2020-09-22-16:35:38.556,2020-09-22-16:35:38.557
+Successful,Reference,Setup,AIN - Auxiliary,I/O,8f1d0773-d5f5-4b65-863f-9afb27d1a10b,,2020-09-22-16:35:38.557,2020-09-22-16:35:38.558
+Successful,Write,Inhibit exceptions and wizard,Setup - Inputs,I/O,ae900aa4-4620-43fe-b9aa-3a01e59c141b,,2020-09-22-16:35:38.559,2020-09-22-16:35:38.795
+Successful,Write,Virtualize U,Setup - Inputs,I/O,82142494-a556-436f-b264-167482231531,,2020-09-22-16:35:38.795,2020-09-22-16:35:39.290
+Successful,Write,Virtualize ID,Setup - Inputs,I/O,683345e2-1e0c-426d-8327-0034bb3449ea,,2020-09-22-16:35:39.291,2020-09-22-16:35:39.547
+Successful,Write,Preset all U to 0,Setup - Inputs,I/O,e5f542b3-f09d-4496-abb8-a27774c5d91e,,2020-09-22-16:35:39.547,2020-09-22-16:35:40.212
+Successful,Write,Preset all ID to FALSE,Setup - Inputs,I/O,34764468-901a-4f7c-8381-12d4fdacc116,,2020-09-22-16:35:40.212,2020-09-22-16:35:40.499
+Successful,Write,Preset all analog inputs as disabled,Setup - Inputs,I/O,5867526d-4197-40aa-b8fb-a3fd04b9a29b,,2020-09-22-16:35:40.500,2020-09-22-16:35:41.034
+Successful,Write,Preset all digital inputs as disabled,Setup - Inputs,I/O,0899ae3f-f399-44fc-ba4c-aa52a6a3a174,,2020-09-22-16:35:41.034,2020-09-22-16:35:41.994
+Successful,Write,Preset all analog inputs offsets as 0,Setup - Inputs,I/O,44329eeb-683b-435b-b10f-290c1bd31509,,2020-09-22-16:35:41.994,2020-09-22-16:35:42.472
+Successful,Write,Preset all digital inputs logics,Setup - Inputs,I/O,9f6e8273-cac4-4098-97c8-8222da706871,,2020-09-22-16:35:42.472,2020-09-22-16:35:43.400
+Failed,Lock,Take the lock on alarm triggers,AIN - Auxiliary,I/O,95561e2c-42fd-4a67-9ce8-489b8c32ef63,Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[1].PrbAlrm_1.AlrmDelay.IN';Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[2].PrbAlrm_1.AlrmDelay.IN';Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[3].PrbAlrm_1.AlrmDelay.IN';,2020-09-22-16:35:44.011,2020-09-22-16:35:44.011
+Successful,Write,Set function on channel 1,AIN - Auxiliary,I/O,de803bea-5566-40d0-9cb7-79c878b28e01,,2020-09-22-16:35:44.623,2020-09-22-16:35:44.694
+Successful,Write,Change value of S1,AIN - Auxiliary,I/O,e7c4b9f4-b083-40f6-8a61-85b31130f213,,2020-09-22-16:35:45.310,2020-09-22-16:35:45.346
+Successful,Check,Verify value read,AIN - Auxiliary,I/O,7c21ceee-1221-4229-b774-ca6ecf207617,,2020-09-22-16:35:45.946,2020-09-22-16:35:46.085
+Successful,Write,Change offset,AIN - Auxiliary,I/O,2f9a26ac-038f-4189-a49d-ffacb07c4dc3,,2020-09-22-16:35:46.698,2020-09-22-16:35:46.733
+Successful,Check,Verify value read,AIN - Auxiliary,I/O,ebdfe3aa-33fa-4ed2-9fb5-8b4151112f66,,2020-09-22-16:35:47.344,2020-09-22-16:35:47.373
+Failed,Write,Trigger alarm,AIN - Auxiliary,I/O,a0e19021-87d5-4d22-9485-68008e5dc80e,"1° write 'TRUE' in 'IO_mng.Ain.AinFB[1].PrbAlrm_1.AlrmDelay.IN' fails with error: Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[1].PrbAlrm_1.AlrmDelay.IN'; ",2020-09-22-16:35:47.975,2020-09-22-16:35:48.047
+Successful,Check,Check that alarm is not yet triggered,AIN - Auxiliary,I/O,eec8fdf0-65b9-49c6-9818-04a30afa21d3,,2020-09-22-16:35:48.648,2020-09-22-16:35:48.671
+Failed,WaitUntil,Wait for alarm,AIN - Auxiliary,I/O,71724253-bd4b-4aab-bdfb-e35e88074183,Variable 'Alarms.Al.Al_PrbBroken[1].Info.Active' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-22-16:35:49.286,2020-09-22-16:36:00.414
+Failed,Write,Reset alarm,AIN - Auxiliary,I/O,98511936-5458-4cf7-8d88-a0c8e3e3e18a,"1° write 'FALSE' in 'IO_mng.Ain.AinFB[1].PrbAlrm_1.AlrmDelay.IN' fails with error: Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[1].PrbAlrm_1.AlrmDelay.IN'; ",2020-09-22-16:36:01.025,2020-09-22-16:36:01.026
+Successful,Check,Check that alarm was reset,AIN - Auxiliary,I/O,76a437ab-406d-4a48-b25f-1c05c81264f7,,2020-09-22-16:36:01.632,2020-09-22-16:36:01.773
+Successful,Write,Set function on channel 2,AIN - Auxiliary,I/O,de7395f1-1bd0-4dfc-8415-19d98df5ab0a,,2020-09-22-16:36:02.389,2020-09-22-16:36:02.423
+Successful,Write,Change value of S2,AIN - Auxiliary,I/O,a7e629f8-a91b-4b88-b9d6-c3466ffb1ffe,,2020-09-22-16:36:03.039,2020-09-22-16:36:03.102
+Successful,Check,Verify value read,AIN - Auxiliary,I/O,9048b478-a6e4-45ab-8c94-48bc37d77081,,2020-09-22-16:36:03.711,2020-09-22-16:36:03.743
+Successful,Write,Change offset,AIN - Auxiliary,I/O,d0d57ef7-cabe-49a1-954e-641879563279,,2020-09-22-16:36:04.354,2020-09-22-16:36:04.390
+Successful,Check,Verify value read,AIN - Auxiliary,I/O,186d90a3-0212-4555-93ee-cde25c7f0ce3,,2020-09-22-16:36:04.991,2020-09-22-16:36:05.046
+Failed,Write,Trigger alarm,AIN - Auxiliary,I/O,35122003-7256-4297-944b-dd3e7d5e77c9,"1° write 'TRUE' in 'IO_mng.Ain.AinFB[2].PrbAlrm_1.AlrmDelay.IN' fails with error: Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[2].PrbAlrm_1.AlrmDelay.IN'; ",2020-09-22-16:36:05.648,2020-09-22-16:36:05.740
+Successful,Check,Check that alarm is not yet triggered,AIN - Auxiliary,I/O,d87ddc81-88cf-4a54-bcd2-af2eb4d9527a,,2020-09-22-16:36:06.358,2020-09-22-16:36:06.428
+Failed,WaitUntil,Wait for alarm,AIN - Auxiliary,I/O,82bf7c4b-97a3-4c9c-a105-07659b75f1c3,Variable 'Alarms.Al.Al_PrbBroken[2].Info.Active' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-22-16:36:07.039,2020-09-22-16:36:18.101
+Failed,Write,Reset alarm,AIN - Auxiliary,I/O,57110a0e-5389-49e7-9fb2-55ba01066e1c,"1° write 'FALSE' in 'IO_mng.Ain.AinFB[2].PrbAlrm_1.AlrmDelay.IN' fails with error: Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[2].PrbAlrm_1.AlrmDelay.IN'; ",2020-09-22-16:36:18.710,2020-09-22-16:36:18.711
+Successful,Check,Check that alarm was reset,AIN - Auxiliary,I/O,e1fbdf5d-f610-4117-9786-1e40bfe63dd1,,2020-09-22-16:36:19.319,2020-09-22-16:36:19.428
+Successful,Write,Set function on channel 3,AIN - Auxiliary,I/O,904d7800-8f64-44a8-b4e6-2057668ee609,,2020-09-22-16:36:20.038,2020-09-22-16:36:20.073
+Successful,Write,Change value of S3,AIN - Auxiliary,I/O,57af3560-3f88-4199-986d-d8cd079b2a7f,,2020-09-22-16:36:20.684,2020-09-22-16:36:20.720
+Successful,Check,Verify value read,AIN - Auxiliary,I/O,2d5d6d45-fe89-45b1-8a87-2e7dd77c5f79,,2020-09-22-16:36:21.321,2020-09-22-16:36:21.392
+Successful,Write,Change offset,AIN - Auxiliary,I/O,09c378a6-9050-4bd0-823a-8d1e8fe0e53a,,2020-09-22-16:36:21.993,2020-09-22-16:36:22.030
+Successful,Check,Verify value read,AIN - Auxiliary,I/O,cc3ab09f-4df8-489c-9fe5-ad850f1ab1e0,,2020-09-22-16:36:22.634,2020-09-22-16:36:22.669
+Failed,Write,Trigger alarm,AIN - Auxiliary,I/O,a96057ae-acc9-43f5-b3fc-db2f1379c477,"1° write 'TRUE' in 'IO_mng.Ain.AinFB[3].PrbAlrm_1.AlrmDelay.IN' fails with error: Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[3].PrbAlrm_1.AlrmDelay.IN'; ",2020-09-22-16:36:23.281,2020-09-22-16:36:23.353
+Successful,Check,Check that alarm is not yet triggered,AIN - Auxiliary,I/O,af3d8aba-0ea6-466e-8415-535be96e902a,,2020-09-22-16:36:23.963,2020-09-22-16:36:23.993
+Failed,WaitUntil,Wait for alarm,AIN - Auxiliary,I/O,753b98d2-3d46-40e3-9287-07d247c825a6,Variable 'Alarms.Al.Al_PrbBroken[3].Info.Active' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-22-16:36:24.603,2020-09-22-16:36:35.768
+Failed,Write,Reset alarm,AIN - Auxiliary,I/O,69704016-63a8-47ef-b382-9f90775a25c3,"1° write 'FALSE' in 'IO_mng.Ain.AinFB[3].PrbAlrm_1.AlrmDelay.IN' fails with error: Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[3].PrbAlrm_1.AlrmDelay.IN'; ",2020-09-22-16:36:36.369,2020-09-22-16:36:36.369
+Successful,Check,Check that alarm was reset,AIN - Auxiliary,I/O,8a36b683-bb25-4c34-99fa-1f70074d3f47,,2020-09-22-16:36:36.977,2020-09-22-16:36:37.078
+Failed,Unlock,Release locks,AIN - Auxiliary,I/O,3f6e9922-e509-490a-8178-4e00b32dda55,Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[1].PrbAlrm_1.AlrmDelay.IN';Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[2].PrbAlrm_1.AlrmDelay.IN';Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[3].PrbAlrm_1.AlrmDelay.IN';,2020-09-22-16:36:37.693,2020-09-22-16:36:37.693
+Successful,Reference,AIN - Auxiliary2,Main,I/O,58675067-2439-49e6-aad9-1bd94640d22b,,2020-09-22-16:36:38.310,2020-09-22-16:36:38.310
+Successful,Reference,Setup,AIN - Auxiliary2,I/O,ceea4e52-2037-4bf2-866c-5c1ea201ac8b,,2020-09-22-16:36:38.310,2020-09-22-16:36:38.311
+Successful,Write,Inhibit exceptions and wizard,Setup - Inputs,I/O,ae900aa4-4620-43fe-b9aa-3a01e59c141b,,2020-09-22-16:36:38.312,2020-09-22-16:36:38.551
+Successful,Write,Virtualize U,Setup - Inputs,I/O,82142494-a556-436f-b264-167482231531,,2020-09-22-16:36:38.551,2020-09-22-16:36:39.047
+Successful,Write,Virtualize ID,Setup - Inputs,I/O,683345e2-1e0c-426d-8327-0034bb3449ea,,2020-09-22-16:36:39.047,2020-09-22-16:36:39.303
+Successful,Write,Preset all U to 0,Setup - Inputs,I/O,e5f542b3-f09d-4496-abb8-a27774c5d91e,,2020-09-22-16:36:39.303,2020-09-22-16:36:39.838
+Successful,Write,Preset all ID to FALSE,Setup - Inputs,I/O,34764468-901a-4f7c-8381-12d4fdacc116,,2020-09-22-16:36:39.839,2020-09-22-16:36:40.287
+Successful,Write,Preset all analog inputs as disabled,Setup - Inputs,I/O,5867526d-4197-40aa-b8fb-a3fd04b9a29b,,2020-09-22-16:36:40.287,2020-09-22-16:36:40.743
+Successful,Write,Preset all digital inputs as disabled,Setup - Inputs,I/O,0899ae3f-f399-44fc-ba4c-aa52a6a3a174,,2020-09-22-16:36:40.744,2020-09-22-16:36:41.700
+Successful,Write,Preset all analog inputs offsets as 0,Setup - Inputs,I/O,44329eeb-683b-435b-b10f-290c1bd31509,,2020-09-22-16:36:41.700,2020-09-22-16:36:42.274
+Successful,Write,Preset all digital inputs logics,Setup - Inputs,I/O,9f6e8273-cac4-4098-97c8-8222da706871,,2020-09-22-16:36:42.275,2020-09-22-16:36:43.059
+Failed,Lock,Take the lock on alarm triggers,AIN - Auxiliary2,I/O,3947d63e-1f20-4516-86ab-0bef5fa5c5b8,Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[1].PrbAlrm_1.AlrmDelay.IN';Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[2].PrbAlrm_1.AlrmDelay.IN';Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[3].PrbAlrm_1.AlrmDelay.IN';,2020-09-22-16:36:43.669,2020-09-22-16:36:43.669
+Successful,Write,Set function on channel 1,AIN - Auxiliary2,I/O,cbde8e20-9ed4-4c1e-a9d6-635b288a5b70,,2020-09-22-16:36:44.285,2020-09-22-16:36:44.320
+Successful,Write,Change value of S1,AIN - Auxiliary2,I/O,9ac96dc5-83ef-427d-b55b-8600c9c58eab,,2020-09-22-16:36:44.931,2020-09-22-16:36:44.967
+Successful,Check,Verify value read,AIN - Auxiliary2,I/O,7963e19c-d076-47c7-9576-0fb4d0bbc1df,,2020-09-22-16:36:45.582,2020-09-22-16:36:45.607
+Successful,Write,Change offset,AIN - Auxiliary2,I/O,ce4e3e8e-73ec-4225-9efa-8b682b4745cf,,2020-09-22-16:36:46.221,2020-09-22-16:36:46.257
+Successful,Check,Verify value read,AIN - Auxiliary2,I/O,396030e7-d9e6-439c-9db3-7d3ec6181788,,2020-09-22-16:36:46.872,2020-09-22-16:36:46.897
+Failed,Write,Trigger alarm,AIN - Auxiliary2,I/O,06224de2-57b7-46c7-8683-b3f7e8f4e6ba,"1° write 'TRUE' in 'IO_mng.Ain.AinFB[1].PrbAlrm_1.AlrmDelay.IN' fails with error: Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[1].PrbAlrm_1.AlrmDelay.IN'; ",2020-09-22-16:36:47.509,2020-09-22-16:36:47.545
+Successful,Check,Check that alarm is not yet triggered,AIN - Auxiliary2,I/O,a59af5c9-e0cc-4832-b358-fc4017630183,,2020-09-22-16:36:48.147,2020-09-22-16:36:48.185
+Failed,WaitUntil,Wait for alarm,AIN - Auxiliary2,I/O,9782425e-4783-464f-826b-5ce19de27b77,Variable 'Alarms.Al.Al_PrbBroken[1].Info.Active' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-22-16:36:48.799,2020-09-22-16:36:59.883
+Failed,Write,Reset alarm,AIN - Auxiliary2,I/O,717a802f-e86d-4c8f-9e7f-88ef43f10750,"1° write 'FALSE' in 'IO_mng.Ain.AinFB[1].PrbAlrm_1.AlrmDelay.IN' fails with error: Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[1].PrbAlrm_1.AlrmDelay.IN'; ",2020-09-22-16:37:00.494,2020-09-22-16:37:00.495
+Successful,Check,Check that alarm was reset,AIN - Auxiliary2,I/O,69a902d9-1f9e-4fa3-9bbe-0bac83585a66,,2020-09-22-16:37:01.104,2020-09-22-16:37:01.142
+Successful,Write,Set function on channel 2,AIN - Auxiliary2,I/O,591ff8aa-30e6-4c6f-b443-1957ea7909f3,,2020-09-22-16:37:01.743,2020-09-22-16:37:01.834
+Successful,Write,Change value of S2,AIN - Auxiliary2,I/O,a16adc37-9737-4ee2-a0de-69e836644e1a,,2020-09-22-16:37:02.448,2020-09-22-16:37:02.583
+Successful,Check,Verify value read,AIN - Auxiliary2,I/O,b20f4c2f-9f2c-4bb4-bd0c-48a1850958fe,,2020-09-22-16:37:03.194,2020-09-22-16:37:03.226
+Successful,Write,Change offset,AIN - Auxiliary2,I/O,c9508784-37f2-4ba1-ba01-272f7495b80f,,2020-09-22-16:37:03.835,2020-09-22-16:37:03.871
+Successful,Check,Verify value read,AIN - Auxiliary2,I/O,1629e7e7-9d64-423a-adf0-a1b8fb31359c,,2020-09-22-16:37:04.482,2020-09-22-16:37:04.543
+Failed,Write,Trigger alarm,AIN - Auxiliary2,I/O,20a3ba82-f1cb-401a-aeb1-4f25b00991af,"1° write 'TRUE' in 'IO_mng.Ain.AinFB[2].PrbAlrm_1.AlrmDelay.IN' fails with error: Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[2].PrbAlrm_1.AlrmDelay.IN'; ",2020-09-22-16:37:05.154,2020-09-22-16:37:05.191
+Successful,Check,Check that alarm is not yet triggered,AIN - Auxiliary2,I/O,f2808d41-7ec9-4343-a98d-5f3cd654a0d4,,2020-09-22-16:37:05.804,2020-09-22-16:37:05.831
+Failed,WaitUntil,Wait for alarm,AIN - Auxiliary2,I/O,b2287c07-dd96-4ff1-820b-9a39ddd2c401,Variable 'Alarms.Al.Al_PrbBroken[2].Info.Active' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-22-16:37:06.447,2020-09-22-16:37:17.541
+Failed,Write,Reset alarm,AIN - Auxiliary2,I/O,98d163fa-9716-4e87-823f-0dd520c88786,"1° write 'FALSE' in 'IO_mng.Ain.AinFB[2].PrbAlrm_1.AlrmDelay.IN' fails with error: Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[2].PrbAlrm_1.AlrmDelay.IN'; ",2020-09-22-16:37:18.148,2020-09-22-16:37:18.148
+Successful,Check,Check that alarm was reset,AIN - Auxiliary2,I/O,2d9f5288-64dd-40fc-8062-bad9dcdc70fb,,2020-09-22-16:37:18.757,2020-09-22-16:37:18.784
+Successful,Write,Set function on channel 3,AIN - Auxiliary2,I/O,9e02f611-3826-4056-9828-f61d5294ba9d,,2020-09-22-16:37:19.384,2020-09-22-16:37:19.419
+Successful,Write,Change value of S3,AIN - Auxiliary2,I/O,1eea60ef-1470-43f6-89db-0ab37e88afc2,,2020-09-22-16:37:20.025,2020-09-22-16:37:20.064
+Successful,Check,Verify value read,AIN - Auxiliary2,I/O,d5e7791a-3eb0-46ec-818d-965d56e244ce,,2020-09-22-16:37:20.663,2020-09-22-16:37:20.729
+Successful,Write,Change offset,AIN - Auxiliary2,I/O,f58ad8ad-0ee0-4262-bc1e-e4d76b3da929,,2020-09-22-16:37:21.335,2020-09-22-16:37:21.372
+Successful,Check,Verify value read,AIN - Auxiliary2,I/O,229a5c39-088a-4a7f-adb0-0b16dc3ce347,,2020-09-22-16:37:21.981,2020-09-22-16:37:22.011
+Failed,Write,Trigger alarm,AIN - Auxiliary2,I/O,c30524dd-1e9b-4ba0-a793-24bc48b490f0,"1° write 'TRUE' in 'IO_mng.Ain.AinFB[3].PrbAlrm_1.AlrmDelay.IN' fails with error: Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[3].PrbAlrm_1.AlrmDelay.IN'; ",2020-09-22-16:37:22.620,2020-09-22-16:37:22.687
+Successful,Check,Check that alarm is not yet triggered,AIN - Auxiliary2,I/O,3943283f-455e-4b6c-b5a4-a4c2e7c2ad23,,2020-09-22-16:37:23.288,2020-09-22-16:37:23.312
+Failed,WaitUntil,Wait for alarm,AIN - Auxiliary2,I/O,69611d51-c97c-4b60-a9d9-3624549e0dc3,Variable 'Alarms.Al.Al_PrbBroken[3].Info.Active' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-22-16:37:23.926,2020-09-22-16:37:35.051
+Failed,Write,Reset alarm,AIN - Auxiliary2,I/O,68649369-35c7-4ccf-98bb-9163e5dc80ab,"1° write 'FALSE' in 'IO_mng.Ain.AinFB[3].PrbAlrm_1.AlrmDelay.IN' fails with error: Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[3].PrbAlrm_1.AlrmDelay.IN'; ",2020-09-22-16:37:35.651,2020-09-22-16:37:35.651
+Successful,Check,Check that alarm was reset,AIN - Auxiliary2,I/O,6b6c71a7-e2ee-4c87-98ee-559ec6ed13f4,,2020-09-22-16:37:36.258,2020-09-22-16:37:36.407
+Failed,Unlock,Release locks,AIN - Auxiliary2,I/O,6ae83c05-6173-41bf-ba1b-b3372a430656,Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[1].PrbAlrm_1.AlrmDelay.IN';Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[2].PrbAlrm_1.AlrmDelay.IN';Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[3].PrbAlrm_1.AlrmDelay.IN';,2020-09-22-16:37:37.023,2020-09-22-16:37:37.024
+Successful,Reference,AIN - AmbientT,Main,I/O,d7570ea6-80b9-4266-a887-762b5edab992,,2020-09-22-16:37:37.634,2020-09-22-16:37:37.634
+Successful,Reference,Setup,AIN - AmbientT,I/O,e9dec6c7-16b2-4a2c-b120-5b4f80bc23c4,,2020-09-22-16:37:37.634,2020-09-22-16:37:37.636
+Successful,Write,Inhibit exceptions and wizard,Setup - Inputs,I/O,ae900aa4-4620-43fe-b9aa-3a01e59c141b,,2020-09-22-16:37:37.636,2020-09-22-16:37:37.880
+Successful,Write,Virtualize U,Setup - Inputs,I/O,82142494-a556-436f-b264-167482231531,,2020-09-22-16:37:37.880,2020-09-22-16:37:38.167
+Successful,Write,Virtualize ID,Setup - Inputs,I/O,683345e2-1e0c-426d-8327-0034bb3449ea,,2020-09-22-16:37:38.168,2020-09-22-16:37:38.647
+Successful,Write,Preset all U to 0,Setup - Inputs,I/O,e5f542b3-f09d-4496-abb8-a27774c5d91e,,2020-09-22-16:37:38.647,2020-09-22-16:37:39.196
+Successful,Write,Preset all ID to FALSE,Setup - Inputs,I/O,34764468-901a-4f7c-8381-12d4fdacc116,,2020-09-22-16:37:39.197,2020-09-22-16:37:39.548
+Successful,Write,Preset all analog inputs as disabled,Setup - Inputs,I/O,5867526d-4197-40aa-b8fb-a3fd04b9a29b,,2020-09-22-16:37:39.548,2020-09-22-16:37:40.110
+Successful,Write,Preset all digital inputs as disabled,Setup - Inputs,I/O,0899ae3f-f399-44fc-ba4c-aa52a6a3a174,,2020-09-22-16:37:40.110,2020-09-22-16:37:40.980
+Successful,Write,Preset all analog inputs offsets as 0,Setup - Inputs,I/O,44329eeb-683b-435b-b10f-290c1bd31509,,2020-09-22-16:37:40.980,2020-09-22-16:37:41.548
+Successful,Write,Preset all digital inputs logics,Setup - Inputs,I/O,9f6e8273-cac4-4098-97c8-8222da706871,,2020-09-22-16:37:41.548,2020-09-22-16:37:42.364
+Failed,Lock,Take the lock on alarm triggers,AIN - AmbientT,I/O,4e549eeb-3a64-4b90-9180-e98aadaf8d6b,Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[1].PrbAlrm_1.AlrmDelay.IN';Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[2].PrbAlrm_1.AlrmDelay.IN';Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[3].PrbAlrm_1.AlrmDelay.IN';,2020-09-22-16:37:42.976,2020-09-22-16:37:42.976
+Successful,Write,Set function on channel 1,AIN - AmbientT,I/O,c8edd1cb-2860-4f0a-82ec-e16f23c47361,,2020-09-22-16:37:43.587,2020-09-22-16:37:43.772
+Successful,Write,Change value of S1,AIN - AmbientT,I/O,d393c21a-33d7-4d9d-9363-37f4812ac8a6,,2020-09-22-16:37:44.383,2020-09-22-16:37:44.420
+Successful,Check,Verify value read,AIN - AmbientT,I/O,14776de5-0e62-4785-9465-022551ccca10,,2020-09-22-16:37:45.032,2020-09-22-16:37:45.059
+Successful,Write,Change offset,AIN - AmbientT,I/O,afeab4d1-4753-4e1a-9cc2-4efae8eeaec0,,2020-09-22-16:37:45.666,2020-09-22-16:37:45.729
+Successful,Check,Verify value read,AIN - AmbientT,I/O,59d1acb9-64bb-439f-a82b-eca721725fce,,2020-09-22-16:37:46.340,2020-09-22-16:37:46.370
+Failed,Write,Trigger alarm,AIN - AmbientT,I/O,81e5a27f-d77d-4a10-9fe1-b2b992347996,"1° write 'TRUE' in 'IO_mng.Ain.AinFB[1].PrbAlrm_1.AlrmDelay.IN' fails with error: Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[1].PrbAlrm_1.AlrmDelay.IN'; ",2020-09-22-16:37:46.979,2020-09-22-16:37:47.015
+Successful,Check,Check that alarm is not yet triggered,AIN - AmbientT,I/O,c6f51fd1-4bd1-49df-9f91-7f7851b531cd,,2020-09-22-16:37:47.617,2020-09-22-16:37:47.688
+Failed,WaitUntil,Wait for alarm,AIN - AmbientT,I/O,032962df-5250-4f12-b6ce-f2601c4e0010,Variable 'Alarms.Al.Al_PrbBroken[1].Info.Active' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-22-16:37:48.288,2020-09-22-16:37:59.403
+Failed,Write,Reset alarm,AIN - AmbientT,I/O,5e1be2d1-dc9b-49c2-8d01-ff46ddab3ad2,"1° write 'FALSE' in 'IO_mng.Ain.AinFB[1].PrbAlrm_1.AlrmDelay.IN' fails with error: Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[1].PrbAlrm_1.AlrmDelay.IN'; ",2020-09-22-16:38:00.017,2020-09-22-16:38:00.017
+Successful,Check,Check that alarm was reset,AIN - AmbientT,I/O,f2d644ac-ceaa-45b2-a512-eec4c4b8b196,,2020-09-22-16:38:00.618,2020-09-22-16:38:00.652
+Successful,Write,Set function on channel 2,AIN - AmbientT,I/O,1afb509b-c5e3-450d-bf13-06a6b635c145,,2020-09-22-16:38:01.263,2020-09-22-16:38:01.297
+Successful,Write,Change value of S2,AIN - AmbientT,I/O,d58364ae-3db1-4be3-9d6d-611b884359f3,,2020-09-22-16:38:01.898,2020-09-22-16:38:01.934
+Successful,Check,Verify value read,AIN - AmbientT,I/O,299b40c5-d3b9-4abe-8060-56b0e407171c,,2020-09-22-16:38:02.547,2020-09-22-16:38:02.574
+Successful,Write,Change offset,AIN - AmbientT,I/O,9b0890dd-0fea-4534-81ee-f15e0fde8cb2,,2020-09-22-16:38:03.179,2020-09-22-16:38:03.216
+Successful,Check,Verify value read,AIN - AmbientT,I/O,bd74a1a1-b09d-4e4b-ae2b-d03af43dc53f,,2020-09-22-16:38:03.825,2020-09-22-16:38:03.872
+Failed,Write,Trigger alarm,AIN - AmbientT,I/O,fb7ba901-4761-4e2d-a360-a990ffba220e,"1° write 'TRUE' in 'IO_mng.Ain.AinFB[2].PrbAlrm_1.AlrmDelay.IN' fails with error: Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[2].PrbAlrm_1.AlrmDelay.IN'; ",2020-09-22-16:38:04.477,2020-09-22-16:38:04.514
+Successful,Check,Check that alarm is not yet triggered,AIN - AmbientT,I/O,9a5a9988-7599-419f-b82c-31de5934ff89,,2020-09-22-16:38:05.117,2020-09-22-16:38:05.154
+Failed,WaitUntil,Wait for alarm,AIN - AmbientT,I/O,0892b72a-f8e8-4559-8434-240039d25073,Variable 'Alarms.Al.Al_PrbBroken[2].Info.Active' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-22-16:38:05.765,2020-09-22-16:38:16.888
+Failed,Write,Reset alarm,AIN - AmbientT,I/O,b0a4ad2e-9af7-4711-8960-e8c3551aceaa,"1° write 'FALSE' in 'IO_mng.Ain.AinFB[2].PrbAlrm_1.AlrmDelay.IN' fails with error: Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[2].PrbAlrm_1.AlrmDelay.IN'; ",2020-09-22-16:38:17.498,2020-09-22-16:38:17.498
+Successful,Check,Check that alarm was reset,AIN - AmbientT,I/O,aa8a06f7-63d5-41a3-92ea-5d230a108d2b,,2020-09-22-16:38:18.101,2020-09-22-16:38:18.153
+Successful,Write,Set function on channel 3,AIN - AmbientT,I/O,89c73a5b-066a-495b-a6fa-6e84ebdee50e,,2020-09-22-16:38:19.080,2020-09-22-16:38:19.115
+Successful,Write,Change value of S3,AIN - AmbientT,I/O,0478c700-72e0-4f66-a261-02da80e584d1,,2020-09-22-16:38:19.727,2020-09-22-16:38:19.763
+Successful,Check,Verify value read,AIN - AmbientT,I/O,d0cc5a9e-1298-43fe-b0de-f4b7f71b2055,,2020-09-22-16:38:20.375,2020-09-22-16:38:20.403
+Successful,Write,Change offset,AIN - AmbientT,I/O,58dbd837-1177-46d1-bb22-fb6c3c668623,,2020-09-22-16:38:21.015,2020-09-22-16:38:21.051
+Successful,Check,Verify value read,AIN - AmbientT,I/O,b3fc8a93-e475-4a56-b9a8-3be1e3babedb,,2020-09-22-16:38:21.664,2020-09-22-16:38:21.692
+Failed,Write,Trigger alarm,AIN - AmbientT,I/O,dfcef6ad-b16a-4011-886d-d7b3963e8aa7,"1° write 'TRUE' in 'IO_mng.Ain.AinFB[3].PrbAlrm_1.AlrmDelay.IN' fails with error: Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[3].PrbAlrm_1.AlrmDelay.IN'; ",2020-09-22-16:38:22.305,2020-09-22-16:38:22.355
+Successful,Check,Check that alarm is not yet triggered,AIN - AmbientT,I/O,6e5b0ace-4f5a-4b78-9246-f7818e72c93f,,2020-09-22-16:38:22.961,2020-09-22-16:38:22.994
+Failed,WaitUntil,Wait for alarm,AIN - AmbientT,I/O,5983f229-25c1-4524-b4c4-4f771de61d52,Variable 'Alarms.Al.Al_PrbBroken[3].Info.Active' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-22-16:38:23.603,2020-09-22-16:38:34.635
+Failed,Write,Reset alarm,AIN - AmbientT,I/O,147d98ff-b32c-447c-9cf2-bc8de0490248,"1° write 'FALSE' in 'IO_mng.Ain.AinFB[3].PrbAlrm_1.AlrmDelay.IN' fails with error: Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[3].PrbAlrm_1.AlrmDelay.IN'; ",2020-09-22-16:38:35.246,2020-09-22-16:38:35.246
+Successful,Check,Check that alarm was reset,AIN - AmbientT,I/O,29f36e12-33fe-4dbe-a0d1-8263be23cb69,,2020-09-22-16:38:35.860,2020-09-22-16:38:35.888
+Failed,Unlock,Release locks,AIN - AmbientT,I/O,2e755d84-4af4-4f58-bd07-f9a37120f9b7,Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[1].PrbAlrm_1.AlrmDelay.IN';Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[2].PrbAlrm_1.AlrmDelay.IN';Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[3].PrbAlrm_1.AlrmDelay.IN';,2020-09-22-16:38:36.500,2020-09-22-16:38:36.501
+Successful,Reference,AIN - GlassT,Main,I/O,20d83384-2460-4f0f-890b-8c2478b1a574,,2020-09-22-16:38:37.116,2020-09-22-16:38:37.116
+Successful,Reference,Setup,AIN - GlassT,I/O,970fdf66-5083-47fd-8b15-b70b56297a8e,,2020-09-22-16:38:37.116,2020-09-22-16:38:37.116
+Successful,Write,Inhibit exceptions and wizard,Setup - Inputs,I/O,ae900aa4-4620-43fe-b9aa-3a01e59c141b,,2020-09-22-16:38:37.116,2020-09-22-16:38:37.376
+Successful,Write,Virtualize U,Setup - Inputs,I/O,82142494-a556-436f-b264-167482231531,,2020-09-22-16:38:37.376,2020-09-22-16:38:37.664
+Successful,Write,Virtualize ID,Setup - Inputs,I/O,683345e2-1e0c-426d-8327-0034bb3449ea,,2020-09-22-16:38:37.664,2020-09-22-16:38:38.112
+Successful,Write,Preset all U to 0,Setup - Inputs,I/O,e5f542b3-f09d-4496-abb8-a27774c5d91e,,2020-09-22-16:38:38.112,2020-09-22-16:38:38.611
+Successful,Write,Preset all ID to FALSE,Setup - Inputs,I/O,34764468-901a-4f7c-8381-12d4fdacc116,,2020-09-22-16:38:38.611,2020-09-22-16:38:39.026
+Successful,Write,Preset all analog inputs as disabled,Setup - Inputs,I/O,5867526d-4197-40aa-b8fb-a3fd04b9a29b,,2020-09-22-16:38:39.027,2020-09-22-16:38:39.590
+Successful,Write,Preset all digital inputs as disabled,Setup - Inputs,I/O,0899ae3f-f399-44fc-ba4c-aa52a6a3a174,,2020-09-22-16:38:39.590,2020-09-22-16:38:40.363
+Successful,Write,Preset all analog inputs offsets as 0,Setup - Inputs,I/O,44329eeb-683b-435b-b10f-290c1bd31509,,2020-09-22-16:38:40.364,2020-09-22-16:38:41.024
+Successful,Write,Preset all digital inputs logics,Setup - Inputs,I/O,9f6e8273-cac4-4098-97c8-8222da706871,,2020-09-22-16:38:41.024,2020-09-22-16:38:41.728
+Failed,Lock,Take the lock on alarm triggers,AIN - GlassT,I/O,4c7e4d68-6f16-48ab-9a20-3cfa9f2d488f,Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[1].PrbAlrm_1.AlrmDelay.IN';Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[2].PrbAlrm_1.AlrmDelay.IN';Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[3].PrbAlrm_1.AlrmDelay.IN';,2020-09-22-16:38:42.336,2020-09-22-16:38:42.337
+Successful,Write,Set function on channel 1,AIN - GlassT,I/O,a578dd6a-741a-4dcf-8fb5-e16708612c9c,,2020-09-22-16:38:42.946,2020-09-22-16:38:42.981
+Successful,Write,Change value of S1,AIN - GlassT,I/O,16c37adb-52a3-4ed1-8311-6a7bcdb8b573,,2020-09-22-16:38:43.593,2020-09-22-16:38:43.630
+Successful,Check,Verify value read,AIN - GlassT,I/O,26c635d5-00a6-42a9-98c2-1d941ce91d51,,2020-09-22-16:38:44.243,2020-09-22-16:38:44.270
+Successful,Write,Change offset,AIN - GlassT,I/O,73ecc431-1c64-41c4-819b-d7b85ff5aebf,,2020-09-22-16:38:44.869,2020-09-22-16:38:44.905
+Successful,Check,Verify value read,AIN - GlassT,I/O,03ffb0a4-bee9-47d9-b362-22f903ca52e4,,2020-09-22-16:38:45.508,2020-09-22-16:38:45.546
+Failed,Write,Trigger alarm,AIN - GlassT,I/O,89dcf21a-5617-4925-b561-92a5403238c1,"1° write 'TRUE' in 'IO_mng.Ain.AinFB[1].PrbAlrm_1.AlrmDelay.IN' fails with error: Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[1].PrbAlrm_1.AlrmDelay.IN'; ",2020-09-22-16:38:46.159,2020-09-22-16:38:46.195
+Successful,Check,Check that alarm is not yet triggered,AIN - GlassT,I/O,84d98ed1-8794-4caa-84f3-cc3301f26021,,2020-09-22-16:38:46.805,2020-09-22-16:38:46.851
+Failed,WaitUntil,Wait for alarm,AIN - GlassT,I/O,b5f9a2ac-6f38-4504-8708-46f11f486bff,Variable 'Alarms.Al.Al_PrbBroken[1].Info.Active' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-22-16:38:47.465,2020-09-22-16:38:58.531
+Failed,Write,Reset alarm,AIN - GlassT,I/O,c0ec827b-d6c9-402a-a8d1-0d764e10e746,"1° write 'FALSE' in 'IO_mng.Ain.AinFB[1].PrbAlrm_1.AlrmDelay.IN' fails with error: Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[1].PrbAlrm_1.AlrmDelay.IN'; ",2020-09-22-16:38:59.147,2020-09-22-16:38:59.147
+Successful,Check,Check that alarm was reset,AIN - GlassT,I/O,15223cec-05e4-4cb3-9f11-246222d74fca,,2020-09-22-16:38:59.759,2020-09-22-16:38:59.794
+Successful,Write,Set function on channel 2,AIN - GlassT,I/O,baace9a3-bf46-426c-a3c7-b7a729ca00bf,,2020-09-22-16:39:00.406,2020-09-22-16:39:00.454
+Successful,Write,Change value of S2,AIN - GlassT,I/O,d036c2a1-ab81-4edb-9e36-ab18803922cc,,2020-09-22-16:39:01.070,2020-09-22-16:39:01.107
+Successful,Check,Verify value read,AIN - GlassT,I/O,837d2b61-0415-4761-9e9a-bfc72b02ec73,,2020-09-22-16:39:01.712,2020-09-22-16:39:01.747
+Successful,Write,Change offset,AIN - GlassT,I/O,fb586f8f-61e8-43a2-84e6-de81dfb748e8,,2020-09-22-16:39:02.360,2020-09-22-16:39:02.409
+Successful,Check,Verify value read,AIN - GlassT,I/O,1c0cd11e-3ad7-41ec-a927-e51cacf77485,,2020-09-22-16:39:03.022,2020-09-22-16:39:03.049
+Failed,Write,Trigger alarm,AIN - GlassT,I/O,efcec85a-62a5-4571-8e4e-75f53b93dfd7,"1° write 'TRUE' in 'IO_mng.Ain.AinFB[2].PrbAlrm_1.AlrmDelay.IN' fails with error: Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[2].PrbAlrm_1.AlrmDelay.IN'; ",2020-09-22-16:39:03.651,2020-09-22-16:39:03.687
+Successful,Check,Check that alarm is not yet triggered,AIN - GlassT,I/O,b297876e-e476-4e2c-b8ad-de9d8a52e00b,,2020-09-22-16:39:04.301,2020-09-22-16:39:04.342
+Failed,WaitUntil,Wait for alarm,AIN - GlassT,I/O,9eb049be-034b-4e17-ae0a-413efc9ee20b,Variable 'Alarms.Al.Al_PrbBroken[2].Info.Active' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-22-16:39:04.945,2020-09-22-16:39:16.008
+Failed,Write,Reset alarm,AIN - GlassT,I/O,50a17e1b-5da0-441c-b338-34cb8ce5c628,"1° write 'FALSE' in 'IO_mng.Ain.AinFB[2].PrbAlrm_1.AlrmDelay.IN' fails with error: Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[2].PrbAlrm_1.AlrmDelay.IN'; ",2020-09-22-16:39:16.620,2020-09-22-16:39:16.620
+Successful,Check,Check that alarm was reset,AIN - GlassT,I/O,f5fb5fb1-b206-4990-9745-d835c10a7407,,2020-09-22-16:39:17.232,2020-09-22-16:39:17.269
+Successful,Write,Set function on channel 3,AIN - GlassT,I/O,b57d730e-f0f1-4616-928e-88ec09e17e7e,,2020-09-22-16:39:17.869,2020-09-22-16:39:17.904
+Successful,Write,Change value of S3,AIN - GlassT,I/O,9f21f726-a823-4080-b2f9-653ced67d4e1,,2020-09-22-16:39:18.518,2020-09-22-16:39:18.567
+Successful,Check,Verify value read,AIN - GlassT,I/O,bddd9edc-e32a-4ae7-bd57-0394487f36ce,,2020-09-22-16:39:19.178,2020-09-22-16:39:19.206
+Successful,Write,Change offset,AIN - GlassT,I/O,946dcae3-8a21-43ef-81c1-e53e2e0525aa,,2020-09-22-16:39:19.819,2020-09-22-16:39:19.856
+Successful,Check,Verify value read,AIN - GlassT,I/O,1decf8d3-24db-495f-b71b-7da15ad386a5,,2020-09-22-16:39:20.469,2020-09-22-16:39:20.512
+Failed,Write,Trigger alarm,AIN - GlassT,I/O,4ba4356f-7a33-409e-8913-bf7dc5822d53,"1° write 'TRUE' in 'IO_mng.Ain.AinFB[3].PrbAlrm_1.AlrmDelay.IN' fails with error: Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[3].PrbAlrm_1.AlrmDelay.IN'; ",2020-09-22-16:39:21.122,2020-09-22-16:39:21.190
+Successful,Check,Check that alarm is not yet triggered,AIN - GlassT,I/O,b4ce251d-b65e-41f5-a606-e5669fc603f8,,2020-09-22-16:39:21.804,2020-09-22-16:39:21.879
+Failed,WaitUntil,Wait for alarm,AIN - GlassT,I/O,68c43663-1670-4a34-b6cd-eb9fc160e43d,Variable 'Alarms.Al.Al_PrbBroken[3].Info.Active' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-22-16:39:22.491,2020-09-22-16:39:33.556
+Failed,Write,Reset alarm,AIN - GlassT,I/O,585a81f8-d4cd-4452-b3a3-85c7ceb16057,"1° write 'FALSE' in 'IO_mng.Ain.AinFB[3].PrbAlrm_1.AlrmDelay.IN' fails with error: Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[3].PrbAlrm_1.AlrmDelay.IN'; ",2020-09-22-16:39:34.168,2020-09-22-16:39:34.168
+Successful,Check,Check that alarm was reset,AIN - GlassT,I/O,6b71558b-cc1a-4761-a6b2-90c8d2877337,,2020-09-22-16:39:34.782,2020-09-22-16:39:34.884
+Failed,Unlock,Release locks,AIN - GlassT,I/O,c3996ff6-92a3-4f44-8622-095256e246bc,Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[1].PrbAlrm_1.AlrmDelay.IN';Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[2].PrbAlrm_1.AlrmDelay.IN';Member 'Ain' not found in variable 'IO_mng.Ain.AinFB[3].PrbAlrm_1.AlrmDelay.IN';,2020-09-22-16:39:35.492,2020-09-22-16:39:35.493
+Successful,Reference,DIN - Alarm,Main,I/O,b5149a90-b8df-4dfa-a2cd-df180e25fd81,,2020-09-22-16:39:36.101,2020-09-22-16:39:36.101
+Successful,Reference,Setup,DIN - Alarm,I/O,c9765b9c-df99-4354-98de-29175000092c,,2020-09-22-16:39:36.101,2020-09-22-16:39:36.102
+Successful,Write,Inhibit exceptions and wizard,Setup - Inputs,I/O,ae900aa4-4620-43fe-b9aa-3a01e59c141b,,2020-09-22-16:39:36.102,2020-09-22-16:39:36.227
+Successful,Write,Virtualize U,Setup - Inputs,I/O,82142494-a556-436f-b264-167482231531,,2020-09-22-16:39:36.228,2020-09-22-16:39:36.708
+Successful,Write,Virtualize ID,Setup - Inputs,I/O,683345e2-1e0c-426d-8327-0034bb3449ea,,2020-09-22-16:39:36.708,2020-09-22-16:39:37.060
+Successful,Write,Preset all U to 0,Setup - Inputs,I/O,e5f542b3-f09d-4496-abb8-a27774c5d91e,,2020-09-22-16:39:37.060,2020-09-22-16:39:37.604
+Successful,Write,Preset all ID to FALSE,Setup - Inputs,I/O,34764468-901a-4f7c-8381-12d4fdacc116,,2020-09-22-16:39:37.604,2020-09-22-16:39:37.988
+Successful,Write,Preset all analog inputs as disabled,Setup - Inputs,I/O,5867526d-4197-40aa-b8fb-a3fd04b9a29b,,2020-09-22-16:39:37.988,2020-09-22-16:39:38.537
+Successful,Write,Preset all digital inputs as disabled,Setup - Inputs,I/O,0899ae3f-f399-44fc-ba4c-aa52a6a3a174,,2020-09-22-16:39:38.537,2020-09-22-16:39:39.463
+Successful,Write,Preset all analog inputs offsets as 0,Setup - Inputs,I/O,44329eeb-683b-435b-b10f-290c1bd31509,,2020-09-22-16:39:39.463,2020-09-22-16:39:39.936
+Successful,Write,Preset all digital inputs logics,Setup - Inputs,I/O,9f6e8273-cac4-4098-97c8-8222da706871,,2020-09-22-16:39:39.937,2020-09-22-16:39:40.849
+Successful,Write,Set function on channel 1,DIN - Alarm,I/O,15e86de2-1746-4b39-9aa8-20502be4f4fa,,2020-09-22-16:39:41.460,2020-09-22-16:39:41.494
+Successful,Write,Change value of S3,DIN - Alarm,I/O,5478d2eb-b3b6-4a03-bfb4-6977efe4d3a2,,2020-09-22-16:39:42.103,2020-09-22-16:39:42.231
+Failed,Check,Verify value read,DIN - Alarm,I/O,10f01f73-b18a-4f1a-ab5b-f07600dd9f94,Variable 'DigitalInputs.Fct.Alarm' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-22-16:39:42.842,2020-09-22-16:39:42.870
+Successful,Write,Invert logic,DIN - Alarm,I/O,577f6165-f5e3-4d49-b629-952445b68e97,,2020-09-22-16:39:43.478,2020-09-22-16:39:43.510
+Failed,Check,Verify value read,DIN - Alarm,I/O,aa01cbf9-8854-4171-af9d-f92fcecbb2b0,Variable 'DigitalInputs.Fct.Alarm' has value 'TRUE' (expected Equal to/than 'FALSE' '+/-0');,2020-09-22-16:39:44.119,2020-09-22-16:39:44.182
+Successful,Write,Set function on channel 2,DIN - Alarm,I/O,672d42fb-1dc7-46e0-a05a-e9be098267c6,,2020-09-22-16:39:44.791,2020-09-22-16:39:44.825
+Successful,Write,Change value of S7,DIN - Alarm,I/O,f320aa87-120e-4b08-bcff-549db573e35b,,2020-09-22-16:39:45.437,2020-09-22-16:39:45.465
+Failed,Check,Verify value read,DIN - Alarm,I/O,599d75ba-0bd1-4be4-b3c1-394c90110f20,Variable 'DigitalInputs.Fct.Alarm' has value 'TRUE' (expected Equal to/than 'FALSE' '+/-0');,2020-09-22-16:39:46.071,2020-09-22-16:39:46.152
+Successful,Write,Invert logic again,DIN - Alarm,I/O,40241cd6-e105-48a8-a547-da96c5178b52,,2020-09-22-16:39:46.759,2020-09-22-16:39:46.792
+Failed,Check,Verify value read,DIN - Alarm,I/O,f75eb8cd-7a87-414a-acf2-3a3b98d7f114,Variable 'DigitalInputs.Fct.Alarm' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-22-16:39:47.401,2020-09-22-16:39:47.432
+Successful,Reference,DIN - DelayedAl,Main,I/O,2f03a625-0390-4f32-9af5-f9ef0d6f2585,,2020-09-22-16:39:48.041,2020-09-22-16:39:48.041
+Successful,Reference,Setup,DIN - DelayedAl,I/O,4bab4ee1-f104-42de-aa15-cbac05b4afa8,,2020-09-22-16:39:48.042,2020-09-22-16:39:48.042
+Successful,Write,Inhibit exceptions and wizard,Setup - Inputs,I/O,ae900aa4-4620-43fe-b9aa-3a01e59c141b,,2020-09-22-16:39:48.042,2020-09-22-16:39:48.312
+Successful,Write,Virtualize U,Setup - Inputs,I/O,82142494-a556-436f-b264-167482231531,,2020-09-22-16:39:48.312,2020-09-22-16:39:48.697
+Successful,Write,Virtualize ID,Setup - Inputs,I/O,683345e2-1e0c-426d-8327-0034bb3449ea,,2020-09-22-16:39:48.697,2020-09-22-16:39:49.162
+Successful,Write,Preset all U to 0,Setup - Inputs,I/O,e5f542b3-f09d-4496-abb8-a27774c5d91e,,2020-09-22-16:39:49.162,2020-09-22-16:39:49.699
+Successful,Write,Preset all ID to FALSE,Setup - Inputs,I/O,34764468-901a-4f7c-8381-12d4fdacc116,,2020-09-22-16:39:49.700,2020-09-22-16:39:49.955
+Successful,Write,Preset all analog inputs as disabled,Setup - Inputs,I/O,5867526d-4197-40aa-b8fb-a3fd04b9a29b,,2020-09-22-16:39:49.956,2020-09-22-16:39:50.609
+Successful,Write,Preset all digital inputs as disabled,Setup - Inputs,I/O,0899ae3f-f399-44fc-ba4c-aa52a6a3a174,,2020-09-22-16:39:50.609,2020-09-22-16:39:51.390
+Successful,Write,Preset all analog inputs offsets as 0,Setup - Inputs,I/O,44329eeb-683b-435b-b10f-290c1bd31509,,2020-09-22-16:39:51.390,2020-09-22-16:39:52.076
+Successful,Write,Preset all digital inputs logics,Setup - Inputs,I/O,9f6e8273-cac4-4098-97c8-8222da706871,,2020-09-22-16:39:52.076,2020-09-22-16:39:52.780
+Successful,Write,Set function on channel 1,DIN - DelayedAl,I/O,180cead2-0307-4612-9e22-bf5fd0a393c2,,2020-09-22-16:39:53.382,2020-09-22-16:39:53.513
+Successful,Write,Change value of S3,DIN - DelayedAl,I/O,281a6326-a5d4-4203-bc47-5af05df64f12,,2020-09-22-16:39:54.126,2020-09-22-16:39:54.168
+Failed,Check,Verify value read,DIN - DelayedAl,I/O,961815ac-e172-4ce9-86c6-56cf488769be,Variable 'DigitalInputs.Fct.DelayedAl' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-22-16:39:54.775,2020-09-22-16:39:54.977
+Successful,Write,Invert logic,DIN - DelayedAl,I/O,82a5c66e-e7d3-4bc0-90e8-bea1364a51e8,,2020-09-22-16:39:55.585,2020-09-22-16:39:55.617
+Failed,Check,Verify value read,DIN - DelayedAl,I/O,9bce27e1-ea8c-400c-8f8d-7ac6e339a629,Variable 'DigitalInputs.Fct.DelayedAl' has value 'TRUE' (expected Equal to/than 'FALSE' '+/-0');,2020-09-22-16:39:56.580,2020-09-22-16:39:56.609
+Successful,Write,Set function on channel 2,DIN - DelayedAl,I/O,8f263912-ee01-4ce4-9aae-38f6c874d475,,2020-09-22-16:39:57.220,2020-09-22-16:39:57.255
+Successful,Write,Change value of S7,DIN - DelayedAl,I/O,7a5c5cb1-312c-4e12-8e6b-1b13c6c2e1d5,,2020-09-22-16:39:57.868,2020-09-22-16:39:57.912
+Failed,Check,Verify value read,DIN - DelayedAl,I/O,614ce326-48ab-4f30-aad9-6fe16d8be6d3,Variable 'DigitalInputs.Fct.DelayedAl' has value 'TRUE' (expected Equal to/than 'FALSE' '+/-0');,2020-09-22-16:39:58.523,2020-09-22-16:39:58.551
+Successful,Write,Invert logic again,DIN - DelayedAl,I/O,ecf263c2-aab7-466a-9d5e-9c5e1f37ba7f,,2020-09-22-16:39:59.164,2020-09-22-16:39:59.207
+Failed,Check,Verify value read,DIN - DelayedAl,I/O,fab46d6e-2870-47dc-a889-b5d019594bd3,Variable 'DigitalInputs.Fct.DelayedAl' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-22-16:39:59.819,2020-09-22-16:39:59.911
+Successful,Reference,DIN - EnDfr,Main,I/O,09dcec16-87d5-4e93-b41f-bd956244a8c8,,2020-09-22-16:40:00.523,2020-09-22-16:40:00.526
+Successful,Reference,Setup,DIN - EnDfr,I/O,2807b41f-1570-431b-97e8-d96544bfdd82,,2020-09-22-16:40:00.526,2020-09-22-16:40:00.526
+Successful,Write,Inhibit exceptions and wizard,Setup - Inputs,I/O,ae900aa4-4620-43fe-b9aa-3a01e59c141b,,2020-09-22-16:40:00.527,2020-09-22-16:40:00.695
+Successful,Write,Virtualize U,Setup - Inputs,I/O,82142494-a556-436f-b264-167482231531,,2020-09-22-16:40:00.695,2020-09-22-16:40:01.079
+Successful,Write,Virtualize ID,Setup - Inputs,I/O,683345e2-1e0c-426d-8327-0034bb3449ea,,2020-09-22-16:40:01.079,2020-09-22-16:40:01.543
+Successful,Write,Preset all U to 0,Setup - Inputs,I/O,e5f542b3-f09d-4496-abb8-a27774c5d91e,,2020-09-22-16:40:01.543,2020-09-22-16:40:02.090
+Successful,Write,Preset all ID to FALSE,Setup - Inputs,I/O,34764468-901a-4f7c-8381-12d4fdacc116,,2020-09-22-16:40:02.090,2020-09-22-16:40:02.458
+Successful,Write,Preset all analog inputs as disabled,Setup - Inputs,I/O,5867526d-4197-40aa-b8fb-a3fd04b9a29b,,2020-09-22-16:40:02.459,2020-09-22-16:40:03.006
+Successful,Write,Preset all digital inputs as disabled,Setup - Inputs,I/O,0899ae3f-f399-44fc-ba4c-aa52a6a3a174,,2020-09-22-16:40:03.006,2020-09-22-16:40:03.875
+Successful,Write,Preset all analog inputs offsets as 0,Setup - Inputs,I/O,44329eeb-683b-435b-b10f-290c1bd31509,,2020-09-22-16:40:03.875,2020-09-22-16:40:04.446
+Successful,Write,Preset all digital inputs logics,Setup - Inputs,I/O,9f6e8273-cac4-4098-97c8-8222da706871,,2020-09-22-16:40:04.446,2020-09-22-16:40:05.262
+Successful,Write,Set function on channel 1,DIN - EnDfr,I/O,f4f3975c-6016-4a90-a3f0-ecbce18f930a,,2020-09-22-16:40:05.868,2020-09-22-16:40:05.902
+Successful,Write,Change value of S3,DIN - EnDfr,I/O,8448dc1f-2cba-4cf7-a90b-8df288fe0e4c,,2020-09-22-16:40:06.513,2020-09-22-16:40:06.558
+Failed,Check,Verify value read,DIN - EnDfr,I/O,7c498909-b58a-47f8-9195-1a9b272ef81c,Variable 'DigitalInputs.Fct.EnDfr' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-22-16:40:07.163,2020-09-22-16:40:07.262
+Successful,Write,Invert logic,DIN - EnDfr,I/O,0dd2ba41-f9ec-4ffb-a5e4-8ee78e334fc0,,2020-09-22-16:40:07.874,2020-09-22-16:40:07.957
+Failed,Check,Verify value read,DIN - EnDfr,I/O,b07f2cc3-33cf-4fbc-b01c-00304273a4e0,Variable 'DigitalInputs.Fct.EnDfr' has value 'TRUE' (expected Equal to/than 'FALSE' '+/-0');,2020-09-22-16:40:08.569,2020-09-22-16:40:08.694
+Successful,Write,Set function on channel 2,DIN - EnDfr,I/O,d8eb3656-e93d-4ce8-88d7-22bd183d3ef8,,2020-09-22-16:40:09.305,2020-09-22-16:40:09.339
+Successful,Write,Change value of S7,DIN - EnDfr,I/O,47941311-94e7-4bdd-8ef1-2af44a188ec8,,2020-09-22-16:40:09.952,2020-09-22-16:40:09.988
+Failed,Check,Verify value read,DIN - EnDfr,I/O,c7979dda-f80d-493d-967b-60d0eba7a19c,Variable 'DigitalInputs.Fct.EnDfr' has value 'TRUE' (expected Equal to/than 'FALSE' '+/-0');,2020-09-22-16:40:10.601,2020-09-22-16:40:10.661
+Successful,Write,Invert logic again,DIN - EnDfr,I/O,7ddb6b60-da9d-490b-a13e-ee53d9752e37,,2020-09-22-16:40:11.274,2020-09-22-16:40:11.301
+Failed,Check,Verify value read,DIN - EnDfr,I/O,e5f082b7-eca5-481e-8864-e15709cfd786,Variable 'DigitalInputs.Fct.EnDfr' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-22-16:40:11.913,2020-09-22-16:40:11.940
+Successful,Reference,DIN - CallDfr,Main,I/O,8aacd284-295f-441b-bea5-bea56fe1943b,,2020-09-22-16:40:12.541,2020-09-22-16:40:12.541
+Successful,Reference,Setup,DIN - CallDfr,I/O,84b5220a-892b-4f20-9ad1-531d4a8d9a64,,2020-09-22-16:40:12.541,2020-09-22-16:40:12.542
+Successful,Write,Inhibit exceptions and wizard,Setup - Inputs,I/O,ae900aa4-4620-43fe-b9aa-3a01e59c141b,,2020-09-22-16:40:12.542,2020-09-22-16:40:12.708
+Successful,Write,Virtualize U,Setup - Inputs,I/O,82142494-a556-436f-b264-167482231531,,2020-09-22-16:40:12.708,2020-09-22-16:40:13.204
+Successful,Write,Virtualize ID,Setup - Inputs,I/O,683345e2-1e0c-426d-8327-0034bb3449ea,,2020-09-22-16:40:13.204,2020-09-22-16:40:13.460
+Successful,Write,Preset all U to 0,Setup - Inputs,I/O,e5f542b3-f09d-4496-abb8-a27774c5d91e,,2020-09-22-16:40:13.461,2020-09-22-16:40:14.096
+Successful,Write,Preset all ID to FALSE,Setup - Inputs,I/O,34764468-901a-4f7c-8381-12d4fdacc116,,2020-09-22-16:40:14.096,2020-09-22-16:40:14.448
+Successful,Write,Preset all analog inputs as disabled,Setup - Inputs,I/O,5867526d-4197-40aa-b8fb-a3fd04b9a29b,,2020-09-22-16:40:14.449,2020-09-22-16:40:14.917
+Successful,Write,Preset all digital inputs as disabled,Setup - Inputs,I/O,0899ae3f-f399-44fc-ba4c-aa52a6a3a174,,2020-09-22-16:40:14.917,2020-09-22-16:40:15.886
+Successful,Write,Preset all analog inputs offsets as 0,Setup - Inputs,I/O,44329eeb-683b-435b-b10f-290c1bd31509,,2020-09-22-16:40:15.886,2020-09-22-16:40:16.394
+Successful,Write,Preset all digital inputs logics,Setup - Inputs,I/O,9f6e8273-cac4-4098-97c8-8222da706871,,2020-09-22-16:40:16.394,2020-09-22-16:40:17.226
+Successful,Write,Set function on channel 1,DIN - CallDfr,I/O,1f836d30-00e3-49f3-b571-b5505d9c5a81,,2020-09-22-16:40:17.838,2020-09-22-16:40:17.872
+Successful,Write,Change value of S3,DIN - CallDfr,I/O,12b40ecf-4a16-4b81-95f7-018fd351e175,,2020-09-22-16:40:18.483,2020-09-22-16:40:18.512
+Failed,Check,Verify value read,DIN - CallDfr,I/O,23b30b34-28c2-4c67-8ae1-0bd9bc959b26,Variable 'DigitalInputs.Fct.CallDfr' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-22-16:40:19.118,2020-09-22-16:40:19.152
+Successful,Write,Invert logic,DIN - CallDfr,I/O,4c5381e2-88d6-4e9b-8ee9-523b71bcdf6d,,2020-09-22-16:40:19.764,2020-09-22-16:40:19.792
+Failed,Check,Verify value read,DIN - CallDfr,I/O,1ebd15fb-ed8d-444d-b9eb-42d4935158e0,Variable 'DigitalInputs.Fct.CallDfr' has value 'TRUE' (expected Equal to/than 'FALSE' '+/-0');,2020-09-22-16:40:20.404,2020-09-22-16:40:20.464
+Successful,Write,Set function on channel 2,DIN - CallDfr,I/O,377bf939-3dcb-40d5-9b43-5788aac659d8,,2020-09-22-16:40:21.076,2020-09-22-16:40:21.112
+Successful,Write,Change value of S7,DIN - CallDfr,I/O,9a9cbd6d-4418-4328-8901-a993e7a214e8,,2020-09-22-16:40:21.725,2020-09-22-16:40:21.752
+Failed,Check,Verify value read,DIN - CallDfr,I/O,70facbf8-5076-41e6-84ab-451387f68552,Variable 'DigitalInputs.Fct.CallDfr' has value 'TRUE' (expected Equal to/than 'FALSE' '+/-0');,2020-09-22-16:40:22.352,2020-09-22-16:40:22.423
+Successful,Write,Invert logic again,DIN - CallDfr,I/O,a9a1445f-3915-4094-9c98-55229a74e133,,2020-09-22-16:40:23.025,2020-09-22-16:40:23.064
+Failed,Check,Verify value read,DIN - CallDfr,I/O,61c73d7a-5cca-4ac2-9cde-e7bcfadd4937,Variable 'DigitalInputs.Fct.CallDfr' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-22-16:40:23.664,2020-09-22-16:40:23.687
+Successful,Reference,DIN - DoorOff,Main,I/O,b3b1c3f6-613e-4422-ac53-a4a1c7f5bd90,,2020-09-22-16:40:24.289,2020-09-22-16:40:24.289
+Successful,Reference,Setup,DIN - DoorOff,I/O,bb7ef7c8-e7fd-4967-8072-83de1065be3a,,2020-09-22-16:40:24.292,2020-09-22-16:40:24.292
+Successful,Write,Inhibit exceptions and wizard,Setup - Inputs,I/O,ae900aa4-4620-43fe-b9aa-3a01e59c141b,,2020-09-22-16:40:24.292,2020-09-22-16:40:24.487
+Successful,Write,Virtualize U,Setup - Inputs,I/O,82142494-a556-436f-b264-167482231531,,2020-09-22-16:40:24.488,2020-09-22-16:40:29.097
+Successful,Write,Virtualize ID,Setup - Inputs,I/O,683345e2-1e0c-426d-8327-0034bb3449ea,,2020-09-22-16:40:29.098,2020-09-22-16:40:29.609
+Successful,Write,Preset all U to 0,Setup - Inputs,I/O,e5f542b3-f09d-4496-abb8-a27774c5d91e,,2020-09-22-16:40:29.610,2020-09-22-16:40:30.199
+Successful,Write,Preset all ID to FALSE,Setup - Inputs,I/O,34764468-901a-4f7c-8381-12d4fdacc116,,2020-09-22-16:40:30.199,2020-09-22-16:40:30.599
+Successful,Write,Preset all analog inputs as disabled,Setup - Inputs,I/O,5867526d-4197-40aa-b8fb-a3fd04b9a29b,,2020-09-22-16:40:30.599,2020-09-22-16:40:31.184
+Successful,Write,Preset all digital inputs as disabled,Setup - Inputs,I/O,0899ae3f-f399-44fc-ba4c-aa52a6a3a174,,2020-09-22-16:40:31.184,2020-09-22-16:40:32.089
+Successful,Write,Preset all analog inputs offsets as 0,Setup - Inputs,I/O,44329eeb-683b-435b-b10f-290c1bd31509,,2020-09-22-16:40:32.090,2020-09-22-16:40:32.937
+Successful,Write,Preset all digital inputs logics,Setup - Inputs,I/O,9f6e8273-cac4-4098-97c8-8222da706871,,2020-09-22-16:40:32.940,2020-09-22-16:40:34.104
+Successful,Write,Set function on channel 1,DIN - DoorOff,I/O,8ba002d8-7ffe-485a-be77-459b6f3048f8,,2020-09-22-16:40:34.714,2020-09-22-16:40:34.767
+Successful,Write,Change value of S3,DIN - DoorOff,I/O,58d941f8-7975-4348-bac5-3bef835fc8a7,,2020-09-22-16:40:35.382,2020-09-22-16:40:35.406
+Failed,Check,Verify value read,DIN - DoorOff,I/O,050a6893-3d4c-4883-8aa5-63bc569f2bcf,Variable 'DigitalInputs.Fct.DoorOff' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-22-16:40:36.009,2020-09-22-16:40:36.031
+Successful,Write,Invert logic,DIN - DoorOff,I/O,de1ff10e-9cb3-4bee-8e73-3571fad29107,,2020-09-22-16:40:36.632,2020-09-22-16:40:36.719
+Failed,Check,Verify value read,DIN - DoorOff,I/O,9cb2131b-95be-423f-843a-8c94d610fc2c,Variable 'DigitalInputs.Fct.DoorOff' has value 'TRUE' (expected Equal to/than 'FALSE' '+/-0');,2020-09-22-16:40:37.319,2020-09-22-16:40:37.374
+Successful,Write,Set function on channel 2,DIN - DoorOff,I/O,30d703d7-546d-4f1c-8b47-49cd2f8780c7,,2020-09-22-16:40:37.976,2020-09-22-16:40:38.067
+Successful,Write,Change value of S7,DIN - DoorOff,I/O,2a1dbad3-c67f-4abf-bb7a-5d532899aacc,,2020-09-22-16:40:38.678,2020-09-22-16:40:38.755
+Failed,Check,Verify value read,DIN - DoorOff,I/O,fafe3662-d3b6-435f-ad62-93334d250e30,Variable 'DigitalInputs.Fct.DoorOff' has value 'TRUE' (expected Equal to/than 'FALSE' '+/-0');,2020-09-22-16:40:39.355,2020-09-22-16:40:39.379
+Successful,Write,Invert logic again,DIN - DoorOff,I/O,93f62007-a4a0-4626-b890-e3ca39bc4a45,,2020-09-22-16:40:39.991,2020-09-22-16:40:40.031
+Failed,Check,Verify value read,DIN - DoorOff,I/O,979f3845-0a6b-4912-9b14-7802a542e56e,Variable 'DigitalInputs.Fct.DoorOff' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-22-16:40:40.645,2020-09-22-16:40:40.670
+Successful,Reference,DIN - RemoteOff,Main,I/O,d7d6d29d-70df-494d-a0ba-8cffd07ced7d,,2020-09-22-16:40:41.281,2020-09-22-16:40:41.281
+Successful,Reference,Setup,DIN - RemoteOff,I/O,e84a38c8-6e6b-4b00-aa0b-6a7b669bf05c,,2020-09-22-16:40:41.282,2020-09-22-16:40:41.282
+Successful,Write,Inhibit exceptions and wizard,Setup - Inputs,I/O,ae900aa4-4620-43fe-b9aa-3a01e59c141b,,2020-09-22-16:40:41.282,2020-09-22-16:40:41.408
+Successful,Write,Virtualize U,Setup - Inputs,I/O,82142494-a556-436f-b264-167482231531,,2020-09-22-16:40:41.408,2020-09-22-16:40:41.887
+Successful,Write,Virtualize ID,Setup - Inputs,I/O,683345e2-1e0c-426d-8327-0034bb3449ea,,2020-09-22-16:40:41.888,2020-09-22-16:40:42.239
+Successful,Write,Preset all U to 0,Setup - Inputs,I/O,e5f542b3-f09d-4496-abb8-a27774c5d91e,,2020-09-22-16:40:42.240,2020-09-22-16:40:42.770
+Successful,Write,Preset all ID to FALSE,Setup - Inputs,I/O,34764468-901a-4f7c-8381-12d4fdacc116,,2020-09-22-16:40:42.770,2020-09-22-16:40:43.171
+Successful,Write,Preset all analog inputs as disabled,Setup - Inputs,I/O,5867526d-4197-40aa-b8fb-a3fd04b9a29b,,2020-09-22-16:40:43.171,2020-09-22-16:40:43.708
+Successful,Write,Preset all digital inputs as disabled,Setup - Inputs,I/O,0899ae3f-f399-44fc-ba4c-aa52a6a3a174,,2020-09-22-16:40:43.708,2020-09-22-16:40:44.682
+Successful,Write,Preset all analog inputs offsets as 0,Setup - Inputs,I/O,44329eeb-683b-435b-b10f-290c1bd31509,,2020-09-22-16:40:44.682,2020-09-22-16:40:45.145
+Successful,Write,Preset all digital inputs logics,Setup - Inputs,I/O,9f6e8273-cac4-4098-97c8-8222da706871,,2020-09-22-16:40:45.145,2020-09-22-16:40:46.042
+Successful,Write,Set function on channel 1,DIN - RemoteOff,I/O,feecef7f-87d1-4e8d-b814-1ca2c5815a56,,2020-09-22-16:40:46.651,2020-09-22-16:40:46.686
+Successful,Write,Change value of S3,DIN - RemoteOff,I/O,c2a5701a-ab8a-43b1-9d1b-d36b00850cfe,,2020-09-22-16:40:47.301,2020-09-22-16:40:47.326
+Failed,Check,Verify value read,DIN - RemoteOff,I/O,cdef377a-1658-40d1-9ad9-00b0d58b2955,Variable 'DigitalInputs.Fct.RemoteOff' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-22-16:40:47.941,2020-09-22-16:40:48.014
+Successful,Write,Invert logic,DIN - RemoteOff,I/O,19fce871-21e5-4e90-9cc2-1a5401306d60,,2020-09-22-16:40:48.626,2020-09-22-16:40:48.654
+Failed,Check,Verify value read,DIN - RemoteOff,I/O,6190eb07-b8b2-43d2-a3bb-d2fcbe04fc23,Variable 'DigitalInputs.Fct.RemoteOff' has value 'TRUE' (expected Equal to/than 'FALSE' '+/-0');,2020-09-22-16:40:49.257,2020-09-22-16:40:49.293
+Successful,Write,Set function on channel 2,DIN - RemoteOff,I/O,e78730ed-f875-49f2-9602-793e476e8229,,2020-09-22-16:40:49.903,2020-09-22-16:40:49.969
+Successful,Write,Change value of S7,DIN - RemoteOff,I/O,8e28d7f1-abb8-4ab1-8785-c2276ab65294,,2020-09-22-16:40:50.586,2020-09-22-16:40:50.610
+Failed,Check,Verify value read,DIN - RemoteOff,I/O,a959718c-0c5b-4ee2-9bb8-5bba63871bef,Variable 'DigitalInputs.Fct.RemoteOff' has value 'TRUE' (expected Equal to/than 'FALSE' '+/-0');,2020-09-22-16:40:51.210,2020-09-22-16:40:51.233
+Successful,Write,Invert logic again,DIN - RemoteOff,I/O,b668637b-4ebe-42f2-b2ea-f4d93a39e692,,2020-09-22-16:40:51.845,2020-09-22-16:40:51.921
+Failed,Check,Verify value read,DIN - RemoteOff,I/O,3431edb3-585e-46a6-bbcb-f50f084940f3,Variable 'DigitalInputs.Fct.RemoteOff' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-22-16:40:52.533,2020-09-22-16:40:52.561
+Successful,Reference,DIN - Curtain,Main,I/O,1d2488ea-9fd9-422c-8513-ad73450d3055,,2020-09-22-16:40:53.166,2020-09-22-16:40:53.166
+Successful,Reference,Setup,DIN - Curtain,I/O,335577a7-394a-4d48-b765-ea4162107930,,2020-09-22-16:40:53.166,2020-09-22-16:40:53.167
+Successful,Write,Inhibit exceptions and wizard,Setup - Inputs,I/O,ae900aa4-4620-43fe-b9aa-3a01e59c141b,,2020-09-22-16:40:53.167,2020-09-22-16:40:53.504
+Successful,Write,Virtualize U,Setup - Inputs,I/O,82142494-a556-436f-b264-167482231531,,2020-09-22-16:40:53.505,2020-09-22-16:40:53.888
+Successful,Write,Virtualize ID,Setup - Inputs,I/O,683345e2-1e0c-426d-8327-0034bb3449ea,,2020-09-22-16:40:53.889,2020-09-22-16:40:54.240
+Successful,Write,Preset all U to 0,Setup - Inputs,I/O,e5f542b3-f09d-4496-abb8-a27774c5d91e,,2020-09-22-16:40:54.241,2020-09-22-16:40:54.872
+Successful,Write,Preset all ID to FALSE,Setup - Inputs,I/O,34764468-901a-4f7c-8381-12d4fdacc116,,2020-09-22-16:40:54.872,2020-09-22-16:40:55.128
+Successful,Write,Preset all analog inputs as disabled,Setup - Inputs,I/O,5867526d-4197-40aa-b8fb-a3fd04b9a29b,,2020-09-22-16:40:55.129,2020-09-22-16:40:55.679
+Successful,Write,Preset all digital inputs as disabled,Setup - Inputs,I/O,0899ae3f-f399-44fc-ba4c-aa52a6a3a174,,2020-09-22-16:40:55.679,2020-09-22-16:40:56.563
+Successful,Write,Preset all analog inputs offsets as 0,Setup - Inputs,I/O,44329eeb-683b-435b-b10f-290c1bd31509,,2020-09-22-16:40:56.563,2020-09-22-16:40:57.141
+Successful,Write,Preset all digital inputs logics,Setup - Inputs,I/O,9f6e8273-cac4-4098-97c8-8222da706871,,2020-09-22-16:40:57.142,2020-09-22-16:40:57.973
+Successful,Write,Set function on channel 1,DIN - Curtain,I/O,df35a694-554f-44f3-b208-5805f6150784,,2020-09-22-16:40:58.585,2020-09-22-16:40:58.619
+Successful,Write,Change value of S3,DIN - Curtain,I/O,931fbdbe-772f-4222-aea0-a63cd9019549,,2020-09-22-16:40:59.228,2020-09-22-16:40:59.275
+Failed,Check,Verify value read,DIN - Curtain,I/O,891c1828-126b-4ee3-b33f-985f7391cca9,Variable 'DigitalInputs.Fct.Curtain' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-22-16:40:59.882,2020-09-22-16:40:59.915
+Successful,Write,Invert logic,DIN - Curtain,I/O,13adbc4a-aa2e-4516-867a-30a7cf98c490,,2020-09-22-16:41:00.523,2020-09-22-16:41:00.571
+Failed,Check,Verify value read,DIN - Curtain,I/O,e0e941dd-101f-4634-8007-7445cc1db4c1,Variable 'DigitalInputs.Fct.Curtain' has value 'TRUE' (expected Equal to/than 'FALSE' '+/-0');,2020-09-22-16:41:01.178,2020-09-22-16:41:01.274
+Successful,Write,Set function on channel 2,DIN - Curtain,I/O,05e28496-7ee7-488c-8ef4-6786db36290c,,2020-09-22-16:41:01.884,2020-09-22-16:41:01.968
+Successful,Write,Change value of S7,DIN - Curtain,I/O,05f02bad-4ca8-4050-9424-368741472d86,,2020-09-22-16:41:02.580,2020-09-22-16:41:02.703
+Failed,Check,Verify value read,DIN - Curtain,I/O,cfc29809-f5a4-4e11-98bf-473d7c0ed024,Variable 'DigitalInputs.Fct.Curtain' has value 'TRUE' (expected Equal to/than 'FALSE' '+/-0');,2020-09-22-16:41:03.303,2020-09-22-16:41:03.327
+Successful,Write,Invert logic again,DIN - Curtain,I/O,e24e55be-757a-4ec3-b28e-219a66809f2f,,2020-09-22-16:41:03.928,2020-09-22-16:41:03.950
+Failed,Check,Verify value read,DIN - Curtain,I/O,30210f2f-0357-4f6c-be12-fe3f292baac8,Variable 'DigitalInputs.Fct.Curtain' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-22-16:41:04.562,2020-09-22-16:41:04.671
+Successful,Reference,DIN - ContCycle,Main,I/O,ae90b39f-ca2c-42d1-8d82-1d68f153c186,,2020-09-22-16:41:05.273,2020-09-22-16:41:05.273
+Successful,Reference,Setup,DIN - ContCycle,I/O,89624953-fe67-4fed-a4f5-fa755415bb6e,,2020-09-22-16:41:05.274,2020-09-22-16:41:05.274
+Successful,Write,Inhibit exceptions and wizard,Setup - Inputs,I/O,ae900aa4-4620-43fe-b9aa-3a01e59c141b,,2020-09-22-16:41:05.275,2020-09-22-16:41:05.406
+Successful,Write,Virtualize U,Setup - Inputs,I/O,82142494-a556-436f-b264-167482231531,,2020-09-22-16:41:05.407,2020-09-22-16:41:05.886
+Successful,Write,Virtualize ID,Setup - Inputs,I/O,683345e2-1e0c-426d-8327-0034bb3449ea,,2020-09-22-16:41:05.887,2020-09-22-16:41:06.270
+Successful,Write,Preset all U to 0,Setup - Inputs,I/O,e5f542b3-f09d-4496-abb8-a27774c5d91e,,2020-09-22-16:41:06.271,2020-09-22-16:41:06.789
+Successful,Write,Preset all ID to FALSE,Setup - Inputs,I/O,34764468-901a-4f7c-8381-12d4fdacc116,,2020-09-22-16:41:06.789,2020-09-22-16:41:07.252
+Successful,Write,Preset all analog inputs as disabled,Setup - Inputs,I/O,5867526d-4197-40aa-b8fb-a3fd04b9a29b,,2020-09-22-16:41:07.253,2020-09-22-16:41:07.822
+Successful,Write,Preset all digital inputs as disabled,Setup - Inputs,I/O,0899ae3f-f399-44fc-ba4c-aa52a6a3a174,,2020-09-22-16:41:07.822,2020-09-22-16:41:08.707
+Successful,Write,Preset all analog inputs offsets as 0,Setup - Inputs,I/O,44329eeb-683b-435b-b10f-290c1bd31509,,2020-09-22-16:41:08.708,2020-09-22-16:41:09.266
+Successful,Write,Preset all digital inputs logics,Setup - Inputs,I/O,9f6e8273-cac4-4098-97c8-8222da706871,,2020-09-22-16:41:09.266,2020-09-22-16:41:10.098
+Successful,Write,Set function on channel 1,DIN - ContCycle,I/O,4c6af6aa-2fcc-4f4a-b765-e634b20048eb,,2020-09-22-16:41:10.710,2020-09-22-16:41:10.745
+Successful,Write,Change value of S3,DIN - ContCycle,I/O,5b7fd498-4684-4737-a4fb-032ad7bf9336,,2020-09-22-16:41:11.351,2020-09-22-16:41:11.528
+Failed,Check,Verify value read,DIN - ContCycle,I/O,40137812-1b34-418d-a947-384a94a03395,Variable 'DigitalInputs.Fct.ContCycle' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-22-16:41:12.144,2020-09-22-16:41:12.185
+Successful,Write,Invert logic,DIN - ContCycle,I/O,038be56e-4c95-4920-9fba-da7fdf2f2bbd,,2020-09-22-16:41:12.794,2020-09-22-16:41:13.256
+Failed,Check,Verify value read,DIN - ContCycle,I/O,49f99b46-8d5e-4d00-a1c9-ddac77f2f2d8,Variable 'DigitalInputs.Fct.ContCycle' has value 'TRUE' (expected Equal to/than 'FALSE' '+/-0');,2020-09-22-16:41:13.872,2020-09-22-16:41:13.976
+Successful,Write,Set function on channel 2,DIN - ContCycle,I/O,01ce3259-b706-4902-9601-16cf197b0e42,,2020-09-22-16:41:15.079,2020-09-22-16:41:15.171
+Successful,Write,Change value of S7,DIN - ContCycle,I/O,6abb31be-996b-4f8c-8941-9aa2fe2bdbaf,,2020-09-22-16:41:15.784,2020-09-22-16:41:15.939
+Failed,Check,Verify value read,DIN - ContCycle,I/O,949cfc42-a038-4b6a-ae2c-a0af15852f73,Variable 'DigitalInputs.Fct.ContCycle' has value 'TRUE' (expected Equal to/than 'FALSE' '+/-0');,2020-09-22-16:41:16.538,2020-09-22-16:41:16.562
+Successful,Write,Invert logic again,DIN - ContCycle,I/O,64194ac1-608b-4a21-b059-af8145e7d4a2,,2020-09-22-16:41:17.163,2020-09-22-16:41:17.186
+Failed,Check,Verify value read,DIN - ContCycle,I/O,03187dce-ee6a-489a-a42b-9e1238eff75d,Variable 'DigitalInputs.Fct.ContCycle' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-22-16:41:17.799,2020-09-22-16:41:17.906
+Successful,Reference,DIN - Auxiliary,Main,I/O,c7010236-9738-48e5-abed-ec0bc509dd2d,,2020-09-22-16:41:18.509,2020-09-22-16:41:18.509
+Successful,Reference,Setup,DIN - Auxiliary,I/O,cedf4a89-8c92-49be-800c-54c227081cc3,,2020-09-22-16:41:18.509,2020-09-22-16:41:18.510
+Successful,Write,Inhibit exceptions and wizard,Setup - Inputs,I/O,ae900aa4-4620-43fe-b9aa-3a01e59c141b,,2020-09-22-16:41:18.510,2020-09-22-16:41:18.642
+Successful,Write,Virtualize U,Setup - Inputs,I/O,82142494-a556-436f-b264-167482231531,,2020-09-22-16:41:18.642,2020-09-22-16:41:19.170
+Successful,Write,Virtualize ID,Setup - Inputs,I/O,683345e2-1e0c-426d-8327-0034bb3449ea,,2020-09-22-16:41:19.171,2020-09-22-16:41:19.658
+Successful,Write,Preset all U to 0,Setup - Inputs,I/O,e5f542b3-f09d-4496-abb8-a27774c5d91e,,2020-09-22-16:41:19.658,2020-09-22-16:41:20.162
+Successful,Write,Preset all ID to FALSE,Setup - Inputs,I/O,34764468-901a-4f7c-8381-12d4fdacc116,,2020-09-22-16:41:20.162,2020-09-22-16:41:20.610
+Successful,Write,Preset all analog inputs as disabled,Setup - Inputs,I/O,5867526d-4197-40aa-b8fb-a3fd04b9a29b,,2020-09-22-16:41:20.610,2020-09-22-16:41:21.337
+Successful,Write,Preset all digital inputs as disabled,Setup - Inputs,I/O,0899ae3f-f399-44fc-ba4c-aa52a6a3a174,,2020-09-22-16:41:21.337,2020-09-22-16:41:22.452
+Successful,Write,Preset all analog inputs offsets as 0,Setup - Inputs,I/O,44329eeb-683b-435b-b10f-290c1bd31509,,2020-09-22-16:41:22.452,2020-09-22-16:41:23.095
+Successful,Write,Preset all digital inputs logics,Setup - Inputs,I/O,9f6e8273-cac4-4098-97c8-8222da706871,,2020-09-22-16:41:23.095,2020-09-22-16:41:23.974
+Successful,Write,Set function on channel 1,DIN - Auxiliary,I/O,8c798c03-e935-460d-81a7-7e42be809f7e,,2020-09-22-16:41:24.587,2020-09-22-16:41:24.620
+Successful,Write,Change value of S3,DIN - Auxiliary,I/O,f61b45f0-234d-4047-9c7e-510eb81d44c9,,2020-09-22-16:41:25.231,2020-09-22-16:41:25.261
+Failed,Check,Verify value read,DIN - Auxiliary,I/O,2a97fff7-8138-4c87-ad3f-780bf690a7d4,Variable 'DigitalInputs.Fct.Auxiliary' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-22-16:41:25.873,2020-09-22-16:41:25.901
+Successful,Write,Invert logic,DIN - Auxiliary,I/O,6cdfff9b-3d94-4f99-83e8-276f45829600,,2020-09-22-16:41:26.508,2020-09-22-16:41:26.541
+Failed,Check,Verify value read,DIN - Auxiliary,I/O,9fdbae4a-ede2-4f0b-afea-5d1d24096675,Variable 'DigitalInputs.Fct.Auxiliary' has value 'TRUE' (expected Equal to/than 'FALSE' '+/-0');,2020-09-22-16:41:27.147,2020-09-22-16:41:27.213
+Successful,Write,Set function on channel 2,DIN - Auxiliary,I/O,2e68802b-bdc4-4c3c-a6fd-6ed8cd0bbf08,,2020-09-22-16:41:27.823,2020-09-22-16:41:27.858
+Successful,Write,Change value of S7,DIN - Auxiliary,I/O,383d3439-ee5c-4aaa-a80c-83aa7302eb64,,2020-09-22-16:41:28.472,2020-09-22-16:41:28.497
+Failed,Check,Verify value read,DIN - Auxiliary,I/O,41186608-df1e-4984-befb-91ccd54066d6,Variable 'DigitalInputs.Fct.Auxiliary' has value 'TRUE' (expected Equal to/than 'FALSE' '+/-0');,2020-09-22-16:41:29.111,2020-09-22-16:41:29.217
+Successful,Write,Invert logic again,DIN - Auxiliary,I/O,bcdd6768-27ed-40ad-961a-1cc9781f51bb,,2020-09-22-16:41:29.822,2020-09-22-16:41:29.857
+Failed,Check,Verify value read,DIN - Auxiliary,I/O,7efc9431-be03-4ea3-958d-aaa04243df8d,Variable 'DigitalInputs.Fct.Auxiliary' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-22-16:41:30.465,2020-09-22-16:41:32.485
+Successful,Reference,DIN - Timed,Main,I/O,7a2e4cb3-f66e-4cb5-97a1-dd73d1721b51,,2020-09-22-16:41:33.085,2020-09-22-16:41:33.086
+Successful,Reference,Setup,DIN - Timed,I/O,a641691e-8eec-4f03-9a50-de4430967259,,2020-09-22-16:41:33.086,2020-09-22-16:41:33.087
+Failed,Write,Inhibit exceptions and wizard,Setup - Inputs,I/O,ae900aa4-4620-43fe-b9aa-3a01e59c141b,"1° write 'TRUE' in 'EnSkipSysbreak' fails; 2° write 'TRUE' in 'wizCanEnd' fails; 3° write 'TRUE' in 'WizDone' fails; 4° write 'TRUE' in 'isMaster' fails; ",2020-09-22-16:41:33.087,2020-09-22-16:41:33.090
+Failed,Write,Set function on channel 1,DIN - Timed,I/O,4e8ae971-2cc3-4cff-af27-463ebd140c16,"1° write '1' in 'Din_Cfg.Fct.Timed.ch' fails; ",2020-09-22-16:41:33.704,2020-09-22-16:41:33.705
+Failed,Write,Change value of S3,DIN - Timed,I/O,0d405490-ad6e-4dbf-bc68-dc4441d2f4c8,"1° write 'TRUE' in 'U[3].b' fails; ",2020-09-22-16:41:34.319,2020-09-22-16:41:34.320
+Failed,Check,Verify value read,DIN - Timed,I/O,2b4fa6f6-a40b-463b-8d5a-e58cf7fb6f62,Variable 'DigitalInputs.Fct.Timed' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-22-16:41:34.933,2020-09-22-16:41:35.163
+Failed,Write,Invert logic,DIN - Timed,I/O,a02ffbd0-6947-41cb-bd82-b8af0ae9fd46,"1° write 'TRUE' in 'Din_Cfg.Fct.Timed.Logic' fails; ",2020-09-22-16:41:35.774,2020-09-22-16:41:35.783
+Successful,Check,Verify value read,DIN - Timed,I/O,5019f54d-3869-42eb-a868-27d5123b31c0,,2020-09-22-16:41:36.385,2020-09-22-16:41:36.385
+Failed,Write,Set function on channel 2,DIN - Timed,I/O,2d6b5ea7-dfb7-4b6d-8408-ebb43e6b0f7a,"1° write '2' in 'Din_Cfg.Fct.Timed.ch' fails; ",2020-09-22-16:41:36.996,2020-09-22-16:41:36.997
+Failed,Write,Change value of S7,DIN - Timed,I/O,8c8a539b-31bb-4098-b861-faa0a49e61f7,"1° write 'TRUE' in 'U[7].b' fails; ",2020-09-22-16:41:37.607,2020-09-22-16:41:37.609
+Successful,Check,Verify value read,DIN - Timed,I/O,b33c1d81-f4c4-4fb1-be32-90275c52fac3,,2020-09-22-16:41:38.210,2020-09-22-16:41:38.210
+Failed,Write,Invert logic again,DIN - Timed,I/O,b758fd2e-a321-437e-b0fa-4b9294bf5393,"1° write 'FALSE' in 'Din_Cfg.Fct.Timed.Logic' fails; ",2020-09-22-16:41:38.825,2020-09-22-16:41:38.826
+Failed,Check,Verify value read,DIN - Timed,I/O,8e9f3fba-c2c8-445f-938e-0a37dcb118dd,Variable 'DigitalInputs.Fct.Timed' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-22-16:41:39.440,2020-09-22-16:41:39.440
+Successful,Reference,DIN - Standby,Main,I/O,f9c0791a-dff9-46e3-ba14-3be71efe726f,,2020-09-22-16:41:40.041,2020-09-22-16:41:40.041
+Successful,Reference,Setup,DIN - Standby,I/O,3398fe91-6bf6-4f2b-979e-05a62e1ad626,,2020-09-22-16:41:40.041,2020-09-22-16:41:40.041
+Failed,Write,Inhibit exceptions and wizard,Setup - Inputs,I/O,ae900aa4-4620-43fe-b9aa-3a01e59c141b,"1° write 'TRUE' in 'EnSkipSysbreak' fails; 2° write 'TRUE' in 'wizCanEnd' fails; 3° write 'TRUE' in 'WizDone' fails; 4° write 'TRUE' in 'isMaster' fails; ",2020-09-22-16:41:40.042,2020-09-22-16:41:40.044
+Failed,Write,Set function on channel 1,DIN - Standby,I/O,d36b839a-f64c-4eca-8e99-ebff19a0b9f1,"1° write '1' in 'Din_Cfg.Fct.Standby.ch' fails; ",2020-09-22-16:41:40.655,2020-09-22-16:41:40.656
+Failed,Write,Change value of S3,DIN - Standby,I/O,878d4e15-29f2-4e37-b4a1-3ee87c82335d,"1° write 'TRUE' in 'U[3].b' fails; ",2020-09-22-16:41:41.258,2020-09-22-16:41:41.258
+Failed,Check,Verify value read,DIN - Standby,I/O,e83d3f56-1246-46a3-9305-41431c5cb7b3,Variable 'DigitalInputs.Fct.Standby' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-22-16:41:41.866,2020-09-22-16:41:41.867
+Failed,Write,Invert logic,DIN - Standby,I/O,9bc485a9-b08a-4b48-90cf-4b4ba78ccedd,"1° write 'TRUE' in 'Din_Cfg.Fct.Standby.Logic' fails; ",2020-09-22-16:41:42.478,2020-09-22-16:41:42.479
+Successful,Check,Verify value read,DIN - Standby,I/O,84bcfad6-dfc6-4a12-971e-5783a8b1febe,,2020-09-22-16:41:43.086,2020-09-22-16:41:43.086
+Failed,Write,Set function on channel 2,DIN - Standby,I/O,a57f2dbe-5c91-4ae0-8525-4af8a5cfafa0,"1° write '2' in 'Din_Cfg.Fct.Standby.ch' fails; ",2020-09-22-16:41:43.697,2020-09-22-16:41:43.697
+Failed,Write,Change value of S7,DIN - Standby,I/O,8f7eb3b1-35f0-4cbb-8c03-bb72cc775acb,"1° write 'TRUE' in 'U[7].b' fails; ",2020-09-22-16:41:44.306,2020-09-22-16:41:44.308
+Successful,Check,Verify value read,DIN - Standby,I/O,039c7a8f-697c-4ff8-861d-e4ec0cd9f3d0,,2020-09-22-16:41:44.916,2020-09-22-16:41:44.916
+Failed,Write,Invert logic again,DIN - Standby,I/O,9bd28b6a-8151-4f82-b0a1-81cd2616a345,"1° write 'FALSE' in 'Din_Cfg.Fct.Standby.Logic' fails; ",2020-09-22-16:41:45.528,2020-09-22-16:41:45.529
+Failed,Check,Verify value read,DIN - Standby,I/O,193affe7-9f58-4ce1-a0c4-30728d36dd84,Variable 'DigitalInputs.Fct.Standby' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-22-16:41:46.143,2020-09-22-16:41:46.143
+Successful,Reference,DIN - Clean,Main,I/O,0a3df9e2-493b-48ca-aaf0-6f9f078a8c20,,2020-09-22-16:41:46.758,2020-09-22-16:41:46.758
+Successful,Reference,Setup,DIN - Clean,I/O,896c6f0c-ffcb-46c6-a489-85fb22216cf7,,2020-09-22-16:41:46.758,2020-09-22-16:41:46.759
+Failed,Write,Inhibit exceptions and wizard,Setup - Inputs,I/O,ae900aa4-4620-43fe-b9aa-3a01e59c141b,"1° write 'TRUE' in 'EnSkipSysbreak' fails; 2° write 'TRUE' in 'wizCanEnd' fails; 3° write 'TRUE' in 'WizDone' fails; 4° write 'TRUE' in 'isMaster' fails; ",2020-09-22-16:41:46.759,2020-09-22-16:41:46.761
+Failed,Write,Set function on channel 1,DIN - Clean,I/O,321e46ba-c795-429a-baff-30c3f094fb60,"1° write '1' in 'Din_Cfg.Fct.Clean.ch' fails; ",2020-09-22-16:41:47.374,2020-09-22-16:41:47.375
+Failed,Write,Change value of S3,DIN - Clean,I/O,71f7f725-d765-4005-9936-d62c4e93502e,"1° write 'TRUE' in 'U[3].b' fails; ",2020-09-22-16:41:47.977,2020-09-22-16:41:47.979
+Failed,Check,Verify value read,DIN - Clean,I/O,731bb736-0796-4303-9373-6e7e0505671d,Variable 'DigitalInputs.Fct.Clean' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-22-16:41:48.589,2020-09-22-16:41:48.589
+Failed,Write,Invert logic,DIN - Clean,I/O,ba3313a2-3dc9-4216-990f-2373e5876538,"1° write 'TRUE' in 'Din_Cfg.Fct.Clean.Logic' fails; ",2020-09-22-16:41:49.197,2020-09-22-16:41:49.198
+Successful,Check,Verify value read,DIN - Clean,I/O,281928f5-818e-4840-af93-ee7e9816ea4f,,2020-09-22-16:41:49.805,2020-09-22-16:41:49.806
+Failed,Write,Set function on channel 2,DIN - Clean,I/O,d108c1c0-4d1f-4428-9ba3-effa3d55a857,"1° write '2' in 'Din_Cfg.Fct.Clean.ch' fails; ",2020-09-22-16:41:50.416,2020-09-22-16:41:50.417
+Failed,Write,Change value of S7,DIN - Clean,I/O,48f0f044-3e97-4795-9ca5-c1966e0567f4,"1° write 'TRUE' in 'U[7].b' fails; ",2020-09-22-16:41:51.030,2020-09-22-16:41:51.061
+Successful,Check,Verify value read,DIN - Clean,I/O,587c25fb-eab3-415b-a229-2ed7d3d70442,,2020-09-22-16:41:51.663,2020-09-22-16:41:51.664
+Failed,Write,Invert logic again,DIN - Clean,I/O,d19187fe-c687-4be6-b0e6-47d63ce3bdd2,"1° write 'FALSE' in 'Din_Cfg.Fct.Clean.Logic' fails; ",2020-09-22-16:41:52.277,2020-09-22-16:41:52.278
+Failed,Check,Verify value read,DIN - Clean,I/O,e31ab25d-7523-4b38-847a-e04faf9499d5,Variable 'DigitalInputs.Fct.Clean' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-22-16:41:52.887,2020-09-22-16:41:52.893
+Successful,Reference,DIN - Config,Main,I/O,15d81ec3-dbc8-468e-a8a0-e32eca608d0e,,2020-09-22-16:41:53.494,2020-09-22-16:41:53.494
+Successful,Reference,Setup,DIN - Config,I/O,4907166a-8434-49bc-9574-1b5349312b5a,,2020-09-22-16:41:53.494,2020-09-22-16:41:53.494
+Failed,Write,Inhibit exceptions and wizard,Setup - Inputs,I/O,ae900aa4-4620-43fe-b9aa-3a01e59c141b,"1° write 'TRUE' in 'EnSkipSysbreak' fails; 2° write 'TRUE' in 'wizCanEnd' fails; 3° write 'TRUE' in 'WizDone' fails; 4° write 'TRUE' in 'isMaster' fails; ",2020-09-22-16:41:53.494,2020-09-22-16:41:53.496
+Failed,Write,Set function on channel 1,DIN - Config,I/O,7c7d2121-d787-4e12-9720-ba57fa90775e,"1° write '1' in 'Din_Cfg.Fct.Config.ch' fails; ",2020-09-22-16:41:54.106,2020-09-22-16:41:54.107
+Failed,Write,Change value of S3,DIN - Config,I/O,59ff8a11-4b7f-424e-87fd-367cb9229a31,"1° write 'TRUE' in 'U[3].b' fails; ",2020-09-22-16:41:54.710,2020-09-22-16:41:54.711
+Failed,Check,Verify value read,DIN - Config,I/O,933edf86-c1af-4e1f-81d7-ebd90a823b6b,Variable 'DigitalInputs.Fct.Config' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-22-16:41:55.326,2020-09-22-16:41:55.326
+Failed,Write,Invert logic,DIN - Config,I/O,949875eb-e1b8-498e-9ee6-9b3a97e29e1d,"1° write 'TRUE' in 'Din_Cfg.Fct.Config.Logic' fails; ",2020-09-22-16:41:55.941,2020-09-22-16:41:55.952
+Successful,Check,Verify value read,DIN - Config,I/O,5c1bec0d-2075-4770-bd0b-92bb8fa8e2c1,,2020-09-22-16:41:56.555,2020-09-22-16:41:56.555
+Failed,Write,Set function on channel 2,DIN - Config,I/O,df251723-8f74-4ea5-a09c-bcb4638d5f5d,"1° write '2' in 'Din_Cfg.Fct.Config.ch' fails; ",2020-09-22-16:41:57.167,2020-09-22-16:41:57.168
+Successful,Write,Change value of S7,DIN - Config,I/O,0802e21e-a41b-47c3-9f5a-58e3cb11f9b3,,2020-09-22-16:41:57.774,2020-09-22-16:42:01.392
+Successful,Check,Verify value read,DIN - Config,I/O,932e67f0-224a-4c18-8b94-5e5931b71223,,2020-09-22-16:42:02.448,2020-09-22-16:42:02.512
+Successful,Write,Invert logic again,DIN - Config,I/O,c167cc99-fff7-4024-91e0-01bd9f0b0c4c,,2020-09-22-16:42:03.119,2020-09-22-16:42:03.152
+Failed,Check,Verify value read,DIN - Config,I/O,35993612-a778-49d8-8094-c3ed3d53d69a,Variable 'DigitalInputs.Fct.Config' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-22-16:42:03.757,2020-09-22-16:42:03.855
+Successful,Reference,DIN - DoorOn,Main,I/O,336d224f-9ada-4df3-9d06-1d0b066a5464,,2020-09-22-16:42:04.464,2020-09-22-16:42:04.464
+Successful,Reference,Setup,DIN - DoorOn,I/O,582ca7f5-c0e7-4f41-a260-970dcfae1885,,2020-09-22-16:42:04.464,2020-09-22-16:42:04.465
+Successful,Write,Inhibit exceptions and wizard,Setup - Inputs,I/O,ae900aa4-4620-43fe-b9aa-3a01e59c141b,,2020-09-22-16:42:04.465,2020-09-22-16:42:04.622
+Successful,Write,Virtualize U,Setup - Inputs,I/O,82142494-a556-436f-b264-167482231531,,2020-09-22-16:42:04.623,2020-09-22-16:42:05.183
+Successful,Write,Virtualize ID,Setup - Inputs,I/O,683345e2-1e0c-426d-8327-0034bb3449ea,,2020-09-22-16:42:05.183,2020-09-22-16:42:05.711
+Successful,Write,Preset all U to 0,Setup - Inputs,I/O,e5f542b3-f09d-4496-abb8-a27774c5d91e,,2020-09-22-16:42:05.711,2020-09-22-16:42:06.267
+Successful,Write,Preset all ID to FALSE,Setup - Inputs,I/O,34764468-901a-4f7c-8381-12d4fdacc116,,2020-09-22-16:42:06.267,2020-09-22-16:42:06.619
+Successful,Write,Preset all analog inputs as disabled,Setup - Inputs,I/O,5867526d-4197-40aa-b8fb-a3fd04b9a29b,,2020-09-22-16:42:06.619,2020-09-22-16:42:07.199
+Successful,Write,Preset all digital inputs as disabled,Setup - Inputs,I/O,0899ae3f-f399-44fc-ba4c-aa52a6a3a174,,2020-09-22-16:42:07.200,2020-09-22-16:42:08.129
+Successful,Write,Preset all analog inputs offsets as 0,Setup - Inputs,I/O,44329eeb-683b-435b-b10f-290c1bd31509,,2020-09-22-16:42:08.130,2020-09-22-16:42:08.704
+Successful,Write,Preset all digital inputs logics,Setup - Inputs,I/O,9f6e8273-cac4-4098-97c8-8222da706871,,2020-09-22-16:42:08.704,2020-09-22-16:42:09.727
+Successful,Write,Set function on channel 1,DIN - DoorOn,I/O,d001f760-1013-4f7f-b5ac-1abf95a28ac1,,2020-09-22-16:42:10.335,2020-09-22-16:42:10.370
+Successful,Write,Change value of S3,DIN - DoorOn,I/O,11a870aa-a792-4d80-a60e-2bf129edbafa,,2020-09-22-16:42:10.982,2020-09-22-16:42:11.010
+Failed,Check,Verify value read,DIN - DoorOn,I/O,e120ee78-1ded-4f26-b5e5-e033d764b445,Variable 'DigitalInputs.Fct.DoorOn' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-22-16:42:11.621,2020-09-22-16:42:11.650
+Successful,Write,Invert logic,DIN - DoorOn,I/O,7b651c9f-3054-4bab-b1d7-48602f8b578d,,2020-09-22-16:42:12.260,2020-09-22-16:42:12.370
+Failed,Check,Verify value read,DIN - DoorOn,I/O,ff287460-6789-41fb-b5e8-2417f0892524,Variable 'DigitalInputs.Fct.DoorOn' has value 'TRUE' (expected Equal to/than 'FALSE' '+/-0');,2020-09-22-16:42:12.980,2020-09-22-16:42:13.009
+Successful,Write,Set function on channel 2,DIN - DoorOn,I/O,685795cf-cf16-4ff0-96d3-9f844ec8f648,,2020-09-22-16:42:13.619,2020-09-22-16:42:13.654
+Successful,Write,Change value of S7,DIN - DoorOn,I/O,b2b328bb-4c5b-4aa9-8654-ded8e30cbe60,,2020-09-22-16:42:14.269,2020-09-22-16:42:14.294
+Failed,Check,Verify value read,DIN - DoorOn,I/O,aa4b4920-b005-4dcb-bc0d-4d2463b2ef95,Variable 'DigitalInputs.Fct.DoorOn' has value 'TRUE' (expected Equal to/than 'FALSE' '+/-0');,2020-09-22-16:42:14.901,2020-09-22-16:42:14.933
+Successful,Write,Invert logic again,DIN - DoorOn,I/O,458e39a4-eae3-4b5e-a812-12b1eaf63f51,,2020-09-22-16:42:15.542,2020-09-22-16:42:15.573
+Failed,Check,Verify value read,DIN - DoorOn,I/O,b012e551-4590-4b28-be61-e24f95e018c6,Variable 'DigitalInputs.Fct.DoorOn' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-22-16:42:16.189,2020-09-22-16:42:16.230
+Successful,Reference,DIN - DefrostMirror,Main,I/O,379494ea-3109-4316-b011-fbadf4cb31a6,,2020-09-22-16:42:16.834,2020-09-22-16:42:16.834
+Successful,Reference,Setup,DIN - DefrostMirror,I/O,a2ebb6a1-a288-448d-b7a1-4665f7448066,,2020-09-22-16:42:16.835,2020-09-22-16:42:16.835
+Successful,Write,Inhibit exceptions and wizard,Setup - Inputs,I/O,ae900aa4-4620-43fe-b9aa-3a01e59c141b,,2020-09-22-16:42:16.835,2020-09-22-16:42:16.997
+Successful,Write,Virtualize U,Setup - Inputs,I/O,82142494-a556-436f-b264-167482231531,,2020-09-22-16:42:16.998,2020-09-22-16:42:17.477
+Successful,Write,Virtualize ID,Setup - Inputs,I/O,683345e2-1e0c-426d-8327-0034bb3449ea,,2020-09-22-16:42:17.477,2020-09-22-16:42:17.956
+Successful,Write,Preset all U to 0,Setup - Inputs,I/O,e5f542b3-f09d-4496-abb8-a27774c5d91e,,2020-09-22-16:42:17.957,2020-09-22-16:42:18.555
+Successful,Write,Preset all ID to FALSE,Setup - Inputs,I/O,34764468-901a-4f7c-8381-12d4fdacc116,,2020-09-22-16:42:18.555,2020-09-22-16:42:18.979
+Successful,Write,Preset all analog inputs as disabled,Setup - Inputs,I/O,5867526d-4197-40aa-b8fb-a3fd04b9a29b,,2020-09-22-16:42:18.979,2020-09-22-16:42:19.710
+Successful,Write,Preset all digital inputs as disabled,Setup - Inputs,I/O,0899ae3f-f399-44fc-ba4c-aa52a6a3a174,,2020-09-22-16:42:19.711,2020-09-22-16:42:20.770
+Successful,Write,Preset all analog inputs offsets as 0,Setup - Inputs,I/O,44329eeb-683b-435b-b10f-290c1bd31509,,2020-09-22-16:42:20.771,2020-09-22-16:42:21.427
+Successful,Write,Preset all digital inputs logics,Setup - Inputs,I/O,9f6e8273-cac4-4098-97c8-8222da706871,,2020-09-22-16:42:21.427,2020-09-22-16:42:22.275
+Successful,Write,Set function on channel 1,DIN - DefrostMirror,I/O,06a22f0b-818c-460a-9524-a114d4b1fa23,,2020-09-22-16:42:22.886,2020-09-22-16:42:22.921
+Successful,Write,Change value of S3,DIN - DefrostMirror,I/O,911a80bf-decb-429e-8257-58ea78c77787,,2020-09-22-16:42:23.525,2020-09-22-16:42:23.593
+Failed,Check,Verify value read,DIN - DefrostMirror,I/O,8ba4e3fb-af01-46db-88ec-fd2512ed6cef,Variable 'DigitalInputs.Fct.DefrostMirror' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-22-16:42:24.208,2020-09-22-16:42:24.233
+Successful,Write,Invert logic,DIN - DefrostMirror,I/O,86058372-98c5-47f9-9917-f2c9d66c2cb7,,2020-09-22-16:42:24.846,2020-09-22-16:42:24.872
+Failed,Check,Verify value read,DIN - DefrostMirror,I/O,6c7f9345-ca4b-435c-9bfe-303f8b556d55,Variable 'DigitalInputs.Fct.DefrostMirror' has value 'TRUE' (expected Equal to/than 'FALSE' '+/-0');,2020-09-22-16:42:25.477,2020-09-22-16:42:25.561
+Successful,Write,Set function on channel 2,DIN - DefrostMirror,I/O,8562ea10-f70c-4d99-8034-6673fd393193,,2020-09-22-16:42:26.172,2020-09-22-16:42:26.207
+Successful,Write,Change value of S7,DIN - DefrostMirror,I/O,6a1c36cf-976b-4bb1-a89e-d7186ff48870,,2020-09-22-16:42:26.820,2020-09-22-16:42:26.848
+Failed,Check,Verify value read,DIN - DefrostMirror,I/O,4d34984c-d4ed-4fa8-9e75-b74dbd4dd954,Variable 'DigitalInputs.Fct.DefrostMirror' has value 'TRUE' (expected Equal to/than 'FALSE' '+/-0');,2020-09-22-16:42:27.460,2020-09-22-16:42:27.552
+Successful,Write,Invert logic again,DIN - DefrostMirror,I/O,99f99e10-1a06-4c45-b310-08b1472ed6d2,,2020-09-22-16:42:28.164,2020-09-22-16:42:28.192
+Failed,Check,Verify value read,DIN - DefrostMirror,I/O,e16648ea-83b1-42de-abd3-1f8317d82373,Variable 'DigitalInputs.Fct.DefrostMirror' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-22-16:42:28.807,2020-09-22-16:42:28.848
+Successful,Reference,DIN - GenFctAlrm,Main,I/O,c0204734-d0b3-440c-859a-81460869d85b,,2020-09-22-16:42:29.449,2020-09-22-16:42:29.449
+Successful,Reference,Setup,DIN - GenFctAlrm,I/O,bb3ab78c-cda1-4685-ac60-67dcee8cc8ba,,2020-09-22-16:42:29.450,2020-09-22-16:42:29.450
+Successful,Write,Inhibit exceptions and wizard,Setup - Inputs,I/O,ae900aa4-4620-43fe-b9aa-3a01e59c141b,,2020-09-22-16:42:29.451,2020-09-22-16:42:29.717
+Successful,Write,Virtualize U,Setup - Inputs,I/O,82142494-a556-436f-b264-167482231531,,2020-09-22-16:42:29.717,2020-09-22-16:42:30.165
+Successful,Write,Virtualize ID,Setup - Inputs,I/O,683345e2-1e0c-426d-8327-0034bb3449ea,,2020-09-22-16:42:30.165,2020-09-22-16:42:30.612
+Successful,Write,Preset all U to 0,Setup - Inputs,I/O,e5f542b3-f09d-4496-abb8-a27774c5d91e,,2020-09-22-16:42:30.613,2020-09-22-16:42:31.211
+Successful,Write,Preset all ID to FALSE,Setup - Inputs,I/O,34764468-901a-4f7c-8381-12d4fdacc116,,2020-09-22-16:42:31.211,2020-09-22-16:42:31.733
+Successful,Write,Preset all analog inputs as disabled,Setup - Inputs,I/O,5867526d-4197-40aa-b8fb-a3fd04b9a29b,,2020-09-22-16:42:31.733,2020-09-22-16:42:32.288
+Successful,Write,Preset all digital inputs as disabled,Setup - Inputs,I/O,0899ae3f-f399-44fc-ba4c-aa52a6a3a174,,2020-09-22-16:42:32.288,2020-09-22-16:42:33.467
+Successful,Write,Preset all analog inputs offsets as 0,Setup - Inputs,I/O,44329eeb-683b-435b-b10f-290c1bd31509,,2020-09-22-16:42:33.468,2020-09-22-16:42:34.079
+Successful,Write,Preset all digital inputs logics,Setup - Inputs,I/O,9f6e8273-cac4-4098-97c8-8222da706871,,2020-09-22-16:42:34.079,2020-09-22-16:42:34.911
+Successful,Write,Set function on channel 1,DIN - GenFctAlrm,I/O,45e7ec5c-e577-433c-baa5-7ba960db8edf,,2020-09-22-16:42:35.522,2020-09-22-16:42:35.556
+Successful,Write,Change value of S3,DIN - GenFctAlrm,I/O,bfdf2f60-0c39-4df6-9a74-b598331f07b2,,2020-09-22-16:42:36.166,2020-09-22-16:42:36.212
+Failed,Check,Verify value read,DIN - GenFctAlrm,I/O,a39dc6c3-6dc4-41c9-a327-a46365f26a7c,Variable 'DigitalInputs.Fct.GenFctAlrm' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-22-16:42:36.822,2020-09-22-16:42:36.853
+Successful,Write,Invert logic,DIN - GenFctAlrm,I/O,377370b7-9718-4227-af6c-7faa13bb0639,,2020-09-22-16:42:37.462,2020-09-22-16:42:37.492
+Failed,Check,Verify value read,DIN - GenFctAlrm,I/O,cc2d20cf-699b-4933-b7c2-8ce9b6f376a3,Variable 'DigitalInputs.Fct.GenFctAlrm' has value 'TRUE' (expected Equal to/than 'FALSE' '+/-0');,2020-09-22-16:42:38.100,2020-09-22-16:42:38.181
+Successful,Write,Set function on channel 2,DIN - GenFctAlrm,I/O,a6b7b24d-22ad-4f87-93cd-240a55e4aa6a,,2020-09-22-16:42:38.794,2020-09-22-16:42:38.829
+Successful,Write,Change value of S7,DIN - GenFctAlrm,I/O,7c52e82d-d6e7-4ea8-aaf8-0bfb39853b49,,2020-09-22-16:42:39.430,2020-09-22-16:42:39.453
+Failed,Check,Verify value read,DIN - GenFctAlrm,I/O,6b3a7d95-d50e-427e-873f-d801ad47155e,Variable 'DigitalInputs.Fct.GenFctAlrm' has value 'TRUE' (expected Equal to/than 'FALSE' '+/-0');,2020-09-22-16:42:40.054,2020-09-22-16:42:40.077
+Successful,Write,Invert logic again,DIN - GenFctAlrm,I/O,5916b68f-639f-4964-a036-5cfc66f608e9,,2020-09-22-16:42:40.680,2020-09-22-16:42:40.800
+Failed,Check,Verify value read,DIN - GenFctAlrm,I/O,1540a74c-dbc9-424a-a011-b600a9846bda,Variable 'DigitalInputs.Fct.GenFctAlrm' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-22-16:42:41.399,2020-09-22-16:42:41.488
+Successful,Reference,DOUT - Solenoid,Main,I/O,855576c0-02ab-4412-a51e-c155994a3a2a,,2020-09-22-16:42:42.087,2020-09-22-16:42:42.087
+Successful,Reference,Setup,DOUT - Solenoid,I/O,d95c64a2-1af6-4bba-bc3e-bf5b18364940,,2020-09-22-16:42:42.088,2020-09-22-16:42:42.088
+Successful,Write,Inhibit exceptions and wizard,Setup - Outputs,I/O,34faa8b1-834f-4fe9-b077-cf9692ba45f2,,2020-09-22-16:42:42.088,2020-09-22-16:42:42.352
+Successful,Write,Preset all digital outputs as disabled,Setup - Outputs,I/O,2c4abe17-00d8-4809-abe2-f6e3cd0d3f81,,2020-09-22-16:42:42.352,2020-09-22-16:42:43.088
+Successful,Write,Preset all digital outputs logics,Setup - Outputs,I/O,31ec27ef-437e-41e8-8a1e-ebd9e17d2b43,,2020-09-22-16:42:43.091,2020-09-22-16:42:43.872
+Successful,Lock,Take lock on output,DOUT - Solenoid,I/O,1eee7d91-6ca6-4bde-8370-f6bb8d04a1c7,,2020-09-22-16:42:44.475,2020-09-22-16:42:44.511
+Successful,Write,Set function on channel 1,DOUT - Solenoid,I/O,16acf368-47b7-45e7-8362-9de8c0d432a3,,2020-09-22-16:42:45.122,2020-09-22-16:42:45.190
+Successful,Write,Change output value,DOUT - Solenoid,I/O,eb02ff4a-32ff-4346-a7eb-bd29b04e22c3,,2020-09-22-16:42:45.804,2020-09-22-16:42:45.830
+Successful,Check,Verify value wrote,DOUT - Solenoid,I/O,9eb865b4-2d06-4c42-91d8-c55ae058abc4,,2020-09-22-16:42:46.447,2020-09-22-16:42:46.486
+Successful,Write,Invert logic,DOUT - Solenoid,I/O,15966fb4-d481-4f2a-8a49-bedcd6d367f8,,2020-09-22-16:42:47.086,2020-09-22-16:42:47.189
+Successful,Check,Verify value wrote,DOUT - Solenoid,I/O,b2addc43-7d0a-4922-a63c-5efdfd7424c7,,2020-09-22-16:42:47.790,2020-09-22-16:42:47.813
+Successful,Write,Set function on channel 2,DOUT - Solenoid,I/O,dc14d6df-ce38-493e-bbba-2a921ca7ff74,,2020-09-22-16:42:48.414,2020-09-22-16:42:48.491
+Successful,Write,Change output value,DOUT - Solenoid,I/O,9de57565-dd30-4ca2-b6e9-209110811a84,,2020-09-22-16:42:49.102,2020-09-22-16:42:49.163
+Successful,Check,Verify value wrote,DOUT - Solenoid,I/O,fc3dc4bd-7bdc-48ff-934a-265a15b700fd,,2020-09-22-16:42:49.776,2020-09-22-16:42:49.818
+Successful,Write,Invert logic,DOUT - Solenoid,I/O,cd3569ce-72d3-40b5-ac36-98dac8d63e94,,2020-09-22-16:42:50.428,2020-09-22-16:42:50.587
+Successful,Check,Verify value wrote,DOUT - Solenoid,I/O,d468e4fc-6d61-466f-9c85-d22a1e4d3b67,,2020-09-22-16:42:51.199,2020-09-22-16:42:51.226
+Successful,Write,Set function on channel 3,DOUT - Solenoid,I/O,8ed97217-f597-4c91-b9ff-97186c6b9c4a,,2020-09-22-16:42:51.835,2020-09-22-16:42:51.870
+Successful,Write," Change output value",DOUT - Solenoid,I/O,87043d3d-cffc-49ac-9550-6af052c8daa2,,2020-09-22-16:42:52.481,2020-09-22-16:42:52.541
+Successful,Check,Verify value wrote,DOUT - Solenoid,I/O,f240a03e-913d-4f95-849a-c5653597517b,,2020-09-22-16:42:53.154,2020-09-22-16:42:53.245
+Successful,Write,Invert logic,DOUT - Solenoid,I/O,47e245de-c0bb-4564-9d62-121305600937,,2020-09-22-16:42:53.856,2020-09-22-16:42:53.885
+Successful,Check,Verify value wrote,DOUT - Solenoid,I/O,76e38976-a330-4b21-8ca2-8023fc367e04,,2020-09-22-16:42:54.491,2020-09-22-16:42:54.526
+Successful,Write,Set function on channel 4,DOUT - Solenoid,I/O,f7d3f468-f456-4df3-b737-ce8a38c0b1c1,,2020-09-22-16:42:55.135,2020-09-22-16:42:55.170
+Successful,Write,Change output value,DOUT - Solenoid,I/O,d6edd5b7-c176-4f02-b1a0-1a1d8d407872,,2020-09-22-16:42:55.782,2020-09-22-16:42:55.810
+Successful,Check,Verify value wrote,DOUT - Solenoid,I/O,20855b74-68d3-49de-8e42-0d362be30003,,2020-09-22-16:42:56.416,2020-09-22-16:42:56.450
+Successful,Write,Invert logic,DOUT - Solenoid,I/O,2b03450b-d023-4f9c-8fd8-f2ed80212717,,2020-09-22-16:42:57.062,2020-09-22-16:42:57.089
+Failed,Check,Verify value wrote,DOUT - Solenoid,I/O,4fcede28-3150-4077-9ac7-1f0ecafee1ce,Variable 'NO[4]' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-22-16:42:57.694,2020-09-22-16:42:57.746
+Successful,Unlock,Release lock,DOUT - Solenoid,I/O,64daed3a-76f1-47b3-a5e6-b6e75e987f7a,,2020-09-22-16:42:58.358,2020-09-22-16:42:58.402
+Successful,Reference,DOUT - Alarm,Main,I/O,bdf63a63-e581-4140-94af-66f22373282a,,2020-09-22-16:42:59.014,2020-09-22-16:42:59.014
+Successful,Reference,Setup,DOUT - Alarm,I/O,b7eae598-549a-4dfc-8084-95a39468c68e,,2020-09-22-16:42:59.015,2020-09-22-16:42:59.015
+Successful,Write,Inhibit exceptions and wizard,Setup - Outputs,I/O,34faa8b1-834f-4fe9-b077-cf9692ba45f2,,2020-09-22-16:42:59.015,2020-09-22-16:42:59.233
+Successful,Write,Preset all digital outputs as disabled,Setup - Outputs,I/O,2c4abe17-00d8-4809-abe2-f6e3cd0d3f81,,2020-09-22-16:42:59.234,2020-09-22-16:43:00.088
+Successful,Write,Preset all digital outputs logics,Setup - Outputs,I/O,31ec27ef-437e-41e8-8a1e-ebd9e17d2b43,,2020-09-22-16:43:00.088,2020-09-22-16:43:00.888
+Successful,Lock,Take lock on output,DOUT - Alarm,I/O,976a9224-fa12-4148-8d70-43e4df4a4e75,,2020-09-22-16:43:01.501,2020-09-22-16:43:01.528
+Successful,Write,Set function on channel 1,DOUT - Alarm,I/O,24858344-a5da-4181-9cab-91440b661247,,2020-09-22-16:43:02.144,2020-09-22-16:43:02.178
+Successful,Write,Change output value,DOUT - Alarm,I/O,6130801d-3692-4cf7-965f-353806a69e0b,,2020-09-22-16:43:02.790,2020-09-22-16:43:02.898
+Successful,Check,Verify value wrote,DOUT - Alarm,I/O,9b2ae655-6b36-4413-a93e-c7620cb63cc8,,2020-09-22-16:43:03.498,2020-09-22-16:43:03.521
+Successful,Write,Invert logic,DOUT - Alarm,I/O,0810d638-01f1-4ea8-b8cd-cbb40decf556,,2020-09-22-16:43:04.136,2020-09-22-16:43:04.161
+Failed,Check,Verify value wrote,DOUT - Alarm,I/O,20e8ed78-081b-42da-9bac-fee0d5160d79,Variable 'NO[1]' has value 'TRUE' (expected Equal to/than 'FALSE' '+/-0');,2020-09-22-16:43:04.777,2020-09-22-16:43:04.818
+Successful,Write,Set function on channel 2,DOUT - Alarm,I/O,0ded4fcd-c3eb-4bf5-8b69-0add70313069,,2020-09-22-16:43:05.428,2020-09-22-16:43:05.463
+Successful,Write,Change output value,DOUT - Alarm,I/O,9617c82c-2b5d-4919-92dc-9d98d824942d,,2020-09-22-16:43:06.073,2020-09-22-16:43:06.119
+Successful,Check,Verify value wrote,DOUT - Alarm,I/O,56f1bda1-3edd-4a22-b023-a4b56f2cb2ee,,2020-09-22-16:43:06.730,2020-09-22-16:43:06.807
+Successful,Write,Invert logic,DOUT - Alarm,I/O,c0f12a2c-c07d-490c-a33e-8bd7a1d0d758,,2020-09-22-16:43:07.417,2020-09-22-16:43:07.447
+Failed,Check,Verify value wrote,DOUT - Alarm,I/O,880bcbec-d7cc-4efc-80a6-b2c00002aa6c,Variable 'NO[2]' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-22-16:43:08.055,2020-09-22-16:43:08.183
+Successful,Write,Set function on channel 3,DOUT - Alarm,I/O,dcba6974-1c01-447e-ae87-edeeec6cf4b6,,2020-09-22-16:43:08.792,2020-09-22-16:43:08.826
+Successful,Write," Change output value",DOUT - Alarm,I/O,474e9946-47c7-4e28-8034-d55e9856fa5f,,2020-09-22-16:43:09.430,2020-09-22-16:43:09.467
+Failed,Check,Verify value wrote,DOUT - Alarm,I/O,6b40a973-335e-4629-8515-22bd57ba6067,Variable 'NO[3]' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-22-16:43:10.580,2020-09-22-16:43:10.682
+Successful,Write,Invert logic,DOUT - Alarm,I/O,3d0bf4f1-a417-4dfd-9af5-e57a4ae992d7,,2020-09-22-16:43:11.290,2020-09-22-16:43:11.322
+Successful,Check,Verify value wrote,DOUT - Alarm,I/O,58fbb60a-e31f-41a8-abd6-8c562289fc21,,2020-09-22-16:43:11.930,2020-09-22-16:43:13.714
+Failed,Write,Set function on channel 4,DOUT - Alarm,I/O,38151b10-6f5f-47f4-bedf-facc2f1824f1,"1° write '4' in 'Dout_Cfg.Fct.Alarm.Ch' fails; ",2020-09-22-16:43:14.321,2020-09-22-16:43:14.322
+Failed,Write,Change output value,DOUT - Alarm,I/O,53d825c7-c94e-4126-bd22-255c9a33d3ee,"1° write 'TRUE' in 'DigitalOutputs.Fct.Alarm' fails; ",2020-09-22-16:43:14.928,2020-09-22-16:43:14.929
+Successful,Check,Verify value wrote,DOUT - Alarm,I/O,d35db71a-fb2f-47bb-8f7c-472a1119abd2,,2020-09-22-16:43:15.538,2020-09-22-16:43:15.538
+Failed,Write,Invert logic,DOUT - Alarm,I/O,11006464-fd62-4547-8a4f-9afb7c535105,"1° write 'FALSE' in 'Dout_Cfg.Fct.Alarm.Logic' fails; ",2020-09-22-16:43:16.154,2020-09-22-16:43:16.387
+Failed,Check,Verify value wrote,DOUT - Alarm,I/O,489f9727-ae64-40bd-9165-ed0d1c130cf3,Variable 'NO[4]' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-22-16:43:16.993,2020-09-22-16:43:16.999
+Successful,Unlock,Release lock,DOUT - Alarm,I/O,26ceefd5-018b-4ae5-b2d5-5536860aca88,,2020-09-22-16:43:17.600,2020-09-22-16:43:17.600
+Successful,Reference,DOUT - Auxiliary,Main,I/O,28631953-bb50-4601-9af9-a32227ca05b8,,2020-09-22-16:43:18.213,2020-09-22-16:43:18.213
+Successful,Reference,Setup,DOUT - Auxiliary,I/O,c2f1bf2f-96ce-447d-ae38-36137df38962,,2020-09-22-16:43:18.217,2020-09-22-16:43:18.217
+Failed,Write,Inhibit exceptions and wizard,Setup - Outputs,I/O,34faa8b1-834f-4fe9-b077-cf9692ba45f2,"1° write 'TRUE' in 'EnSkipSysbreak' fails; 2° write 'TRUE' in 'wizCanEnd' fails; 3° write 'TRUE' in 'WizDone' fails; 4° write 'TRUE' in 'isMaster' fails; ",2020-09-22-16:43:18.218,2020-09-22-16:43:18.220
+Successful,Lock,Take lock on output,DOUT - Auxiliary,I/O,a212941d-873f-45c1-9837-b062bd7c49d7,,2020-09-22-16:43:18.821,2020-09-22-16:43:18.822
+Failed,Write,Set function on channel 1,DOUT - Auxiliary,I/O,a8a6c800-5159-4b30-934d-744c26e828af,"1° write '1' in 'Dout_Cfg.Fct.Auxiliary.Ch' fails; ",2020-09-22-16:43:19.429,2020-09-22-16:43:19.429
+Failed,Write,Change output value,DOUT - Auxiliary,I/O,b807e98e-4ed9-42f6-99e9-33d22be8335e,"1° write 'TRUE' in 'DigitalOutputs.Fct.Auxiliary' fails; ",2020-09-22-16:43:20.040,2020-09-22-16:43:20.041
+Failed,Check,Verify value wrote,DOUT - Auxiliary,I/O,3d892384-20c1-4e51-af14-9afddddd7c95,Variable 'NO[1]' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-22-16:43:20.654,2020-09-22-16:43:20.654
+Failed,Write,Invert logic,DOUT - Auxiliary,I/O,da9bb3e0-5a43-4b26-bfef-bab0fb8f82c4,"1° write 'TRUE' in 'Dout_Cfg.Fct.Auxiliary.Logic' fails; ",2020-09-22-16:43:21.267,2020-09-22-16:43:21.268
+Successful,Check,Verify value wrote,DOUT - Auxiliary,I/O,3d414f49-38c6-4c69-9c1e-b3a5b5f524d2,,2020-09-22-16:43:21.882,2020-09-22-16:43:21.882
+Failed,Write,Set function on channel 2,DOUT - Auxiliary,I/O,fc99c057-76f2-4571-a7bf-f2d2769d5aeb,"1° write '2' in 'Dout_Cfg.Fct.Auxiliary.Ch' fails; ",2020-09-22-16:43:22.493,2020-09-22-16:43:22.494
+Failed,Write,Change output value,DOUT - Auxiliary,I/O,1f22baf6-6131-4234-8433-ed92dd031b5a,"1° write 'TRUE' in 'DigitalOutputs.Fct.Auxiliary' fails; ",2020-09-22-16:43:23.103,2020-09-22-16:43:23.104
+Successful,Check,Verify value wrote,DOUT - Auxiliary,I/O,1d940c3e-28e7-4279-b6ac-c37e9d8f5223,,2020-09-22-16:43:23.713,2020-09-22-16:43:23.714
+Failed,Write,Invert logic,DOUT - Auxiliary,I/O,0861a766-5abf-46e7-89cb-a05c96f802fe,"1° write 'FALSE' in 'Dout_Cfg.Fct.Auxiliary.Logic' fails; ",2020-09-22-16:43:24.325,2020-09-22-16:43:24.326
+Failed,Check,Verify value wrote,DOUT - Auxiliary,I/O,adca63e0-9a4c-427d-bc60-0cd0b1345034,Variable 'NO[2]' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-22-16:43:24.939,2020-09-22-16:43:24.940
+Failed,Write,Set function on channel 3,DOUT - Auxiliary,I/O,ac6e2db2-3b45-4fcb-80ab-03b3d4f33e17,"1° write '3' in 'Dout_Cfg.Fct.Auxiliary.Ch' fails; ",2020-09-22-16:43:25.555,2020-09-22-16:43:25.556
+Failed,Write," Change output value",DOUT - Auxiliary,I/O,0ab0efa5-b379-487f-9e0b-f3f11fe923a5,"1° write 'TRUE' in 'DigitalOutputs.Fct.Auxiliary' fails; ",2020-09-22-16:43:26.168,2020-09-22-16:43:26.169
+Failed,Check,Verify value wrote,DOUT - Auxiliary,I/O,89e50cf6-091e-4ebf-ae0f-7a52dbfb749b,Variable 'NO[3]' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-22-16:43:26.781,2020-09-22-16:43:26.782
+Failed,Write,Invert logic,DOUT - Auxiliary,I/O,fd7b9a3c-c086-4ea0-8bc2-238915db0765,"1° write 'TRUE' in 'Dout_Cfg.Fct.Auxiliary.Logic' fails; ",2020-09-22-16:43:27.383,2020-09-22-16:43:27.384
+Successful,Check,Verify value wrote,DOUT - Auxiliary,I/O,a1dc0369-043b-41c9-ad3e-c8282ba264f8,,2020-09-22-16:43:27.996,2020-09-22-16:43:27.996
+Failed,Write,Set function on channel 4,DOUT - Auxiliary,I/O,35e06c5a-575a-430d-add8-ab71f7623e31,"1° write '4' in 'Dout_Cfg.Fct.Auxiliary.Ch' fails; ",2020-09-22-16:43:28.607,2020-09-22-16:43:28.608
+Failed,Write,Change output value,DOUT - Auxiliary,I/O,ee84c8b8-61c5-4182-b772-173e0cc5893b,"1° write 'TRUE' in 'DigitalOutputs.Fct.Auxiliary' fails; ",2020-09-22-16:43:29.224,2020-09-22-16:43:29.224
+Successful,Check,Verify value wrote,DOUT - Auxiliary,I/O,059dfeca-5721-4a4e-a4ae-ba9af76b27ef,,2020-09-22-16:43:29.837,2020-09-22-16:43:29.837
+Successful,Write,Invert logic,DOUT - Auxiliary,I/O,fcd3ba47-f7cc-45e9-96a2-c56d80c68d34,,2020-09-22-16:43:30.458,2020-09-22-16:43:33.601
+Failed,Check,Verify value wrote,DOUT - Auxiliary,I/O,c949071a-ece9-4464-bb6a-a8c1fb774bf5,Variable 'NO[4]' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-22-16:43:34.210,2020-09-22-16:43:34.252
+Successful,Unlock,Release lock,DOUT - Auxiliary,I/O,d2b30326-0439-40b8-b8f4-07b273503007,,2020-09-22-16:43:34.853,2020-09-22-16:43:34.853
+Successful,Reference,DOUT - MasterAuxiliary,Main,I/O,7a4d3110-12c6-497d-acd9-bdd9afd18c98,,2020-09-22-16:43:35.464,2020-09-22-16:43:35.464
+Successful,Reference,Setup,DOUT - MasterAuxiliary,I/O,5726e14f-1783-4dd8-899c-53020c8734d3,,2020-09-22-16:43:35.465,2020-09-22-16:43:35.465
+Successful,Write,Inhibit exceptions and wizard,Setup - Outputs,I/O,34faa8b1-834f-4fe9-b077-cf9692ba45f2,,2020-09-22-16:43:35.465,2020-09-22-16:43:35.660
+Successful,Write,Preset all digital outputs as disabled,Setup - Outputs,I/O,2c4abe17-00d8-4809-abe2-f6e3cd0d3f81,,2020-09-22-16:43:35.660,2020-09-22-16:43:36.628
+Successful,Write,Preset all digital outputs logics,Setup - Outputs,I/O,31ec27ef-437e-41e8-8a1e-ebd9e17d2b43,,2020-09-22-16:43:36.628,2020-09-22-16:43:37.364
+Successful,Lock,Take lock on output,DOUT - MasterAuxiliary,I/O,19bc7752-46ba-4ed3-9210-9c79ba849d95,,2020-09-22-16:43:37.975,2020-09-22-16:43:38.035
+Successful,Write,Set function on channel 1,DOUT - MasterAuxiliary,I/O,b63b4b51-b418-4628-b4a3-55bdb39205fc,,2020-09-22-16:43:38.636,2020-09-22-16:43:38.671
+Successful,Write,Change output value,DOUT - MasterAuxiliary,I/O,44ad0473-9a01-471b-89cd-48d588c408f5,,2020-09-22-16:43:39.272,2020-09-22-16:43:39.311
+Successful,Check,Verify value wrote,DOUT - MasterAuxiliary,I/O,2f93acf1-454a-4ad9-92a7-88f561df422a,,2020-09-22-16:43:39.913,2020-09-22-16:43:40.158
+Successful,Write,Invert logic,DOUT - MasterAuxiliary,I/O,7acdf79a-1619-4c23-8e3b-9ee474d499e0,,2020-09-22-16:43:40.773,2020-09-22-16:43:40.815
+Successful,Check,Verify value wrote,DOUT - MasterAuxiliary,I/O,62b34cde-686b-430c-ac78-678b30f3452f,,2020-09-22-16:43:41.429,2020-09-22-16:43:41.470
+Successful,Write,Set function on channel 2,DOUT - MasterAuxiliary,I/O,5605ef03-5282-499c-b9cc-3b220a727b02,,2020-09-22-16:43:42.070,2020-09-22-16:43:42.105
+Successful,Write,Change output value,DOUT - MasterAuxiliary,I/O,fc490724-f166-4a86-8235-0f038cbff8c2,,2020-09-22-16:43:42.715,2020-09-22-16:43:42.745
+Successful,Check,Verify value wrote,DOUT - MasterAuxiliary,I/O,bc78020e-0b6e-41da-8a3d-dc6872c2505a,,2020-09-22-16:43:43.357,2020-09-22-16:43:43.417
+Successful,Write,Invert logic,DOUT - MasterAuxiliary,I/O,3c157d5e-335a-4d0e-8898-90c540ee2318,,2020-09-22-16:43:44.022,2020-09-22-16:43:44.057
+Failed,Check,Verify value wrote,DOUT - MasterAuxiliary,I/O,4d511a6e-dd8f-4f2c-9725-8ed7e6da0334,Variable 'NO[2]' has value 'FALSE' (expected Equal to/than 'TRUE' '+/-0');,2020-09-22-16:43:44.673,2020-09-22-16:43:44.696
+Successful,Write,Set function on channel 3,DOUT - MasterAuxiliary,I/O,506ce5f4-ddc1-4b45-8c2b-0b767876b850,,2020-09-22-16:43:45.305,2020-09-22-16:43:45.383
+Successful,Write," Change output value",DOUT - MasterAuxiliary,I/O,1a99f81a-2fc9-4f8a-84e0-a85310dbb367,,2020-09-22-16:43:45.992,2020-09-22-16:43:46.023
+Successful,Check,Verify value wrote,DOUT - MasterAuxiliary,I/O,8fce5940-0c30-4c77-889a-d0e764a0720a,,2020-09-22-16:43:46.631,2020-09-22-16:43:46.663
+Successful,Write,Invert logic,DOUT - MasterAuxiliary,I/O,53b0f157-a4f5-48ad-a966-19b03f582d08,,2020-09-22-16:43:47.276,2020-09-22-16:43:47.335
+Successful,Check,Verify value wrote,DOUT - MasterAuxiliary,I/O,efee69a2-bd60-41e6-80b1-e13b3f1df5e0,,2020-09-22-16:43:47.948,2020-09-22-16:43:47.974
+Successful,Write,Set function on channel 4,DOUT - MasterAuxiliary,I/O,7a736247-8fc0-482c-ad93-54f21920f143,,2020-09-22-16:43:48.585,2020-09-22-16:43:48.635
+Successful,Write,Change output value,DOUT - MasterAuxiliary,I/O,369b5533-c5c3-4bf0-843f-95da1c256a5d,,2020-09-22-16:43:49.245,2020-09-22-16:43:49.339
+Successful,Check,Verify value wrote,DOUT - MasterAuxiliary,I/O,cfd52168-204a-4d8a-a3be-bed4fe75d017,,2020-09-22-16:43:49.947,2020-09-22-16:43:50.075
+Successful,Write,Invert logic,DOUT - MasterAuxiliary,I/O,ba23edd4-a2fe-4913-acce-d07a3788acea,,2020-09-22-16:43:50.691,2020-09-22-16:43:50.779
+Successful,Check,Verify value wrote,DOUT - MasterAuxiliary,I/O,40d2556c-1930-4e33-996a-6ddd967a9ff5,,2020-09-22-16:43:51.393,2020-09-22-16:43:51.420
+Successful,Unlock,Release lock,DOUT - MasterAuxiliary,I/O,5526a1a2-6c6b-422b-aa36-ad17f957d424,,2020-09-22-16:43:52.033,2020-09-22-16:43:52.059
+Successful,Reference,DOUT - Light,Main,I/O,8f8c48b9-1b16-4cf1-af2f-588d7bcaa5d3,,2020-09-22-16:43:52.663,2020-09-22-16:43:52.663
+Successful,Reference,Setup,DOUT - Light,I/O,bc01db0f-0382-4f50-acbc-80b9bb3cdb6f,,2020-09-22-16:43:52.664,2020-09-22-16:43:52.664
+Successful,Write,Inhibit exceptions and wizard,Setup - Outputs,I/O,34faa8b1-834f-4fe9-b077-cf9692ba45f2,,2020-09-22-16:43:52.664,2020-09-22-16:43:52.827
+Successful,Write,Preset all digital outputs as disabled,Setup - Outputs,I/O,2c4abe17-00d8-4809-abe2-f6e3cd0d3f81,,2020-09-22-16:43:52.827,2020-09-22-16:43:53.581
+Successful,Write,Preset all digital outputs logics,Setup - Outputs,I/O,31ec27ef-437e-41e8-8a1e-ebd9e17d2b43,,2020-09-22-16:43:53.581,2020-09-22-16:43:54.365
+Successful,Lock,Take lock on output,DOUT - Light,I/O,abceef6b-9f11-468b-9c82-c105331b68e7,,2020-09-22-16:43:54.976,2020-09-22-16:43:55.180
+Successful,Write,Set function on channel 1,DOUT - Light,I/O,aba4398e-a2a7-4d8b-a0a0-8463e715f9fd,,2020-09-22-16:43:55.790,2020-09-22-16:43:55.841
+Successful,Write,Change output value,DOUT - Light,I/O,147b9c8f-c1f0-4417-8913-9dc9fea6d286,,2020-09-22-16:43:56.457,2020-09-22-16:43:56.530
+Successful,Check,Verify value wrote,DOUT - Light,I/O,c502d5f7-96f3-473e-9eb7-2479644f7c14,,2020-09-22-16:43:57.131,2020-09-22-16:43:57.218
+Successful,Write,Invert logic,DOUT - Light,I/O,81cdc762-f0d9-49d1-908e-4bc85b48e46a,,2020-09-22-16:43:57.831,2020-09-22-16:43:57.857
+Successful,Check,Verify value wrote,DOUT - Light,I/O,3c0a72c9-2877-4312-9718-b65bc4534842,,2020-09-22-16:43:58.467,2020-09-22-16:43:58.624
+Successful,Write,Set function on channel 2,DOUT - Light,I/O,4051bb81-aa2a-4591-8c87-43bb8458b7c2,,2020-09-22-16:43:59.226,2020-09-22-16:43:59.302
+Successful,Write,Change output value,DOUT - Light,I/O,8b30942c-8450-4466-b700-0b3a245add77,,2020-09-22-16:43:59.914,2020-09-22-16:43:59.942
+Successful,Check,Verify value wrote,DOUT - Light,I/O,7fa6adad-eb70-4ac8-a44d-e871b6db4db5,,2020-09-22-16:44:00.541,2020-09-22-16:44:00.582
+Successful,Write,Invert logic,DOUT - Light,I/O,661d6f01-8452-40ce-a295-9f8e88d13b4e,,2020-09-22-16:44:01.196,2020-09-22-16:44:01.229
+Successful,Check,Verify value wrote,DOUT - Light,I/O,2255af54-e611-4d02-8fa0-56f67509fd13,,2020-09-22-16:44:01.837,2020-09-22-16:44:01.869
+Successful,Write,Set function on channel 3,DOUT - Light,I/O,01d4aa44-e32c-4f0a-a95d-fc23b50d8492,,2020-09-22-16:44:02.476,2020-09-22-16:44:02.550
+Successful,Write," Change output value",DOUT - Light,I/O,1547b31a-7152-400e-b4fa-ab38cdd31517,,2020-09-22-16:44:03.163,2020-09-22-16:44:03.189
+Successful,Check,Verify value wrote,DOUT - Light,I/O,12825408-f44d-4f8d-b453-31f5847f2d49,,2020-09-22-16:44:03.790,2020-09-22-16:44:03.813
+Successful,Write,Invert logic,DOUT - Light,I/O,e98f3c57-720f-4429-9239-a67b436f3df0,,2020-09-22-16:44:04.580,2020-09-22-16:44:04.661
+Successful,Check,Verify value wrote,DOUT - Light,I/O,809522a1-8819-4ad1-ad62-ffe7ec53af45,,2020-09-22-16:44:05.274,2020-09-22-16:44:05.301
+Successful,Write,Set function on channel 4,DOUT - Light,I/O,72142a96-d86d-4a9d-becc-8d5f4dcf19fb,,2020-09-22-16:44:05.916,2020-09-22-16:44:05.984
+Successful,Write,Change output value,DOUT - Light,I/O,ee196034-b7f4-4af0-b110-cd354a87036a,,2020-09-22-16:44:06.596,2020-09-22-16:44:06.623
+Successful,Check,Verify value wrote,DOUT - Light,I/O,4fb548ee-c5cc-4041-9ad6-3a3e6391ef69,,2020-09-22-16:44:07.239,2020-09-22-16:44:07.263
+Successful,Write,Invert logic,DOUT - Light,I/O,98514226-dedf-4dde-9afb-2e37ca6f8c5c,,2020-09-22-16:44:07.878,2020-09-22-16:44:07.935
+Successful,Check,Verify value wrote,DOUT - Light,I/O,6d7c9e61-20d2-48e5-84d1-191b41fd18dd,,2020-09-22-16:44:08.549,2020-09-22-16:44:08.575
+Successful,Unlock,Release lock,DOUT - Light,I/O,f82d33ab-7bff-4409-92d5-d1510fe86e0c,,2020-09-22-16:44:09.181,2020-09-22-16:44:09.215
+Successful,Reference,DOUT - MasterLight,Main,I/O,c05514e9-ead3-4cf7-98e8-044fb5139a80,,2020-09-22-16:44:09.829,2020-09-22-16:44:09.829
+Successful,Reference,Setup,DOUT - MasterLight,I/O,7ece77dd-1ef2-42d1-8f82-cfcd5a64eb12,,2020-09-22-16:44:09.830,2020-09-22-16:44:09.830
+Successful,Write,Inhibit exceptions and wizard,Setup - Outputs,I/O,34faa8b1-834f-4fe9-b077-cf9692ba45f2,,2020-09-22-16:44:09.830,2020-09-22-16:44:09.999
+Successful,Write,Preset all digital outputs as disabled,Setup - Outputs,I/O,2c4abe17-00d8-4809-abe2-f6e3cd0d3f81,,2020-09-22-16:44:09.999,2020-09-22-16:44:10.985
+Successful,Write,Preset all digital outputs logics,Setup - Outputs,I/O,31ec27ef-437e-41e8-8a1e-ebd9e17d2b43,,2020-09-22-16:44:10.985,2020-09-22-16:44:11.689
+Successful,Lock,Take lock on output,DOUT - MasterLight,I/O,83111be3-f932-4dd6-a109-d22d2e8744d5,,2020-09-22-16:44:12.290,2020-09-22-16:44:12.344
+Successful,Write,Set function on channel 1,DOUT - MasterLight,I/O,0a4174f4-282f-4791-8b9c-848c066a931a,,2020-09-22-16:44:12.945,2020-09-22-16:44:12.980
+Successful,Write,Change output value,DOUT - MasterLight,I/O,2140bf00-4909-4811-a86a-d9dfa769372d,,2020-09-22-16:44:13.586,2020-09-22-16:44:13.877
+Successful,Check,Verify value wrote,DOUT - MasterLight,I/O,85c9f5fb-1d27-43bf-89c2-00aaa8972815,,2020-09-22-16:44:14.477,2020-09-22-16:44:14.500
+Successful,Write,Invert logic,DOUT - MasterLight,I/O,773fcda9-0422-4bb6-94b2-a693ea8d9a05,,2020-09-22-16:44:15.104,2020-09-22-16:44:15.140
+Successful,Check,Verify value wrote,DOUT - MasterLight,I/O,878136f0-5887-4fef-8915-87c995e8d958,,2020-09-22-16:44:15.745,2020-09-22-16:44:15.780
+Successful,Write,Set function on channel 2,DOUT - MasterLight,I/O,b51afad3-029e-4685-9126-d425c99a2352,,2020-09-22-16:44:16.394,2020-09-22-16:44:16.429
+Successful,Write,Change output value,DOUT - MasterLight,I/O,27f8b950-ad8c-4177-9be8-d1d9b6a1951c,,2020-09-22-16:44:17.039,2020-09-22-16:44:17.069
+Successful,Check,Verify value wrote,DOUT - MasterLight,I/O,c3163420-da53-46f3-8869-eb77e514f609,,2020-09-22-16:44:17.679,2020-09-22-16:44:17.741
+Successful,Write,Invert logic,DOUT - MasterLight,I/O,21060f30-0651-432a-86d7-800bacd9dcad,,2020-09-22-16:44:18.350,2020-09-22-16:44:18.381
+Successful,Check,Verify value wrote,DOUT - MasterLight,I/O,bd7e9301-4a17-449d-9fa9-a7e592d2f98f,,2020-09-22-16:44:18.992,2020-09-22-16:44:19.036
+Successful,Write,Set function on channel 3,DOUT - MasterLight,I/O,04e984ac-103a-4bc6-9a2d-e7325d5000c7,,2020-09-22-16:44:19.648,2020-09-22-16:44:19.744
+Successful,Write," Change output value",DOUT - MasterLight,I/O,72da729d-9725-47c8-9329-99d5b90bba2c,,2020-09-22-16:44:20.354,2020-09-22-16:44:20.480
+Successful,Check,Verify value wrote,DOUT - MasterLight,I/O,d17fb793-7fcc-4b65-9cfc-e1a28be10205,,2020-09-22-16:44:21.088,2020-09-22-16:44:21.184
+Successful,Write,Invert logic,DOUT - MasterLight,I/O,853d827a-090d-4c8a-9a0c-6b552db6481f,,2020-09-22-16:44:21.788,2020-09-22-16:44:21.826
+Successful,Check,Verify value wrote,DOUT - MasterLight,I/O,32006b18-83ca-4fcb-af6b-98d4aa21a54e,,2020-09-22-16:44:22.441,2020-09-22-16:44:22.464
+Successful,Write,Set function on channel 4,DOUT - MasterLight,I/O,baa957ae-1ac6-4444-b0a1-dc0f8cefc9a6,,2020-09-22-16:44:23.071,2020-09-22-16:44:23.143
+Successful,Write,Change output value,DOUT - MasterLight,I/O,40a3b9aa-6835-448f-b6aa-a79d43d72bc5,,2020-09-22-16:44:23.757,2020-09-22-16:44:23.784
+Successful,Check,Verify value wrote,DOUT - MasterLight,I/O,9d160111-777a-4901-b0a9-e222660430ae,,2020-09-22-16:44:24.384,2020-09-22-16:44:24.407
+Successful,Write,Invert logic,DOUT - MasterLight,I/O,4d05f73a-4364-4aec-a449-610f635bd00a,,2020-09-22-16:44:25.010,2020-09-22-16:44:25.111
+Successful,Check,Verify value wrote,DOUT - MasterLight,I/O,5e34849a-4298-472d-9b02-b645c5655bcc,,2020-09-22-16:44:25.712,2020-09-22-16:44:25.735
+Successful,Unlock,Release lock,DOUT - MasterLight,I/O,aa52f330-cbbf-4592-8a01-f04ee055f633,,2020-09-22-16:44:26.337,2020-09-22-16:44:26.375
+Successful,Reference,DOUT - Defrost,Main,I/O,5b8cd12b-c478-44d4-b2c0-5c6e578671fb,,2020-09-22-16:44:26.976,2020-09-22-16:44:26.976
+Successful,Reference,Setup,DOUT - Defrost,I/O,ba3f3b63-f415-4c3c-a983-f1bc2ca62156,,2020-09-22-16:44:26.977,2020-09-22-16:44:26.977
+Successful,Write,Inhibit exceptions and wizard,Setup - Outputs,I/O,34faa8b1-834f-4fe9-b077-cf9692ba45f2,,2020-09-22-16:44:26.977,2020-09-22-16:44:27.159
+Successful,Write,Preset all digital outputs as disabled,Setup - Outputs,I/O,2c4abe17-00d8-4809-abe2-f6e3cd0d3f81,,2020-09-22-16:44:27.159,2020-09-22-16:44:28.115
+Successful,Write,Preset all digital outputs logics,Setup - Outputs,I/O,31ec27ef-437e-41e8-8a1e-ebd9e17d2b43,,2020-09-22-16:44:28.116,2020-09-22-16:44:28.900
+Successful,Lock,Take lock on output,DOUT - Defrost,I/O,faf0eb84-cd13-447a-a7f1-0aa89d0a5529,,2020-09-22-16:44:29.509,2020-09-22-16:44:29.587
+Successful,Write,Set function on channel 1,DOUT - Defrost,I/O,07afb36b-57f9-4f04-b98d-2535de63ffbb,,2020-09-22-16:44:30.199,2020-09-22-16:44:30.233
+Successful,Write,Change output value,DOUT - Defrost,I/O,321eed66-8271-42ab-b7bf-e71b37c6dcf0,,2020-09-22-16:44:30.835,2020-09-22-16:44:30.985
+Successful,Check,Verify value wrote,DOUT - Defrost,I/O,f0bc0de1-592c-46cf-b452-73f7d1dc95c8,,2020-09-22-16:44:31.588,2020-09-22-16:44:31.625
+Successful,Write,Invert logic,DOUT - Defrost,I/O,8612a5d0-77e2-4f2f-bf49-4b1b31caba30,,2020-09-22-16:44:32.227,2020-09-22-16:44:32.314
+Successful,Check,Verify value wrote,DOUT - Defrost,I/O,dd4c6541-14e4-493e-8dc7-e31b6bf993f4,,2020-09-22-16:44:32.914,2020-09-22-16:44:33.001
+Successful,Write,Set function on channel 2,DOUT - Defrost,I/O,7cf09fda-c5c5-44ae-b5f7-c142a0235762,,2020-09-22-16:44:33.602,2020-09-22-16:44:33.636
+Successful,Write,Change output value,DOUT - Defrost,I/O,b8d488b5-4cf0-4714-ac07-153457146a30,,2020-09-22-16:44:34.244,2020-09-22-16:44:34.280
+Successful,Check,Verify value wrote,DOUT - Defrost,I/O,22b48f89-09af-4a03-8136-8ad5b00774ca,,2020-09-22-16:44:34.889,2020-09-22-16:44:34.952
+Successful,Write,Invert logic,DOUT - Defrost,I/O,0a6352a6-afeb-4a0f-8724-c6742d3c3a90,,2020-09-22-16:44:35.557,2020-09-22-16:44:35.591
+Successful,Check,Verify value wrote,DOUT - Defrost,I/O,f0f6426c-92f5-456d-af6d-4cb74413ba20,,2020-09-22-16:44:36.203,2020-09-22-16:44:36.248
+Successful,Write,Set function on channel 3,DOUT - Defrost,I/O,65e7834b-c42a-4a15-ae4b-94eb82e06c46,,2020-09-22-16:44:36.854,2020-09-22-16:44:36.889
+Successful,Write," Change output value",DOUT - Defrost,I/O,b41a2c0f-04c7-4f71-8d8a-1abde620a39c,,2020-09-22-16:44:37.500,2020-09-22-16:44:37.528
+Successful,Check,Verify value wrote,DOUT - Defrost,I/O,a42c72dd-eeac-4176-be00-3884427bf25f,,2020-09-22-16:44:38.136,2020-09-22-16:44:38.184
+Successful,Write,Invert logic,DOUT - Defrost,I/O,53454247-cb51-45cf-adc3-4eb6be5264af,,2020-09-22-16:44:38.796,2020-09-22-16:44:38.872
+Successful,Check,Verify value wrote,DOUT - Defrost,I/O,f1f64273-1004-4d7a-ae72-e2e8893ef4c2,,2020-09-22-16:44:39.476,2020-09-22-16:44:39.560
+Successful,Write,Set function on channel 4,DOUT - Defrost,I/O,f8d794f2-f8af-42a8-9490-81d0f0cab08b,,2020-09-22-16:44:40.164,2020-09-22-16:44:40.397
+Successful,Write,Change output value,DOUT - Defrost,I/O,ebc88e11-5ea0-491b-8ce0-a73ec3c30ab8,,2020-09-22-16:44:41.010,2020-09-22-16:44:41.037
+Successful,Check,Verify value wrote,DOUT - Defrost,I/O,78e081d4-8309-418b-a3be-95ea0bc68e4b,,2020-09-22-16:44:41.650,2020-09-22-16:44:41.773
+Successful,Write,Invert logic,DOUT - Defrost,I/O,ad119d3c-336d-453c-b7fe-7b7c8062520f,,2020-09-22-16:44:42.385,2020-09-22-16:44:42.412
+Successful,Check,Verify value wrote,DOUT - Defrost,I/O,605241eb-b7c8-447f-9c99-ce6b740505dd,,2020-09-22-16:44:43.024,2020-09-22-16:44:43.052
+Successful,Unlock,Release lock,DOUT - Defrost,I/O,392084f0-b38e-4bf5-8130-b98bbdcd2426,,2020-09-22-16:44:43.664,2020-09-22-16:44:43.740
+Successful,Reference,DOUT - Defrost2,Main,I/O,5785dbd7-3855-459c-bebf-0f261af88a53,,2020-09-22-16:44:44.354,2020-09-22-16:44:44.354
+Successful,Reference,Setup,DOUT - Defrost2,I/O,7a44d900-18e4-4223-953b-fa2e4b22d0aa,,2020-09-22-16:44:44.354,2020-09-22-16:44:44.355
+Successful,Write,Inhibit exceptions and wizard,Setup - Outputs,I/O,34faa8b1-834f-4fe9-b077-cf9692ba45f2,,2020-09-22-16:44:44.355,2020-09-22-16:44:44.651
+Successful,Write,Preset all digital outputs as disabled,Setup - Outputs,I/O,2c4abe17-00d8-4809-abe2-f6e3cd0d3f81,,2020-09-22-16:44:44.652,2020-09-22-16:44:45.467
+Successful,Write,Preset all digital outputs logics,Setup - Outputs,I/O,31ec27ef-437e-41e8-8a1e-ebd9e17d2b43,,2020-09-22-16:44:45.467,2020-09-22-16:44:46.252
+Successful,Lock,Take lock on output,DOUT - Defrost2,I/O,d6a93b13-f4d4-41fc-8dd4-6c93ba7b6b5b,,2020-09-22-16:44:46.851,2020-09-22-16:44:46.875
+Successful,Write,Set function on channel 1,DOUT - Defrost2,I/O,0d5deba5-a5b8-4596-b0e6-74eae9952215,,2020-09-22-16:44:47.478,2020-09-22-16:44:47.512
+Successful,Write,Change output value,DOUT - Defrost2,I/O,702c3150-1649-4dcc-afb0-dc9e6363e83a,,2020-09-22-16:44:48.127,2020-09-22-16:44:48.153
+Successful,Check,Verify value wrote,DOUT - Defrost2,I/O,eb084e2a-2d1d-415b-b60b-8687a3c102b1,,2020-09-22-16:44:48.764,2020-09-22-16:44:48.792
+Successful,Write,Invert logic,DOUT - Defrost2,I/O,4006be00-d798-4f9b-97c0-660e065288a5,,2020-09-22-16:44:49.406,2020-09-22-16:44:49.432
+Successful,Check,Verify value wrote,DOUT - Defrost2,I/O,4ec8ae90-c1c2-4b5d-a76c-b591e71f0d91,,2020-09-22-16:44:50.040,2020-09-22-16:44:50.120
+Successful,Write,Set function on channel 2,DOUT - Defrost2,I/O,2a17b01a-65a5-4b41-b549-577069033dd3,,2020-09-22-16:44:50.732,2020-09-22-16:44:50.767
+Successful,Write,Change output value,DOUT - Defrost2,I/O,204983ff-1671-477f-9dae-5dde4b82b6c5,,2020-09-22-16:44:51.383,2020-09-22-16:44:51.406
+Successful,Check,Verify value wrote,DOUT - Defrost2,I/O,6c15f2a2-1d59-472e-8856-9bb8cf1f3e25,,2020-09-22-16:44:52.024,2020-09-22-16:44:52.079
+Successful,Write,Invert logic,DOUT - Defrost2,I/O,e4c2c329-0543-4d2f-acf1-ba31da6a9dae,,2020-09-22-16:44:52.681,2020-09-22-16:44:52.719
+Successful,Check,Verify value wrote,DOUT - Defrost2,I/O,875368a3-9929-48c8-a4b7-f783ffa5716f,,2020-09-22-16:44:53.321,2020-09-22-16:44:53.358
+Successful,Write,Set function on channel 3,DOUT - Defrost2,I/O,9592bb2a-7075-44f7-822c-c2613e59c065,,2020-09-22-16:44:53.965,2020-09-22-16:44:54.130
+Successful,Write," Change output value",DOUT - Defrost2,I/O,d9f84237-2484-4466-b917-75e345877ad6,,2020-09-22-16:44:54.742,2020-09-22-16:44:54.787
+Successful,Check,Verify value wrote,DOUT - Defrost2,I/O,d3102455-c145-4a2d-9457-f764fccfc1cf,,2020-09-22-16:44:55.397,2020-09-22-16:44:55.586
+Successful,Write,Invert logic,DOUT - Defrost2,I/O,7a730d01-80e8-496b-a00b-49e77cf266e6,,2020-09-22-16:44:56.196,2020-09-22-16:44:56.225
+Successful,Check,Verify value wrote,DOUT - Defrost2,I/O,84351cae-4c99-4e40-a4a8-fced298be13a,,2020-09-22-16:44:56.839,2020-09-22-16:44:56.978
+Successful,Write,Set function on channel 4,DOUT - Defrost2,I/O,d6e5bece-4599-4b71-8b76-f9651596c6b2,,2020-09-22-16:44:57.588,2020-09-22-16:44:57.622
+Successful,Write,Change output value,DOUT - Defrost2,I/O,5b792030-e54b-4cc1-9aa9-7326e526e4a3,,2020-09-22-16:44:58.237,2020-09-22-16:44:58.460
+Successful,Check,Verify value wrote,DOUT - Defrost2,I/O,3ba78928-c625-4399-a0b1-463cdde9a071,,2020-09-22-16:44:59.071,2020-09-22-16:44:59.100
+Successful,Write,Invert logic,DOUT - Defrost2,I/O,b95bb089-fcc9-4592-aeb4-b1158a2fb1a6,,2020-09-22-16:44:59.711,2020-09-22-16:44:59.740
+Successful,Check,Verify value wrote,DOUT - Defrost2,I/O,133e391d-c457-424e-9dbf-90f42f899bbe,,2020-09-22-16:45:00.354,2020-09-22-16:45:00.412
+Successful,Unlock,Release lock,DOUT - Defrost2,I/O,ddc44c67-68a8-4e2b-bfcc-ff6ef61aa429,,2020-09-22-16:45:01.022,2020-09-22-16:45:01.052
+Successful,Reference,DOUT - Fans,Main,I/O,e621de09-30c7-42ee-978c-c065aaa08d5a,,2020-09-22-16:45:01.663,2020-09-22-16:45:01.663
+Successful,Reference,Setup,DOUT - Fans,I/O,e4b7ab4e-7027-46be-bfdd-aa6eb454ba27,,2020-09-22-16:45:01.664,2020-09-22-16:45:01.664
+Successful,Write,Inhibit exceptions and wizard,Setup - Outputs,I/O,34faa8b1-834f-4fe9-b077-cf9692ba45f2,,2020-09-22-16:45:01.664,2020-09-22-16:45:01.948
+Successful,Write,Preset all digital outputs as disabled,Setup - Outputs,I/O,2c4abe17-00d8-4809-abe2-f6e3cd0d3f81,,2020-09-22-16:45:01.948,2020-09-22-16:45:02.976
+Successful,Write,Preset all digital outputs logics,Setup - Outputs,I/O,31ec27ef-437e-41e8-8a1e-ebd9e17d2b43,,2020-09-22-16:45:02.976,2020-09-22-16:45:03.850
+Successful,Lock,Take lock on output,DOUT - Fans,I/O,427e0e2d-0eea-4064-a68d-488d37b8826f,,2020-09-22-16:45:04.461,2020-09-22-16:45:04.537
+Successful,Write,Set function on channel 1,DOUT - Fans,I/O,3e780e86-fa89-419c-868e-5579c2b77e85,,2020-09-22-16:45:05.149,2020-09-22-16:45:05.325
+Successful,Write,Change output value,DOUT - Fans,I/O,c71a8565-6783-42e0-8b6b-e913eb7e10da,,2020-09-22-16:45:05.939,2020-09-22-16:45:05.965
+Successful,Check,Verify value wrote,DOUT - Fans,I/O,ba9b7712-7bc8-4049-8949-14dbfa5dbdb0,,2020-09-22-16:45:06.576,2020-09-22-16:45:06.606
+Successful,Write,Invert logic,DOUT - Fans,I/O,aa0e52b6-3882-460b-a78e-52cd8c5d89d8,,2020-09-22-16:45:07.215,2020-09-22-16:45:07.278
+Successful,Check,Verify value wrote,DOUT - Fans,I/O,5b3f2952-6f1f-4308-b114-ba0f36a6027c,,2020-09-22-16:45:07.893,2020-09-22-16:45:07.918
+Successful,Write,Set function on channel 2,DOUT - Fans,I/O,e6c74ed3-575e-48e9-b743-11e1023dd5cb,,2020-09-22-16:45:08.523,2020-09-22-16:45:08.558
+Successful,Write,Change output value,DOUT - Fans,I/O,b4107444-8145-40b5-8754-9d893bd8949c,,2020-09-22-16:45:09.169,2020-09-22-16:45:09.246
+Successful,Check,Verify value wrote,DOUT - Fans,I/O,86c847fe-ead3-4838-a5bf-ca9b8178f432,,2020-09-22-16:45:09.854,2020-09-22-16:45:09.886
+Successful,Write,Invert logic,DOUT - Fans,I/O,56233db6-ff33-4f0d-96dd-b162937f2e7d,,2020-09-22-16:45:10.580,2020-09-22-16:45:10.765
+Successful,Check,Verify value wrote,DOUT - Fans,I/O,d369877e-cbd1-410a-9ddd-14ea1e849add,,2020-09-22-16:45:11.367,2020-09-22-16:45:11.406
+Successful,Write,Set function on channel 3,DOUT - Fans,I/O,b5c24444-4ac3-43a8-92c1-c2599614bd3f,,2020-09-22-16:45:12.008,2020-09-22-16:45:12.043
+Successful,Write," Change output value",DOUT - Fans,I/O,d587bec9-d39e-4e80-b6ce-42c8708c0eb2,,2020-09-22-16:45:12.653,2020-09-22-16:45:12.683
+Successful,Check,Verify value wrote,DOUT - Fans,I/O,c2c038b9-2bfc-43f1-b404-24881c0e9bfc,,2020-09-22-16:45:13.290,2020-09-22-16:45:13.323
+Successful,Write,Invert logic,DOUT - Fans,I/O,17a391a7-4c18-46fb-b65e-d257a08962c7,,2020-09-22-16:45:13.933,2020-09-22-16:45:13.963
+Successful,Check,Verify value wrote,DOUT - Fans,I/O,9b668818-0157-4ca9-86f0-a1c39b5b8c66,,2020-09-22-16:45:14.570,2020-09-22-16:45:14.635
+Successful,Write,Set function on channel 4,DOUT - Fans,I/O,d749779a-f0a8-4837-8a42-ef70632f2954,,2020-09-22-16:45:15.244,2020-09-22-16:45:15.278
+Successful,Write,Change output value,DOUT - Fans,I/O,259a4040-50e4-48ff-aadf-aec727b443a4,,2020-09-22-16:45:15.887,2020-09-22-16:45:15.918
+Successful,Check,Verify value wrote,DOUT - Fans,I/O,f6cb4e5f-4809-4f4c-a22a-25fb16d28fd1,,2020-09-22-16:45:16.529,2020-09-22-16:45:16.605
+Successful,Write,Invert logic,DOUT - Fans,I/O,69cde2dd-f72a-4d42-b0ed-443a3260decb,,2020-09-22-16:45:17.215,2020-09-22-16:45:17.245
+Successful,Check,Verify value wrote,DOUT - Fans,I/O,7e7645ed-22e6-4982-b2fb-482dccd0d5d4,,2020-09-22-16:45:17.858,2020-09-22-16:45:17.886
+Successful,Unlock,Release lock,DOUT - Fans,I/O,eff24d43-a9e0-4acb-b5a6-f36254e8d3b1,,2020-09-22-16:45:18.494,2020-09-22-16:45:18.606
+Successful,Reference,DOUT - Timed,Main,I/O,9101d1c9-b90c-4e7f-b43d-487b975374f2,,2020-09-22-16:45:19.215,2020-09-22-16:45:19.215
+Successful,Reference,Setup,DOUT - Timed,I/O,c4ff8f2b-e8e9-4ea6-8bcb-efe8af60b57f,,2020-09-22-16:45:19.216,2020-09-22-16:45:19.216
+Successful,Write,Inhibit exceptions and wizard,Setup - Outputs,I/O,34faa8b1-834f-4fe9-b077-cf9692ba45f2,,2020-09-22-16:45:19.217,2020-09-22-16:45:19.549
+Successful,Write,Preset all digital outputs as disabled,Setup - Outputs,I/O,2c4abe17-00d8-4809-abe2-f6e3cd0d3f81,,2020-09-22-16:45:19.549,2020-09-22-16:45:20.384
+Successful,Write,Preset all digital outputs logics,Setup - Outputs,I/O,31ec27ef-437e-41e8-8a1e-ebd9e17d2b43,,2020-09-22-16:45:20.384,2020-09-22-16:45:21.200
+Successful,Lock,Take lock on output,DOUT - Timed,I/O,2e944bd4-cffd-4aad-8dc4-0611968885b0,,2020-09-22-16:45:21.808,2020-09-22-16:45:21.840
+Successful,Write,Set function on channel 1,DOUT - Timed,I/O,0cd72047-a613-48b0-b09b-d9b65dd71f73,,2020-09-22-16:45:22.449,2020-09-22-16:45:22.492
+Successful,Write,Change output value,DOUT - Timed,I/O,cabe4d6a-7144-4b08-b279-8c7a822266bb,,2020-09-22-16:45:23.101,2020-09-22-16:45:23.132
+Successful,Check,Verify value wrote,DOUT - Timed,I/O,5f69f332-59c6-438b-a491-78ace1a793ed,,2020-09-22-16:45:23.744,2020-09-22-16:45:23.772
+Successful,Write,Invert logic,DOUT - Timed,I/O,cd8cf737-60a1-4763-b7f7-4463a546c098,,2020-09-22-16:45:24.383,2020-09-22-16:45:24.540
+Successful,Check,Verify value wrote,DOUT - Timed,I/O,3c2b17ea-1eb5-4a19-a984-d39445bcff02,,2020-09-22-16:45:25.148,2020-09-22-16:45:25.196
+Successful,Write,Set function on channel 2,DOUT - Timed,I/O,1d88c7a2-7542-4363-b421-28e06a46029b,,2020-09-22-16:45:25.806,2020-09-22-16:45:26.001
+Successful,Write,Change output value,DOUT - Timed,I/O,1b1045c5-2d9f-4fb3-b85c-a94a150726d9,,2020-09-22-16:45:26.602,2020-09-22-16:45:26.625
+Successful,Check,Verify value wrote,DOUT - Timed,I/O,61fef95b-1b13-4284-9b82-0688a231c3bd,,2020-09-22-16:45:27.226,2020-09-22-16:45:27.262
+Successful,Write,Invert logic,DOUT - Timed,I/O,5dd4a9b8-16d7-4b2a-9baf-2046630c6354,,2020-09-22-16:45:28.081,2020-09-22-16:45:28.206
+Successful,Check,Verify value wrote,DOUT - Timed,I/O,53f38265-c63f-4c10-82d5-c4b2adb44c00,,2020-09-22-16:45:28.807,2020-09-22-16:45:28.872
+Successful,Write,Set function on channel 3,DOUT - Timed,I/O,05cae177-b399-4ae1-bbc2-db63d6334c50,,2020-09-22-16:45:29.483,2020-09-22-16:45:29.518
+Successful,Write," Change output value",DOUT - Timed,I/O,b987ef79-5617-4145-a879-2115277586df,,2020-09-22-16:45:30.120,2020-09-22-16:45:30.158
+Successful,Check,Verify value wrote,DOUT - Timed,I/O,bd22add1-1540-4242-8fb2-b60a517d8197,,2020-09-22-16:45:30.759,2020-09-22-16:45:30.830
+Successful,Write,Invert logic,DOUT - Timed,I/O,e9e8dc1c-af53-4944-9d1f-85122253c28b,,2020-09-22-16:45:31.431,2020-09-22-16:45:31.463
+Successful,Check,Verify value wrote,DOUT - Timed,I/O,d8cd7ddd-9847-4171-8ef7-c1e0e38268e2,,2020-09-22-16:45:32.072,2020-09-22-16:45:32.119
+Successful,Write,Set function on channel 4,DOUT - Timed,I/O,4dc65f05-c2ae-47d2-9615-dec3ae224b2b,,2020-09-22-16:45:32.729,2020-09-22-16:45:32.820
+Successful,Write,Change output value,DOUT - Timed,I/O,d7d1cc26-e09c-4e8b-8f51-0e15a41c511c,,2020-09-22-16:45:33.431,2020-09-22-16:45:33.508
+Successful,Check,Verify value wrote,DOUT - Timed,I/O,3653a12e-ab25-4868-b945-5292d71b8556,,2020-09-22-16:45:34.118,2020-09-22-16:45:34.260
+Successful,Write,Invert logic,DOUT - Timed,I/O,92585551-c8f0-4328-b116-5e3f46b9e913,,2020-09-22-16:45:34.867,2020-09-22-16:45:34.916
+Successful,Check,Verify value wrote,DOUT - Timed,I/O,4abb8485-5a68-43e2-b9f4-356ff202e6e1,,2020-09-22-16:45:35.525,2020-09-22-16:45:35.556
+Successful,Unlock,Release lock,DOUT - Timed,I/O,de0c2ba1-114b-4e7e-99e8-0b995d660d93,,2020-09-22-16:45:36.164,2020-09-22-16:45:36.230
+Successful,Reference,DOUT - DrainHeat,Main,I/O,34830442-1aa8-4e97-a099-4c1492c39be0,,2020-09-22-16:45:37.081,2020-09-22-16:45:37.081
+Successful,Reference,Setup,DOUT - DrainHeat,I/O,5f42d11b-33ff-410d-8295-4406e5b11bc0,,2020-09-22-16:45:37.081,2020-09-22-16:45:37.081
+Successful,Write,Inhibit exceptions and wizard,Setup - Outputs,I/O,34faa8b1-834f-4fe9-b077-cf9692ba45f2,,2020-09-22-16:45:37.081,2020-09-22-16:45:37.475
+Successful,Write,Preset all digital outputs as disabled,Setup - Outputs,I/O,2c4abe17-00d8-4809-abe2-f6e3cd0d3f81,,2020-09-22-16:45:37.475,2020-09-22-16:45:38.363
+Successful,Write,Preset all digital outputs logics,Setup - Outputs,I/O,31ec27ef-437e-41e8-8a1e-ebd9e17d2b43,,2020-09-22-16:45:38.363,2020-09-22-16:45:39.154
+Successful,Lock,Take lock on output,DOUT - DrainHeat,I/O,188510ec-4897-4c9b-8a52-fe4ab2a05db4,,2020-09-22-16:45:39.759,2020-09-22-16:45:39.896
+Successful,Write,Set function on channel 1,DOUT - DrainHeat,I/O,308433fb-2ab2-40b3-ac6b-352e104ca38d,,2020-09-22-16:45:40.510,2020-09-22-16:45:40.700
+Successful,Write,Change output value,DOUT - DrainHeat,I/O,58a24f72-35de-4067-a685-ee7379db4ecf,,2020-09-22-16:45:41.314,2020-09-22-16:45:41.340
+Successful,Check,Verify value wrote,DOUT - DrainHeat,I/O,a64d135c-32c5-4a5e-b7bf-57313bad2fdc,,2020-09-22-16:45:41.952,2020-09-22-16:45:42.092
+Successful,Write,Invert logic,DOUT - DrainHeat,I/O,29b6df4c-eb11-4123-b130-77158224c2ab,,2020-09-22-16:45:42.707,2020-09-22-16:45:42.732
+Successful,Check,Verify value wrote,DOUT - DrainHeat,I/O,37128bc6-b6f3-4558-a428-0d7a7c4dd3b8,,2020-09-22-16:45:43.336,2020-09-22-16:45:43.360
+Successful,Write,Set function on channel 2,DOUT - DrainHeat,I/O,0ca10b69-8694-4e43-acc4-18ff0ec8ca29,,2020-09-22-16:45:43.961,2020-09-22-16:45:44.066
+Successful,Write,Change output value,DOUT - DrainHeat,I/O,d6cbf1e3-0657-432a-80fe-b1f4b07ddda1,,2020-09-22-16:45:44.681,2020-09-22-16:45:44.706
+Successful,Check,Verify value wrote,DOUT - DrainHeat,I/O,284dc0ca-7d9e-4a43-bd43-2d5d40bad61f,,2020-09-22-16:45:45.306,2020-09-22-16:45:45.329
+Successful,Write,Invert logic,DOUT - DrainHeat,I/O,869672fb-319b-4654-b438-f04d27c402c0,,2020-09-22-16:45:45.931,2020-09-22-16:45:46.017
+Successful,Check,Verify value wrote,DOUT - DrainHeat,I/O,74d059f6-2f68-4a09-9d2f-fc4ed670977b,,2020-09-22-16:45:46.623,2020-09-22-16:45:46.753
+Successful,Write,Set function on channel 3,DOUT - DrainHeat,I/O,68174cbb-dba4-48c3-977a-9bb685e6da69,,2020-09-22-16:45:47.367,2020-09-22-16:45:47.573
+Successful,Write," Change output value",DOUT - DrainHeat,I/O,fdf358d8-69a7-4799-8f34-4bcca6a90bcf,,2020-09-22-16:45:48.182,2020-09-22-16:45:48.213
+Successful,Check,Verify value wrote,DOUT - DrainHeat,I/O,34d7278d-b489-443e-879b-7dd914c598b9,,2020-09-22-16:45:48.821,2020-09-22-16:45:48.965
+Successful,Write,Invert logic,DOUT - DrainHeat,I/O,f4a7cb08-1973-4b95-8ba7-99f5ee175f7e,,2020-09-22-16:45:49.575,2020-09-22-16:45:49.605
+Successful,Check,Verify value wrote,DOUT - DrainHeat,I/O,957334ef-ba7e-4361-922c-4c0e86fd9c45,,2020-09-22-16:45:50.214,2020-09-22-16:45:50.244
+Successful,Write,Set function on channel 4,DOUT - DrainHeat,I/O,d7c84996-9d48-41dc-8591-810078507812,,2020-09-22-16:45:50.854,2020-09-22-16:45:50.930
+Successful,Write,Change output value,DOUT - DrainHeat,I/O,f58032a8-dcee-41d4-a356-deb52df978de,,2020-09-22-16:45:51.543,2020-09-22-16:45:51.571
+Successful,Check,Verify value wrote,DOUT - DrainHeat,I/O,bc00bfb4-0b23-49e4-a0c3-45a0264a49d5,,2020-09-22-16:45:52.184,2020-09-22-16:45:52.211
+Successful,Write,Invert logic,DOUT - DrainHeat,I/O,1f29d155-5634-4659-aa45-4361b70df4b6,,2020-09-22-16:45:52.824,2020-09-22-16:45:52.978
+Successful,Check,Verify value wrote,DOUT - DrainHeat,I/O,cac5367d-a481-42f0-8e5f-8d036cc3c31f,,2020-09-22-16:45:53.593,2020-09-22-16:45:53.634
+Successful,Unlock,Release lock,DOUT - DrainHeat,I/O,c1764398-ee1b-4057-a533-ca8831ff6cac,,2020-09-22-16:45:54.247,2020-09-22-16:45:54.434
+Successful,Reference,DOUT - RailHeaters,Main,I/O,e686dfdb-048c-4b30-a5a4-a22de9b7e5b2,,2020-09-22-16:45:55.042,2020-09-22-16:45:55.042
+Successful,Reference,Setup,DOUT - RailHeaters,I/O,a8237ba3-0e43-41df-ad3c-dc2aad17c724,,2020-09-22-16:45:55.043,2020-09-22-16:45:55.043
+Successful,Write,Inhibit exceptions and wizard,Setup - Outputs,I/O,34faa8b1-834f-4fe9-b077-cf9692ba45f2,,2020-09-22-16:45:55.043,2020-09-22-16:45:55.170
+Successful,Write,Preset all digital outputs as disabled,Setup - Outputs,I/O,2c4abe17-00d8-4809-abe2-f6e3cd0d3f81,,2020-09-22-16:45:55.170,2020-09-22-16:45:56.319
+Successful,Write,Preset all digital outputs logics,Setup - Outputs,I/O,31ec27ef-437e-41e8-8a1e-ebd9e17d2b43,,2020-09-22-16:45:56.320,2020-09-22-16:45:57.119
+Successful,Lock,Take lock on output,DOUT - RailHeaters,I/O,a1f0bd0f-e449-4f1c-b712-0d42050cf459,,2020-09-22-16:45:57.730,2020-09-22-16:45:57.791
+Successful,Write,Set function on channel 1,DOUT - RailHeaters,I/O,6cc1a00e-32a5-4db6-bcb2-57622f5a5d64,,2020-09-22-16:45:58.402,2020-09-22-16:45:58.437
+Successful,Write,Change output value,DOUT - RailHeaters,I/O,cef110dc-dbe6-45ed-861c-4ca79d8e0d5c,,2020-09-22-16:45:59.049,2020-09-22-16:45:59.076
+Successful,Check,Verify value wrote,DOUT - RailHeaters,I/O,646b0c14-a327-4890-8331-3d430d6f37ca,,2020-09-22-16:45:59.688,2020-09-22-16:45:59.828
+Successful,Write,Invert logic,DOUT - RailHeaters,I/O,45f14223-f1a3-4fe0-88fd-ddb4eb3e444b,,2020-09-22-16:46:00.444,2020-09-22-16:46:00.468
+Successful,Check,Verify value wrote,DOUT - RailHeaters,I/O,c85ee5d6-a59c-4264-90b9-8195bf6222e7,,2020-09-22-16:46:01.081,2020-09-22-16:46:01.220
+Successful,Write,Set function on channel 2,DOUT - RailHeaters,I/O,168a78bd-5cae-4c28-a4e9-d744b66c320b,,2020-09-22-16:46:01.821,2020-09-22-16:46:01.857
+Successful,Write,Change output value,DOUT - RailHeaters,I/O,c9f258ca-3e2f-4a20-8c8b-37032c928adb,,2020-09-22-16:46:02.466,2020-09-22-16:46:02.496
+Successful,Check,Verify value wrote,DOUT - RailHeaters,I/O,2c128f44-dd73-4f78-8ca9-a843ad4c4947,,2020-09-22-16:46:03.106,2020-09-22-16:46:03.216
+Successful,Write,Invert logic,DOUT - RailHeaters,I/O,4020dc2c-ceab-4397-8f54-62c7de1899cd,,2020-09-22-16:46:03.820,2020-09-22-16:46:03.904
+Successful,Check,Verify value wrote,DOUT - RailHeaters,I/O,257bb0ac-80ea-41d4-b3a2-b5f73937f6ca,,2020-09-22-16:46:04.519,2020-09-22-16:46:04.656
+Successful,Write,Set function on channel 3,DOUT - RailHeaters,I/O,92473779-02e2-4970-b222-c01a26e8b1cf,,2020-09-22-16:46:05.263,2020-09-22-16:46:05.397
+Successful,Write," Change output value",DOUT - RailHeaters,I/O,e23c2ebc-2a61-42b9-ac6e-bf66aabc5184,,2020-09-22-16:46:06.010,2020-09-22-16:46:06.117
+Successful,Check,Verify value wrote,DOUT - RailHeaters,I/O,1f227608-eada-4100-aca5-10a945a536e9,,2020-09-22-16:46:06.730,2020-09-22-16:46:06.757
+Successful,Write,Invert logic,DOUT - RailHeaters,I/O,65724fb9-d9ad-427e-b776-ce7d9f328def,,2020-09-22-16:46:07.370,2020-09-22-16:46:07.396
+Successful,Check,Verify value wrote,DOUT - RailHeaters,I/O,90594f43-4ac6-48d4-bb45-df25139d34f3,,2020-09-22-16:46:08.009,2020-09-22-16:46:08.085
+Successful,Write,Set function on channel 4,DOUT - RailHeaters,I/O,62b4acb2-fb66-4271-9f78-44485ea2c7fb,,2020-09-22-16:46:08.699,2020-09-22-16:46:08.734
+Successful,Write,Change output value,DOUT - RailHeaters,I/O,c88e906b-2569-4273-aee8-258d76daa311,,2020-09-22-16:46:09.350,2020-09-22-16:46:09.406
+Successful,Check,Verify value wrote,DOUT - RailHeaters,I/O,cf5d0d87-5a51-4d58-a25a-fab0c042f8b9,,2020-09-22-16:46:10.021,2020-09-22-16:46:10.046
+Successful,Write,Invert logic,DOUT - RailHeaters,I/O,d710bb72-46b5-4011-816f-7b04e9f96e3d,,2020-09-22-16:46:10.663,2020-09-22-16:46:10.686
+Successful,Check,Verify value wrote,DOUT - RailHeaters,I/O,ed1e70f4-e0d5-4c4f-817f-6cb047f632bb,,2020-09-22-16:46:11.297,2020-09-22-16:46:11.341
+Successful,Unlock,Release lock,DOUT - RailHeaters,I/O,75207df0-1be5-477c-b20d-9d3a0768cbfa,,2020-09-22-16:46:11.946,2020-09-22-16:46:12.046
+Successful,Reference,DOUT - GenericStage1,Main,I/O,512046fb-50c5-49e7-bcab-799c1fce8291,,2020-09-22-16:46:12.660,2020-09-22-16:46:12.662
+Successful,Reference,Setup,DOUT - GenericStage1,I/O,d076f783-34f2-4920-9031-80fce32ef366,,2020-09-22-16:46:12.662,2020-09-22-16:46:12.663
+Successful,Write,Inhibit exceptions and wizard,Setup - Outputs,I/O,34faa8b1-834f-4fe9-b077-cf9692ba45f2,,2020-09-22-16:46:12.663,2020-09-22-16:46:13.054
+Successful,Write,Preset all digital outputs as disabled,Setup - Outputs,I/O,2c4abe17-00d8-4809-abe2-f6e3cd0d3f81,,2020-09-22-16:46:13.054,2020-09-22-16:46:13.788
+Successful,Write,Preset all digital outputs logics,Setup - Outputs,I/O,31ec27ef-437e-41e8-8a1e-ebd9e17d2b43,,2020-09-22-16:46:13.788,2020-09-22-16:46:14.617
+Successful,Lock,Take lock on output,DOUT - GenericStage1,I/O,31835450-99b0-43f3-ae68-9cf9305e49d6,,2020-09-22-16:46:15.229,2020-09-22-16:46:15.273
+Successful,Write,Set function on channel 1,DOUT - GenericStage1,I/O,89ed0b55-fe50-4b9c-86e9-a140a1a85850,,2020-09-22-16:46:15.887,2020-09-22-16:46:15.982
+Successful,Write,Change output value,DOUT - GenericStage1,I/O,90d3fa80-d31f-42dd-ad49-8b1c8d583557,,2020-09-22-16:46:16.585,2020-09-22-16:46:16.670
+Successful,Check,Verify value wrote,DOUT - GenericStage1,I/O,c16f483e-be90-4243-978c-92acad3d9c62,,2020-09-22-16:46:17.275,2020-09-22-16:46:17.486
+Successful,Write,Invert logic,DOUT - GenericStage1,I/O,ac15ecf4-e45c-47ff-ba1a-8685ee3f7590,,2020-09-22-16:46:18.085,2020-09-22-16:46:18.109
+Successful,Check,Verify value wrote,DOUT - GenericStage1,I/O,1a48e7ce-2369-4730-a13d-30c0ba4e2d89,,2020-09-22-16:46:18.725,2020-09-22-16:46:18.877
+Successful,Write,Set function on channel 2,DOUT - GenericStage1,I/O,017a7fba-0f64-4652-8427-7dacdc99739c,,2020-09-22-16:46:19.479,2020-09-22-16:46:19.515
+Successful,Write,Change output value,DOUT - GenericStage1,I/O,a8ae70b2-3201-41ed-b25d-b3b1376dd48a,,2020-09-22-16:46:20.129,2020-09-22-16:46:20.155
+Successful,Check,Verify value wrote,DOUT - GenericStage1,I/O,54a9bcd0-c725-4b28-b47e-88f8a2a12f5b,,2020-09-22-16:46:20.758,2020-09-22-16:46:20.842
+Successful,Write,Invert logic,DOUT - GenericStage1,I/O,a393560d-d4ac-45b9-b9a2-b139ccd59e73,,2020-09-22-16:46:21.445,2020-09-22-16:46:21.482
+Successful,Check,Verify value wrote,DOUT - GenericStage1,I/O,dbea89b0-29a2-4b8d-8ed0-75aec1e1623c,,2020-09-22-16:46:22.093,2020-09-22-16:46:22.122
+Successful,Write,Set function on channel 3,DOUT - GenericStage1,I/O,e8b59f03-d932-4f06-99a5-1ef9b545ff10,,2020-09-22-16:46:22.735,2020-09-22-16:46:22.802
+Successful,Write," Change output value",DOUT - GenericStage1,I/O,5f2b4dba-b6ad-4147-81df-53ec06663630,,2020-09-22-16:46:23.414,2020-09-22-16:46:23.441
+Successful,Check,Verify value wrote,DOUT - GenericStage1,I/O,b9d2c8e6-42b3-46f2-9120-10494c76b271,,2020-09-22-16:46:24.057,2020-09-22-16:46:24.098
+Successful,Write,Invert logic,DOUT - GenericStage1,I/O,0bcdad91-b3c8-4efe-b8b5-cd7c38a01db8,,2020-09-22-16:46:24.711,2020-09-22-16:46:24.802
+Successful,Check,Verify value wrote,DOUT - GenericStage1,I/O,3b77ed84-dc4a-434b-af66-4d4ce6bfd0bb,,2020-09-22-16:46:25.414,2020-09-22-16:46:25.490
+Successful,Write,Set function on channel 4,DOUT - GenericStage1,I/O,83ce4f8b-a83f-42f6-af20-4af27ad2c021,,2020-09-22-16:46:26.103,2020-09-22-16:46:26.309
+Successful,Write,Change output value,DOUT - GenericStage1,I/O,acb9b222-00ab-451e-a93c-14b8a14557d4,,2020-09-22-16:46:26.915,2020-09-22-16:46:26.949
+Successful,Check,Verify value wrote,DOUT - GenericStage1,I/O,22f368ae-e189-43f9-9ca9-3bf1a42fabe2,,2020-09-22-16:46:27.558,2020-09-22-16:46:27.702
+Successful,Write,Invert logic,DOUT - GenericStage1,I/O,8e7a3c8e-3172-40a2-92c6-8a35bc1bab2e,,2020-09-22-16:46:28.315,2020-09-22-16:46:28.340
+Successful,Check,Verify value wrote,DOUT - GenericStage1,I/O,11528fbf-7bfa-4d87-8eff-3679f1060b2f,,2020-09-22-16:46:28.952,2020-09-22-16:46:28.981
+Successful,Unlock,Release lock,DOUT - GenericStage1,I/O,3e810c1b-4b07-4a24-8ec5-ad00a2d5e23d,,2020-09-22-16:46:29.592,2020-09-22-16:46:29.653
+Successful,Reference,DOUT - HotGas,Main,I/O,c8d184e9-cc49-48b7-a5b0-dbed0e161bec,,2020-09-22-16:46:30.265,2020-09-22-16:46:30.265
+Successful,Reference,Setup,DOUT - HotGas,I/O,67764e29-adb0-4364-8ec3-2aec238edc1e,,2020-09-22-16:46:30.269,2020-09-22-16:46:30.270
+Successful,Write,Inhibit exceptions and wizard,Setup - Outputs,I/O,34faa8b1-834f-4fe9-b077-cf9692ba45f2,,2020-09-22-16:46:30.270,2020-09-22-16:46:30.421
+Successful,Write,Preset all digital outputs as disabled,Setup - Outputs,I/O,2c4abe17-00d8-4809-abe2-f6e3cd0d3f81,,2020-09-22-16:46:30.421,2020-09-22-16:46:31.452
+Successful,Write,Preset all digital outputs logics,Setup - Outputs,I/O,31ec27ef-437e-41e8-8a1e-ebd9e17d2b43,,2020-09-22-16:46:31.452,2020-09-22-16:46:32.267
+Successful,Lock,Take lock on output,DOUT - HotGas,I/O,30a2d816-3875-4e95-a136-6ff40d639cf2,,2020-09-22-16:46:32.884,2020-09-22-16:46:32.923
+Successful,Write,Set function on channel 1,DOUT - HotGas,I/O,eb5fd653-4e35-42e8-8c57-762c8c28b108,,2020-09-22-16:46:33.524,2020-09-22-16:46:33.588
+Successful,Write,Change output value,DOUT - HotGas,I/O,b88831f5-1bbb-4c11-b829-0c42d445bbbe,,2020-09-22-16:46:34.197,2020-09-22-16:46:34.228
+Successful,Check,Verify value wrote,DOUT - HotGas,I/O,a8574132-8157-4b39-8f28-ba766ffbbd88,,2020-09-22-16:46:34.841,2020-09-22-16:46:34.868
+Successful,Write,Invert logic,DOUT - HotGas,I/O,cd67cbd1-bbdd-4464-8d64-d58987349071,,2020-09-22-16:46:35.482,2020-09-22-16:46:35.540
+Successful,Check,Verify value wrote,DOUT - HotGas,I/O,6207350a-508b-4430-96b2-d306d5f2c9b6,,2020-09-22-16:46:36.152,2020-09-22-16:46:36.179
+Successful,Write,Set function on channel 2,DOUT - HotGas,I/O,230cc20e-8e34-4af9-b451-439c65ba8a02,,2020-09-22-16:46:36.790,2020-09-22-16:46:36.826
+Successful,Write,Change output value,DOUT - HotGas,I/O,7fc09075-b6b5-4eb3-a016-0131437f427d,,2020-09-22-16:46:37.439,2020-09-22-16:46:37.586
+Successful,Check,Verify value wrote,DOUT - HotGas,I/O,7cb0d7bd-64f6-4c8f-a996-a1e92086a2ac,,2020-09-22-16:46:38.197,2020-09-22-16:46:38.483
+Successful,Write,Invert logic,DOUT - HotGas,I/O,a2dd021b-2d7b-486c-8f18-b98252a42a0e,,2020-09-22-16:46:39.093,2020-09-22-16:46:39.122
+Successful,Check,Verify value wrote,DOUT - HotGas,I/O,26e6d34f-51f8-45c4-92a3-51e730ed85a4,,2020-09-22-16:46:39.733,2020-09-22-16:46:39.762
+Successful,Write,Set function on channel 3,DOUT - HotGas,I/O,6c00158c-42c8-4002-a6c5-59b20f81ffb5,,2020-09-22-16:46:40.371,2020-09-22-16:46:40.450
+Successful,Write," Change output value",DOUT - HotGas,I/O,55020830-7ebf-42ed-a295-1b6ae86dc635,,2020-09-22-16:46:41.057,2020-09-22-16:46:41.090
+Successful,Check,Verify value wrote,DOUT - HotGas,I/O,a61ff128-90c2-4b5c-a699-a12b8174fa5d,,2020-09-22-16:46:41.698,2020-09-22-16:46:41.731
+Successful,Write,Invert logic,DOUT - HotGas,I/O,56aee1ec-5be3-449a-a624-8df38dbbf395,,2020-09-22-16:46:42.345,2020-09-22-16:46:42.481
+Successful,Check,Verify value wrote,DOUT - HotGas,I/O,ad94cc17-6a0c-43e7-a718-20991c27b038,,2020-09-22-16:46:43.096,2020-09-22-16:46:43.123
+Successful,Write,Set function on channel 4,DOUT - HotGas,I/O,b866ce2c-668b-4b9f-aa12-c5f7e5af33ea,,2020-09-22-16:46:43.738,2020-09-22-16:46:43.880
+Successful,Write,Change output value,DOUT - HotGas,I/O,1f9a4e6f-b47e-41cf-b352-6d76a2243ca8,,2020-09-22-16:46:44.494,2020-09-22-16:46:44.537
+Successful,Check,Verify value wrote,DOUT - HotGas,I/O,a1c5f165-4dbc-43db-b165-fd6782be59f3,,2020-09-22-16:46:45.150,2020-09-22-16:46:45.352
+Successful,Write,Invert logic,DOUT - HotGas,I/O,24e143d1-32cb-49d5-a44d-f070dfea68d8,,2020-09-22-16:46:45.960,2020-09-22-16:46:45.992
+Successful,Check,Verify value wrote,DOUT - HotGas,I/O,c0d271a5-5bc4-4da1-b32d-d82751c832ae,,2020-09-22-16:46:46.603,2020-09-22-16:46:46.631
+Successful,Unlock,Release lock,DOUT - HotGas,I/O,a9c80069-8bd3-4a9a-9670-8921aa761270,,2020-09-22-16:46:47.242,2020-09-22-16:46:47.383

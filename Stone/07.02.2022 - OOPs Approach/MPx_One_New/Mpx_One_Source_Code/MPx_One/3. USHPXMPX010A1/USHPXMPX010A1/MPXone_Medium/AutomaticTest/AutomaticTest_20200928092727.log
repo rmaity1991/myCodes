@@ -1,0 +1,36 @@
+Successful,Reference,Restore settings,Main,High/Low temperature alarm,1e8217ee-b233-4324-aa1a-800ef24dc241,,2020-09-28-09:27:28.548,2020-09-28-09:27:28.553
+Successful,Write,Set ResCarelSets,RestoreSettings,High/Low temperature alarm,53739d44-d88a-4b5d-b408-950bc924c60b,,2020-09-28-09:27:28.554,2020-09-28-09:27:28.633
+Successful,WaitUntil,Wait until step reset,RestoreSettings,High/Low temperature alarm,8aa707fd-b5b7-40f3-b7a8-732df30e4e53,,2020-09-28-09:27:29.249,2020-09-28-09:27:29.273
+Successful,Reset,Reset step #3,RestoreSettings,High/Low temperature alarm,3ce14435-0470-4d69-9627-83be8fd9328f,,2020-09-28-09:27:29.873,2020-09-28-09:27:33.754
+Successful,WaitUntil,Wait restart,RestoreSettings,High/Low temperature alarm,405b42df-ccef-4c9e-813f-afb5c9bbc47f,,2020-09-28-09:27:34.370,2020-09-28-09:27:44.590
+Successful,Write,Write WizDone,RestoreSettings,High/Low temperature alarm,b9f5b783-1729-4602-aa54-dea38c1953cd,,2020-09-28-09:27:45.201,2020-09-28-09:27:45.230
+Successful,Wait,Wait step_7s,RestoreSettings,High/Low temperature alarm,244fcf98-75e6-4ed5-88ce-2f935b6a5890,,2020-09-28-09:27:45.842,2020-09-28-09:27:52.843
+Successful,Reset,Reset step,RestoreSettings,High/Low temperature alarm,c9a4d4bb-2fc1-40d8-89df-5bcfa7a2d663,,2020-09-28-09:27:53.451,2020-09-28-09:27:57.146
+Successful,Wait,Wait step 5s,RestoreSettings,High/Low temperature alarm,df27e5bb-45c4-4d7e-9d61-6d32040b8f8f,,2020-09-28-09:27:57.764,2020-09-28-09:28:02.779
+Successful,Write,EnableVirtual_IO,RestoreSettings,High/Low temperature alarm,715b6f89-fae5-4260-b8a3-4e68f5026d86,,2020-09-28-09:28:03.388,2020-09-28-09:28:04.120
+Successful,Wait,Wait step_1s,RestoreSettings,High/Low temperature alarm,5aec52d0-c34c-4a85-860c-16c2bbc87698,,2020-09-28-09:28:04.734,2020-09-28-09:28:05.747
+Successful,Write,Init I/O values,RestoreSettings,High/Low temperature alarm,cc36c61a-a310-4b27-8587-1d22f13bfe00,,2020-09-28-09:28:06.359,2020-09-28-09:28:06.872
+Successful,Reference,AH_Alarm_TypeAbsolute,Main,High/Low temperature alarm,2e8e9fab-d97e-4254-bdbb-84d7c534f0a8,,2020-09-28-09:28:07.482,2020-09-28-09:28:07.482
+Successful,Write,Set parameters,AH_Alarm_TypeAbsolute,High/Low temperature alarm,f2ff6420-5ea9-438a-aa9b-efb30c2089f4,,2020-09-28-09:28:07.482,2020-09-28-09:28:07.787
+Successful,Reference,Switch On Temp. Ctrl.,AH_Alarm_TypeAbsolute,High/Low temperature alarm,205df23c-573d-4f72-bd4e-050018a82a85,,2020-09-28-09:28:08.389,2020-09-28-09:28:08.389
+Successful,Write,Writeset point,SwitchOn Temp.Control,High/Low temperature alarm,7339eb3c-26cf-4de1-82aa-e275ed6131da,,2020-09-28-09:28:08.389,2020-09-28-09:28:08.708
+Successful,WaitUntil,Wait until switch on,SwitchOn Temp.Control,High/Low temperature alarm,7b914fde-3d29-46ba-8ab0-c1bad882861b,,2020-09-28-09:28:09.323,2020-09-28-09:28:09.573
+Successful,Wait,Wait 1s,AH_Alarm_TypeAbsolute,High/Low temperature alarm,25fe0559-e857-499d-bfbd-8cad7b2d2ba3,,2020-09-28-09:28:10.185,2020-09-28-09:28:11.186
+Successful,Write,Increase temperature,AH_Alarm_TypeAbsolute,High/Low temperature alarm,16c023d3-719a-49fc-9a2c-2e572647108f,,2020-09-28-09:28:11.786,2020-09-28-09:28:11.961
+Successful,Wait,Wait 1m30s,AH_Alarm_TypeAbsolute,High/Low temperature alarm,5a1aeab1-c44b-4819-8da6-142827294306,,2020-09-28-09:28:12.577,2020-09-28-09:29:42.577
+Successful,Check,Check HI alarm,AH_Alarm_TypeAbsolute,High/Low temperature alarm,0dcee990-e419-47db-803f-e20802ce809a,,2020-09-28-09:29:43.186,2020-09-28-09:29:43.503
+Successful,Write,Decrease temperature,AH_Alarm_TypeAbsolute,High/Low temperature alarm,5976336e-7120-4443-a1a4-a88f13d7b1ac,,2020-09-28-09:29:44.107,2020-09-28-09:29:44.166
+Successful,Wait,Wait 2s,AH_Alarm_TypeAbsolute,High/Low temperature alarm,7e0f0fe9-ec84-4e4a-a1e7-0c64b0852e35,,2020-09-28-09:29:44.781,2020-09-28-09:29:46.794
+Successful,Check,Check HI alarm - Not present,AH_Alarm_TypeAbsolute,High/Low temperature alarm,d6217ae2-38f3-410f-b0a0-a3e808e13110,,2020-09-28-09:29:47.397,2020-09-28-09:29:47.654
+Successful,Reference,LO_Alarm_Type_Absolute,Main,High/Low temperature alarm,f8ab36a1-f82b-44cf-b070-5990406d7402,,2020-09-28-09:29:48.254,2020-09-28-09:29:48.254
+Successful,Write,Set parameters,LO_Alarm_TypeAbsolute,High/Low temperature alarm,a2a2f5e5-777a-42ef-bd5f-d7b8e0ef7e6a,,2020-09-28-09:29:48.254,2020-09-28-09:29:48.681
+Successful,Reference,Switch On Temp. Ctrl.,LO_Alarm_TypeAbsolute,High/Low temperature alarm,bce5f914-a4f8-4af8-9f88-fb3e3011fa1c,,2020-09-28-09:29:49.288,2020-09-28-09:29:49.289
+Successful,Write,Writeset point,SwitchOn Temp.Control,High/Low temperature alarm,7339eb3c-26cf-4de1-82aa-e275ed6131da,,2020-09-28-09:29:49.289,2020-09-28-09:29:49.414
+Successful,WaitUntil,Wait until switch on,SwitchOn Temp.Control,High/Low temperature alarm,7b914fde-3d29-46ba-8ab0-c1bad882861b,,2020-09-28-09:29:50.015,2020-09-28-09:29:50.166
+Successful,Wait,Wait 1s,LO_Alarm_TypeAbsolute,High/Low temperature alarm,74215e57-9ca6-4d4c-b558-f2e132b9b57a,,2020-09-28-09:29:50.781,2020-09-28-09:29:51.796
+Successful,Write,Decrease temperature,LO_Alarm_TypeAbsolute,High/Low temperature alarm,69f40f3a-d174-4282-8b80-9c6a719de563,,2020-09-28-09:29:52.411,2020-09-28-09:29:52.502
+Successful,Wait,Wait 1m30s,LO_Alarm_TypeAbsolute,High/Low temperature alarm,1eb3e7bf-9032-4e60-b75b-1e51a8c1bc13,,2020-09-28-09:29:53.113,2020-09-28-09:31:23.122
+Successful,Check,Check LO alarm,LO_Alarm_TypeAbsolute,High/Low temperature alarm,29cede08-1378-45bc-a845-144d546cf574,,2020-09-28-09:31:23.735,2020-09-28-09:31:23.994
+Successful,Write,Increase temperature,LO_Alarm_TypeAbsolute,High/Low temperature alarm,af6b74e4-407d-459f-93ca-c1e84ad16f8a,,2020-09-28-09:31:24.608,2020-09-28-09:31:24.705
+Successful,Wait,Wait 2s,LO_Alarm_TypeAbsolute,High/Low temperature alarm,9dcf6272-abb8-43e1-ba11-95947249a8d2,,2020-09-28-09:31:25.316,2020-09-28-09:31:27.329
+Successful,Check,Check LO alarm - Not present,LO_Alarm_TypeAbsolute,High/Low temperature alarm,6377370f-e88e-4003-b753-5b9b32d353e0,,2020-09-28-09:31:27.938,2020-09-28-09:31:28.353

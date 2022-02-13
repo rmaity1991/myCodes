@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlLanguage Key="EN" Priority="0">
+  <Sections>
+    <Section Name="HEOneRow" Font="CAREL_TERM_STD">
+      <Items>
+        <Item Key="HEOneRow_L5M333CF336" Value=" ON" />
+        <Item Key="HEOneRow_L5M358CF364" Value="St" />
+        <Item Key="HEOneRow_L5M365CF438" Value="rd" />
+        <Item Key="HEOneRow_L5M488CF530" Value="/P1" />
+        <Item Key="HEOneRow_L5M489CF531" Value="/FA" />
+        <Item Key="HEOneRow_L5M490CF532" Value="/Fb" />
+        <Item Key="HEOneRow_L5M491CF533" Value="/Fc" />
+        <Item Key="HEOneRow_L8M367CF374" Value="H0" />
+        <Item Key="HEOneRow_L8M369CF375" Value=" H2" />
+        <Item Key="HEOneRow_L8M370CF376" Value=" H1" />
+        <Item Key="HEOneRow_L8M483CF529" Value=" H3" />
+        <Item Key="HEOneRow_L8M494CF536" Value="In" />
+        <Item Key="HEOneRow_L8M495CF537" Value="Sn" />
+        <Item Key="HEOneRow_L8M496CF538" Value="r7" />
+        <Item Key="HEOneRow_L8M506CF548" Value="/5" />
+        <Item Key="HEOneRow_L10M374CF396" Value="d0" />
+        <Item Key="HEOneRow_L10M377CF397" Value="dI" />
+        <Item Key="HEOneRow_L10M378CF398" Value="dt1" />
+        <Item Key="HEOneRow_L10M380CF400" Value="dP1" />
+        <Item Key="HEOneRow_L14M413CF441" Value="AA" />
+        <Item Key="HEOneRow_L14M414CF442" Value="A0" />
+        <Item Key="HEOneRow_L14M415CF443" Value="AL" />
+        <Item Key="HEOneRow_L14M416CF444" Value="AH" />
+        <Item Key="HEOneRow_L14M417CF445" Value="Ad" />
+        <Item Key="HEOneRow_L15M420CF447" Value="F0" />
+        <Item Key="HEOneRow_L15M421CF448" Value="F1" />
+        <Item Key="HEOneRow_L15M492CF534" Value="F2" />
+        <Item Key="HEOneRow_L15M493CF535" Value="F3" />
+        <Item Key="HEOneRow_L16M445CF472" Value="P1" />
+        <Item Key="HEOneRow_L16M424CF451" Value="P3" />
+        <Item Key="HEOneRow_L16M425CF452" Value="P7" />
+        <Item Key="HEOneRow_L16M505CF547" Value="PH" />
+        <Item Key="HEOneRow_L24M498CF540" Value="y__" />
+        <Item Key="HEOneRow_L24M499CF541" Value="M_" />
+        <Item Key="HEOneRow_L24M500CF542" Value="d__" />
+        <Item Key="HEOneRow_L24M501CF543" Value="h__" />
+        <Item Key="HEOneRow_L24M502CF544" Value="m__" />
+        <Item Key="HEOneRow_L24M503CF545" Value="u__" />
+      </Items>
+    </Section>
+  </Sections>
+</XmlLanguage>

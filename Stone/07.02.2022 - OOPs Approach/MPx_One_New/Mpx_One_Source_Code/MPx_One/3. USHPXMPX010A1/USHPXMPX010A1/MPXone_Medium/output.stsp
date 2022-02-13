@@ -1,0 +1,3290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SlaveConfigurations
+  version="1.4">
+  <GlobalSettings />
+  <Configurations>
+    <Configuration
+      Name="OneRow"
+      ConfigurationTask="__CONFIGURATION__"
+      ResourceTask="__RESOURCE__"
+      Guid="a32be2d4b03f4182af94e60eaf3da748">
+      <SlaveSettings
+        COMPort="Serial0"
+        ProtocolKind="Slave"
+        Baudrate="57600"
+        StopBits="One"
+        IDEMode="ModbusShared"
+        Zone="0" />
+      <Variables />
+    </Configuration>
+    <Configuration
+      Name="BMS"
+      ConfigurationTask="NU_conf"
+      ResourceTask="NU_res"
+      Guid="c9fe5f74d6b947f0b0f6c617a1f31737">
+      <SlaveSettings
+        COMPort="BMS1"
+        ProtocolKind="Slave"
+        IDEMode="ModbusShared"
+        Zone="0"
+        DeviceAddress="199" />
+      <Variables>
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Alarms.Al.Al_Reg.Info.Active"
+          Index="0"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Alarms.Al.Al_PrbBroken[1].Info.Active"
+          Index="1"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Alarms.Al.Al_PrbBroken[2].Info.Active"
+          Index="2"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Alarms.Al.Al_PrbBroken[3].Info.Active"
+          Index="3"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Alarms.Al.Al_SerialInputs[1].Info.Active"
+          Index="9"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Alarms.Al.Al_SerialInputs[2].Info.Active"
+          Index="10"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Alarms.Al.Al_SerialInputs[3].Info.Active"
+          Index="11"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Alarms.Al.Al_SerialInputs[4].Info.Active"
+          Index="12"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Alarms.Al.Al_LowTemp.Info.Active"
+          Index="13"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Alarms.Al.Al_HiTemp.Info.Active"
+          Index="14"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Alarms.Al.Al_LowTemp2.Info.Active"
+          Index="15"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Alarms.Al.Al_HiTemp2.Info.Active"
+          Index="16"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Alarms.Al.AlExtDin.Info.Active"
+          Index="17"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Alarms.Al.AlDelayExtDin.Info.Active"
+          Index="18"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Alarms.Al.Al_Door.Info.Active"
+          Index="19"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Alarms.Al.Al_RTC.Info.Active"
+          Index="20"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Alarms.Al.Al_HA.Info.Active"
+          Index="27"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Alarms.Al.Al_HF.Info.Active"
+          Index="28"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Alarms.Al.Al_MA.Info.Active"
+          Index="29"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Alarms.Al.Al_u[1].Info.Active"
+          Index="30"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Alarms.Al.Al_u[2].Info.Active"
+          Index="31"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Alarms.Al.Al_u[3].Info.Active"
+          Index="32"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Alarms.Al.Al_u[4].Info.Active"
+          Index="33"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Alarms.Al.Al_u[5].Info.Active"
+          Index="34"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Alarms.Al.Al_u[6].Info.Active"
+          Index="35"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Alarms.Al.Al_u[7].Info.Active"
+          Index="36"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Alarms.Al.Al_u[8].Info.Active"
+          Index="37"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Alarms.Al.Al_u[9].Info.Active"
+          Index="38"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Alarms.Al.Al_n[1].Info.Active"
+          Index="39"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Alarms.Al.Al_n[2].Info.Active"
+          Index="40"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Alarms.Al.Al_n[3].Info.Active"
+          Index="41"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Alarms.Al.Al_n[4].Info.Active"
+          Index="42"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Alarms.Al.Al_n[5].Info.Active"
+          Index="43"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Alarms.Al.Al_n[6].Info.Active"
+          Index="44"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Alarms.Al.Al_n[7].Info.Active"
+          Index="45"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Alarms.Al.Al_n[8].Info.Active"
+          Index="46"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Alarms.Al.Al_n[9].Info.Active"
+          Index="47"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Alarms.Al.Status_Standby.Info.Active"
+          Index="50"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Alarms.Al.Status_Clean.Info.Active"
+          Index="51"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="DigitalInputs.Fct.Alarm"
+          Index="52"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="DigitalInputs.Fct.DelayedAl"
+          Index="53"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="DigitalInputs.Fct.EnDfr"
+          Index="54"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="DigitalInputs.Fct.CallDfr"
+          Index="55"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="DigitalInputs.Fct.DoorOff"
+          Index="56"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="DigitalInputs.Fct.RemoteOff"
+          Index="57"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="DigitalInputs.Fct.Curtain"
+          Index="58"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="DigitalInputs.Fct.ContCycle"
+          Index="59"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="DigitalInputs.Fct.Auxiliary"
+          Index="60"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="DigitalInputs.Fct.Timed"
+          Index="61"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="DigitalInputs.Fct.Standby"
+          Index="62"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="DigitalInputs.Fct.Clean"
+          Index="63"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="DigitalInputs.Fct.Config"
+          Index="64"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="DigitalInputs.Fct.DoorOn"
+          Index="65"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="DigitalOutputs.Fct.Solenoid"
+          Index="66"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="OrAlrm"
+          Index="67"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="DigitalOutputs.Fct.Auxiliary"
+          Index="68"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="DigitalOutputs.Fct.MasterAuxiliary"
+          Index="69"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="DigitalOutputs.Fct.Light"
+          Index="70"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="DigitalOutputs.Fct.MasterLight"
+          Index="71"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="DigitalOutputs.Fct.Defrost"
+          Index="72"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="DigitalOutputs.Fct.Defrost2"
+          Index="73"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="DigitalOutputs.Fct.Fans"
+          Index="74"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="DigitalOutputs.Fct.SuctVlv"
+          Index="75"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="DigitalOutputs.Fct.EqualizVlv"
+          Index="76"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="DigitalOutputs.Fct.LiquidVlv"
+          Index="77"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="DigitalOutputs.Fct.Timed"
+          Index="78"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="DigitalOutputs.Fct.DrainHeat"
+          Index="79"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Alarms.Al.DfrTout1.Info.Active"
+          Index="80"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Alarms.Al.DfrTout2.Info.Active"
+          Index="81"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="DigitalInputs.Fct.DefrostMirror"
+          Index="82"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="DigitalOutputs.Fct.Alarm"
+          Index="83"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="DigitalOutputs.Fct.GenericStage1"
+          Index="84"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="DigitalOutputs.Fct.RailHeaters"
+          Index="85"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="SlavesTempReq"
+          Index="86"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="TempRegStatus"
+          Index="87"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="DayStatus"
+          Index="88"
+          Kind="InputStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="ZoneHMI"
+          Index="15"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="DisDecPointMainVar"
+          Index="16"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="RemoteHMIAlrms"
+          Index="17"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="UnitStatus"
+          Index="18"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="NightPrbReg"
+          Index="19"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="DfrMasterEndSync"
+          Index="20"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="DisNetworkDfr"
+          Index="21"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="StartupDef"
+          Index="22"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="DfrSafetyTime"
+          Index="24"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="DfrEndAlTimeout"
+          Index="25"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="DfrPriorityCont"
+          Index="26"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="AbsAlarmThr"
+          Index="27"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="AbsAlarm2Thr"
+          Index="28"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="NetworkDfr"
+          Index="29"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="RegFanConfig"
+          Index="30"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="DfrFanCfg"
+          Index="31"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="isMaster"
+          Index="37"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="BMS_Prot"
+          Index="38"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="EnNfc"
+          Index="39"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="EnBuzzer"
+          Index="40"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="DayNightOutput"
+          Index="41"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="ManContinuous"
+          Index="42"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="DoubleThermostatConf"
+          Index="57"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="ManDfr"
+          Index="59"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="DfrSkipEn"
+          Index="60"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="LightsOn"
+          Index="61"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="PowDfrConf[1]"
+          Index="62"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="PowDfrConf[2]"
+          Index="63"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="PowDfrConf[3]"
+          Index="64"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="PowDfrConf[4]"
+          Index="65"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="PowDfrConf[5]"
+          Index="66"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="PowDfrConf[6]"
+          Index="67"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="PowDfrConf[7]"
+          Index="68"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="PowDfrConf[8]"
+          Index="69"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="DfrPDFanCfg"
+          Index="70"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="SlaveAlarmCheck"
+          Index="72"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="ManClean"
+          Index="75"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="VirtualDI"
+          Index="76"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="MstRegStatus"
+          Index="77"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="EnKeyboard"
+          Index="78"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="NetworkAux"
+          Index="79"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="GenFctStages_Cfg[1].Rev"
+          Index="80"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="GenFctModul_Cfg[1].Rev"
+          Index="81"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="GenFctAlarm_Cfg[1].AlType"
+          Index="82"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="VirtualProbe"
+          UoM="CELSIUS"
+          Index="0"
+          Kind="InputRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="EvapSatTemp"
+          UoM="CELSIUS"
+          Index="5"
+          Kind="InputRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="DfrStatus"
+          Index="17"
+          Kind="InputRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="ActualTempSetpoint"
+          UoM="CELSIUS"
+          Index="18"
+          Kind="InputRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="ActualTemp2Setpoint"
+          UoM="CELSIUS"
+          Index="19"
+          Kind="InputRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="HACCP_CountHA"
+          Index="20"
+          Kind="InputRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="HACCP_CountHF"
+          Index="21"
+          Kind="InputRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="UINT"
+          Name="swVersion"
+          Index="22"
+          Kind="InputRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="EvapOffset"
+          UoM="DELTACELSIUS"
+          Index="26"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="EvapMin"
+          UoM="BAR"
+          Index="27"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="EvapMax"
+          UoM="BAR"
+          Index="28"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="AmbHMin"
+          UoM="PERCENT_rH"
+          Index="29"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="AmbHMax"
+          UoM="PERCENT_rH"
+          Index="30"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="VirtualComposition"
+          UoM="PERCENT"
+          Index="64"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="HmiMainSel"
+          Index="65"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="HmiRemSel"
+          Index="66"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="TempSetP"
+          UoM="CELSIUS"
+          Index="67"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="TempSetP2"
+          UoM="CELSIUS"
+          Index="68"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="TempDiff"
+          UoM="DELTACELSIUS"
+          Index="69"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="TempDiff2"
+          UoM="DELTACELSIUS"
+          Index="70"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="DoubleThermSafety"
+          UoM="MINUTE"
+          Index="71"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="MinTempSet"
+          UoM="CELSIUS"
+          Index="72"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="MaxTempSet"
+          UoM="CELSIUS"
+          Index="73"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="SetpNightOffset"
+          UoM="DELTACELSIUS"
+          Index="74"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="PrbErrorOffset"
+          UoM="DELTACELSIUS"
+          Index="75"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="UINT"
+          Name="CleanTout"
+          UoM="MINUTE"
+          Index="78"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="StbyTout"
+          UoM="MINUTE"
+          Index="79"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="DfrType"
+          Index="80"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="DfrInterval"
+          UoM="HOUR"
+          Index="81"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="DfrEndTemp"
+          UoM="CELSIUS"
+          Index="82"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="DfrEnd2Temp"
+          UoM="CELSIUS"
+          Index="83"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="DfrMaxDuration"
+          UoM="MINUTE"
+          Index="84"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="DfrMaxDuration2"
+          UoM="MINUTE"
+          Index="85"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="DfrPowOnDelay"
+          UoM="MINUTE"
+          Index="86"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="HMIMainDef"
+          Index="87"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="DripTime"
+          UoM="MINUTE"
+          Index="88"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="DfrHiBypass"
+          UoM="MINUTE"
+          Index="89"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="DfrTimeRun"
+          Index="90"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="DfrTempRun"
+          UoM="CELSIUS"
+          Index="91"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="DfrPrbAlm"
+          Index="92"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="DfrOffTimeSeq"
+          UoM="MINUTE"
+          Index="93"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="DfrOnTimeSeq"
+          UoM="MINUTE"
+          Index="94"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="DfrPowTemp"
+          UoM="DELTACELSIUS"
+          Index="95"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="DfrPowTime"
+          UoM="MINUTE"
+          Index="96"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="DfrSkipDuration"
+          UoM="PERCENT"
+          Index="97"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="DailyDfrNum"
+          Index="98"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="DailyDfrNum2"
+          Index="99"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="UINT"
+          Name="DfrPmpDwnDuration"
+          Index="100"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="GlassEstimComp"
+          Index="101"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="DfrVlvPos"
+          UoM="PERCENT"
+          Index="102"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="CompFanDelay"
+          UoM="MINUTE"
+          Index="104"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="UINT"
+          Name="MinOnOnSameT"
+          UoM="MINUTE"
+          Index="105"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="UINT"
+          Name="MinOffT"
+          UoM="MINUTE"
+          Index="106"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="UINT"
+          Name="MinOnT"
+          UoM="MINUTE"
+          Index="107"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="DutySetOnTime"
+          Index="108"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="ContCycleTout"
+          UoM="HOUR"
+          Index="109"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="ContCycleLowBypass"
+          UoM="MINUTE"
+          Index="110"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="AlarmPrbConf"
+          Index="111"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="Alarm2PrbConf"
+          Index="112"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="AlarmResetDiff"
+          UoM="DELTACELSIUS"
+          Index="113"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="LowAlarmThr"
+          UoM="CELSIUS"
+          Index="114"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="HiAlarmThr"
+          UoM="CELSIUS"
+          Index="115"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="LowAlarm2Thr"
+          UoM="CELSIUS"
+          Index="116"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="HiAlarm2Thr"
+          UoM="CELSIUS"
+          Index="117"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="AlarmDelay"
+          UoM="MINUTE"
+          Index="118"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="Alarm2Delay"
+          UoM="MINUTE"
+          Index="119"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="SINT"
+          Name="VirtualDiOut"
+          Index="120"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="CmpAlConfig"
+          UoM="MINUTE"
+          Index="121"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="AlDinDelay"
+          UoM="MINUTE"
+          Index="122"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="AlBypassDoor"
+          UoM="MINUTE"
+          Index="123"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="FanMngConfig"
+          Index="124"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="FansSet"
+          UoM="CELSIUS"
+          Index="125"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="PostDripTime"
+          UoM="MINUTE"
+          Index="126"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="FansDiff"
+          UoM="DELTACELSIUS"
+          Index="127"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="FansCutOff"
+          UoM="DELTACELSIUS"
+          Index="128"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="FansMaxOut"
+          UoM="PERCENT"
+          Index="129"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="FansMinOut"
+          UoM="PERCENT"
+          Index="130"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="FansRegCnf[1]"
+          Index="131"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="FansRegCnf[2]"
+          Index="132"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="ValveCnf"
+          Index="133"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="UINT"
+          Name="RfrgTyp"
+          Index="144"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="SlavesNum"
+          Index="161"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="BMS_Addr"
+          Index="162"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="BMS_Conf"
+          Index="163"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="BMS_Baud"
+          Index="164"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="FB_Baud"
+          Index="165"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="FansPeekTime"
+          UoM="MINUTE"
+          Index="166"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="ManHeaterPerc"
+          UoM="PERCENT"
+          Index="168"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="ManHeaterPeriod"
+          UoM="MINUTE"
+          Index="169"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="HeaterOffs"
+          UoM="DELTACELSIUS"
+          Index="170"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="HeatersDiff"
+          UoM="DELTACELSIUS"
+          Index="171"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="UINT"
+          Name="TimerDelay"
+          UoM="MINUTE"
+          Index="172"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="FansSpeedupTime"
+          UoM="SECOND"
+          Index="173"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="LightOnDoorDelay"
+          UoM="MINUTE"
+          Index="174"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="UINT"
+          Name="CoolingCapacity"
+          UoM="WATT"
+          Index="175"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="GlassTEstimateA"
+          UoM="DELTACELSIUS"
+          Index="176"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="GlassTEstimateB"
+          Index="177"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="HACCP_AlrmDelay"
+          Index="180"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="DfrStart[1].Day"
+          Index="182"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="DfrStart[1].Hour"
+          Index="183"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="DfrStart[1].Minute"
+          Index="184"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="DfrStart[2].Day"
+          Index="185"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="DfrStart[2].Hour"
+          Index="186"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="DfrStart[2].Minute"
+          Index="187"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="DfrStart[3].Day"
+          Index="188"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="DfrStart[3].Hour"
+          Index="189"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="DfrStart[3].Minute"
+          Index="190"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="DfrStart[4].Day"
+          Index="191"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="DfrStart[4].Hour"
+          Index="192"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="DfrStart[4].Minute"
+          Index="193"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="DfrStart[5].Day"
+          Index="194"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="DfrStart[5].Hour"
+          Index="195"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="DfrStart[5].Minute"
+          Index="196"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="DfrStart[6].Day"
+          Index="197"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="DfrStart[6].Hour"
+          Index="198"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="DfrStart[6].Minute"
+          Index="199"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="DfrStart[7].Day"
+          Index="200"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="DfrStart[7].Hour"
+          Index="201"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="DfrStart[7].Minute"
+          Index="202"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="DfrStart[8].Day"
+          Index="203"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="DfrStart[8].Hour"
+          Index="204"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="DfrStart[8].Minute"
+          Index="205"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="SPV_Day"
+          Index="206"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="SPV_Month"
+          Index="207"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="SPV_Year"
+          Index="208"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="SPV_Hour"
+          Index="209"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="SPV_Min"
+          Index="210"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="SPV_DoW"
+          Index="211"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="DfrMstStatus"
+          Index="212"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="MstEvapSatTemp"
+          UoM="CELSIUS"
+          Index="213"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="MstEvapP"
+          UoM="BAR"
+          Index="214"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="MstAmbientH"
+          UoM="PERCENT_rH"
+          Index="215"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="MstAmbientT"
+          UoM="CELSIUS"
+          Index="216"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="MstDewPoint"
+          UoM="CELSIUS"
+          Index="217"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="CustomGasCoeff.GasId"
+          Index="219"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="INT"
+          Name="CustomGasCoeff.GasCoeff[0]"
+          Index="220"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="INT"
+          Name="CustomGasCoeff.GasCoeff[1]"
+          Index="221"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="INT"
+          Name="CustomGasCoeff.GasCoeff[2]"
+          Index="222"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="INT"
+          Name="CustomGasCoeff.GasCoeff[3]"
+          Index="223"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="INT"
+          Name="CustomGasCoeff.GasCoeff[4]"
+          Index="224"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="INT"
+          Name="CustomGasCoeff.GasCoeff[5]"
+          Index="225"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="INT"
+          Name="CustomGasCoeff.GasCoeff[6]"
+          Index="226"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="INT"
+          Name="CustomGasCoeff.GasCoeff[7]"
+          Index="227"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="INT"
+          Name="CustomGasCoeff.GasCoeff[8]"
+          Index="228"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="INT"
+          Name="CustomGasCoeff.GasCoeff[9]"
+          Index="229"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="INT"
+          Name="CustomGasCoeff.GasCoeff[10]"
+          Index="230"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="INT"
+          Name="CustomGasCoeff.GasCoeff[11]"
+          Index="231"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="INT"
+          Name="CustomGasCoeff.CRC"
+          Index="232"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="TimeBandStart[1].Day"
+          Index="233"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="TimeBandStart[1].Hour"
+          Index="234"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="TimeBandStart[1].Minute"
+          Index="235"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="TimeBandEnd[1].Day"
+          Index="236"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="TimeBandEnd[1].Hour"
+          Index="237"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="TimeBandEnd[1].Minute"
+          Index="238"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="MstRegTemp"
+          UoM="CELSIUS"
+          Index="239"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="SerialInputs[1].r"
+          Index="240"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="SerialInputs[2].r"
+          Index="241"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="SerialInputs[3].r"
+          Index="242"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="SerialInputs[4].r"
+          Index="243"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="TimeBandStart[2].Day"
+          Index="244"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="TimeBandStart[2].Hour"
+          Index="245"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="TimeBandStart[2].Minute"
+          Index="246"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="TimeBandEnd[2].Day"
+          Index="247"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="TimeBandEnd[2].Hour"
+          Index="248"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="TimeBandEnd[2].Minute"
+          Index="249"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="TimeBandStart[3].Day"
+          Index="250"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="TimeBandStart[3].Hour"
+          Index="251"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="TimeBandStart[3].Minute"
+          Index="252"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="TimeBandEnd[3].Day"
+          Index="253"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="TimeBandEnd[3].Hour"
+          Index="254"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="TimeBandEnd[3].Minute"
+          Index="255"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="TimeBandStart[4].Day"
+          Index="256"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="TimeBandStart[4].Hour"
+          Index="257"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="TimeBandStart[4].Minute"
+          Index="258"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="TimeBandEnd[4].Day"
+          Index="259"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="TimeBandEnd[4].Hour"
+          Index="260"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="TimeBandEnd[4].Minute"
+          Index="261"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="TimeBandStart[5].Day"
+          Index="262"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="TimeBandStart[5].Hour"
+          Index="263"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="TimeBandStart[5].Minute"
+          Index="264"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="TimeBandEnd[5].Day"
+          Index="265"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="TimeBandEnd[5].Hour"
+          Index="266"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="TimeBandEnd[5].Minute"
+          Index="267"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="TimeBandStart[6].Day"
+          Index="268"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="TimeBandStart[6].Hour"
+          Index="269"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="TimeBandStart[6].Minute"
+          Index="270"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="TimeBandEnd[6].Day"
+          Index="271"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="TimeBandEnd[6].Hour"
+          Index="272"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="TimeBandEnd[6].Minute"
+          Index="273"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="TimeBandStart[7].Day"
+          Index="274"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="TimeBandStart[7].Hour"
+          Index="275"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="TimeBandStart[7].Minute"
+          Index="276"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="TimeBandEnd[7].Day"
+          Index="277"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="TimeBandEnd[7].Hour"
+          Index="278"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="TimeBandEnd[7].Minute"
+          Index="279"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="TimeBandStart[8].Day"
+          Index="280"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="TimeBandStart[8].Hour"
+          Index="281"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="TimeBandStart[8].Minute"
+          Index="282"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="TimeBandEnd[8].Day"
+          Index="283"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="TimeBandEnd[8].Hour"
+          Index="284"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="TimeBandEnd[8].Minute"
+          Index="285"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="GenFctStages_Cfg[1].SetP"
+          Index="288"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="GenFctStages_Cfg[1].Diff"
+          Index="289"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="GenFctStages_Cfg[1].RegVar_1"
+          Index="290"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="GenFctStages_Cfg[1].RegVar_2"
+          Index="291"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="GenFctStages_EnableOn[1]"
+          Index="292"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="GenFctModul_Cfg[1].SetP"
+          Index="293"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="GenFctModul_Cfg[1].Diff"
+          Index="294"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="GenFctModul_Cfg[1].CutOffDiff"
+          Index="295"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="GenFctModul_Cfg[1].HystDiff"
+          Index="296"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="GenFctModul_Cfg[1].MaxOut"
+          Index="297"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="GenFctModul_Cfg[1].MinOut"
+          Index="298"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="GenFctModul_Cfg[1].PID_Cfg.kp"
+          Index="299"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="UINT"
+          Name="GenFctModul_Cfg[1].PID_Cfg.Ti"
+          Index="300"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="UINT"
+          Name="GenFctModul_Cfg[1].PID_Cfg.Td"
+          Index="301"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="GenFctModul_Cfg[1].RegVar_1"
+          Index="302"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="GenFctModul_Cfg[1].RegVar_2"
+          Index="303"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="GenFctModul_EnableOn[1]"
+          Index="304"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="GenFctAlarm_Cfg[1].Delay"
+          Index="305"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="GenFctAlarm_Cfg[1].HighThr"
+          Index="306"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="GenFctAlarm_Cfg[1].LowThr"
+          Index="307"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="GenFctAlarm_Cfg[1].Diff"
+          Index="308"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="GenFctAlarm_Cfg[1].RegVar_1"
+          Index="309"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="GenFctAlarm_Cfg[1].RegVar_2"
+          Index="310"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="GenFctAlarm_EnableOn[1]"
+          Index="311"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="UINT"
+          Name="EVD_Digin1Cfg"
+          Index="103"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="MstVlvConfig"
+          Index="32"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="SPV_CurrDay"
+          Index="77"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="SPV_CurrDoW"
+          Index="135"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="SPV_CurrHour"
+          Index="136"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="SPV_CurrMin"
+          Index="137"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="SPV_CurrMonth"
+          Index="143"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="SPV_Curryear"
+          Index="167"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="UniqueID_SPV[0]"
+          Index="179"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="UniqueID_SPV[1]"
+          Index="181"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="UniqueID_SPV[2]"
+          Index="218"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="UniqueID_SPV[3]"
+          Index="313"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="UniqueID_SPV[4]"
+          Index="314"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="UniqueID_SPV[5]"
+          Index="315"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="UniqueID_SPV[6]"
+          Index="316"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="UniqueID_SPV[7]"
+          Index="317"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="HighTempBypDoor"
+          UoM="MINUTE"
+          Index="134"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Alarms.Al.Warn_Door.Info.Active"
+          Index="33"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="TempCtrl_DirRev"
+          Index="34"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="AinStability"
+          Index="60"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="SINT"
+          Name="Ain_Cfg.Fct.AirOff.Ch"
+          Index="61"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="SINT"
+          Name="Ain_Cfg.Fct.AirOn.Ch"
+          Index="62"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="SINT"
+          Name="Ain_Cfg.Fct.AmbientH.Ch"
+          Index="76"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="SINT"
+          Name="Ain_Cfg.Fct.AmbientT.Ch"
+          Index="138"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="SINT"
+          Name="Ain_Cfg.Fct.Auxiliary.Ch"
+          Index="139"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="SINT"
+          Name="Ain_Cfg.Fct.Auxiliary2.Ch"
+          Index="140"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="SINT"
+          Name="Ain_Cfg.Fct.Defrost.Ch"
+          Index="141"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="SINT"
+          Name="Ain_Cfg.Fct.Defrost2.Ch"
+          Index="142"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="SINT"
+          Name="Ain_Cfg.Fct.DewPoint.Ch"
+          Index="146"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="SINT"
+          Name="Ain_Cfg.Fct.EvapP.Ch"
+          Index="147"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="SINT"
+          Name="Ain_Cfg.Fct.GlassT.Ch"
+          Index="148"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="SINT"
+          Name="Ain_Cfg.Fct.SuctT.Ch"
+          Index="149"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="SINT"
+          Name="Dout_Cfg.Fct.Alarm.Ch"
+          Index="150"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="SINT"
+          Name="Dout_Cfg.Fct.Auxiliary.Ch"
+          Index="151"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="SINT"
+          Name="Dout_Cfg.Fct.Defrost.Ch"
+          Index="152"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Dout_Cfg.Fct.Auxiliary.Logic"
+          Index="35"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Dout_Cfg.Fct.Alarm.Logic"
+          Index="36"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="SINT"
+          Name="Dout_Cfg.Fct.Defrost2.Ch"
+          Index="153"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Dout_Cfg.Fct.Defrost2.Logic"
+          Index="58"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="SINT"
+          Name="Dout_Cfg.Fct.DrainHeat.Ch"
+          Index="154"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Dout_Cfg.Fct.DrainHeat.Logic"
+          Index="84"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="SINT"
+          Name="Dout_Cfg.Fct.EqualizVlv.Ch"
+          Index="155"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Dout_Cfg.Fct.EqualizVlv.Logic"
+          Index="85"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="SINT"
+          Name="Dout_Cfg.Fct.Fans.Ch"
+          Index="156"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="SINT"
+          Name="Dout_Cfg.Fct.GenericStage1.Ch"
+          Index="157"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Dout_Cfg.Fct.GenericStage1.Logic"
+          Index="86"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="SINT"
+          Name="Dout_Cfg.Fct.Light.Ch"
+          Index="158"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Dout_Cfg.Fct.Light.Logic"
+          Index="87"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="SINT"
+          Name="Dout_Cfg.Fct.LiquidVlv.Ch"
+          Index="159"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Dout_Cfg.Fct.LiquidVlv.Logic"
+          Index="88"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="SINT"
+          Name="Dout_Cfg.Fct.MasterAuxiliary.Ch"
+          Index="160"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Dout_Cfg.Fct.MasterAuxiliary.Logic"
+          Index="89"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="SINT"
+          Name="Dout_Cfg.Fct.MasterLight.Ch"
+          Index="286"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Dout_Cfg.Fct.MasterLight.Logic"
+          Index="90"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="SINT"
+          Name="Dout_Cfg.Fct.RailHeaters.Ch"
+          Index="287"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Dout_Cfg.Fct.RailHeaters.Logic"
+          Index="91"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="SINT"
+          Name="Dout_Cfg.Fct.Solenoid.Ch"
+          Index="318"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Dout_Cfg.Fct.Solenoid.Logic"
+          Index="92"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="SINT"
+          Name="Dout_Cfg.Fct.SuctVlv.Ch"
+          Index="319"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Dout_Cfg.Fct.SuctVlv.Logic"
+          Index="93"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="SINT"
+          Name="Dout_Cfg.Fct.Timed.Ch"
+          Index="320"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Dout_Cfg.Fct.Timed.Logic"
+          Index="94"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="SINT"
+          Name="Din_Cfg.Fct.Alarm.Ch"
+          Index="321"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Din_Cfg.Fct.Alarm.Logic"
+          Index="95"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="SINT"
+          Name="Din_Cfg.Fct.Auxiliary.Ch"
+          Index="322"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Din_Cfg.Fct.Auxiliary.Logic"
+          Index="96"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="SINT"
+          Name="Din_Cfg.Fct.CallDfr.Ch"
+          Index="323"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Din_Cfg.Fct.CallDfr.Logic"
+          Index="97"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="SINT"
+          Name="Din_Cfg.Fct.Clean.Ch"
+          Index="324"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Din_Cfg.Fct.Clean.Logic"
+          Index="98"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="SINT"
+          Name="Din_Cfg.Fct.Config.Ch"
+          Index="325"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Din_Cfg.Fct.Config.Logic"
+          Index="99"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="SINT"
+          Name="Din_Cfg.Fct.ContCycle.Ch"
+          Index="326"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Din_Cfg.Fct.ContCycle.Logic"
+          Index="100"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="SINT"
+          Name="Din_Cfg.Fct.Curtain.Ch"
+          Index="327"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Din_Cfg.Fct.Curtain.Logic"
+          Index="101"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="SINT"
+          Name="Din_Cfg.Fct.DefrostMirror.Ch"
+          Index="328"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Din_Cfg.Fct.DefrostMirror.Logic"
+          Index="102"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="SINT"
+          Name="Din_Cfg.Fct.DelayedAl.Ch"
+          Index="329"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Din_Cfg.Fct.DelayedAl.Logic"
+          Index="103"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="SINT"
+          Name="Din_Cfg.Fct.DoorOff.Ch"
+          Index="330"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Din_Cfg.Fct.DoorOff.Logic"
+          Index="104"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="SINT"
+          Name="Din_Cfg.Fct.DoorOn.Ch"
+          Index="331"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Din_Cfg.Fct.DoorOn.Logic"
+          Index="105"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="SINT"
+          Name="Din_Cfg.Fct.EnDfr.Ch"
+          Index="332"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Din_Cfg.Fct.EnDfr.Logic"
+          Index="106"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="SINT"
+          Name="Din_Cfg.Fct.GenFctAlrm.Ch"
+          Index="333"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Din_Cfg.Fct.GenFctAlrm.Logic"
+          Index="107"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="SINT"
+          Name="Din_Cfg.Fct.RemoteOff.Ch"
+          Index="334"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Din_Cfg.Fct.RemoteOff.Logic"
+          Index="108"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="SINT"
+          Name="Din_Cfg.Fct.Standby.Ch"
+          Index="335"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Din_Cfg.Fct.Standby.Logic"
+          Index="109"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="SINT"
+          Name="Din_Cfg.Fct.Timed.Ch"
+          Index="336"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Din_Cfg.Fct.Timed.Logic"
+          Index="110"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="SINT"
+          Name="AOut_Cfg.Fct.Fans.Ch"
+          Index="337"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="SINT"
+          Name="AOut_Cfg.Fct.GenericModul1.Ch"
+          Index="338"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="SINT"
+          Name="AOut_Cfg.Fct.Rails.Ch"
+          Index="339"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="SINT"
+          Name="AOut_Cfg.Fct.Valve.Ch"
+          Index="340"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="AnalogOutputs.Fct.Fans"
+          Index="341"
+          Kind="HoldingRegister"
+          Size="2" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="AnalogOutputs.Fct.GenericModul1"
+          Index="343"
+          Kind="HoldingRegister"
+          Size="2" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="AnalogOutputs.Fct.Rails"
+          Index="345"
+          Kind="HoldingRegister"
+          Size="2" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="AnalogOutputs.Fct.Valve"
+          Index="347"
+          Kind="HoldingRegister"
+          Size="2" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="AnalogInputs.Fct.AirOff"
+          UoM="CELSIUS"
+          Index="349"
+          Kind="HoldingRegister"
+          Size="2" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="AnalogInputs.Fct.AirOn"
+          UoM="CELSIUS"
+          Index="351"
+          Kind="HoldingRegister"
+          Size="2" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="AnalogInputs.Fct.AmbientH"
+          UoM="PERCENT_rH"
+          Index="353"
+          Kind="HoldingRegister"
+          Size="2" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="AnalogInputs.Fct.AmbientT"
+          UoM="CELSIUS"
+          Index="355"
+          Kind="HoldingRegister"
+          Size="2" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="AnalogInputs.Fct.Auxiliary"
+          UoM="CELSIUS"
+          Index="357"
+          Kind="HoldingRegister"
+          Size="2" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="AnalogInputs.Fct.Auxiliary2"
+          UoM="CELSIUS"
+          Index="359"
+          Kind="HoldingRegister"
+          Size="2" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="AnalogInputs.Fct.Defrost"
+          UoM="CELSIUS"
+          Index="361"
+          Kind="HoldingRegister"
+          Size="2" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="AnalogInputs.Fct.Defrost2"
+          UoM="CELSIUS"
+          Index="363"
+          Kind="HoldingRegister"
+          Size="2" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="AnalogInputs.Fct.DewPoint"
+          UoM="CELSIUS"
+          Index="365"
+          Kind="HoldingRegister"
+          Size="2" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="AnalogInputs.Fct.EvapP"
+          UoM="BAR"
+          Index="367"
+          Kind="HoldingRegister"
+          Size="2" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="AnalogInputs.Fct.GlassT"
+          UoM="CELSIUS"
+          Index="369"
+          Kind="HoldingRegister"
+          Size="2" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="AnalogInputs.Fct.SuctT"
+          UoM="CELSIUS"
+          Index="371"
+          Kind="HoldingRegister"
+          Size="2" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="MOP_Ti"
+          UoM="SECOND"
+          Index="0"
+          Kind="HoldingRegister"
+          Size="2" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="MOP_Thrsh"
+          UoM="CELSIUS"
+          Index="2"
+          Kind="HoldingRegister"
+          Size="2" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="MOP_SuctTempThrsh"
+          UoM="CELSIUS"
+          Index="4"
+          Kind="HoldingRegister"
+          Size="2" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="MOP_StartDelay"
+          UoM="SECOND"
+          Index="6"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="UINT"
+          Name="MOP_AlrmDelay"
+          UoM="SECOND"
+          Index="7"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="LowSuctThrsh"
+          UoM="CELSIUS"
+          Index="8"
+          Kind="HoldingRegister"
+          Size="2" />
+        <ModbusVariable
+          DataType="UINT"
+          Name="LowSuctAlrmDelay"
+          UoM="SECOND"
+          Index="10"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="LowSH_Ti"
+          UoM="SECOND"
+          Index="11"
+          Kind="HoldingRegister"
+          Size="2" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="LowSH_Thrsh"
+          UoM="KELVIN"
+          Index="13"
+          Kind="HoldingRegister"
+          Size="2" />
+        <ModbusVariable
+          DataType="UINT"
+          Name="LowSH_AlrmDelay"
+          UoM="SECOND"
+          Index="15"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="LOP_Ti"
+          UoM="SECOND"
+          Index="16"
+          Kind="HoldingRegister"
+          Size="2" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="LOP_Thrsh"
+          UoM="CELSIUS"
+          Index="18"
+          Kind="HoldingRegister"
+          Size="2" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="LOP_AlrmDelay"
+          UoM="SECOND"
+          Index="20"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="UINT"
+          Name="ExvTi"
+          UoM="SECOND"
+          Index="21"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="ExvTd"
+          UoM="SECOND"
+          Index="22"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="ExvSatTempBackup"
+          UoM="CELSIUS"
+          Index="23"
+          Kind="HoldingRegister"
+          Size="2" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="ExvKp"
+          Index="31"
+          Kind="HoldingRegister"
+          Size="2" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="ExvEnCloseMOP"
+          Index="0"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="ExvEnCloseLsa"
+          Index="1"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="UINT"
+          Name="ExvDelayDfr"
+          UoM="MINUTE"
+          Index="25"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="Ain_Types.Group1"
+          Index="33"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="Ain_Types.Group2"
+          Index="34"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="Ain_Types.Group3"
+          Index="35"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="Ain_Types.Group4"
+          Index="36"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="Ain_Offset.Fct.AirOff"
+          UoM="DELTACELSIUS"
+          Index="37"
+          Kind="HoldingRegister"
+          Size="2" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="Ain_Offset.Fct.AirOn"
+          UoM="DELTACELSIUS"
+          Index="39"
+          Kind="HoldingRegister"
+          Size="2" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="Ain_Offset.Fct.AmbientH"
+          UoM="PERCENT_rH"
+          Index="41"
+          Kind="HoldingRegister"
+          Size="2" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="Ain_Offset.Fct.AmbientT"
+          UoM="DELTACELSIUS"
+          Index="43"
+          Kind="HoldingRegister"
+          Size="2" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="Ain_Offset.Fct.Auxiliary"
+          UoM="DELTACELSIUS"
+          Index="45"
+          Kind="HoldingRegister"
+          Size="2" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="Ain_Offset.Fct.Auxiliary2"
+          UoM="DELTACELSIUS"
+          Index="47"
+          Kind="HoldingRegister"
+          Size="2" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="Ain_Offset.Fct.Defrost"
+          UoM="DELTACELSIUS"
+          Index="49"
+          Kind="HoldingRegister"
+          Size="2" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="Ain_Offset.Fct.Defrost2"
+          UoM="DELTACELSIUS"
+          Index="51"
+          Kind="HoldingRegister"
+          Size="2" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="Ain_Offset.Fct.DewPoint"
+          UoM="DELTACELSIUS"
+          Index="53"
+          Kind="HoldingRegister"
+          Size="2" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="Ain_Offset.Fct.EvapP"
+          UoM="BAR"
+          Index="55"
+          Kind="HoldingRegister"
+          Size="2" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="Ain_Offset.Fct.GlassT"
+          UoM="DELTACELSIUS"
+          Index="57"
+          Kind="HoldingRegister"
+          Size="2" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="Ain_Offset.Fct.SuctT"
+          UoM="DELTACELSIUS"
+          Index="373"
+          Kind="HoldingRegister"
+          Size="2" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="DigitalOutputs.Fct.HotGas"
+          Index="2"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="SINT"
+          Name="Dout_Cfg.Fct.HotGas.Ch"
+          Index="59"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Dout_Cfg.Fct.HotGas.Logic"
+          Index="3"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="DfrStartByDeltaPrb1"
+          Index="63"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="USINT"
+          Name="DfrStartByDeltaPrb2"
+          Index="145"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="UINT"
+          Name="DfrStartByDeltaT"
+          UoM="MINUTE"
+          Index="178"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="DfrStartByDeltaThrsh"
+          UoM="CELSIUS"
+          Index="375"
+          Kind="HoldingRegister"
+          Size="2" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Dout_Cfg.Fct.Defrost.Logic"
+          Index="4"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="Dout_Cfg.Fct.Fans.Logic"
+          Index="5"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="UINT"
+          Name="V_CSM_CaseSystemInfo1"
+          Index="312"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="UINT"
+          Name="V_CSM_CaseSystemInfo2"
+          Index="377"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="UINT"
+          Name="V_CSM_CaseSystemInfo3"
+          Index="378"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="UINT"
+          Name="V_CSM_CaseSystemInfo4"
+          Index="379"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="UINT"
+          Name="V_CSM_FeatureInfo1"
+          Index="383"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="UINT"
+          Name="V_CSM_FeatureInfo2"
+          Index="384"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="UINT"
+          Name="V_CSM_FeatureInfo3"
+          Index="385"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="UINT"
+          Name="V_CSM_FeatureInfo4"
+          Index="386"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="INT"
+          Name="V_CSM_SerialNumber1"
+          Index="387"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="INT"
+          Name="V_CSM_SerialNumber2"
+          Index="388"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="V_IM_trc_Defrost"
+          UoM="CELSIUS"
+          Index="390"
+          Kind="HoldingRegister"
+          Size="2" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="V_IM_trc_Suction"
+          UoM="CELSIUS"
+          Index="392"
+          Kind="HoldingRegister"
+          Size="2" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="V_IM_trc_AirOff"
+          UoM="CELSIUS"
+          Index="394"
+          Kind="HoldingRegister"
+          Size="2" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="V_IM_trc_AirOn"
+          UoM="CELSIUS"
+          Index="396"
+          Kind="HoldingRegister"
+          Size="2" />
+        <ModbusVariable
+          DataType="REAL"
+          Name="V_IM_bar_Evap"
+          UoM="BAR"
+          Index="398"
+          Kind="HoldingRegister"
+          Size="2" />
+        <ModbusVariable
+          DataType="BOOL"
+          Name="C_CSM_ManAck"
+          Index="6"
+          Kind="CoilStatus"
+          Size="1" />
+        <ModbusVariable
+          DataType="UINT"
+          Name="V_CSM_CaseSystemInfo5"
+          Index="380"
+          Kind="HoldingRegister"
+          Size="1" />
+        <ModbusVariable
+          DataType="UINT"
+          Name="V_CSM_CaseSystemInfo6"
+          Index="381"
+          Kind="HoldingRegister"
+          Size="1" />
+      </Variables>
+    </Configuration>
+  </Configurations>
+</SlaveConfigurations>

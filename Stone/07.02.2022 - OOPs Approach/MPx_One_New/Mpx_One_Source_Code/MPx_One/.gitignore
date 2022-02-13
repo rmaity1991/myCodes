@@ -1,0 +1,5 @@
+Generated/
+Output/
+SolutionUserSettings.xml
+*.lock
+atserver_std.log
