@@ -8,7 +8,7 @@ struct Employee{
     float salary;
 };
 /*
-Dynamic Aloocation of objects has one additional aspect to it as compared to dynamic allocation of built in types and 
+Dynamic Allocation of objects has one additional aspect to it as compared to dynamic allocation of built in types and 
 arrays.
 When objects are created dynamically using new keyword. 
 1) It allocates storage of proper size to the object
@@ -54,26 +54,26 @@ Dynamic Memory Allocations
 
 int *intptr=new int[25]; // Arrays are handled by pointers by default. So & is not required.
 
-struct Employee *ptr=new struct Employee;
+struct Employee *ptr=new struct Employee; // create a pointer to new Employee Pointer
 
-ptr->name="Rohit Maity";
+ptr->name="Rohit Maity"; // assign values using -> to access the elements
 ptr->salary=15000;
 ptr->age=30;
 
 intptr[0]=34;
 intptr[1]=45;
 
-Sample *ptrsample= new Sample;
+Sample *ptrsample= new Sample; // create a pointer for the class sample
 
 ptrsample->showData();
 
-delete ptrsample;
+delete ptrsample; // delete the pointer of class sample
 
-Sample *ptrsample1= new Sample(23,45);
+Sample *ptrsample1= new Sample(23,45); // calling a constructor using pointer
 
 ptrsample1->showData();
 
-delete ptrsample1;
+delete ptrsample1; // delete the pointer of class sample.
 
 
     return 0;

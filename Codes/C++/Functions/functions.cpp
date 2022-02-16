@@ -7,20 +7,28 @@ using namespace std;
 void display(); // Function Prototype which needs to be there for the compiler.
 
 int sum(int,int y=0);
+
 float sum(float,float);
+
 double sum(double,double y=0);
-int * addNumber(int * , int *);
+
+int * addNumber(int * , int *); // This is a pointer function prototype
 // Here we are going to use functions to operate on the Complex structure.
+
 struct Complex{
     float real;
     float imag;
 };
 // Function prototypes of Complex Structures
 Complex operator +(Complex,Complex); // For Operator Overloading
+
 Complex operator -(Complex,Complex); // For Operator Overloading
 
+
 Complex display(Complex);
+
 Complex setComplex(float ,float);
+
 
 // Inline Functions removes excess overheads
 // and replaces the call area with the code
