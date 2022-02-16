@@ -1,0 +1,27 @@
+
+import org.openqa.selenium.WebDriver;  
+import org.openqa.selenium.chrome.ChromeDriver;
+
+class Selenium{
+	
+}
+
+public class SeleniumTesting {
+	
+	public static void main(String args[]) {
+		System.setProperty("webdriver.chrome.driver","D://ChromeDriver//chromedriver.exe");
+		
+
+		WebDriver driver=new ChromeDriver();
+		
+		
+		driver.navigate().to("www.google.com");
+		
+		
+				
+		
+	}
+	
+
+
+}

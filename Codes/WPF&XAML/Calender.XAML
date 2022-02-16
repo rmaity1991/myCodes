@@ -1,0 +1,48 @@
+<!--
+    The following example contains a Calendar control with selections and blackout dates. 
+    When you click on any date except the blackout dates, the program will update the title with that date.
+
+Here is the XAML code in which a calendar is created with some properties and a click event.
+-->
+
+<Window x:Class = "XAMLCalendar.MainWindow" 
+   xmlns = "http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+   xmlns:x = "http://schemas.microsoft.com/winfx/2006/xaml" 
+   Title = "MainWindow" Height = "350" Width = "604"> 
+	
+   <Grid> 
+      <StackPanel Orientation = "Horizontal"> 
+         <!-- 
+            Create a Calendar that displays dates through 
+            Januarary 31, 2015 and has dates that are not selectable. 
+         --> 
+				
+         <Calendar Margin = "20" SelectionMode = "MultipleRange"   
+            IsTodayHighlighted = "false"  
+            DisplayDate = "1/1/2015" 
+            DisplayDateEnd = "1/31/2015" 
+            SelectedDatesChanged = "Calendar_SelectedDatesChanged" 
+            xmlns:sys = "clr-namespace:System;assembly = mscorlib">  
+				
+            <Calendar.BlackoutDates> 
+               <CalendarDateRange Start = "1/2/2015" End = "1/4/2015"/> 
+               <CalendarDateRange Start = "1/9/2015" End = "1/9/2015"/> 
+               <CalendarDateRange Start = "1/16/2015" End = "1/16/2015"/> 
+               <CalendarDateRange Start = "1/23/2015" End = "1/25/2015"/> 
+               <CalendarDateRange Start = "1/30/2015" End = "1/30/2015"/> 
+            </Calendar.BlackoutDates>
+			
+            <Calendar.SelectedDates> 
+               <sys:DateTime>1/5/2015</sys:DateTime> 
+               <sys:DateTime>1/12/2015</sys:DateTime> 
+               <sys:DateTime>1/14/2015</sys:DateTime> 
+               <sys:DateTime>1/13/2015</sys:DateTime> 
+               <sys:DateTime>1/15/2015</sys:DateTime> 
+               <sys:DateTime>1/27/2015</sys:DateTime> 
+               <sys:DateTime>4/2/2015</sys:DateTime> 
+            </Calendar.SelectedDates> 
+         </Calendar>
+         
+      </StackPanel>
+   </Grid> 
+</Window>

@@ -1,0 +1,41 @@
+﻿<Window x:Class="WpfApp3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+
+        <StackPanel>
+            <TextBlock x:Name="mytext1"
+                   Height="300"
+                   Width="500"
+                   >
+            Hello <Bold>World!</Bold> and <Italic>You</Italic>
+            <LineBreak/>
+            My Name is <Bold>Rohit Maity</Bold>
+            <LineBreak/>
+            <!--
+            Hyperlink property will create a request handler in the code
+            -->
+            This is a hyperlink <Hyperlink RequestNavigate="Hyperlink_RequestNavigate"  NavigateUri="https://www.google.com">www.google.com</Hyperlink>
+
+            </TextBlock>
+
+            <TextBlock 
+                TextTrimming="None"
+                TextWrapping="Wrap"
+                Foreground="AliceBlue"
+                Background="Black"
+                FontSize="50"
+                >
+            
+            Rohit Maity <Span Foreground="Aqua">Romela</Span> Dutta
+
+            </TextBlock>
+        </StackPanel>
+        
+    </Grid>
+</Window>

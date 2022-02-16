@@ -27,7 +27,7 @@
     </Folder>
     <Folder path="DFR_Libs">
       <File path="DFR_Utility.st" buildaction="Compile" />
-      <File path="DFR_Utility_v1.st" buildaction="Compile" />
+      <File path="DFR_Utility_Class.st" buildaction="Compile" />
     </Folder>
     <Folder path="Gui">
       <Folder path="Actions">

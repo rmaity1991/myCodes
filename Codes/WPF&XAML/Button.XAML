@@ -1,0 +1,47 @@
+
+<!--
+The following example contains three buttons that respond differently based on their ClickMode property value.
+
+Here is the XAML code in which three buttons are created with some properties and a click event.
+-->
+
+<Window x:Class = "XAMLButton.MainWindow" 
+   xmlns = "http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+   xmlns:x = "http://schemas.microsoft.com/winfx/2006/xaml" 
+   Title = "MainWindow" Height = "350" Width = "604"> 
+		  
+   <Grid> 
+
+      <StackPanel Margin = "10"> 
+
+         <Button x:Name = "button1"  
+            Content = "Hover" 
+            Click = "OnClick1" 
+            ClickMode = "Hover" 
+            Margin = "10"  
+            Width = "150" 
+            HorizontalAlignment = "Center" 
+            Foreground = "Gray"/> 
+
+			<Button x:Name = "button2"  
+            Content = "Press to Click" 
+            Click = "OnClick2"  
+            ClickMode = "Press" 
+            Margin = "10"  
+            Width = "150"  
+            HorizontalAlignment = "Center"  
+            Foreground = "DarkBlue"/> 
+
+			<Button x:Name = "button3"  
+            Content = "Release" 
+            Click = "OnClick3"  
+            ClickMode = "Release" 
+            Margin = "10"  
+            Width = "150" 
+            HorizontalAlignment = "Center"/> 
+
+      </StackPanel>
+       
+   </Grid>
+   
+</Window>

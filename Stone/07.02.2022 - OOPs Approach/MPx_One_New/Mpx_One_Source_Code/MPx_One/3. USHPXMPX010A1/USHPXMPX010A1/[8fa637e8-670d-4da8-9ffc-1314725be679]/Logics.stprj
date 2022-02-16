@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SToneProject name="Logics_v.0.1.4 [MPXone_Medium_Core_v.1.8.6 [MPXone_Medium]]" guid="8d84d4d9-403b-4a57-9b98-fcaea0cc61d3" type="Library" version="1.0" projectVersion="0.1.4" Z3VpZC1jcmM="2221960428" reflibfathername="MPXone_Medium_Core_v.1.8.6 [MPXone_Medium]" libguid="4ebca548-95ae-423e-bcf3-618f6fab6c13" libname="Logics">
+  <Files>
+    <Folder path="Images" />
+    <Folder path="Libs" />
+    <File path="LibVer.g.st" buildaction="Compile" />
+    <File path="Logics.st" buildaction="Compile" />
+  </Files>
+  <BuildOptions />
+  <Library Ver="1">
+    <Info Version="0.1.4" SourceCRC="0x6E82A253" ProjectCRC="0x6E82A253" ID="4ebca548-95ae-423e-bcf3-618f6fab6c13" Name="Logics" Description="" Author="" Vendor="">
+      <Dependency ID="4ebca548-95ae-423e-bcf3-618f6fab6c13" Name="Logics" Version="0.1.4" />
+    </Info>
+  </Library>
+  <Security Encoded="mwAAAMSxZFcPjdLAFwKZiypm4WEXL+FlR8cThZKs1A+MI2enS8ugOJ2L4Vn4UyYKCxFTuM2fex2fhHsAzYs2MslsVlsdChlLgDf85pI4HjaSs1caeTopLG7YPiVVV2UyYtORnC3XvOt0DOZp/VjBP7JTSB70lKG7DAZTphrqPsjudVfiJZDt3pnXUowMj75yl8XwlIvHIXv4AkbhLrK8gOMzy3g=" />
+</SToneProject>

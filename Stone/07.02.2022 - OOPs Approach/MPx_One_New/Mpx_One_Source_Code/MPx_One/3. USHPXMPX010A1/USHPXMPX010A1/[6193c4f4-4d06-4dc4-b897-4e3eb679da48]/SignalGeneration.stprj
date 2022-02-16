@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SToneProject name="SignalGeneration_v.0.2.0 [MPXone_Medium_Core_v.1.8.6 [MPXone_Medium]]" guid="f154c4f7-2e5d-4fb5-8a71-178566255f93" type="Library" version="1.0" projectVersion="0.2.0" Z3VpZC1jcmM="3781383325" reflibfathername="MPXone_Medium_Core_v.1.8.6 [MPXone_Medium]" libguid="746371fa-0e06-41ed-9bab-8772dcfb98fa" libname="SignalGeneration">
+  <Files>
+    <Folder path="Images" />
+    <Folder path="Libs">
+      <File path="GetTime_v.0.1.8.stlib" buildaction="Compile" libnodeid="d2e4710b-e71e-4ddb-9e7e-46420f0284be" />
+    </Folder>
+    <File path="_SignalGeneration.st" buildaction="Compile" />
+    <File path="LibVer.g.st" buildaction="Compile" />
+  </Files>
+  <BuildOptions />
+  <Library Ver="1">
+    <Info Version="0.2.0" SourceCRC="0xA39389EF" ProjectCRC="0xA39389EF" ID="746371fa-0e06-41ed-9bab-8772dcfb98fa" Name="SignalGeneration" Description="" Author="" Vendor="">
+      <Dependency ID="746371fa-0e06-41ed-9bab-8772dcfb98fa" Name="SignalGeneration" Version="0.2.0">
+        <Dependency ID="128737d8-0124-4e33-a04e-69ecb0759bb2" Name="GetTime" Version="0.1.8" />
+      </Dependency>
+    </Info>
+  </Library>
+  <Security Encoded="mwAAAMSxZFcPjdLAFwKZiypm4WEXL+FlR8cThZKs1A+MI2enS8ugOJ2L4Vn4UyYKCxFTuM2fex2fhHsAzYs2MslsVlsdChlLgDf85pI4HjaSs1caeTopLG7YPiVVV2UyYtORnC3XvOt0DOZp/VjBP7JTSB70lKG7DAZTphrqPsjudVfiJZDt3pnXUowMj75yl8XwlIvHIXv4AkbhLrK8gOMzy3g=" />
+</SToneProject>

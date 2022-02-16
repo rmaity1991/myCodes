@@ -19,7 +19,8 @@ public class TestLogic {
 	
 	Calculation x = new Calculation();
 	int sum = x.sum(2, 5);
-	int testSum = 8;
+	int testSum = 7;
+	
 	@Test
 	public void testSum() {
 	System.out.println("@Test sum(): " + sum + " = " + testSum);

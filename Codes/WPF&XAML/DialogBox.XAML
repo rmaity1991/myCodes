@@ -1,0 +1,30 @@
+<!--
+    All standalone applications have a main window that exposes some functionality and displays some data over 
+    which the application operates through its GUI. An application may also display additional windows to do the 
+    following −
+
+To display some specific information to users.
+To gather useful information from users.
+To both display and gather important information.
+-->
+
+<Window x:Class = "XAMLDialog.MainWindow" 
+   xmlns = "http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+   xmlns:x = "http://schemas.microsoft.com/winfx/2006/xaml"
+   Title = "MainWindow" Height = "350" Width = "604"> 
+	
+   <Grid> 
+      <Button Height = "23" 
+         Margin = "100" 
+         Name = "ShowMessageBox" 
+         VerticalAlignment = "Top" 
+         Click = "ShowMessageBox_Click">Show Message Box</Button>
+			
+      <TextBox Height = "23" 
+         HorizontalAlignment = "Left" 
+         Margin = "181,167,0,0" 
+         Name = "textBox1" 
+         VerticalAlignment = "Top" 
+         Width = "120" /> 
+   </Grid> 
+</Window>

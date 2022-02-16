@@ -1,0 +1,16 @@
+<Window x:Class = "XAMLDockPanel.Window1" 
+   xmlns = "http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+   xmlns:x = "http://schemas.microsoft.com/winfx/2006/xaml" 
+   Title = "MainWindow" Height = "300" Width = "604">
+	
+   <Grid>....
+      <DockPanel LastChildFill = "True"> 
+         <Button Content = "Top" DockPanel.Dock = "Top" Click = "Click_Me" /> 
+         <Button Content = "Bottom" DockPanel.Dock = "Bottom" Click = "Click_Me" /> 
+         <Button Content = "Left" Click = "Click_Me" />
+         <Button Content = "Right" DockPanel.Dock = "Right" Click = "Click_Me" /> 
+         <Button Content = "Center" Click = "Click_Me" /> 
+      </DockPanel> 
+   </Grid> 
+	
+</Window> 

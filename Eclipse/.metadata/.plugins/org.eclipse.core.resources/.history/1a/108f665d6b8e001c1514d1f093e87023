@@ -1,0 +1,39 @@
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;  
+import org.openqa.selenium.chrome.ChromeDriver;
+
+class Selenium{
+	
+}
+
+public class SeleniumTesting {
+	
+	public static void main(String args[]) {
+		
+		// First set the property of System to find the chrome webdriver
+		System.setProperty("webdriver.chrome.driver","D://chromedriver_win32//chromedriver.exe");
+		
+       // Create a new webdriver for application
+		WebDriver driver=new ChromeDriver();
+		
+		// naviagte to amazon .com
+		driver.navigate().to("https://www.amazon.in/");
+		// Find Element of the search bar and send apple in it
+		driver.findElement(By.id("twotabsearchtextbox")).sendKeys("Apple");
+		// Click the submit button
+		driver.findElement(By.id("nav-search-submit-button")).click();
+		// clear the search field
+		//driver.findElement(By.id("twotabsearchtextbox")).clear();
+		
+		// Find element in the webpage to access
+		driver.findElement(By.className("nav-a  ")).click();
+		
+		
+				
+		
+	}
+	
+
+
+}

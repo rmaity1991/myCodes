@@ -1,0 +1,28 @@
+<!--
+
+    A ComboBox represents a selection control that combines a non-editable textbox and a drop-down list box that 
+    allows users to select an item from a list. It either displays the current selection or is empty if there is 
+    no selected item
+-->
+
+<Window x:Class = "XAMLComboBox.MainWindow" 
+   xmlns = "http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+   xmlns:x = "http://schemas.microsoft.com/winfx/2006/xaml" 
+   Title = "MainWindow" Height = "350" Width = "604"> 
+	
+   <Grid>
+      <ComboBox Height = "20" Width = "100" HorizontalAlignment = "Left" Margin = "116,77,0,212"> 
+         <ComboBoxItem Content = "Item #1"/> 
+         <ComboBoxItem Content = "Item #2"/> 
+         <ComboBoxItem Content = "Item #3"/> 
+      </ComboBox> 
+		
+      <ComboBox IsEditable = "True" Height = "20" Width = "100" 
+         HorizontalAlignment = "Right" Margin = "0,77,180,212"> 
+         <ComboBoxItem Content = "Item #1"/> 
+         <ComboBoxItem Content = "Item #2"/> 
+         <ComboBoxItem Content = "Item #3"/> 
+      </ComboBox>
+   </Grid>
+   
+</Window> 
