@@ -41,6 +41,7 @@
         "Example15.C": "cpp",
         "Example16.C": "cpp",
         "Example17.C": "cpp",
-        "Example18.C": "cpp"
+        "Example18.C": "cpp",
+        "ostream": "cpp"
     }
 }
