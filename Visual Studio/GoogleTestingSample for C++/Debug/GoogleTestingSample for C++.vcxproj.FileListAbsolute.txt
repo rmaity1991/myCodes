@@ -1,0 +1,3 @@
+D:\Personal\mydevelopments\Visual Studio\GoogleTestingSample for C++\Debug\GoogleTestingSample for C++.exe
+D:\Personal\mydevelopments\Visual Studio\GoogleTestingSample for C++\Debug\gtest.pdb
+D:\Personal\mydevelopments\Visual Studio\GoogleTestingSample for C++\Debug\gtest_main.pdb
