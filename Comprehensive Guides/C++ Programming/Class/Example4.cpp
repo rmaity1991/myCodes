@@ -5,8 +5,8 @@ new object generally. The constructor in C++ has the same name as class or struc
 
 There can be two types of constructors in C++.
 
-Default constructor
-Parameterized constructor
+1) Default constructor
+2) Parameterized constructor
 
 */
 

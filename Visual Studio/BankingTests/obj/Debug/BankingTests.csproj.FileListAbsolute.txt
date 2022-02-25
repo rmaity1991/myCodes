@@ -1,0 +1,13 @@
+D:\Personal\mydevelopments\Visual Studio\BankingTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+D:\Personal\mydevelopments\Visual Studio\BankingTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+D:\Personal\mydevelopments\Visual Studio\BankingTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+D:\Personal\mydevelopments\Visual Studio\BankingTests\bin\Debug\BankingTests.dll
+D:\Personal\mydevelopments\Visual Studio\BankingTests\bin\Debug\BankingTests.pdb
+D:\Personal\mydevelopments\Visual Studio\BankingTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+D:\Personal\mydevelopments\Visual Studio\BankingTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+D:\Personal\mydevelopments\Visual Studio\BankingTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+D:\Personal\mydevelopments\Visual Studio\BankingTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+D:\Personal\mydevelopments\Visual Studio\BankingTests\obj\Debug\BankingTests.csproj.AssemblyReference.cache
+D:\Personal\mydevelopments\Visual Studio\BankingTests\obj\Debug\BankingTests.csproj.CoreCompileInputs.cache
+D:\Personal\mydevelopments\Visual Studio\BankingTests\obj\Debug\BankingTests.dll
+D:\Personal\mydevelopments\Visual Studio\BankingTests\obj\Debug\BankingTests.pdb
