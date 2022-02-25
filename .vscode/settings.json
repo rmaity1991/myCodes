@@ -34,6 +34,7 @@
         "xlocale": "cpp",
         "HelloWorld.C": "cpp",
         "DiodeCurrent.C": "cpp",
-        "DiodeResistance.C": "cpp"
+        "DiodeResistance.C": "cpp",
+        "Sample.C": "cpp"
     }
 }

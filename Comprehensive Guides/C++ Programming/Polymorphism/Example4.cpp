@@ -1,6 +1,7 @@
 /*
 C++ Overloading (Function and Operator)
-If we create two or more members having the same name but different in number or type of parameter, it is known as C++ overloading. In C++, we can overload:
+If we create two or more members having the same name but different in number or type of parameter, it is known as C++ overloading. 
+In C++, we can overload:
 
 methods,
 constructors, and
@@ -12,11 +13,14 @@ Function overloading
 Operator overloading
 
 C++ Function Overloading
-Function Overloading is defined as the process of having two or more function with the same name, but different in parameters is known as function 
-overloading in C++. In function overloading, the function is redefined by using either different types of arguments or a different number of arguments. 
+Function Overloading is defined as the process of having two or more function with the same name, but different in parameters is 
+known as function 
+overloading in C++. In function overloading, the function is redefined by using either different types of arguments or a 
+different number of arguments. 
 It is only through these differences compiler can differentiate between the functions.
 
-The advantage of Function overloading is that it increases the readability of the program because you don't need to use different names for the same action.
+The advantage of Function overloading is that it increases the readability of the program because you don't need to use 
+different names for the same action.
 
 */
 #include <iostream>    

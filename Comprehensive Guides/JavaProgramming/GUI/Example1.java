@@ -1,42 +1,42 @@
 package JavaProgramming.GUI;
 
-// importing Java AWT class  
+// An Applet skeleton.
 import java.awt.*;
+import java.applet.*;
 
-// extending Frame class to our class AWTExample1  
-class AWTExample1 extends Frame {
-
-    // initializing using constructor
-    AWTExample1() {
-
-        // creating a button
-        Button b = new Button("Click Me!!");
-
-        // setting button position on screen
-        b.setBounds(30, 100, 80, 30);
-
-        // adding button into frame
-        add(b);
-
-        // frame size 300 width and 300 height
-        setSize(300, 300);
-
-        // setting the title of Frame
-        setTitle("This is our basic AWT example");
-
-        // no layout manager
-        setLayout(null);
-
-        // now frame will be visible, by default it is not visible
-        setVisible(true);
+/*
+<applet code="AppletSkel" width=300 height=100>
+</applet>
+*/
+public class AppletSkel extends Applet {
+    // Called first.
+    public void init() {
+        // initialization
     }
 
-    // main method
-    public static void main(String args[]) {
-
-        // creating instance of Frame class
-        AWTExample1 f = new AWTExample1();
-
+    /*
+     * Called second, after init(). Also called whenever
+     * the applet is restarted.
+     */
+    public void start() {
+        // start or resume execution
     }
 
+    // Called when the applet is stopped.
+    public void stop() {
+        // suspends execution
+    }
+
+    /*
+     * Called when applet is terminated. This is the last
+     * method executed.
+     */
+    public void destroy() {
+        // perform shutdown activities
+    }
+
+    // Called when an applet's window must be restored.
+    public void paint(Graphics g) {
+        // redisplay contents of window
+    }
 }

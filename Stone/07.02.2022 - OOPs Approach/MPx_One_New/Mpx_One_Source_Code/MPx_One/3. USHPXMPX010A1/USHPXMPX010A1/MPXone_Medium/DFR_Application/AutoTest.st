@@ -3,7 +3,7 @@ USING System.TIMER;
 
 VAR_GLOBAL    
     // Test Variables Declared
-    TestClass : UnitTesting;
+    TestClass : UnitTestingAssertions;
     UnitTestStatus : ARRAY[1..10] OF STRING;
     StartTest : ARRAY[1..10] OF BOOL;
     ExpectedOutputsBOOL : ARRAY[1..10] OF BOOL;

@@ -14,8 +14,8 @@ Object-Oriented Programming (OOPs)
 C++ supports the object-oriented programming, the four major pillar of object-oriented programming (OOPs
 ) used in C++ are:
 
-Inheritance
-Polymorphism
-Encapsulation
-Abstraction
+1) Inheritance
+2) Polymorphism
+3) Encapsulation
+4) Abstraction
 */

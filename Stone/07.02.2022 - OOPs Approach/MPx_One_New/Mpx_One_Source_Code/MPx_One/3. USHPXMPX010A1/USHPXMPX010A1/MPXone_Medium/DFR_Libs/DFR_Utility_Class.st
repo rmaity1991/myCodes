@@ -185,7 +185,7 @@ END_CLASS
 
 
 
-CLASS PUBLIC UnitTesting
+CLASS PUBLIC UnitTestingAssertions
 (**
     
     Initial Creation:
@@ -509,4 +509,61 @@ END_METHOD
    
 END_CLASS
 
+
+
+CLASS PUBLIC STUnit EXTENDS UnitTestingAssertions
+    
+    
+    VAR
+      Enable : BOOL;        
+    END_VAR
+    
+    METHOD InitializeTests
+        
+    END_METHOD
+    
+    METHOD RunAllTests
+        
+        Enable := TRUE;
+        
+        
+    END_METHOD
+    
+    METHOD BeforeTest
+        
+    END_METHOD
+    
+    METHOD AfterTest
+        
+        Enable := FALSE;
+        
+    END_METHOD
+    
+    METHOD TestMethod
+        
+    END_METHOD
+    
+    
+    METHOD TestInstance 
+        
+        VAR_INPUT
+           TestMode: STRING;
+        END_VAR
+        
+        IF(Enable) THEN 
+            IF(TestMode='Before') THEN
+            BeforeTest();
+            ELSIF (TestMode='After') THEN 
+            AfterTest();
+            ELSIF (TestMode='TestMethod') THEN 
+            AfterTest();
+            ELSE
+            
+            END_IF;
+        END_IF;
+               
+    END_METHOD
+   
+    
+END_CLASS
         

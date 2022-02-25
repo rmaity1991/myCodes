@@ -1,0 +1,19 @@
+package com.rohitmaity.test;
+
+import static org.junit.Assert.*;
+import java.util.*;
+import org.junit.*;
+
+import com.rohitmaity.logic.Calculator;
+
+
+public class CalculatorTest {
+	
+	public Calculator x;
+	
+	@Before
+	public void InitializeTest() {
+		x= new Calculator();
+	}
+
+}

@@ -7,7 +7,7 @@ int main(){
     2) No Primitive Types - Strings & Arrays
     3) User Defined - Structure & Unions
     */
-
+   short f;
    int a=3; // declaring the integer type
    float b=34; // declaring the float type
    double c= 34.56; // declaring double type
@@ -16,7 +16,7 @@ int main(){
 
 
    // Size of the variables which arevdeclared
-
+   printf("The size of short is %d \n",sizeof(f));
    printf("The size of int is %d \n",sizeof(a));
    printf("The size of float is %d \n",sizeof(b));
    printf("The size of double is %d \n",sizeof(c));
