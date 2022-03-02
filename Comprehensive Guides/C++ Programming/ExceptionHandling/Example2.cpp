@@ -3,7 +3,8 @@ C++ User-Defined Exceptions
 The new exception can be defined by overriding and inheriting exception class functionality.
 
 C++ user-defined exception example
-Let's see the simple example of user-defined exception in which std::exception class is used to define the exception.
+Let's see the simple example of user-defined exception in which std::exception class is used to define 
+the exception.
 */
 #include <iostream>  
 #include <exception>  

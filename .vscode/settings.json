@@ -35,6 +35,9 @@
         "HelloWorld.C": "cpp",
         "DiodeCurrent.C": "cpp",
         "DiodeResistance.C": "cpp",
-        "Sample.C": "cpp"
+        "Sample.C": "cpp",
+        "Example18.C": "cpp",
+        "Example19.C": "cpp",
+        "ostream": "cpp"
     }
 }

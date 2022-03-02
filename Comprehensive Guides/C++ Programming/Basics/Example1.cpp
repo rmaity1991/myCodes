@@ -18,4 +18,5 @@ C++ supports the object-oriented programming, the four major pillar of object-or
 2) Polymorphism
 3) Encapsulation
 4) Abstraction
+5) Runtime Polymorphism
 */

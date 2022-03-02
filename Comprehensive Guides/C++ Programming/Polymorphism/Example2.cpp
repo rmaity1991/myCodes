@@ -1,11 +1,13 @@
 #include <iostream>    
 using namespace std;    
 class Shape {                                        //  base class  
-    public:    
+    public: 
+       
 virtual void draw(){                             // virtual function  
 cout<<"drawing..."<<endl;      
     }        
 };     
+
 class Rectangle: public Shape                  //  inheriting Shape class.  
 {      
  public:    

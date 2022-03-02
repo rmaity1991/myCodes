@@ -38,7 +38,7 @@ static int add(int a, int b, int c)
 int main(void) {    
     Cal C;                                                    //     class object declaration.   
     cout<<C.add(10, 20)<<endl;      
-    cout<<C.add(12, 20, 23);     
+    cout<<C.add(12, 20, 23)<<endl;     
    return 0;    
 }    
 
