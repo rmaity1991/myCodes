@@ -25,7 +25,7 @@ import java.io.*;
 class Parent {
 
     // defining the method
-    void msg() {
+    void msg()  {
         System.out.println("parent method");
     }
 }
