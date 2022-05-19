@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Manifest>
+  <Variables>
+    <Variable Name="Var1" Comment="" AccessRights="ReadWrite" DataType="DINT" Modifier="NonRetain" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" />
+    <Variable Name="Var2" Comment="" AccessRights="ReadWrite" DataType="DINT" Modifier="NonRetain" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" />
+    <Variable Name="In" Comment="Input value" AccessRights="Read" DataType="REAL" Modifier="Constant" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" />
+    <Variable Name="RealToDint" Comment="Rounded and casted input" AccessRights="Write" DataType="DINT" Modifier="Constant" Kind="VarOutput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" />
+  </Variables>
+</Manifest>

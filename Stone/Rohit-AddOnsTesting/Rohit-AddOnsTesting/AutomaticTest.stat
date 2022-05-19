@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestDefinition>
+  <TestSuite Id="fd5578e2-685b-4361-a832-1c5455f46877" Title="AddOnsTesting">
+    <TestCase Id="a5a43a5a-1115-4927-b74f-dc7d325c9438" Title="Moving Average Testing" Reset="false" DelayBetweenSteps="0ms" OnFailure="StopTest" DisabledForRunAll="false" />
+  </TestSuite>
+</TestDefinition>

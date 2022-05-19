@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Terminal Name="Terminal1" Display="PGD1" Language="EN" BeginFromMask="Mask" Layout="SixKeys" Font="CAREL_TERM_STD" ZoomCode="0" LoopFunction="TIMED_LOOP" Version="1.0">
+  <ShortCuts>
+    <ShortCut Name="ALARM" Code="12" />
+    <ShortCut Name="PRG" Code="5" />
+    <ShortCut Name="ESC" Code="0" />
+    <ShortCut Name="UP" Code="14" />
+    <ShortCut Name="ENTER" Code="13" />
+    <ShortCut Name="DOWN" Code="15" />
+  </ShortCuts>
+  <KeyBindings />
+  <Worksheet Name="Worksheet" Version="1.0.0">
+    <Mask Name="Mask" Type="Normal" X="1" Y="0" ReferToMask="">
+      <Fields>
+        <Field Type="Variable" Name="Variable" Row="0" Column="17" Content="chillingSP" Min="0.0" Max="10.0" Class="CL_REAL_1" Format="io+2.1" />
+        <Field Type="Variable" Name="Variable_2" Row="1" Column="17" Content="defrostSP" Min="10.0" Max="30.0" Class="CL_REAL_1" Format="io+2.1" />
+        <Field Type="Variable" Name="Variable_3" Row="2" Column="16" Content="chillingPV" Min="0.0" Max="100.0" Class="CL_REAL_1" Format="io+3.1" />
+        <Field Type="Text" Name="Text" Row="0" Column="0" Content="0" />
+        <Field Type="Text" Name="Text_2" Row="1" Column="0" Content="1" />
+        <Field Type="Text" Name="Text_3" Row="2" Column="0" Content="2" />
+        <Field Type="Text" Name="Text_4" Row="7" Column="0" Content="3" />
+        <Field Type="Variable" Name="Variable_4" Row="7" Column="17" Content="defrostON" Min="0" Max="1" Class="CL_BOOL_SWAP" Format="iob" />
+        <Field Type="Text" Name="Text_5" Row="3" Column="0" Content="4" />
+        <Field Type="Variable" Name="Variable_5" Row="3" Column="17" Content="compressorON" Min="0" Max="1" Class="CL_BOOL_SWAP" Format="iob" />
+        <Field Type="Text" Name="Text_6" Row="4" Column="0" Content="5" />
+        <Field Type="Variable" Name="Variable_6" Row="4" Column="17" Content="doorOpen" Min="0" Max="1" Class="CL_BOOL_SWAP" Format="iob" />
+        <Field Type="Text" Name="Text_7" Row="5" Column="0" Content="6" />
+        <Field Type="Variable" Name="Variable_7" Row="5" Column="17" Content="lightON" Min="0" Max="1" Class="CL_BOOL_SWAP" Format="iob" />
+        <Field Type="Text" Name="Text_8" Row="6" Column="0" Content="7" />
+        <Field Type="Variable" Name="Variable_8" Row="6" Column="17" Content="fanON" Min="0" Max="1" Class="CL_BOOL_SWAP" Format="iob" />
+      </Fields>
+      <KeyBindings />
+    </Mask>
+  </Worksheet>
+</Terminal>

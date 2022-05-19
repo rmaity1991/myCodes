@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root version="1.1">
+  <OpenDocuments>
+    <Document name="Rohit-AddOnsTesting\Developments\main.st" />
+    <Document name="Rohit-AddOnsTesting\Library\Utility.st" active="true" />
+    <Document name="C:\Program Files (x86)\CAREL\STone\Data\Libraries\System\System.Timer.st" />
+  </OpenDocuments>
+  <Projects>
+    <Project name="Rohit-AddOnsTesting">
+      <ExpandedNodes>
+        <Node name="Rohit-AddOnsTesting\Developments" />
+        <Node name="Rohit-AddOnsTesting\Library" />
+        <Node name="Rohit-AddOnsTesting\System" />
+      </ExpandedNodes>
+      <EditorsData>
+        <EditorData Path="SevenSegments.stgui">
+          <UIEditorUserSettings />
+        </EditorData>
+      </EditorsData>
+    </Project>
+  </Projects>
+  <Breakpoints />
+  <WatchWindows>
+    <Watches Version="1.0.0" name="Watch1">
+      <Watch Name="averageTesting1" />
+    </Watches>
+  </WatchWindows>
+</Root>

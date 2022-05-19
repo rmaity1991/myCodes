@@ -17,11 +17,11 @@ class Student {
     String name;
 }
 
-class TestStudent2 {
+public class Example3 {
     public static void main(String args[]) {
         Student s1 = new Student();
         Student s2 = new Student();
-        // Initializing objects
+        // Initializing objects using objects
         s1.id = 101;
         s1.name = "Sonoo";
         s2.id = 102;

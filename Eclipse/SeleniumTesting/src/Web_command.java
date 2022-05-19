@@ -6,7 +6,7 @@ public class Web_command {
 public static void main(String[] args) {  
           
 // System Property for Chrome Driver   
-System.setProperty("webdriver.chrome.driver","D:\\chromedriver_win32\\chromedriver.exe");  
+System.setProperty("webdriver.chrome.driver","C:\\Users\\11037833\\Downloads\\chromedriver_win32\\chromedriver.exe");  
                   
 // Instantiate a ChromeDriver class.      
 WebDriver driver=new ChromeDriver();  

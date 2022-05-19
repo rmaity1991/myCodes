@@ -16,9 +16,9 @@ int main()
    // Finding onescomplement in C  
    for(int i=0;i<n;i++)  
    {  
-       if(binary[i]=='0')  
+       if (binary[i]=='0')  
        onescomplement[i]='1';  
-       else if(binary[i]=='1')  
+       else if (binary[i]=='1')  
        onescomplement[i]='0';  
    }  
    onescomplement[n]='\0';  

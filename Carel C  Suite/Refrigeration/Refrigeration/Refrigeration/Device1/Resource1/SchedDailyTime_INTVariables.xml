@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Manifest>
+  <Variables>
+    <Variable Name="Inside" Comment="" AccessRights="ReadWrite" DataType="BOOL" Modifier="NonRetain" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" />
+    <Variable Name="NowHour" Comment="Current hour" AccessRights="Read" DataType="INT" Modifier="Constant" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" />
+    <Variable Name="NowMin" Comment="Current minute" AccessRights="Read" DataType="INT" Modifier="Constant" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" />
+    <Variable Name="StartHour" Comment="Start hour" AccessRights="Read" DataType="INT" Modifier="Constant" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" />
+    <Variable Name="StartMin" Comment="Start minute" AccessRights="Read" DataType="INT" Modifier="Constant" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" />
+    <Variable Name="EndHour" Comment="End hour" AccessRights="Read" DataType="INT" Modifier="Constant" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" />
+    <Variable Name="EndMin" Comment="End minute" AccessRights="Read" DataType="INT" Modifier="Constant" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" />
+    <Variable Name="Enable" Comment="Enable the function" AccessRights="Read" DataType="BOOL" Modifier="Constant" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" />
+    <Variable Name="SchedDailyTime_INT" Comment="If or not the time is inside the band" AccessRights="Write" DataType="BOOL" Modifier="Constant" Kind="VarOutput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" />
+  </Variables>
+</Manifest>

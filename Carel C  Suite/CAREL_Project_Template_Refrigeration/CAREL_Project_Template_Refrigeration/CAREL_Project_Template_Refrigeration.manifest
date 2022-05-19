@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution>
+  <Info ManifestVersion="1.1.0">
+    <Name>CAREL_Project_Template_Refrigeration</Name>
+    <Description>Project Template is a standard project that includes all typical application functions (i.e: menu, change language, clock). It is an excellent base to be used to develop a new software application and excellent folder where configurations typically used in all applications can be copied.</Description>
+    <Version>1.6.1</Version>
+    <CreationDate>2022-05-17T08:38:34.0997846Z</CreationDate>
+    <Owner>Carel Industries S.p.a</Owner>
+    <StorageToolManaged>true</StorageToolManaged>
+    <CSuiteVersion>4.9.11</CSuiteVersion>
+    <TeamWorkingManaged>false</TeamWorkingManaged>
+  </Info>
+</Solution>

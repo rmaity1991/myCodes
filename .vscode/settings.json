@@ -38,6 +38,11 @@
         "Sample.C": "cpp",
         "Example18.C": "cpp",
         "Example19.C": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "Ascii.C": "cpp",
+        "HelloWorld2.C": "cpp",
+        "Example11.C": "cpp",
+        "Example12.C": "cpp",
+        "Example13.C": "cpp"
     }
 }

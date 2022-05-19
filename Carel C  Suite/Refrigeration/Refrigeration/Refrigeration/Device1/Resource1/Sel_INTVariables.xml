@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Manifest>
+  <Variables>
+    <Variable Name="Sel1" Comment="Selector" AccessRights="Read" DataType="BOOL" Modifier="Constant" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" />
+    <Variable Name="In1" Comment="Value returned if Select = FALSE." AccessRights="Read" DataType="INT" Modifier="Constant" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" />
+    <Variable Name="In2" Comment="Value returned if Select = TRUE." AccessRights="Read" DataType="INT" Modifier="Constant" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" />
+    <Variable Name="Sel_INT" Comment="Value selected" AccessRights="Write" DataType="INT" Modifier="Constant" Kind="VarOutput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" />
+  </Variables>
+</Manifest>

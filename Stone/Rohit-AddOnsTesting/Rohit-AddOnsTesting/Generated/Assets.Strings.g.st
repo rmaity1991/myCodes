@@ -1,0 +1,8 @@
+
+NAMESPACE Assets.Language
+
+VAR_GLOBAL CONSTANT
+	LanguagesCount : UINT := 1;
+END_VAR
+
+END_NAMESPACE

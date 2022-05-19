@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Manifest>
+  <Variables>
+    <Variable Name="In1" Comment="Input value 1" AccessRights="Read" DataType="REAL" Modifier="Constant" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" />
+    <Variable Name="In2" Comment="Input value 2" AccessRights="Read" DataType="REAL" Modifier="Constant" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" />
+    <Variable Name="Min_REAL" Comment="The smallest of the two values" AccessRights="Write" DataType="REAL" Modifier="Constant" Kind="VarOutput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" />
+  </Variables>
+</Manifest>

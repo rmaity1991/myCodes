@@ -5,6 +5,10 @@ struct Books {
    private string author;
    private string subject;
    private int book_id;
+
+   public Books(){
+      
+   }
    
    public void getValues(string t, string a, string s, int id) {
       title = t;

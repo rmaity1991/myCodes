@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Alarms UnitConversionZone="NoConversion">
+  <Alarm Name="Al_LowSH_EVDEMB" Type="AutoReset" Description=" Low superheat protection" Trigger="Al_LowSH_EVDEMB.Trigger" Active="Al_LowSH_EVDEMB.Active" />
+  <Alarm Name="Al_LOP_EVDEMB" Type="AutoReset" Description=" Low evaporation temperature protection" Trigger="Al_LOP_EVDEMB.Trigger" Active="Al_LOP_EVDEMB.Active" />
+  <Alarm Name="Al_MOP_EVDEMB" Type="AutoReset" Description=" High evaporation temperature protection" Trigger="Al_MOP_EVDEMB.Trigger" Active="Al_MOP_EVDEMB.Active" />
+  <Alarm Name="Al_HiTempCond_EVDEMB" Type="AutoReset" Description="High condensation temperature protection" Trigger="Al_HiTempCond_EVDEMB.Trigger" Active="Al_HiTempCond_EVDEMB.Active" />
+  <Alarm Name="Al_LowSuct_1_EVDEMB" Type="AutoReset" Description="Low suction temperature" Trigger="Al_LowSuct_1_EVDEMB.Trigger" Active="Al_LowSuct_1_EVDEMB.Active" />
+  <Alarm Name="Al_SelfTuning_1_EVDEMB" Type="AutoReset" Description="Ineffective adaptive control" Trigger="Al_SelfTuning_1_EVDEMB.Trigger" Active="Al_SelfTuning_1_EVDEMB.Active" />
+  <Alarm Name="Al_RangeError_EVDEMB" Type="AutoReset" Description="Parameter range error (some children in the data structure are out of bounds)" Trigger="Al_RangeError_EVDEMB.Trigger" Active="Al_RangeError_EVDEMB.Active" />
+  <Alarm Name="Al_ServicePosit_perc_EVDEMB" Type="AutoReset" Description="ServicePosit_perc must take value 0.0…100.0" Trigger="Al_ServicePosit_perc_EVDEMB.Trigger" Active="Al_ServicePosit_perc_EVDEMB.Active" />
+  <Alarm Name="Al_ValveID_EVDEMB" Type="AutoReset" Description="VlvID value out of bound" Trigger="Al_ValveID_EVDEMB.Trigger" Active="Al_ValveID_EVDEMB.Active" />
+  <Alarm Name="Al_S1_EVDEVO2Emb" Type="AutoReset" Description="Probe S1 alarm" Trigger="Al_S1_EVDEVO2Emb.Trigger" Active="Al_S1_EVDEVO2Emb.Active" />
+  <Alarm Name="Al_S2_EVDEVO2Emb" Type="AutoReset" Description="Probe S2 alarm" Trigger="Al_S2_EVDEVO2Emb.Trigger" Active="Al_S2_EVDEVO2Emb.Active" />
+  <Alarm Name="Al_S3_EVDEVO2Emb" Type="AutoReset" Description="Probe S3 alarm" Trigger="Al_S3_EVDEVO2Emb.Trigger" Active="Al_S3_EVDEVO2Emb.Active" />
+  <Alarm Name="Al_S4_EVDEVO2Emb" Type="AutoReset" Description="Probe S4 alarm" Trigger="Al_S4_EVDEVO2Emb.Trigger" Active="Al_S4_EVDEVO2Emb.Active" />
+  <Alarm Name="Al_EEVA_EVDEVO2Emb" Type="AutoReset" Description="EEV A motor error" Trigger="Al_EEVA_EVDEVO2Emb.Trigger" Active="Al_EEVA_EVDEVO2Emb.Active" />
+  <Alarm Name="Al_EEVB_EVDEVO2Emb" Type="AutoReset" Description="EEV B motor error" Trigger="Al_EEVB_EVDEVO2Emb.Trigger" Active="Al_EEVB_EVDEVO2Emb.Active" />
+  <Alarm Name="Al_EmClos_EVDEVO2Emb" Type="AutoReset" Description="Emergency closing alarm" Trigger="Al_EmClos_EVDEVO2Emb.Trigger" Active="Al_EmClos_EVDEVO2Emb.Active" />
+  <Alarm Name="Al_IncomClos_EVDEVO2Emb" Type="ManualReset" Description="Incomplete closing alarm" Trigger="Al_IncomClos_EVDEVO2Emb.Trigger" Active="Al_IncomClos_EVDEVO2Emb.Active" />
+  <Alarm Name="Al_FW_Compat_EVDEVO2Emb" Type="AutoReset" Description="FW compatibility error" Trigger="Al_FW_Compat_EVDEVO2Emb.Trigger" Active="Al_FW_Compat_EVDEVO2Emb.Active" />
+  <Alarm Name="Al_VlvA_Compat_EVDEVO2Emb" Type="AutoReset" Description="Valve A compatibility error" Trigger="Al_VlvA_Compat_EVDEVO2Emb.Trigger" Active="Al_VlvA_Compat_EVDEVO2Emb.Active" />
+  <Alarm Name="Al_VlvB_Compat_EVDEVO2Emb" Type="AutoReset" Description="Valve B compatibility error" Trigger="Al_VlvB_Compat_EVDEVO2Emb.Trigger" Active="Al_VlvB_Compat_EVDEVO2Emb.Active" />
+  <Alarm Name="Al_SuperAuxReg_EVDEVO2Emb" Type="AutoReset" Description="Super auxiliary regulation  mismatch between ParamsA  and ParamsB" Trigger="Al_SuperAuxReg_EVDEVO2Emb.Trigger" Active="Al_SuperAuxReg_EVDEVO2Emb.Active" />
+  <Alarm Name="Al_GasTypAux_EVDEVO2Emb" Type="AutoReset" Description="Auxilliary gas type mismatch between ParamsA  and ParamsB" Trigger="Al_GasTypAux_EVDEVO2Emb.Trigger" Active="Al_GasTypAux_EVDEVO2Emb.Active" />
+  <Alarm Name="Al_DCSupplyEn_EVDEVO2Emb" Type="AutoReset" Description="DC supply enable mismatch between ParamsA  and ParamsB" Trigger="Al_DCSupplyEn_EVDEVO2Emb.Trigger" Active="Al_DCSupplyEn_EVDEVO2Emb.Active" />
+  <Alarm Name="Al_S4_ThT_ConstNTC_EVDEVO2Emb" Type="AutoReset" Description="NTC S4 thermal time constant mismatch between ParamsA  and ParamsB" Trigger="Al_S4_ThT_ConstNTC_EVDEVO2Emb.Trigger" Active="Al_S4_ThT_ConstNTC_EVDEVO2Emb.Active" />
+  <Alarm Name="Al_Battery_EVDEVO2Emb" Type="AutoReset" Description="Battery alarm" Trigger="Al_Battery_EVDEVO2Emb.Trigger" Active="Al_Battery_EVDEVO2Emb.Active" />
+  <Alarm Name="Al_EEPROM_EVDEVO2Emb" Type="AutoReset" Description="EEPROM alarm" Trigger="Al_EEPROM_EVDEVO2Emb.Trigger" Active="Al_EEPROM_EVDEVO2Emb.Active" />
+  <Alarm Name="Al_Offline_EVDEVO2Emb" Type="AutoReset" Description="Offline alarm" Trigger="Al_Offline_EVDEVO2Emb.Trigger" Active="Al_Offline_EVDEVO2Emb.Active" />
+  <Alarm Name="Al_LowSH_EVDEMB_2" Type="AutoReset" Description="Low superheat protection" Trigger="Al_LowSH_EVDEMB_2.Trigger" Active="Al_LowSH_EVDEMB_2.Active" />
+  <Alarm Name="Al_LOP_EVDEMB_2" Type="AutoReset" Description="Low evaporation temperature protection" Trigger="Al_LOP_EVDEMB_2.Trigger" Active="Al_LOP_EVDEMB_2.Active" />
+  <Alarm Name="Al_MOP_EVDEMB_2" Type="AutoReset" Description="High evaporation temperature protection" Trigger="Al_MOP_EVDEMB_2.Trigger" Active="Al_MOP_EVDEMB_2.Active" />
+  <Alarm Name="Al_HiTempCond_EVDEMB_2" Type="AutoReset" Description="High condensation temperature protection" Trigger="Al_HiTempCond_EVDEMB_2.Trigger" Active="Al_HiTempCond_EVDEMB_2.Active" />
+  <Alarm Name="Al_LowSuct_1_EVDEMB_2" Type="AutoReset" Description="Low suction temperature" Trigger="Al_LowSuct_1_EVDEMB_2.Trigger" Active="Al_LowSuct_1_EVDEMB_2.Active" />
+  <Alarm Name="Al_SelfTuning_1_EVDEMB_2" Type="AutoReset" Description="Ineffective adaptive control" Trigger="Al_SelfTuning_1_EVDEMB_2.Trigger" Active="Al_SelfTuning_1_EVDEMB_2.Active" />
+  <Alarm Name="Al_RangeError_EVDEMB_2" Type="AutoReset" Description="Parameter range error (some children in the data structure are out of bounds)" Trigger="Al_RangeError_EVDEMB_2.Trigger" Active="Al_RangeError_EVDEMB_2.Active" />
+  <Alarm Name="Al_ServicePosit_perc_EVDEMB_2" Type="AutoReset" Description="ServicePosit_perc must take value 0.0…100.0" Trigger="Al_ServicePosit_perc_EVDEMB_2.Trigger" Active="Al_ServicePosit_perc_EVDEMB_2.Active" />
+  <Alarm Name="Al_ValveID_EVDEMB_2" Type="AutoReset" Description="VlvID value out of bound" Trigger="Al_ValveID_EVDEMB_2.Trigger" Active="Al_ValveID_EVDEMB_2.Active" />
+  <Alarm Name="Al_LowSH_1" Type="AutoReset" Description=" Low superheat protection" Trigger="Al_LowSH_1.Trigger" Active="Al_LowSH_1.Active" />
+  <Alarm Name="Al_LOP_1" Type="AutoReset" Description=" Low evaporation temperature protection" Trigger="Al_LOP_1.Trigger" Active="Al_LOP_1.Active" />
+  <Alarm Name="Al_MOP_1" Type="AutoReset" Description=" High evaporation temperature protection" Trigger="Al_MOP_1.Trigger" Active="Al_MOP_1.Active" />
+  <Alarm Name="Al_HiTempCond_1" Type="AutoReset" Description="High condensation temperature protection" Trigger="Al_HiTempCond_1.Trigger" Active="Al_HiTempCond_1.Active" />
+  <Alarm Name="Al_LowSuct_1" Type="AutoReset" Description="Low suction temperature" Trigger="Al_LowSuct_1.Trigger" Active="Al_LowSuct_1.Active" />
+  <Alarm Name="Al_EEV_1" Type="AutoReset" Description=" EEV motor error" Trigger="Al_EEV_1.Trigger" Active="Al_EEV_1.Active" />
+  <Alarm Name="Al_SelfTuning_1" Type="AutoReset" Description=" Ineffective adaptive control" Trigger="Al_SelfTuning_1.Trigger" Active="Al_SelfTuning_1.Active" />
+  <Alarm Name="Al_EmergClos_1" Type="AutoReset" Description=" Emergency closing alarm" Trigger="Al_EmergClos_1.Trigger" Active="Al_EmergClos_1.Active" />
+  <Alarm Name="Al_RangeError_1" Type="AutoReset" Description="Parameter range error (some children in the data structure are out of bounds)" Trigger="Al_RangeError_1.Trigger" Active="Al_RangeError_1.Active" />
+  <Alarm Name="Al_ServicePosit_perc_1" Type="AutoReset" Description="ServicePosit_perc must take value 0.0…100.0" Trigger="Al_ServicePosit_perc_1.Trigger" Active="Al_ServicePosit_perc_1.Active" />
+  <Alarm Name="Al_ValveID_1" Type="AutoReset" Description="VlvID must take value 1 or 2" Trigger="Al_ValveID_1.Trigger" Active="Al_ValveID_1.Active" />
+</Alarms>

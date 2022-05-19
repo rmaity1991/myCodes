@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Manifest>
+  <Variables>
+    <Variable Name="TAmb" Comment="Ambient temperature in tenth of degrees (°C/10)" AccessRights="Read" DataType="INT" Modifier="Constant" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" />
+    <Variable Name="Hum" Comment="Relative humidity in tenths (100%=1000)" AccessRights="Read" DataType="INT" Modifier="Constant" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" />
+    <Variable Name="AtmP" Comment="Atmospheric pressure in mbar" AccessRights="Read" DataType="INT" Modifier="Constant" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" />
+    <Variable Name="AbsHumidity_INT" Comment="Absolute humidity in (water Kg/dry air Kg)/10" AccessRights="Write" DataType="INT" Modifier="Constant" Kind="VarOutput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" />
+  </Variables>
+</Manifest>

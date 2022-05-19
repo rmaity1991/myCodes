@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SToneProject name="Rohit-AddOnsTesting" guid="1add515e-5070-45da-99eb-ac22148bd74a" type="Standard" version="1.0" projectVersion="0.0.0" Z3VpZC1jcmM="2697389241">
+  <Files>
+    <Folder path="Common">
+      <Folder path="Gui">
+        <Folder path="Widgets">
+          <File path="${Common}\Gui\Widgets\ClockWidget.st" buildaction="Compile" />
+          <File path="${Common}\Gui\Widgets\TimeWidget.st" buildaction="Compile" />
+        </Folder>
+      </Folder>
+      <File path="${Common}\ExceptionManager.st" buildaction="Compile" />
+      <File path="${Common}\SevenSegmentsFB.st" buildaction="Compile" />
+      <File path="${Common}\SystemMenuFB.st" buildaction="Compile" />
+      <File path="${Common}\TerminalConfigFB.st" buildaction="Compile" />
+      <File path="${Common}\UIManager.st" buildaction="Compile" />
+    </Folder>
+    <Folder path="Developments">
+      <File path="main.st" buildaction="Compile" />
+    </Folder>
+    <Folder path="Gui">
+      <Folder path="Actions" />
+      <Folder path="CustomMasks" />
+    </Folder>
+    <Folder path="Images" />
+    <Folder path="Lang">
+      <File path="EN.lang" buildaction="Language" />
+    </Folder>
+    <Folder path="Library">
+      <File path="Utility.st" buildaction="Compile" />
+    </Folder>
+    <Folder path="Libs" />
+    <Folder path="Properties">
+      <File path="Resources.st" buildaction="Compile" />
+    </Folder>
+    <File path="AutomaticTest.stat" buildaction="None" />
+    <File path="IO_Config.st" buildaction="Compile" />
+    <File path="Parameters.stparam" buildaction="Generate" />
+    <File path="Rohit-AddOnsTesting.st" buildaction="Compile" />
+    <File path="SevenSegments.stgui" buildaction="Generate" />
+    <File path="SlaveProtocols.stsp" buildaction="Generate" />
+  </Files>
+  <BuildOptions>
+    <Configuration name="Debug" debug="true" preprocessordefinitions="DEBUG" target="ACU_HIGH_END" />
+    <Configuration name="Release" preprocessordefinitions="RELEASE" target="ACU_HIGH_END" />
+  </BuildOptions>
+</SToneProject>

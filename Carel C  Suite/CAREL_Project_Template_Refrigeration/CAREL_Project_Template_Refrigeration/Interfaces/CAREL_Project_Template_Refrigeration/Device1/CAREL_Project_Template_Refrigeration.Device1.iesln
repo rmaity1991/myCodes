@@ -1,0 +1,19 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# InterfaceEditorShell Solution File, Format Version 11.00
+Project("{2BF41244-5A7C-44D7-8A32-177C16C9852B}") = "CAREL_Project_Template_Refrigeration.Device1", "CAREL_Project_Template_Refrigeration.Device1.ieproj", "{5E6D6854-F78C-4B4E-97ED-9CAD4CA23C7B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|pCO = Debug|pCO
+		Release|pCO = Release|pCO
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E6D6854-F78C-4B4E-97ED-9CAD4CA23C7B}.Debug|pCO.ActiveCfg = Debug|pCO
+		{5E6D6854-F78C-4B4E-97ED-9CAD4CA23C7B}.Debug|pCO.Build.0 = Debug|pCO
+		{5E6D6854-F78C-4B4E-97ED-9CAD4CA23C7B}.Release|pCO.ActiveCfg = Release|pCO
+		{5E6D6854-F78C-4B4E-97ED-9CAD4CA23C7B}.Release|pCO.Build.0 = Release|pCO
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

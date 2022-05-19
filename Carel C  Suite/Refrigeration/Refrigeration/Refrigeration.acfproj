@@ -1,0 +1,22 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0a77066b-a217-4f7c-9f98-6e85b75f72ea}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Refrigeration</RootNamespace>
+    <AssemblyName>Refrigeration</AssemblyName>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <CAMProjectFile>Refrigeration\PrjLibrary.mdb</CAMProjectFile>
+    <UniqueProjectId>{0a77066b-a217-4f7c-9f98-6e85b75f72ea}</UniqueProjectId>
+    <CAMProjectVersion>5.50.7</CAMProjectVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Simulation' ">
+    <OutputPath>bin\Simulation\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Online' ">
+    <OutputPath>bin\Online\</OutputPath>
+  </PropertyGroup>
+  <Import Project="$(DevEnvDir)\PackagesToLoad\Targets\ISaGRAF.ISaGRAF5.targets" />
+  <Import Project="$(DevEnvDir)\PackagesToLoad\Targets\Carel.targets" />
+</Project>

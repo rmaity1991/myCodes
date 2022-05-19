@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- #DEFINE PREFIX Refrigeration -->
+<devicetemplate>
+	<deviceinfo caption="Refrigeration" name="Refrigeration" version="0.0" icon="img\application.ico" deviceid="Refrigeration" devicetype="application" PLCApplicationID="Refrigerat">
+		<description>Refrigeration Application</description>
+		<protocols><protocol>M171Opt_542p4_app</protocol></protocols>
+	</deviceinfo>
+	<plcconfig>
+		<hmi>
+			<tree name="treeCommissioning">
+				<node name="PREFIX" caption="Refrigeration" icon="%CATALOG%\Applications\img\application.ico" menu="freeSmartPLCMenu" datalink="PREFIX" captionedit="false"/>
+			</tree>
+		</hmi>
+		<templatedata>
+			<PREFIX/>
+		</templatedata>
+		<extensions>
+		</extensions>
+		<datadef version="1.0">
+			<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+				<xs:element name="PREFIX">
+					<xs:complexType>
+						<xs:complexContent>
+							<xs:extension base="insertableDevice">
+								<xs:sequence>
+								</xs:sequence>
+								<xs:attribute name="oncreatenode" type="xs:string" fixed="configurator.OnCreateDeviceChild"/>
+								<xs:attribute name="onloadnode" type="xs:string" fixed="configurator.OnLoadDeviceChild"/>
+								<xs:attribute name="ondeletenode" type="xs:string" fixed="configurator.OnDeleteDeviceChild"/>
+								<xs:attribute name="PLCProject" type="xs:string" fixed=""/>
+							</xs:extension>
+						</xs:complexContent>
+					</xs:complexType>
+				</xs:element>
+			</xs:schema>
+		</datadef>
+		<parameters/>
+		<enums/>
+		<redefPars/>
+	</plcconfig>
+	<deviceconfig>
+		<hmi>
+			<tree name="tree1">
+				<node name="PREFIX" caption="Refrigeration" icon="%CATALOG%\Applications\img\application.ico" menu="freeSmartPLCMenu" datalink="PREFIX" captionedit="false"/>
+			</tree>
+		</hmi>
+		<templatedata>
+			<PREFIX/>
+		</templatedata>
+		<extensions>
+			<eventhandler event="OnLoadTemplate">configurator.OnLoadDeviceTemplate</eventhandler>
+		</extensions>
+		<datadef version="1.0">
+			<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+				<xs:element name="PREFIX">
+					<xs:complexType>
+						<xs:complexContent>
+							<xs:extension base="insertableDevice">
+								<xs:sequence>
+								</xs:sequence>
+								<xs:attribute name="oncreatenode" type="xs:string" fixed="configurator.OnCreateDeviceChild"/>
+								<xs:attribute name="onloadnode" type="xs:string" fixed="configurator.OnLoadDeviceChild"/>
+								<xs:attribute name="ondeletenode" type="xs:string" fixed="configurator.OnDeleteDeviceChild"/>
+								<xs:attribute name="PLCProject" type="xs:string" fixed="Refrigeration.RSM"/>
+							</xs:extension>
+						</xs:complexContent>
+					</xs:complexType>
+				</xs:element>
+			</xs:schema>
+		</datadef>
+		<parameters/>
+		<enums/>
+		<redefPars/>
+	</deviceconfig>
+</devicetemplate>

@@ -3,8 +3,8 @@
     <fullyQualifiedTypeName name="org.junit.Test"/>
     <fullyQualifiedTypeName name="com.rohitmaity.logic.FirstDayOfSchool"/>
     <fullyQualifiedTypeName name="org.junit.Ignore"/>
-    <fullyQualifiedTypeName name="org.openqa.selenium.chrome.ChromeDriver"/>
-    <fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
-    <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
     <fullyQualifiedTypeName name="com.rohitmaity.logic.Calculator"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.chrome.ChromeDriver"/>
 </qualifiedTypeNameHistroy>

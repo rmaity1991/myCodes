@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Manifest>
+  <Variables>
+    <Variable Name="PGas" Comment="Gas pressure in tenths of bar" AccessRights="Read" DataType="INT" Modifier="Constant" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" />
+    <Variable Name="Gas" Comment="Gas index " AccessRights="Read" DataType="INT" Modifier="Constant" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" />
+    <Variable Name="DewBub" Comment="Type of temperature required (TRUE=Bubble point, FALSE=Dew point)" AccessRights="Read" DataType="BOOL" Modifier="Constant" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" />
+    <Variable Name="PressToTemp_INT" Comment="Gas temperature in tenths of degrees (°C/10)" AccessRights="Write" DataType="INT" Modifier="Constant" Kind="VarOutput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" />
+  </Variables>
+</Manifest>

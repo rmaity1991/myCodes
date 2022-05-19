@@ -15,7 +15,7 @@ class Employee {
        float salary;  
        Employee(int id, string name, float salary)    
         {    
-             this->id = id;    
+             this->id = id;
             this->name = name;    
             this->salary = salary;   
         }    

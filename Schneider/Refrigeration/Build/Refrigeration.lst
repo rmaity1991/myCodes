@@ -1,0 +1,1902 @@
+***********************************************************************
+*
+*	CODE GENERATION LISTING FOR: Refrigeration
+*	COMPILER VERSION: 1.4.0
+*
+***********************************************************************
+
+***********************************************************************
+UNUSED FUNCTIONS:
+
+	INCREMENT
+	DECREMENT
+	BYTETOWORD
+	BITTOBYTE
+	BITTOWORD
+***********************************************************************
+
+***********************************************************************
+UNUSED FUNCTION BLOCKS:
+
+	R_TRIG
+	F_TRIG
+	CTUD_UDINT
+	CTUD_DINT
+	CTUD
+	CTU_UDINT
+	CTU_DINT
+	CTU
+	CTD_UDINT
+	CTD_DINT
+	CTD
+	RS
+	SR
+	FF_D
+	TP
+	TON
+	TOF
+	PULSE
+	WORDTOBYTE
+	WORDTOBIT
+	BYTETOBIT
+	DAYLIGHTSAVING
+	PIDAUTOTUNING
+	STEPCONTROLLERANALOG
+	THREEPOINTACTUATOR
+	WEEKSCHEDULE
+	YEARLYEVENT
+	EE_DATASAVING
+	EXTRACTNORMALVALUES
+	EXTRACTOUTPUTS
+	EXTRACTPERSISVALUE
+	ONESECONDTIMER
+	OPTIMUMSTARTSTATEMACHINE
+	OUTPUTHANDLING
+	PROVASCHEDULER
+	TO_TYPEDATATIME
+	OPERATINGHOURS
+	PIDADVANCED
+	AHUPLANTMODESTRATEGY
+	AHUTEMPCNTRLSTRATEGY
+	ECFANMGMT
+	PSYCHROMETRIC
+	COPCALCULATION
+	COUNTER2ENERGY
+	ENERGYTREND
+	PULSE2COUNTER
+	THERMALPOWERCALCULATION
+	CIRCUITMGMT
+	COMPALARMMGMT
+	COMPAPPLIMIT
+	COMPCNTRL_ONOFF
+	COMPCNTRL_SLIDER
+	COMPMGMT
+	DOUBLEINTERPO_5X8
+	EVAPPRESSCNTRL
+	FLOATINGHIGHPRESCNTRL
+	FLUID_DENSITY
+	FLUID_ENTHALPY
+	HPDEFRCIRCUITPRIORITY
+	HPDEFROSTANDREVVALVE
+	MODESELECTION
+	THERMALPOWER_ENTHALPY
+	PRESS2TEMP
+	TEMP2PRESS
+	COMPMGMTVS
+	FANMGMT
+	COMPCNTRL_VS
+	FLOATINGWATERTEMPSET
+	REDUNDANTPUMPCNTRL
+	SETPOINTSTEPFILTER
+	WATERLAW
+***********************************************************************
+
+**************************************************
+	CODE GENERATOR SUBROUTINES
+**************************************************
+
+$$RAMCPY:
+000112D0  93AA      		st ~Y, r26
+000112D2  93BA      		st ~Y, r27
+000112D4  01DA      		movw r27:r26, r21:r20
+000112D6  01F8      		movw r31:r30, r17:r16
+000112D8  E030      		ldi r19, $00
+000112DA  1763      		cp r22, r19
+000112DC  0773      		cpc r23, r19
+000112DE  F029      		breq 10
+000112E0  9101      		ld r16, Z+
+000112E2  930D      		st X+, r16
+000112E4  5061      		subi r22, $01
+000112E6  4070      		sbci r23, $00
+000112E8  CFF8      		rjmp -16
+000112EA  91B9      		ld r27, Y+
+000112EC  91A9      		ld r26, Y+
+000112EE  9508      		ret
+
+$$CSTRCPY:
+000112F0  E030      		ldi r19, $00
+000112F2  01CB      		movw r25:r24, r23:r22
+000112F4  93AA      		st ~Y, r26
+000112F6  93BA      		st ~Y, r27
+000112F8  01DA      		movw r27:r26, r21:r20
+000112FA  BF2B      		out $3B, r18
+000112FC  01F8      		movw r31:r30, r17:r16
+000112FE  9007      		elpm r0, Z+
+00011300  920D      		st X+, r0
+00011302  2800      		or r0, r0
+00011304  F029      		breq 10
+00011306  9701      		sbiw r25:r24, 1
+00011308  1783      		cp r24, r19
+0001130A  0793      		cpc r25, r19
+0001130C  F009      		breq 2
+0001130E  CFF7      		rjmp -18
+00011310  91B9      		ld r27, Y+
+00011312  91A9      		ld r26, Y+
+00011314  9508      		ret
+
+$$FMAX:
+00011316  924A      		st ~Y, r4
+00011318  925A      		st ~Y, r5
+0001131A  926A      		st ~Y, r6
+0001131C  927A      		st ~Y, r7
+0001131E  928A      		st ~Y, r8
+00011320  929A      		st ~Y, r9
+00011322  92AA      		st ~Y, r10
+00011324  92BA      		st ~Y, r11
+00011326  0128      		movw r5:r4, r17:r16
+00011328  0139      		movw r7:r6, r19:r18
+0001132A  014A      		movw r9:r8, r21:r20
+0001132C  015B      		movw r11:r10, r23:r22
+0001132E  940E 17A6 		call $00002F4C ; ?F_CMP_GE_L04
+00011332  F418      		brcc 6
+00011334  0182      		movw r17:r16, r5:r4
+00011336  0193      		movw r19:r18, r7:r6
+00011338  C002      		rjmp 4
+0001133A  0184      		movw r17:r16, r9:r8
+0001133C  0195      		movw r19:r18, r11:r10
+0001133E  90B9      		ld r11, Y+
+00011340  90A9      		ld r10, Y+
+00011342  9099      		ld r9, Y+
+00011344  9089      		ld r8, Y+
+00011346  9079      		ld r7, Y+
+00011348  9069      		ld r6, Y+
+0001134A  9059      		ld r5, Y+
+0001134C  9049      		ld r4, Y+
+0001134E  9508      		ret
+
+$$FMIN:
+00011350  924A      		st ~Y, r4
+00011352  925A      		st ~Y, r5
+00011354  926A      		st ~Y, r6
+00011356  927A      		st ~Y, r7
+00011358  928A      		st ~Y, r8
+0001135A  929A      		st ~Y, r9
+0001135C  92AA      		st ~Y, r10
+0001135E  92BA      		st ~Y, r11
+00011360  0128      		movw r5:r4, r17:r16
+00011362  0139      		movw r7:r6, r19:r18
+00011364  014A      		movw r9:r8, r21:r20
+00011366  015B      		movw r11:r10, r23:r22
+00011368  940E 17A6 		call $00002F4C ; ?F_CMP_GE_L04
+0001136C  F418      		brcc 6
+0001136E  0184      		movw r17:r16, r9:r8
+00011370  0195      		movw r19:r18, r11:r10
+00011372  C002      		rjmp 4
+00011374  0182      		movw r17:r16, r5:r4
+00011376  0193      		movw r19:r18, r7:r6
+00011378  90B9      		ld r11, Y+
+0001137A  90A9      		ld r10, Y+
+0001137C  9099      		ld r9, Y+
+0001137E  9089      		ld r8, Y+
+00011380  9079      		ld r7, Y+
+00011382  9069      		ld r6, Y+
+00011384  9059      		ld r5, Y+
+00011386  9049      		ld r4, Y+
+00011388  9508      		ret
+
+**************************************************
+	List function block: MENULIST
+**************************************************
+
+FUNCTION_BLOCK MENULIST
+
+        VAR_INPUT
+STATES : BOOL;
+	END_VAR
+
+        VAR_EXTERNAL
+	{G:"DisplayMode"}
+SYSDISPLAYMODE AT %MB21.0 : ARRAY[0..1] OF USINT;	{ DE:"Display mode. It affects the key return code. [0]=Local [1]=LCD. See also KeyLogOutDisplays function " }
+	{G:"Password_Level"}
+SYSPWLEVEL AT %MB22.0 : USINT;	{ DE:" Password Level. 0=User 1=Installer 3=Manufacturer " }
+	{G:"Utils"}
+$$WARNINGSKILLER : BOOL;
+$$KEYLOG : USINT;
+$$ADDRESS : UINT;
+$$TYPE : USINT;
+$$MIN : REAL;
+$$MAX : REAL;
+$$SCALE : REAL;
+$$OFFSET : REAL;
+$$DP : SINT;
+$$MODE : USINT;
+$$UM : SINT;
+	END_VAR
+
+        VAR
+CURRENTACCESSLEVEL : USINT;
+CURRENTMENU : UINT;
+TEMPCURRENTMENU : UINT;
+CURRENTPARAMETER : UINT;
+TEMPCURRENTPARAMETER : UINT;
+	END_VAR
+
+END_FUNCTION_BLOCK
+
+0001138A  93AA      		st ~Y, r26
+0001138C  93BA      		st ~Y, r27
+0001138E  01D8      		movw r27:r26, r17:r16
+
+#0		{SRC:MENULIST}
+#1		(*$WAITSWITCH$*)
+#2		
+#3		
+#4			(* CASE SYSPWLEVEL OF *)
+#5		
+#6			(* 1: *)
+#7			LD		SYSPWLEVEL	{LNXT:4|-1|-1}
+(*) UNDEF
+00011390  9100 14E2 		lds r16, $14E2
+
+#8			EQ		1	{LNXT:4|-1|-1}
+(*) USINT
+00011394  E041      		ldi r20, $01
+00011396  1704      		cp r16, r20
+00011398  F411      		brne 4
+0001139A  E001      		ldi r16, $1
+0001139C  C001      		rjmp 2
+0001139E  E000      		ldi r16, $0
+
+#9			JMPC		$LABEL1	{LNXT:4|5|7}
+(-) BOOL
+000113A0  2300      		tst r16
+000113A2  F011      		breq 4
+000113A4  940C 89E2 		jmp $0113C4
+
+#10		
+#11			(* 3: *)
+#12			LD		SYSPWLEVEL	{LNXT:7|-1|-1}
+(*) UNDEF
+000113A8  9100 14E2 		lds r16, $14E2
+
+#13			EQ		3	{LNXT:7|-1|-1}
+(*) USINT
+000113AC  E043      		ldi r20, $03
+000113AE  1704      		cp r16, r20
+000113B0  F411      		brne 4
+000113B2  E001      		ldi r16, $1
+000113B4  C001      		rjmp 2
+000113B6  E000      		ldi r16, $0
+
+#14			JMPC		$LABEL2	{LNXT:7|8|11}
+(-) BOOL
+000113B8  2300      		tst r16
+000113BA  F011      		breq 4
+000113BC  940C 89E7 		jmp $0113CE
+
+#15		
+#16			(* ELSE *)
+#17			JMP		$LABEL3	{LNXT:7|8|11}
+(-) BOOL
+000113C0  940C 89EC 		jmp $0113D8
+
+#18		
+#19			(* Istruzioni di ciascun CASE: *)
+#20		
+#21		$LABEL1:
+#22				(* CURRENTACCESSLEVEL := 1; *)
+#23				MOVE		1,CURRENTACCESSLEVEL	{LNXT:5|16|-1}
+(*) BOOL
+000113C4  E001      		ldi r16, $01
+000113C6  01FD      		movw r31:r30, r27:r26
+000113C8  8300      		st Z, r16
+
+#24				JMP		$LABEL0	{LNXT:5|16|-1}
+(-) USINT
+000113CA  940C 89EF 		jmp $0113DE
+
+#25		
+#26		$LABEL2:
+#27				(* CURRENTACCESSLEVEL := 2; *)
+#28				MOVE		2,CURRENTACCESSLEVEL	{LNXT:8|16|-1}
+(*) USINT
+000113CE  E002      		ldi r16, $02
+000113D0  01FD      		movw r31:r30, r27:r26
+000113D2  8300      		st Z, r16
+
+#29				JMP		$LABEL0	{LNXT:8|16|-1}
+(-) USINT
+000113D4  940C 89EF 		jmp $0113DE
+
+#30		
+#31		$LABEL3:
+#32				(* CURRENTACCESSLEVEL := 0; *)
+#33				MOVE		0,CURRENTACCESSLEVEL	{LNXT:11|16|-1}
+(*) USINT
+000113D8  E000      		ldi r16, $00
+000113DA  01FD      		movw r31:r30, r27:r26
+000113DC  8300      		st Z, r16
+
+#34		
+#35		$LABEL0:
+#36		
+#37			(* END_CASE *)
+#38		
+#39			(* SYSDISPLAYMODE[ 0 ] := 2; *)
+#40			MOVE		2,SYSDISPLAYMODE[0]	{LNXT:16|19|-1}
+(*) USINT
+000113DE  E002      		ldi r16, $02
+000113E0  9300 0319 		sts $0319, r16
+
+#41		
+#42			(* CURRENTMENU := 0; *)
+#43			MOVE		0,CURRENTMENU	{LNXT:19|-1|-1}
+(*) USINT
+000113E4  E000      		ldi r16, $00
+000113E6  E010      		ldi r17, $0
+000113E8  01FD      		movw r31:r30, r27:r26
+000113EA  8301      		std Z+1, r16
+000113EC  8312      		std Z+2, r17
+
+000113EE  91B9      		ld r27, Y+
+000113F0  91A9      		ld r26, Y+
+
+000113F2  9508      		ret
+
+
+Frame allocation:
+
+	0000       : VAR CURRENTACCESSLEVEL
+	0001       : VAR CURRENTMENU
+	0003       : VAR TEMPCURRENTMENU
+	0005       : VAR CURRENTPARAMETER
+	0007       : VAR TEMPCURRENTPARAMETER
+	0009 bit  0: VAR STATES
+
+END_FUNCTION_BLOCK
+**************************************************
+	List function block: MAINMENU
+**************************************************
+
+FUNCTION_BLOCK MAINMENU
+
+        VAR_EXTERNAL
+	{G:"DisplayMode"}
+SYSDISPLAYMODE AT %MB21.0 : ARRAY[0..1] OF USINT;	{ DE:"Display mode. It affects the key return code. [0]=Local [1]=LCD. See also KeyLogOutDisplays function " }
+	{G:"Key_Functions"}
+SYSKEYFUNCTIONS AT %MB23.0 : ARRAY[0..5] OF BOOL;	{ DE:"Key press functions: 
+[0]=Long F1
+[1]=Long F2
+[2]=Long F3
+[3]=Long F4
+[4]=Short Up
+[5]=Short Down.
+
+When a key is released the related flag is not automatically reset. " }
+	{G:"Keys"}
+SYSLOCALKEYS AT %MX20.0 : ARRAY[0..3] OF BOOL;	{ IO:"Local Keys Current Status: [0]=UP [1]=Esc [2]=Down [3]=Set" }
+	{G:"Utils"}
+$$WARNINGSKILLER : BOOL;
+$$KEYLOG : USINT;
+$$ADDRESS : UINT;
+$$TYPE : USINT;
+$$MIN : REAL;
+$$MAX : REAL;
+$$SCALE : REAL;
+$$OFFSET : REAL;
+$$DP : SINT;
+$$MODE : USINT;
+$$UM : SINT;
+	END_VAR
+
+        VAR
+MENUS : MENULIST;
+POS : BOOL;
+	END_VAR
+
+END_FUNCTION_BLOCK
+
+000113F4  93AA      		st ~Y, r26
+000113F6  93BA      		st ~Y, r27
+000113F8  01D8      		movw r27:r26, r17:r16
+
+#0		{SRC:MAINMENU}
+#1		(*$WAITSWITCH$*)
+#2		
+#3			(* SYSDISPLAYMODE[ 0 ] := 0; *)
+#4			MOVE		0,SYSDISPLAYMODE[0]	{LNXT:3|6|-1}
+(*) WORD
+000113FA  E000      		ldi r16, $00
+000113FC  9300 0319 		sts $0319, r16
+
+#5		
+#6			(* $$WARNINGSKILLER := WRITESTRLOCALDISPLAY( 'PLC', 0 ); *)
+#7			LDP0		'PLC'	{LNXT:6|9|-1}
+(*) USINT
+00011400  EC00      		ldi r16, $C0
+00011402  E112      		ldi r17, $12
+00011404  E021      		ldi r18, $01
+
+#8			WRITESTRLOCALDISPLAY		0	{LNXT:6|9|-1}
+(*) STRING
+00011406  0168      		movw r13:r12, r17:r16
+00011408  2EE2      		mov r14, r18
+0001140A  E030      		ldi r19, $00
+0001140C  0186      		movw r17:r16, r13:r12
+0001140E  2D2E      		mov r18, r14
+00011410  6820      		ori r18, $80
+00011412  940E 3D58 		call $00007AB0 ; WRITESTRLOCALDISPLAY
+
+#9			ST		$$WARNINGSKILLER	{LNXT:6|9|-1}
+(*) BOOL
+00011416  9300 0AE8 		sts $0AE8, r16
+
+#10		
+#11			(* WHILE TRUE *)
+#12		$LABEL0:
+#13			LD		TRUE	{LNXT:9|-1|-1}
+(*) UNDEF
+0001141A  E001      		ldi r16, $01
+
+#14			JMPCN		$LABEL1	{LNXT:9|12|-1}
+(-) BOOL
+0001141C  2300      		tst r16
+0001141E  F411      		brne 4
+00011420  940C 8AFD 		jmp $0115FA
+
+#15		
+#16			(* DO *)
+#17				(* $$KEYLOG := KEYLOG_OUT( 0 ); *)
+#18				LDP0		0	{LNXT:12|14|-1}
+(*) BOOL
+00011424  E000      		ldi r16, $00
+
+#19				KEYLOG_OUT	{LNXT:12|14|-1}
+(*) USINT
+00011426  940E 237D 		call $000046FA ; KEYLOG_OUT
+
+#20				ST		$$KEYLOG	{LNXT:12|14|-1}
+(*) USINT
+0001142A  9300 0AE9 		sts $0AE9, r16
+
+#21		
+#22		
+#23				(* CASE $$KEYLOG OF *)
+#24		
+#25				(* $$ON_KEYRAL: *)
+#26				LD		$$KEYLOG	{LNXT:16|-1|-1}
+(*) UNDEF
+0001142E  9100 0AE9 		lds r16, $0AE9
+
+#27				EQ		$$ON_KEYRAL	{LNXT:16|-1|-1}
+(*) USINT
+00011432  E04D      		ldi r20, $0D
+00011434  1704      		cp r16, r20
+00011436  F411      		brne 4
+00011438  E001      		ldi r16, $1
+0001143A  C001      		rjmp 2
+0001143C  E000      		ldi r16, $0
+
+#28				JMPC		$LABEL3	{LNXT:16|18|21}
+(-) BOOL
+0001143E  2300      		tst r16
+00011440  F011      		breq 4
+00011442  940C 8A79 		jmp $0114F2
+
+#29		
+#30				(* $$ON_KEYPRG: *)
+#31				LD		$$KEYLOG	{LNXT:21|-1|-1}
+(*) UNDEF
+00011446  9100 0AE9 		lds r16, $0AE9
+
+#32				EQ		$$ON_KEYPRG	{LNXT:21|-1|-1}
+(*) USINT
+0001144A  E04C      		ldi r20, $0C
+0001144C  1704      		cp r16, r20
+0001144E  F411      		brne 4
+00011450  E001      		ldi r16, $1
+00011452  C001      		rjmp 2
+00011454  E000      		ldi r16, $0
+
+#33				JMPC		$LABEL4	{LNXT:21|23|52}
+(-) BOOL
+00011456  2300      		tst r16
+00011458  F011      		breq 4
+0001145A  940C 8A7D 		jmp $0114FA
+
+#34		
+#35				(* $$ON_KEYPUP: *)
+#36				LD		$$KEYLOG	{LNXT:52|-1|-1}
+(*) UNDEF
+0001145E  9100 0AE9 		lds r16, $0AE9
+
+#37				EQ		$$ON_KEYPUP	{LNXT:52|-1|-1}
+(*) USINT
+00011462  E046      		ldi r20, $06
+00011464  1704      		cp r16, r20
+00011466  F411      		brne 4
+00011468  E001      		ldi r16, $1
+0001146A  C001      		rjmp 2
+0001146C  E000      		ldi r16, $0
+
+#38				JMPC		$LABEL5	{LNXT:52|54|57}
+(-) BOOL
+0001146E  2300      		tst r16
+00011470  F011      		breq 4
+00011472  940C 8ADF 		jmp $0115BE
+
+#39		
+#40				(* $$ON_KEYPESC: *)
+#41				LD		$$KEYLOG	{LNXT:57|-1|-1}
+(*) UNDEF
+00011476  9100 0AE9 		lds r16, $0AE9
+
+#42				EQ		$$ON_KEYPESC	{LNXT:57|-1|-1}
+(*) USINT
+0001147A  E042      		ldi r20, $02
+0001147C  1704      		cp r16, r20
+0001147E  F411      		brne 4
+00011480  E001      		ldi r16, $1
+00011482  C001      		rjmp 2
+00011484  E000      		ldi r16, $0
+
+#43				JMPC		$LABEL6	{LNXT:57|59|62}
+(-) BOOL
+00011486  2300      		tst r16
+00011488  F011      		breq 4
+0001148A  940C 8AE4 		jmp $0115C8
+
+#44		
+#45				(* $$ON_KEYPDW: *)
+#46				LD		$$KEYLOG	{LNXT:62|-1|-1}
+(*) UNDEF
+0001148E  9100 0AE9 		lds r16, $0AE9
+
+#47				EQ		$$ON_KEYPDW	{LNXT:62|-1|-1}
+(*) USINT
+00011492  E049      		ldi r20, $09
+00011494  1704      		cp r16, r20
+00011496  F411      		brne 4
+00011498  E001      		ldi r16, $1
+0001149A  C001      		rjmp 2
+0001149C  E000      		ldi r16, $0
+
+#48				JMPC		$LABEL7	{LNXT:62|64|67}
+(-) BOOL
+0001149E  2300      		tst r16
+000114A0  F011      		breq 4
+000114A2  940C 8AE9 		jmp $0115D2
+
+#49		
+#50				(* $$ON_KEYPSET: *)
+#51				LD		$$KEYLOG	{LNXT:67|-1|-1}
+(*) UNDEF
+000114A6  9100 0AE9 		lds r16, $0AE9
+
+#52				EQ		$$ON_KEYPSET	{LNXT:67|-1|-1}
+(*) USINT
+000114AA  E044      		ldi r20, $04
+000114AC  1704      		cp r16, r20
+000114AE  F411      		brne 4
+000114B0  E001      		ldi r16, $1
+000114B2  C001      		rjmp 2
+000114B4  E000      		ldi r16, $0
+
+#53				JMPC		$LABEL8	{LNXT:67|69|72}
+(-) BOOL
+000114B6  2300      		tst r16
+000114B8  F011      		breq 4
+000114BA  940C 8AEE 		jmp $0115DC
+
+#54		
+#55				(* $$ON_KEYSUP: *)
+#56				LD		$$KEYLOG	{LNXT:72|-1|-1}
+(*) UNDEF
+000114BE  9100 0AE9 		lds r16, $0AE9
+
+#57				EQ		$$ON_KEYSUP	{LNXT:72|-1|-1}
+(*) USINT
+000114C2  E048      		ldi r20, $08
+000114C4  1704      		cp r16, r20
+000114C6  F411      		brne 4
+000114C8  E001      		ldi r16, $1
+000114CA  C001      		rjmp 2
+000114CC  E000      		ldi r16, $0
+
+#58				JMPC		$LABEL9	{LNXT:72|74|77}
+(-) BOOL
+000114CE  2300      		tst r16
+000114D0  F011      		breq 4
+000114D2  940C 8AF3 		jmp $0115E6
+
+#59		
+#60				(* $$ON_KEYSDW: *)
+#61				LD		$$KEYLOG	{LNXT:77|-1|-1}
+(*) UNDEF
+000114D6  9100 0AE9 		lds r16, $0AE9
+
+#62				EQ		$$ON_KEYSDW	{LNXT:77|-1|-1}
+(*) USINT
+000114DA  E04B      		ldi r20, $0B
+000114DC  1704      		cp r16, r20
+000114DE  F411      		brne 4
+000114E0  E001      		ldi r16, $1
+000114E2  C001      		rjmp 2
+000114E4  E000      		ldi r16, $0
+
+#63				JMPC		$LABEL10	{LNXT:77|79|9}
+(-) BOOL
+000114E6  2300      		tst r16
+000114E8  F011      		breq 4
+000114EA  940C 8AF8 		jmp $0115F0
+
+#64				JMP		$LABEL2	{LNXT:77|79|9}
+(-) BOOL
+000114EE  940C 8AFB 		jmp $0115F6
+
+#65		
+#66				(* Istruzioni di ciascun CASE: *)
+#67		
+#68		$LABEL3:
+#69					(* RETURN *)
+#70					RET
+#71					JMP		$LABEL2	{LNXT:18|-1|-1}
+(-) BOOL
+000114F2  940C 8AFD 		jmp $0115FA
+
+(-) BOOL
+000114F6  940C 8AFB 		jmp $0115F6
+
+#72		
+#73		$LABEL4:
+#74					(* SYSDISPLAYMODE[ 0 ] := 2; *)
+#75					MOVE		2,SYSDISPLAYMODE[0]	{LNXT:23|25|-1}
+(*) BOOL
+000114FA  E002      		ldi r16, $02
+000114FC  9300 0319 		sts $0319, r16
+
+#76		
+#77					(* WHILE TRUE *)
+#78		$LABEL11:
+#79					LD		TRUE	{LNXT:25|-1|-1}
+(*) UNDEF
+00011500  E001      		ldi r16, $01
+
+#80					JMPCN		$LABEL12	{LNXT:25|28|46}
+(-) BOOL
+00011502  2300      		tst r16
+00011504  F411      		brne 4
+00011506  940C 8ACD 		jmp $01159A
+
+#81		
+#82					(* DO *)
+#83						(* $$WARNINGSKILLER := WRITESTRLOCALDISPLAY( 'PASS', 0 ); *)
+#84						LDP0		'PASS'	{LNXT:28|31|-1}
+(*) BOOL
+0001150A  EC06      		ldi r16, $C6
+0001150C  E112      		ldi r17, $12
+0001150E  E021      		ldi r18, $01
+
+#85						WRITESTRLOCALDISPLAY		0	{LNXT:28|31|-1}
+(*) STRING
+00011510  0168      		movw r13:r12, r17:r16
+00011512  2EE2      		mov r14, r18
+00011514  E030      		ldi r19, $00
+00011516  0186      		movw r17:r16, r13:r12
+00011518  2D2E      		mov r18, r14
+0001151A  6820      		ori r18, $80
+0001151C  940E 3D58 		call $00007AB0 ; WRITESTRLOCALDISPLAY
+
+#86						ST		$$WARNINGSKILLER	{LNXT:28|31|-1}
+(*) BOOL
+00011520  9300 0AE8 		sts $0AE8, r16
+
+#87		
+#88						(* $$KEYLOG := KEYLOG_OUT( 0 ); *)
+#89						LDP0		0	{LNXT:31|33|-1}
+(*) BOOL
+00011524  E000      		ldi r16, $00
+
+#90						KEYLOG_OUT	{LNXT:31|33|-1}
+(*) USINT
+00011526  940E 237D 		call $000046FA ; KEYLOG_OUT
+
+#91						ST		$$KEYLOG	{LNXT:31|33|-1}
+(*) USINT
+0001152A  9300 0AE9 		sts $0AE9, r16
+
+#92		
+#93		
+#94						(* CASE $$KEYLOG OF *)
+#95		
+#96						(* $$ON_KEYESC, $$ON_KEYTM: *)
+#97						LD		$$KEYLOG	{LNXT:34|-1|-1}
+(*) UNDEF
+0001152E  9100 0AE9 		lds r16, $0AE9
+
+#98						EQ		$$ON_KEYTM	{LNXT:34|-1|-1}
+(*) USINT
+00011532  E04E      		ldi r20, $0E
+00011534  1704      		cp r16, r20
+00011536  F411      		brne 4
+00011538  E001      		ldi r16, $1
+0001153A  C001      		rjmp 2
+0001153C  E000      		ldi r16, $0
+
+#99						OR(		$$KEYLOG	{LNXT:34|-1|-1}
+(*) BOOL
+0001153E  930A      		st ~Y, r16
+00011540  9100 0AE9 		lds r16, $0AE9
+
+#100						EQ		$$ON_KEYESC	{LNXT:34|-1|-1}
+(*) USINT
+00011544  E043      		ldi r20, $03
+00011546  1704      		cp r16, r20
+00011548  F411      		brne 4
+0001154A  E001      		ldi r16, $1
+0001154C  C001      		rjmp 2
+0001154E  E000      		ldi r16, $0
+
+#101						)	{LNXT:34|-1|-1}
+(*) BOOL
+00011550  2F40      		mov r20, r16
+00011552  9109      		ld r16, Y+
+00011554  2B04      		or r16, r20
+
+#102						JMPC		$LABEL14	{LNXT:34|35|38}
+(-) BOOL
+00011556  2300      		tst r16
+00011558  F011      		breq 4
+0001155A  940C 8ABD 		jmp $01157A
+
+#103		
+#104						(* $$ON_KEYSET: *)
+#105						LD		$$KEYLOG	{LNXT:38|-1|-1}
+(*) UNDEF
+0001155E  9100 0AE9 		lds r16, $0AE9
+
+#106						EQ		$$ON_KEYSET	{LNXT:38|-1|-1}
+(*) USINT
+00011562  E045      		ldi r20, $05
+00011564  1704      		cp r16, r20
+00011566  F411      		brne 4
+00011568  E001      		ldi r16, $1
+0001156A  C001      		rjmp 2
+0001156C  E000      		ldi r16, $0
+
+#107						JMPC		$LABEL15	{LNXT:38|39|25}
+(-) BOOL
+0001156E  2300      		tst r16
+00011570  F011      		breq 4
+00011572  940C 8AC1 		jmp $011582
+
+#108						JMP		$LABEL13	{LNXT:38|39|25}
+(-) BOOL
+00011576  940C 8ACB 		jmp $011596
+
+#109		
+#110						(* Istruzioni di ciascun CASE: *)
+#111		
+#112		$LABEL14:
+#113							(* EXIT *)
+#114							JMP		$LABEL12
+(-) BOOL
+0001157A  940C 8ACD 		jmp $01159A
+
+#115							JMP		$LABEL13	{LNXT:35|25|-1}
+(-) BOOL
+0001157E  940C 8ACB 		jmp $011596
+
+#116		
+#117		$LABEL15:
+#118							(* $$WARNINGSKILLER := TO_BOOL( PLC_CTRMENUPW( 0 ) ); *)
+#119							LDP0		0	{LNXT:39|25|-1}
+(*) BOOL
+00011582  E000      		ldi r16, $00
+
+#120							PLC_CTRMENUPW	{LNXT:39|25|-1}
+(*) USINT
+00011584  940E 4BE9 		call $000097D2 ; PLC_CTRMENUPW
+
+#121							TO_BOOL	{LNXT:39|25|-1}
+(*) USINT
+00011588  2300      		tst r16
+0001158A  F411      		brne 4
+0001158C  E000      		ldi r16, $0
+0001158E  C001      		rjmp 2
+00011590  E001      		ldi r16, $1
+
+#122							ST		$$WARNINGSKILLER	{LNXT:39|25|-1}
+(*) BOOL
+00011592  9300 0AE8 		sts $0AE8, r16
+
+#123		
+#124		$LABEL13:
+#125		
+#126						(* END_CASE *)
+#127						JMP		$LABEL11	{LNXT:25|28|46}
+(-) BOOL
+00011596  940C 8A80 		jmp $011500
+
+#128		
+#129		$LABEL12:
+#130					(* END_WHILE *)
+#131		
+#132					(* SYSDISPLAYMODE[ 0 ] := 0; *)
+#133					MOVE		0,SYSDISPLAYMODE[0]	{LNXT:46|49|-1}
+(*) BOOL
+0001159A  E000      		ldi r16, $00
+0001159C  9300 0319 		sts $0319, r16
+
+#134		
+#135					(* $$WARNINGSKILLER := WRITESTRLOCALDISPLAY( 'PLC', 0 ); *)
+#136					LDP0		'PLC'	{LNXT:49|9|-1}
+(*) USINT
+000115A0  EC00      		ldi r16, $C0
+000115A2  E112      		ldi r17, $12
+000115A4  E021      		ldi r18, $01
+
+#137					WRITESTRLOCALDISPLAY		0	{LNXT:49|9|-1}
+(*) STRING
+000115A6  0168      		movw r13:r12, r17:r16
+000115A8  2EE2      		mov r14, r18
+000115AA  E030      		ldi r19, $00
+000115AC  0186      		movw r17:r16, r13:r12
+000115AE  2D2E      		mov r18, r14
+000115B0  6820      		ori r18, $80
+000115B2  940E 3D58 		call $00007AB0 ; WRITESTRLOCALDISPLAY
+
+#138					ST		$$WARNINGSKILLER	{LNXT:49|9|-1}
+(*) BOOL
+000115B6  9300 0AE8 		sts $0AE8, r16
+
+#139					JMP		$LABEL2	{LNXT:23|9|-1}
+(-) BOOL
+000115BA  940C 8AFB 		jmp $0115F6
+
+#140		
+#141		$LABEL5:
+#142					(* SYSKEYFUNCTIONS[ 0 ] := TRUE; *)
+#143					MOVE		TRUE,SYSKEYFUNCTIONS[0]	{LNXT:54|9|-1}
+(*) BOOL
+000115BE  E001      		ldi r16, $01
+000115C0  9300 088C 		sts $088C, r16
+
+#144					JMP		$LABEL2	{LNXT:54|9|-1}
+(-) BOOL
+000115C4  940C 8AFB 		jmp $0115F6
+
+#145		
+#146		$LABEL6:
+#147					(* SYSKEYFUNCTIONS[ 1 ] := TRUE; *)
+#148					MOVE		TRUE,SYSKEYFUNCTIONS[1]	{LNXT:59|9|-1}
+(*) BOOL
+000115C8  E001      		ldi r16, $01
+000115CA  9300 088D 		sts $088D, r16
+
+#149					JMP		$LABEL2	{LNXT:59|9|-1}
+(-) BOOL
+000115CE  940C 8AFB 		jmp $0115F6
+
+#150		
+#151		$LABEL7:
+#152					(* SYSKEYFUNCTIONS[ 2 ] := TRUE; *)
+#153					MOVE		TRUE,SYSKEYFUNCTIONS[2]	{LNXT:64|9|-1}
+(*) BOOL
+000115D2  E001      		ldi r16, $01
+000115D4  9300 088E 		sts $088E, r16
+
+#154					JMP		$LABEL2	{LNXT:64|9|-1}
+(-) BOOL
+000115D8  940C 8AFB 		jmp $0115F6
+
+#155		
+#156		$LABEL8:
+#157					(* SYSKEYFUNCTIONS[ 3 ] := TRUE; *)
+#158					MOVE		TRUE,SYSKEYFUNCTIONS[3]	{LNXT:69|9|-1}
+(*) BOOL
+000115DC  E001      		ldi r16, $01
+000115DE  9300 088F 		sts $088F, r16
+
+#159					JMP		$LABEL2	{LNXT:69|9|-1}
+(-) BOOL
+000115E2  940C 8AFB 		jmp $0115F6
+
+#160		
+#161		$LABEL9:
+#162					(* SYSKEYFUNCTIONS[ 4 ] := TRUE; *)
+#163					MOVE		TRUE,SYSKEYFUNCTIONS[4]	{LNXT:74|9|-1}
+(*) BOOL
+000115E6  E001      		ldi r16, $01
+000115E8  9300 0890 		sts $0890, r16
+
+#164					JMP		$LABEL2	{LNXT:74|9|-1}
+(-) BOOL
+000115EC  940C 8AFB 		jmp $0115F6
+
+#165		
+#166		$LABEL10:
+#167					(* SYSKEYFUNCTIONS[ 5 ] := TRUE; *)
+#168					MOVE		TRUE,SYSKEYFUNCTIONS[5]	{LNXT:79|9|-1}
+(*) BOOL
+000115F0  E001      		ldi r16, $01
+000115F2  9300 0891 		sts $0891, r16
+
+#169		
+#170		$LABEL2:
+#171		
+#172				(* END_CASE *)
+#173				JMP		$LABEL0	{LNXT:9|12|-1}
+(-) BOOL
+000115F6  940C 8A0D 		jmp $01141A
+
+000115FA  91B9      		ld r27, Y+
+000115FC  91A9      		ld r26, Y+
+
+000115FE  9508      		ret
+
+
+Frame allocation:
+
+	0000       : FB MENUS
+	000A bit  0: VAR POS
+
+END_FUNCTION_BLOCK
+**************************************************
+	List program: SETEXECUTIONTIME
+**************************************************
+
+PROGRAM SETEXECUTIONTIME
+
+END_PROGRAM
+
+00011600  924A      		st ~Y, r4
+00011602  925A      		st ~Y, r5
+00011604  926A      		st ~Y, r6
+00011606  927A      		st ~Y, r7
+00011608  928A      		st ~Y, r8
+0001160A  929A      		st ~Y, r9
+0001160C  92AA      		st ~Y, r10
+0001160E  92BA      		st ~Y, r11
+00011610  92CA      		st ~Y, r12
+00011612  92DA      		st ~Y, r13
+00011614  92EA      		st ~Y, r14
+00011616  92FA      		st ~Y, r15
+00011618  938A      		st ~Y, r24
+0001161A  939A      		st ~Y, r25
+0001161C  93AA      		st ~Y, r26
+0001161E  93BA      		st ~Y, r27
+
+#0		{SRC:SETEXECUTIONTIME}
+#1		(*$WAITSWITCH$*)
+#2		
+#3			(* %MD65000.0 := 100; *)
+#4			MOVE		100,%MD65000.0	{LNXT:2|2|-1}
+(*) BOOL
+00011620  E604      		ldi r16, $64
+00011622  E010      		ldi r17, $0
+00011624  E020      		ldi r18, $0
+00011626  E030      		ldi r19, $0
+00011628  EAE5      		ldi r30, $A5
+0001162A  E0F8      		ldi r31, $08
+0001162C  8300      		st Z, r16
+0001162E  8311      		std Z+1, r17
+00011630  8322      		std Z+2, r18
+00011632  8333      		std Z+3, r19
+
+END_PROGRAM
+**************************************************
+	List program: PARCHECK
+**************************************************
+
+PROGRAM PARCHECK
+
+        VAR
+PTR_POLI : @UINT := 16#4028;
+BRET : BOOL;
+	END_VAR
+
+END_PROGRAM
+
+#0		{SRC:PARCHECK}
+#1		(*$WAITSWITCH$*)
+#2		
+#3		
+#4			(* IF @PTR_POLI AND 16#FC00) <> 2048 *)
+#5			LD		@PTR_POLI	{LNXT:2|-1|-1}
+(*) UNDEF
+00011634  934A      		st ~Y, r20
+00011636  9100 0AD7 		lds r16, $0AD7
+0001163A  9110 0AD8 		lds r17, $0AD8
+0001163E  E021      		ldi r18, $01
+00011640  940E 704F 		call $0000E09E ; LEGGI_RAME2
+00011644  9149      		ld r20, Y+
+
+#6			AND		16#FC00	{LNXT:2|-1|-1}
+(*) UINT
+00011646  7000      		andi r16, $00
+00011648  7F1C      		andi r17, $FC
+
+#7			NE		2048	{LNXT:2|-1|-1}
+(*) UINT
+0001164A  E040      		ldi r20, $00
+0001164C  E058      		ldi r21, $08
+0001164E  1704      		cp r16, r20
+00011650  0715      		cpc r17, r21
+00011652  F011      		breq 4
+00011654  E001      		ldi r16, $1
+00011656  C001      		rjmp 2
+00011658  E000      		ldi r16, $0
+
+#8			JMPCN	$LABEL0	{LNXT:2|3|2}
+(-) BOOL
+0001165A  2300      		tst r16
+0001165C  F411      		brne 4
+0001165E  940C 8B36 		jmp $01166C
+
+#9		
+#10			(* THEN *)
+#11		
+#12				(* BRET := SYSWD_BACKGROUND(0); *)
+#13				LDP0		0	{LNXT:3|2|-1}
+(*) BOOL
+00011662  E000      		ldi r16, $00
+
+#14				SYSWD_BACKGROUND	{LNXT:3|2|-1}
+(*) USINT
+00011664  940E 6865 		call $0000D0CA ; SYSWD_BACKGROUND
+
+#15				ST		BRET	{LNXT:3|2|-1}
+(*) BOOL
+00011668  9300 0ADB 		sts $0ADB, r16
+
+END_PROGRAM
+**************************************************
+	List program: MBMRTU_INIT
+**************************************************
+
+PROGRAM MBMRTU_INIT
+
+        VAR
+BRET : BOOL;
+	END_VAR
+
+END_PROGRAM
+
+#0		{SRC:MBMRTU_INIT}
+#1		(*$WAITSWITCH$*)
+#2		
+#3			(* BRET := SYSMBMRTU_ENABLE(FALSE); *)
+#4			LDP0		FALSE	{LNXT:2|2|-1}
+(*) BOOL
+0001166C  E000      		ldi r16, $00
+
+#5			SYSMBMRTU_ENABLE	{LNXT:2|2|-1}
+(*) BOOL
+0001166E  940E 4C6F 		call $000098DE ; SYSMBMRTU_ENABLE
+
+#6			ST		BRET	{LNXT:2|2|-1}
+(*) BOOL
+00011672  9300 0ADC 		sts $0ADC, r16
+
+00011676  91B9      		ld r27, Y+
+00011678  91A9      		ld r26, Y+
+0001167A  9199      		ld r25, Y+
+0001167C  9189      		ld r24, Y+
+0001167E  90F9      		ld r15, Y+
+00011680  90E9      		ld r14, Y+
+00011682  90D9      		ld r13, Y+
+00011684  90C9      		ld r12, Y+
+00011686  90B9      		ld r11, Y+
+00011688  90A9      		ld r10, Y+
+0001168A  9099      		ld r9, Y+
+0001168C  9089      		ld r8, Y+
+0001168E  9079      		ld r7, Y+
+00011690  9069      		ld r6, Y+
+00011692  9059      		ld r5, Y+
+00011694  9049      		ld r4, Y+
+
+00011696  9508      		ret
+
+END_PROGRAM
+
+
+**************************************************
+	Target variable image generation
+**************************************************
+
+
+*** INPUT:
+00011698  9508      		ret
+
+
+*** OUTPUT:
+0001169A  9508      		ret
+
+
+
+**************************************************
+	Task INIT init code
+**************************************************
+
+Var init: V::PARCHECK.PTR_POLI = 16#4028
+0001169C  E208      		ldi r16, $28
+0001169E  E410      		ldi r17, $40
+000116A0  E020      		ldi r18, $00
+000116A2  E030      		ldi r19, $00
+000116A4  9300 0AD7 		sts $0AD7, r16
+000116A8  9310 0AD8 		sts $0AD8, r17
+000116AC  9320 0AD9 		sts $0AD9, r18
+000116B0  9330 0ADA 		sts $0ADA, r19
+
+000116B4  9508      		ret
+
+**************************************************
+	List program: APPLICATIONMENU
+**************************************************
+
+PROGRAM APPLICATIONMENU
+
+        VAR
+MAIN : MAINMENU;
+	END_VAR
+
+END_PROGRAM
+
+000116D0  924A      		st ~Y, r4
+000116D2  925A      		st ~Y, r5
+000116D4  926A      		st ~Y, r6
+000116D6  927A      		st ~Y, r7
+000116D8  928A      		st ~Y, r8
+000116DA  929A      		st ~Y, r9
+000116DC  92AA      		st ~Y, r10
+000116DE  92BA      		st ~Y, r11
+000116E0  92CA      		st ~Y, r12
+000116E2  92DA      		st ~Y, r13
+000116E4  92EA      		st ~Y, r14
+000116E6  92FA      		st ~Y, r15
+000116E8  938A      		st ~Y, r24
+000116EA  939A      		st ~Y, r25
+000116EC  93AA      		st ~Y, r26
+000116EE  93BA      		st ~Y, r27
+
+#0		{SRC:APPLICATIONMENU}
+#1		(*$WAITSWITCH$*)
+#2		
+#3			(* MAIN *)
+#4			CAL		MAIN	{LNXT:2|2|-1}
+(*) BOOL
+000116F0  930A      		st ~Y, r16
+000116F2  EDED      		ldi r30, $DD
+000116F4  E0FA      		ldi r31, $0A
+000116F6  018F      		movw r17:r16, r31:r30
+000116F8  940E 89FA 		call $000113F4
+000116FC  9109      		ld r16, Y+
+
+000116FE  91B9      		ld r27, Y+
+00011700  91A9      		ld r26, Y+
+00011702  9199      		ld r25, Y+
+00011704  9189      		ld r24, Y+
+00011706  90F9      		ld r15, Y+
+00011708  90E9      		ld r14, Y+
+0001170A  90D9      		ld r13, Y+
+0001170C  90C9      		ld r12, Y+
+0001170E  90B9      		ld r11, Y+
+00011710  90A9      		ld r10, Y+
+00011712  9099      		ld r9, Y+
+00011714  9089      		ld r8, Y+
+00011716  9079      		ld r7, Y+
+00011718  9069      		ld r6, Y+
+0001171A  9059      		ld r5, Y+
+0001171C  9049      		ld r4, Y+
+
+0001171E  9508      		ret
+
+END_PROGRAM
+
+
+**************************************************
+	Target variable image generation
+**************************************************
+
+
+*** INPUT:
+00011720  9508      		ret
+
+
+*** OUTPUT:
+00011722  9508      		ret
+
+
+
+**************************************************
+	Task MENU init code
+**************************************************
+
+00011724  9508      		ret
+
+**************************************************
+	List program: COMPRESSOROPERATIONS
+**************************************************
+
+PROGRAM COMPRESSOROPERATIONS
+
+END_PROGRAM
+
+00011740  924A      		st ~Y, r4
+00011742  925A      		st ~Y, r5
+00011744  926A      		st ~Y, r6
+00011746  927A      		st ~Y, r7
+00011748  928A      		st ~Y, r8
+0001174A  929A      		st ~Y, r9
+0001174C  92AA      		st ~Y, r10
+0001174E  92BA      		st ~Y, r11
+00011750  92CA      		st ~Y, r12
+00011752  92DA      		st ~Y, r13
+00011754  92EA      		st ~Y, r14
+00011756  92FA      		st ~Y, r15
+00011758  938A      		st ~Y, r24
+0001175A  939A      		st ~Y, r25
+0001175C  93AA      		st ~Y, r26
+0001175E  93BA      		st ~Y, r27
+
+#0		{SRC:COMPRESSOROPERATIONS}
+#1		(*$WAITSWITCH$*)
+#2		
+#3		
+#4			(* IF CHILLINGPV>(CHILLINGSP+1.5)) AND (DEFROSTON=FALSE *)
+#5			LD		DEFROSTON	{LNXT:1|-1|-1}
+(*) UNDEF
+00011760  9100 042F 		lds r16, $042F
+
+#6			EQ		FALSE	{LNXT:1|-1|-1}
+(*) BOOL
+00011764  E040      		ldi r20, $00
+00011766  1704      		cp r16, r20
+00011768  F411      		brne 4
+0001176A  E001      		ldi r16, $1
+0001176C  C001      		rjmp 2
+0001176E  E000      		ldi r16, $0
+
+#7			AND(		CHILLINGPV	{LNXT:1|-1|-1}
+(*) BOOL
+00011770  930A      		st ~Y, r16
+00011772  EEEA      		ldi r30, $EA
+00011774  E0FA      		ldi r31, $0A
+00011776  8100      		ld r16, Z
+00011778  8111      		ldd r17, Z+1
+0001177A  8122      		ldd r18, Z+2
+0001177C  8133      		ldd r19, Z+3
+
+#8			GT(		CHILLINGSP	{LNXT:1|-1|-1}
+(*) REAL
+0001177E  930A      		st ~Y, r16
+00011780  931A      		st ~Y, r17
+00011782  932A      		st ~Y, r18
+00011784  933A      		st ~Y, r19
+00011786  EEEE      		ldi r30, $EE
+00011788  E0FA      		ldi r31, $0A
+0001178A  8100      		ld r16, Z
+0001178C  8111      		ldd r17, Z+1
+0001178E  8122      		ldd r18, Z+2
+00011790  8133      		ldd r19, Z+3
+
+#9			ADD		1.5	{LNXT:1|-1|-1}
+(*) REAL
+00011792  E040      		ldi r20, $00
+00011794  E050      		ldi r21, $00
+00011796  EC60      		ldi r22, $C0
+00011798  E37F      		ldi r23, $3F
+0001179A  940E 178C 		call $00002F18 ; ?F_ADD_L04
+
+#10			)	{LNXT:1|-1|-1}
+(*) REAL
+0001179E  01A8      		movw r21:r20, r17:r16
+000117A0  01B9      		movw r23:r22, r19:r18
+000117A2  9139      		ld r19, Y+
+000117A4  9129      		ld r18, Y+
+000117A6  9119      		ld r17, Y+
+000117A8  9109      		ld r16, Y+
+000117AA  0108      		movw r1:r0, r17:r16
+000117AC  0119      		movw r3:r2, r19:r18
+000117AE  018A      		movw r17:r16, r21:r20
+000117B0  019B      		movw r19:r18, r23:r22
+000117B2  01A0      		movw r21:r20, r1:r0
+000117B4  01B1      		movw r23:r22, r3:r2
+000117B6  940E 17A8 		call $00002F50 ; ?F_CMP_LT_L04
+000117BA  F410      		brcc 4
+000117BC  E001      		ldi r16, $1
+000117BE  C001      		rjmp 2
+000117C0  E000      		ldi r16, $0
+
+#11			)	{LNXT:1|-1|-1}
+(*) BOOL
+000117C2  2F40      		mov r20, r16
+000117C4  9109      		ld r16, Y+
+000117C6  2304      		and r16, r20
+
+#12			JMPCN	$LABEL0	{LNXT:1|2|3}
+(-) BOOL
+000117C8  2300      		tst r16
+000117CA  F411      		brne 4
+000117CC  940C 8BED 		jmp $0117DA
+
+#13		
+#14			(* THEN *)
+#15		
+#16				(* COMPRESSORON:=TRUE; *)
+#17				MOVE		TRUE,COMPRESSORON	{LNXT:2|8|-1}
+(*) BOOL
+000117D0  E001      		ldi r16, $01
+000117D2  9300 042E 		sts $042E, r16
+
+#18				JMP		$LABEL1	{LNXT:1|2|3}
+(-) BOOL
+000117D6  940C 8C22 		jmp $011844
+
+#19		$LABEL0:
+#20		
+#21			(* ELSIF CHILLINGPV<(CHILLINGSP-1.5)) AND (DEFROSTON=FALSE *)
+#22			LD		DEFROSTON	{LNXT:3|-1|-1}
+(*) UNDEF
+000117DA  9100 042F 		lds r16, $042F
+
+#23			EQ		FALSE	{LNXT:3|-1|-1}
+(*) BOOL
+000117DE  E040      		ldi r20, $00
+000117E0  1704      		cp r16, r20
+000117E2  F411      		brne 4
+000117E4  E001      		ldi r16, $1
+000117E6  C001      		rjmp 2
+000117E8  E000      		ldi r16, $0
+
+#24			AND(		CHILLINGPV	{LNXT:3|-1|-1}
+(*) BOOL
+000117EA  930A      		st ~Y, r16
+000117EC  EEEA      		ldi r30, $EA
+000117EE  E0FA      		ldi r31, $0A
+000117F0  8100      		ld r16, Z
+000117F2  8111      		ldd r17, Z+1
+000117F4  8122      		ldd r18, Z+2
+000117F6  8133      		ldd r19, Z+3
+
+#25			LT(		CHILLINGSP	{LNXT:3|-1|-1}
+(*) REAL
+000117F8  930A      		st ~Y, r16
+000117FA  931A      		st ~Y, r17
+000117FC  932A      		st ~Y, r18
+000117FE  933A      		st ~Y, r19
+00011800  EEEE      		ldi r30, $EE
+00011802  E0FA      		ldi r31, $0A
+00011804  8100      		ld r16, Z
+00011806  8111      		ldd r17, Z+1
+00011808  8122      		ldd r18, Z+2
+0001180A  8133      		ldd r19, Z+3
+
+#26			SUB		1.5	{LNXT:3|-1|-1}
+(*) REAL
+0001180C  E040      		ldi r20, $00
+0001180E  E050      		ldi r21, $00
+00011810  EC60      		ldi r22, $C0
+00011812  E37F      		ldi r23, $3F
+00011814  940E 178E 		call $00002F1C ; ?F_SUB_L04
+
+#27			)	{LNXT:3|-1|-1}
+(*) REAL
+00011818  01A8      		movw r21:r20, r17:r16
+0001181A  01B9      		movw r23:r22, r19:r18
+0001181C  9139      		ld r19, Y+
+0001181E  9129      		ld r18, Y+
+00011820  9119      		ld r17, Y+
+00011822  9109      		ld r16, Y+
+00011824  940E 17A8 		call $00002F50 ; ?F_CMP_LT_L04
+00011828  F410      		brcc 4
+0001182A  E001      		ldi r16, $1
+0001182C  C001      		rjmp 2
+0001182E  E000      		ldi r16, $0
+
+#28			)	{LNXT:3|-1|-1}
+(*) BOOL
+00011830  2F40      		mov r20, r16
+00011832  9109      		ld r16, Y+
+00011834  2304      		and r16, r20
+
+#29			JMPCN	$LABEL1	{LNXT:3|4|8}
+(-) BOOL
+00011836  2300      		tst r16
+00011838  F411      		brne 4
+0001183A  940C 8C22 		jmp $011844
+
+#30		
+#31			(* THEN *)
+#32		
+#33				(* COMPRESSORON:=FALSE; *)
+#34				MOVE		FALSE,COMPRESSORON	{LNXT:4|8|-1}
+(*) BOOL
+0001183E  E000      		ldi r16, $00
+00011840  9300 042E 		sts $042E, r16
+
+#35		
+#36		$LABEL1:
+#37			(* END_IF *)
+#38		
+#39		
+#40			(* IF COMPRESSORON=TRUE) AND (DOOROPEN=FALSE *)
+#41			LD		DOOROPEN	{LNXT:8|-1|-1}
+(*) UNDEF
+00011844  9100 0432 		lds r16, $0432
+
+#42			EQ		FALSE	{LNXT:8|-1|-1}
+(*) BOOL
+00011848  E040      		ldi r20, $00
+0001184A  1704      		cp r16, r20
+0001184C  F411      		brne 4
+0001184E  E001      		ldi r16, $1
+00011850  C001      		rjmp 2
+00011852  E000      		ldi r16, $0
+
+#43			AND(		COMPRESSORON	{LNXT:8|-1|-1}
+(*) BOOL
+00011854  930A      		st ~Y, r16
+00011856  9100 042E 		lds r16, $042E
+
+#44			EQ		TRUE	{LNXT:8|-1|-1}
+(*) BOOL
+0001185A  E041      		ldi r20, $01
+0001185C  1704      		cp r16, r20
+0001185E  F411      		brne 4
+00011860  E001      		ldi r16, $1
+00011862  C001      		rjmp 2
+00011864  E000      		ldi r16, $0
+
+#45			)	{LNXT:8|-1|-1}
+(*) BOOL
+00011866  2F40      		mov r20, r16
+00011868  9109      		ld r16, Y+
+0001186A  2304      		and r16, r20
+
+#46			JMPCN	$LABEL2	{LNXT:8|9|10}
+(-) BOOL
+0001186C  2300      		tst r16
+0001186E  F411      		brne 4
+00011870  940C 8C3F 		jmp $01187E
+
+#47		
+#48			(* THEN *)
+#49		
+#50				(* FANON:=TRUE; *)
+#51				MOVE		TRUE,FANON	{LNXT:9|15|-1}
+(*) BOOL
+00011874  E001      		ldi r16, $01
+00011876  9300 0430 		sts $0430, r16
+
+#52				JMP		$LABEL3	{LNXT:8|9|10}
+(-) BOOL
+0001187A  940C 8C5A 		jmp $0118B4
+
+#53		$LABEL2:
+#54		
+#55			(* ELSIF COMPRESSORON=TRUE) AND (DOOROPEN=TRUE *)
+#56			LD		DOOROPEN	{LNXT:10|-1|-1}
+(*) UNDEF
+0001187E  9100 0432 		lds r16, $0432
+
+#57			EQ		TRUE	{LNXT:10|-1|-1}
+(*) BOOL
+00011882  E041      		ldi r20, $01
+00011884  1704      		cp r16, r20
+00011886  F411      		brne 4
+00011888  E001      		ldi r16, $1
+0001188A  C001      		rjmp 2
+0001188C  E000      		ldi r16, $0
+
+#58			AND(		COMPRESSORON	{LNXT:10|-1|-1}
+(*) BOOL
+0001188E  930A      		st ~Y, r16
+00011890  9100 042E 		lds r16, $042E
+
+#59			EQ		TRUE	{LNXT:10|-1|-1}
+(*) BOOL
+00011894  E041      		ldi r20, $01
+00011896  1704      		cp r16, r20
+00011898  F411      		brne 4
+0001189A  E001      		ldi r16, $1
+0001189C  C001      		rjmp 2
+0001189E  E000      		ldi r16, $0
+
+#60			)	{LNXT:10|-1|-1}
+(*) BOOL
+000118A0  2F40      		mov r20, r16
+000118A2  9109      		ld r16, Y+
+000118A4  2304      		and r16, r20
+
+#61			JMPCN	$LABEL3	{LNXT:10|11|15}
+(-) BOOL
+000118A6  2300      		tst r16
+000118A8  F411      		brne 4
+000118AA  940C 8C5A 		jmp $0118B4
+
+#62		
+#63			(* THEN *)
+#64		
+#65				(* FANON:=FALSE; *)
+#66				MOVE		FALSE,FANON	{LNXT:11|15|-1}
+(*) BOOL
+000118AE  E000      		ldi r16, $00
+000118B0  9300 0430 		sts $0430, r16
+
+#67		
+#68		$LABEL3:
+#69			(* END_IF *)
+#70		
+#71		
+#72			(* IF DOOROPEN *)
+#73			LD		DOOROPEN	{LNXT:15|-1|-1}
+(*) UNDEF
+000118B4  9100 0432 		lds r16, $0432
+
+#74			JMPCN	$LABEL4	{LNXT:15|16|18}
+(-) BOOL
+000118B8  2300      		tst r16
+000118BA  F411      		brne 4
+000118BC  940C 8C65 		jmp $0118CA
+
+#75		
+#76			(* THEN *)
+#77		
+#78				(* LIGHTON:=TRUE; *)
+#79				MOVE		TRUE,LIGHTON	{LNXT:16|1|-1}
+(*) BOOL
+000118C0  E001      		ldi r16, $01
+000118C2  9300 0431 		sts $0431, r16
+
+#80				JMP		$LABEL5	{LNXT:15|16|18}
+(-) BOOL
+000118C6  940C 8C68 		jmp $0118D0
+
+#81		$LABEL4:
+#82		
+#83			(* ELSE *)
+#84		
+#85				(* LIGHTON:=FALSE; *)
+#86				MOVE		FALSE,LIGHTON	{LNXT:18|1|-1}
+(*) BOOL
+000118CA  E000      		ldi r16, $00
+000118CC  9300 0431 		sts $0431, r16
+
+END_PROGRAM
+**************************************************
+	List program: DEFROSTOPERATIONS
+**************************************************
+
+PROGRAM DEFROSTOPERATIONS
+
+END_PROGRAM
+
+#0		{SRC:DEFROSTOPERATIONS}
+#1		(*$WAITSWITCH$*)
+#2		
+#3		
+#4			(* IF DEFROSTON *)
+#5			LD		DEFROSTON	{LNXT:1|-1|-1}
+(*) UNDEF
+000118D0  9100 042F 		lds r16, $042F
+
+#6			JMPCN	$LABEL0	{LNXT:1|2|5}
+(-) BOOL
+000118D4  2300      		tst r16
+000118D6  F411      		brne 4
+000118D8  940C 8C71 		jmp $0118E2
+
+#7		
+#8			(* THEN *)
+#9		
+#10				(* COMPRESSORON:=FALSE; *)
+#11				MOVE		FALSE,COMPRESSORON	{LNXT:2|5|-1}
+(*) BOOL
+000118DC  E000      		ldi r16, $00
+000118DE  9300 042E 		sts $042E, r16
+
+#12		
+#13		$LABEL0:
+#14			(* END_IF *)
+#15		
+#16		
+#17			(* IF DEFROSTON) AND (COMPRESSORON=FALSE *)
+#18			LD		COMPRESSORON	{LNXT:5|-1|-1}
+(*) UNDEF
+000118E2  9100 042E 		lds r16, $042E
+
+#19			EQ		FALSE	{LNXT:5|-1|-1}
+(*) BOOL
+000118E6  E040      		ldi r20, $00
+000118E8  1704      		cp r16, r20
+000118EA  F411      		brne 4
+000118EC  E001      		ldi r16, $1
+000118EE  C001      		rjmp 2
+000118F0  E000      		ldi r16, $0
+
+#20			AND		DEFROSTON	{LNXT:5|-1|-1}
+(*) BOOL
+000118F2  9140 042F 		lds r20, $042F
+000118F6  2304      		and r16, r20
+
+#21			JMPCN	$LABEL1	{LNXT:5|6|12}
+(-) BOOL
+000118F8  2300      		tst r16
+000118FA  F411      		brne 4
+000118FC  940C 8C89 		jmp $011912
+
+#22		
+#23			(* THEN *)
+#24		
+#25				(* FANON:=TRUE; *)
+#26				MOVE		TRUE,FANON	{LNXT:6|7|-1}
+(*) BOOL
+00011900  E001      		ldi r16, $01
+00011902  9300 0430 		sts $0430, r16
+
+#27		
+#28				(* HEATERON:=TRUE; *)
+#29				MOVE		TRUE,HEATERON	{LNXT:7|8|-1}
+(*) BOOL
+00011906  E001      		ldi r16, $01
+00011908  9300 0AF2 		sts $0AF2, r16
+
+#30		
+#31				(* LIGHTON:=TRUE; *)
+#32				MOVE		TRUE,LIGHTON	{LNXT:8|12|-1}
+(*) BOOL
+0001190C  E001      		ldi r16, $01
+0001190E  9300 0431 		sts $0431, r16
+
+#33		
+#34		$LABEL1:
+#35			(* END_IF *)
+#36		
+#37		
+#38			(* IF DEFROSTON) AND (CHILLINGPV>DEFROSTSP *)
+#39			LD		CHILLINGPV	{LNXT:12|-1|-1}
+(*) UNDEF
+00011912  EEEA      		ldi r30, $EA
+00011914  E0FA      		ldi r31, $0A
+00011916  8100      		ld r16, Z
+00011918  8111      		ldd r17, Z+1
+0001191A  8122      		ldd r18, Z+2
+0001191C  8133      		ldd r19, Z+3
+
+#40			GT		DEFROSTSP	{LNXT:12|-1|-1}
+(*) REAL
+0001191E  01A8      		movw r21:r20, r17:r16
+00011920  01B9      		movw r23:r22, r19:r18
+00011922  EFE3      		ldi r30, $F3
+00011924  E0FA      		ldi r31, $0A
+00011926  8100      		ld r16, Z
+00011928  8111      		ldd r17, Z+1
+0001192A  8122      		ldd r18, Z+2
+0001192C  8133      		ldd r19, Z+3
+0001192E  940E 17A8 		call $00002F50 ; ?F_CMP_LT_L04
+00011932  F410      		brcc 4
+00011934  E001      		ldi r16, $1
+00011936  C001      		rjmp 2
+00011938  E000      		ldi r16, $0
+
+#41			AND		DEFROSTON	{LNXT:12|-1|-1}
+(*) BOOL
+0001193A  9140 042F 		lds r20, $042F
+0001193E  2304      		and r16, r20
+
+#42			JMPCN	$LABEL2	{LNXT:12|13|18}
+(-) BOOL
+00011940  2300      		tst r16
+00011942  F411      		brne 4
+00011944  940C 8CAD 		jmp $01195A
+
+#43		
+#44			(* THEN *)
+#45		
+#46				(* DEFROSTON:=FALSE; *)
+#47				MOVE		FALSE,DEFROSTON	{LNXT:13|14|-1}
+(*) BOOL
+00011948  E000      		ldi r16, $00
+0001194A  9300 042F 		sts $042F, r16
+
+#48		
+#49				(* HEATERON:=FALSE; *)
+#50				MOVE		FALSE,HEATERON	{LNXT:14|15|-1}
+(*) BOOL
+0001194E  E000      		ldi r16, $00
+00011950  9300 0AF2 		sts $0AF2, r16
+
+#51		
+#52				(* LIGHTON:=FALSE; *)
+#53				MOVE		FALSE,LIGHTON	{LNXT:15|18|-1}
+(*) BOOL
+00011954  E000      		ldi r16, $00
+00011956  9300 0431 		sts $0431, r16
+
+#54		
+#55		$LABEL2:
+#56			(* END_IF *)
+#57		
+#58		
+#59			(* IF DEFROSTON) AND (DEFROSTPANSENSOR *)
+#60			LD		DEFROSTON	{LNXT:18|-1|-1}
+(*) UNDEF
+0001195A  9100 042F 		lds r16, $042F
+
+#61			AND		DEFROSTPANSENSOR	{LNXT:18|-1|-1}
+(*) BOOL
+0001195E  9140 0AF7 		lds r20, $0AF7
+00011962  2304      		and r16, r20
+
+#62			JMPCN	$LABEL3	{LNXT:18|19|21}
+(-) BOOL
+00011964  2300      		tst r16
+00011966  F411      		brne 4
+00011968  940C 8CBB 		jmp $011976
+
+#63		
+#64			(* THEN *)
+#65		
+#66				(* DEFROSTHEATERON:=TRUE; *)
+#67				MOVE		TRUE,DEFROSTHEATERON	{LNXT:19|1|-1}
+(*) BOOL
+0001196C  E001      		ldi r16, $01
+0001196E  9300 0433 		sts $0433, r16
+
+#68				JMP		$LABEL4	{LNXT:18|19|21}
+(-) BOOL
+00011972  940C 8CCA 		jmp $011994
+
+#69		$LABEL3:
+#70		
+#71			(* ELSIF DEFROSTPANSENSOR=FALSE *)
+#72			LD		DEFROSTPANSENSOR	{LNXT:21|-1|-1}
+(*) UNDEF
+00011976  9100 0AF7 		lds r16, $0AF7
+
+#73			EQ		FALSE	{LNXT:21|-1|-1}
+(*) BOOL
+0001197A  E040      		ldi r20, $00
+0001197C  1704      		cp r16, r20
+0001197E  F411      		brne 4
+00011980  E001      		ldi r16, $1
+00011982  C001      		rjmp 2
+00011984  E000      		ldi r16, $0
+
+#74			JMPCN	$LABEL4	{LNXT:21|22|1}
+(-) BOOL
+00011986  2300      		tst r16
+00011988  F411      		brne 4
+0001198A  940C 8CCA 		jmp $011994
+
+#75		
+#76			(* THEN *)
+#77		
+#78				(* DEFROSTHEATERON:=FALSE; *)
+#79				MOVE		FALSE,DEFROSTHEATERON	{LNXT:22|1|-1}
+(*) BOOL
+0001198E  E000      		ldi r16, $00
+00011990  9300 0433 		sts $0433, r16
+
+00011994  91B9      		ld r27, Y+
+00011996  91A9      		ld r26, Y+
+00011998  9199      		ld r25, Y+
+0001199A  9189      		ld r24, Y+
+0001199C  90F9      		ld r15, Y+
+0001199E  90E9      		ld r14, Y+
+000119A0  90D9      		ld r13, Y+
+000119A2  90C9      		ld r12, Y+
+000119A4  90B9      		ld r11, Y+
+000119A6  90A9      		ld r10, Y+
+000119A8  9099      		ld r9, Y+
+000119AA  9089      		ld r8, Y+
+000119AC  9079      		ld r7, Y+
+000119AE  9069      		ld r6, Y+
+000119B0  9059      		ld r5, Y+
+000119B2  9049      		ld r4, Y+
+
+000119B4  9508      		ret
+
+END_PROGRAM
+
+
+**************************************************
+	Target variable image generation
+**************************************************
+
+
+*** INPUT:
+000119B6  9508      		ret
+
+
+*** OUTPUT:
+000119B8  9508      		ret
+
+
+
+**************************************************
+	Task TIMED init code
+**************************************************
+
+000119BA  9508      		ret
+
+
+
+**************************************************
+	Global init code
+**************************************************
+
+Var init: V::CHILLINGPV = 6
+000119E0  E000      		ldi r16, $00
+000119E2  E010      		ldi r17, $00
+000119E4  EC20      		ldi r18, $C0
+000119E6  E430      		ldi r19, $40
+000119E8  9300 0AEA 		sts $0AEA, r16
+000119EC  9310 0AEB 		sts $0AEB, r17
+000119F0  9320 0AEC 		sts $0AEC, r18
+000119F4  9330 0AED 		sts $0AED, r19
+
+Var init: V::CHILLINGSP = 5
+000119F8  E000      		ldi r16, $00
+000119FA  E010      		ldi r17, $00
+000119FC  EA20      		ldi r18, $A0
+000119FE  E430      		ldi r19, $40
+00011A00  9300 0AEE 		sts $0AEE, r16
+00011A04  9310 0AEF 		sts $0AEF, r17
+00011A08  9320 0AF0 		sts $0AF0, r18
+00011A0C  9330 0AF1 		sts $0AF1, r19
+
+Var init: V::DEFROSTSP = 10
+00011A10  E000      		ldi r16, $00
+00011A12  E010      		ldi r17, $00
+00011A14  E220      		ldi r18, $20
+00011A16  E431      		ldi r19, $41
+00011A18  9300 0AF3 		sts $0AF3, r16
+00011A1C  9310 0AF4 		sts $0AF4, r17
+00011A20  9320 0AF5 		sts $0AF5, r18
+00011A24  9330 0AF6 		sts $0AF6, r19
+
+00011A28  9508      		ret
+
+
+
+********************************************
+MEMORY MAP
+********************************************
+
+Code area type:          		       main code
+Start code area:          		0000000000011200h
+End code area:            		0000000000011A30h
+Code size:                		00000830h
+
+Start local data area:    		0000000000000ACBh
+End local data area:      		0000000000000AF8h
+Local data size:          		0000002Dh
+
+Start retentive data area:		0000000000000000h
+End retentive data area:  		0000000000000000h
+Retentive data size:      		00000000h
+
+Start bit data area:      		0000000000000000h
+End bit data area:        		0000000000000000h
+Bit data size:            		00000000h
+
+
+
+********************************************
+CODE ID:                                58E119E8
+DEBUG MEMO ID:                          0000E24E
+FULL MEMO ID:                           0000E24E
+********************************************

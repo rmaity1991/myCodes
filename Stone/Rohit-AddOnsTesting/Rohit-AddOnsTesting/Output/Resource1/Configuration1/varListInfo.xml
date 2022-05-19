@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfVariableAllocationInfo>
+  <VariableAllocationInfo Name="averageTesting" Size="5280" Segment="Global" Offset="0" />
+  <VariableAllocationInfo Name="averageTesting1" Size="5864" Segment="Global" Offset="660" />
+  <VariableAllocationInfo Name="Configuration1.Resource1.DisplayInstance" Size="5216" Segment="Global" Offset="1396" />
+  <VariableAllocationInfo Name="Configuration1.Resource1.ExceptionInstance" Size="32" Segment="Global" Offset="2048" />
+  <VariableAllocationInfo Name="Configuration1.Resource1.MainInstance" Size="8" Segment="Global" Offset="2052" />
+  <VariableAllocationInfo Name="Configuration1.Resource1.UIInstance" Size="1160" Segment="Global" Offset="2056" />
+  <VariableAllocationInfo Name="Display" Size="17000" Segment="Global" Offset="2204" />
+  <VariableAllocationInfo Name="ID" Size="8" Segment="Input" Offset="44" />
+  <VariableAllocationInfo Name="NO" Size="8" Segment="Output" Offset="30" />
+  <VariableAllocationInfo Name="noConfig" Size="384" Segment="Memory" Offset="76" />
+  <VariableAllocationInfo Name="randomValues" Size="360" Segment="Global" Offset="4332" />
+  <VariableAllocationInfo Name="SevenSegments.ArrayLed" Size="144" Segment="Global" Offset="4377" />
+  <VariableAllocationInfo Name="SevenSegments.gui" Size="416" Segment="Global" Offset="4396" />
+  <VariableAllocationInfo Name="System.Alarm.alarm_data" Size="224" Segment="Global" Offset="4448" />
+  <VariableAllocationInfo Name="U" Size="352" Segment="Input" Offset="0" />
+  <VariableAllocationInfo Name="uConfig" Size="352" Segment="Memory" Offset="0" />
+  <VariableAllocationInfo Name="Uout" Size="176" Segment="Output" Offset="0" />
+  <VariableAllocationInfo Name="virtID" Size="8" Segment="Memory" Offset="126" />
+  <VariableAllocationInfo Name="virtU" Size="16" Segment="Memory" Offset="124" />
+  <VariableAllocationInfo Name="Y" Size="64" Segment="Output" Offset="22" />
+  <VariableAllocationInfo Name="yConfig" Size="256" Segment="Memory" Offset="44" />
+</ArrayOfVariableAllocationInfo>

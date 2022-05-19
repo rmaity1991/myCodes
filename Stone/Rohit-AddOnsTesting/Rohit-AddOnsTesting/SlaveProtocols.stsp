@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SlaveConfigurations version="1.3">
+  <GlobalSettings ModbusExceptionOnWrongAddress="false" />
+  <Configurations>
+    <Configuration Name="Display" Guid="6ea19889b30f4345ad8fda7a4e10137e">
+      <SlaveSettings COMPort="Serial0" Protocol="Modbus" ProtocolKind="Slave" Baudrate="57600" Bits="Bits_8" Parity="None" StopBits="One" IDEMode="ModbusShared" Zone="0" DeviceAddress="1" Timeout="2000" />
+      <Variables />
+    </Configuration>
+  </Configurations>
+</SlaveConfigurations>

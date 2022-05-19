@@ -8,7 +8,6 @@ class Address {
         this.state = state;
         this.country = country;
     }
-
 }
 
 class Emp {

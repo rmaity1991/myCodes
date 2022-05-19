@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SToneSolution name="Rohit-AddOnsTesting" version="1.0">
+  <Projects active="Rohit-AddOnsTesting">
+    <Project file="Rohit-AddOnsTesting\Rohit-AddOnsTesting.stprj" />
+  </Projects>
+  <Configurations active="Debug">
+    <Configuration name="Debug" batchbuild="False">
+      <Project name="Rohit-AddOnsTesting" build="true" configuration="Debug" />
+    </Configuration>
+    <Configuration name="Release" batchbuild="False">
+      <Project name="Rohit-AddOnsTesting" build="true" configuration="Release" />
+    </Configuration>
+  </Configurations>
+</SToneSolution>

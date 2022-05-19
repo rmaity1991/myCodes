@@ -1,0 +1,16 @@
+﻿	(******************************)
+	(*                            *)
+	(*     EXPORTED VARIABLES     *)
+	(*                            *)
+	(******************************)
+
+        VAR_GLOBAL
+	{G:"IO_Mapping"}
+compressorON AT %QX1.0 : BOOL;	{ DE:"DOL1 digital output" }
+defrostON AT %QX1.1 : BOOL;	{ DE:"DOL2 digital output" }
+fanON AT %QX1.2 : BOOL;	{ DE:"DOL3 digital output" }
+lightON AT %QX1.3 : BOOL;	{ DE:"DOL4 digital output" }
+doorOpen AT %QX1.4 : BOOL;	{ DE:"DOL5 digital output" }
+defrostHeaterON AT %QX1.5 : BOOL;	{ DE:"DOL6 digital output" }
+	END_VAR
+

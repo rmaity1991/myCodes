@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Manifest>
+  <Variables>
+    <Variable Name="In" Comment="Input value" AccessRights="Read" DataType="REAL" Modifier="Constant" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="Thrsh" Comment="Threshold" AccessRights="Read" DataType="REAL" Modifier="Constant" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="Reset" Comment="Reset the output" AccessRights="Read" DataType="BOOL" Modifier="Constant" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="Out" Comment="If In has changed more than Thrsh" AccessRights="Write" DataType="BOOL" Modifier="Constant" Kind="VarOutput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="InOld" Comment="" AccessRights="ReadWrite" DataType="REAL" Modifier="Constant" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+  </Variables>
+</Manifest>

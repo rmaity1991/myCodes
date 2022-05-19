@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Manifest>
+  <Variables>
+    <Variable Name="p" Comment="" AccessRights="ReadWrite" DataType="REAL" Modifier="NonRetain" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" />
+    <Variable Name="iGas" Comment="" AccessRights="ReadWrite" DataType="SINT" Modifier="NonRetain" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" />
+    <Variable Name="va_i" Comment="" AccessRights="ReadWrite" DataType="REAL" Modifier="NonRetain" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" />
+    <Variable Name="vb_i" Comment="" AccessRights="ReadWrite" DataType="REAL" Modifier="NonRetain" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" />
+    <Variable Name="vc_i" Comment="" AccessRights="ReadWrite" DataType="REAL" Modifier="NonRetain" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" />
+    <Variable Name="vd_i" Comment="" AccessRights="ReadWrite" DataType="REAL" Modifier="NonRetain" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" />
+    <Variable Name="ve_i" Comment="" AccessRights="ReadWrite" DataType="REAL" Modifier="NonRetain" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" />
+    <Variable Name="vf_i" Comment="" AccessRights="ReadWrite" DataType="REAL" Modifier="NonRetain" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" />
+    <Variable Name="T" Comment="" AccessRights="ReadWrite" DataType="REAL" Modifier="NonRetain" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" />
+    <Variable Name="TGas" Comment="Gas dew temperature in degrees (°C)" AccessRights="Read" DataType="REAL" Modifier="Constant" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" />
+    <Variable Name="Gas" Comment="Gas index" AccessRights="Read" DataType="INT" Modifier="Constant" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" />
+    <Variable Name="TempToPress_REAL" Comment="Gas pressure in barg" AccessRights="Write" DataType="REAL" Modifier="Constant" Kind="VarOutput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" />
+  </Variables>
+</Manifest>

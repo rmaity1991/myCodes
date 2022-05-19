@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlLanguage Key="EN" Priority="0">
+  <Sections>
+    <Section Name="SevenSegments">
+      <Items />
+    </Section>
+  </Sections>
+</XmlLanguage>

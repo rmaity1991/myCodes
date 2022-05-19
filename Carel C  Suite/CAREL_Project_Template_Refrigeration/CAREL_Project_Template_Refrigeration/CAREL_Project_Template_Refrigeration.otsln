@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# c.strategy Solution File, Format Version 11.00
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{A6F45E2C-46AC-4E2B-9F75-4E058226B5AB}") = "CAREL_Project_Template_Refrigeration", "CAREL_Project_Template_Refrigeration.acfproj", "{4AAA04EF-8B13-477B-9CA9-D3E1918404ED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Views", "Solution Views", "{955C83B2-5F6E-4182-8E13-F6721A00DF4D}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment.isadpl = Deployment.isadpl
+	EndProjectSection
+	ProjectSection(FolderGlobals) = preProject
+		DeploymentSolutionViews = True
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Online|Any CPU = Online|Any CPU
+		Simulation|Any CPU = Simulation|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4AAA04EF-8B13-477B-9CA9-D3E1918404ED}.Online|Any CPU.ActiveCfg = Online|Any CPU
+		{4AAA04EF-8B13-477B-9CA9-D3E1918404ED}.Online|Any CPU.Build.0 = Online|Any CPU
+		{4AAA04EF-8B13-477B-9CA9-D3E1918404ED}.Simulation|Any CPU.ActiveCfg = Simulation|Any CPU
+		{4AAA04EF-8B13-477B-9CA9-D3E1918404ED}.Simulation|Any CPU.Build.0 = Simulation|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

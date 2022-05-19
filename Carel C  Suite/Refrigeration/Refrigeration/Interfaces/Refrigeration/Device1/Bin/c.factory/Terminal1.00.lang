@@ -1,0 +1,10 @@
+[DEFAULT]
+ChillingSP
+DefrostSP
+Case Temp
+Defrost On
+Compressor On
+Door Open
+Light On
+Fan On
+[DEFAULT]

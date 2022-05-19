@@ -1,0 +1,621 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Worksheet Name="04_Settings" Version="1.0.0">
+  <Mask Name="EnRebootIPCfg" Type="Normal" X="0" Y="0" Color="211, 211, 211">
+    <Fields>
+      <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="IPCfgRebootDummy" Format="ib" Min="0" Max="1" />
+      <Field Type="Image" Name="Image_2" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+      <Field Type="Text" Name="Text" Row="0" Column="1" Content="NET Configuration" />
+      <Field Type="Text" Name="Text_2" Row="3" Column="0" Content="Would you like to" />
+      <Field Type="Text" Name="Text_3" Row="4" Column="0" Content="reboot to apply the" />
+      <Field Type="Text" Name="Text_4" Row="5" Column="0" Content="changes?" />
+      <Field Type="Variable" Name="Variable" Row="5" Column="19" Content="IPCfgMng.GenNetCfg.EnReboot" Class="IPCfg_EnReboot" Format="io1" Min="0" Max="1" SimulationValue="0" />
+    </Fields>
+    <KeyBindings>
+      <KeyBinding Key="ESC" BindOn="IPCFG_Reboot_ESC" />
+    </KeyBindings>
+  </Mask>
+  <Loop Name="DATETIME" X="0" Y="1">
+    <Mask Name="DateTimeChg" Type="Normal" X="0" Y="2" Color="LightCoral">
+      <Fields>
+        <Field Type="Text" Name="Text_1" Row="3" Column="16" Content="/" />
+        <Field Type="Text" Name="Text_5" Row="3" Column="19" Content="/" />
+        <Field Type="Variable" Name="Variable_9" Row="4" Column="17" Content="GeneralMng.MinuteIn" Class="EnDateChg" Format="io2z" Min="0" Max="59" />
+        <Field Type="Variable" Name="Variable_10" Row="4" Column="14" Content="GeneralMng.HourIn" Class="EnDateChg" Format="io2z" Min="0" Max="24" />
+        <Field Type="Text" Name="Text_6" Row="4" Column="16" Content=":" />
+        <Field Type="Text" Name="Text_7" Row="0" Column="1" Content="Date/Time change" />
+        <Field Type="Text" Name="Text_8" Row="4" Column="19" Content=":" />
+        <Field Type="Variable" Name="Variable_11" Row="4" Column="20" Content="GeneralMng.SecondIn" Class="EnDateChg" Format="io2z" Min="0" Max="59" />
+        <Field Type="Image" Name="Image_1" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Type="Text" Name="Text_2" Row="3" Column="0" Content="Date:" />
+        <Field Type="Text" Name="Text_3" Row="4" Column="0" Content="Hour:" />
+        <Field Type="Variable" Name="Variable_1" Row="0" Column="0" Content="dummy" Class="DummyService" Format="ib" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_2" Row="5" Column="12" Content="GeneralMng.DayOfWeek" Class="DayOfWeek" Format="o1" Min="0" Max="9" />
+        <Field Type="Text" Name="Text_4" Row="2" Column="0" Content="Format:" />
+        <Field Type="Variable" Name="Variable_3" Row="2" Column="14" Content="GeneralMng.DateFormat" Class="DateFormat" Format="io1" Min="0" Max="2" />
+        <Field Type="Text" Name="Text_9" Row="5" Column="0" Content="Day:" />
+        <Field Type="Variable" Name="Variable" Row="3" Column="14" Content="GeneralMng.DayIn" Min="1" Max="31" Class="EnDateDDMMYY" Format="io2z" />
+        <Field Type="Variable" Name="Variable_4" Row="3" Column="14" Content="GeneralMng.MonthIn" Min="1" Max="12" Class="EnDateMMDDYY" Format="io2z" />
+        <Field Type="Variable" Name="Variable_5" Row="3" Column="14" Content="GeneralMng.YearIn" Min="0" Max="99" Class="EnDateYYMMDD" Format="io2z" />
+        <Field Type="Variable" Name="Variable_6" Row="3" Column="17" Content="GeneralMng.MonthIn" Min="1" Max="12" Class="EnDateDDMMYY" Format="io2z" />
+        <Field Type="Variable" Name="Variable_7" Row="3" Column="17" Content="GeneralMng.DayIn" Min="1" Max="31" Class="EnDateMMDDYY" Format="io2z" />
+        <Field Type="Variable" Name="Variable_8" Row="3" Column="20" Content="GeneralMng.YearIn" Min="0" Max="99" Class="EnDateDDMMYY" Format="io2z" />
+        <Field Type="Variable" Name="Variable_12" Row="3" Column="20" Content="GeneralMng.YearIn" Min="0" Max="99" Class="EnDateMMDDYY" Format="io2z" />
+        <Field Type="Variable" Name="Variable_13" Row="3" Column="20" Content="GeneralMng.DayIn" Min="1" Max="31" Class="EnDateYYMMDD" Format="io2z" />
+        <Field Type="Variable" Name="Variable_14" Row="3" Column="17" Content="GeneralMng.MonthIn" Min="1" Max="12" Class="EnDateYYMMDD" Format="io2z" />
+      </Fields>
+      <KeyBindings>
+        <KeyBinding Key="DOWN" BindOn="Move_DOWN" />
+        <KeyBinding Key="UP" BindOn="Move_UP" />
+      </KeyBindings>
+    </Mask>
+    <Mask Name="TimeZone" Type="Normal" X="0" Y="3" Color="LightCoral">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="DummyService" Format="ib" Min="0" Max="1" />
+        <Field Type="Image" Name="Image_1" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Type="Text" Name="Text_2" Row="0" Column="1" Content="Timezone" />
+        <Field Type="Text" Name="Text_3" Row="1" Column="0" Content="Time zone:" />
+        <Field Type="Variable" Name="Variable" Row="2" Column="0" Content="GeneralMng.TZ_Name" Class="CL_STRING" Format="o1" Min="0" Max="9" />
+        <Field Type="Variable" Name="Variable_2" Row="2" Column="0" Content="GeneralMng.TZ_Idx" Min="1" Max="GeneralMng.TZ_IdxMax" Class="TZ_IdxChg" Format="i3" />
+      </Fields>
+      <KeyBindings>
+        <KeyBinding Key="DOWN" BindOn="Move_DOWN" />
+        <KeyBinding Key="UP" BindOn="Move_UP" />
+      </KeyBindings>
+      <ResourceUsedOnBool>
+        <Index Value="0" Content="NO" Type="Text" Font="SimSun" />
+        <Index Value="1" Content="YES" Type="Text" Font="SimSun" />
+      </ResourceUsedOnBool>
+    </Mask>
+  </Loop>
+  <Loop Name="NETWORK" X="2" Y="1">
+    <Mask Name="SerialPorts" Type="Normal" X="2" Y="2" Color="255, 155, 160">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Type="Image" Name="Image_1" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Type="Text" Name="Text_1" Row="0" Column="1" Content="BMS2" />
+        <Field Type="Text" Name="Text_2" Row="1" Column="0" Content="BMS2" />
+        <Field Type="Text" Name="Text_3" Row="2" Column="0" Content="Protocol:" />
+        <Field Type="Text" Name="Text_4" Row="4" Column="0" Content="Baudrate:" />
+        <Field Type="Text" Name="Text_5" Row="5" Column="0" Content="Stopbits:" />
+        <Field Type="Text" Name="Text_6" Row="6" Column="0" Content="Parity:" />
+        <Field Type="Text" Name="Text_7" Row="7" Column="0" Content="Address:" />
+        <Field Type="Variable" Name="Variable" Row="6" Column="18" Content="GeneralMng.PARITY" Class="Parity" Format="io4" Min="0" Max="2" />
+        <Field Type="Variable" Name="Variable_2" Row="4" Column="16" Content="GeneralMng.SPEED" Class="Baudrate" Format="io6" Min="0" Max="9" />
+        <Field Type="Variable" Name="Variable_3" Row="3" Column="3" Content="GeneralMng.ProtTyp_BMS2" Class="ProtTyp_BMS" Format="io3" Min="0" Max="2" />
+        <Field Type="Variable" Name="Variable_4" Row="7" Column="19" Content="GeneralMng.Address_BMS2" Class="CL_UINT" Format="io3" Min="0" Max="255" />
+        <Field Type="Variable" Name="Variable_5" Row="5" Column="21" Content="GeneralMng.STOP" Class="StopBit" Format="io1" Min="1" Max="2" />
+      </Fields>
+      <ResourceUsedOnBool>
+        <Index Value="0" Content="No" Type="Text" TextFactor="2" LimitText="false" Font="CAREL_TERM_STD" FontHeight="10" ProportionalCharWidth="true" />
+        <Index Value="1" Content="Yes" Type="Text" TextFactor="2" LimitText="false" Font="CAREL_TERM_STD" FontHeight="10" ProportionalCharWidth="true" />
+      </ResourceUsedOnBool>
+    </Mask>
+    <Mask Name="EnterIPCfg" Type="Normal" X="2" Y="3" Color="255, 155, 160">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="IPCfgMainDummy" Format="ib" Min="0" Max="1" />
+        <Field Type="Image" Name="Image_2" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Type="Text" Name="Text_2" Row="0" Column="1" Content="NET Configuration" />
+        <Field Type="Text" Name="Text" Row="3" Column="0" Content="Press &quot;Enter&quot; for" />
+        <Field Type="Text" Name="Text_3" Row="5" Column="0" Content="Network Configuration" />
+      </Fields>
+      <KeyBindings>
+        <KeyBinding Key="ENTER" BindOn="IPCFG_Dummy_ENTER" />
+      </KeyBindings>
+    </Mask>
+    <Mask Name="PGDX" Type="Normal" X="2" Y="4" Color="255, 155, 160">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Type="Image" Name="Image_1" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Type="Text" Name="Text_1" Row="0" Column="1" Content="pGDX" />
+        <Field Type="Text" Name="Text_2" Row="3" Column="0" Content="IP address:" />
+        <Field Type="Variable" Name="Variable" Row="5" Column="3" Content="GeneralMng.IPAddress_1" Min="0" Max="255" Class="CL_UDINT" Format="io3" />
+        <Field Type="Text" Name="Text" Row="5" Column="6" Content="." />
+        <Field Type="Variable" Name="Variable_2" Row="5" Column="7" Content="GeneralMng.IPAddress_2" Min="0" Max="255" Class="CL_UDINT" Format="io3" />
+        <Field Type="Text" Name="Text_3" Row="5" Column="10" Content="." />
+        <Field Type="Text" Name="Text_4" Row="5" Column="14" Content="." />
+        <Field Type="Variable" Name="Variable_3" Row="5" Column="11" Content="GeneralMng.IPAddress_3" Min="0" Max="255" Class="CL_UDINT" Format="io3" />
+        <Field Type="Variable" Name="Variable_4" Row="5" Column="15" Content="GeneralMng.IPAddress_4" Min="0" Max="255" Class="CL_UDINT" Format="io3" />
+      </Fields>
+    </Mask>
+    <Mask Name="RemoteOnOff" Type="Normal" X="2" Y="5" Color="255, 155, 160">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Type="Image" Name="Image_1" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Type="Text" Name="Text_1" Row="0" Column="1" Content="Remote on/off" />
+        <Field Type="Text" Name="Text_2" Row="4" Column="0" Content="Remote On/Off:" />
+        <Field Type="Variable" Name="Variable" Row="4" Column="18" Content="OnOffUnitMng.EnBmsOnOff" Min="0" Max="1" Class="BoolGenericClass" Format="iob" SimulationValue="" />
+      </Fields>
+      <ResourceUsedOnBool>
+        <Index Value="0" Content="No" Type="Text" TextFactor="2" LimitText="false" Font="CAREL_TERM_STD" FontHeight="10" ProportionalCharWidth="true" />
+        <Index Value="1" Content="Yes" Type="Text" TextFactor="2" LimitText="false" Font="CAREL_TERM_STD" FontHeight="10" ProportionalCharWidth="true" />
+      </ResourceUsedOnBool>
+    </Mask>
+  </Loop>
+  <Loop Name="PWDMNG" X="3" Y="1">
+    <Mask Name="PwdChg" Type="Normal" X="3" Y="2" Color="255, 190, 192">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Type="Image" Name="Image_1" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Type="Text" Name="Text_1" Row="0" Column="1" Content="Change Password" />
+        <Field Type="Image" Name="Image_2" Row="2" Column="0" Content="Key_36x16.bmp" />
+        <Field Type="Image" Name="Image_3" Row="7" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Type="Variable" Name="Variable_1" Row="2" Column="18" Content="PwdUser" Class="PwdChgU" Format="io4z" Min="0" Max="9999" />
+        <Field Type="Variable" Name="Variable_2" Row="3" Column="18" Content="PwdService" Class="PwdChgS" Format="io4z" Min="0" Max="9999" />
+        <Field Type="Variable" Name="Variable_3" Row="4" Column="18" Content="RESERVED1" Class="PwdChgM" Format="io4z" Min="0" Max="9999" />
+      </Fields>
+      <KeyBindings>
+        <KeyBinding Key="ENTER" BindOn="ChgPwd" />
+        <KeyBinding Key="DOWN" BindOn="DecrDig" />
+        <KeyBinding Key="UP" BindOn="IncrDig" />
+      </KeyBindings>
+    </Mask>
+  </Loop>
+  <Loop Name="INITIALIZATION" X="4" Y="1">
+    <Mask Name="AlrmInit" Type="Normal" X="4" Y="2" Color="255, 228, 225">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="DummyManuf" Format="ib" Min="0" Max="1" SimulationValue="" />
+        <Field Type="Image" Name="Image_1" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Type="Text" Name="Text_1" Row="3" Column="0" Content="Delete alarm logs?" />
+        <Field Type="Variable" Name="Variable_1" Row="4" Column="18" Content="AlrmLogDelete" Class="AlarmLogDelete" Format="iob" Min="0" Max="1" SimulationValue="" />
+        <Field Type="Text" Name="Text_2" Row="1" Column="0" Content="Alarm initialization" />
+        <Field Type="Text" Name="Text_3" Row="0" Column="1" Content="Initialization" />
+        <Field Type="Text" Name="Text_4" Row="5" Column="0" Content="Clear AutoReset " />
+        <Field Type="Text" Name="Text_5" Row="6" Column="0" Content="counters?" />
+        <Field Type="Variable" Name="Variable_2" Row="6" Column="18" Content="ClrAutoResCounters" Class="ClrAutoResCounters" Format="iob" Min="0" Max="1" SimulationValue="" />
+        <Field Type="Text" Name="Text_6" Row="4" Column="0" Content=" " />
+        <Field Type="Text" Name="Text_7" Row="7" Column="0" Content="Enable buzzer?" />
+        <Field Type="Variable" Name="Variable_3" Row="7" Column="18" Content="GeneralMng.RESERVED3" Class="BoolGenericClass" Format="iob" Min="0" Max="1" />
+      </Fields>
+      <KeyBindings />
+    </Mask>
+    <Mask Name="Default" Type="Normal" X="4" Y="3" Color="MistyRose">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="DummyManufUnitOff" Format="ib" Min="0" Max="1" />
+        <Field Type="Image" Name="Image_1" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Type="Text" Name="Text_1" Row="0" Column="1" Content="Initialization" />
+        <Field Type="Text" Name="Text_2" Row="1" Column="0" Content="DEFAULT INSTALLATION" />
+        <Field Type="Text" Name="Text" Row="3" Column="0" Content="Wipe retain mem.:" />
+        <Field Type="Text" Name="Text_3" Row="5" Column="0" Content="Wipe NVRAM mem.:" />
+        <Field Type="Text" Name="Text_4" Row="7" Column="0" Content="Wipe both mem.:" />
+        <Field Type="Variable" Name="Variable" Row="3" Column="18" Content="En_WipeRetain" Class="WipeMem" Format="iob" Min="0" Max="1" SimulationValue="" />
+        <Field Type="Variable" Name="Variable_2" Row="5" Column="18" Content="En_WipeNVRAM" Class="WipeMem" Format="iob" Min="0" Max="1" SimulationValue="" />
+        <Field Type="Variable" Name="Variable_3" Row="7" Column="18" Content="En_WipeAll" Class="WipeMem" Format="iob" Min="0" Max="1" />
+      </Fields>
+      <KeyBindings />
+    </Mask>
+  </Loop>
+  <Loop Name="UOM" X="1" Y="1">
+    <Mask Name="UoM_UI" Type="Normal" X="1" Y="2" Color="255, 140, 160" ZoomCode="4">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Type="Text" Name="Text_2" Row="0" Column="0" Content="Date/Time change" />
+        <Field Type="Image" Name="Image_2" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Type="Variable" Name="Variable" Row="3" Column="0" Content="STD_UOM_ZONE_UI" Min="0" Max="6" Class="STD_UOM_ZONE_UI" Format="io1" />
+      </Fields>
+    </Mask>
+    <Mask Name="UoM_WEB" Type="Normal" X="1" Y="3" Color="255, 140, 160" ZoomCode="4">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Type="Text" Name="Text_2" Row="0" Column="1" Content="Date/Time change" />
+        <Field Type="Image" Name="Image_2" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Type="Variable" Name="Variable_2" Row="3" Column="0" Content="STD_UOM_ZONE_WEB" Min="0" Max="6" Class="STD_UOM_ZONE_WEB" Format="io1" />
+      </Fields>
+    </Mask>
+  </Loop>
+  <Mask Name="RebootingIPCfg" Type="Normal" X="2" Y="0" Color="211, 211, 211">
+    <Fields>
+      <Field Type="Text" Name="Text" Row="2" Column="6" Content="Rebooting" />
+      <Field Type="Text" Name="Text_2" Row="5" Column="4" Content="Please wait..." />
+    </Fields>
+    <KeyBindings>
+      <KeyBinding Key="ALARM" BindOn="DoNothing" />
+      <KeyBinding Key="DOWN" BindOn="DoNothing" />
+      <KeyBinding Key="ENTER" BindOn="DoNothing" />
+      <KeyBinding Key="ESC" BindOn="DoNothing" />
+      <KeyBinding Key="PRG" BindOn="DoNothing" />
+      <KeyBinding Key="UP" BindOn="DoNothing" />
+    </KeyBindings>
+  </Mask>
+  <Mask Name="ErrorIPCfg" Type="Normal" X="1" Y="0" Color="211, 211, 211">
+    <Fields>
+      <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="IPCfgErrDummy" Format="ib" Min="0" Max="1" />
+      <Field Type="Text" Name="Text_2" Row="0" Column="1" Content="NET Configuration" />
+      <Field Type="Image" Name="Image_2" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+      <Field Type="Variable" Name="Variable_2" Row="5" Column="0" Content="IPCfgMng.GenNetCfg.SysErr" Class="SystemErrorsMsg" Format="o2" Min="0" Max="99" SimulationValue="9" />
+      <Field Type="Text" Name="Text" Row="2" Column="0" Content="ERROR OCCURRED" />
+    </Fields>
+  </Mask>
+  <Mask Name="SettingsIPCfg" Type="Normal" X="3" Y="0" Color="211, 211, 211">
+    <Fields>
+      <Field Type="Text" Name="Text_3" Row="0" Column="1" Content="NET Settings" />
+      <Field Type="Image" Name="Image_2" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+      <Field Name="Variable_2" Type="Variable" Content="dummy" Column="0" Row="0" Class="IPCfgDummySettings" Format="ib" Min="0" Max="1" />
+      <Field Type="Text" Name="Text" Row="2" Column="0" Content="IP reading:" />
+      <Field Type="Text" Name="Text_2" Row="1" Column="0" Content="Disable continuous" />
+      <Field Type="Text" Name="Text_4" Row="4" Column="0" Content="Read IP every:" />
+      <Field Type="Variable" Name="Variable" Row="2" Column="19" Content="IPCfgMng.GenNetCfg.DisableConstantReading" Min="0" Max="1" Class="IPCfg_EnContinuousReading" Format="iob" SimulationValue="0" />
+      <Field Type="Variable" Name="Variable_3" Row="4" Column="17" Content="IPCfgMng.GenNetCfg.IntervalReadIP_msk" Class="CL_UDINT" Format="io2" Min="5" Max="60" SimulationValue="15" />
+      <Field Type="Text" Name="Text_5" Row="4" Column="19" Content="sec" />
+      <Field Type="Variable" Name="Variable_4" Row="6" Column="15" Content="IPCfgMng.GenNetCfg.DisableIP_msk" Class="IPCfgShowTimeout" Format="io4" Min="5" Max="1440" SimulationValue="5" />
+    </Fields>
+    <KeyBindings>
+      <KeyBinding Key="ESC" BindOn="IPCFG_Settings_ESC" />
+      <KeyBinding Key="PRG" BindOn="DoNothing" />
+      <KeyBinding Key="ALARM" BindOn="DoNothing" />
+    </KeyBindings>
+    <ResourceUsedOnBool>
+      <Index Value="0" Content="Yes" Type="Text" TextFactor="2" LimitText="false" Font="CAREL_TERM_INT" FontHeight="9" ProportionalCharWidth="true" />
+      <Index Value="1" Content="No" Type="Text" TextFactor="2" LimitText="false" Font="CAREL_TERM_INT" FontHeight="9" ProportionalCharWidth="true" />
+    </ResourceUsedOnBool>
+  </Mask>
+  <Loop Name="IPCFG_LOOP" X="5" Y="1">
+    <Mask Name="IPCfg_1" Type="Normal" X="5" Y="2" Color="224, 255, 255">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="IPCfgConfigDummy" Format="ib" Min="0" Max="1" />
+        <Field Type="Image" Name="Image_2" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Type="Text" Name="Text_2" Row="0" Column="1" Content="NET Configuration" />
+        <Field Type="Text" Name="Text_3" Row="0" Column="19" Content="1/" />
+        <Field Type="Text" Name="Text" Row="1" Column="0" Content="Enable:" />
+        <Field Type="Variable" Name="Variable_14" Row="0" Column="21" Content="IPCfgMng.GenNetCfg.PgLimit" Class="CL_SINT" Format="o1" Min="0" Max="9" />
+        <Field Type="Variable" Name="Variable_13" Row="1" Column="8" Content="IPCfgMng.IPV4Cfg.Status" Class="IPCfg_v4_Status" Format="io1" Min="0" Max="2" SimulationValue="" />
+        <Field Type="Variable" Name="Variable_15" Row="3" Column="0" Content="IPCfgMng.IPV4Cfg.EnAddr" Min="0" Max="1" Class="IPCfg_v4_IP" Format="ob" />
+        <Field Type="Variable" Name="Variable_16" Row="4" Column="0" Content="IPCfgMng.IPV4Cfg.EnAddr" Min="0" Max="1" Class="IPCfg_v4_NK" Format="ob" />
+        <Field Type="Variable" Name="Variable_17" Row="5" Column="0" Content="IPCfgMng.IPV4Cfg.EnAddr" Min="0" Max="1" Class="IPCfg_v4_GW" Format="ob" />
+        <Field Type="Variable" Name="Variable_18" Row="6" Column="0" Content="IPCfgMng.IPV4Cfg.EnAddr" Min="0" Max="1" Class="IPCfg_v4_DNS" Format="ob" />
+        <Field Type="Variable" Name="Variable_2" Row="4" Column="11" Content="IPCfgMng.IPV4Cfg.MskNK[2]" Class="IPCfg_v4_EnIO" Format="io3" Min="0" Max="255" />
+        <Field Type="Variable" Name="Variable_3" Row="4" Column="11" Content="IPCfgMng.IPV4Cfg.MskNK[2]" Class="IPCfg_v4_EnO" Format="o3" Min="0" Max="255" />
+        <Field Type="Variable" Name="Variable_4" Row="4" Column="14" Content="IPCfgMng.IPV4Cfg.EnAddr" Min="0" Max="1" Class="IPCfg_ShowPeriod" Format="ob" />
+        <Field Type="Variable" Name="Variable_5" Row="5" Column="14" Content="IPCfgMng.IPV4Cfg.EnAddr" Min="0" Max="1" Class="IPCfg_ShowPeriod" Format="ob" />
+        <Field Type="Variable" Name="Variable_6" Row="6" Column="14" Content="IPCfgMng.IPV4Cfg.EnAddr" Min="0" Max="1" Class="IPCfg_ShowPeriod" Format="ob" />
+        <Field Type="Variable" Name="Variable_7" Row="5" Column="11" Content="IPCfgMng.IPV4Cfg.MskGW[2]" Class="IPCfg_v4_EnIO" Format="io3" Min="0" Max="255" />
+        <Field Type="Variable" Name="Variable_8" Row="6" Column="11" Content="IPCfgMng.IPV4Cfg.MskDNS[2]" Class="IPCfg_v4_EnIO" Format="io3" Min="0" Max="255" />
+        <Field Type="Variable" Name="Variable_9" Row="4" Column="15" Content="IPCfgMng.IPV4Cfg.MskNK[3]" Class="IPCfg_v4_EnIO" Format="io3" Min="0" Max="255" />
+        <Field Type="Variable" Name="Variable_10" Row="5" Column="15" Content="IPCfgMng.IPV4Cfg.MskGW[3]" Class="IPCfg_v4_EnIO" Format="io3" Min="0" Max="255" />
+        <Field Type="Variable" Name="Variable_11" Row="6" Column="15" Content="IPCfgMng.IPV4Cfg.MskDNS[3]" Class="IPCfg_v4_EnIO" Format="io3" Min="0" Max="255" />
+        <Field Type="Variable" Name="Variable_12" Row="6" Column="11" Content="IPCfgMng.IPV4Cfg.MskDNS[2]" Class="IPCfg_v4_EnO" Format="o3" Min="0" Max="255" />
+        <Field Type="Variable" Name="Variable_19" Row="5" Column="11" Content="IPCfgMng.IPV4Cfg.MskGW[2]" Class="IPCfg_v4_EnO" Format="o3" Min="0" Max="255" />
+        <Field Type="Variable" Name="Variable_20" Row="6" Column="15" Content="IPCfgMng.IPV4Cfg.MskDNS[3]" Class="IPCfg_v4_EnO" Format="o3" Min="0" Max="255" />
+        <Field Type="Variable" Name="Variable_21" Row="4" Column="15" Content="IPCfgMng.IPV4Cfg.MskNK[3]" Class="IPCfg_v4_EnO" Format="o3" Min="0" Max="255" />
+        <Field Type="Variable" Name="Variable_22" Row="5" Column="15" Content="IPCfgMng.IPV4Cfg.MskGW[3]" Class="IPCfg_v4_EnO" Format="o3" Min="0" Max="255" />
+        <Field Type="Variable" Name="Variable_23" Row="4" Column="18" Content="IPCfgMng.IPV4Cfg.EnAddr" Min="0" Max="1" Class="IPCfg_ShowPeriod" Format="ob" />
+        <Field Type="Variable" Name="Variable_24" Row="5" Column="18" Content="IPCfgMng.IPV4Cfg.EnAddr" Min="0" Max="1" Class="IPCfg_ShowPeriod" Format="ob" />
+        <Field Type="Variable" Name="Variable_25" Row="6" Column="18" Content="IPCfgMng.IPV4Cfg.EnAddr" Min="0" Max="1" Class="IPCfg_ShowPeriod" Format="ob" />
+        <Field Type="Variable" Name="Variable_26" Row="4" Column="19" Content="IPCfgMng.IPV4Cfg.MskNK[4]" Class="IPCfg_v4_EnIO" Format="io3" Min="0" Max="255" />
+        <Field Type="Variable" Name="Variable_27" Row="5" Column="19" Content="IPCfgMng.IPV4Cfg.MskGW[4]" Class="IPCfg_v4_EnIO" Format="io3" Min="0" Max="255" />
+        <Field Type="Variable" Name="Variable_28" Row="6" Column="19" Content="IPCfgMng.IPV4Cfg.MskDNS[4]" Class="IPCfg_v4_EnIO" Format="io3" Min="0" Max="255" />
+        <Field Type="Variable" Name="Variable_29" Row="4" Column="19" Content="IPCfgMng.IPV4Cfg.MskNK[4]" Class="IPCfg_v4_EnO" Format="o3" Min="0" Max="255" />
+        <Field Type="Variable" Name="Variable_30" Row="5" Column="19" Content="IPCfgMng.IPV4Cfg.MskGW[4]" Class="IPCfg_v4_EnO" Format="o3" Min="0" Max="255" />
+        <Field Type="Variable" Name="Variable_31" Row="6" Column="19" Content="IPCfgMng.IPV4Cfg.MskDNS[4]" Class="IPCfg_v4_EnO" Format="o3" Min="0" Max="255" />
+        <Field Type="Variable" Name="Variable_32" Row="3" Column="7" Content="IPCfgMng.IPV4Cfg.MskIP[1]" Class="IPCfg_v4_EnIO" Format="io3" Min="0" Max="255" />
+        <Field Type="Variable" Name="Variable_33" Row="3" Column="7" Content="IPCfgMng.IPV4Cfg.MskIP[1]" Class="IPCfg_v4_EnO" Format="o3" Min="0" Max="255" />
+        <Field Type="Variable" Name="Variable_34" Row="4" Column="7" Content="IPCfgMng.IPV4Cfg.MskNK[1]" Class="IPCfg_v4_EnIO" Format="io3" Min="0" Max="255" />
+        <Field Type="Variable" Name="Variable_35" Row="4" Column="10" Content="IPCfgMng.IPV4Cfg.EnAddr" Min="0" Max="1" Class="IPCfg_ShowPeriod" Format="ob" />
+        <Field Type="Variable" Name="Variable_36" Row="3" Column="10" Content="IPCfgMng.IPV4Cfg.EnAddr" Min="0" Max="1" Class="IPCfg_ShowPeriod" Format="ob" />
+        <Field Type="Variable" Name="Variable_37" Row="3" Column="11" Content="IPCfgMng.IPV4Cfg.MskIP[2]" Class="IPCfg_v4_EnIO" Format="io3" Min="0" Max="255" />
+        <Field Type="Variable" Name="Variable_38" Row="4" Column="7" Content="IPCfgMng.IPV4Cfg.MskNK[1]" Class="IPCfg_v4_EnO" Format="o3" Min="0" Max="255" />
+        <Field Type="Variable" Name="Variable_39" Row="3" Column="11" Content="IPCfgMng.IPV4Cfg.MskIP[2]" Class="IPCfg_v4_EnO" Format="o3" Min="0" Max="255" />
+        <Field Type="Variable" Name="Variable_40" Row="5" Column="10" Content="IPCfgMng.IPV4Cfg.EnAddr" Min="0" Max="1" Class="IPCfg_ShowPeriod" Format="ob" />
+        <Field Type="Variable" Name="Variable_41" Row="6" Column="10" Content="IPCfgMng.IPV4Cfg.EnAddr" Min="0" Max="1" Class="IPCfg_ShowPeriod" Format="ob" />
+        <Field Type="Variable" Name="Variable_42" Row="5" Column="7" Content="IPCfgMng.IPV4Cfg.MskGW[1]" Class="IPCfg_v4_EnIO" Format="io3" Min="0" Max="255" />
+        <Field Type="Variable" Name="Variable_43" Row="6" Column="7" Content="IPCfgMng.IPV4Cfg.MskDNS[1]" Class="IPCfg_v4_EnIO" Format="io3" Min="0" Max="255" />
+        <Field Type="Variable" Name="Variable_44" Row="3" Column="14" Content="IPCfgMng.IPV4Cfg.EnAddr" Min="0" Max="1" Class="IPCfg_ShowPeriod" Format="ob" />
+        <Field Type="Variable" Name="Variable_45" Row="3" Column="15" Content="IPCfgMng.IPV4Cfg.MskIP[3]" Class="IPCfg_v4_EnIO" Format="io3" Min="0" Max="255" />
+        <Field Type="Variable" Name="Variable_46" Row="5" Column="7" Content="IPCfgMng.IPV4Cfg.MskGW[1]" Class="IPCfg_v4_EnO" Format="o3" Min="0" Max="255" />
+        <Field Type="Variable" Name="Variable_47" Row="6" Column="7" Content="IPCfgMng.IPV4Cfg.MskDNS[1]" Class="IPCfg_v4_EnO" Format="o3" Min="0" Max="255" />
+        <Field Type="Variable" Name="Variable_48" Row="3" Column="15" Content="IPCfgMng.IPV4Cfg.MskIP[3]" Class="IPCfg_v4_EnO" Format="o3" Min="0" Max="255" />
+        <Field Type="Variable" Name="Variable_49" Row="3" Column="18" Content="IPCfgMng.IPV4Cfg.EnAddr" Min="0" Max="1" Class="IPCfg_ShowPeriod" Format="ob" />
+        <Field Type="Variable" Name="Variable_50" Row="3" Column="19" Content="IPCfgMng.IPV4Cfg.MskIP[4]" Class="IPCfg_v4_EnIO" Format="io3" Min="0" Max="255" />
+        <Field Type="Variable" Name="Variable_51" Row="3" Column="19" Content="IPCfgMng.IPV4Cfg.MskIP[4]" Class="IPCfg_v4_EnO" Format="o3" Min="0" Max="255" />
+      </Fields>
+      <KeyBindings>
+        <KeyBinding Key="ESC" BindOn="IPCFG_ESC" />
+        <KeyBinding Key="PRG" BindOn="IPCFG_Dummy_PRG" />
+      </KeyBindings>
+    </Mask>
+    <Mask Name="IPCfg_2" Type="Normal" X="5" Y="3" Color="224, 255, 255">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="IPCfgConfigDummy" Format="ib" Min="0" Max="1" />
+        <Field Type="Image" Name="Image_2" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Type="Text" Name="Text_2" Row="0" Column="1" Content="NET Configuration" />
+        <Field Type="Text" Name="Text_3" Row="0" Column="19" Content="2/4" />
+        <Field Type="Text" Name="Text_4" Row="1" Column="0" Content="Enable:" />
+        <Field Type="Variable" Name="Variable_2" Row="1" Column="8" Content="IPCfgMng.IPV6Cfg.Status" Class="IPCfg_v6_Status" Format="io1" Min="0" Max="2" SimulationValue="" />
+        <Field Type="Variable" Name="Variable_3" Row="5" Column="0" Content="IPCfgMng.IPV6Cfg.EnAddr" Min="0" Max="1" Class="IPCfg_v6_PA" Format="ob" />
+        <Field Type="Variable" Name="Variable_4" Row="2" Column="0" Content="IPCfgMng.IPV6Cfg.EnAddr" Min="0" Max="1" Class="IPCfg_v6_LL" Format="ob" />
+        <Field Type="Variable" Name="Variable_16" Row="7" Column="1" Content="IPCfgMng.IPV6Cfg.MskPA[17]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_20" Row="7" Column="2" Content="IPCfgMng.IPV6Cfg.MskPA[18]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_21" Row="6" Column="1" Content="IPCfgMng.IPV6Cfg.MskPA[1]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_22" Row="6" Column="2" Content="IPCfgMng.IPV6Cfg.MskPA[2]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_47" Row="6" Column="3" Content="IPCfgMng.IPV6Cfg.MskPA[3]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_48" Row="6" Column="4" Content="IPCfgMng.IPV6Cfg.MskPA[4]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_49" Row="7" Column="3" Content="IPCfgMng.IPV6Cfg.MskPA[19]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_50" Row="7" Column="4" Content="IPCfgMng.IPV6Cfg.MskPA[20]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_51" Row="6" Column="6" Content="IPCfgMng.IPV6Cfg.MskPA[5]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_52" Row="6" Column="7" Content="IPCfgMng.IPV6Cfg.MskPA[6]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_53" Row="6" Column="8" Content="IPCfgMng.IPV6Cfg.MskPA[7]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_54" Row="7" Column="6" Content="IPCfgMng.IPV6Cfg.MskPA[21]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_55" Row="7" Column="7" Content="IPCfgMng.IPV6Cfg.MskPA[22]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_56" Row="7" Column="8" Content="IPCfgMng.IPV6Cfg.MskPA[23]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_57" Row="6" Column="9" Content="IPCfgMng.IPV6Cfg.MskPA[8]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_58" Row="7" Column="9" Content="IPCfgMng.IPV6Cfg.MskPA[24]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_59" Row="6" Column="11" Content="IPCfgMng.IPV6Cfg.MskPA[9]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_60" Row="6" Column="12" Content="IPCfgMng.IPV6Cfg.MskPA[10]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_61" Row="7" Column="12" Content="IPCfgMng.IPV6Cfg.MskPA[26]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_62" Row="7" Column="11" Content="IPCfgMng.IPV6Cfg.MskPA[25]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_63" Row="6" Column="13" Content="IPCfgMng.IPV6Cfg.MskPA[11]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_64" Row="6" Column="14" Content="IPCfgMng.IPV6Cfg.MskPA[12]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_65" Row="7" Column="13" Content="IPCfgMng.IPV6Cfg.MskPA[27]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_66" Row="7" Column="14" Content="IPCfgMng.IPV6Cfg.MskPA[28]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_67" Row="6" Column="16" Content="IPCfgMng.IPV6Cfg.MskPA[13]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_68" Row="6" Column="17" Content="IPCfgMng.IPV6Cfg.MskPA[14]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_69" Row="7" Column="17" Content="IPCfgMng.IPV6Cfg.MskPA[30]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_70" Row="7" Column="16" Content="IPCfgMng.IPV6Cfg.MskPA[29]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_71" Row="6" Column="18" Content="IPCfgMng.IPV6Cfg.MskPA[16]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_72" Row="6" Column="19" Content="IPCfgMng.IPV6Cfg.MskPA[15]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_73" Row="7" Column="18" Content="IPCfgMng.IPV6Cfg.MskPA[32]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_74" Row="7" Column="19" Content="IPCfgMng.IPV6Cfg.MskPA[31]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_75" Row="7" Column="1" Content="IPCfgMng.IPV6Cfg.MskPA[17]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_76" Row="7" Column="2" Content="IPCfgMng.IPV6Cfg.MskPA[18]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_77" Row="7" Column="3" Content="IPCfgMng.IPV6Cfg.MskPA[19]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_78" Row="7" Column="4" Content="IPCfgMng.IPV6Cfg.MskPA[20]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_79" Row="7" Column="6" Content="IPCfgMng.IPV6Cfg.MskPA[21]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_80" Row="7" Column="7" Content="IPCfgMng.IPV6Cfg.MskPA[22]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_81" Row="7" Column="8" Content="IPCfgMng.IPV6Cfg.MskPA[23]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_82" Row="7" Column="9" Content="IPCfgMng.IPV6Cfg.MskPA[24]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_83" Row="7" Column="11" Content="IPCfgMng.IPV6Cfg.MskPA[25]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_84" Row="6" Column="1" Content="IPCfgMng.IPV6Cfg.MskPA[1]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_85" Row="6" Column="2" Content="IPCfgMng.IPV6Cfg.MskPA[2]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_86" Row="6" Column="3" Content="IPCfgMng.IPV6Cfg.MskPA[3]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_87" Row="6" Column="4" Content="IPCfgMng.IPV6Cfg.MskPA[4]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_88" Row="6" Column="6" Content="IPCfgMng.IPV6Cfg.MskPA[5]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_89" Row="6" Column="7" Content="IPCfgMng.IPV6Cfg.MskPA[6]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_90" Row="6" Column="8" Content="IPCfgMng.IPV6Cfg.MskPA[7]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_91" Row="6" Column="9" Content="IPCfgMng.IPV6Cfg.MskPA[8]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_92" Row="6" Column="11" Content="IPCfgMng.IPV6Cfg.MskPA[9]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_93" Row="6" Column="12" Content="IPCfgMng.IPV6Cfg.MskPA[10]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_94" Row="6" Column="13" Content="IPCfgMng.IPV6Cfg.MskPA[11]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_95" Row="6" Column="14" Content="IPCfgMng.IPV6Cfg.MskPA[12]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_96" Row="6" Column="16" Content="IPCfgMng.IPV6Cfg.MskPA[13]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_97" Row="6" Column="18" Content="IPCfgMng.IPV6Cfg.MskPA[16]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_98" Row="6" Column="17" Content="IPCfgMng.IPV6Cfg.MskPA[14]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_99" Row="6" Column="19" Content="IPCfgMng.IPV6Cfg.MskPA[15]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_100" Row="7" Column="12" Content="IPCfgMng.IPV6Cfg.MskPA[26]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_101" Row="7" Column="13" Content="IPCfgMng.IPV6Cfg.MskPA[27]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_102" Row="7" Column="14" Content="IPCfgMng.IPV6Cfg.MskPA[28]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_103" Row="7" Column="18" Content="IPCfgMng.IPV6Cfg.MskPA[32]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_104" Row="7" Column="17" Content="IPCfgMng.IPV6Cfg.MskPA[30]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_105" Row="7" Column="16" Content="IPCfgMng.IPV6Cfg.MskPA[29]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_106" Row="7" Column="19" Content="IPCfgMng.IPV6Cfg.MskPA[31]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_114" Row="6" Column="5" Content="IPCfgMng.IPV6Cfg.EnAddr" Min="0" Max="1" Class="IPCfg_ShowColon" Format="ob" />
+        <Field Type="Variable" Name="Variable_115" Row="7" Column="5" Content="IPCfgMng.IPV6Cfg.EnAddr" Min="0" Max="1" Class="IPCfg_ShowColon" Format="ob" />
+        <Field Type="Variable" Name="Variable_116" Row="6" Column="10" Content="IPCfgMng.IPV6Cfg.EnAddr" Min="0" Max="1" Class="IPCfg_ShowColon" Format="ob" />
+        <Field Type="Variable" Name="Variable_117" Row="7" Column="10" Content="IPCfgMng.IPV6Cfg.EnAddr" Min="0" Max="1" Class="IPCfg_ShowColon" Format="ob" />
+        <Field Type="Variable" Name="Variable_118" Row="6" Column="15" Content="IPCfgMng.IPV6Cfg.EnAddr" Min="0" Max="1" Class="IPCfg_ShowColon" Format="ob" />
+        <Field Type="Variable" Name="Variable_119" Row="7" Column="15" Content="IPCfgMng.IPV6Cfg.EnAddr" Min="0" Max="1" Class="IPCfg_ShowColon" Format="ob" />
+        <Field Type="Variable" Name="Variable_120" Row="6" Column="20" Content="IPCfgMng.IPV6Cfg.EnAddr" Min="0" Max="1" Class="IPCfg_ShowColon" Format="ob" />
+        <Field Type="Variable" Name="Variable_5" Row="4" Column="1" Content="IPCfgMng.IPV6Cfg.MskLL[17]" Class="IPCfg_v6_EnLL" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_6" Row="4" Column="2" Content="IPCfgMng.IPV6Cfg.MskLL[18]" Class="IPCfg_v6_EnLL" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_7" Row="4" Column="3" Content="IPCfgMng.IPV6Cfg.MskLL[19]" Class="IPCfg_v6_EnLL" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_8" Row="3" Column="1" Content="IPCfgMng.IPV6Cfg.MskLL[1]" Class="IPCfg_v6_EnLL" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_9" Row="3" Column="2" Content="IPCfgMng.IPV6Cfg.MskLL[2]" Class="IPCfg_v6_EnLL" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_10" Row="3" Column="3" Content="IPCfgMng.IPV6Cfg.MskLL[3]" Class="IPCfg_v6_EnLL" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_11" Row="3" Column="4" Content="IPCfgMng.IPV6Cfg.MskLL[4]" Class="IPCfg_v6_EnLL" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_12" Row="3" Column="6" Content="IPCfgMng.IPV6Cfg.MskLL[5]" Class="IPCfg_v6_EnLL" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_13" Row="3" Column="5" Content="IPCfgMng.IPV6Cfg.EnAddr" Min="0" Max="1" Class="IPCfg_ShowColon" Format="ob" />
+        <Field Type="Variable" Name="Variable_14" Row="4" Column="4" Content="IPCfgMng.IPV6Cfg.MskLL[20]" Class="IPCfg_v6_EnLL" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_15" Row="4" Column="6" Content="IPCfgMng.IPV6Cfg.MskLL[21]" Class="IPCfg_v6_EnLL" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_17" Row="4" Column="5" Content="IPCfgMng.IPV6Cfg.EnAddr" Min="0" Max="1" Class="IPCfg_ShowColon" Format="ob" />
+        <Field Type="Variable" Name="Variable_18" Row="3" Column="7" Content="IPCfgMng.IPV6Cfg.MskLL[6]" Class="IPCfg_v6_EnLL" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_19" Row="3" Column="8" Content="IPCfgMng.IPV6Cfg.MskLL[7]" Class="IPCfg_v6_EnLL" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_23" Row="3" Column="9" Content="IPCfgMng.IPV6Cfg.MskLL[8]" Class="IPCfg_v6_EnLL" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_24" Row="4" Column="7" Content="IPCfgMng.IPV6Cfg.MskLL[22]" Class="IPCfg_v6_EnLL" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_25" Row="4" Column="8" Content="IPCfgMng.IPV6Cfg.MskLL[23]" Class="IPCfg_v6_EnLL" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_26" Row="4" Column="9" Content="IPCfgMng.IPV6Cfg.MskLL[24]" Class="IPCfg_v6_EnLL" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_27" Row="3" Column="11" Content="IPCfgMng.IPV6Cfg.MskLL[9]" Class="IPCfg_v6_EnLL" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_28" Row="3" Column="10" Content="IPCfgMng.IPV6Cfg.EnAddr" Min="0" Max="1" Class="IPCfg_ShowColon" Format="ob" />
+        <Field Type="Variable" Name="Variable_29" Row="3" Column="12" Content="IPCfgMng.IPV6Cfg.MskLL[10]" Class="IPCfg_v6_EnLL" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_30" Row="3" Column="13" Content="IPCfgMng.IPV6Cfg.MskLL[11]" Class="IPCfg_v6_EnLL" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_31" Row="3" Column="14" Content="IPCfgMng.IPV6Cfg.MskLL[12]" Class="IPCfg_v6_EnLL" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_32" Row="4" Column="12" Content="IPCfgMng.IPV6Cfg.MskLL[26]" Class="IPCfg_v6_EnLL" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_33" Row="4" Column="11" Content="IPCfgMng.IPV6Cfg.MskLL[25]" Class="IPCfg_v6_EnLL" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_34" Row="4" Column="13" Content="IPCfgMng.IPV6Cfg.MskLL[27]" Class="IPCfg_v6_EnLL" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_35" Row="4" Column="14" Content="IPCfgMng.IPV6Cfg.MskLL[28]" Class="IPCfg_v6_EnLL" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_36" Row="4" Column="10" Content="IPCfgMng.IPV6Cfg.EnAddr" Min="0" Max="1" Class="IPCfg_ShowColon" Format="ob" />
+        <Field Type="Variable" Name="Variable_37" Row="3" Column="16" Content="IPCfgMng.IPV6Cfg.MskLL[13]" Class="IPCfg_v6_EnLL" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_38" Row="3" Column="15" Content="IPCfgMng.IPV6Cfg.EnAddr" Min="0" Max="1" Class="IPCfg_ShowColon" Format="ob" />
+        <Field Type="Variable" Name="Variable_39" Row="3" Column="17" Content="IPCfgMng.IPV6Cfg.MskLL[14]" Class="IPCfg_v6_EnLL" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_40" Row="4" Column="17" Content="IPCfgMng.IPV6Cfg.MskLL[30]" Class="IPCfg_v6_EnLL" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_41" Row="4" Column="16" Content="IPCfgMng.IPV6Cfg.MskLL[29]" Class="IPCfg_v6_EnLL" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_42" Row="4" Column="15" Content="IPCfgMng.IPV6Cfg.EnAddr" Min="0" Max="1" Class="IPCfg_ShowColon" Format="ob" />
+        <Field Type="Variable" Name="Variable_43" Row="3" Column="18" Content="IPCfgMng.IPV6Cfg.MskLL[16]" Class="IPCfg_v6_EnLL" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_44" Row="4" Column="18" Content="IPCfgMng.IPV6Cfg.MskLL[32]" Class="IPCfg_v6_EnLL" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_45" Row="3" Column="19" Content="IPCfgMng.IPV6Cfg.MskLL[15]" Class="IPCfg_v6_EnLL" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_46" Row="4" Column="19" Content="IPCfgMng.IPV6Cfg.MskLL[31]" Class="IPCfg_v6_EnLL" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_107" Row="3" Column="20" Content="IPCfgMng.IPV6Cfg.EnAddr" Min="0" Max="1" Class="IPCfg_ShowColon" Format="ob" />
+      </Fields>
+      <KeyBindings>
+        <KeyBinding Key="ESC" BindOn="IPCFG_ESC" />
+        <KeyBinding Key="PRG" BindOn="IPCFG_Dummy_PRG" />
+      </KeyBindings>
+      <EnableOn>
+        <Var Name="IPCfgMng.IPV6Cfg.ActiveLicense" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="IPCfg_3" Type="Normal" X="5" Y="4" Color="224, 255, 255">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="IPCfgConfigDummy" Format="ib" Min="0" Max="1" />
+        <Field Type="Image" Name="Image_2" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Type="Text" Name="Text_2" Row="0" Column="1" Content="NET Configuration" />
+        <Field Type="Text" Name="Text_3" Row="0" Column="19" Content="3/4" />
+        <Field Type="Text" Name="Text_4" Row="1" Column="0" Content="Enable:" />
+        <Field Type="Variable" Name="Variable_2" Row="1" Column="8" Content="IPCfgMng.IPV6Cfg.Status" Class="IPCfg_v6_Status" Format="io1" Min="0" Max="2" SimulationValue="" />
+        <Field Type="Variable" Name="Variable_4" Row="5" Column="0" Content="IPCfgMng.IPV6Cfg.EnAddr" Min="0" Max="1" Class="IPCfg_v6_DNS" Format="ob" />
+        <Field Type="Variable" Name="Variable_5" Row="2" Column="0" Content="IPCfgMng.IPV6Cfg.EnAddr" Min="0" Max="1" Class="IPCfg_v6_GW" Format="ob" />
+        <Field Type="Variable" Name="Variable_3" Row="3" Column="5" Content="IPCfgMng.IPV6Cfg.EnAddr" Min="0" Max="1" Class="IPCfg_ShowColon" Format="ob" />
+        <Field Type="Variable" Name="Variable_6" Row="4" Column="5" Content="IPCfgMng.IPV6Cfg.EnAddr" Min="0" Max="1" Class="IPCfg_ShowColon" Format="ob" />
+        <Field Type="Variable" Name="Variable_7" Row="3" Column="10" Content="IPCfgMng.IPV6Cfg.EnAddr" Min="0" Max="1" Class="IPCfg_ShowColon" Format="ob" />
+        <Field Type="Variable" Name="Variable_8" Row="4" Column="10" Content="IPCfgMng.IPV6Cfg.EnAddr" Min="0" Max="1" Class="IPCfg_ShowColon" Format="ob" />
+        <Field Type="Variable" Name="Variable_9" Row="3" Column="15" Content="IPCfgMng.IPV6Cfg.EnAddr" Min="0" Max="1" Class="IPCfg_ShowColon" Format="ob" />
+        <Field Type="Variable" Name="Variable_10" Row="4" Column="15" Content="IPCfgMng.IPV6Cfg.EnAddr" Min="0" Max="1" Class="IPCfg_ShowColon" Format="ob" />
+        <Field Type="Variable" Name="Variable_11" Row="3" Column="20" Content="IPCfgMng.IPV6Cfg.EnAddr" Min="0" Max="1" Class="IPCfg_ShowColon" Format="ob" />
+        <Field Type="Variable" Name="Variable_12" Row="6" Column="5" Content="IPCfgMng.IPV6Cfg.EnAddr" Min="0" Max="1" Class="IPCfg_ShowColon" Format="ob" />
+        <Field Type="Variable" Name="Variable_13" Row="7" Column="5" Content="IPCfgMng.IPV6Cfg.EnAddr" Min="0" Max="1" Class="IPCfg_ShowColon" Format="ob" />
+        <Field Type="Variable" Name="Variable_14" Row="6" Column="10" Content="IPCfgMng.IPV6Cfg.EnAddr" Min="0" Max="1" Class="IPCfg_ShowColon" Format="ob" />
+        <Field Type="Variable" Name="Variable_15" Row="7" Column="10" Content="IPCfgMng.IPV6Cfg.EnAddr" Min="0" Max="1" Class="IPCfg_ShowColon" Format="ob" />
+        <Field Type="Variable" Name="Variable_16" Row="6" Column="15" Content="IPCfgMng.IPV6Cfg.EnAddr" Min="0" Max="1" Class="IPCfg_ShowColon" Format="ob" />
+        <Field Type="Variable" Name="Variable_17" Row="7" Column="15" Content="IPCfgMng.IPV6Cfg.EnAddr" Min="0" Max="1" Class="IPCfg_ShowColon" Format="ob" />
+        <Field Type="Variable" Name="Variable_18" Row="6" Column="20" Content="IPCfgMng.IPV6Cfg.EnAddr" Min="0" Max="1" Class="IPCfg_ShowColon" Format="ob" />
+        <Field Type="Variable" Name="Variable_19" Row="3" Column="1" Content="IPCfgMng.IPV6Cfg.MskGW[1]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_20" Row="3" Column="2" Content="IPCfgMng.IPV6Cfg.MskGW[2]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_21" Row="3" Column="3" Content="IPCfgMng.IPV6Cfg.MskGW[3]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_22" Row="3" Column="4" Content="IPCfgMng.IPV6Cfg.MskGW[4]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_23" Row="3" Column="6" Content="IPCfgMng.IPV6Cfg.MskGW[5]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_24" Row="4" Column="1" Content="IPCfgMng.IPV6Cfg.MskGW[17]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_25" Row="4" Column="2" Content="IPCfgMng.IPV6Cfg.MskGW[18]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_26" Row="4" Column="3" Content="IPCfgMng.IPV6Cfg.MskGW[19]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_27" Row="4" Column="4" Content="IPCfgMng.IPV6Cfg.MskGW[20]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_28" Row="4" Column="6" Content="IPCfgMng.IPV6Cfg.MskGW[21]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_29" Row="3" Column="7" Content="IPCfgMng.IPV6Cfg.MskGW[6]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_30" Row="3" Column="8" Content="IPCfgMng.IPV6Cfg.MskGW[7]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_31" Row="3" Column="9" Content="IPCfgMng.IPV6Cfg.MskGW[8]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_32" Row="3" Column="11" Content="IPCfgMng.IPV6Cfg.MskGW[9]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_33" Row="3" Column="12" Content="IPCfgMng.IPV6Cfg.MskGW[10]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_34" Row="4" Column="7" Content="IPCfgMng.IPV6Cfg.MskGW[22]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_35" Row="4" Column="8" Content="IPCfgMng.IPV6Cfg.MskGW[23]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_36" Row="4" Column="9" Content="IPCfgMng.IPV6Cfg.MskGW[24]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_37" Row="4" Column="12" Content="IPCfgMng.IPV6Cfg.MskGW[26]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_38" Row="4" Column="11" Content="IPCfgMng.IPV6Cfg.MskGW[25]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_39" Row="3" Column="13" Content="IPCfgMng.IPV6Cfg.MskGW[11]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_40" Row="3" Column="14" Content="IPCfgMng.IPV6Cfg.MskGW[12]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_41" Row="3" Column="16" Content="IPCfgMng.IPV6Cfg.MskGW[13]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_42" Row="4" Column="13" Content="IPCfgMng.IPV6Cfg.MskGW[27]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_43" Row="4" Column="14" Content="IPCfgMng.IPV6Cfg.MskGW[28]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_44" Row="4" Column="16" Content="IPCfgMng.IPV6Cfg.MskGW[29]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_45" Row="3" Column="18" Content="IPCfgMng.IPV6Cfg.MskGW[16]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_46" Row="3" Column="17" Content="IPCfgMng.IPV6Cfg.MskGW[14]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_47" Row="4" Column="18" Content="IPCfgMng.IPV6Cfg.MskGW[32]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_48" Row="4" Column="17" Content="IPCfgMng.IPV6Cfg.MskGW[30]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_49" Row="3" Column="19" Content="IPCfgMng.IPV6Cfg.MskGW[15]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_50" Row="4" Column="19" Content="IPCfgMng.IPV6Cfg.MskGW[31]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_51" Row="3" Column="1" Content="IPCfgMng.IPV6Cfg.MskGW[1]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_52" Row="3" Column="2" Content="IPCfgMng.IPV6Cfg.MskGW[2]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_53" Row="3" Column="3" Content="IPCfgMng.IPV6Cfg.MskGW[3]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_54" Row="3" Column="4" Content="IPCfgMng.IPV6Cfg.MskGW[4]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_55" Row="4" Column="1" Content="IPCfgMng.IPV6Cfg.MskGW[17]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_56" Row="4" Column="2" Content="IPCfgMng.IPV6Cfg.MskGW[18]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_57" Row="4" Column="3" Content="IPCfgMng.IPV6Cfg.MskGW[19]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_58" Row="4" Column="4" Content="IPCfgMng.IPV6Cfg.MskGW[20]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_59" Row="3" Column="6" Content="IPCfgMng.IPV6Cfg.MskGW[5]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_60" Row="3" Column="7" Content="IPCfgMng.IPV6Cfg.MskGW[6]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_61" Row="4" Column="6" Content="IPCfgMng.IPV6Cfg.MskGW[21]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_62" Row="4" Column="7" Content="IPCfgMng.IPV6Cfg.MskGW[22]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_63" Row="3" Column="8" Content="IPCfgMng.IPV6Cfg.MskGW[7]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_64" Row="3" Column="9" Content="IPCfgMng.IPV6Cfg.MskGW[8]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_65" Row="4" Column="8" Content="IPCfgMng.IPV6Cfg.MskGW[23]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_66" Row="4" Column="9" Content="IPCfgMng.IPV6Cfg.MskGW[24]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_67" Row="3" Column="11" Content="IPCfgMng.IPV6Cfg.MskGW[9]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_68" Row="3" Column="12" Content="IPCfgMng.IPV6Cfg.MskGW[10]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_69" Row="3" Column="13" Content="IPCfgMng.IPV6Cfg.MskGW[11]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_70" Row="3" Column="14" Content="IPCfgMng.IPV6Cfg.MskGW[12]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_71" Row="4" Column="12" Content="IPCfgMng.IPV6Cfg.MskGW[26]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_72" Row="4" Column="13" Content="IPCfgMng.IPV6Cfg.MskGW[27]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_73" Row="4" Column="11" Content="IPCfgMng.IPV6Cfg.MskGW[25]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_74" Row="4" Column="14" Content="IPCfgMng.IPV6Cfg.MskGW[28]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_75" Row="3" Column="16" Content="IPCfgMng.IPV6Cfg.MskGW[13]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_76" Row="3" Column="18" Content="IPCfgMng.IPV6Cfg.MskGW[16]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_77" Row="3" Column="17" Content="IPCfgMng.IPV6Cfg.MskGW[14]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_78" Row="4" Column="18" Content="IPCfgMng.IPV6Cfg.MskGW[32]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_79" Row="4" Column="17" Content="IPCfgMng.IPV6Cfg.MskGW[30]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_80" Row="4" Column="16" Content="IPCfgMng.IPV6Cfg.MskGW[29]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_81" Row="3" Column="19" Content="IPCfgMng.IPV6Cfg.MskGW[15]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_82" Row="4" Column="19" Content="IPCfgMng.IPV6Cfg.MskGW[31]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_83" Row="6" Column="1" Content="IPCfgMng.IPV6Cfg.MskDNS[1]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_84" Row="6" Column="2" Content="IPCfgMng.IPV6Cfg.MskDNS[2]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_85" Row="6" Column="3" Content="IPCfgMng.IPV6Cfg.MskDNS[3]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_86" Row="7" Column="1" Content="IPCfgMng.IPV6Cfg.MskDNS[17]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_87" Row="7" Column="2" Content="IPCfgMng.IPV6Cfg.MskDNS[18]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_88" Row="7" Column="3" Content="IPCfgMng.IPV6Cfg.MskDNS[19]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_89" Row="6" Column="4" Content="IPCfgMng.IPV6Cfg.MskDNS[4]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_90" Row="6" Column="6" Content="IPCfgMng.IPV6Cfg.MskDNS[5]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_91" Row="7" Column="4" Content="IPCfgMng.IPV6Cfg.MskDNS[20]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_92" Row="7" Column="6" Content="IPCfgMng.IPV6Cfg.MskDNS[21]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_93" Row="6" Column="7" Content="IPCfgMng.IPV6Cfg.MskDNS[6]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_94" Row="6" Column="8" Content="IPCfgMng.IPV6Cfg.MskDNS[7]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_95" Row="6" Column="9" Content="IPCfgMng.IPV6Cfg.MskDNS[8]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_96" Row="6" Column="11" Content="IPCfgMng.IPV6Cfg.MskDNS[9]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_97" Row="7" Column="7" Content="IPCfgMng.IPV6Cfg.MskDNS[22]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_98" Row="7" Column="8" Content="IPCfgMng.IPV6Cfg.MskDNS[23]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_99" Row="7" Column="9" Content="IPCfgMng.IPV6Cfg.MskDNS[24]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_100" Row="7" Column="11" Content="IPCfgMng.IPV6Cfg.MskDNS[25]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_101" Row="6" Column="12" Content="IPCfgMng.IPV6Cfg.MskDNS[10]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_102" Row="6" Column="13" Content="IPCfgMng.IPV6Cfg.MskDNS[11]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_103" Row="6" Column="14" Content="IPCfgMng.IPV6Cfg.MskDNS[12]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_104" Row="6" Column="16" Content="IPCfgMng.IPV6Cfg.MskDNS[13]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_105" Row="6" Column="18" Content="IPCfgMng.IPV6Cfg.MskDNS[16]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_106" Row="6" Column="17" Content="IPCfgMng.IPV6Cfg.MskDNS[14]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_107" Row="6" Column="19" Content="IPCfgMng.IPV6Cfg.MskDNS[15]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_108" Row="7" Column="12" Content="IPCfgMng.IPV6Cfg.MskDNS[26]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_109" Row="7" Column="13" Content="IPCfgMng.IPV6Cfg.MskDNS[27]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_110" Row="7" Column="14" Content="IPCfgMng.IPV6Cfg.MskDNS[28]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_111" Row="7" Column="18" Content="IPCfgMng.IPV6Cfg.MskDNS[32]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_112" Row="7" Column="17" Content="IPCfgMng.IPV6Cfg.MskDNS[30]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_113" Row="7" Column="16" Content="IPCfgMng.IPV6Cfg.MskDNS[29]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_114" Row="7" Column="19" Content="IPCfgMng.IPV6Cfg.MskDNS[31]" Class="IPCfg_v6_EnIO" Format="io2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_115" Row="7" Column="1" Content="IPCfgMng.IPV6Cfg.MskDNS[17]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_116" Row="7" Column="2" Content="IPCfgMng.IPV6Cfg.MskDNS[18]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_117" Row="7" Column="3" Content="IPCfgMng.IPV6Cfg.MskDNS[19]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_118" Row="6" Column="1" Content="IPCfgMng.IPV6Cfg.MskDNS[1]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_119" Row="6" Column="2" Content="IPCfgMng.IPV6Cfg.MskDNS[2]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_120" Row="6" Column="3" Content="IPCfgMng.IPV6Cfg.MskDNS[3]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_121" Row="6" Column="4" Content="IPCfgMng.IPV6Cfg.MskDNS[4]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_122" Row="6" Column="6" Content="IPCfgMng.IPV6Cfg.MskDNS[5]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_123" Row="6" Column="7" Content="IPCfgMng.IPV6Cfg.MskDNS[6]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_124" Row="7" Column="4" Content="IPCfgMng.IPV6Cfg.MskDNS[20]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_125" Row="7" Column="6" Content="IPCfgMng.IPV6Cfg.MskDNS[21]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_126" Row="7" Column="7" Content="IPCfgMng.IPV6Cfg.MskDNS[22]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_127" Row="6" Column="8" Content="IPCfgMng.IPV6Cfg.MskDNS[7]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_128" Row="6" Column="9" Content="IPCfgMng.IPV6Cfg.MskDNS[8]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_129" Row="6" Column="11" Content="IPCfgMng.IPV6Cfg.MskDNS[9]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_130" Row="6" Column="12" Content="IPCfgMng.IPV6Cfg.MskDNS[10]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_131" Row="6" Column="13" Content="IPCfgMng.IPV6Cfg.MskDNS[11]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_132" Row="6" Column="14" Content="IPCfgMng.IPV6Cfg.MskDNS[12]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_133" Row="7" Column="8" Content="IPCfgMng.IPV6Cfg.MskDNS[23]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_134" Row="7" Column="9" Content="IPCfgMng.IPV6Cfg.MskDNS[24]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_135" Row="7" Column="12" Content="IPCfgMng.IPV6Cfg.MskDNS[26]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_136" Row="7" Column="13" Content="IPCfgMng.IPV6Cfg.MskDNS[27]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_137" Row="7" Column="11" Content="IPCfgMng.IPV6Cfg.MskDNS[25]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_138" Row="7" Column="14" Content="IPCfgMng.IPV6Cfg.MskDNS[28]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_139" Row="6" Column="16" Content="IPCfgMng.IPV6Cfg.MskDNS[13]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_140" Row="6" Column="17" Content="IPCfgMng.IPV6Cfg.MskDNS[14]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_141" Row="7" Column="17" Content="IPCfgMng.IPV6Cfg.MskDNS[30]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_142" Row="7" Column="16" Content="IPCfgMng.IPV6Cfg.MskDNS[29]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_143" Row="6" Column="18" Content="IPCfgMng.IPV6Cfg.MskDNS[16]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_144" Row="7" Column="18" Content="IPCfgMng.IPV6Cfg.MskDNS[32]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_145" Row="6" Column="19" Content="IPCfgMng.IPV6Cfg.MskDNS[15]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+        <Field Type="Variable" Name="Variable_146" Row="7" Column="19" Content="IPCfgMng.IPV6Cfg.MskDNS[31]" Class="IPCfg_v6_EnO" Format="o2" Min="0" Max="15" />
+      </Fields>
+      <KeyBindings>
+        <KeyBinding Key="ESC" BindOn="IPCFG_ESC" />
+        <KeyBinding Key="PRG" BindOn="IPCFG_Dummy_PRG" />
+      </KeyBindings>
+      <EnableOn>
+        <Var Name="IPCfgMng.IPV6Cfg.ActiveLicense" />
+      </EnableOn>
+    </Mask>
+    <Mask Name="IPCfg_4" Type="Normal" X="5" Y="5" Color="224, 255, 255">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="IPCfgConfigDummy" Format="ib" Min="0" Max="1" SimulationValue="" />
+        <Field Type="Image" Name="Image_2" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Type="Text" Name="Text_2" Row="0" Column="1" Content="NET Configuration" />
+        <Field Type="Text" Name="Text" Row="0" Column="20" Content="/" />
+        <Field Type="Variable" Name="Variable_2" Row="0" Column="19" Content="IPCfgMng.GenNetCfg.PgLimit" Class="CL_SINT" Format="o1" Min="0" Max="9" />
+        <Field Type="Variable" Name="Variable_3" Row="0" Column="21" Content="IPCfgMng.GenNetCfg.PgLimit" Class="CL_SINT" Format="o1" Min="0" Max="9" />
+        <Field Type="Variable" Name="Variable_5" Row="4" Column="17" Content="IPCfgMng.GenNetCfg.UpdCfg" Class="IPCfg_SaveCfg" Format="io1" Min="0" Max="1" SimulationValue="" />
+      </Fields>
+      <KeyBindings>
+        <KeyBinding Key="ESC" BindOn="IPCFG_ESC" />
+        <KeyBinding Key="PRG" BindOn="IPCFG_Dummy_PRG" />
+      </KeyBindings>
+    </Mask>
+  </Loop>
+</Worksheet>

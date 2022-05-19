@@ -1,0 +1,89 @@
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">pCO</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>4aaa04ef-8b13-477b-9ca9-d3e1918404ed</ProjectGuid>
+    <RepositoryPath>..\..\..\Configurations\CAREL_Project_Template_Refrigeration\Device1.otr</RepositoryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>Bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>Bin\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Resources\1.bmp" />
+    <Compile Include="Resources\1Bc.bmp" />
+    <Compile Include="Resources\2.bmp" />
+    <Compile Include="Resources\2Bc.bmp" />
+    <Compile Include="Resources\3.bmp" />
+    <Compile Include="Resources\3Bc.bmp" />
+    <Compile Include="Resources\4.bmp" />
+    <Compile Include="Resources\4Bc.bmp" />
+    <Compile Include="Resources\5.bmp" />
+    <Compile Include="Resources\5Bc.bmp" />
+    <Compile Include="Resources\6.bmp" />
+    <Compile Include="Resources\6Bc.bmp" />
+    <Compile Include="Resources\7.bmp" />
+    <Compile Include="Resources\7Bc.bmp" />
+    <Compile Include="Resources\alarm_pGD.bmp" />
+    <Compile Include="Resources\Black_.bmp" />
+    <Compile Include="Resources\Black_rows_120x16.bmp" />
+    <Compile Include="Resources\Compr.bmp" />
+    <Compile Include="Resources\Compr_black.bmp" />
+    <Compile Include="Resources\Data_Time.bmp" />
+    <Compile Include="Resources\Data_Time_black.bmp" />
+    <Compile Include="Resources\DOOR.bmp" />
+    <Compile Include="Resources\ExV.bmp" />
+    <Compile Include="Resources\EXV_2.bmp" />
+    <Compile Include="Resources\EXV_2_black.bmp" />
+    <Compile Include="Resources\Fan.bmp" />
+    <Compile Include="Resources\Fan_black.bmp" />
+    <Compile Include="Resources\History.bmp" />
+    <Compile Include="Resources\History_18X16.bmp" />
+    <Compile Include="Resources\History_18X16_1.bmp" />
+    <Compile Include="Resources\History_18X16_N.bmp" />
+    <Compile Include="Resources\History_black.bmp" />
+    <Compile Include="Resources\Info_16x36.bmp" />
+    <Compile Include="Resources\Info_16x36_C.bmp" />
+    <Compile Include="Resources\Initializiation.bmp" />
+    <Compile Include="Resources\Initializiation_black.bmp" />
+    <Compile Include="Resources\I_O_12x16.bmp" />
+    <Compile Include="Resources\I_O_black_12x16.bmp" />
+    <Compile Include="Resources\Language_2.bmp" />
+    <Compile Include="Resources\Language_2_black.bmp" />
+    <Compile Include="Resources\LogOut.bmp" />
+    <Compile Include="Resources\Logout.bmp" />
+    <Compile Include="Resources\Logout_black.bmp" />
+    <Compile Include="Resources\logo_carel_132x64.bmp" />
+    <Compile Include="Resources\Maint.bmp" />
+    <Compile Include="Resources\Maint_black.bmp" />
+    <Compile Include="Resources\Manuf.bmp" />
+    <Compile Include="Resources\Manuf_black.bmp" />
+    <Compile Include="Resources\OFF.bmp" />
+    <Compile Include="Resources\ON.bmp" />
+    <Compile Include="Resources\OnOff_16x36.bmp" />
+    <Compile Include="Resources\OnOff_16x36_C.bmp" />
+    <Compile Include="Resources\Plant_12x16.bmp" />
+    <Compile Include="Resources\Plant_N _12x16.bmp" />
+    <Compile Include="Resources\Pwd Change.bmp" />
+    <Compile Include="Resources\Pwd Change_black.bmp" />
+    <Compile Include="Resources\Serial Port.bmp" />
+    <Compile Include="Resources\SerialPort_black.bmp" />
+    <Compile Include="Resources\Set_16x36.bmp" />
+    <Compile Include="Resources\Set_16x36_C.bmp" />
+    <Compile Include="Resources\UoM_12x16.bmp" />
+    <Compile Include="Resources\UoM_black_12x16.bmp" />
+    <Compile Include="Resources\UpDown2.bmp" />
+    <Compile Include="Resources\White_rows_120x16.bmp" />
+    <Compile Include="Terminal1\Code.st" />
+    <Compile Include="Terminal1\Classes.otsf" />
+    <Compile Include="Terminal1\Layout.otwp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Terminal1\" />
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <Import Project="$(DevEnvDir)\PackagesToLoad\Targets\Carel.targets" />
+</Project>

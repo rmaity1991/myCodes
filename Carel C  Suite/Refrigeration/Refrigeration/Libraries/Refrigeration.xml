@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Libraries LibVersion="1.0.1">
+  <Library Name="CAREL_BASIC_LIB" Version="2.3.0" IsSystem="true" ConcreteType="Pou" Moniker="\Libraries\CAREL_BASIC_LIB_2_3_0.pp1" GUID="d42eddb0-530f-4c2b-a2de-4f92b9e7c6f9">
+    <Dependencies />
+  </Library>
+</Libraries>

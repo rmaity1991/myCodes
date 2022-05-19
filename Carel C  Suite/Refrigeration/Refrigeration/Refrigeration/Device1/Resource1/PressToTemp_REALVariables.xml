@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Manifest>
+  <Variables>
+    <Variable Name="P_ABS" Comment="" AccessRights="ReadWrite" DataType="REAL" Modifier="NonRetain" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" />
+    <Variable Name="ka" Comment="" AccessRights="ReadWrite" DataType="REAL" Modifier="NonRetain" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" />
+    <Variable Name="kb" Comment="" AccessRights="ReadWrite" DataType="REAL" Modifier="NonRetain" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" />
+    <Variable Name="kc" Comment="" AccessRights="ReadWrite" DataType="REAL" Modifier="NonRetain" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" />
+    <Variable Name="kd" Comment="" AccessRights="ReadWrite" DataType="REAL" Modifier="NonRetain" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" />
+    <Variable Name="ke" Comment="" AccessRights="ReadWrite" DataType="REAL" Modifier="NonRetain" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" />
+    <Variable Name="kf" Comment="" AccessRights="ReadWrite" DataType="REAL" Modifier="NonRetain" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" />
+    <Variable Name="Gas_K_Vect" Comment="" AccessRights="ReadWrite" DataType="REAL,0-5" Modifier="NonRetain" Kind="Var">
+      <Variable Name="Gas_K_Vect[0]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" />
+      <Variable Name="Gas_K_Vect[1]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" />
+      <Variable Name="Gas_K_Vect[2]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" />
+      <Variable Name="Gas_K_Vect[3]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" />
+      <Variable Name="Gas_K_Vect[4]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" />
+      <Variable Name="Gas_K_Vect[5]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" />
+    </Variable>
+    <Variable Name="lnVal" Comment="" AccessRights="ReadWrite" DataType="REAL" Modifier="NonRetain" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" />
+    <Variable Name="lnVal2" Comment="" AccessRights="ReadWrite" DataType="REAL" Modifier="NonRetain" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" />
+    <Variable Name="lnVal3" Comment="" AccessRights="ReadWrite" DataType="REAL" Modifier="NonRetain" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" />
+    <Variable Name="lnVal4" Comment="" AccessRights="ReadWrite" DataType="REAL" Modifier="NonRetain" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" />
+    <Variable Name="lnVal5" Comment="" AccessRights="ReadWrite" DataType="REAL" Modifier="NonRetain" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" />
+    <Variable Name="PGas" Comment="Gas pressure in barg" AccessRights="Read" DataType="REAL" Modifier="Constant" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" />
+    <Variable Name="Gas" Comment="Gas index" AccessRights="Read" DataType="INT" Modifier="Constant" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" />
+    <Variable Name="DewBub" Comment="Type of temperature required (TRUE = Bubble point, FALSE = Dew point)" AccessRights="Read" DataType="BOOL" Modifier="Constant" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" />
+    <Variable Name="PressToTemp_REAL" Comment="Gas temperature in degrees (°C)" AccessRights="Write" DataType="REAL" Modifier="Constant" Kind="VarOutput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" />
+  </Variables>
+</Manifest>

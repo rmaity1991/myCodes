@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution>
+  <Info ManifestVersion="1.1.0">
+    <Name>Refrigeration</Name>
+    <Description>An empty project template.</Description>
+    <Version>1.6.1</Version>
+    <CreationDate>2022-05-09T10:43:20.2936152Z</CreationDate>
+    <Owner>Carel Industries S.p.a</Owner>
+    <StorageToolManaged>false</StorageToolManaged>
+    <CSuiteVersion>4.9.11</CSuiteVersion>
+    <TeamWorkingManaged>false</TeamWorkingManaged>
+  </Info>
+</Solution>

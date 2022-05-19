@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resource FileVersion="200.00.003" Name="Resource1" ResourceNb="1" ElementGuid="aaa250d1-8b67-4330-9ca3-1e445abf6648" Address="@1" Comment="Resources 1" SingleTextLine="Resource Number 1" GenDebugInfo="true" Password="" ReadOnly="false" UsePrjPassword="false" Code="TicCode">
+  <Properties Test="true" TrigCycle="false" CyTiming="0" DeErrors="true" NbStErrors="16" ExecMode="true" EmbedTable="false" TypeEmbedTable="2" EmbedSource="false" TypeEmbedSource="0" SimulationCode="true" SfcGain="8" SfcOffset="18" EmbeddedSfc="false" ReadableImage="false" RealImage="false" LocExp="false" unlab="false" AriOpe="false" BooOpe="false" BooExp="false" GloExp="false" VarCpy="false" Uncod="false" MapFile="false" DumpPou="false" DumpConfig="true" DumpNetwork="false" CompileIncrementally="true" LinkIncrementally="true" CheckArray="true" ArrStr="false" OnlineMemory="32000" OnlineMemoryVariable="2048" MemRetain="RetainRes1" FunctionInternalStateEnable="false" FbdBehaviorMode="1" OnlineMaxExtraPous="20" OnlineMemorySfc="4096" CyUsTiming="0" IsDisableAccessFBLocalVar="true" EnableCVT="false" ReduceBooleanExpressionEvaluation="true" IsIndirectBitAccessValidation="true" />
+  <Pous>
+    <Function Name="AbsHumidity_INT" ElementGuid="82fcf66a-0f50-40a3-b27e-3cf9403322e4" Language="FBD" CustomFbd="0" Is1499="false" />
+    <Function Name="AbsHumidity_REAL" ElementGuid="9cfec2b7-377f-454b-9545-a402a9ab4ac1" Language="ST" CustomFbd="0" Is1499="false" />
+    <Function Name="BarToPsi_INT" ElementGuid="aadc59b8-e75c-442e-889d-8a8b54f92e42" Language="FBD" CustomFbd="0" Is1499="false" />
+    <Function Name="BarToPsi_REAL" ElementGuid="db16a32a-41d4-4280-a4af-7b061b095457" Language="ST" CustomFbd="0" Is1499="false" />
+    <Function Name="CelToFahr_INT" ElementGuid="675bda53-3b32-48d6-ae83-e877e2a307f1" Language="FBD" CustomFbd="0" Is1499="false" />
+    <Function Name="CelToFahr_REAL" ElementGuid="d398d918-e9bd-48a5-9eb4-aa798de22be7" Language="ST" CustomFbd="0" Is1499="false" />
+    <Function Name="CelToFahrDelta_INT" ElementGuid="78cb067b-96e6-4e69-9a7b-fb29b19e9bc9" Language="FBD" CustomFbd="0" Is1499="false" />
+    <Function Name="CelToFahrDelta_REAL" ElementGuid="a946fce7-4307-4ac4-a6c0-bb2563f139b2" Language="ST" CustomFbd="0" Is1499="false" />
+    <Function Name="CompensSetp_INT" ElementGuid="eec7b74b-dbbc-4b39-869f-29379c5d52db" Language="ST" CustomFbd="0" Is1499="false" />
+    <Function Name="CompensSetp_REAL" ElementGuid="9a737b16-2234-4702-8536-35d1ba808088" Language="ST" CustomFbd="0" Is1499="false" />
+    <Function Name="Conv_INT" ElementGuid="acf97140-5562-4405-83cc-2b1ff81dae2f" Language="FBD" CustomFbd="0" Is1499="false" />
+    <Function Name="Conv_REAL" ElementGuid="b31aa2e6-bbe4-44a8-9ad5-98cfe8a14067" Language="ST" CustomFbd="0" Is1499="false" />
+    <Function Name="ConvHourToMin_INT" ElementGuid="6a9f5ea1-fefe-4138-8e21-7cc1e194f96b" Language="ST" CustomFbd="0" Is1499="false" />
+    <Function Name="Counter4_INT" ElementGuid="376a69ad-a506-4b54-a6bf-3802a5d1aec3" Language="ST" CustomFbd="0" Is1499="false" />
+    <Function Name="Counter8_INT" ElementGuid="eefe4bfc-05f9-470a-823d-8f1760616370" Language="ST" CustomFbd="0" Is1499="false" />
+    <Function Name="DewPoint_INT" ElementGuid="9868e9b2-cc41-4ee2-947d-7ca14ddc29bc" Language="FBD" CustomFbd="0" Is1499="false" />
+    <Function Name="DewPoint_REAL" ElementGuid="3bd813fe-6e72-4af5-ae50-c6097c6eb54a" Language="ST" CustomFbd="0" Is1499="false" />
+    <Function Name="Eq_REAL" ElementGuid="c3156371-5eb2-4851-8d5a-a333a3f1822e" Language="ST" CustomFbd="0" Is1499="false" />
+    <Function Name="FahrToCel_INT" ElementGuid="06e3241d-6822-4387-b586-79727a45da63" Language="FBD" CustomFbd="0" Is1499="false" />
+    <Function Name="FahrToCel_REAL" ElementGuid="7959af34-89c6-4584-92ae-d30f7debcbb3" Language="ST" CustomFbd="0" Is1499="false" />
+    <Function Name="FahrToCelDelta_INT" ElementGuid="d599e695-7179-4627-a94b-dfeb2308a5ac" Language="FBD" CustomFbd="0" Is1499="false" />
+    <Function Name="FahrToCelDelta_REAL" ElementGuid="bfe88950-42b0-4a32-a15d-78554f1099b5" Language="ST" CustomFbd="0" Is1499="false" />
+    <Function Name="Limit_INT" ElementGuid="0b8f140c-fa69-45ab-a064-e8f51e63344d" Language="ST" CustomFbd="0" Is1499="false" />
+    <Function Name="Limit_REAL" ElementGuid="622daf98-ea86-42b1-9823-69583b6fa7a3" Language="ST" CustomFbd="0" Is1499="false" />
+    <Function Name="Loge_REAL" ElementGuid="35892fb0-a258-45ff-8244-feb8a30b26f1" Language="ST" CustomFbd="0" Is1499="false" />
+    <Function Name="Max_INT" ElementGuid="e67dffef-18ff-47e4-abad-02ea3f852f29" Language="ST" CustomFbd="0" Is1499="false" />
+    <Function Name="Max_REAL" ElementGuid="c8984a5e-b1e6-4837-a3f8-9a9565f20cad" Language="ST" CustomFbd="0" Is1499="false" />
+    <Function Name="Min_INT" ElementGuid="fc81870b-5cf6-4735-9f0a-ad41a18365cc" Language="ST" CustomFbd="0" Is1499="false" />
+    <Function Name="Min_REAL" ElementGuid="db04317a-e0a1-4f90-8559-7dd34bb19b90" Language="ST" CustomFbd="0" Is1499="false" />
+    <Function Name="Mux5_INT" ElementGuid="5636b5e9-8b8c-45aa-96ba-9fc04f3c0207" Language="ST" CustomFbd="0" Is1499="false" />
+    <Function Name="PsiToBar_INT" ElementGuid="235ecaf0-b348-4f64-b131-c9cb6611388f" Language="FBD" CustomFbd="0" Is1499="false" />
+    <Function Name="PsiToBar_REAL" ElementGuid="7c605282-09a1-4ca2-8c3e-07725069f071" Language="ST" CustomFbd="0" Is1499="false" />
+    <Function Name="PressToTemp_INT" ElementGuid="f95b7efe-2391-4e7c-bc50-2ef1703fa1cb" Language="FBD" CustomFbd="0" Is1499="false" />
+    <Function Name="PressToTemp_REAL" ElementGuid="0489c716-9f53-4f99-8fca-106199502295" Language="ST" CustomFbd="0" Is1499="false" />
+    <Function Name="Range" ElementGuid="dd2dd655-bd23-4183-b25c-b2daa2c16638" Language="FBD" CustomFbd="0" Is1499="false" />
+    <Function Name="Range_INT" ElementGuid="f920fefa-57de-498b-b5a7-550d5df7b5fa" Language="FBD" CustomFbd="0" Is1499="false" />
+    <Function Name="Range_REAL" ElementGuid="aeb8ed7d-9595-467b-baa9-585f289d49da" Language="ST" CustomFbd="0" Is1499="false" />
+    <Function Name="RangeUniv" ElementGuid="828d9b07-85b3-4ea4-9520-3419957fac81" Language="FBD" CustomFbd="0" Is1499="false" />
+    <Function Name="RangeUniv_INT" ElementGuid="b00223f4-d902-49da-af4d-bdd99f312612" Language="FBD" CustomFbd="0" Is1499="false" />
+    <Function Name="RangeUniv_REAL" ElementGuid="d27b62e9-9b7d-4333-b4fa-88802d523a29" Language="ST" CustomFbd="0" Is1499="false" />
+    <Function Name="RealToInt" ElementGuid="140c9b4e-dfe7-4222-b1dc-6f0b6c080107" Language="FBD" CustomFbd="0" Is1499="false" />
+    <Function Name="RealToDint" ElementGuid="38e21deb-53fc-4ec6-b88c-ac91047c0810" Language="ST" CustomFbd="0" Is1499="false" />
+    <Function Name="RealToUdint" ElementGuid="2c54a191-4711-4db1-891b-ab2b1f7f66f4" Language="FBD" CustomFbd="0" Is1499="false" />
+    <Function Name="RealToUint" ElementGuid="537aa838-f403-4d0b-aaf2-368279eef12c" Language="FBD" CustomFbd="0" Is1499="false" />
+    <Function Name="RelHumidity_INT" ElementGuid="fb650145-50a1-461b-8829-098653db1857" Language="FBD" CustomFbd="0" Is1499="false" />
+    <Function Name="RelHumidity_REAL" ElementGuid="5878b125-1aca-48e8-8e17-416045023659" Language="ST" CustomFbd="0" Is1499="false" />
+    <Function Name="Round_REAL" ElementGuid="15f9317a-096d-4780-9d2f-a94032d23de7" Language="ST" CustomFbd="0" Is1499="false" />
+    <Function Name="Scaler_REAL" ElementGuid="0b6ce615-1027-4350-b536-053d6d2d5d68" Language="ST" CustomFbd="0" Is1499="false" />
+    <Function Name="SchedDailyTime" ElementGuid="63b3ab3f-aa67-4bb5-837b-06e85473b116" Language="ST" CustomFbd="0" Is1499="false" />
+    <Function Name="SchedDailyTime_INT" ElementGuid="ce430b1a-1b66-441d-a9e5-95ed15e18189" Language="FBD" CustomFbd="0" Is1499="false" />
+    <Function Name="SecToTime" ElementGuid="22558b32-e46a-4a0f-8741-afac40724c0c" Language="ST" CustomFbd="0" Is1499="false" />
+    <Function Name="Sel_BOOL" ElementGuid="03929db5-6998-4db1-9b4f-fddc27ef8dba" Language="ST" CustomFbd="0" Is1499="false" />
+    <Function Name="Sel_INT" ElementGuid="8b441349-1896-4e97-a083-9a237584f2d5" Language="ST" CustomFbd="0" Is1499="false" />
+    <Function Name="Sel_REAL" ElementGuid="669d9467-0ec7-4304-87e5-a0aad75befd2" Language="ST" CustomFbd="0" Is1499="false" />
+    <Function Name="Sign_REAL" ElementGuid="dc54ba5e-756e-49e7-a1c9-81f5b1447da1" Language="ST" CustomFbd="0" Is1499="false" />
+    <Function Name="TempToPress_INT" ElementGuid="841d897f-875b-4c4b-8c59-1cedeeb228e9" Language="FBD" CustomFbd="0" Is1499="false" />
+    <Function Name="TempToPress_REAL" ElementGuid="8bc1b5fd-12e7-4b45-a3ed-9c11fb3ed74b" Language="ST" CustomFbd="0" Is1499="false" />
+    <Function Name="TimeToSec" ElementGuid="404862b0-2ca8-484a-a0c3-6b279fa022f6" Language="ST" CustomFbd="0" Is1499="false" />
+    <Function Name="VapourSatPress_REAL" ElementGuid="43379616-0b7c-4e7e-8fd6-ddad2df24cb9" Language="ST" CustomFbd="0" Is1499="false" />
+    <Function Name="WeekDay_UINT" ElementGuid="8e06e01a-f337-4d10-bf11-556f4d6b5273" Language="ST" CustomFbd="0" Is1499="false" />
+    <FunctionBlock Name="And2Com" ElementGuid="fc9d7728-b446-4c43-baf0-0004dbcfdcf7" Language="FBD" CustomFbd="0" Is1499="false" />
+    <FunctionBlock Name="And5Com" ElementGuid="6f5512de-bf89-4832-896f-ccdf79fd8f75" Language="FBD" CustomFbd="0" Is1499="false" />
+    <FunctionBlock Name="And10Com" ElementGuid="6555ca2e-5112-4044-809a-b1c7048f2633" Language="FBD" CustomFbd="0" Is1499="false" />
+    <FunctionBlock Name="BlinkOnOff_INT" ElementGuid="98b29fc0-4097-4851-b6d7-da9cb1c5c15d" Language="ST" CustomFbd="0" Is1499="false" />
+    <FunctionBlock Name="ConvMinToHour_INT" ElementGuid="b7ff5325-2176-45a9-a1cb-59ea11657b4f" Language="ST" CustomFbd="0" Is1499="false" />
+    <FunctionBlock Name="CurrDateTime" ElementGuid="5ea4f31c-4ece-4bd0-bac8-aca88c226cc9" Language="ST" CustomFbd="0" Is1499="false" />
+    <FunctionBlock Name="DelayOnOff_INT" ElementGuid="74fdd7c8-f999-4882-9094-0e2e2f03c828" Language="FBD" CustomFbd="0" Is1499="false" />
+    <FunctionBlock Name="DigitConv_INT" ElementGuid="23876a74-e69b-4a57-bf27-85edbea3c747" Language="ST" CustomFbd="0" Is1499="false" />
+    <FunctionBlock Name="Enthalpy_REAL" ElementGuid="a1a1fb8f-43dc-4c17-9c50-187b1f9a2437" Language="ST" CustomFbd="0" Is1499="false" />
+    <FunctionBlock Name="Enthalpy_INT" ElementGuid="118bb488-f3e3-47b3-8126-87c7c0f61de0" Language="FBD" CustomFbd="0" Is1499="false" />
+    <FunctionBlock Name="FEdge" ElementGuid="2304c5ea-e1e1-41da-bbbb-fbfc2e9bb1d5" Language="ST" CustomFbd="0" Is1499="false" />
+    <FunctionBlock Name="FlipFlop" ElementGuid="4e2429fd-771d-466b-947e-1c4dd37e4243" Language="ST" CustomFbd="0" Is1499="false" />
+    <FunctionBlock Name="Grad_INT" ElementGuid="5c15edf6-2a2c-4859-936b-717ea680a726" Language="ST" CustomFbd="0" Is1499="false" />
+    <FunctionBlock Name="Grad_REAL" ElementGuid="bc4a7293-8796-4bda-9666-05cb8d3d7239" Language="ST" CustomFbd="0" Is1499="false" />
+    <FunctionBlock Name="HysterAdv_REAL" ElementGuid="c6af05fb-f127-4282-bd09-0dca650d0a2c" Language="ST" CustomFbd="0" Is1499="false" />
+    <FunctionBlock Name="HysterAdv_INT" ElementGuid="7e70e53a-28ef-4fcb-b6a3-7ee99fd7e0a9" Language="FBD" CustomFbd="0" Is1499="false" />
+    <FunctionBlock Name="Interpolate_REAL" ElementGuid="b39291a9-6805-4d62-9782-4239003dfbbf" Language="ST" CustomFbd="0" Is1499="false" />
+    <FunctionBlock Name="Not2" ElementGuid="5f01a301-3c8f-4f5f-beae-d166b767b376" Language="FBD" CustomFbd="0" Is1499="false" />
+    <FunctionBlock Name="Not5" ElementGuid="78202669-df99-4a2a-b5c6-719717670f0e" Language="FBD" CustomFbd="0" Is1499="false" />
+    <FunctionBlock Name="Not10" ElementGuid="d41128f8-bf2f-44b4-aa81-4f1d421bc744" Language="FBD" CustomFbd="0" Is1499="false" />
+    <FunctionBlock Name="PulseCounter_INT" ElementGuid="933c951d-3e04-4bc9-9758-9ddbda9f5785" Language="ST" CustomFbd="0" Is1499="false" />
+    <FunctionBlock Name="REdge" ElementGuid="08781a56-7058-4e82-907a-f790668e9c73" Language="ST" CustomFbd="0" Is1499="false" />
+    <FunctionBlock Name="RFTrig" ElementGuid="37706d22-7d2f-4d1d-ae9a-8834833425ff" Language="FBD" CustomFbd="0" Is1499="false" />
+    <FunctionBlock Name="TimeCounter_INT" ElementGuid="2737300e-2fad-4daa-afc7-3133db9e2cb9" Language="ST" CustomFbd="0" Is1499="false" />
+    <FunctionBlock Name="UnitMeas_P_REAL" ElementGuid="3ff7b63a-cacf-40f2-a099-1a84f6291c54" Language="ST" CustomFbd="0" Is1499="false" />
+    <FunctionBlock Name="UnitMeas_P_INT" ElementGuid="5427045c-c047-4dff-8a53-4c71f53e1f3b" Language="FBD" CustomFbd="0" Is1499="false" />
+    <FunctionBlock Name="UnitMeasTemp_REAL" ElementGuid="a417feb5-4c4a-4fdb-b48b-17eeb0b1bd61" Language="ST" CustomFbd="0" Is1499="false" />
+    <FunctionBlock Name="UnitMeasTemp_INT" ElementGuid="6817fab1-6dd4-416a-ac84-6597d8d57797" Language="FBD" CustomFbd="0" Is1499="false" />
+    <FunctionBlock Name="UnitMeasTempDelta_REAL" ElementGuid="5b6336e7-bde6-47c2-b93a-e78e41d66a9c" Language="ST" CustomFbd="0" Is1499="false" />
+    <FunctionBlock Name="UnitMeasTempDelta_INT" ElementGuid="102a3527-7561-42e1-9462-4879e39e0d85" Language="FBD" CustomFbd="0" Is1499="false" />
+    <FunctionBlock Name="CntDwnSafT" ElementGuid="07d04746-d3f6-4359-88c4-2826f9c2167e" Language="ST" CustomFbd="0" Is1499="false" />
+    <FunctionBlock Name="HoursCounter" ElementGuid="890a50c5-627f-481d-b02b-2cec961f5c3e" Language="ST" CustomFbd="0" Is1499="false" />
+    <Program Name="CompressorOperation" ElementGuid="6d25522e-4d6e-46b2-bd3e-15eb52e4ae68" Language="ST" CustomFbd="0" Is1499="false" />
+    <Program Name="DefrostOperation" ElementGuid="7769f3c8-90a4-4ace-93a4-54d5138a11d2" Language="ST" CustomFbd="0" Is1499="false" />
+    <Program Name="Simulation" ElementGuid="a4a91953-a5fe-4c2f-9ab3-4b6b84c8b117" Language="ST" CustomFbd="0" Is1499="false" />
+  </Pous>
+  <NetworkParameterValues>
+    <NetworkParameterValue NetworkName="HSD" Name="ValidityTime" Value="0" />
+    <NetworkParameterValue NetworkName="ETCP" Name="TimeOut" Value="10000" />
+  </NetworkParameterValues>
+  <GlobalVars>
+    <Variable Name="__SYSVA_KEY_COUNTER" DataType="INT" InitialValue="" Comment="Key pressed time" Address="" Modifier="NonRetain" Kind="VarGlobal" Alias="" AccessRights="ReadWrite" Attributes="32501" />
+    <Variable Name="__SYSVA_CURSOR_ROW" DataType="INT" InitialValue="" Comment="Display cursor current Y coordinate" Address="" Modifier="NonRetain" Kind="VarGlobal" Alias="" AccessRights="ReadWrite" Attributes="32501" />
+    <Variable Name="__SYSVA_CURSOR_COLUMN" DataType="INT" InitialValue="" Comment="Display cursor current X coordinate" Address="" Modifier="NonRetain" Kind="VarGlobal" Alias="" AccessRights="ReadWrite" Attributes="32501" />
+    <Variable Name="__SYSVA_CURSOR_VAR" DataType="INT" InitialValue="" Comment="Display cursor for scrolling lists" Address="" Modifier="NonRetain" Kind="VarGlobal" Alias="" AccessRights="ReadWrite" Attributes="32501" />
+    <Variable Name="__SYSVA_TMP_VALUE" DataType="UDINT" InitialValue="" Comment="Temp value for field editing" Address="" Modifier="NonRetain" Kind="VarGlobal" Alias="" AccessRights="ReadWrite" Attributes="32501" />
+    <Variable Name="__SYSVA_KEY_PRESSED" DataType="USINT" InitialValue="" Comment="Key pressed flag" Address="" Modifier="NonRetain" Kind="VarGlobal" Alias="" AccessRights="ReadWrite" Attributes="32501" />
+    <Variable Name="__SYSVA_MANUAL_BUZZER_OFF" DataType="USINT" InitialValue="" Comment="Deactivates the alarm buzzer when it has been released from integrated alarm management" Address="" Modifier="NonRetain" Kind="VarGlobal" Alias="" AccessRights="ReadWrite" Attributes="32501" />
+    <Variable Name="__SYSVA_MANUAL_BUZZER_ON" DataType="USINT" InitialValue="" Comment="Activates the buzzer when controlled manually" Address="" Modifier="NonRetain" Kind="VarGlobal" Alias="" AccessRights="ReadWrite" Attributes="32501" />
+    <Variable Name="__SYSVA_BEEP_ON" DataType="USINT" InitialValue="" Comment="Activates the buzzer for a while" Address="" Modifier="NonRetain" Kind="VarGlobal" Alias="" AccessRights="ReadWrite" Attributes="32501" />
+    <Variable Name="chillingSP" DataType="REAL" InitialValue="5.0" Comment="" Address="" Modifier="Retain" Kind="Var" Alias="" AccessRights="ReadWrite" StringSize="0" RetainFlags="" CommentFields="" Attributes="0" GroupName="" />
+    <Variable Name="defrostSP" DataType="REAL" InitialValue="15.0" Comment="" Address="" Modifier="Retain" Kind="Var" Alias="" AccessRights="ReadWrite" StringSize="0" RetainFlags="" CommentFields="" Attributes="0" GroupName="" />
+    <Variable Name="chillingPV" DataType="REAL" InitialValue="10.0" Comment="" Address="" Modifier="NonRetain" Kind="Var" Alias="" AccessRights="ReadWrite" StringSize="0" RetainFlags="" CommentFields="" Attributes="0" GroupName="" />
+    <Variable Name="compressorON" DataType="BOOL" InitialValue="" Comment="" Address="" Modifier="NonRetain" Kind="Var" Alias="" AccessRights="ReadWrite" StringSize="0" RetainFlags="" CommentFields="" Attributes="0" GroupName="" />
+    <Variable Name="defrostON" DataType="BOOL" InitialValue="" Comment="" Address="" Modifier="NonRetain" Kind="Var" Alias="" AccessRights="ReadWrite" StringSize="0" RetainFlags="" CommentFields="" Attributes="0" GroupName="" />
+    <Variable Name="defrostHeaterON" DataType="BOOL" InitialValue="" Comment="" Address="" Modifier="NonRetain" Kind="Var" Alias="" AccessRights="ReadWrite" StringSize="0" RetainFlags="" CommentFields="" Attributes="0" GroupName="" />
+    <Variable Name="fanON" DataType="BOOL" InitialValue="" Comment="" Address="" Modifier="NonRetain" Kind="Var" Alias="" AccessRights="ReadWrite" StringSize="0" RetainFlags="" CommentFields="" Attributes="0" GroupName="" />
+    <Variable Name="drainON" DataType="BOOL" InitialValue="" Comment="" Address="" Modifier="NonRetain" Kind="Var" Alias="" AccessRights="ReadWrite" StringSize="0" RetainFlags="" CommentFields="" Attributes="0" GroupName="" />
+    <Variable Name="heaterON" DataType="BOOL" InitialValue="" Comment="" Address="" Modifier="NonRetain" Kind="Var" Alias="" AccessRights="ReadWrite" StringSize="0" RetainFlags="" CommentFields="" Attributes="0" GroupName="" />
+    <Variable Name="lightON" DataType="BOOL" InitialValue="" Comment="" Address="" Modifier="NonRetain" Kind="Var" Alias="" AccessRights="ReadWrite" StringSize="0" RetainFlags="" CommentFields="" Attributes="0" GroupName="" />
+    <Variable Name="doorOpen" DataType="BOOL" InitialValue="" Comment="" Address="" Modifier="NonRetain" Kind="Var" Alias="" AccessRights="ReadWrite" StringSize="0" RetainFlags="" CommentFields="" Attributes="0" GroupName="" />
+    <Variable Name="defrostPanSensor" DataType="BOOL" InitialValue="" Comment="" Address="" Modifier="NonRetain" Kind="Var" Alias="" AccessRights="ReadWrite" StringSize="0" RetainFlags="" CommentFields="" Attributes="0" GroupName="" />
+    <Variable Name="Al_LowSH_EVDEMB" DataType="ALM" InitialValue="" Comment=" Low superheat protection" Address="" Modifier="NonRetain" Kind="Var" Alias="" AccessRights="ReadWrite" StringSize="0" RetainFlags="" CommentFields="" Attributes="0" GroupName="" />
+    <Variable Name="Al_LOP_EVDEMB" DataType="ALM" InitialValue="" Comment=" Low evaporation temperature protection" Address="" Modifier="NonRetain" Kind="Var" Alias="" AccessRights="ReadWrite" StringSize="0" RetainFlags="" CommentFields="" Attributes="0" GroupName="" />
+    <Variable Name="Al_MOP_EVDEMB" DataType="ALM" InitialValue="" Comment=" High evaporation temperature protection" Address="" Modifier="NonRetain" Kind="Var" Alias="" AccessRights="ReadWrite" StringSize="0" RetainFlags="" CommentFields="" Attributes="0" GroupName="" />
+    <Variable Name="Al_HiTempCond_EVDEMB" DataType="ALM" InitialValue="" Comment="High condensation temperature protection" Address="" Modifier="NonRetain" Kind="Var" Alias="" AccessRights="ReadWrite" StringSize="0" RetainFlags="" CommentFields="" Attributes="0" GroupName="" />
+    <Variable Name="Al_LowSuct_1_EVDEMB" DataType="ALM" InitialValue="" Comment="Low suction temperature" Address="" Modifier="NonRetain" Kind="Var" Alias="" AccessRights="ReadWrite" StringSize="0" RetainFlags="" CommentFields="" Attributes="0" GroupName="" />
+    <Variable Name="Al_SelfTuning_1_EVDEMB" DataType="ALM" InitialValue="" Comment="Ineffective adaptive control" Address="" Modifier="NonRetain" Kind="Var" Alias="" AccessRights="ReadWrite" StringSize="0" RetainFlags="" CommentFields="" Attributes="0" GroupName="" />
+    <Variable Name="Al_RangeError_EVDEMB" DataType="ALM" InitialValue="" Comment="Parameter range error (some children in the data structure are out of bounds)" Address="" Modifier="NonRetain" Kind="Var" Alias="" AccessRights="ReadWrite" StringSize="0" RetainFlags="" CommentFields="" Attributes="0" GroupName="" />
+    <Variable Name="Al_ServicePosit_perc_EVDEMB" DataType="ALM" InitialValue="" Comment="ServicePosit_perc must take value 0.0…100.0" Address="" Modifier="NonRetain" Kind="Var" Alias="" AccessRights="ReadWrite" StringSize="0" RetainFlags="" CommentFields="" Attributes="0" GroupName="" />
+    <Variable Name="Al_ValveID_EVDEMB" DataType="ALM" InitialValue="" Comment="VlvID value out of bound" Address="" Modifier="NonRetain" Kind="Var" Alias="" AccessRights="ReadWrite" StringSize="0" RetainFlags="" CommentFields="" Attributes="0" GroupName="" />
+    <Variable Name="Al_S1_EVDEVO2Emb" DataType="ALM" InitialValue="" Comment="Probe S1 alarm" Address="" Modifier="NonRetain" Kind="Var" Alias="" AccessRights="ReadWrite" StringSize="0" RetainFlags="" CommentFields="" Attributes="0" GroupName="" />
+    <Variable Name="Al_S2_EVDEVO2Emb" DataType="ALM" InitialValue="" Comment="Probe S2 alarm" Address="" Modifier="NonRetain" Kind="Var" Alias="" AccessRights="ReadWrite" StringSize="0" RetainFlags="" CommentFields="" Attributes="0" GroupName="" />
+    <Variable Name="Al_S3_EVDEVO2Emb" DataType="ALM" InitialValue="" Comment="Probe S3 alarm" Address="" Modifier="NonRetain" Kind="Var" Alias="" AccessRights="ReadWrite" StringSize="0" RetainFlags="" CommentFields="" Attributes="0" GroupName="" />
+    <Variable Name="Al_S4_EVDEVO2Emb" DataType="ALM" InitialValue="" Comment="Probe S4 alarm" Address="" Modifier="NonRetain" Kind="Var" Alias="" AccessRights="ReadWrite" StringSize="0" RetainFlags="" CommentFields="" Attributes="0" GroupName="" />
+    <Variable Name="Al_EEVA_EVDEVO2Emb" DataType="ALM" InitialValue="" Comment="EEV A motor error" Address="" Modifier="NonRetain" Kind="Var" Alias="" AccessRights="ReadWrite" StringSize="0" RetainFlags="" CommentFields="" Attributes="0" GroupName="" />
+    <Variable Name="Al_EEVB_EVDEVO2Emb" DataType="ALM" InitialValue="" Comment="EEV B motor error" Address="" Modifier="NonRetain" Kind="Var" Alias="" AccessRights="ReadWrite" StringSize="0" RetainFlags="" CommentFields="" Attributes="0" GroupName="" />
+    <Variable Name="Al_EmClos_EVDEVO2Emb" DataType="ALM" InitialValue="" Comment="Emergency closing alarm" Address="" Modifier="NonRetain" Kind="Var" Alias="" AccessRights="ReadWrite" StringSize="0" RetainFlags="" CommentFields="" Attributes="0" GroupName="" />
+    <Variable Name="Al_IncomClos_EVDEVO2Emb" DataType="ALM" InitialValue="" Comment="Incomplete closing alarm" Address="" Modifier="NonRetain" Kind="Var" Alias="" AccessRights="ReadWrite" StringSize="0" RetainFlags="" CommentFields="" Attributes="0" GroupName="" />
+    <Variable Name="Al_FW_Compat_EVDEVO2Emb" DataType="ALM" InitialValue="" Comment="FW compatibility error" Address="" Modifier="NonRetain" Kind="Var" Alias="" AccessRights="ReadWrite" StringSize="0" RetainFlags="" CommentFields="" Attributes="0" GroupName="" />
+    <Variable Name="Al_VlvA_Compat_EVDEVO2Emb" DataType="ALM" InitialValue="" Comment="Valve A compatibility error" Address="" Modifier="NonRetain" Kind="Var" Alias="" AccessRights="ReadWrite" StringSize="0" RetainFlags="" CommentFields="" Attributes="0" GroupName="" />
+    <Variable Name="Al_VlvB_Compat_EVDEVO2Emb" DataType="ALM" InitialValue="" Comment="Valve B compatibility error" Address="" Modifier="NonRetain" Kind="Var" Alias="" AccessRights="ReadWrite" StringSize="0" RetainFlags="" CommentFields="" Attributes="0" GroupName="" />
+    <Variable Name="Al_SuperAuxReg_EVDEVO2Emb" DataType="ALM" InitialValue="" Comment="Super auxiliary regulation  mismatch between ParamsA  and ParamsB" Address="" Modifier="NonRetain" Kind="Var" Alias="" AccessRights="ReadWrite" StringSize="0" RetainFlags="" CommentFields="" Attributes="0" GroupName="" />
+    <Variable Name="Al_GasTypAux_EVDEVO2Emb" DataType="ALM" InitialValue="" Comment="Auxilliary gas type mismatch between ParamsA  and ParamsB" Address="" Modifier="NonRetain" Kind="Var" Alias="" AccessRights="ReadWrite" StringSize="0" RetainFlags="" CommentFields="" Attributes="0" GroupName="" />
+    <Variable Name="Al_DCSupplyEn_EVDEVO2Emb" DataType="ALM" InitialValue="" Comment="DC supply enable mismatch between ParamsA  and ParamsB" Address="" Modifier="NonRetain" Kind="Var" Alias="" AccessRights="ReadWrite" StringSize="0" RetainFlags="" CommentFields="" Attributes="0" GroupName="" />
+    <Variable Name="Al_S4_ThT_ConstNTC_EVDEVO2Emb" DataType="ALM" InitialValue="" Comment="NTC S4 thermal time constant mismatch between ParamsA  and ParamsB" Address="" Modifier="NonRetain" Kind="Var" Alias="" AccessRights="ReadWrite" StringSize="0" RetainFlags="" CommentFields="" Attributes="0" GroupName="" />
+    <Variable Name="Al_Battery_EVDEVO2Emb" DataType="ALM" InitialValue="" Comment="Battery alarm" Address="" Modifier="NonRetain" Kind="Var" Alias="" AccessRights="ReadWrite" StringSize="0" RetainFlags="" CommentFields="" Attributes="0" GroupName="" />
+    <Variable Name="Al_EEPROM_EVDEVO2Emb" DataType="ALM" InitialValue="" Comment="EEPROM alarm" Address="" Modifier="NonRetain" Kind="Var" Alias="" AccessRights="ReadWrite" StringSize="0" RetainFlags="" CommentFields="" Attributes="0" GroupName="" />
+    <Variable Name="Al_Offline_EVDEVO2Emb" DataType="ALM" InitialValue="" Comment="Offline alarm" Address="" Modifier="NonRetain" Kind="Var" Alias="" AccessRights="ReadWrite" StringSize="0" RetainFlags="" CommentFields="" Attributes="0" GroupName="" />
+    <Variable Name="Al_LowSH_EVDEMB_2" DataType="ALM" InitialValue="" Comment="Low superheat protection" Address="" Modifier="NonRetain" Kind="Var" Alias="" AccessRights="ReadWrite" StringSize="0" RetainFlags="" CommentFields="" Attributes="0" GroupName="" />
+    <Variable Name="Al_LOP_EVDEMB_2" DataType="ALM" InitialValue="" Comment="Low evaporation temperature protection" Address="" Modifier="NonRetain" Kind="Var" Alias="" AccessRights="ReadWrite" StringSize="0" RetainFlags="" CommentFields="" Attributes="0" GroupName="" />
+    <Variable Name="Al_MOP_EVDEMB_2" DataType="ALM" InitialValue="" Comment="High evaporation temperature protection" Address="" Modifier="NonRetain" Kind="Var" Alias="" AccessRights="ReadWrite" StringSize="0" RetainFlags="" CommentFields="" Attributes="0" GroupName="" />
+    <Variable Name="Al_HiTempCond_EVDEMB_2" DataType="ALM" InitialValue="" Comment="High condensation temperature protection" Address="" Modifier="NonRetain" Kind="Var" Alias="" AccessRights="ReadWrite" StringSize="0" RetainFlags="" CommentFields="" Attributes="0" GroupName="" />
+    <Variable Name="Al_LowSuct_1_EVDEMB_2" DataType="ALM" InitialValue="" Comment="Low suction temperature" Address="" Modifier="NonRetain" Kind="Var" Alias="" AccessRights="ReadWrite" StringSize="0" RetainFlags="" CommentFields="" Attributes="0" GroupName="" />
+    <Variable Name="Al_SelfTuning_1_EVDEMB_2" DataType="ALM" InitialValue="" Comment="Ineffective adaptive control" Address="" Modifier="NonRetain" Kind="Var" Alias="" AccessRights="ReadWrite" StringSize="0" RetainFlags="" CommentFields="" Attributes="0" GroupName="" />
+    <Variable Name="Al_RangeError_EVDEMB_2" DataType="ALM" InitialValue="" Comment="Parameter range error (some children in the data structure are out of bounds)" Address="" Modifier="NonRetain" Kind="Var" Alias="" AccessRights="ReadWrite" StringSize="0" RetainFlags="" CommentFields="" Attributes="0" GroupName="" />
+    <Variable Name="Al_ServicePosit_perc_EVDEMB_2" DataType="ALM" InitialValue="" Comment="ServicePosit_perc must take value 0.0…100.0" Address="" Modifier="NonRetain" Kind="Var" Alias="" AccessRights="ReadWrite" StringSize="0" RetainFlags="" CommentFields="" Attributes="0" GroupName="" />
+    <Variable Name="Al_ValveID_EVDEMB_2" DataType="ALM" InitialValue="" Comment="VlvID value out of bound" Address="" Modifier="NonRetain" Kind="Var" Alias="" AccessRights="ReadWrite" StringSize="0" RetainFlags="" CommentFields="" Attributes="0" GroupName="" />
+    <Variable Name="Al_LowSH_1" DataType="ALM" InitialValue="" Comment=" Low superheat protection" Address="" Modifier="NonRetain" Kind="Var" Alias="" AccessRights="ReadWrite" StringSize="0" RetainFlags="" CommentFields="" Attributes="0" GroupName="" />
+    <Variable Name="Al_LOP_1" DataType="ALM" InitialValue="" Comment=" Low evaporation temperature protection" Address="" Modifier="NonRetain" Kind="Var" Alias="" AccessRights="ReadWrite" StringSize="0" RetainFlags="" CommentFields="" Attributes="0" GroupName="" />
+    <Variable Name="Al_MOP_1" DataType="ALM" InitialValue="" Comment=" High evaporation temperature protection" Address="" Modifier="NonRetain" Kind="Var" Alias="" AccessRights="ReadWrite" StringSize="0" RetainFlags="" CommentFields="" Attributes="0" GroupName="" />
+    <Variable Name="Al_HiTempCond_1" DataType="ALM" InitialValue="" Comment="High condensation temperature protection" Address="" Modifier="NonRetain" Kind="Var" Alias="" AccessRights="ReadWrite" StringSize="0" RetainFlags="" CommentFields="" Attributes="0" GroupName="" />
+    <Variable Name="Al_LowSuct_1" DataType="ALM" InitialValue="" Comment="Low suction temperature" Address="" Modifier="NonRetain" Kind="Var" Alias="" AccessRights="ReadWrite" StringSize="0" RetainFlags="" CommentFields="" Attributes="0" GroupName="" />
+    <Variable Name="Al_EEV_1" DataType="ALM" InitialValue="" Comment=" EEV motor error" Address="" Modifier="NonRetain" Kind="Var" Alias="" AccessRights="ReadWrite" StringSize="0" RetainFlags="" CommentFields="" Attributes="0" GroupName="" />
+    <Variable Name="Al_SelfTuning_1" DataType="ALM" InitialValue="" Comment=" Ineffective adaptive control" Address="" Modifier="NonRetain" Kind="Var" Alias="" AccessRights="ReadWrite" StringSize="0" RetainFlags="" CommentFields="" Attributes="0" GroupName="" />
+    <Variable Name="Al_EmergClos_1" DataType="ALM" InitialValue="" Comment=" Emergency closing alarm" Address="" Modifier="NonRetain" Kind="Var" Alias="" AccessRights="ReadWrite" StringSize="0" RetainFlags="" CommentFields="" Attributes="0" GroupName="" />
+    <Variable Name="Al_RangeError_1" DataType="ALM" InitialValue="" Comment="Parameter range error (some children in the data structure are out of bounds)" Address="" Modifier="NonRetain" Kind="Var" Alias="" AccessRights="ReadWrite" StringSize="0" RetainFlags="" CommentFields="" Attributes="0" GroupName="" />
+    <Variable Name="Al_ServicePosit_perc_1" DataType="ALM" InitialValue="" Comment="ServicePosit_perc must take value 0.0…100.0" Address="" Modifier="NonRetain" Kind="Var" Alias="" AccessRights="ReadWrite" StringSize="0" RetainFlags="" CommentFields="" Attributes="0" GroupName="" />
+    <Variable Name="Al_ValveID_1" DataType="ALM" InitialValue="" Comment="VlvID must take value 1 or 2" Address="" Modifier="NonRetain" Kind="Var" Alias="" AccessRights="ReadWrite" StringSize="0" RetainFlags="" CommentFields="" Attributes="0" GroupName="" />
+    <Variable Name="StartupJmp" DataType="BOOL" InitialValue="" Comment="Startup jump enable" Address="" Modifier="NonRetain" Kind="Var" Alias="" AccessRights="ReadWrite" StringSize="0" RetainFlags="" CommentFields="" Attributes="0" GroupName="" />
+  </GlobalVars>
+  <Devices />
+  <ExportedGroups />
+  <ImportedGroups />
+  <Groups />
+</Resource>

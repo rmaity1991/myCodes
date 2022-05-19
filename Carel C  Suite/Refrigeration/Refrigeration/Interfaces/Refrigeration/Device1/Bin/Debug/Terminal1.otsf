@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FormatFields>
+  <FormatField Name="CL_REAL_1" Format="io+3.1">
+    <KeyBindings>
+      <KeyBinding Key="UP" BindOn="Increment_REAL_1" />
+      <KeyBinding Key="DOWN" BindOn="Decrement_REAL_1" />
+      <KeyBinding Key="ENTER" BindOn="SetCurrentValue" />
+    </KeyBindings>
+  </FormatField>
+  <FormatField Name="CL_BOOL_SWAP" Format="iob">
+    <KeyBindings>
+      <KeyBinding Key="UP" BindOn="BoolSwap" />
+      <KeyBinding Key="DOWN" BindOn="BoolSwap" />
+      <KeyBinding Key="ENTER" BindOn="SetCurrentValue" />
+    </KeyBindings>
+  </FormatField>
+</FormatFields>
